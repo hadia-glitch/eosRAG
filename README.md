@@ -42,3 +42,16 @@ the original privately obtained CSV archive; synthetic fixtures are for evaluati
 
 Run `pytest backend/tests -q`, `flutter analyze --no-fatal-infos`, and `flutter test`.
 Use the deployment runbook to configure Supabase, the backend host and Vercel.
+
+## Clinical presentation and maternal-model research
+
+Clinical output uses spaced paragraphs, bold labels, separate bullet lines and
+tappable evidence citations. The thirteen care-plan sections have distinct
+colors and text labels. SHAP explanations include a waterfall whose signed
+contributions reconcile to the displayed research-model score. The model input
+screen keeps a concise research label and essential measurement guidance.
+
+[Maternal/neonatal mixture methods and measured results](docs/MIXED_MODEL_RESEARCH.md)
+describe the separate synthetic stacking model and common-feature transfer study.
+The simulation artifact is not installed as the app's predictor. All source,
+target, timing and clinical-validation limitations remain explicit.

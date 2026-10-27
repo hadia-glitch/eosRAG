@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../domain/eoscal_calculator.dart';
 import '../../data/api/api_client.dart';
 import '../../data/research_model_inputs.dart';
+import '../../core/widgets/shap_waterfall.dart';
 
 /// Explain the served ML artifact; retired point-score tables are not model XAI.
 class XaiDetailScreen extends StatefulWidget {
@@ -61,11 +62,24 @@ class _XaiDetailScreenState extends State<XaiDetailScreen> {
         if (snapshot.hasError) {
           return Padding(
             padding: const EdgeInsets.all(24),
-            child: Text('No model explanation is available: ${snapshot.error}'),
+            child: const Text(
+              'Could not load the model explanation. Check the measurements and connection, then try again.',
+              style: TextStyle(fontSize: 16, height: 1.6),
+            ),
           );
         }
         if (!snapshot.hasData) {
           return const Center(child: CircularProgressIndicator());
+        }
+        if (snapshot.data!['shap'] is! Map ||
+            snapshot.data!['probability'] is! num) {
+          return const Padding(
+            padding: EdgeInsets.all(24),
+            child: Text(
+              'An explanation is unavailable for these measurements. Review missing values and input ranges, then request a new score.',
+              style: TextStyle(fontSize: 16, height: 1.6),
+            ),
+          );
         }
         final d = snapshot.data!,
             shap = Map<String, dynamic>.from(d['shap'] as Map);
@@ -76,18 +90,28 @@ class _XaiDetailScreenState extends State<XaiDetailScreen> {
           padding: const EdgeInsets.all(16),
           children: [
             Text(
-              'Actual Kernel SHAP',
+              'SHAP explanation',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: 8),
             Text(
-              'Model: ${d['model_version']}\nSupplied-label prediction: ${ResearchModelInputs.formatProbability(d['probability'] as num)}\nBaseline probability: ${((shap['baseline_probability'] as num) * 100).toStringAsFixed(2)}%',
+              'Research model score: ${ResearchModelInputs.formatProbability(d['probability'] as num)}',
             ),
             const SizedBox(height: 14),
             const Text(
-              'Contributions change the research-model probability relative to its fit reference. They do not prove causation or prescribe treatment.',
+              'These inputs explain the research model score. They do not establish a diagnosis or a treatment effect.',
             ),
             const SizedBox(height: 16),
+            ShapWaterfall(
+              baseline: (shap['baseline_probability'] as num).toDouble(),
+              prediction: (d['probability'] as num).toDouble(),
+              contributions: contributions,
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Input contributions',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+            ),
             for (final c in contributions)
               Card(
                 child: ListTile(
@@ -105,8 +129,9 @@ class _XaiDetailScreenState extends State<XaiDetailScreen> {
                 ),
               ),
             const SizedBox(height: 12),
-            Text(
-              'Additivity error: ${shap['additivity_error']}\nCoalition samples: ${shap['nsamples']}\n${shap['reference']}',
+            const Text(
+              'Positive contributions raise the score; negative contributions lower it. Values are percentage points.',
+              style: TextStyle(height: 1.6),
             ),
           ],
         );

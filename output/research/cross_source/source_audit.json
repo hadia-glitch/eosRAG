@@ -1,0 +1,604 @@
+{
+  "synthetic_source": true,
+  "clinical_validation": false,
+  "source_url": "https://huggingface.co/datasets/electricsheepafrica/africa-synth-neonatal-sepsis-dataset-all",
+  "development": {
+    "file": "sepsis_africa_large_5000 (1).csv",
+    "sha256": "4dc0c7b24347f8094ee6d21905df04e137a87fe7c79cf06676bcca904b12dd22",
+    "rows": 5000,
+    "duplicate_ids": 0,
+    "columns": {
+      "patient_id": {
+        "missing": 0,
+        "unique": 5000
+      },
+      "gestational_age_weeks": {
+        "missing": 0,
+        "unique": 174,
+        "min": 24.0,
+        "max": 42.0,
+        "median": 38.6
+      },
+      "birth_weight_kg": {
+        "missing": 0,
+        "unique": 368,
+        "min": 0.5,
+        "max": 4.73,
+        "median": 3.04
+      },
+      "birth_weight_grams": {
+        "missing": 0,
+        "unique": 2187,
+        "min": 500.0,
+        "max": 4731.0,
+        "median": 3044.0
+      },
+      "low_birth_weight": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 1072,
+          "False": 3928
+        }
+      },
+      "very_low_birth_weight": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 4826,
+          "True": 174
+        }
+      },
+      "maternal_age": {
+        "missing": 0,
+        "unique": 31,
+        "min": 15.0,
+        "max": 45.0,
+        "median": 26.0
+      },
+      "young_mother": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 4186,
+          "True": 814
+        }
+      },
+      "prom": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 4284,
+          "True": 716
+        }
+      },
+      "maternal_infection": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 572,
+          "False": 4428
+        }
+      },
+      "delivery_mode": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "Vaginal": 3767,
+          "C-section": 1233
+        }
+      },
+      "apgar_1min": {
+        "missing": 0,
+        "unique": 10,
+        "min": 1.0,
+        "max": 10.0,
+        "median": 7.0,
+        "counts": {
+          "3": 77,
+          "4": 283,
+          "8": 1005,
+          "5": 525,
+          "6": 976,
+          "7": 1187,
+          "9": 588,
+          "10": 335,
+          "2": 17,
+          "1": 7
+        }
+      },
+      "apgar_5min": {
+        "missing": 0,
+        "unique": 10,
+        "min": 1.0,
+        "max": 10.0,
+        "median": 8.0,
+        "counts": {
+          "3": 26,
+          "4": 112,
+          "10": 1069,
+          "6": 586,
+          "7": 892,
+          "8": 1058,
+          "9": 954,
+          "5": 291,
+          "2": 9,
+          "1": 3
+        }
+      },
+      "resuscitation_needed": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 2189,
+          "False": 2811
+        }
+      },
+      "sepsis_status": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "Positive": 3495,
+          "Negative": 1505
+        }
+      },
+      "sepsis_onset": {
+        "missing": 1505,
+        "unique": 3,
+        "counts": {
+          "Late-onset": 1442,
+          "Early-onset": 2053,
+          "": 1505
+        }
+      },
+      "culture_confirmed": {
+        "missing": 1505,
+        "unique": 3,
+        "counts": {
+          "False": 2391,
+          "": 1505,
+          "True": 1104
+        }
+      },
+      "pathogen": {
+        "missing": 3896,
+        "unique": 7,
+        "counts": {
+          "": 3896,
+          "E. coli": 164,
+          "Group B Streptococcus": 139,
+          "Klebsiella spp": 233,
+          "Staphylococcus aureus": 294,
+          "Other": 107,
+          "Coagulase-negative Staph": 167
+        }
+      },
+      "fever": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 2587,
+          "True": 2413
+        }
+      },
+      "hypothermia": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 1036,
+          "False": 3964
+        }
+      },
+      "respiratory_distress": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 2251,
+          "False": 2749
+        }
+      },
+      "poor_feeding": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 2396,
+          "True": 2604
+        }
+      },
+      "lethargy": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 2915,
+          "True": 2085
+        }
+      },
+      "jaundice": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 3391,
+          "True": 1609
+        }
+      },
+      "wbc_count": {
+        "missing": 0,
+        "unique": 352,
+        "min": 2.0,
+        "max": 40.0,
+        "median": 11.6
+      },
+      "crp_mg_l": {
+        "missing": 0,
+        "unique": 957,
+        "min": 0.0,
+        "max": 124.0,
+        "median": 31.6
+      },
+      "outcome": {
+        "missing": 0,
+        "unique": 3,
+        "counts": {
+          "Recovered": 2952,
+          "Died": 543,
+          "Healthy": 1505
+        }
+      },
+      "hospital_days": {
+        "missing": 0,
+        "unique": 36,
+        "min": 1.0,
+        "max": 37.0,
+        "median": 7.0
+      },
+      "sepsis_probability_score": {
+        "missing": 0,
+        "unique": 15,
+        "min": 0.41,
+        "max": 0.95,
+        "median": 0.789,
+        "counts": {
+          "0.95": 1429,
+          "0.41": 1879,
+          "0.741": 219,
+          "0.694": 199,
+          "0.828": 158,
+          "0.695": 198,
+          "0.945": 689,
+          "0.789": 102,
+          "0.94": 24,
+          "0.925": 11,
+          "0.903": 42,
+          "0.881": 19,
+          "0.939": 14,
+          "0.924": 12,
+          "0.941": 5
+        }
+      }
+    },
+    "onset_by_label": {
+      "Positive | Late-onset": 1442,
+      "Positive | Early-onset": 2053,
+      "Negative | ": 1505
+    },
+    "excluded_outcome_or_post_outcome_columns": [
+      "culture_confirmed",
+      "hospital_days",
+      "outcome",
+      "pathogen",
+      "sepsis_onset",
+      "sepsis_probability_score",
+      "sepsis_status"
+    ],
+    "weight_rounding_audit": {
+      "kg_recorded_precision": 0.01,
+      "allowed_rounding_difference_grams": 5.01,
+      "max_absolute_difference_grams": 5.0,
+      "within_rounding_tolerance": true
+    }
+  },
+  "file_defined_test": {
+    "file": "sepsis_africa_test_2000 (1).csv",
+    "sha256": "f22f123283fb3ef51438a5cef3667bb99e168cd9d17b07a814cfec308deccc7e",
+    "rows": 2000,
+    "duplicate_ids": 0,
+    "columns": {
+      "patient_id": {
+        "missing": 0,
+        "unique": 2000
+      },
+      "gestational_age_weeks": {
+        "missing": 0,
+        "unique": 169,
+        "min": 24.0,
+        "max": 42.0,
+        "median": 38.6
+      },
+      "birth_weight_kg": {
+        "missing": 0,
+        "unique": 320,
+        "min": 0.5,
+        "max": 4.59,
+        "median": 3.09
+      },
+      "birth_weight_grams": {
+        "missing": 0,
+        "unique": 1343,
+        "min": 500.0,
+        "max": 4588.0,
+        "median": 3085.0
+      },
+      "low_birth_weight": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 1595,
+          "True": 405
+        }
+      },
+      "very_low_birth_weight": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 1928,
+          "True": 72
+        }
+      },
+      "maternal_age": {
+        "missing": 0,
+        "unique": 31,
+        "min": 15.0,
+        "max": 45.0,
+        "median": 26.0
+      },
+      "young_mother": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 1663,
+          "True": 337
+        }
+      },
+      "prom": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 1716,
+          "True": 284
+        }
+      },
+      "maternal_infection": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 1788,
+          "True": 212
+        }
+      },
+      "delivery_mode": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "Vaginal": 1477,
+          "C-section": 523
+        }
+      },
+      "apgar_1min": {
+        "missing": 0,
+        "unique": 10,
+        "min": 1.0,
+        "max": 10.0,
+        "median": 7.0,
+        "counts": {
+          "7": 468,
+          "4": 116,
+          "5": 229,
+          "8": 414,
+          "10": 110,
+          "9": 252,
+          "6": 371,
+          "3": 32,
+          "1": 2,
+          "2": 6
+        }
+      },
+      "apgar_5min": {
+        "missing": 0,
+        "unique": 9,
+        "min": 2.0,
+        "max": 10.0,
+        "median": 8.0,
+        "counts": {
+          "8": 419,
+          "5": 108,
+          "7": 351,
+          "10": 420,
+          "6": 241,
+          "9": 395,
+          "3": 15,
+          "4": 48,
+          "2": 3
+        }
+      },
+      "resuscitation_needed": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "False": 1117,
+          "True": 883
+        }
+      },
+      "sepsis_status": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "Positive": 1399,
+          "Negative": 601
+        }
+      },
+      "sepsis_onset": {
+        "missing": 601,
+        "unique": 3,
+        "counts": {
+          "Early-onset": 845,
+          "Late-onset": 554,
+          "": 601
+        }
+      },
+      "culture_confirmed": {
+        "missing": 601,
+        "unique": 3,
+        "counts": {
+          "False": 978,
+          "True": 421,
+          "": 601
+        }
+      },
+      "pathogen": {
+        "missing": 1579,
+        "unique": 7,
+        "counts": {
+          "": 1579,
+          "E. coli": 69,
+          "Klebsiella spp": 98,
+          "Coagulase-negative Staph": 65,
+          "Staphylococcus aureus": 107,
+          "Group B Streptococcus": 41,
+          "Other": 41
+        }
+      },
+      "fever": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 1001,
+          "False": 999
+        }
+      },
+      "hypothermia": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 403,
+          "False": 1597
+        }
+      },
+      "respiratory_distress": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 909,
+          "False": 1091
+        }
+      },
+      "poor_feeding": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 1057,
+          "False": 943
+        }
+      },
+      "lethargy": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 825,
+          "False": 1175
+        }
+      },
+      "jaundice": {
+        "missing": 0,
+        "unique": 2,
+        "counts": {
+          "True": 686,
+          "False": 1314
+        }
+      },
+      "wbc_count": {
+        "missing": 0,
+        "unique": 318,
+        "min": 2.0,
+        "max": 40.0,
+        "median": 11.5
+      },
+      "crp_mg_l": {
+        "missing": 0,
+        "unique": 732,
+        "min": 0.0,
+        "max": 127.0,
+        "median": 30.6
+      },
+      "outcome": {
+        "missing": 0,
+        "unique": 3,
+        "counts": {
+          "Recovered": 1173,
+          "Healthy": 601,
+          "Died": 226
+        }
+      },
+      "hospital_days": {
+        "missing": 0,
+        "unique": 37,
+        "min": 1.0,
+        "max": 41.0,
+        "median": 7.0
+      },
+      "sepsis_probability_score": {
+        "missing": 0,
+        "unique": 15,
+        "min": 0.41,
+        "max": 0.95,
+        "median": 0.741,
+        "counts": {
+          "0.41": 768,
+          "0.95": 553,
+          "0.945": 288,
+          "0.789": 43,
+          "0.695": 60,
+          "0.741": 104,
+          "0.828": 55,
+          "0.924": 6,
+          "0.881": 12,
+          "0.94": 9,
+          "0.694": 80,
+          "0.903": 13,
+          "0.941": 3,
+          "0.925": 5,
+          "0.939": 1
+        }
+      }
+    },
+    "onset_by_label": {
+      "Positive | Early-onset": 845,
+      "Positive | Late-onset": 554,
+      "Negative | ": 601
+    },
+    "excluded_outcome_or_post_outcome_columns": [
+      "culture_confirmed",
+      "hospital_days",
+      "outcome",
+      "pathogen",
+      "sepsis_onset",
+      "sepsis_probability_score",
+      "sepsis_status"
+    ],
+    "weight_rounding_audit": {
+      "kg_recorded_precision": 0.01,
+      "allowed_rounding_difference_grams": 5.01,
+      "max_absolute_difference_grams": 5.0,
+      "within_rounding_tolerance": true
+    }
+  },
+  "overlap": {
+    "shared_ids": 2000,
+    "identical_non_id_rows": 0,
+    "identical_predictor_vectors": 0
+  },
+  "limitations": [
+    "Synthetic outcomes encode generation assumptions, not measured clinical effectiveness.",
+    "No measured assessment/birth/result-availability timestamps establish a prospective prediction landmark.",
+    "A synthetic onset label cannot supply missing postnatal ages or outcomes in a different patient cohort."
+  ]
+}

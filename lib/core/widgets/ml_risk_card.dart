@@ -189,7 +189,7 @@ class _MlRiskCardState extends State<MlRiskCard> {
                     '${(data!['probability_per_1000'] as num).toStringAsFixed(2)} per 1,000',
                     style: const TextStyle(fontSize: 28),
                   ),
-                  Text('Research estimate - ${data['model_version']}'),
+                  const Text('Research model'),
                   Text(
                     'Missing predictors: ${((data['missing_fraction'] as num) * 100).round()}%',
                   ),

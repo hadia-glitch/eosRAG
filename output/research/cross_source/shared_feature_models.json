@@ -1,0 +1,93 @@
+{
+  "clinical_eos_eligible": false,
+  "endpoint_compatibility_verified": false,
+  "models": {
+    "original_only": {
+      "features": [
+        "gestational_age_weeks",
+        "birth_weight_kg",
+        "cesarean"
+      ],
+      "median": [
+        34.2,
+        4.5,
+        0.0
+      ],
+      "kind": "logistic",
+      "mean": [
+        34.241799925622914,
+        4.149237634808479,
+        0.4042394942357754
+      ],
+      "scale": [
+        3.5918325851274697,
+        0.710532889223582,
+        0.4907442567527203
+      ],
+      "coefficients": [
+        -0.11413930689688893,
+        -0.20890778306998595,
+        0.0719902035934787
+      ],
+      "intercept": -0.24792922788178393
+    },
+    "synthetic_only": {
+      "features": [
+        "gestational_age_weeks",
+        "birth_weight_kg",
+        "cesarean"
+      ],
+      "median": [
+        38.6,
+        3.05,
+        0.0
+      ],
+      "kind": "logistic",
+      "mean": [
+        37.74232585596222,
+        2.970377804014168,
+        0.24675324675324675
+      ],
+      "scale": [
+        3.2177814737527095,
+        0.6610601830746224,
+        0.43112188760254105
+      ],
+      "coefficients": [
+        -0.3462690907182207,
+        -0.40451862724765814,
+        -0.043715524636453756
+      ],
+      "intercept": 0.3259880244152711
+    },
+    "hypothetical_source_balanced_pool": {
+      "features": [
+        "gestational_age_weeks",
+        "birth_weight_kg",
+        "cesarean"
+      ],
+      "median": [
+        35.4,
+        4.5,
+        0.0
+      ],
+      "kind": "logistic",
+      "mean": [
+        35.080302601809954,
+        3.866858031674208,
+        0.3665158371040724
+      ],
+      "scale": [
+        3.810937131493624,
+        0.8612494693159647,
+        0.4818526520171633
+      ],
+      "coefficients": [
+        -0.14718869193767972,
+        -0.45613992916645285,
+        0.017775011150106556
+      ],
+      "intercept": -0.10010013701922253
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "protocol": {
+    "seed": 20261027,
+    "source_synthetic": true,
+    "clinical_eos_eligible": false,
+    "target": "Synthetic Early-onset sepsis label versus Negative, with Late-onset cases excluded",
+    "development_rows_before_filter": 5000,
+    "development_rows_after_id_exclusion": 3000,
+    "fit_n": 1694,
+    "validation_n": 424,
+    "file_defined_test_n": 1446,
+    "fit_test_id_overlap": 0,
+    "maternal_perinatal_inputs": [
+      "gestational_age_weeks",
+      "birth_weight_kg",
+      "maternal_age",
+      "prom",
+      "maternal_infection",
+      "cesarean",
+      "apgar_1min",
+      "apgar_5min",
+      "resuscitation_needed"
+    ],
+    "concurrent_clinical_inputs": [
+      "fever",
+      "hypothermia",
+      "respiratory_distress",
+      "poor_feeding",
+      "lethargy",
+      "jaundice"
+    ],
+    "common_inputs": [
+      "gestational_age_weeks",
+      "birth_weight_kg",
+      "cesarean"
+    ],
+    "forbidden_as_predictors": [
+      "culture_confirmed",
+      "hospital_days",
+      "low_birth_weight",
+      "outcome",
+      "pathogen",
+      "patient_id",
+      "sepsis_onset",
+      "sepsis_probability_score",
+      "sepsis_status",
+      "very_low_birth_weight",
+      "young_mother"
+    ],
+    "laboratory_inputs_omitted": "Untimed WBC/CRP; no guessed unit alignment with old source.",
+    "stacking": "Five-fold out-of-fold base predictions on fit only; logistic meta-model; validation-only threshold targeting 90% sensitivity.",
+    "common_source_target_compatibility": "NOT ESTABLISHED: pooling is an explicitly hypothetical transfer stress test, not an approved combined cohort.",
+    "source_hashes": {
+      "development": "4dc0c7b24347f8094ee6d21905df04e137a87fe7c79cf06676bcca904b12dd22",
+      "test": "f22f123283fb3ef51438a5cef3667bb99e168cd9d17b07a814cfec308deccc7e",
+      "original_archive": "3974306e2df8091f070520939c04114965b23fdae1595420486dd9fdfd17d0e8"
+    },
+    "test_scope": "File-defined ID-disjoint synthetic holdout sharing source generation assumptions, not clinical external validation."
+  },
+  "models": {
+    "maternal_perinatal": {
+      "validation": {
+        "n": 424,
+        "positive": 241,
+        "auroc": 0.8192413214520555,
+        "auprc": 0.8569846110598038,
+        "brier": 0.17254795077129867,
+        "log_loss": 0.5164800270673958,
+        "threshold": 0.2937156299817195,
+        "sensitivity": 0.9004149377593361,
+        "specificity": 0.48633879781420764,
+        "accuracy": 0.7216981132075472
+      },
+      "synthetic_test": {
+        "n": 1446,
+        "positive": 845,
+        "auroc": 0.8031308765469779,
+        "auprc": 0.8376008361786895,
+        "brier": 0.17307065333491023,
+        "log_loss": 0.5311713454547069,
+        "threshold": 0.2937156299817195,
+        "sensitivity": 0.9053254437869822,
+        "specificity": 0.37271214642262895,
+        "accuracy": 0.6839557399723375
+      }
+    },
+    "neonatal_clinical": {
+      "validation": {
+        "n": 424,
+        "positive": 241,
+        "auroc": 0.995850622406639,
+        "auprc": 0.9964182259453536,
+        "brier": 0.00908192082989204,
+        "log_loss": 0.05220158617504676,
+        "threshold": 0.8820115940524816,
+        "sensitivity": 0.9004149377593361,
+        "specificity": 1.0,
+        "accuracy": 0.9433962264150944
+      },
+      "synthetic_test": {
+        "n": 1446,
+        "positive": 845,
+        "auroc": 0.9970414201183432,
+        "auprc": 0.9975406548978205,
+        "brier": 0.00869754240817695,
+        "log_loss": 0.04961931468188484,
+        "threshold": 0.8820115940524816,
+        "sensitivity": 0.9076923076923077,
+        "specificity": 1.0,
+        "accuracy": 0.946058091286307
+      }
+    },
+    "mixed_stacked": {
+      "validation": {
+        "n": 424,
+        "positive": 241,
+        "auroc": 0.9994784935265175,
+        "auprc": 0.9996253870673417,
+        "brier": 0.004611173804973437,
+        "log_loss": 0.02235306943611516,
+        "threshold": 0.9979369194128944,
+        "sensitivity": 0.9004149377593361,
+        "specificity": 1.0,
+        "accuracy": 0.9433962264150944
+      },
+      "synthetic_test": {
+        "n": 1446,
+        "positive": 845,
+        "auroc": 0.9984050251553132,
+        "auprc": 0.9991032229811552,
+        "brier": 0.004962799698644444,
+        "log_loss": 0.02515425975849561,
+        "threshold": 0.9979369194128944,
+        "sensitivity": 0.8994082840236687,
+        "specificity": 1.0,
+        "accuracy": 0.9412171507607192
+      }
+    },
+    "flat_combined_logistic": {
+      "validation": {
+        "n": 424,
+        "positive": 241,
+        "auroc": 0.9963494546856223,
+        "auprc": 0.9979377330381662,
+        "brier": 0.005486210425757611,
+        "log_loss": 0.031295175699687025,
+        "threshold": 0.9989743292648617,
+        "sensitivity": 0.9004149377593361,
+        "specificity": 1.0,
+        "accuracy": 0.9433962264150944
+      },
+      "synthetic_test": {
+        "n": 1446,
+        "positive": 845,
+        "auroc": 0.998172670795223,
+        "auprc": 0.999042555502573,
+        "brier": 0.004677314355053964,
+        "log_loss": 0.024849920053876325,
+        "threshold": 0.9989743292648617,
+        "sensitivity": 0.9100591715976332,
+        "specificity": 1.0,
+        "accuracy": 0.9474412171507607
+      }
+    }
+  },
+  "mixed_test_auroc_bootstrap_95": [
+    0.9964420701355098,
+    0.9997472751496058
+  ],
+  "bootstrap_repeats": 500,
+  "shared_feature_transfer_stress_test": {
+    "original_only": {
+      "original_supplied_label_test": {
+        "n": 1598,
+        "positive": 735,
+        "auroc": 0.581247980072678,
+        "auprc": 0.5992659253827735,
+        "brier": 0.23819114352233375,
+        "log_loss": 0.6693305332077892,
+        "threshold": 0.5,
+        "sensitivity": 0.2761904761904762,
+        "specificity": 0.8922363847045192,
+        "accuracy": 0.6088861076345432
+      },
+      "synthetic_early_label_test": {
+        "n": 1446,
+        "positive": 845,
+        "auroc": 0.5943870669200249,
+        "auprc": 0.7153491630509388,
+        "brier": 0.24199025914698352,
+        "log_loss": 0.6767492042447657,
+        "threshold": 0.5,
+        "sensitivity": 0.4,
+        "specificity": 0.8069883527454242,
+        "accuracy": 0.5691562932226832
+      }
+    },
+    "synthetic_only": {
+      "original_supplied_label_test": {
+        "n": 1598,
+        "positive": 735,
+        "auroc": 0.5992692789746258,
+        "auprc": 0.6086965989392142,
+        "brier": 0.2395317360116487,
+        "log_loss": 0.6723051809359423,
+        "threshold": 0.5,
+        "sensitivity": 0.3986394557823129,
+        "specificity": 0.776361529548088,
+        "accuracy": 0.6026282853566959
+      },
+      "synthetic_early_label_test": {
+        "n": 1446,
+        "positive": 845,
+        "auroc": 0.6003514851972551,
+        "auprc": 0.7202325681760946,
+        "brier": 0.23043210423114016,
+        "log_loss": 0.6488015251906203,
+        "threshold": 0.5,
+        "sensitivity": 0.650887573964497,
+        "specificity": 0.4043261231281198,
+        "accuracy": 0.5484094052558783
+      }
+    },
+    "hypothetical_source_balanced_pool": {
+      "original_supplied_label_test": {
+        "n": 1598,
+        "positive": 735,
+        "auroc": 0.592740873869826,
+        "auprc": 0.6065344411475476,
+        "brier": 0.23451076450472022,
+        "log_loss": 0.6612035894105228,
+        "threshold": 0.5,
+        "sensitivity": 0.3197278911564626,
+        "specificity": 0.8493626882966396,
+        "accuracy": 0.6057571964956195
+      },
+      "synthetic_early_label_test": {
+        "n": 1446,
+        "positive": 845,
+        "auroc": 0.5976872864752041,
+        "auprc": 0.716616948937473,
+        "brier": 0.23195046956453372,
+        "log_loss": 0.6542285255191593,
+        "threshold": 0.5,
+        "sensitivity": 0.714792899408284,
+        "specificity": 0.31114808652246256,
+        "accuracy": 0.5470262793914247
+      }
+    }
+  },
+  "training_label_shuffle_controls": [
+    {
+      "seed": 31,
+      "test_auroc_original_labels": 0.6200828993098288
+    },
+    {
+      "seed": 47,
+      "test_auroc_original_labels": 0.4186986186730204
+    },
+    {
+      "seed": 83,
+      "test_auroc_original_labels": 0.4890173182762457
+    }
+  ],
+  "generated_clinical_sign_diagnostic": {
+    "post_hoc": true,
+    "not_a_clinical_rule": true,
+    "test_symptom_count_auroc": 0.9970414201183432,
+    "test_count_ranges_by_label": {
+      "0": {
+        "min": 0.0,
+        "max": 0.0
+      },
+      "1": {
+        "min": 0.0,
+        "max": 6.0
+      }
+    }
+  },
+  "portable_prediction_parity_atol": 1e-07,
+  "packages": {
+    "python": "3.13.5",
+    "numpy": "2.2.6",
+    "pandas": "2.3.1",
+    "sklearn": "1.7.0"
+  },
+  "interpretation": [
+    "Maternal and neonatal branches are combined only on the same synthetic individuals using out-of-fold predictions.",
+    "No old patient was joined to a synthetic patient; no maternal facts were invented or imputed across sources.",
+    "Three-feature pooling assumes outcome compatibility that has not been established; it is a feasibility stress test only.",
+    "Synthetic clinical signs may reflect label-conditional generation. High discrimination can reproduce generator rules.",
+    "Excluded late-onset positives and unknown ages in negatives prevent estimation of prospective EOS incidence.",
+    "This experiment neither validates nor replaces the application model; a time-aware adjudicated cohort is required."
+  ]
+}

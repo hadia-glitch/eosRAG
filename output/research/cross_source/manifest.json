@@ -1,0 +1,10 @@
+{
+  "clinical_eos_eligible": false,
+  "experiment_code_sha256": "b6f3806a32a87c3b83d7c238e56c9c9fd7e0f95c41123b04e7dd0894051c2443",
+  "artifacts": {
+    "protocol.json": "ba6945363fa85cde24925471801280828a61915bec92b7177336bb5a5bf023a3",
+    "results.json": "7951856734beaf86e971333b8e6598f8faa1198e1b21e12e00f4aa3d671b920d",
+    "mixed_model.json": "28636e41e51df5b28dd9d201d6320f494b39c73e85e618b15ddd717309c607b8",
+    "shared_feature_models.json": "e6b2fd52cd420e67daf59e07dd1f926ffb97b14961d70627d4e8d57e760482d3"
+  }
+}

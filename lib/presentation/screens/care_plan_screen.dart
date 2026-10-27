@@ -372,7 +372,7 @@ class _CarePlanScreenState extends ConsumerState<CarePlanScreen> {
               letter: int.parse(section.id.substring(1)).toString(),
               title: section.title,
               icon: Icons.description_outlined,
-              accentColor: WhoTheme.secondaryTeal,
+              accentColor: _sectionColor(section.id),
               children: [
                 Text(
                   switch (section.status) {
@@ -394,7 +394,7 @@ class _CarePlanScreenState extends ConsumerState<CarePlanScreen> {
                     child: EvidenceCitationText(
                       text: item,
                       labels: plan.evidenceLabelMap,
-                      style: const TextStyle(fontSize: 14, height: 1.6),
+                      style: const TextStyle(fontSize: 15, height: 1.65),
                     ),
                   ),
               ],
@@ -651,6 +651,19 @@ class _CarePlanScreenState extends ConsumerState<CarePlanScreen> {
 // ─────────────────────────────────────────────────────────────────────────────
 // Trend chip — computed deterministically in Dart, correct even offline
 // ─────────────────────────────────────────────────────────────────────────────
+
+Color _sectionColor(String id) => switch (int.tryParse(id.substring(1))) {
+  5 => const Color(0xFF9A6700),
+  6 => const Color(0xFF047857),
+  7 => const Color(0xFF1D4ED8),
+  8 => const Color(0xFF7C3AED),
+  9 => const Color(0xFF0F766E),
+  10 => const Color(0xFFB42318),
+  11 => const Color(0xFF9A5A10),
+  12 => const Color(0xFF7E22CE),
+  13 => const Color(0xFF4338CA),
+  _ => const Color(0xFF334E68),
+};
 
 class _ParsedContraindication {
   final String? severity; // "CRITICAL" | "HIGH" | null if unparseable
@@ -993,7 +1006,10 @@ class _LetteredSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(color: accentColor.withValues(alpha: .25)),
+      ),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -1055,7 +1071,7 @@ class _LetteredSection extends StatelessWidget {
                   ),
               ],
             ),
-            const Divider(height: 20),
+            Divider(height: 24, color: accentColor.withValues(alpha: .25)),
             ...children,
           ],
         ),

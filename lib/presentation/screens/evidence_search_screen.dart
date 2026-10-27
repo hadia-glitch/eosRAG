@@ -6,6 +6,7 @@ import '../../core/theme.dart';
 import '../../core/widgets/offline_banner.dart';
 import '../../core/widgets/source_badge.dart';
 import '../../data/api/evidence_api.dart';
+import '../../core/widgets/clinical_text.dart';
 import '../../data/models/rag_chunk.dart';
 import '../../data/deidentify.dart';
 import '../../domain/eoscal_calculator.dart';
@@ -723,7 +724,7 @@ class _AiOverviewCard extends StatelessWidget {
             ),
           ],
           const SizedBox(height: 12),
-          Text(overview, style: const TextStyle(fontSize: 14, height: 1.65)),
+          ClinicalText(overview),
           const SizedBox(height: 8),
           Text(
             'AI-generated · verify against primary sources.',
@@ -1072,9 +1073,9 @@ class _SectionDetailSheet extends StatelessWidget {
                 // scrolls (ListView above), so the summary is fully
                 // readable without truncation while staying concise
                 // because the prompt itself asks for 2-4 sentences.
-                child: Text(
+                child: ClinicalText(
                   section.aiSummary,
-                  style: const TextStyle(fontSize: 14, height: 1.65),
+                  style: const TextStyle(fontSize: 15, height: 1.65),
                 ),
               ),
               const SizedBox(height: 20),

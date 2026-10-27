@@ -64,8 +64,12 @@ class WhoTheme {
           fontWeight: FontWeight.w600,
           color: neutralDarkGrey,
         ),
-        bodyLarge: TextStyle(fontSize: 16, color: neutralDarkGrey),
-        bodyMedium: TextStyle(fontSize: 14, color: neutralDarkGrey),
+        bodyLarge: TextStyle(fontSize: 16, height: 1.6, color: neutralDarkGrey),
+        bodyMedium: TextStyle(
+          fontSize: 15,
+          height: 1.6,
+          color: neutralDarkGrey,
+        ),
         labelLarge: TextStyle(
           fontSize: 14,
           fontWeight: FontWeight.bold,

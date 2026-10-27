@@ -1,0 +1,58 @@
+{
+  "seed": 20261027,
+  "source_synthetic": true,
+  "clinical_eos_eligible": false,
+  "target": "Synthetic Early-onset sepsis label versus Negative, with Late-onset cases excluded",
+  "development_rows_before_filter": 5000,
+  "development_rows_after_id_exclusion": 3000,
+  "fit_n": 1694,
+  "validation_n": 424,
+  "file_defined_test_n": 1446,
+  "fit_test_id_overlap": 0,
+  "maternal_perinatal_inputs": [
+    "gestational_age_weeks",
+    "birth_weight_kg",
+    "maternal_age",
+    "prom",
+    "maternal_infection",
+    "cesarean",
+    "apgar_1min",
+    "apgar_5min",
+    "resuscitation_needed"
+  ],
+  "concurrent_clinical_inputs": [
+    "fever",
+    "hypothermia",
+    "respiratory_distress",
+    "poor_feeding",
+    "lethargy",
+    "jaundice"
+  ],
+  "common_inputs": [
+    "gestational_age_weeks",
+    "birth_weight_kg",
+    "cesarean"
+  ],
+  "forbidden_as_predictors": [
+    "culture_confirmed",
+    "hospital_days",
+    "low_birth_weight",
+    "outcome",
+    "pathogen",
+    "patient_id",
+    "sepsis_onset",
+    "sepsis_probability_score",
+    "sepsis_status",
+    "very_low_birth_weight",
+    "young_mother"
+  ],
+  "laboratory_inputs_omitted": "Untimed WBC/CRP; no guessed unit alignment with old source.",
+  "stacking": "Five-fold out-of-fold base predictions on fit only; logistic meta-model; validation-only threshold targeting 90% sensitivity.",
+  "common_source_target_compatibility": "NOT ESTABLISHED: pooling is an explicitly hypothetical transfer stress test, not an approved combined cohort.",
+  "source_hashes": {
+    "development": "4dc0c7b24347f8094ee6d21905df04e137a87fe7c79cf06676bcca904b12dd22",
+    "test": "f22f123283fb3ef51438a5cef3667bb99e168cd9d17b07a814cfec308deccc7e",
+    "original_archive": "3974306e2df8091f070520939c04114965b23fdae1595420486dd9fdfd17d0e8"
+  },
+  "test_scope": "File-defined ID-disjoint synthetic holdout sharing source generation assumptions, not clinical external validation."
+}

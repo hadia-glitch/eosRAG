@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../data/models/rag_chunk.dart';
 import '../../presentation/screens/guideline_pdf_viewer_screen.dart';
+import 'clinical_text.dart';
 
 /// Matches bracketed evidence labels like `[E1]`, `[E12]` inside prose.
 final RegExp _evidenceLabelPattern = RegExp(r'\[(E\d+)\]');
@@ -44,19 +45,56 @@ class EvidenceCitationText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (text.isEmpty) return const SizedBox.shrink();
-    final baseStyle = style ?? DefaultTextStyle.of(context).style;
+    final baseStyle = style ?? const TextStyle(fontSize: 15, height: 1.6);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        for (final block in clinicalTextBlocks(text))
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                if (block.nested) const SizedBox(width: 14),
+                if (block.bullet)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 9),
+                    child: Text('•', style: baseStyle),
+                  ),
+                Expanded(
+                  child: _inline(
+                    context,
+                    block.text,
+                    baseStyle.copyWith(
+                      fontWeight: block.heading
+                          ? FontWeight.w700
+                          : baseStyle.fontWeight,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+      ],
+    );
+  }
 
+  Widget _inline(BuildContext context, String text, TextStyle baseStyle) {
     if (labels.isEmpty || !_evidenceLabelPattern.hasMatch(text)) {
       // Fast path: nothing to link — avoids building a RichText tree with
       // a single unstyled span for the (very common) case of no citations.
-      return Text(text, style: baseStyle, textAlign: textAlign);
+      return Text.rich(
+        TextSpan(children: clinicalInlineSpans(text)),
+        style: baseStyle,
+        textAlign: textAlign,
+      );
     }
 
     final spans = <InlineSpan>[];
     int last = 0;
     for (final match in _evidenceLabelPattern.allMatches(text)) {
       if (match.start > last) {
-        spans.add(TextSpan(text: text.substring(last, match.start)));
+        spans.addAll(clinicalInlineSpans(text.substring(last, match.start)));
       }
       final label = match.group(1)!;
       final ref = labels[label];
@@ -73,7 +111,7 @@ class EvidenceCitationText extends StatelessWidget {
       last = match.end;
     }
     if (last < text.length) {
-      spans.add(TextSpan(text: text.substring(last)));
+      spans.addAll(clinicalInlineSpans(text.substring(last)));
     }
 
     return Text.rich(
@@ -355,7 +393,7 @@ class _EvidenceCardContent extends StatelessWidget {
             ),
           ],
           const SizedBox(height: 8),
-          Text(
+          ClinicalText(
             ref.snippet.isNotEmpty
                 ? ref.snippet
                 : '(no excerpt available for this citation)',

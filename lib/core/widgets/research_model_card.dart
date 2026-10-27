@@ -6,6 +6,7 @@ import '../../data/api/api_client.dart';
 import '../../data/research_model_inputs.dart';
 import '../../domain/eoscal_calculator.dart';
 import '../../presentation/patient_state.dart';
+import 'shap_waterfall.dart';
 
 class ResearchModelCard extends ConsumerStatefulWidget {
   final PatientParameters patient;
@@ -180,14 +181,11 @@ class _ResearchModelCardState extends ConsumerState<ResearchModelCard> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const Text(
-          'Trained sepsis-label model',
+          'Sepsis model assessment',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 6),
-        const Chip(
-          label: Text('RESEARCH ONLY - CLINICAL EOS RISK NOT VALIDATED'),
-        ),
-        Text(widget.metadata['version'] as String? ?? ''),
+        const Chip(label: Text('Research model')),
         const SizedBox(height: 10),
         if (predicted) ...[
           Text(
@@ -196,48 +194,34 @@ class _ResearchModelCardState extends ConsumerState<ResearchModelCard> {
             ),
             style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
+          const Text('Research model score'),
+          const SizedBox(height: 8),
           const Text(
-            'Probability of the supplied dataset label, not clinical EOS risk.',
+            'This score does not confirm or exclude sepsis.',
+            style: TextStyle(fontWeight: FontWeight.w600, height: 1.5),
           ),
-          if (result['probability_details'] is Map) ...[
-            const SizedBox(height: 8),
-            Text(
-              'Raw model score: ${((result['probability_details']['raw_model_score'] as num) * 100).toStringAsFixed(4)}%. '
-              'The displayed dataset score follows a fitted calibration transform.',
-            ),
-            if (result['probability_details']['extreme_score'] == true)
-              const Text(
-                'Extreme dataset score: numerical saturation does not establish diagnostic certainty.',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-          ],
           if (_lastPayload != null)
             Text(
               'Reviewed assessment age: ${(_lastPayload!['age_hours'] as num).toStringAsFixed(2)} hours. This result belongs to that assessment.',
             ),
           Text(
-            'Unknown inputs: ${(result['missing_features'] as List).length} of 18. Imputation is shown below.',
+            'Measurements reviewed: 18. Unknown: ${(result['missing_features'] as List).length}.',
           ),
           const SizedBox(height: 10),
-          Text('Input effects: ${result['contribution_method']}'),
-          ...contributions
-              .take(6)
-              .map(
-                (c) => Text(
-                  '${c['feature']}: ${((c['contribution'] as num) * 100).toStringAsFixed(2)} percentage points',
-                ),
-              ),
+          if (result['shap'] is Map)
+            ShapWaterfall(
+              baseline: (result['shap']['baseline_probability'] as num)
+                  .toDouble(),
+              prediction: (result['probability'] as num).toDouble(),
+              contributions: contributions
+                  .map((c) => Map<String, dynamic>.from(c as Map))
+                  .toList(),
+            ),
         ] else if (result != null)
           const Text(
-            'Prediction withheld: inputs are outside model support.',
+            'A score is unavailable for these measurements. Review missing or out-of-range inputs.',
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
-        ...((result?['warnings'] as List?) ?? []).map(
-          (w) => Padding(
-            padding: const EdgeInsets.only(top: 8),
-            child: Text(w.toString()),
-          ),
-        ),
         if (_error != null)
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8),
@@ -245,10 +229,10 @@ class _ResearchModelCardState extends ConsumerState<ResearchModelCard> {
           ),
         const SizedBox(height: 10),
         Text(
-          'Development-matched missingness limit: ${widget.metadata['max_missing_predictors']} unknown measurements.',
+          'Up to ${widget.metadata['max_missing_predictors']} measurements may be marked unknown.',
         ),
         const Text(
-          'Review all 18 model fields before running. Undocumented dataset units are kept separate from clinical lab units. No antibiotic decision is generated.',
+          'Review the measurements and units before requesting a score.',
         ),
         const SizedBox(height: 10),
         if (_busy) const LinearProgressIndicator(),
@@ -361,7 +345,7 @@ class _ModelInputDialogState extends State<_ModelInputDialog> {
                   'Previously reviewed: ${widget.lastReview!.toLocal()}. Confirm measurements for this assessment; saved values are not new observations.',
                 ),
               const Text(
-                'Dataset laboratory units and numeric oxygen definition are undocumented. Do not substitute clinical laboratory values using guessed conversions. Leave unknown or enter values from a documented research source.',
+                'Use only documented units. If a unit mapping or measurement is unavailable, mark the input unknown; do not guess a conversion.',
               ),
               const SizedBox(height: 16),
               for (final f in widget.fields)
@@ -425,7 +409,9 @@ class _ModelInputDialogState extends State<_ModelInputDialog> {
           keyboardType: const TextInputType.numberWithOptions(decimal: true),
           decoration: InputDecoration(
             labelText: label,
-            helperText: field['unit'] as String,
+            helperText: (field['unit'] as String).contains('undocumented')
+                ? 'Unit mapping not verified'
+                : field['unit'] as String,
             helperMaxLines: 2,
             hintText: 'Measured value',
           ),
