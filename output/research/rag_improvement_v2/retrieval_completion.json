@@ -1,0 +1,89 @@
+{
+  "complete": false,
+  "groups": [
+    {
+      "guideline": "AAP",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "focused_hybrid",
+      "completed": 30,
+      "planned": 30
+    },
+    {
+      "guideline": "AAP",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "expanded_rrf_ce",
+      "completed": 30,
+      "planned": 30
+    },
+    {
+      "guideline": "AAP",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "expanded_rrf_ce_mmr",
+      "completed": 30,
+      "planned": 30
+    },
+    {
+      "guideline": "AAP",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "decomposed_rrf_ce_mmr",
+      "completed": 30,
+      "planned": 30
+    },
+    {
+      "guideline": "NICE",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "focused_hybrid",
+      "completed": 40,
+      "planned": 40
+    },
+    {
+      "guideline": "NICE",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "expanded_rrf_ce",
+      "completed": 40,
+      "planned": 40
+    },
+    {
+      "guideline": "NICE",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "expanded_rrf_ce_mmr",
+      "completed": 40,
+      "planned": 40
+    },
+    {
+      "guideline": "NICE",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "decomposed_rrf_ce_mmr",
+      "completed": 40,
+      "planned": 40
+    },
+    {
+      "guideline": "WHO",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "focused_hybrid",
+      "completed": 30,
+      "planned": 30
+    },
+    {
+      "guideline": "WHO",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "expanded_rrf_ce",
+      "completed": 30,
+      "planned": 30
+    },
+    {
+      "guideline": "WHO",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "expanded_rrf_ce_mmr",
+      "completed": 30,
+      "planned": 30
+    },
+    {
+      "guideline": "WHO",
+      "model": "sentence-transformers/all-MiniLM-L6-v2",
+      "variant": "decomposed_rrf_ce_mmr",
+      "completed": 30,
+      "planned": 30
+    }
+  ]
+}

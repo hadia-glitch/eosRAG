@@ -30,3 +30,21 @@ backend/scripts/check_expanded_integrity.py -text -whitespace
 scripts/update_expanded_paper.py -text -whitespace
 
 scripts/render_paper.py -text -whitespace
+
+backend/rag/*.py -text -whitespace
+
+backend/scripts/*.py -text -whitespace
+
+docs/research/*.md -text -whitespace
+
+backend/rag/evidence_policy.py -text -whitespace
+
+backend/rag/production_retrieval.py -text -whitespace
+
+backend/services/clinical_pipeline.py -text -whitespace
+
+backend/schemas.py -text -whitespace
+
+lib/data/deidentify.dart -text -whitespace
+
+lib/presentation/patient_state.dart -text -whitespace

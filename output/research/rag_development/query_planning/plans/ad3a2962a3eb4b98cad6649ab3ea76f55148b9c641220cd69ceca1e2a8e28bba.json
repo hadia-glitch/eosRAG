@@ -1,0 +1,27 @@
+{
+  "source": "NICE",
+  "query": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+  "available": true,
+  "questions": [
+    "Does a decreasing C-reactive protein level alone rule out infection in early-onset neonatal sepsis?",
+    "Can a falling C-reactive protein be used as the sole criterion to stop antibiotics in neonates with suspected early-onset sepsis?"
+  ],
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "4af5c689424f9a22692a066bc790a13e09e1e304c21495caf42a0fd118ca1206",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"NICE\", \"question\": \"Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "Does a decreasing C-reactive protein level alone rule out infection in early-onset neonatal sepsis?",
+          "Can a falling C-reactive protein be used as the sole criterion to stop antibiotics in neonates with suspected early-onset sepsis?"
+        ]
+      },
+      "seconds": 2.576327200004016
+    }
+  ],
+  "stage": "development_only"
+}

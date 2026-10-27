@@ -1,0 +1,31 @@
+{
+  "id": "initial_investigation-2",
+  "guideline": "NICE",
+  "model": "intfloat/e5-small-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "NICE-1.13.2",
+      "NICE-1.35.2",
+      "NICE-1.15.4",
+      "NICE-1.14.8"
+    ],
+    "expanded_rrf_ce": [
+      "NICE-1.13.2",
+      "NICE-1.14.8",
+      "NICE-1.14.5",
+      "NICE-1.10.4"
+    ],
+    "expanded_rrf_ce_mmr": [
+      "NICE-1.13.2",
+      "NICE-1.2.2",
+      "NICE-1.18.1",
+      "NICE-1.38.4"
+    ],
+    "decomposed_rrf_ce_mmr": [
+      "NICE-1.13.2",
+      "NICE-1.2.2",
+      "NICE-1.18.1",
+      "NICE-1.38.4"
+    ]
+  }
+}

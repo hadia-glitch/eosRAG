@@ -1,0 +1,26 @@
+{
+  "source": "NICE",
+  "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness.",
+  "available": false,
+  "questions": [
+    "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness."
+  ],
+  "completed_contract_error": "ValueError",
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "939ba989bafff9b20e8651572fe5b3b345116fa643a3306aaeee2ad4597166ae",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"NICE\", \"question\": \"Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "In neonates with early\u2011onset sepsis, what investigations are recommended when the respiratory rate rises and oxygen saturation falls during serial examinations?",
+          "What immediate management actions should be taken for an infant developing signs of illness, such as increasing respiratory rate and decreasing oxygen saturation, within the first 72 hours of life?"
+        ]
+      },
+      "seconds": 2.379617899998266
+    }
+  ]
+}

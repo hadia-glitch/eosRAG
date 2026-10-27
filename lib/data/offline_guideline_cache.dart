@@ -52,21 +52,15 @@ class OfflineGuidelineCache {
         await prefs.setString(_dataKey, jsonEncode(existing));
       }
 
-      final syncedAt =
-          data['synced_at'] as String? ??
-          DateTime.now().toUtc().toIso8601String();
+      final syncedAt = data['synced_at'] as String? ?? DateTime.now().toUtc().toIso8601String();
       await prefs.setString(_lastSyncKey, syncedAt);
       developer.log(
         '[OfflineGuidelineCache] Synced ${rows.length} updated row(s), total cached=${(await _loadRaw(prefs)).length}',
         name: 'OfflineGuidelineCache',
       );
     } catch (e, st) {
-      developer.log(
-        '[OfflineGuidelineCache] Sync failed (non-fatal): $e',
-        name: 'OfflineGuidelineCache',
-        error: e,
-        stackTrace: st,
-      );
+      developer.log('[OfflineGuidelineCache] Sync failed (non-fatal): $e',
+          name: 'OfflineGuidelineCache', error: e, stackTrace: st);
     }
   }
 
@@ -84,10 +78,7 @@ class OfflineGuidelineCache {
   /// or null if that combination has never been synced (e.g. first app
   /// launch with no connectivity yet, or a local guideline that hasn't
   /// finished its first synthesis on the backend).
-  static Future<Map<String, dynamic>?> getProtocol(
-    String guideline,
-    String category,
-  ) async {
+  static Future<Map<String, dynamic>?> getProtocol(String guideline, String category) async {
     final prefs = await SharedPreferences.getInstance();
     final raw = await _loadRaw(prefs);
     final key = '${guideline.toUpperCase()}_${category.toUpperCase()}';

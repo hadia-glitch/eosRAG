@@ -203,3 +203,19 @@ For mixed-population guidelines, patient-specific passages additionally need
 reviewed onset-scope metadata: population early_onset_neonatal or
 neonatal_all_onset, scope_reviewed_by and scope_reviewed_at. Document-level
 approval alone does not admit late-onset or unreviewed mixed-scope passages.
+
+Mixed-source passages also require `metadata.scope` with explicit two-element
+`gestational_age_weeks` and `postnatal_age_hours` bounds (null denotes an
+unbounded endpoint), plus an allowlisted `care_setting` list. Those passage
+bounds are checked in addition to document limits; an exclusively post-72-hour
+passage cannot enter EOS retrieval even through evidence search. Old clients
+must supply the recorded care setting for mixed-source patient retrieval.
+The Flutter de-identification adapter now supplies it separately from ML inputs.
+
+Migration 009 pins pgvector search to the encoder identity, and adds a
+heading-aware lexical index. It has not been applied to a hosted database.
+Applying it and re-embedding alone does not approve a clinical source or prove
+that the deployed chunker matches the complete recommendation corpus used in
+development. Reconcile those index boundaries before attributing development
+metrics to the hosted app. See `research/final_evaluation_gate.md` for the current
+hold: final evaluation and clinical readiness are not established.

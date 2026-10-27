@@ -1,0 +1,27 @@
+{
+  "source": "WHO",
+  "query": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant?",
+  "available": true,
+  "questions": [
+    "Does the WHO guideline provide a validated maternal\u2011risk scoring system for early\u2011onset neonatal sepsis in infants with maternal Group B Streptococcus colonisation and no IMCI illness signs?",
+    "Is there a WHO\u2011endorsed gestational\u2011age based risk score for assessing early\u2011onset neonatal sepsis in well newborns with maternal GBS history?"
+  ],
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "79d630bd12a7916af93fdfa643daaf39e9a983805e754713d8d798fed22fc305",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"WHO\", \"question\": \"A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant?\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "Does the WHO guideline provide a validated maternal\u2011risk scoring system for early\u2011onset neonatal sepsis in infants with maternal Group B Streptococcus colonisation and no IMCI illness signs?",
+          "Is there a WHO\u2011endorsed gestational\u2011age based risk score for assessing early\u2011onset neonatal sepsis in well newborns with maternal GBS history?"
+        ]
+      },
+      "seconds": 2.147397600005206
+    }
+  ],
+  "stage": "development_only"
+}

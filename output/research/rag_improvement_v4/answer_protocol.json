@@ -1,0 +1,18 @@
+{
+  "planned_cases": 100,
+  "model": "openai/gpt-oss-120b",
+  "retrieval": "frozen v3 MiniLM rrf_ce_mmr_guarded",
+  "change": "Exact evaluation question and task mode are supplied to both independent auditors.",
+  "design": "Post-hoc development. Earlier pilot decisions retained separately; no untouched-test claim.",
+  "clinical_review": "pending",
+  "max_repairs": 1,
+  "strict_schema": true,
+  "code_sha256": {
+    "backend/rag/verification_v4.py": "08a3f811070b210482bc7d03cb41e12ed71847df837d1ae0347cc45a40f138d9",
+    "backend/rag/verification_v3.py": "f351c5b7994f9ff8e261275afd06a6887240357cca6feac17b49554c34a8d5eb",
+    "backend/rag/verification_v2.py": "5233b42c3b924d2831ff075db222d558b85424e49afb91b62f5b22caeaf914c7",
+    "backend/rag/verification_graph.py": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c",
+    "backend/rag/source_answer.py": "aa9cd9b16eb35986a2c4c6fce270b4739d574c88303533810c0d0d073e5ed2ec",
+    "backend/scripts/evaluate_task_aware_answers.py": "8b3a2dfcc968c1e0d1f1033f7c6f0d59d928367cffdda8101a40e062f9f52a1f"
+  }
+}

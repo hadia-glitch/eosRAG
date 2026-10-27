@@ -1,0 +1,413 @@
+{
+  "id": "initial_investigation-1",
+  "family": "initial_investigation",
+  "model": "openai/gpt-oss-120b",
+  "packet": {
+    "guideline": "NICE NG195; EVALUATION ONLY",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+    "evidence": [
+      {
+        "id": "E1",
+        "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+        "chunk_id": "NICE-1.13.2",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 21
+      },
+      {
+        "id": "E2",
+        "text": "Get specialist radiological advice on investigations for a cerebrospinal fluid leak. [2024]",
+        "chunk_id": "NICE-1.34.4",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 43
+      },
+      {
+        "id": "E3",
+        "text": "Provide emotional and pastoral support for family members and carers during hospitalisation. [2024]",
+        "chunk_id": "NICE-1.3.3",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 6
+      },
+      {
+        "id": "E4",
+        "text": "Community child development services should follow up and assess the risk of long-term neurodevelopmental complications for at least 2 years after discharge. [2024]",
+        "chunk_id": "NICE-1.33.5",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 41
+      }
+    ]
+  },
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "42cdcdfb1f0aae06a68f5851aaca346461e6dce310788395e4b73589614e573e",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements. Answer only the evaluation question in three to five atomic claims when evidence permits; fewer are allowed. Do not pad to six claims or fill unrelated monitoring, treatment or escalation headings. Do not turn study descriptions into clinical recommendations. If evidence cannot answer a subquestion, state the evidence gap outside the claims rather than inventing clinical instructions.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"Explain baseline investigations and how subsequent inflammatory-marker readings should be used.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"NICE-1.13.2\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 21, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"Use this together with any subsequent readings to assess the likelihood of infection and response to treatment.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"NICE-1.34.4\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 43, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Get specialist radiological advice on investigations for a cerebrospinal fluid leak.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"NICE-1.3.3\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 6, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"Provide emotional and pastoral support for family members and carers during hospitalisation.\"}]}, {\"id\": \"E4\", \"chunk_id\": \"NICE-1.33.5\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 41, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"Community child development services should follow up and assess the risk of long-term neurodevelopmental complications for at least 2 years after discharge.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "investigations",
+            "text": "Obtain a baseline C\u2011reactive protein (CRP) measurement at the time antibiotics are started in any neonate being evaluated for early\u2011onset sepsis.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "antibiotic_review",
+            "text": "Interpret serial CRP results together with the initial value to gauge the probability of infection and to monitor response to therapy; falling values suggest a favorable response, whereas persistently high or rising values may indicate ongoing infection.",
+            "support": [
+              {
+                "quote_id": "E1Q2"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 14.252537100001064
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "1186012e9c08b6ae1a0ca5b5dae1be8192940fa1d60f9dd52fffc32bc5bdae40",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Get specialist radiological advice on investigations for a cerebrospinal fluid leak. [2024]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Provide emotional and pastoral support for family members and carers during hospitalisation. [2024]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Community child development services should follow up and assess the risk of long-term neurodevelopmental complications for at least 2 years after discharge. [2024]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"investigations\", \"text\": \"Obtain a baseline C\\u2011reactive protein (CRP) measurement at the time antibiotics are started in any neonate being evaluated for early\\u2011onset sepsis.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"antibiotic_review\", \"text\": \"Interpret serial CRP results together with the initial value to gauge the probability of infection and to monitor response to therapy; falling values suggest a favorable response, whereas persistently high or rising values may indicate ongoing infection.\", \"support\": [{\"evidence_id\": \"E1\"}]}], \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"supported\": {\"title\": \"Supported\", \"type\": \"boolean\"}, \"rejected_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Rejected Claim Ids\", \"type\": \"array\"}, \"checked_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Checked Claim Ids\", \"type\": \"array\"}, \"reasons\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Reasons\", \"type\": \"array\"}}, \"required\": [\"supported\", \"rejected_claim_ids\", \"checked_claim_ids\", \"reasons\"], \"title\": \"Verdict\", \"type\": \"object\"}, \"required_checked_claim_ids\": [\"C1\", \"C2\"], \"response_contract\": \"Return supported as a JSON boolean, checked_claim_ids as an array containing every reviewed ID exactly once, rejected_claim_ids as an array of failed IDs, and reasons as an ARRAY OF STRINGS, never an object keyed by claim. Do not assume an unreviewed claim passes. Reasons must explain failures only. A conditional statement does not establish that its patient eligibility criteria have been met.\"}",
+      "completion_tokens": 2400,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 8.950661499999114
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "1186012e9c08b6ae1a0ca5b5dae1be8192940fa1d60f9dd52fffc32bc5bdae40",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Get specialist radiological advice on investigations for a cerebrospinal fluid leak. [2024]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Provide emotional and pastoral support for family members and carers during hospitalisation. [2024]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Community child development services should follow up and assess the risk of long-term neurodevelopmental complications for at least 2 years after discharge. [2024]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"investigations\", \"text\": \"Obtain a baseline C\\u2011reactive protein (CRP) measurement at the time antibiotics are started in any neonate being evaluated for early\\u2011onset sepsis.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"antibiotic_review\", \"text\": \"Interpret serial CRP results together with the initial value to gauge the probability of infection and to monitor response to therapy; falling values suggest a favorable response, whereas persistently high or rising values may indicate ongoing infection.\", \"support\": [{\"evidence_id\": \"E1\"}]}], \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"supported\": {\"title\": \"Supported\", \"type\": \"boolean\"}, \"rejected_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Rejected Claim Ids\", \"type\": \"array\"}, \"checked_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Checked Claim Ids\", \"type\": \"array\"}, \"reasons\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Reasons\", \"type\": \"array\"}}, \"required\": [\"supported\", \"rejected_claim_ids\", \"checked_claim_ids\", \"reasons\"], \"title\": \"Verdict\", \"type\": \"object\"}, \"required_checked_claim_ids\": [\"C1\", \"C2\"], \"response_contract\": \"Return supported as a JSON boolean, checked_claim_ids as an array containing every reviewed ID exactly once, rejected_claim_ids as an array of failed IDs, and reasons as an ARRAY OF STRINGS, never an object keyed by claim. Do not assume an unreviewed claim passes. Reasons must explain failures only. A conditional statement does not establish that its patient eligibility criteria have been met.\"}",
+      "completion_tokens": 2400,
+      "response": {
+        "supported": false,
+        "checked_claim_ids": [
+          "C1",
+          "C2"
+        ],
+        "rejected_claim_ids": [
+          "C2"
+        ],
+        "reasons": [
+          "C2 adds interpretation details (falling values suggest favorable response, persistently high or rising values indicate ongoing infection) not stated in the cited evidence E1, which only says CRP should be used with subsequent readings to assess likelihood and response."
+        ]
+      },
+      "seconds": 27.95320169999468
+    },
+    {
+      "role": "You are the source-grounded resolution agent.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "ac4e273b67fe64366c3900f3f93ced9f85484dea10d6850efbc91ba03b541051",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Revise this discussion draft once using the unchanged source packet and the reviewer findings. Correct or remove unsupported inferences and wrong population claims. Preserve required conditions and explicit unknowns. Do not invent facts or doses. Select existing immutable quote IDs. Do not claim a reviewer approved the revision; fresh audits will decide release.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"Explain baseline investigations and how subsequent inflammatory-marker readings should be used.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"NICE-1.13.2\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 21, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"Use this together with any subsequent readings to assess the likelihood of infection and response to treatment.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"NICE-1.34.4\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 43, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Get specialist radiological advice on investigations for a cerebrospinal fluid leak.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"NICE-1.3.3\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 6, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"Provide emotional and pastoral support for family members and carers during hospitalisation.\"}]}, {\"id\": \"E4\", \"chunk_id\": \"NICE-1.33.5\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 41, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"Community child development services should follow up and assess the risk of long-term neurodevelopmental complications for at least 2 years after discharge.\"}]}]}, \"previous_claims\": [{\"id\": \"C1\", \"section\": \"investigations\", \"text\": \"Obtain a baseline C\\u2011reactive protein (CRP) measurement at the time antibiotics are started in any neonate being evaluated for early\\u2011onset sepsis.\"}, {\"id\": \"C2\", \"section\": \"antibiotic_review\", \"text\": \"Interpret serial CRP results together with the initial value to gauge the probability of infection and to monitor response to therapy; falling values suggest a favorable response, whereas persistently high or rising values may indicate ongoing infection.\"}], \"reviewer_findings\": {\"evidence_verdict\": {\"supported\": true, \"rejected_claim_ids\": [], \"checked_claim_ids\": [\"C1\", \"C2\"], \"reasons\": []}, \"safety_verdict\": {\"supported\": false, \"rejected_claim_ids\": [\"C2\"], \"checked_claim_ids\": [\"C1\", \"C2\"], \"reasons\": [\"C2 adds interpretation details (falling values suggest favorable response, persistently high or rising values indicate ongoing infection) not stated in the cited evidence E1, which only says CRP should be used with subsequent readings to assess likelihood and response.\"]}}}",
+      "completion_tokens": 2200,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "investigations",
+            "text": "Obtain a baseline C\u2011reactive protein (CRP) measurement at the time antibiotics are started in any neonate being evaluated for early\u2011onset sepsis.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "antibiotic_review",
+            "text": "Use subsequent CRP readings together with the baseline measurement to assess the likelihood of infection and response to treatment.",
+            "support": [
+              {
+                "quote_id": "E1Q2"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 5.182903200002329
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "7c85719664c175ffeda87e36a052f29b0ba9e3d299694a414c46dda9c34ce925",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Get specialist radiological advice on investigations for a cerebrospinal fluid leak. [2024]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Provide emotional and pastoral support for family members and carers during hospitalisation. [2024]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Community child development services should follow up and assess the risk of long-term neurodevelopmental complications for at least 2 years after discharge. [2024]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"investigations\", \"text\": \"Obtain a baseline C\\u2011reactive protein (CRP) measurement at the time antibiotics are started in any neonate being evaluated for early\\u2011onset sepsis.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"antibiotic_review\", \"text\": \"Use subsequent CRP readings together with the baseline measurement to assess the likelihood of infection and response to treatment.\", \"support\": [{\"evidence_id\": \"E1\"}]}], \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"supported\": {\"title\": \"Supported\", \"type\": \"boolean\"}, \"rejected_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Rejected Claim Ids\", \"type\": \"array\"}, \"checked_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Checked Claim Ids\", \"type\": \"array\"}, \"reasons\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Reasons\", \"type\": \"array\"}}, \"required\": [\"supported\", \"rejected_claim_ids\", \"checked_claim_ids\", \"reasons\"], \"title\": \"Verdict\", \"type\": \"object\"}, \"required_checked_claim_ids\": [\"C1\", \"C2\"], \"response_contract\": \"Return supported as a JSON boolean, checked_claim_ids as an array containing every reviewed ID exactly once, rejected_claim_ids as an array of failed IDs, and reasons as an ARRAY OF STRINGS, never an object keyed by claim. Do not assume an unreviewed claim passes. Reasons must explain failures only. A conditional statement does not establish that its patient eligibility criteria have been met.\"}",
+      "completion_tokens": 2400,
+      "error_code": "http_429",
+      "provider_message": "Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01ky7qtx8mfgf9peb7sh9eat6b` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199316, Requested 1910. Please try again in 8m49.631999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
+      "seconds": 6.84457829999883
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "7c85719664c175ffeda87e36a052f29b0ba9e3d299694a414c46dda9c34ce925",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Get specialist radiological advice on investigations for a cerebrospinal fluid leak. [2024]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Provide emotional and pastoral support for family members and carers during hospitalisation. [2024]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Community child development services should follow up and assess the risk of long-term neurodevelopmental complications for at least 2 years after discharge. [2024]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"investigations\", \"text\": \"Obtain a baseline C\\u2011reactive protein (CRP) measurement at the time antibiotics are started in any neonate being evaluated for early\\u2011onset sepsis.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"antibiotic_review\", \"text\": \"Use subsequent CRP readings together with the baseline measurement to assess the likelihood of infection and response to treatment.\", \"support\": [{\"evidence_id\": \"E1\"}]}], \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"supported\": {\"title\": \"Supported\", \"type\": \"boolean\"}, \"rejected_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Rejected Claim Ids\", \"type\": \"array\"}, \"checked_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Checked Claim Ids\", \"type\": \"array\"}, \"reasons\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Reasons\", \"type\": \"array\"}}, \"required\": [\"supported\", \"rejected_claim_ids\", \"checked_claim_ids\", \"reasons\"], \"title\": \"Verdict\", \"type\": \"object\"}, \"required_checked_claim_ids\": [\"C1\", \"C2\"], \"response_contract\": \"Return supported as a JSON boolean, checked_claim_ids as an array containing every reviewed ID exactly once, rejected_claim_ids as an array of failed IDs, and reasons as an ARRAY OF STRINGS, never an object keyed by claim. Do not assume an unreviewed claim passes. Reasons must explain failures only. A conditional statement does not establish that its patient eligibility criteria have been met.\"}",
+      "completion_tokens": 2400,
+      "error_code": "http_429",
+      "provider_message": "Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01ky7qtx8mfgf9peb7sh9eat6b` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199315, Requested 1893. Please try again in 8m41.856s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
+      "seconds": 6.8823397000014666
+    }
+  ],
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195; EVALUATION ONLY",
+      "patient": {
+        "age_hours": 12,
+        "gestational_age_weeks": 35,
+        "care_setting": "hospital",
+        "respiratory_rate": 48,
+        "spo2": 97,
+        "crp": 4,
+        "culture_status": "unknown",
+        "red_flags": "not fully documented",
+        "maternal_gbs": "unknown"
+      },
+      "history": [
+        {
+          "age_hours": 3,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 14
+        },
+        {
+          "age_hours": 6,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+      "evidence": [
+        {
+          "id": "E1",
+          "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+          "chunk_id": "NICE-1.13.2",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 21
+        },
+        {
+          "id": "E2",
+          "text": "Get specialist radiological advice on investigations for a cerebrospinal fluid leak. [2024]",
+          "chunk_id": "NICE-1.34.4",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 43
+        },
+        {
+          "id": "E3",
+          "text": "Provide emotional and pastoral support for family members and carers during hospitalisation. [2024]",
+          "chunk_id": "NICE-1.3.3",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 6
+        },
+        {
+          "id": "E4",
+          "text": "Community child development services should follow up and assess the risk of long-term neurodevelopmental complications for at least 2 years after discharge. [2024]",
+          "chunk_id": "NICE-1.33.5",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 41
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "investigations",
+          "text": "Obtain a baseline C\u2011reactive protein (CRP) measurement at the time antibiotics are started in any neonate being evaluated for early\u2011onset sepsis.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "antibiotic_review",
+          "text": "Use subsequent CRP readings together with the baseline measurement to assess the likelihood of infection and response to treatment.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Use this together with any subsequent readings to assess the likelihood of infection and response to treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Verifier unavailable"
+      ],
+      "error_code": "http_429"
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Verifier unavailable"
+      ],
+      "error_code": "http_429"
+    },
+    "status": "abstained",
+    "errors": [
+      "Verifier unavailable",
+      "Verifier unavailable"
+    ],
+    "resolved_draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "investigations",
+          "text": "Obtain a baseline C\u2011reactive protein (CRP) measurement at the time antibiotics are started in any neonate being evaluated for early\u2011onset sepsis.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "antibiotic_review",
+          "text": "Use subsequent CRP readings together with the baseline measurement to assess the likelihood of infection and response to treatment.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Use this together with any subsequent readings to assess the likelihood of infection and response to treatment."
+            }
+          ]
+        }
+      ]
+    },
+    "resolution_trace": [
+      {
+        "draft": {
+          "claims": [
+            {
+              "id": "C1",
+              "section": "investigations",
+              "text": "Obtain a baseline C\u2011reactive protein (CRP) measurement at the time antibiotics are started in any neonate being evaluated for early\u2011onset sepsis.",
+              "support": [
+                {
+                  "evidence_id": "E1",
+                  "quote": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection."
+                }
+              ]
+            },
+            {
+              "id": "C2",
+              "section": "antibiotic_review",
+              "text": "Interpret serial CRP results together with the initial value to gauge the probability of infection and to monitor response to therapy; falling values suggest a favorable response, whereas persistently high or rising values may indicate ongoing infection.",
+              "support": [
+                {
+                  "evidence_id": "E1",
+                  "quote": "Use this together with any subsequent readings to assess the likelihood of infection and response to treatment."
+                }
+              ]
+            }
+          ]
+        },
+        "evidence_verdict": {
+          "supported": true,
+          "rejected_claim_ids": [],
+          "checked_claim_ids": [
+            "C1",
+            "C2"
+          ],
+          "reasons": []
+        },
+        "safety_verdict": {
+          "supported": false,
+          "rejected_claim_ids": [
+            "C2"
+          ],
+          "checked_claim_ids": [
+            "C1",
+            "C2"
+          ],
+          "reasons": [
+            "C2 adds interpretation details (falling values suggest favorable response, persistently high or rising values indicate ongoing infection) not stated in the cited evidence E1, which only says CRP should be used with subsequent readings to assess likelihood and response."
+          ]
+        },
+        "status": "abstained",
+        "errors": [
+          "C2 adds interpretation details (falling values suggest favorable response, persistently high or rising values indicate ongoing infection) not stated in the cited evidence E1, which only says CRP should be used with subsequent readings to assess likelihood and response."
+        ]
+      }
+    ],
+    "resolution_log": [
+      "One source-grounded revision attempted after completed reviewer dissent.",
+      "Both auditors independently rechecked every revised claim. Final status: abstained."
+    ],
+    "packet_sha256": "bb03be0ce12bad90ac5ddd3737b57c80c82c8392f01535d13dc78856e14c7cbf",
+    "verification_version": "explicit-audit-contract-v2"
+  },
+  "seconds": 54.88495749999856,
+  "settings": {
+    "strict_schema": true,
+    "repairs": 1,
+    "budget": 120,
+    "auditor_tokens": 2400,
+    "temperature": 0
+  },
+  "code_sha256": {
+    "backend/rag/verification_v2.py": "5233b42c3b924d2831ff075db222d558b85424e49afb91b62f5b22caeaf914c7",
+    "backend/rag/verification_graph.py": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+  }
+}

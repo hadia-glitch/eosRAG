@@ -1,0 +1,48 @@
+{
+  "id": "aap-expanded-incomplete_stop-03",
+  "guideline": "AAP",
+  "family": "incomplete_stop",
+  "stage": "development_only",
+  "rankings": {
+    "4": [
+      "AAP2018-35PLUS-SP6",
+      "AAP2018-35PLUS-P6-STOP",
+      "AAP2018-35PLUS-P5-B3",
+      "AAP2018-35PLUS-P6-B2"
+    ],
+    "8": [
+      "AAP2018-35PLUS-SP6",
+      "AAP2018-35PLUS-P6-STOP",
+      "AAP2018-35PLUS-P5-B3",
+      "AAP2018-35PLUS-P6-B2",
+      "AAP2018-35PLUS-P5-B5",
+      "AAP2018-35PLUS-P6-B10",
+      "AAP2018-35PLUS-P5-B8",
+      "AAP2018-35PLUS-P4-B0"
+    ]
+  },
+  "definition_context_ids": {
+    "4": [],
+    "8": []
+  },
+  "available": true,
+  "listwise_empty": false,
+  "candidate_ids": [
+    "AAP2018-35PLUS-SP6",
+    "AAP2018-35PLUS-P6-STOP",
+    "AAP2018-35PLUS-P5-B5",
+    "AAP2018-35PLUS-P5-B3",
+    "AAP2018-35PLUS-P6-B10",
+    "AAP2018-35PLUS-P5-B8",
+    "AAP2018-35PLUS-P4-B0",
+    "AAP2018-35PLUS-P5-B9",
+    "AAP2018-35PLUS-SP5",
+    "AAP2018-35PLUS-P4-B9",
+    "AAP2018-35PLUS-P4-B5",
+    "AAP2018-35PLUS-P6-B2",
+    "AAP2018-35PLUS-SP2",
+    "AAP2018-35PLUS-P6-B14",
+    "AAP2018-35PLUS-P4-B7",
+    "AAP2018-35PLUS-P3-B13"
+  ]
+}

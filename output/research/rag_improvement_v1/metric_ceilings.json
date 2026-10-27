@@ -1,0 +1,42 @@
+[
+  {
+    "guideline": "NICE",
+    "n": 40,
+    "gold_passages": 107,
+    "precision_at_4_ceiling": 0.66875,
+    "recall_at_4_ceiling": 1.0,
+    "f1_at_4_ceiling": 0.7952380952380953,
+    "mrr_at_4_ceiling": 1.0,
+    "ndcg_at_4_ceiling": 1.0
+  },
+  {
+    "guideline": "AAP",
+    "n": 30,
+    "gold_passages": 60,
+    "precision_at_4_ceiling": 0.5,
+    "recall_at_4_ceiling": 1.0,
+    "f1_at_4_ceiling": 0.6666666666666669,
+    "mrr_at_4_ceiling": 1.0,
+    "ndcg_at_4_ceiling": 1.0
+  },
+  {
+    "guideline": "WHO",
+    "n": 30,
+    "gold_passages": 60,
+    "precision_at_4_ceiling": 0.5,
+    "recall_at_4_ceiling": 1.0,
+    "f1_at_4_ceiling": 0.6666666666666669,
+    "mrr_at_4_ceiling": 1.0,
+    "ndcg_at_4_ceiling": 1.0
+  },
+  {
+    "guideline": "ALL",
+    "n": 100,
+    "gold_passages": 227,
+    "precision_at_4_ceiling": 0.5675,
+    "recall_at_4_ceiling": 1.0,
+    "f1_at_4_ceiling": 0.7180952380952383,
+    "mrr_at_4_ceiling": 1.0,
+    "ndcg_at_4_ceiling": 1.0
+  }
+]

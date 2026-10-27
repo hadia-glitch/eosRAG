@@ -1,0 +1,80 @@
+{
+  "id": "aap-expanded-single_risk-05",
+  "guideline": "AAP",
+  "family": "single_risk",
+  "rankings": {
+    "bge_only": {
+      "4": [
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B9"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-SP2"
+      ]
+    },
+    "bge_upstream_rrf_mmr": {
+      "4": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B9"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B5"
+      ]
+    },
+    "bge_consensus_rrf_mmr": {
+      "4": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P3-B7",
+        "AAP2018-35PLUS-P4-B7"
+      ]
+    }
+  },
+  "candidate_ids": [
+    "AAP2018-35PLUS-P3-B11",
+    "AAP2018-35PLUS-P3-B10",
+    "AAP2018-35PLUS-P3-B9",
+    "AAP2018-35PLUS-SP2",
+    "AAP2018-35PLUS-P4-B0",
+    "AAP2018-35PLUS-P4-B1",
+    "AAP2018-35PLUS-P4-B9",
+    "AAP2018-35PLUS-P4-B5",
+    "AAP2018-35PLUS-SP3",
+    "AAP2018-35PLUS-P3-B13",
+    "AAP2018-35PLUS-P4-B3",
+    "AAP2018-35PLUS-P6-B14",
+    "AAP2018-35PLUS-P4-B7",
+    "AAP2018-35PLUS-P3-B7",
+    "AAP2018-35PLUS-P4-B6"
+  ],
+  "stage": "development_only",
+  "new_groq_calls": 0
+}

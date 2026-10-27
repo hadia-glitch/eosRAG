@@ -1,0 +1,9 @@
+{
+  "status": "stopped",
+  "reason": "User requires demonstrably adequate development results before final evaluation.",
+  "final_evaluation_allowed": false,
+  "saved_completed_cases": 3,
+  "planned_cases_in_original_protocol": 100,
+  "policy": "Preserve completed cases and original protocol. Do not treat the stopped run as a completed final evaluation.",
+  "next_stage": "Retrieval and safety development; balanced usability pilot remains unmeasured."
+}

@@ -57,9 +57,7 @@ class RagService {
   // ── Query term builder ─────────────────────────────────────────────────────
 
   static Set<String> _buildQueryTerms(
-    PatientParameters patient,
-    EoscalResult result,
-  ) {
+      PatientParameters patient, EoscalResult result) {
     final terms = <String>{};
 
     // Layer 1: Maternal
@@ -70,13 +68,7 @@ class RagService {
       terms.addAll(['rom', 'rupture', 'membranes', 'prolonged', 'prom']);
     }
     if (patient.gbsPositive) {
-      terms.addAll([
-        'gbs',
-        'streptococcus',
-        'prophylaxis',
-        'iap',
-        'penicillin',
-      ]);
+      terms.addAll(['gbs', 'streptococcus', 'prophylaxis', 'iap', 'penicillin']);
     }
     if (!patient.adequateIntrapartumAntibiotics && patient.gbsPositive) {
       terms.addAll(['inadequate', 'antibiotics', 'prophylaxis']);
@@ -87,15 +79,8 @@ class RagService {
 
     // Layer 2: Clinical
     if (patient.respiratoryDistress != 'None') {
-      terms.addAll([
-        'respiratory',
-        'distress',
-        'breathing',
-        'tachypnea',
-        'grunting',
-        'retracting',
-        'cpap',
-      ]);
+      terms.addAll(['respiratory', 'distress', 'breathing', 'tachypnea',
+          'grunting', 'retracting', 'cpap']);
     }
     if (patient.oxygenNeed != 'None') {
       terms.addAll(['oxygen', 'ventilation', 'supportive', 'cpap']);
@@ -104,13 +89,7 @@ class RagService {
       terms.addAll(['apgar', 'resuscitation', 'depression']);
     }
     if (patient.poorPerfusion) {
-      terms.addAll([
-        'perfusion',
-        'shock',
-        'capillary',
-        'refill',
-        'hypotension',
-      ]);
+      terms.addAll(['perfusion', 'shock', 'capillary', 'refill', 'hypotension']);
     }
     if (patient.neonatalTemperature < 36.0) {
       terms.addAll(['hypothermia', 'temperature', 'thermal']);
@@ -147,13 +126,7 @@ class RagService {
     // Always include treatment terms if any risk
     final anyRisk = result.totalScore >= 2;
     if (anyRisk) {
-      terms.addAll([
-        'antibiotics',
-        'treatment',
-        'empiric',
-        'gentamicin',
-        'management',
-      ]);
+      terms.addAll(['antibiotics', 'treatment', 'empiric', 'gentamicin', 'management']);
     }
 
     // Monitoring always relevant
@@ -199,35 +172,17 @@ class RagService {
     if (result.layer1Score >= result.layer2Score &&
         result.layer1Score >= result.layer3Score) {
       // Maternal risk dominant
-      if (_chunkIsAbout(chunk, [
-        'maternal',
-        'gbs',
-        'rom',
-        'fever',
-        'chorioamnionitis',
-      ])) {
+      if (_chunkIsAbout(chunk, ['maternal', 'gbs', 'rom', 'fever', 'chorioamnionitis'])) {
         score += 1.5;
       }
     } else if (result.layer2Score >= result.layer3Score) {
       // Clinical signs dominant
-      if (_chunkIsAbout(chunk, [
-        'respiratory',
-        'clinical',
-        'neonatal',
-        'signs',
-        'cpap',
-      ])) {
+      if (_chunkIsAbout(chunk, ['respiratory', 'clinical', 'neonatal', 'signs', 'cpap'])) {
         score += 1.5;
       }
     } else {
       // Lab dominant
-      if (_chunkIsAbout(chunk, [
-        'crp',
-        'wbc',
-        'culture',
-        'laboratory',
-        'markers',
-      ])) {
+      if (_chunkIsAbout(chunk, ['crp', 'wbc', 'culture', 'laboratory', 'markers'])) {
         score += 1.5;
       }
     }
@@ -248,12 +203,10 @@ class RagService {
   static bool _chunkIsAbout(GuidelineChunk chunk, List<String> topics) {
     final contentLower = chunk.content.toLowerCase();
     final sectionLower = chunk.section.toLowerCase();
-    return topics.any(
-      (t) =>
-          contentLower.contains(t) ||
-          sectionLower.contains(t) ||
-          chunk.keywords.any((k) => k.toLowerCase().contains(t)),
-    );
+    return topics.any((t) =>
+        contentLower.contains(t) ||
+        sectionLower.contains(t) ||
+        chunk.keywords.any((k) => k.toLowerCase().contains(t)));
   }
 }
 

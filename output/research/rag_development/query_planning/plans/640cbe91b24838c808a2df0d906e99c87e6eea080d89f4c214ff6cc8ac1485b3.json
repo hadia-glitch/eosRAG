@@ -1,0 +1,25 @@
+{
+  "source": "NICE",
+  "query": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+  "available": true,
+  "questions": [
+    "How is uncertainty in early\u2011onset neonatal sepsis management addressed when maternal history, microbiological culture results, and subsequent clinical assessment are unavailable?"
+  ],
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "2cc6de7a4b7f3cfff48579ad3d5d0d126cdb522b54a4f0f732c119c5ce1a17df",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"NICE\", \"question\": \"Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "How is uncertainty in early\u2011onset neonatal sepsis management addressed when maternal history, microbiological culture results, and subsequent clinical assessment are unavailable?"
+        ]
+      },
+      "seconds": 2.243809000006877
+    }
+  ],
+  "stage": "development_only"
+}

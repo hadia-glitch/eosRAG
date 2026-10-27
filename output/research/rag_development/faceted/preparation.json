@@ -1,0 +1,13 @@
+{
+  "plans": 24,
+  "valid_plans": 23,
+  "invalid_plans": 1,
+  "clinical_review": "pending",
+  "stage": "development_only",
+  "final_evaluation": false,
+  "guidance_counts": {
+    "NICE": 115,
+    "AAP": 30,
+    "WHO": 16
+  }
+}

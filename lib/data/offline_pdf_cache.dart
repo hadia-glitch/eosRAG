@@ -39,15 +39,11 @@ class OfflinePdfCache {
 
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString(_documentListKey, jsonEncode(docs));
-      developer.log(
-        '[OfflinePdfCache] Synced document list: ${docs.length} guideline(s)',
-        name: 'OfflinePdfCache',
-      );
+      developer.log('[OfflinePdfCache] Synced document list: ${docs.length} guideline(s)',
+          name: 'OfflinePdfCache');
     } catch (e) {
-      developer.log(
-        '[OfflinePdfCache] Document list sync failed (non-fatal): $e',
-        name: 'OfflinePdfCache',
-      );
+      developer.log('[OfflinePdfCache] Document list sync failed (non-fatal): $e',
+          name: 'OfflinePdfCache');
     }
   }
 
@@ -84,9 +80,8 @@ class OfflinePdfCache {
     // regardless of connection type, and retry once — this is the "lazy
     // per-document fallback" this class's docstring already promises.
     developer.log(
-      '[OfflinePdfCache] "$fileName" not in local document list — syncing metadata on demand',
-      name: 'OfflinePdfCache',
-    );
+        '[OfflinePdfCache] "$fileName" not in local document list — syncing metadata on demand',
+        name: 'OfflinePdfCache');
     await syncDocumentList(client: client);
     final refreshedPrefs = await SharedPreferences.getInstance();
     return searchRaw(refreshedPrefs.getString(_documentListKey));
@@ -125,19 +120,16 @@ class OfflinePdfCache {
       await syncDocumentList(client: c);
 
       if (wifiOnly && !await ConnectivityService.instance.isOnWifi()) {
-        developer.log(
-          '[OfflinePdfCache] Skipping bulk PDF prefetch — not on WiFi '
-          '(will still cache lazily per-document on any connection)',
-          name: 'OfflinePdfCache',
-        );
+        developer.log('[OfflinePdfCache] Skipping bulk PDF prefetch — not on WiFi '
+            '(will still cache lazily per-document on any connection)',
+            name: 'OfflinePdfCache');
         return;
       }
 
       final prefs = await SharedPreferences.getInstance();
       final raw = prefs.getString(_documentListKey);
       if (raw == null) return;
-      final docs = (jsonDecode(raw) as List<dynamic>)
-          .cast<Map<String, dynamic>>();
+      final docs = (jsonDecode(raw) as List<dynamic>).cast<Map<String, dynamic>>();
 
       int completed = 0;
       for (final doc in docs) {
@@ -155,14 +147,11 @@ class OfflinePdfCache {
         onProgress?.call(completed, docs.length);
       }
       developer.log(
-        '[OfflinePdfCache] Bulk prefetch complete: $completed/${docs.length} guideline PDF(s) cached',
-        name: 'OfflinePdfCache',
-      );
+          '[OfflinePdfCache] Bulk prefetch complete: $completed/${docs.length} guideline PDF(s) cached',
+          name: 'OfflinePdfCache');
     } catch (e) {
-      developer.log(
-        '[OfflinePdfCache] Bulk prefetch failed (non-fatal): $e',
-        name: 'OfflinePdfCache',
-      );
+      developer.log('[OfflinePdfCache] Bulk prefetch failed (non-fatal): $e',
+          name: 'OfflinePdfCache');
     }
   }
 
@@ -196,13 +185,11 @@ class OfflinePdfCache {
     final doc = await _findDocument(fileName, client: c);
     final storageUrl = doc?['storage_url'] as String?;
     if (storageUrl == null || storageUrl.isEmpty) {
-      developer.log(
-        '[OfflinePdfCache] No storage_url for "$fileName" even after an '
-        'on-demand metadata sync — either the backend is unreachable right now, or '
-        'this file genuinely has no matching entry in guideline_documents (check for '
-        'a fileName mismatch, or that it was actually uploaded to Storage).',
-        name: 'OfflinePdfCache',
-      );
+      developer.log('[OfflinePdfCache] No storage_url for "$fileName" even after an '
+          'on-demand metadata sync — either the backend is unreachable right now, or '
+          'this file genuinely has no matching entry in guideline_documents (check for '
+          'a fileName mismatch, or that it was actually uploaded to Storage).',
+          name: 'OfflinePdfCache');
       return null;
     }
 
@@ -217,16 +204,12 @@ class OfflinePdfCache {
       final bytes = response.data;
       if (bytes == null || bytes.isEmpty) return null;
       await localFile.writeAsBytes(bytes);
-      developer.log(
-        '[OfflinePdfCache] Downloaded and cached $fileName (${bytes.length} bytes)',
-        name: 'OfflinePdfCache',
-      );
+      developer.log('[OfflinePdfCache] Downloaded and cached $fileName (${bytes.length} bytes)',
+          name: 'OfflinePdfCache');
       return localFile.path;
     } catch (e) {
-      developer.log(
-        '[OfflinePdfCache] Download failed for $fileName: $e',
-        name: 'OfflinePdfCache',
-      );
+      developer.log('[OfflinePdfCache] Download failed for $fileName: $e',
+          name: 'OfflinePdfCache');
       return null;
     }
   }

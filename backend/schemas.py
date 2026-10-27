@@ -2,7 +2,7 @@
 
 from typing import Any,Literal
 
-from pydantic import BaseModel, Field,ConfigDict
+from pydantic import BaseModel, Field,ConfigDict,model_validator
 
 
 class EvidenceSearchRequest(BaseModel):
@@ -33,7 +33,11 @@ class EvidenceChunkResponse(BaseModel):
 
 
 class PatientSnapshot(BaseModel):
-    model_config=ConfigDict(extra='forbid')
+    model_config=ConfigDict(extra='forbid',strict=True,allow_inf_nan=False)
+    care_setting: Literal['hospital','hospital_birth','postnatal_ward','neonatal_unit','primary_health_clinic','non_hospital'] | None = None
+    culture_status: Literal['unknown','pending','negative','positive'] | None = None
+    culture_incubation_hours: float | None = Field(default=None,ge=0,le=1000)
+    antibiotic_exposure_hours: float | None = Field(default=None,ge=0,le=1000)
     age_hours: float | None = Field(default=None, ge=0, le=1000)
     gestational_age_weeks: float | None = None
     maternal_temperature: float | None = None
@@ -76,6 +80,18 @@ class PatientSnapshot(BaseModel):
     respiratory_rate: float | None = Field(default=None,ge=0,le=150)
     spo2: float | None = Field(default=None,ge=20,le=100)
     hospitalized_within_prior_14_days: bool | None = None
+
+    @model_validator(mode='after')
+    def validate_neonatal_timing(self):
+        if ((self.culture_status=='positive' and self.blood_culture_positive is False)
+            or (self.culture_status in {'negative','pending'} and self.blood_culture_positive is True)):
+            raise ValueError('Culture status conflicts with the recorded culture-positive flag')
+        if self.age_hours is not None:
+            for field in ['culture_incubation_hours','antibiotic_exposure_hours']:
+                value=getattr(self,field)
+                if value is not None and value>self.age_hours:
+                    raise ValueError(field+' cannot exceed recorded postnatal age')
+        return self
 
 
 class RiskPayload(BaseModel):

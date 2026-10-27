@@ -1,0 +1,15 @@
+{
+  "candidate": "v3 relevance-guarded full pipeline",
+  "based_on": "source-heading v2 index",
+  "methods": {
+    "focused_hybrid": "BM25+dense RRF60",
+    "expanded_rrf_ce": "Synonym candidate expansion then CE only",
+    "rrf_ce_mmr_guarded": "BM25+dense+CE rank fusion RRF60, relevance-head MMR diversity 0.1",
+    "rrf_ce_no_mmr": "No-MMR ablation of the same three-rank fusion"
+  },
+  "note": "Development refinement after v1/v2 scores were observed; no untouched-test claim.",
+  "code_sha256": {
+    "backend/scripts/evaluate_guarded_retrieval.py": "976f62c9075c1ae01bbc812b5229b5fa5447b8af8d1e578f03fa2d6318fd0eae",
+    "backend/rag/rank_fusion.py": "74ad3c26dbae53b4bb3582d798140d65dfd3f214c83a5aaf26d54085a048448b"
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "nodes": [
+    {
+      "chunk_id": "WHO2024-P2-B17::definition:3da96225be16",
+      "text": "Possible serious bacterial infection (PSBI) is defined by WHO as an illness with one or more of the following seven clinical signs: not feeding well or not able to feed at all, movement only when stimulated or no movement at all, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), severe chest indrawing, convulsions in infants aged 0\u201359 days or fast breathing (\u2265 60 breaths per minute) in infants aged 0\u20136 days (see Table 1.1).",
+      "pdf_page": 2,
+      "printed_page": 18,
+      "chunk_type": "source_paragraph",
+      "section": null,
+      "guideline_id": "WHO",
+      "source": "WHO serious bacterial infections 2024",
+      "version": "2024-12-08",
+      "text_sha256": "3da96225be16a364cb247d8f9b4e25a71eacfc4cea2cef90828073b0bd1f6469",
+      "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          0,
+          1439
+        ],
+        "care_setting": [
+          "non_hospital"
+        ],
+        "qualification": "No validated gestation/maternal-risk subgroup stratification is claimed; paragraph scope requires clinician review."
+      },
+      "clinical_review_status": "pending",
+      "technical_identity_check": "WHO2024_recommendation_numbers_and_pagination_checked",
+      "raw_text": "Possible serious bacterial infection (PSBI) is defined by WHO as an illness with one or more of the following seven clinical signs: not feeding well or not able to feed at all, movement only when stimulated or no movement at all, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), severe chest indrawing, convulsions in infants aged 0\u201359 days or fast breathing (\u2265 60 breaths per minute) in infants aged 0\u20136 days (see Table 1.1).",
+      "retrieval_headings": {
+        "parent_heading": "A. Non-hospital settings",
+        "section_heading": "Diagnostic accuracy of clinical signs of sepsis in young infants",
+        "section_id": "A.1"
+      },
+      "index_text_sha256": "f1829b1acacdf491c76e094c4d7b208e6a1c85f861ee046f98f31848ad2e0697",
+      "parent_chunk_id": "WHO2024-P2-B17",
+      "source_span": {
+        "start": 27,
+        "end": 471
+      },
+      "graph_role": "publisher_definition"
+    },
+    {
+      "chunk_id": "WHO2024-P6-B14::definition:7b1629a3457c",
+      "text": "Critical illness is defined as one or more of the following clinical signs: not able to feed at all, no movement on stimulation, convulsions in an infant aged 0\u201359 days (27, 28).",
+      "pdf_page": 6,
+      "printed_page": 22,
+      "chunk_type": "source_paragraph",
+      "section": null,
+      "guideline_id": "WHO",
+      "source": "WHO serious bacterial infections 2024",
+      "version": "2024-12-08",
+      "text_sha256": "7b1629a3457c894be3cf8bad66605600c8728d61f62bd49a7e50aaf2b85a36d3",
+      "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          0,
+          1439
+        ],
+        "care_setting": [
+          "non_hospital"
+        ],
+        "qualification": "No validated gestation/maternal-risk subgroup stratification is claimed; paragraph scope requires clinician review."
+      },
+      "clinical_review_status": "pending",
+      "technical_identity_check": "WHO2024_recommendation_numbers_and_pagination_checked",
+      "raw_text": "Critical illness is defined as one or more of the following clinical signs: not able to feed at all, no movement on stimulation, convulsions in an infant aged 0\u201359 days (27, 28).",
+      "retrieval_headings": {
+        "parent_heading": "A. Non-hospital settings",
+        "section_heading": "Critical illness in young infants aged 0\u201359 days in non-",
+        "section_id": "A.2"
+      },
+      "index_text_sha256": "390ed03d6b204a42212f13ba248a01619362f671c222dbfef01697bcc31719b7",
+      "parent_chunk_id": "WHO2024-P6-B14",
+      "source_span": {
+        "start": 27,
+        "end": 205
+      },
+      "graph_role": "publisher_definition"
+    },
+    {
+      "chunk_id": "WHO2024-P10-B5::definition:a697590a9f62",
+      "text": "Clinical severe infection is defined by WHO as one or more of the following clinical signs in infants aged 0\u201359 days: not feeding well, movement only when stimulated, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), and/or severe chest indrawing.",
+      "pdf_page": 10,
+      "printed_page": 26,
+      "chunk_type": "source_paragraph",
+      "section": null,
+      "guideline_id": "WHO",
+      "source": "WHO serious bacterial infections 2024",
+      "version": "2024-12-08",
+      "text_sha256": "a697590a9f6241e94b0cb1f537d21467ed66e47a49361646dbea2b1e42a159a1",
+      "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          0,
+          1439
+        ],
+        "care_setting": [
+          "non_hospital"
+        ],
+        "qualification": "No validated gestation/maternal-risk subgroup stratification is claimed; paragraph scope requires clinician review."
+      },
+      "clinical_review_status": "pending",
+      "technical_identity_check": "WHO2024_recommendation_numbers_and_pagination_checked",
+      "raw_text": "Clinical severe infection is defined by WHO as one or more of the following clinical signs in infants aged 0\u201359 days: not feeding well, movement only when stimulated, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), and/or severe chest indrawing.",
+      "retrieval_headings": {
+        "parent_heading": "A. Non-hospital settings",
+        "section_heading": "Clinical severe infection in young infants aged 0\u201359 days in",
+        "section_id": "A.3"
+      },
+      "index_text_sha256": "dce0d8665fb28d83aac1d2701ffbb7c69751b1cbc88b2e3e4001490ee07cc906",
+      "parent_chunk_id": "WHO2024-P10-B5",
+      "source_span": {
+        "start": 27,
+        "end": 291
+      },
+      "graph_role": "publisher_definition"
+    },
+    {
+      "chunk_id": "WHO2024-A.1-DEFINITION::definition:3da96225be16",
+      "text": "Possible serious bacterial infection (PSBI) is defined by WHO as an illness with one or more of the following seven clinical signs: not feeding well or not able to feed at all, movement only when stimulated or no movement at all, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), severe chest indrawing, convulsions in infants aged 0\u201359 days or fast breathing (\u2265 60 breaths per minute) in infants aged 0\u20136 days (see Table 1.1).",
+      "pdf_page": 2,
+      "printed_page": 18,
+      "chunk_type": "complete_scope_span",
+      "section": "DEFINITION",
+      "guideline_id": "WHO",
+      "source": "WHO serious bacterial infections 2024",
+      "version": "2024-12-08",
+      "text_sha256": "3da96225be16a364cb247d8f9b4e25a71eacfc4cea2cef90828073b0bd1f6469",
+      "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          0,
+          1439
+        ],
+        "care_setting": [
+          "non_hospital"
+        ],
+        "qualification": "No validated gestation/maternal-risk subgroup stratification is claimed; paragraph scope requires clinician review."
+      },
+      "clinical_review_status": "pending",
+      "technical_identity_check": "WHO2024_recommendation_numbers_and_pagination_checked",
+      "raw_text": "Possible serious bacterial infection (PSBI) is defined by WHO as an illness with one or more of the following seven clinical signs: not feeding well or not able to feed at all, movement only when stimulated or no movement at all, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), severe chest indrawing, convulsions in infants aged 0\u201359 days or fast breathing (\u2265 60 breaths per minute) in infants aged 0\u20136 days (see Table 1.1).",
+      "retrieval_headings": {
+        "parent_heading": "A. Non-hospital settings",
+        "section_heading": "Diagnostic accuracy of clinical signs of sepsis in young infants",
+        "section_id": "A.1"
+      },
+      "index_text_sha256": "f7bfc2a2e91dc2a4eb2a277d3aa398f1ffa1fcc156b80130d6ae878e8dc2b6f1",
+      "parent_chunk_id": "WHO2024-A.1-DEFINITION",
+      "source_span": {
+        "start": 0,
+        "end": 444
+      },
+      "graph_role": "publisher_definition"
+    }
+  ],
+  "edges": [
+    {
+      "from": "WHO2024-A.1",
+      "to": "WHO2024-P2-B17::definition:3da96225be16",
+      "relation": "HAS_SECTION_DEFINITION",
+      "source_pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3",
+      "section_id": "A.1",
+      "clinical_review_status": "pending"
+    },
+    {
+      "from": "WHO2024-A.2",
+      "to": "WHO2024-P6-B14::definition:7b1629a3457c",
+      "relation": "HAS_SECTION_DEFINITION",
+      "source_pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3",
+      "section_id": "A.2",
+      "clinical_review_status": "pending"
+    },
+    {
+      "from": "WHO2024-A.3a",
+      "to": "WHO2024-P10-B5::definition:a697590a9f62",
+      "relation": "HAS_SECTION_DEFINITION",
+      "source_pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3",
+      "section_id": "A.3",
+      "clinical_review_status": "pending"
+    },
+    {
+      "from": "WHO2024-A.3b",
+      "to": "WHO2024-P10-B5::definition:a697590a9f62",
+      "relation": "HAS_SECTION_DEFINITION",
+      "source_pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3",
+      "section_id": "A.3",
+      "clinical_review_status": "pending"
+    },
+    {
+      "from": "WHO2024-A.1",
+      "to": "WHO2024-A.1-DEFINITION::definition:3da96225be16",
+      "relation": "HAS_SECTION_DEFINITION",
+      "source_pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3",
+      "section_id": "A.1",
+      "clinical_review_status": "pending"
+    }
+  ],
+  "method": "publisher section membership and exact definition sentences"
+}

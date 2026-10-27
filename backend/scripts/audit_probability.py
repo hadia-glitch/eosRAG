@@ -33,7 +33,7 @@ def main():
     model=SuppliedModel(a,scope);xtest=design(test,a);y=test.Sepsis_Label.to_numpy(int)
     uncal={**a,'calibration':{'slope':1.,'intercept':0.}}
     uncalibrated=portable_probability(uncal,xtest);calibrated=portable_probability(a,xtest)
-    demo=json.loads((ROOT/'data/synthetic_eos_v2/probability_audit_input.json').read_text())
+    demo=json.loads((ROOT/'backend/demo/case.json').read_text())['research_request']
     values=demo['values'];dx=design(pd.DataFrame([values]),a)
     raw_score=float(portable_probability(uncal,dx)[0]);score=float(portable_probability(a,dx)[0])
     trees=[];z=model.transform(values);z=np.asarray(z,dtype=np.float32)

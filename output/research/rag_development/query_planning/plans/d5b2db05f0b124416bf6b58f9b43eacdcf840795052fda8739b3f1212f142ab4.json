@@ -1,0 +1,26 @@
+{
+  "source": "AAP",
+  "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness.",
+  "available": false,
+  "questions": [
+    "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness."
+  ],
+  "completed_contract_error": "ValueError",
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "d3cb66d3283613a1e3ad01c6b0d725106508f972394c6c5028626c9dbc64fab8",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"AAP\", \"question\": \"Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "In neonates 0-72 hours old with a rising respiratory rate and falling oxygen saturation during serial examinations, what assessment and monitoring steps are recommended?",
+          "What immediate actions should be taken for an infant developing signs of illness, including tachypnea and desaturation, according to early-onset neonatal sepsis guidelines?"
+        ]
+      },
+      "seconds": 2.138453700004902
+    }
+  ]
+}

@@ -87,3 +87,15 @@ output/research/expanded100/pending_transport.json
 !output/research/neoguard-expanded100-results.zip
 
 !output/clinician-review/neoguard-100-case-clinician-review.zip
+
+**/judge_cache/
+
+**/score_cache/
+
+**/embedding_cache/
+
+!output/research/neoguard-rag-development-results.zip
+
+!output/clinician-review/neoguard-development-clinician-review.zip
+
+output/research/rag_development/clinician_panel_key.json

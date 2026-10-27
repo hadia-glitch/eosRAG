@@ -10,7 +10,6 @@ class RagChunk {
   final String version;
   final int? chunkIndex;
   final int? pageNumber;
-
   /// PDF file name (matches guideline_documents.name / evidence_chunks
   /// metadata.file_name on the backend) — used to look up/download the
   /// cached local PDF for offline "jump to source" viewing.
@@ -113,15 +112,12 @@ class CitationItem {
   final String section;
   final String chunkId;
   final double similarityScore;
-
   /// Public URL for the originating guideline document (may be empty for local chunks).
   final String documentUrl;
-
   /// 1-indexed PDF page this citation's source chunk was extracted from, if
   /// known. Together with [fileName], lets a citation be opened directly in
   /// GuidelinePdfViewerScreen instead of only linking out to an external URL.
   final int? pageNumber;
-
   /// PDF file name (matches guideline_documents.name / evidence_chunks
   /// metadata.file_name) — the cache key GuidelinePdfViewerScreen/
   /// OfflinePdfCache use to locate this document. Empty when unknown (e.g.
@@ -160,9 +156,7 @@ class CitationItem {
     if (s.contains('NICE') || s.contains('NG195')) {
       return 'https://www.nice.org.uk/guidance/ng195';
     }
-    if (s.contains('AAP') ||
-        s.contains('PUOPOLO') ||
-        s.contains('AMERICAN ACADEMY')) {
+    if (s.contains('AAP') || s.contains('PUOPOLO') || s.contains('AMERICAN ACADEMY')) {
       return s.contains('PRETERM') || s.contains('34 6/7')
           ? 'https://doi.org/10.1542/peds.2018-2896'
           : 'https://doi.org/10.1542/peds.2018-2894';
@@ -170,8 +164,7 @@ class CitationItem {
     if (s.contains('WHO')) {
       return 'https://www.who.int/publications/i/item/9789240102903';
     }
-    if (s.contains('KUZNIEWICZ') ||
-        s.contains('EOSCAL') && s.contains('2024')) {
+    if (s.contains('KUZNIEWICZ') || s.contains('EOSCAL') && s.contains('2024')) {
       return 'https://doi.org/10.1542/peds.2023-065267';
     }
     if (s.contains('2011') || s.contains('ORIGINAL EOSCAL')) {
@@ -194,7 +187,6 @@ class EvidenceSectionChunk {
   final String chunkId;
   final String chunkText;
   final int? pageNumber;
-
   /// True when this specific chunk was part of what the search actually
   /// matched — the UI highlights these within the full section text so a
   /// clinician can see exactly which sentences answered their query,
@@ -237,11 +229,9 @@ class EvidenceSection {
   final double similarityScore;
   final List<EvidenceSectionChunk> chunks;
   final String fullText;
-
   /// True if the section had more member chunks than the server returns —
   /// the UI should say so rather than silently showing a partial section.
   final bool truncated;
-
   /// Concise AI-generated summary of the section. Empty when no LLM
   /// provider was available — the UI shows [fullText] directly in that
   /// case rather than a truncated or regurgitated fallback; never both.
@@ -337,23 +327,20 @@ class ClinicalExplanation {
     final effectiveCitations = citations.isNotEmpty
         ? citations
         : rawChunks
-              .map(
-                (c) => CitationItem(
+            .map((c) => CitationItem(
                   source: c.sourceName,
                   section: c.section,
                   chunkId: c.chunkId,
                   similarityScore: c.similarityScore,
                   documentUrl: CitationItem.resolveDocumentUrl(c.sourceName),
-                ),
-              )
-              .toList();
+                ))
+            .toList();
 
     return ClinicalExplanation(
       clinicalSummary: json['clinical_summary'] as String? ?? '',
-      perDriverExplanations:
-          (json['per_driver_explanations'] as List<dynamic>? ?? [])
-              .map((e) => Map<String, String>.from(e as Map))
-              .toList(),
+      perDriverExplanations: (json['per_driver_explanations'] as List<dynamic>? ?? [])
+          .map((e) => Map<String, String>.from(e as Map))
+          .toList(),
       recommendedActions: (json['recommended_actions'] as List<dynamic>? ?? [])
           .map((e) => e.toString())
           .toList(),

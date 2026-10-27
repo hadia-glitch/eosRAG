@@ -1,0 +1,31 @@
+{
+  "id": "who-expanded-incomplete_stop-05",
+  "guideline": "WHO",
+  "model": "intfloat/e5-small-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "WHO2024-P3-B5",
+      "WHO2024-P25-B4",
+      "WHO2024-P27-B22",
+      "WHO2024-P6-B14"
+    ],
+    "expanded_rrf_ce": [
+      "WHO2024-P24-B18",
+      "WHO2024-P27-B22",
+      "WHO2024-P31-B13",
+      "WHO2024-P26-B3"
+    ],
+    "rrf_ce_mmr_guarded": [
+      "WHO2024-P25-B4",
+      "WHO2024-P27-B22",
+      "WHO2024-P3-B5",
+      "WHO2024-P24-B18"
+    ],
+    "rrf_ce_no_mmr": [
+      "WHO2024-P25-B4",
+      "WHO2024-P27-B22",
+      "WHO2024-P3-B5",
+      "WHO2024-P24-B18"
+    ]
+  }
+}

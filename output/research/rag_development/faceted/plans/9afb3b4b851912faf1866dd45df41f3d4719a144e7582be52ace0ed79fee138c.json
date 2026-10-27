@@ -1,0 +1,14 @@
+{
+  "source": "AAP",
+  "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers.",
+  "available": true,
+  "questions": [
+    "Can a single CRP measurement or a decreasing CRP level reliably exclude early\u2011onset neonatal sepsis (0\u201172\u202fhours)?",
+    "Is CRP alone sufficient to determine when antibiotics can be stopped in neonates evaluated for early\u2011onset sepsis?",
+    "What are the limitations of inflammatory markers such as CRP in diagnosing or ruling out early\u2011onset neonatal sepsis?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": false,
+  "original_record_sha256": "808177989f0b5e89bd77c565db68bc667a58c801695e705b7d693e10d4812e4a",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

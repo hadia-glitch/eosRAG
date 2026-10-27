@@ -3,6 +3,22 @@
 This change is a research/staging implementation. It is not a completed clinical
 release, and no live deployment or database migration was performed.
 
+## Current RAG development boundary (28 October 2026)
+
+Final evaluation remains on hold. The latest consensus regression on the same
+100 exposed cases has Recall@4 / MRR@4 of NICE 0.6792 / 0.7875, AAP 0.7500 /
+0.7083 and WHO 0.8000 / 0.8500. All source-specific confidence intervals and
+unsuccessful variants remain in the development CSVs. These are retrieval
+results, not clinical answer-usability measurements or a hosted-index validation.
+The paper adds a labelled development section and explicit metric ceilings.
+
+The prepared publication checkout passed 85 targeted backend regression tests
+and all 26 included Flutter tests. The checks cover source scope, input contracts,
+audit contracts, formatting, SHAP presentation and the RAG care-setting bridge.
+This is a separate current checkpoint from the historical counts below.
+The new clinician bundle has 100 synthetic cases, shuffled evidence panels and
+blank source/relevance review forms. Clinical review and source approval are pending.
+
 | Component | Implemented | Still required |
 | --- | --- | --- |
 | EOS prediction | Actual pinned days-0-2 calibrated forest connected to the app's eighteen-field review; digest checks, missingness/support checks, real local Kernel SHAP | Valid EOS outcomes, documented dataset units/provenance, event tables, cohort review, external and prospective validation |

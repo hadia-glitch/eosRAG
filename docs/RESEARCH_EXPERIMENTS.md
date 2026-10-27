@@ -5,6 +5,50 @@ The active three-guideline RAG fixture now contains exactly 100 synthetic cases
 for its frozen definitions and resumable commands. The eighteen-case commands
 below describe the retained historical development experiment.
 
+The subsequent retrieval iterations are **development**, with final evaluation
+on hold. Read [the readiness gate](research/final_evaluation_gate.md) and
+[the measured development report](research/rag_development_report.md). The new
+medical encoders, source roles, faceted queries, listwise selection and consensus
+results must not be represented as the original frozen configuration or an
+untouched test. The production Supabase index is a separate deployment boundary.
+
+From the repository root, completed results can be summarized without API calls:
+
+```powershell
+python -m backend.scripts.summarize_faceted_development
+python -m backend.scripts.summarize_listwise_development
+python -m backend.scripts.summarize_consensus_development
+python scripts/build_development_review_bundle.py
+```
+
+Formal development runners are `develop_medical_retrieval`,
+`develop_query_plans`, `develop_faceted_retrieval`,
+`develop_listwise_retrieval` and `develop_consensus_retrieval` under
+`backend.scripts`. They checkpoint completed requests, preserve completed errors
+and reject frozen-configuration drift. Medical model runs require the Torch /
+Transformers environment used in the logged model revisions. Query planning and
+listwise runs use the locally configured Groq provider; they do not launch final
+answer generation. Consensus consumes saved requests without new provider calls.
+Provider outages are retained in separate operational logs and are not imputed as
+clinical-quality failures. Completed empty or malformed model outputs remain
+development outcomes. The failed listwise-only and graph variants remain in CSVs.
+
+The clinician review ZIP contains shuffled evidence panels for all 100 synthetic
+cases, 200 blank panel-rating rows, passage relevance adjudication, 299 proposed
+source-scope rows and exact source-definition review. Its method key is separate;
+no rating or approval is prefilled. This is a retrieval/source review pack,
+not a clinical care-plan usability study.
+
+The additional BGE reranker experiment retains all three declared variants and
+their negative results under `output/research/rag_development/bge_reranker/`.
+Its weights are not included. The patient-conditioned retrieval pilot uses the
+same candidate pools and adds recorded observations/history to passage selection;
+partial or provider-blocked work is not represented as a complete evaluation.
+The separate 36-case care-plan contract check rejected malformed free-text
+challenges before auditing; its interpretation amendment explicitly prevents it
+being presented as a semantic-auditor result. See the
+[remaining gaps](research/rag_remaining_gaps.md) before advancing a candidate.
+
 The Kaggle archive is read in place; raw rows and patient identifiers are not
 copied to public outputs. The supplied description does not identify an original
 clinical study, collection sites, license, culture confirmation or onset times.

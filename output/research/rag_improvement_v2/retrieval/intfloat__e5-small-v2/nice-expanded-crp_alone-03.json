@@ -1,0 +1,31 @@
+{
+  "id": "nice-expanded-crp_alone-03",
+  "guideline": "NICE",
+  "model": "intfloat/e5-small-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "NICE-1.14.8",
+      "NICE-1.15.3",
+      "NICE-1.10.3",
+      "NICE-1.21.3"
+    ],
+    "expanded_rrf_ce": [
+      "NICE-1.15.3",
+      "NICE-1.20.8",
+      "NICE-1.21.1",
+      "NICE-1.21.2"
+    ],
+    "expanded_rrf_ce_mmr": [
+      "NICE-1.15.3",
+      "NICE-1.20.8",
+      "NICE-box2",
+      "NICE-1.21.1"
+    ],
+    "decomposed_rrf_ce_mmr": [
+      "NICE-1.15.3",
+      "NICE-1.20.8",
+      "NICE-box2",
+      "NICE-1.21.1"
+    ]
+  }
+}

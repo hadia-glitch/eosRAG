@@ -1,0 +1,31 @@
+{
+  "id": "who-expanded-deterioration-01",
+  "guideline": "WHO",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "WHO2024-P20-B17",
+      "WHO2024-P20-B18",
+      "WHO2024-P24-B18",
+      "WHO2024-C-REFERRAL"
+    ],
+    "expanded_rrf_ce": [
+      "WHO2024-P20-B17",
+      "WHO2024-P20-B18",
+      "WHO2024-P16-B17",
+      "WHO2024-P15-B20"
+    ],
+    "expanded_rrf_ce_mmr": [
+      "WHO2024-P20-B17",
+      "WHO2024-P20-B18",
+      "WHO2024-P16-B17",
+      "WHO2024-P1-B3"
+    ],
+    "decomposed_rrf_ce_mmr": [
+      "WHO2024-P20-B17",
+      "WHO2024-P20-B18",
+      "WHO2024-P16-B17",
+      "WHO2024-P1-B3"
+    ]
+  }
+}

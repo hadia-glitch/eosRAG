@@ -1,0 +1,54 @@
+{
+  "id": "deterioration-3",
+  "guideline": "NICE",
+  "family": "deterioration",
+  "stage": "development_only",
+  "rankings": {
+    "4": [
+      "NICE-1.10.2",
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "8": [
+      "NICE-1.10.2",
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3",
+      "NICE-1.4.1",
+      "NICE-1.21.4",
+      "NICE-1.21.3",
+      "NICE-1.13.5"
+    ]
+  },
+  "definition_context_ids": {
+    "4": [],
+    "8": []
+  },
+  "available": true,
+  "listwise_empty": false,
+  "candidate_ids": [
+    "NICE-1.10.2",
+    "NICE-box2",
+    "NICE-1.10.1",
+    "NICE-1.10.3",
+    "NICE-1.11.1",
+    "NICE-1.14.2",
+    "NICE-1.21.4",
+    "NICE-1.4.1",
+    "NICE-1.10.5",
+    "NICE-1.14.3",
+    "NICE-1.10.4",
+    "NICE-1.21.3",
+    "NICE-1.34.3",
+    "NICE-1.34.2",
+    "NICE-1.9.2",
+    "NICE-1.14.5",
+    "NICE-1.33.1",
+    "NICE-box1",
+    "NICE-1.29.2",
+    "NICE-1.22.1",
+    "NICE-1.13.5",
+    "NICE-1.31.4"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "nice-expanded-crp_alone-04",
+  "guideline": "NICE",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "NICE-1.15.3",
+      "NICE-1.20.8",
+      "NICE-1.21.3",
+      "NICE-1.14.8"
+    ],
+    "expanded_rrf_ce": [
+      "NICE-1.15.3",
+      "NICE-1.20.8",
+      "NICE-1.21.1",
+      "NICE-1.21.2"
+    ],
+    "expanded_rrf_ce_mmr": [
+      "NICE-1.15.3",
+      "NICE-box2",
+      "NICE-1.33.1",
+      "NICE-1.14.3"
+    ],
+    "decomposed_rrf_ce_mmr": [
+      "NICE-1.15.3",
+      "NICE-box2",
+      "NICE-1.33.1",
+      "NICE-1.14.3"
+    ]
+  }
+}

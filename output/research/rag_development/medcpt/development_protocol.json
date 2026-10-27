@@ -1,0 +1,36 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "cases_sha256": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45",
+  "routing_manifest_sha256": "a957607d9d03394eec5a0edfa2905d6ea37f61f591d22cb104be42cd6259cb5a",
+  "corpus_sha256": "953ce6746d5ef37bb64070d17bc6286dd183c358b5af8443908b244536e8ca20",
+  "seed": 31,
+  "rrf_k": 60,
+  "top_k": 4,
+  "candidate_limit": 60,
+  "mmr_diversity": 0.1,
+  "scope_filter": "Explicit passage metadata and patient age/gestation/setting before ranking",
+  "methods": [
+    "lexical_scoped",
+    "medcpt_dense_dot",
+    "medcpt_dense_cosine",
+    "medcpt_hybrid",
+    "hybrid_medcpt_ce_mmr",
+    "hybrid_medcpt_graph_ce_mmr",
+    "generic_scoped_control"
+  ],
+  "query_encoder": "ncbi/MedCPT-Query-Encoder",
+  "article_encoder": "ncbi/MedCPT-Article-Encoder",
+  "medical_reranker": "ncbi/MedCPT-Cross-Encoder",
+  "control_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "control_reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "pooling": "Official CLS; dot-product dense primary; cosine ablation. Maximum over overlapping source windows.",
+  "graph": "Explicit recommendation references only; source/age/setting admissibility retained; candidate expansion only.",
+  "code_sha256": {
+    "backend/scripts/develop_medical_retrieval.py": "275945080c9a60ef820cbba743ce6c4d3eab03350b481892c8fc2dde099d70b2",
+    "backend/rag/medical_models.py": "22fc40c088c8f77901b07dab7b0d6d8b71f773dff60f54a3b40fef8d9441deeb",
+    "backend/rag/clinical_scope.py": "d87a49c6b5824ccc75d8eccc0a255c6fa5ce0bb278430979df1b78d8fc74edc2",
+    "backend/rag/relevance.py": "69f1222b58b1f583598f74d34b2e1ce394f2ba173545cf2121d922a6f126a754",
+    "backend/rag/rank_fusion.py": "74ad3c26dbae53b4bb3582d798140d65dfd3f214c83a5aaf26d54085a048448b"
+  }
+}

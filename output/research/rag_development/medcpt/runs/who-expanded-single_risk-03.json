@@ -1,0 +1,53 @@
+{
+  "id": "who-expanded-single_risk-03",
+  "family": "single_risk",
+  "guideline": "WHO",
+  "stage": "development_only",
+  "eligible_passages": 71,
+  "scope_incompatible_gold_ids": [],
+  "scope_constrained_recall_at_4_ceiling": 1.0,
+  "rankings": {
+    "lexical_scoped": [
+      "WHO2024-C-RISK",
+      "WHO2024-P4-B28",
+      "WHO2024-P6-B14",
+      "WHO2024-A.1"
+    ],
+    "medcpt_dense_dot": [
+      "WHO2024-C-RISK",
+      "WHO2024-P3-B17",
+      "WHO2024-P4-B28",
+      "WHO2024-P2-B11"
+    ],
+    "medcpt_dense_cosine": [
+      "WHO2024-C-RISK",
+      "WHO2024-P4-B20",
+      "WHO2024-P4-B7",
+      "WHO2024-P4-B13"
+    ],
+    "medcpt_hybrid": [
+      "WHO2024-C-RISK",
+      "WHO2024-P4-B28",
+      "WHO2024-A.1",
+      "WHO2024-P5-B6"
+    ],
+    "hybrid_medcpt_ce_mmr": [
+      "WHO2024-P4-B28",
+      "WHO2024-C-RISK",
+      "WHO2024-A.1",
+      "WHO2024-P5-B6"
+    ],
+    "hybrid_medcpt_graph_ce_mmr": [
+      "WHO2024-P4-B28",
+      "WHO2024-C-RISK",
+      "WHO2024-A.1",
+      "WHO2024-P5-B6"
+    ],
+    "generic_scoped_control": [
+      "WHO2024-C-RISK",
+      "WHO2024-A.1",
+      "WHO2024-P4-B28",
+      "WHO2024-P5-B7"
+    ]
+  }
+}

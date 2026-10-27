@@ -1,0 +1,6 @@
+{
+  "torch": "2.12.1+cpu",
+  "encoder": "intfloat/e5-small-v2",
+  "encoder_revision": "ffb93f3bd4047442299a41ebb6fa998a38507c52",
+  "reranker_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "nice-expanded-deterioration-02",
+  "guideline": "NICE",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "NICE-box2",
+      "NICE-1.12.3",
+      "NICE-1.10.2",
+      "NICE-1.10.1"
+    ],
+    "expanded_rrf_ce": [
+      "NICE-1.12.3",
+      "NICE-box2",
+      "NICE-1.10.2",
+      "NICE-1.31.4"
+    ],
+    "expanded_rrf_ce_mmr": [
+      "NICE-1.12.3",
+      "NICE-1.14.2",
+      "NICE-1.34.5",
+      "NICE-1.38.4"
+    ],
+    "decomposed_rrf_ce_mmr": [
+      "NICE-1.12.3",
+      "NICE-1.14.2",
+      "NICE-1.34.5",
+      "NICE-1.38.4"
+    ]
+  }
+}

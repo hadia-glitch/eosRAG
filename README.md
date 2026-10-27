@@ -12,6 +12,8 @@ approval remain required; this repository is not a clinically cleared product.
 - [Experiment reproduction and measured artifacts](docs/RESEARCH_EXPERIMENTS.md)
 - [Connected model, input mapping and limitations](docs/MODEL_APP_INTEGRATION.md)
 - [Implementation and validation status](docs/IMPLEMENTATION_STATUS.md)
+- [Current RAG development results and negative findings](docs/research/rag_development_report.md)
+- [Gate before final evaluation](docs/research/final_evaluation_gate.md)
 
 Supplied-label neonatal research classifiers have now been trained on the provided
 Kaggle archive. Data-integrity and outcome-provenance findings keep them separate

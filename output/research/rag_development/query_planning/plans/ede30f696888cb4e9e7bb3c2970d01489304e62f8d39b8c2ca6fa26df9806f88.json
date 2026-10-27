@@ -1,0 +1,29 @@
+{
+  "source": "NICE",
+  "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established.",
+  "available": true,
+  "questions": [
+    "In neonates with early\u2011onset sepsis and a sterile blood culture after the recommended incubation period, what criteria guide antibiotic review and safe discontinuation when respiratory illness persists?",
+    "What clinical signs, laboratory results, or imaging findings indicate that antibiotics can be stopped in a neonate with persistent respiratory symptoms but negative blood cultures?",
+    "When should antibiotics be continued despite a sterile blood culture in a neonate with ongoing respiratory disease, according to NICE recommendations?"
+  ],
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "ff7b8ef335fee25c321b5263c4466b9c6d15b32a96803ffd5092427a2097430a",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"NICE\", \"question\": \"Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "In neonates with early\u2011onset sepsis and a sterile blood culture after the recommended incubation period, what criteria guide antibiotic review and safe discontinuation when respiratory illness persists?",
+          "What clinical signs, laboratory results, or imaging findings indicate that antibiotics can be stopped in a neonate with persistent respiratory symptoms but negative blood cultures?",
+          "When should antibiotics be continued despite a sterile blood culture in a neonate with ongoing respiratory disease, according to NICE recommendations?"
+        ]
+      },
+      "seconds": 1.9721073000036995
+    }
+  ],
+  "stage": "development_only"
+}

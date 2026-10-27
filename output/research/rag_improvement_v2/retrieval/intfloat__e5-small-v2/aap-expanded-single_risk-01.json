@@ -1,0 +1,31 @@
+{
+  "id": "aap-expanded-single_risk-01",
+  "guideline": "AAP",
+  "model": "intfloat/e5-small-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-P3-B9",
+      "AAP2018-35PLUS-P3-B10",
+      "AAP2018-35PLUS-SP3"
+    ],
+    "expanded_rrf_ce": [
+      "AAP2018-35PLUS-P4-B5",
+      "AAP2018-35PLUS-P2-B9",
+      "AAP2018-35PLUS-P4-B0",
+      "AAP2018-35PLUS-SP2"
+    ],
+    "expanded_rrf_ce_mmr": [
+      "AAP2018-35PLUS-P4-B5",
+      "AAP2018-35PLUS-P2-B9",
+      "AAP2018-35PLUS-P4-B0",
+      "AAP2018-35PLUS-SP2"
+    ],
+    "decomposed_rrf_ce_mmr": [
+      "AAP2018-35PLUS-P4-B5",
+      "AAP2018-35PLUS-P2-B9",
+      "AAP2018-35PLUS-P4-B0",
+      "AAP2018-35PLUS-SP2"
+    ]
+  }
+}

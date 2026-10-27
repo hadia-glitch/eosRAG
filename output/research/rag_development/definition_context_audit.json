@@ -1,0 +1,8 @@
+{
+  "nodes": 4,
+  "edges": 5,
+  "all_text_exact_source_spans": true,
+  "clinical_review": "pending",
+  "ranking_effect_measured": false,
+  "final_evaluation": false
+}

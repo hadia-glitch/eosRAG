@@ -4,16 +4,13 @@ class GuidelineChunk {
   final String section;
   final String content;
   final List<String> keywords;
-
   /// Public URL for this guideline document. Used for citation links in the UI.
   final String documentUrl;
-
   /// PDF file name (matches guideline_documents.name / evidence_chunks
   /// metadata.file_name on the backend) — used to look up/download the
   /// cached local PDF for offline "jump to source" viewing. Empty for the
   /// static bundled chunks below, which have no backing PDF.
   final String fileName;
-
   /// 1-indexed PDF page this chunk was extracted from, if known.
   final int? pageNumber;
 
@@ -44,15 +41,8 @@ class GuidelinesData {
           'prelabor rupture of membranes (PROM), prolonged rupture of membranes (ROM > 18 hours), '
           'maternal intrapartum fever (temperature >= 38.0°C), and clinical diagnosis of chorioamnionitis.',
       keywords: [
-        'maternal',
-        'risk',
-        'gbs',
-        'fever',
-        'temperature',
-        'rom',
-        'rupture',
-        'membranes',
-        'chorioamnionitis',
+        'maternal', 'risk', 'gbs', 'fever', 'temperature',
+        'rom', 'rupture', 'membranes', 'chorioamnionitis',
       ],
     ),
     GuidelineChunk(
@@ -68,16 +58,8 @@ class GuidelinesData {
           'Non-red flag signs include respiratory rate > 60 breaths/min, grunting, nasal flaring, temperature instability '
           '(< 36.0°C or > 38.0°C), altered muscle tone (floppiness), and lethargy.',
       keywords: [
-        'respiratory',
-        'distress',
-        'seizures',
-        'perfusion',
-        'shock',
-        'apgar',
-        'temperature',
-        'lethargy',
-        'irritability',
-        'tone',
+        'respiratory', 'distress', 'seizures', 'perfusion', 'shock',
+        'apgar', 'temperature', 'lethargy', 'irritability', 'tone',
       ],
     ),
     GuidelineChunk(
@@ -91,13 +73,8 @@ class GuidelinesData {
           'The first-line antibiotic regimen is a combination of benzylpenicillin and gentamicin. '
           'Obtain a blood culture before administering the first dose of antibiotics, but do not delay treatment.',
       keywords: [
-        'antibiotics',
-        'penicillin',
-        'gentamicin',
-        'treatment',
-        'empiric',
-        'culture',
-        '1 hour',
+        'antibiotics', 'penicillin', 'gentamicin', 'treatment',
+        'empiric', 'culture', '1 hour',
       ],
     ),
     GuidelineChunk(
@@ -110,15 +87,7 @@ class GuidelinesData {
           'Perform a blood culture. Repeat CRP measurement at 36 to 48 hours. '
           'Consider stopping antibiotics at 36 hours if blood culture is negative, '
           'the baby is clinically well, and the CRP is normal (< 10 mg/L).',
-      keywords: [
-        'crp',
-        'wbc',
-        'culture',
-        'laboratory',
-        'monitoring',
-        'duration',
-        'stop',
-      ],
+      keywords: ['crp', 'wbc', 'culture', 'laboratory', 'monitoring', 'duration', 'stop'],
     ),
 
     // ── AAP 2023 (US) ────────────────────────────────────────────────────────
@@ -126,30 +95,22 @@ class GuidelinesData {
       id: 'aap_maternal_gbs',
       source: 'AAP',
       section: 'Maternal GBS and Prophylaxis',
-      documentUrl:
-          'https://publications.aap.org/pediatrics/article/150/6/e2022057091/190641',
+      documentUrl: 'https://publications.aap.org/pediatrics/article/150/6/e2022057091/190641',
       content:
           'The AAP 2023 guidelines emphasize maternal Group B Streptococcus (GBS) screening. '
           'Adequate intrapartum antibiotic prophylaxis (IAP) is defined as administration of Penicillin G, '
           'Ampicillin, or Cefazolin >= 4 hours prior to delivery. Inadequate IAP in GBS-positive mothers '
           'increases baseline risk, warranting close observation of the newborn.',
       keywords: [
-        'gbs',
-        'antibiotics',
-        'prophylaxis',
-        'iap',
-        'penicillin',
-        'ampicillin',
-        'cefazolin',
-        'adequate',
+        'gbs', 'antibiotics', 'prophylaxis', 'iap',
+        'penicillin', 'ampicillin', 'cefazolin', 'adequate',
       ],
     ),
     GuidelineChunk(
       id: 'aap_neonatal_eval',
       source: 'AAP',
       section: 'Clinical Evaluation & Categorization',
-      documentUrl:
-          'https://publications.aap.org/pediatrics/article/150/6/e2022057091/190641',
+      documentUrl: 'https://publications.aap.org/pediatrics/article/150/6/e2022057091/190641',
       content:
           'AAP 2023 recommends classifying newborns based on clinical appearance. '
           'Well-appearing infants born to mothers with risk factors should undergo enhanced observation. '
@@ -157,57 +118,35 @@ class GuidelinesData {
           'tachycardia/bradycardia, lethargy, poor perfusion) require blood culture, '
           'laboratory assessment (complete blood count, CRP), and immediate empirical antibiotic therapy (Ampicillin + Gentamicin).',
       keywords: [
-        'respiratory',
-        'distress',
-        'temperature',
-        'lethargy',
-        'perfusion',
-        'cbc',
-        'wbc',
-        'crp',
-        'ampicillin',
-        'gentamicin',
+        'respiratory', 'distress', 'temperature', 'lethargy',
+        'perfusion', 'cbc', 'wbc', 'crp', 'ampicillin', 'gentamicin',
       ],
     ),
     GuidelineChunk(
       id: 'aap_chorioamnionitis',
       source: 'AAP',
       section: 'Management of Suspected Chorioamnionitis',
-      documentUrl:
-          'https://publications.aap.org/pediatrics/article/150/6/e2022057091/190641',
+      documentUrl: 'https://publications.aap.org/pediatrics/article/150/6/e2022057091/190641',
       content:
           'For infants born to mothers with suspected clinical chorioamnionitis (intrapartum fever >= 38.0°C '
           'plus maternal tachycardia, uterine tenderness, purulent fluid, or WBC > 15,000), '
           'AAP recommends obtaining blood cultures at birth and administering empirical antibiotics, '
           'even if the newborn appears clinically well at birth, unless the mother received robust broad-spectrum intrapartum antibiotics.',
-      keywords: [
-        'chorioamnionitis',
-        'fever',
-        'antibiotics',
-        'culture',
-        'well-appearing',
-      ],
+      keywords: ['chorioamnionitis', 'fever', 'antibiotics', 'culture', 'well-appearing'],
     ),
     GuidelineChunk(
       id: 'aap_lab_markers',
       source: 'AAP',
       section: 'Role of Lab Markers',
-      documentUrl:
-          'https://publications.aap.org/pediatrics/article/150/6/e2022057091/190641',
+      documentUrl: 'https://publications.aap.org/pediatrics/article/150/6/e2022057091/190641',
       content:
           'Complete Blood Count (CBC) and C-reactive protein (CRP) are poor screening tools '
           'when used at birth. CBC (specifically WBC count and Immature-to-Total ratio) and CRP are most '
           'valuable when drawn 6-12 hours after birth. A persistent low WBC (< 5,000) or an elevated '
           'I:T ratio (>= 0.2) or elevated CRP (>= 10 mg/L) supports the diagnosis of early-onset sepsis.',
       keywords: [
-        'cbc',
-        'wbc',
-        'it ratio',
-        'crp',
-        'platelets',
-        'markers',
-        'hours',
-        'neutrophil',
+        'cbc', 'wbc', 'it ratio', 'crp', 'platelets',
+        'markers', 'hours', 'neutrophil',
       ],
     ),
 
@@ -223,13 +162,8 @@ class GuidelinesData {
           'exclusive breastfeeding within the first hour of life, hygienic cord care (chlorhexidine in high-mortality areas), '
           'and delayed bathing (to prevent hypothermia). Standard hygiene during delivery is critical to prevent infection.',
       keywords: [
-        'breastfeeding',
-        'thermal',
-        'cord',
-        'hygiene',
-        'prevention',
-        'skin-to-skin',
-        'hypothermia',
+        'breastfeeding', 'thermal', 'cord', 'hygiene',
+        'prevention', 'skin-to-skin', 'hypothermia',
       ],
     ),
     GuidelineChunk(
@@ -243,15 +177,8 @@ class GuidelinesData {
           'severe chest indrawing, high temperature (> 37.5°C), low temperature (< 35.5°C), '
           'movement only when stimulated or no movement at all (severe lethargy), and central cyanosis or jaundice.',
       keywords: [
-        'danger signs',
-        'feeding',
-        'convulsions',
-        'respiratory',
-        'breathing',
-        'temperature',
-        'lethargy',
-        'movement',
-        'jaundice',
+        'danger signs', 'feeding', 'convulsions', 'respiratory',
+        'breathing', 'temperature', 'lethargy', 'movement', 'jaundice',
       ],
     ),
     GuidelineChunk(
@@ -265,13 +192,8 @@ class GuidelinesData {
           'Treatment should be given for at least 7-10 days in confirmed cases. '
           'If a referral is necessary, give a pre-referral dose of intramuscular Ampicillin and Gentamicin.',
       keywords: [
-        'ampicillin',
-        'gentamicin',
-        'injectable',
-        'antibiotics',
-        'danger signs',
-        'referral',
-        'duration',
+        'ampicillin', 'gentamicin', 'injectable', 'antibiotics',
+        'danger signs', 'referral', 'duration',
       ],
     ),
     GuidelineChunk(
@@ -286,13 +208,8 @@ class GuidelinesData {
           '(IV 10% dextrose bolus if glucose < 2.5 mmol/L), and actively maintain thermal control '
           'using warm rooms, blankets, or incubators.',
       keywords: [
-        'supportive',
-        'oxygen',
-        'hydration',
-        'glucose',
-        'hypoglycemia',
-        'thermal',
-        'fluids',
+        'supportive', 'oxygen', 'hydration', 'glucose',
+        'hypoglycemia', 'thermal', 'fluids',
       ],
     ),
   ];

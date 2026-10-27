@@ -1,0 +1,11 @@
+{
+  "primary_model": "openai/gpt-oss-120b",
+  "strict_schema": true,
+  "max_repairs": 1,
+  "retrieval_variant": "expanded_rrf_ce_mmr",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "answer_mode": "Question-focused immutable source selections; patient findings remain separate",
+  "design": "Post-hoc development candidate after a stopped four-case free-form pilot. Not a same-draft paired comparison or untouched test.",
+  "planned_cases": 100,
+  "clinical_review": "pending"
+}

@@ -4,13 +4,16 @@ from datetime import datetime, timezone
 from domain.contraindication_rules import check_contraindications, flags_to_strings
 
 from ml.features import NUMERIC, BOOLEAN, CATEGORIES
-from rag.production_retrieval import retrieve, retrieve_plan
-from rag.verification_graph import evidence_packet, run_verification
+from rag.production_retrieval import Retrieval, retrieve, retrieve_plan
+from rag.verification_v4 import evidence_packet, run_verification
 from services.plan_sections import build_sections
 from schemas import (AntibioticPlanSchema, CitationItem, ClinicalCarePlanResponse,
                      EvidenceChunkResponse, EvidenceLabelRef, ExplanationResponse, FactCheckResult)
 
-ALLOWED = set(NUMERIC) | set(BOOLEAN) | set(CATEGORIES) | {"penicillin_allergy", "blood_culture_positive", "age_hours"}
+RAG_CATEGORIES={'care_setting':{'hospital','hospital_birth','postnatal_ward','neonatal_unit','primary_health_clinic','non_hospital'},
+                'culture_status':{'unknown','pending','negative','positive'}}
+RAG_NUMERIC={'culture_incubation_hours','antibiotic_exposure_hours'}
+ALLOWED = set(NUMERIC) | set(BOOLEAN) | set(CATEGORIES) | set(RAG_CATEGORIES) | RAG_NUMERIC | {"penicillin_allergy", "blood_culture_positive", "age_hours"}
 DISCLAIMER = "Research decision support. Clinician review is required; evidence checks do not establish clinical correctness or authorize treatment."
 
 
@@ -20,13 +23,15 @@ def sanitize_snapshot(snapshot):
     for k, v in snapshot.items():
         if k not in ALLOWED or v is None:
             continue
-        if k in CATEGORIES:
-            if v in CATEGORIES[k]:
+        if k in CATEGORIES or k in RAG_CATEGORIES:
+            if isinstance(v,str) and v in (CATEGORIES.get(k) or RAG_CATEGORIES[k]):
                 out[k] = v
         elif isinstance(v, (int, float, bool)):
             import math
-            if math.isfinite(v):
+            if math.isfinite(v) and (k not in RAG_NUMERIC or (not isinstance(v,bool) and 0<=v<=1000)):
                 out[k] = v
+    if 'blood_culture_positive' in out and 'culture_status' not in out:
+        out['culture_status']='positive' if out['blood_culture_positive'] is True else 'unknown'
     return out
 
 
@@ -77,16 +82,23 @@ def produce(payload, guideline, settings, context=None):
         query += " serial assessments CRP trend"
     if patient.get("creatinine_mg_dl") is not None:
         query += " renal function antibiotic safety"
-    retrieval = retrieve_plan(guideline,settings,patient,context_query=query,history=history)
+    age = patient.get("age_hours")
+    blocked=None
+    if context and context.load_error:
+        blocked=context.load_error
+    elif age is None or not 0 <= age < 72:
+        blocked='Age is missing or outside the 0-72-hour EOS scope'
+    elif patient.get('care_setting') in {'primary_health_clinic','non_hospital'}:
+        blocked='This deployment supports hospital care only; an outpatient care plan requires a separately validated pathway.'
+    elif any(p!='ollama' for p in [settings.llm_provider,settings.verifier_provider or settings.llm_provider]) and not settings.allow_clinical_cloud_processing:
+        blocked='Cloud patient processing is not enabled for this deployment'
+    # Check eligibility and cloud authorization before any retrieval extension
+    # can call a query planner or model-based passage ranker.
+    retrieval = Retrieval() if blocked else retrieve_plan(guideline,settings,patient,context_query=query,history=history)
     packet = evidence_packet(retrieval.chunks, patient, history, guideline)
     packet['task_mode']='care_plan'
-    age = patient.get("age_hours")
-    if context and context.load_error:
-        state = {'status':'abstained','errors':[context.load_error],'draft':{}}
-    elif age is None or not 0 <= age < 72:
-        state = {"status": "abstained", "errors": ["Age is missing or outside the 0-72-hour EOS scope"], "draft": {}}
-    elif any(p!='ollama' for p in [settings.llm_provider,settings.verifier_provider or settings.llm_provider]) and not settings.allow_clinical_cloud_processing:
-        state = {"status": "abstained", "errors": ["Cloud patient processing is not enabled for this deployment"], "draft": {}}
+    if blocked:
+        state={'status':'abstained','errors':[blocked],'draft':{}}
     else:
         state = run_verification(packet, settings)
     return format_plan(patient,history,retrieval,packet,state,settings,context=context)

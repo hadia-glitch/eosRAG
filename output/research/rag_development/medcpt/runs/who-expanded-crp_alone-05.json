@@ -1,0 +1,53 @@
+{
+  "id": "who-expanded-crp_alone-05",
+  "family": "crp_alone",
+  "guideline": "WHO",
+  "stage": "development_only",
+  "eligible_passages": 71,
+  "scope_incompatible_gold_ids": [],
+  "scope_constrained_recall_at_4_ceiling": 1.0,
+  "rankings": {
+    "lexical_scoped": [
+      "WHO2024-P10-B5",
+      "WHO2024-P2-B17",
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-P4-B28"
+    ],
+    "medcpt_dense_dot": [
+      "WHO2024-P2-B17",
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-P10-B5",
+      "WHO2024-C-REFERRAL"
+    ],
+    "medcpt_dense_cosine": [
+      "WHO2024-P2-B17",
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-P10-B5",
+      "WHO2024-C-REFERRAL"
+    ],
+    "medcpt_hybrid": [
+      "WHO2024-P2-B17",
+      "WHO2024-P10-B5",
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-C-REFERRAL"
+    ],
+    "hybrid_medcpt_ce_mmr": [
+      "WHO2024-P2-B17",
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-P10-B5",
+      "WHO2024-P3-B5"
+    ],
+    "hybrid_medcpt_graph_ce_mmr": [
+      "WHO2024-P2-B17",
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-P10-B5",
+      "WHO2024-P3-B5"
+    ],
+    "generic_scoped_control": [
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-P2-B17",
+      "WHO2024-P10-B5",
+      "WHO2024-P4-B25"
+    ]
+  }
+}

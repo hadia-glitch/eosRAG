@@ -1,0 +1,31 @@
+{
+  "id": "who-expanded-initial_investigation-01",
+  "guideline": "WHO",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "WHO2024-P26-B2",
+      "WHO2024-P26-B3",
+      "WHO2024-B.1",
+      "WHO2024-P24-B19"
+    ],
+    "expanded_rrf_ce": [
+      "WHO2024-P26-B2",
+      "WHO2024-P26-B3",
+      "WHO2024-B.1",
+      "WHO2024-P4-B5"
+    ],
+    "rrf_ce_mmr_guarded": [
+      "WHO2024-P26-B2",
+      "WHO2024-P26-B3",
+      "WHO2024-B.1",
+      "WHO2024-P4-B5"
+    ],
+    "rrf_ce_no_mmr": [
+      "WHO2024-P26-B2",
+      "WHO2024-P26-B3",
+      "WHO2024-B.1",
+      "WHO2024-P4-B5"
+    ]
+  }
+}

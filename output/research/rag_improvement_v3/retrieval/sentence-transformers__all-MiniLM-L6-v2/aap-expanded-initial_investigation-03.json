@@ -1,0 +1,31 @@
+{
+  "id": "aap-expanded-initial_investigation-03",
+  "guideline": "AAP",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "AAP2018-35PLUS-P1-B3",
+      "AAP2018-35PLUS-P1-B5",
+      "AAP2018-35PLUS-P4-B0",
+      "AAP2018-35PLUS-SP2"
+    ],
+    "expanded_rrf_ce": [
+      "AAP2018-35PLUS-P1-B3",
+      "AAP2018-35PLUS-P1-B5",
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-P4-B0"
+    ],
+    "rrf_ce_mmr_guarded": [
+      "AAP2018-35PLUS-P1-B3",
+      "AAP2018-35PLUS-P1-B5",
+      "AAP2018-35PLUS-P4-B0",
+      "AAP2018-35PLUS-SP2"
+    ],
+    "rrf_ce_no_mmr": [
+      "AAP2018-35PLUS-P1-B3",
+      "AAP2018-35PLUS-P1-B5",
+      "AAP2018-35PLUS-P4-B0",
+      "AAP2018-35PLUS-SP2"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "source": "NICE",
+  "query": "Review one known risk factor in a currently well baby without inventing absent findings.",
+  "available": false,
+  "questions": [
+    "Review one known risk factor in a currently well baby without inventing absent findings."
+  ],
+  "completed_contract_error": "ValueError",
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "1eebb8a35ccd2aead402bbef2dc2015653e327f16c66fae0ca213fefa89f80da",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"NICE\", \"question\": \"Review one known risk factor in a currently well baby without inventing absent findings.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "What evidence exists for maternal group B Streptococcus colonization as a risk factor for early\u2011onset neonatal sepsis in a well newborn (0\u201172\u202fhours) without other clinical findings?"
+        ]
+      },
+      "seconds": 2.5678934000025038
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 # NeoGuard EOS: Longitudinal Evidence Representation, Calibrated Neonatal Label Classification and Verified Guideline-Grounded Generation
 
-**Original research software report | Updated 27 October 2026 | Reproducible development experiments**
+**Original research software report | Updated 28 October 2026 | Reproducible development experiments**
 
 ## Abstract
 
-Early-onset neonatal sepsis support requires a traceable connection between serial observations, statistical estimates and applicable guideline recommendations. NeoGuard EOS is a clinician-facing research application with separate prediction and evidence-generation branches. A temporal findings representation preserves observed measurements, missingness and elapsed-time changes; hybrid retrieval links findings to versioned passages, and a LangGraph workflow subjects generated claims to source and safety auditors. The study evaluates supplied-label classification using a user-provided Kaggle CSV with 100,000 observations and 20,000 identifiers. A data audit exposes conflicting patient/hour records and unstable birth covariates, so these labels are not treated as culture-confirmed EOS and are not used to reconstruct clinical trajectories. Calibrated logistic regression and random forests are trained with patient-disjoint fit, calibration, selection and test partitions. The selected forests achieve test AUROC 0.9996 across supplied neonatal ages and 0.9992 on postnatal days 0-2. Separately, 100 synthetic vignettes (40 NICE, 30 AAP 2018 and 30 WHO 2024) and 36 injected faults examine retrieval, text alignment, model-based judging and release behavior. The generator produces 94/100 structured drafts and verification releases 8/100. Retrieval results are stratified by guideline; concept expansion has lower measured Recall@4 than hybrid retrieval for all three sources in this benchmark, with paired case and scenario-family intervals reported. Lexical and semantic alignment are reported together with abstention coverage, rather than equating text similarity or selective release with clinical correctness. A separate ten-case historical pilot obtains Hybrid exact NDCG@10 0.5503 versus Dense 0.2941, while source-faithfulness proxy ratings remain 2.5-2.7/5 and evaluator errors limit safety conclusions.
+Early-onset neonatal sepsis support requires a traceable connection between serial observations, statistical estimates and applicable guideline recommendations. NeoGuard EOS is a clinician-facing research application with separate prediction and evidence-generation branches. A temporal findings representation preserves observed measurements, missingness and elapsed-time changes; hybrid retrieval links findings to versioned passages, and a LangGraph workflow subjects generated claims to source and safety auditors. The study evaluates supplied-label classification using a user-provided Kaggle CSV with 100,000 observations and 20,000 identifiers. A data audit exposes conflicting patient/hour records and unstable birth covariates, so these labels are not treated as culture-confirmed EOS and are not used to reconstruct clinical trajectories. Calibrated logistic regression and random forests are trained with patient-disjoint fit, calibration, selection and test partitions. The selected forests achieve test AUROC 0.9996 across supplied neonatal ages and 0.9992 on postnatal days 0-2. Separately, 100 synthetic vignettes (40 NICE, 30 AAP 2018 and 30 WHO 2024) and 36 injected faults examine retrieval, text alignment, model-based judging and release behavior. The generator produces 94/100 structured drafts and verification releases 8/100. Retrieval results are stratified by guideline; concept expansion has lower measured Recall@4 than hybrid retrieval for all three sources in this benchmark, with paired case and scenario-family intervals reported. Lexical and semantic alignment are reported together with abstention coverage, rather than equating text similarity or selective release with clinical correctness. A separate ten-case historical pilot obtains Hybrid exact NDCG@10 0.5503 versus Dense 0.2941, while source-faithfulness proxy ratings remain 2.5-2.7/5 and evaluator errors limit safety conclusions. Subsequent development on the same exposed cases obtains consensus Recall@4 of 0.6792, 0.7500, 0.8000 for NICE, AAP and WHO, respectively; these retrieval-only results do not meet the complete readiness gate, and final evaluation remains on hold.
 
 **Keywords:** early-onset neonatal sepsis; temporal evidence; calibrated classification; hybrid retrieval; knowledge graph; LangGraph; claim verification; selective generation.
 
@@ -102,7 +102,7 @@ Portable JSON stores preprocessing, calibration parameters and logistic coeffici
 
 One hundred synthetic vignettes include the original 18 unchanged cases and 82 additions: 40 NICE, 30 AAP and 30 WHO cases. The six families remain respiratory deterioration, CRP-only reasoning, incomplete stopping criteria, initial investigations, an isolated known risk factor and missing results. Added cases vary gestation, age, care setting and observation availability. Every gold ID resolves to an indexed passage, and case, source and passage hashes are recorded with seed 31. References are engineering-authored rather than clinician-adjudicated. Related variants share templates; 100 cases do not represent 100 independent clinical scenarios.
 
-Each guideline is searched against its source-only candidate pool. The original BM25, MiniLM-L6-v2 normalized exact-cosine, reciprocal-rank hybrid and hybrid-plus-concepts implementations remain unchanged, with RRF offset 60 and four returned passages. The original 18 retrieval rankings replay exactly. Recall@4 is the fraction of proposed relevant IDs retrieved; MRR@4 is the reciprocal rank of the first relevant ID. WHO exact-text PDF duplicates were removed in a logged structural index amendment. A superseded 114-case retrieval-only prototype remains archived; the user-requested 100-case allocation used predetermined family quotas and case order rather than score-based selection. No retrieval hyperparameter was tuned after results were observed.
+Each guideline is searched against its source-only candidate pool. The original BM25, MiniLM-L6-v2 normalized exact-cosine, reciprocal-rank hybrid and hybrid-plus-concepts implementations remain unchanged, with RRF offset 60 and four returned passages. The original 18 retrieval rankings replay exactly. Recall@4 is the fraction of proposed relevant IDs retrieved; MRR@4 is the reciprocal rank of the first relevant ID. WHO exact-text PDF duplicates were removed in a logged structural index amendment. A superseded 114-case retrieval-only prototype remains archived; the user-requested 100-case allocation used predetermined family quotas and case order rather than score-based selection. No retrieval hyperparameter was tuned within this frozen expanded-100 study; the separately labelled post-hoc development in Section 13 changes the index and retrieval configuration after examining these cases.
 
 AAP and WHO source identity and recommendation spans were technically checked, but clinical source approval and gold adjudication remain pending. Passage-level age, gestation and setting annotations are stored for review; the frozen source-gated retriever does not apply those passage-level filters. WHO evidence gaps, referral conditions and treatment-duration statements are not replaced with NICE or AAP rules. Overlapping narrative spans can be relevant even when absent from the proposed gold-ID set, limiting strict ID-based recall interpretation. The experiment measures offline concept expansion rather than live Neo4j or pgvector performance.
 
@@ -114,7 +114,11 @@ The first quote-echo run and the revised quote-ID run are retained separately. T
 
 ### 6.3 Automatic metrics, model-based judging and fault injection
 
+For a case with G labelled relevant passages and a fixed retrieval depth k, Precision@k = relevant retrieved/k has ceiling min(G,k)/k, whereas Recall@k = relevant retrieved/G has ceiling min(G,k)/G. Consequently, increasing k can increase attainable recall while decreasing the precision ceiling. MRR@k and ideal-normalized nDCG@k have ceiling 1 when the corresponding ideal ordering is attainable. Per-case F1@k has ceiling 2 min(G,k)/(G+k). These ceilings describe the annotation and retrieval-depth design, not an intrinsic limit of clinical relevance or a model-performance excuse. Ceiling-normalizing precision is not used to replace conventional precision; with G <= k, it would reproduce recall rather than provide independent evidence of improvement.
+
 BLEU-4 uses sacreBLEU corpus aggregation, 13a tokenization and exponential smoothing, divided by 100 for a 0-1 scale. METEOR uses NLTK with lowercased WordPunct tokens, Porter stemming and WordNet matching. ROUGE-1, ROUGE-2 and ROUGE-L are stemmed F1. BERTScore uses unrescaled contextual token alignment without IDF: DistilBERT-base-uncased layer 5 and RoBERTa-large layer 17. Versions and BERTScore configuration hashes are saved. Descriptive 95% intervals use 2,000 resamples with seed 31: paired case resampling and whole-scenario-family resampling. Unequal family sizes retain their case weights; six families provide limited cluster-level inference. Token-length truncation is counted. Surface and embedding alignment do not establish medical correctness.
+
+No empirical clinical threshold of 0.8 is justified for BLEU, METEOR, ROUGE or BERTScore. A valid paraphrase need not approach a lexical-overlap ceiling, and a fluent but unsafe answer may have high semantic similarity. All-case generation metrics also depend on release coverage; withheld cases cannot be removed without reporting the conditional denominator. Relevance annotations are not exhaustive clinical judgments, so an unlabelled but valid passage can be counted as a false positive under exact-ID scoring.
 
 A separate prompt, blind to the arm label and previous auditor decisions, judges each available draft against the case, sources and frozen reference. It assigns integer 1-5 scores for grounding, patient fidelity, completeness, actionability and uncertainty handling, plus an unsafe-claim count. The same model is used as generator, auditor and judge; the judge is therefore a dependent semantic proxy with potential shared errors and reference bias. Because the verified arm releases unchanged text, its conditional judge scores reuse the same draft judgment. Withheld answers receive zero all-case alignment but have no meaningful judge score; judge means therefore include an explicit available-case denominator.
 
@@ -173,6 +177,17 @@ Table 5. Source-stratified retrieval; brackets show paired-case bootstrap 95% in
 For hybrid-plus-concepts minus hybrid, Recall@4 differences are: NICE -0.0042 (case [-0.0583, 0.0458], family [-0.0935, 0.0667]); AAP -0.1667 (case [-0.2500, -0.0833], family [-0.3333, 0.0000]); WHO -0.1667 (case [-0.2500, -0.0833], family [-0.3333, -0.0167]).
 
 The measured concept-expansion scores do not support a blanket graph benefit. The original 18 rankings are unchanged; differences between the old NICE average and the expanded NICE average reflect the additional queries rather than a changed retrieval algorithm. Source-stratified counts, candidate-pool asymmetry and engineering-authored relevance judgments limit generalization; no source-pooled headline retrieval score is used.
+
+Table 5a. Annotation-dependent macro-average ceilings at four retrieved passages. Each case has two or three labelled relevant passages; Recall@4, MRR@4 and nDCG@4 can each reach 1.0000. Source-specific ceilings must accompany conventional precision and F1 scores.
+
+| Source (cases) | Labelled passages | Precision@4 ceiling | F1@4 ceiling | Recall / MRR / nDCG ceiling |
+| --- | --- | --- | --- | --- |
+| NICE (40) | 107 | 0.6688 | 0.7952 | 1.0000 / 1.0000 / 1.0000 |
+| AAP (30) | 60 | 0.5000 | 0.6667 | 1.0000 / 1.0000 / 1.0000 |
+| WHO (30) | 60 | 0.5000 | 0.6667 | 1.0000 / 1.0000 / 1.0000 |
+| All cases (100; design only) | 227 | 0.5675 | 0.7181 | 1.0000 / 1.0000 / 1.0000 |
+
+The all-case row describes the benchmark design rather than a pooled retrieval-performance claim. A Precision@4 target of 0.8 is unattainable with these fixed gold sets even if every labelled relevant passage is returned. Recall@4 and MRR@4 targets near 0.8 remain attainable and require measurement rather than a ceiling adjustment. Re-adjudication should examine potentially relevant unlabelled passages without changing gold labels merely to improve system scores.
 
 ### 7.3 Generation, verification and coverage
 
@@ -398,6 +413,93 @@ A separate corrected development set contains one hundred cases and three hundre
 
 The pilot decision is REVISE. First establish a defensible culture-adjudicated, time-aware EOS cohort and external calibration. Second independently review benchmark gold, source scope, references and citation provenance. Third freeze an identical-draft verification ablation and independent evaluation set, with evaluator-disagreement and workflow checks. Provider execution failures remain operational logs outside all quality means. The present research artifact does not justify clinical release.
 
+## 13. Subsequent retrieval development and readiness boundary
+
+This section is a post-hoc development extension on the same 100 previously examined synthetic cases, not a final evaluation or an untouched test. The original Sections 6-7 and their results remain a frozen historical study. No proposed gold identifier or engineering reference answer enters query planning, candidate retrieval, cross-encoder scoring or language-model passage ranking. Source and case adjudication remain pending.
+
+### 13.1 Index structure, medical encoders and question coverage
+
+Source headings and explicit age, gestation and care-setting limits are applied before retrieval. Seventeen explicitly late-only NICE passages are excluded in the logged structural index amendment. The remaining source index contains 299 passages. Publisher structure separates normative guidance from research background, leaving 115 NICE, 30 AAP and 16 WHO passages in the guidance lane; background remains separately available. This pool reduction is an engineering intervention and contributes to comparisons with the original index. The small WHO pool makes high-depth recall easier.
+
+The NCBI MedCPT query, article and cross encoders are evaluated with frozen weights [16], alongside MiniLM/MS-MARCO controls. Medical pretraining does not establish clinical validity. Medical synonym expansion, RRF offset 60, overlapping cross-encoder windows (180 words, 40-word overlap), multi-question planning and bounded MMR are retained in logged ablations. MMR diversity 0.15 operates within the top twice-the-return-budget candidate set; a regression test demonstrates a near-duplicate neighbour swap. The earlier 0.1 ordinal weighting could be inert at four passages, so merely enabling that earlier option did not establish a diversity benefit. All five faceted methods and depths 1, 2, 4, 6, 8 and 12 remain in the result CSVs.
+
+The planner produces 24 unique source/question requests. The known EOS system age scope is recognized in a logged offline validation amendment; 23 plans pass and one retains the original question. A second, bounded listwise stage receives the original focused question and up to 24 full candidate passages formed by fixed fusion of four upstream rankings. It returns only existing identifiers, with at most eight passages; missing, duplicate or invented identifiers fail validation. No source text is rewritten. Identical question/candidate requests are cached exactly, so the case count does not equal the number of independent model requests.
+
+### 13.2 Measured retrieval changes and negative results
+
+Table 20. Development retrieval at four passages, with complete source populations. Precision remains conventional and is not ceiling-normalized. All case and family intervals, nDCG, F1 and evidence-word budgets are available in the corresponding CSV files.
+
+| Source | Method | Complete / N | Recall@4 | Case 95% CI | Family 95% CI | MRR@4 | Precision@4 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| NICE | Medical faceted | 40/40 | 0.6417 | [0.5375, 0.7375] | [0.4127, 0.8455] | 0.7083 | 0.4125 |
+| NICE | Bounded listwise | 40/40 | 0.6792 | [0.5750, 0.7750] | [0.4658, 0.8875] | 0.7562 | 0.4375 |
+| NICE | RRF consensus | 40/40 | 0.6792 | [0.5707, 0.7750] | [0.4167, 0.9065] | 0.7875 | 0.4375 |
+| AAP | Medical faceted | 30/30 | 0.7500 | [0.6667, 0.8333] | [0.5833, 0.9167] | 0.7222 | 0.3750 |
+| AAP | Bounded listwise | 30/30 | 0.7500 | [0.6000, 0.8833] | [0.4167, 1.0000] | 0.7222 | 0.3750 |
+| AAP | RRF consensus | 30/30 | 0.7500 | [0.6000, 0.8833] | [0.4167, 1.0000] | 0.7083 | 0.3750 |
+| WHO | Medical faceted | 30/30 | 0.7167 | [0.6000, 0.8167] | [0.4833, 0.9167] | 0.8000 | 0.3583 |
+| WHO | Bounded listwise | 30/30 | 0.6333 | [0.4833, 0.7833] | [0.3000, 0.9167] | 0.6833 | 0.3167 |
+| WHO | RRF consensus | 30/30 | 0.8000 | [0.6833, 0.9000] | [0.5500, 1.0000] | 0.8500 | 0.4000 |
+
+Table 21. Medical faceted minus original frozen hybrid retrieval. Old paper values are quoted explicitly. These are combined index/model/query changes, not isolated causal component effects.
+
+| Source | Metric | Old paper value | Development value | Paired change | Case 95% CI | Family 95% CI |
+| --- | --- | --- | --- | --- | --- | --- |
+| NICE | recall_at_4 | 0.3792 | 0.6417 | 0.2625 | [0.1750, 0.3584] | [0.1500, 0.3496] |
+| NICE | mrr_at_4 | 0.4938 | 0.7083 | 0.2146 | [0.0875, 0.3542] | [-0.0264, 0.4680] |
+| AAP | recall_at_4 | 0.5500 | 0.7500 | 0.2000 | [0.1167, 0.2833] | [0.0333, 0.3667] |
+| AAP | mrr_at_4 | 0.6722 | 0.7222 | 0.0500 | [-0.0779, 0.1889] | [-0.2222, 0.3389] |
+| WHO | recall_at_4 | 0.3333 | 0.7167 | 0.3833 | [0.2333, 0.5500] | [0.0667, 0.7167] |
+| WHO | mrr_at_4 | 0.2694 | 0.8000 | 0.5306 | [0.4111, 0.6500] | [0.2722, 0.7806] |
+
+Recall@4 is higher in this development benchmark for all three sources. Both paired interval types exclude zero for those recall changes. The MRR differences for NICE and AAP do not exclude zero under scenario-family resampling, so a general superiority claim is unsupported. Bootstrap intervals use 2,000 resamples and seed 31; only six scenario families and repeated templates limit independence.
+
+The listwise-only intervention lowers WHO recall and can produce an empty evidence selection for a question about a source limitation. It is therefore not adopted as an evidence-availability gate. A subsequent fixed RRF60 consensus treats its output as one relevance vote alongside the upstream ranking; an empty list contributes no vote. The consensus preserves reviewed candidate evidence for downstream assessment without declaring that it supports a treatment claim. Its negative and positive paired changes remain in separate CSVs; no new API calls are needed for this saved-request development regression.
+
+Table 22. Explicit-reference graph variant minus medical faceted retrieval at four passages. Negative effects are retained.
+
+| Source | Recall difference | Case 95% CI | Family 95% CI |
+| --- | --- | --- | --- |
+| NICE | -0.0250 | [-0.0500, 0.0000] | [-0.0750, 0.0000] |
+| AAP | -0.0833 | [-0.1500, -0.0167] | [-0.2500, 0.0000] |
+| WHO | -0.0833 | [-0.1500, -0.0167] | [-0.2500, 0.0000] |
+
+Graph candidate expansion does not improve the four-passage recall estimate in these three cohorts. A separate typed source-context graph links recommendations to exact definition sentences in the same publisher section. Every definition retains its parent passage, offsets and text/source hashes; engineering extraction is not clinical approval. Such context is an additional, explicitly counted evidence budget, not a hidden top-four slot. Its effect on answer quality is unmeasured. No live Neo4j deployment benefit is claimed from this offline graph.
+
+Increasing the return budget can recover more annotated passages while lowering the precision ceiling and increasing context length; it does not turn Recall@8 into Recall@4. The fixed gold sets contain only two or three passages per case, so the conventional Precision@4 ceilings in Table 5a remain binding. Incomplete relevance annotation may also mark other useful evidence as irrelevant, but that possibility requires blinded clinician adjudication rather than a retrospective label change. Reference-alignment scores have no comparable demonstrated task-specific numeric ceiling; weak text alignment cannot be dismissed as an inevitable ceiling.
+
+### 13.3 Application changes, clinical review and evaluation hold
+
+The active application now passes the recorded care setting to RAG separately from ML predictors. The explicit positive or negative culture result selected in the Flutter form is also preserved; pending or unrecorded results remain unknown. The API distinguishes culture status, culture-incubation time and antibiotic-exposure time; patient age cannot substitute for either treatment clock. Passage-level scope is enforced in addition to document approval. Hospital-only eligibility and cloud-processing authorization are checked before retrieval, and the exact clinical task reaches both auditors. Missing eligibility, audit dissent and incomplete evidence remain explicit.
+
+The medical/faceted and listwise experiments are separate development adapters. Their results must not be attributed automatically to the active Supabase index, whose complete-recommendation chunking and encoder identity still require a controlled deployment reconciliation. The current clinical source registry remains unapproved; benchmark engineering references are not a substitute for source review.
+
+The final evaluation remains on hold. The readiness check requires source-specific Recall@4 and MRR@4 near 0.80, a balanced development answer pilot covering six families and three sources, explicit usable-answer coverage, complete audits and fault regressions. A passage-ranking score does not establish those answer-generation criteria. The earlier task-aware generation run was stopped after three saved cases, and those cases are not reported as a completed final study. The clinician bundle provides shuffled evidence panels, blank relevance and scope forms, a source-linked casebook and a separate engineering triage queue. Clinical verification and clinical usability remain unperformed.
+
+### 13.4 Additional cross-encoder ablation
+
+An additional BAAI bge-reranker-v2-m3 cross encoder [17] is tested without changing the candidate pools, cases or labels. Three declared variants use its direct ordering, RRF60 with the upstream order plus bounded MMR, and RRF60 with the saved consensus order plus bounded MMR. Inference uses overlapping windows, frozen weights and CPU execution. This stage makes no additional Groq calls. The model revision, all ranks, candidate-recall ceilings, four- and eight-passage results and paired case/family intervals are retained. It does not constitute final evaluation or answer usability validation.
+
+Table 23. Additional cross-encoder development results. All declared four-passage variants are shown; previous consensus values remain in Table 20.
+
+| Source | Method | Complete / N | Recall@4 | Case 95% CI | Family 95% CI | MRR@4 | Precision@4 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| NICE | BGE CE | 40/40 | 0.5875 | [0.4792, 0.6833] | [0.3415, 0.8255] | 0.7375 | 0.3688 |
+| NICE | BGE upstream RRF/MMR | 40/40 | 0.6250 | [0.5083, 0.7250] | [0.3504, 0.8731] | 0.7375 | 0.3875 |
+| NICE | BGE consensus RRF/MMR | 40/40 | 0.6583 | [0.5417, 0.7500] | [0.3833, 0.9024] | 0.7875 | 0.4125 |
+| AAP | BGE CE | 30/30 | 0.4167 | [0.2667, 0.5667] | [0.0833, 0.7500] | 0.4167 | 0.2083 |
+| AAP | BGE upstream RRF/MMR | 30/30 | 0.5000 | [0.4000, 0.6000] | [0.2500, 0.7500] | 0.5833 | 0.2500 |
+| AAP | BGE consensus RRF/MMR | 30/30 | 0.5000 | [0.3667, 0.6500] | [0.1667, 0.8333] | 0.5833 | 0.2500 |
+| WHO | BGE CE | 30/30 | 0.8333 | [0.7500, 0.9167] | [0.6667, 1.0000] | 0.7556 | 0.4167 |
+| WHO | BGE upstream RRF/MMR | 30/30 | 0.7500 | [0.6667, 0.8333] | [0.5833, 0.9167] | 0.7833 | 0.3750 |
+| WHO | BGE consensus RRF/MMR | 30/30 | 0.8000 | [0.6833, 0.9000] | [0.5500, 1.0000] | 0.7667 | 0.4000 |
+
+An additional model or rank vote is not assumed to improve retrieval. Negative changes remain in the paired-difference CSVs. Model-selection comparisons reuse exposed development cases and cannot establish independent generalization.
+
+None of the three additional cross-encoder variants reaches both Recall@4 and MRR@4 of 0.80 in every guideline source; it is not promoted as the deployment candidate.
+
+A separate care-plan contract regression rejects all 36 original free-text fault challenges at the quote-ID selection schema, before any auditor call. The original faults are materialized claims rather than valid source selections; this is a structural contract result and does not measure the revised semantic auditors. The interpretation amendment, original records and counts are retained.
+
 ## References
 
 [1] NICE. Neonatal infection: antibiotics for prevention and treatment (NG195). Updated 13 May 2026. https://www.nice.org.uk/guidance/ng195
@@ -429,3 +531,7 @@ The pilot decision is REVISE. First establish a defensible culture-adjudicated, 
 [14] LangChain. LangGraph graph API documentation. https://docs.langchain.com/oss/python/langgraph/graph-api
 
 [15] Groq. Structured outputs and API documentation. https://console.groq.com/docs/structured-outputs
+
+[16] Jin Q et al. MedCPT: Contrastive Pre-trained Transformers with large-scale PubMed search logs for zero-shot biomedical information retrieval. Bioinformatics 39(11), btad651 (2023). https://doi.org/10.1093/bioinformatics/btad651
+
+[17] BAAI. bge-reranker-v2-m3 model card and inference documentation. https://huggingface.co/BAAI/bge-reranker-v2-m3

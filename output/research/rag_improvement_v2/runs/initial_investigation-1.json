@@ -1,0 +1,242 @@
+{
+  "id": "initial_investigation-1",
+  "family": "initial_investigation",
+  "model": "openai/gpt-oss-120b",
+  "packet": {
+    "guideline": "NICE NG195; EVALUATION ONLY",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.13.2",
+        "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 21
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.18.1",
+        "text": "Be aware that, although minor conjunctivitis with encrusted eyelids is common and often benign, a purulent discharge may indicate a serious infection (for example, with chlamydia or gonococcus). [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 28
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-1.38.2",
+        "text": "Tell the parents and carers who their main point of contact will be after discharge. [2024]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 46
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.4.1",
+        "text": "Before any baby is transferred home from the hospital or midwifery-led unit (or in the immediate postnatal period in the case of babies born at home), advise parents and carers to seek urgent medical help (for example, from NHS 111, their GP, or an accident and emergency department) if they are concerned that their baby: \u2022 is showing abnormal behaviour (for example, inconsolable crying or listlessness) or \u2022 is unusually floppy or \u2022 has an abnormal temperature unexplained by environmental factors (lower than 36\u00b0C or higher than 38\u00b0C) or \u2022 has abnormal breathing (rapid breathing, difficulty in breathing or grunting) or \u2022 has a change in skin colour (for example, where the baby becomes very pale, blue/grey or dark yellow) or \u2022 has developed new difficulties with feeding. Give the advice both in person, and as written information and advice for them to take away. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 6
+      }
+    ]
+  },
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "5ed9bdadcf23dde316aaac435676e9aa075837019da17c4d764fbd8f458fca82",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Select one to four complete, applicable source recommendations that directly address evaluation_question. This is a question-focused evidence answer, not a full care plan. Each item selects EXACTLY ONE existing quote_id. Its wording is materialized verbatim by the server. Do not add clinical instructions, omit essential conditions, or infer that patient eligibility is established. Prefer complete recommendations over research descriptions. Do not fill unrelated plan sections.\", \"data\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"Explain baseline investigations and how subsequent inflammatory-marker readings should be used.\", \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\"}]}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Be aware that, although minor conjunctivitis with encrusted eyelids is common and often benign, a purulent discharge may indicate a serious infection (for example, with chlamydia or gonococcus). [2012]\"}]}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"Tell the parents and carers who their main point of contact will be after discharge. [2024]\"}]}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"Before any baby is transferred home from the hospital or midwifery-led unit (or in the immediate postnatal period in the case of babies born at home), advise parents and carers to seek urgent medical help (for example, from NHS 111, their GP, or an accident and emergency department) if they are concerned that their baby: \\u2022 is showing abnormal behaviour (for example, inconsolable crying or listlessness) or \\u2022 is unusually floppy or \\u2022 has an abnormal temperature unexplained by environmental factors (lower than 36\\u00b0C or higher than 38\\u00b0C) or \\u2022 has abnormal breathing (rapid breathing, difficulty in breathing or grunting) or \\u2022 has a change in skin colour (for example, where the baby becomes very pale, blue/grey or dark yellow) or \\u2022 has developed new difficulties with feeding. Give the advice both in person, and as written information and advice for them to take away. [2021]\"}]}], \"task_mode\": \"care_plan\"}}",
+      "completion_tokens": 1200,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "investigations",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 6.844965500000399
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "fb4b16334346a23e4a237d81a1cbfde5652542e424a55f3570a28cf16d659bb4",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Be aware that, although minor conjunctivitis with encrusted eyelids is common and often benign, a purulent discharge may indicate a serious infection (for example, with chlamydia or gonococcus). [2012]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Tell the parents and carers who their main point of contact will be after discharge. [2024]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Before any baby is transferred home from the hospital or midwifery-led unit (or in the immediate postnatal period in the case of babies born at home), advise parents and carers to seek urgent medical help (for example, from NHS 111, their GP, or an accident and emergency department) if they are concerned that their baby: \\u2022 is showing abnormal behaviour (for example, inconsolable crying or listlessness) or \\u2022 is unusually floppy or \\u2022 has an abnormal temperature unexplained by environmental factors (lower than 36\\u00b0C or higher than 38\\u00b0C) or \\u2022 has abnormal breathing (rapid breathing, difficulty in breathing or grunting) or \\u2022 has a change in skin colour (for example, where the baby becomes very pale, blue/grey or dark yellow) or \\u2022 has developed new difficulties with feeding. Give the advice both in person, and as written information and advice for them to take away. [2021]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"investigations\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\", \"support\": [{\"evidence_id\": \"E1\"}]}], \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"supported\": {\"title\": \"Supported\", \"type\": \"boolean\"}, \"rejected_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Rejected Claim Ids\", \"type\": \"array\"}, \"checked_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Checked Claim Ids\", \"type\": \"array\"}, \"reasons\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Reasons\", \"type\": \"array\"}}, \"required\": [\"supported\", \"rejected_claim_ids\", \"checked_claim_ids\", \"reasons\"], \"title\": \"Verdict\", \"type\": \"object\"}, \"required_checked_claim_ids\": [\"C1\"], \"response_contract\": \"Return supported as a JSON boolean, checked_claim_ids as an array containing every reviewed ID exactly once, rejected_claim_ids as an array of failed IDs, and reasons as an ARRAY OF STRINGS, never an object keyed by claim. Do not assume an unreviewed claim passes. Reasons must explain failures only. A conditional statement does not establish that its patient eligibility criteria have been met.\"}",
+      "completion_tokens": 2400,
+      "response": {
+        "supported": true,
+        "rejected_claim_ids": [],
+        "checked_claim_ids": [
+          "C1"
+        ],
+        "reasons": []
+      },
+      "seconds": 14.311196299997391
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "fb4b16334346a23e4a237d81a1cbfde5652542e424a55f3570a28cf16d659bb4",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Be aware that, although minor conjunctivitis with encrusted eyelids is common and often benign, a purulent discharge may indicate a serious infection (for example, with chlamydia or gonococcus). [2012]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Tell the parents and carers who their main point of contact will be after discharge. [2024]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Before any baby is transferred home from the hospital or midwifery-led unit (or in the immediate postnatal period in the case of babies born at home), advise parents and carers to seek urgent medical help (for example, from NHS 111, their GP, or an accident and emergency department) if they are concerned that their baby: \\u2022 is showing abnormal behaviour (for example, inconsolable crying or listlessness) or \\u2022 is unusually floppy or \\u2022 has an abnormal temperature unexplained by environmental factors (lower than 36\\u00b0C or higher than 38\\u00b0C) or \\u2022 has abnormal breathing (rapid breathing, difficulty in breathing or grunting) or \\u2022 has a change in skin colour (for example, where the baby becomes very pale, blue/grey or dark yellow) or \\u2022 has developed new difficulties with feeding. Give the advice both in person, and as written information and advice for them to take away. [2021]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"investigations\", \"text\": \"Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\", \"support\": [{\"evidence_id\": \"E1\"}]}], \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"supported\": {\"title\": \"Supported\", \"type\": \"boolean\"}, \"rejected_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Rejected Claim Ids\", \"type\": \"array\"}, \"checked_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Checked Claim Ids\", \"type\": \"array\"}, \"reasons\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Reasons\", \"type\": \"array\"}}, \"required\": [\"supported\", \"rejected_claim_ids\", \"checked_claim_ids\", \"reasons\"], \"title\": \"Verdict\", \"type\": \"object\"}, \"required_checked_claim_ids\": [\"C1\"], \"response_contract\": \"Return supported as a JSON boolean, checked_claim_ids as an array containing every reviewed ID exactly once, rejected_claim_ids as an array of failed IDs, and reasons as an ARRAY OF STRINGS, never an object keyed by claim. Do not assume an unreviewed claim passes. Reasons must explain failures only. A conditional statement does not establish that its patient eligibility criteria have been met.\"}",
+      "completion_tokens": 2400,
+      "response": {
+        "supported": true,
+        "rejected_claim_ids": [],
+        "checked_claim_ids": [
+          "C1"
+        ],
+        "reasons": []
+      },
+      "seconds": 25.353523199999472
+    }
+  ],
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195; EVALUATION ONLY",
+      "patient": {
+        "age_hours": 12,
+        "gestational_age_weeks": 35,
+        "care_setting": "hospital",
+        "respiratory_rate": 48,
+        "spo2": 97,
+        "crp": 4,
+        "culture_status": "unknown",
+        "red_flags": "not fully documented",
+        "maternal_gbs": "unknown"
+      },
+      "history": [
+        {
+          "age_hours": 3,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 14
+        },
+        {
+          "age_hours": 6,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.13.2",
+          "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 21
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.18.1",
+          "text": "Be aware that, although minor conjunctivitis with encrusted eyelids is common and often benign, a purulent discharge may indicate a serious infection (for example, with chlamydia or gonococcus). [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 28
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-1.38.2",
+          "text": "Tell the parents and carers who their main point of contact will be after discharge. [2024]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 46
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.4.1",
+          "text": "Before any baby is transferred home from the hospital or midwifery-led unit (or in the immediate postnatal period in the case of babies born at home), advise parents and carers to seek urgent medical help (for example, from NHS 111, their GP, or an accident and emergency department) if they are concerned that their baby: \u2022 is showing abnormal behaviour (for example, inconsolable crying or listlessness) or \u2022 is unusually floppy or \u2022 has an abnormal temperature unexplained by environmental factors (lower than 36\u00b0C or higher than 38\u00b0C) or \u2022 has abnormal breathing (rapid breathing, difficulty in breathing or grunting) or \u2022 has a change in skin colour (for example, where the baby becomes very pale, blue/grey or dark yellow) or \u2022 has developed new difficulties with feeding. Give the advice both in person, and as written information and advice for them to take away. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 6
+        }
+      ],
+      "task_mode": "care_plan"
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "investigations",
+          "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]"
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1"
+      ],
+      "reasons": []
+    },
+    "safety_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1"
+      ],
+      "reasons": []
+    },
+    "status": "supported_for_review",
+    "errors": [],
+    "resolution_log": [],
+    "packet_sha256": "37dcd902596717d58adef8019a5f60611714484e8969656ade8750536e1d7c1f",
+    "verification_version": "explicit-audit-contract-v2",
+    "answer_mode": "question-focused immutable excerpts; observed findings rendered separately"
+  },
+  "seconds": 32.854699000003166,
+  "settings": {
+    "strict_schema": true,
+    "repairs": 1,
+    "budget": 120,
+    "auditor_tokens": 2400,
+    "temperature": 0
+  },
+  "code_sha256": {
+    "backend/rag/verification_v2.py": "5233b42c3b924d2831ff075db222d558b85424e49afb91b62f5b22caeaf914c7",
+    "backend/rag/verification_graph.py": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "model": "BAAI/bge-reranker-v2-m3",
+  "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "torch": "2.12.1+cpu",
+  "device": "cpu",
+  "threads": 4,
+  "dtype": "torch.float32",
+  "max_sequence_length": 512,
+  "training": false,
+  "seed": "No stochastic inference sampling; fixed frozen model in eval mode."
+}

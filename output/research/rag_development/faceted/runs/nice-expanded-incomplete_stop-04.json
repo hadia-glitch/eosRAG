@@ -1,0 +1,250 @@
+{
+  "id": "nice-expanded-incomplete_stop-04",
+  "family": "incomplete_stop",
+  "guideline": "NICE",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "NICE-1.16.1"
+      ],
+      "2": [
+        "NICE-1.16.1",
+        "NICE-1.21.2"
+      ],
+      "4": [
+        "NICE-1.16.1",
+        "NICE-1.21.2",
+        "NICE-1.27.5",
+        "NICE-1.21.3"
+      ],
+      "6": [
+        "NICE-1.16.1",
+        "NICE-1.21.2",
+        "NICE-1.27.5",
+        "NICE-1.21.3",
+        "NICE-1.21.4",
+        "NICE-1.13.1"
+      ],
+      "8": [
+        "NICE-1.16.1",
+        "NICE-1.21.2",
+        "NICE-1.27.5",
+        "NICE-1.21.3",
+        "NICE-1.21.4",
+        "NICE-1.13.1",
+        "NICE-1.10.2",
+        "NICE-1.22.1"
+      ],
+      "12": [
+        "NICE-1.16.1",
+        "NICE-1.21.2",
+        "NICE-1.27.5",
+        "NICE-1.21.3",
+        "NICE-1.21.4",
+        "NICE-1.13.1",
+        "NICE-1.10.2",
+        "NICE-1.17.2",
+        "NICE-1.22.1",
+        "NICE-1.19.1",
+        "NICE-1.21.1",
+        "NICE-1.20.5"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "NICE-1.16.1"
+      ],
+      "2": [
+        "NICE-1.16.1",
+        "NICE-1.19.1"
+      ],
+      "4": [
+        "NICE-1.16.1",
+        "NICE-1.19.1",
+        "NICE-1.21.4",
+        "NICE-1.21.2"
+      ],
+      "6": [
+        "NICE-1.16.1",
+        "NICE-1.19.1",
+        "NICE-1.21.4",
+        "NICE-1.21.2",
+        "NICE-1.13.1",
+        "NICE-1.21.3"
+      ],
+      "8": [
+        "NICE-1.16.1",
+        "NICE-1.19.1",
+        "NICE-1.21.4",
+        "NICE-1.21.2",
+        "NICE-1.13.1",
+        "NICE-1.21.3",
+        "NICE-1.22.1",
+        "NICE-1.21.1"
+      ],
+      "12": [
+        "NICE-1.16.1",
+        "NICE-1.19.1",
+        "NICE-1.21.4",
+        "NICE-1.21.2",
+        "NICE-1.13.1",
+        "NICE-1.21.3",
+        "NICE-1.22.1",
+        "NICE-1.21.1",
+        "NICE-1.20.5",
+        "NICE-1.27.5",
+        "NICE-1.10.3",
+        "NICE-1.13.5"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "NICE-1.16.1"
+      ],
+      "2": [
+        "NICE-1.16.1",
+        "NICE-1.20.5"
+      ],
+      "4": [
+        "NICE-1.16.1",
+        "NICE-1.20.5",
+        "NICE-1.21.2",
+        "NICE-1.21.3"
+      ],
+      "6": [
+        "NICE-1.16.1",
+        "NICE-1.20.5",
+        "NICE-1.21.2",
+        "NICE-1.21.3",
+        "NICE-1.15.4",
+        "NICE-1.21.4"
+      ],
+      "8": [
+        "NICE-1.16.1",
+        "NICE-1.20.5",
+        "NICE-1.21.2",
+        "NICE-1.21.3",
+        "NICE-1.15.4",
+        "NICE-1.21.4",
+        "NICE-1.27.5",
+        "NICE-1.21.1"
+      ],
+      "12": [
+        "NICE-1.16.1",
+        "NICE-1.20.5",
+        "NICE-1.21.2",
+        "NICE-1.21.3",
+        "NICE-1.15.4",
+        "NICE-1.21.4",
+        "NICE-1.27.5",
+        "NICE-1.21.1",
+        "NICE-1.13.1",
+        "NICE-1.22.1",
+        "NICE-1.10.2",
+        "NICE-1.17.2"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "NICE-1.21.2"
+      ],
+      "2": [
+        "NICE-1.21.2",
+        "NICE-1.15.4"
+      ],
+      "4": [
+        "NICE-1.21.2",
+        "NICE-1.15.4",
+        "NICE-1.21.4",
+        "NICE-1.13.1"
+      ],
+      "6": [
+        "NICE-1.21.2",
+        "NICE-1.15.4",
+        "NICE-1.21.4",
+        "NICE-1.13.1",
+        "NICE-1.20.5",
+        "NICE-1.21.3"
+      ],
+      "8": [
+        "NICE-1.21.2",
+        "NICE-1.15.4",
+        "NICE-1.21.4",
+        "NICE-1.13.1",
+        "NICE-1.20.5",
+        "NICE-1.21.3",
+        "NICE-1.16.1",
+        "NICE-1.21.1"
+      ],
+      "12": [
+        "NICE-1.21.2",
+        "NICE-1.15.4",
+        "NICE-1.21.4",
+        "NICE-1.13.1",
+        "NICE-1.20.5",
+        "NICE-1.21.3",
+        "NICE-1.16.1",
+        "NICE-1.21.1",
+        "NICE-1.22.1",
+        "NICE-1.13.5",
+        "NICE-1.27.5",
+        "NICE-1.10.3"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "NICE-1.21.2"
+      ],
+      "2": [
+        "NICE-1.21.2",
+        "NICE-1.15.4"
+      ],
+      "4": [
+        "NICE-1.21.2",
+        "NICE-1.15.4",
+        "NICE-1.21.4",
+        "NICE-1.13.1"
+      ],
+      "6": [
+        "NICE-1.21.2",
+        "NICE-1.15.4",
+        "NICE-1.21.4",
+        "NICE-1.13.1",
+        "NICE-1.20.5",
+        "NICE-1.21.1"
+      ],
+      "8": [
+        "NICE-1.21.2",
+        "NICE-1.15.4",
+        "NICE-1.21.4",
+        "NICE-1.13.1",
+        "NICE-1.20.5",
+        "NICE-1.21.1",
+        "NICE-1.16.1",
+        "NICE-1.21.3"
+      ],
+      "12": [
+        "NICE-1.21.2",
+        "NICE-1.15.4",
+        "NICE-1.21.4",
+        "NICE-1.13.1",
+        "NICE-1.20.5",
+        "NICE-1.21.1",
+        "NICE-1.16.1",
+        "NICE-1.21.3",
+        "NICE-1.22.1",
+        "NICE-1.15.1",
+        "NICE-1.10.3",
+        "NICE-1.16.2"
+      ]
+    }
+  },
+  "questions": [
+    "In neonates with early\u2011onset sepsis and a sterile blood culture after the recommended incubation period, what criteria guide antibiotic review and safe discontinuation when respiratory illness persists?",
+    "What clinical signs, laboratory results, or imaging findings indicate that antibiotics can be stopped in a neonate with persistent respiratory symptoms but negative blood cultures?",
+    "When should antibiotics be continued despite a sterile blood culture in a neonate with ongoing respiratory disease, according to NICE recommendations?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 115
+}

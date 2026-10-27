@@ -1,0 +1,33 @@
+{
+  "seed": 31,
+  "rrf_k": 60,
+  "k": 4,
+  "candidate_limit": 60,
+  "embedding_models": [
+    "sentence-transformers/all-MiniLM-L6-v2",
+    "intfloat/e5-small-v2"
+  ],
+  "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "windows": {
+    "words": 180,
+    "overlap": 40
+  },
+  "mmr_diversity": 0.1,
+  "variants": [
+    "focused_hybrid",
+    "expanded_rrf_ce",
+    "rrf_ce_mmr_guarded",
+    "rrf_ce_no_mmr"
+  ],
+  "label_access": "Scoring only; neither family nor gold nor reference passed to search.",
+  "design": "Development refinement after v1/v2 scores were observed; no untouched-test claim.",
+  "cases_sha256": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45",
+  "corpus_sha256": "89c29f7f8d6029d48db18ed638ca1e3a74578af0ec01663adc07857be055528f",
+  "code_sha256": {
+    "backend/scripts/evaluate_rag_improvements.py": "e362be26e1c1bacec7b66aedf1bf3b4b98031fdad022a3a978ea9f5c8abb1f4c",
+    "backend/rag/relevance.py": "69f1222b58b1f583598f74d34b2e1ce394f2ba173545cf2121d922a6f126a754",
+    "backend/rag/selection.py": "b93414073bacee418a63d3cadd4eb1398fbe442bed3e715d67096747f1517605",
+    "backend/scripts/evaluate_guarded_retrieval.py": "976f62c9075c1ae01bbc812b5229b5fa5447b8af8d1e578f03fa2d6318fd0eae",
+    "backend/rag/rank_fusion.py": "74ad3c26dbae53b4bb3582d798140d65dfd3f214c83a5aaf26d54085a048448b"
+  }
+}

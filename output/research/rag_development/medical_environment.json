@@ -1,0 +1,15 @@
+{
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.0",
+    "torch": "2.12.1",
+    "transformers": "5.12.1",
+    "sentence-transformers": "5.6.0",
+    "rank-bm25": "0.2.2",
+    "pydantic": "2.13.4",
+    "pydantic-settings": "2.14.2",
+    "httpx": "0.28.1",
+    "langgraph": null
+  },
+  "purpose": "Medical encoder and cross-encoder retrieval development; not the application runtime."
+}

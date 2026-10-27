@@ -4,10 +4,7 @@ import '../theme.dart';
 class OfflineBanner extends StatelessWidget {
   final String message;
 
-  const OfflineBanner({
-    super.key,
-    this.message = 'Offline — showing cached data',
-  });
+  const OfflineBanner({super.key, this.message = 'Offline — showing cached data'});
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +16,7 @@ class OfflineBanner extends StatelessWidget {
         children: [
           const Icon(Icons.cloud_off, color: Colors.white, size: 18),
           const SizedBox(width: 8),
-          Expanded(
-            child: Text(
-              message,
-              style: const TextStyle(color: Colors.white, fontSize: 12),
-            ),
-          ),
+          Expanded(child: Text(message, style: const TextStyle(color: Colors.white, fontSize: 12))),
         ],
       ),
     );

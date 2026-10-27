@@ -1,0 +1,13 @@
+{
+  "source": "AAP",
+  "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness.",
+  "available": true,
+  "questions": [
+    "In neonates 0-72 hours old with a rising respiratory rate and falling oxygen saturation during serial examinations, what assessment and monitoring steps are recommended?",
+    "What immediate actions should be taken for an infant developing signs of illness, including tachypnea and desaturation, according to early-onset neonatal sepsis guidelines?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": false,
+  "original_record_sha256": "ba33d305b77e8a09cbbdac55567a737a84f084d74e6189e5466e8c8eac9f440b",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

@@ -1,0 +1,81 @@
+{
+  "id": "aap-expanded-missing_results-03",
+  "guideline": "AAP",
+  "family": "missing_results",
+  "rankings": {
+    "bge_only": {
+      "4": [
+        "AAP2018-35PLUS-P5-B13",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B3"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P5-B13",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-SP5",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B13"
+      ]
+    },
+    "bge_upstream_rrf_mmr": {
+      "4": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B13",
+        "AAP2018-35PLUS-SP2"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B13",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P5-B9"
+      ]
+    },
+    "bge_consensus_rrf_mmr": {
+      "4": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B13"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B5"
+      ]
+    }
+  },
+  "candidate_ids": [
+    "AAP2018-35PLUS-P3-B11",
+    "AAP2018-35PLUS-P4-B0",
+    "AAP2018-35PLUS-SP2",
+    "AAP2018-35PLUS-P3-B13",
+    "AAP2018-35PLUS-P4-B9",
+    "AAP2018-35PLUS-P4-B1",
+    "AAP2018-35PLUS-P4-B5",
+    "AAP2018-35PLUS-P5-B3",
+    "AAP2018-35PLUS-P5-B13",
+    "AAP2018-35PLUS-P5-B9",
+    "AAP2018-35PLUS-P4-B7",
+    "AAP2018-35PLUS-P4-B3",
+    "AAP2018-35PLUS-P3-B10",
+    "AAP2018-35PLUS-SP5",
+    "AAP2018-35PLUS-P5-B8",
+    "AAP2018-35PLUS-P6-B14"
+  ],
+  "stage": "development_only",
+  "new_groq_calls": 0
+}

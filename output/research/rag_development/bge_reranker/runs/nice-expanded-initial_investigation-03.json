@@ -1,0 +1,83 @@
+{
+  "id": "nice-expanded-initial_investigation-03",
+  "guideline": "NICE",
+  "family": "initial_investigation",
+  "rankings": {
+    "bge_only": {
+      "4": [
+        "NICE-box1",
+        "NICE-1.14.5",
+        "NICE-1.9.2",
+        "NICE-1.14.9"
+      ],
+      "8": [
+        "NICE-box1",
+        "NICE-1.14.5",
+        "NICE-1.9.2",
+        "NICE-1.14.9",
+        "NICE-1.21.1",
+        "NICE-1.21.2",
+        "NICE-1.13.3",
+        "NICE-1.14.7"
+      ]
+    },
+    "bge_upstream_rrf_mmr": {
+      "4": [
+        "NICE-1.9.2",
+        "NICE-1.21.2",
+        "NICE-1.14.8",
+        "NICE-1.13.3"
+      ],
+      "8": [
+        "NICE-1.9.2",
+        "NICE-1.21.2",
+        "NICE-1.14.8",
+        "NICE-1.13.3",
+        "NICE-box1",
+        "NICE-1.14.5",
+        "NICE-1.14.6",
+        "NICE-1.13.5"
+      ]
+    },
+    "bge_consensus_rrf_mmr": {
+      "4": [
+        "NICE-1.14.5",
+        "NICE-1.13.3",
+        "NICE-1.14.8",
+        "NICE-1.14.9"
+      ],
+      "8": [
+        "NICE-1.14.5",
+        "NICE-1.13.3",
+        "NICE-1.14.8",
+        "NICE-1.14.9",
+        "NICE-1.13.5",
+        "NICE-1.21.2",
+        "NICE-1.14.7",
+        "NICE-1.13.2"
+      ]
+    }
+  },
+  "candidate_ids": [
+    "NICE-1.14.8",
+    "NICE-1.21.2",
+    "NICE-1.9.2",
+    "NICE-1.13.3",
+    "NICE-1.14.6",
+    "NICE-1.13.5",
+    "NICE-1.10.4",
+    "NICE-1.10.5",
+    "NICE-1.13.2",
+    "NICE-1.15.1",
+    "NICE-1.15.4",
+    "NICE-box1",
+    "NICE-1.14.9",
+    "NICE-1.14.5",
+    "NICE-1.21.3",
+    "NICE-1.14.7",
+    "NICE-1.31.4",
+    "NICE-1.21.1"
+  ],
+  "stage": "development_only",
+  "new_groq_calls": 0
+}

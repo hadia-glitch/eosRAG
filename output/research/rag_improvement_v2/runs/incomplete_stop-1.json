@@ -1,0 +1,242 @@
+{
+  "id": "incomplete_stop-1",
+  "family": "incomplete_stop",
+  "model": "openai/gpt-oss-120b",
+  "packet": {
+    "guideline": "NICE NG195; EVALUATION ONLY",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "negative",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.21.3",
+        "text": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 30
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.20.5",
+        "text": "If a second dose of gentamicin is given this should usually be 36 hours after the first dose (for criteria for stopping antibiotics at 36 hours, see recommendation 1.21.3 in the section on treatment duration for intravenous antibiotics for early- onset neonatal infection). Use a shorter interval if clinical judgement suggests this is needed, for example, if: \u2022 the baby appears very ill \u2022 the blood culture shows a Gram-negative infection. [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 29
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-1.22.1",
+        "text": "For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring and \u2022 the baby is tolerating oral feeds. [2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 31
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.16.1",
+        "text": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 26
+      }
+    ]
+  },
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "0858dc3e0889999125ab2b138b52cdec2221a8b6e2e187ebc30318e96ae13c56",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Select one to four complete, applicable source recommendations that directly address evaluation_question. This is a question-focused evidence answer, not a full care plan. Each item selects EXACTLY ONE existing quote_id. Its wording is materialized verbatim by the server. Do not add clinical instructions, omit essential conditions, or infer that patient eligibility is established. Prefer complete recommendations over research descriptions. Do not fill unrelated plan sections.\", \"data\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 74, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"negative\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.\", \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \\u2022 the blood culture is negative and \\u2022 the initial clinical suspicion of infection was not strong and \\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]\"}]}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"If a second dose of gentamicin is given this should usually be 36 hours after the first dose (for criteria for stopping antibiotics at 36 hours, see recommendation 1.21.3 in the section on treatment duration for intravenous antibiotics for early- onset neonatal infection). Use a shorter interval if clinical judgement suggests this is needed, for example, if: \\u2022 the baby appears very ill \\u2022 the blood culture shows a Gram-negative infection. [2012]\"}]}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \\u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring and \\u2022 the baby is tolerating oral feeds. [2026]\"}]}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]\"}]}], \"task_mode\": \"care_plan\"}}",
+      "completion_tokens": 1200,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "antibiotic_review",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 7.5408547000042745
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "be60b75737cce1777d89242bd5853ca729b67913e8400a2ea34b751d4101aa35",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 74, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"negative\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \\u2022 the blood culture is negative and \\u2022 the initial clinical suspicion of infection was not strong and \\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"If a second dose of gentamicin is given this should usually be 36 hours after the first dose (for criteria for stopping antibiotics at 36 hours, see recommendation 1.21.3 in the section on treatment duration for intravenous antibiotics for early- onset neonatal infection). Use a shorter interval if clinical judgement suggests this is needed, for example, if: \\u2022 the baby appears very ill \\u2022 the blood culture shows a Gram-negative infection. [2012]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \\u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring and \\u2022 the baby is tolerating oral feeds. [2026]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"antibiotic_review\", \"text\": \"For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \\u2022 the blood culture is negative and \\u2022 the initial clinical suspicion of infection was not strong and \\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]\", \"support\": [{\"evidence_id\": \"E1\"}]}], \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"supported\": {\"title\": \"Supported\", \"type\": \"boolean\"}, \"rejected_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Rejected Claim Ids\", \"type\": \"array\"}, \"checked_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Checked Claim Ids\", \"type\": \"array\"}, \"reasons\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Reasons\", \"type\": \"array\"}}, \"required\": [\"supported\", \"rejected_claim_ids\", \"checked_claim_ids\", \"reasons\"], \"title\": \"Verdict\", \"type\": \"object\"}, \"required_checked_claim_ids\": [\"C1\"], \"response_contract\": \"Return supported as a JSON boolean, checked_claim_ids as an array containing every reviewed ID exactly once, rejected_claim_ids as an array of failed IDs, and reasons as an ARRAY OF STRINGS, never an object keyed by claim. Do not assume an unreviewed claim passes. Reasons must explain failures only. A conditional statement does not establish that its patient eligibility criteria have been met.\"}",
+      "completion_tokens": 2400,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 9.99200259999634
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "be60b75737cce1777d89242bd5853ca729b67913e8400a2ea34b751d4101aa35",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195; EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 74, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"negative\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \\u2022 the blood culture is negative and \\u2022 the initial clinical suspicion of infection was not strong and \\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"If a second dose of gentamicin is given this should usually be 36 hours after the first dose (for criteria for stopping antibiotics at 36 hours, see recommendation 1.21.3 in the section on treatment duration for intravenous antibiotics for early- onset neonatal infection). Use a shorter interval if clinical judgement suggests this is needed, for example, if: \\u2022 the baby appears very ill \\u2022 the blood culture shows a Gram-negative infection. [2012]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \\u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring and \\u2022 the baby is tolerating oral feeds. [2026]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"antibiotic_review\", \"text\": \"For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \\u2022 the blood culture is negative and \\u2022 the initial clinical suspicion of infection was not strong and \\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]\", \"support\": [{\"evidence_id\": \"E1\"}]}], \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"supported\": {\"title\": \"Supported\", \"type\": \"boolean\"}, \"rejected_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Rejected Claim Ids\", \"type\": \"array\"}, \"checked_claim_ids\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Checked Claim Ids\", \"type\": \"array\"}, \"reasons\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 16, \"title\": \"Reasons\", \"type\": \"array\"}}, \"required\": [\"supported\", \"rejected_claim_ids\", \"checked_claim_ids\", \"reasons\"], \"title\": \"Verdict\", \"type\": \"object\"}, \"required_checked_claim_ids\": [\"C1\"], \"response_contract\": \"Return supported as a JSON boolean, checked_claim_ids as an array containing every reviewed ID exactly once, rejected_claim_ids as an array of failed IDs, and reasons as an ARRAY OF STRINGS, never an object keyed by claim. Do not assume an unreviewed claim passes. Reasons must explain failures only. A conditional statement does not establish that its patient eligibility criteria have been met.\"}",
+      "completion_tokens": 2400,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 22.306376600005024
+    }
+  ],
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195; EVALUATION ONLY",
+      "patient": {
+        "age_hours": 36,
+        "gestational_age_weeks": 35,
+        "care_setting": "hospital",
+        "respiratory_rate": 74,
+        "spo2": 97,
+        "crp": 4,
+        "culture_status": "negative",
+        "red_flags": "not fully documented",
+        "maternal_gbs": "unknown"
+      },
+      "history": [
+        {
+          "age_hours": 3,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 14
+        },
+        {
+          "age_hours": 6,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.21.3",
+          "text": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 30
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.20.5",
+          "text": "If a second dose of gentamicin is given this should usually be 36 hours after the first dose (for criteria for stopping antibiotics at 36 hours, see recommendation 1.21.3 in the section on treatment duration for intravenous antibiotics for early- onset neonatal infection). Use a shorter interval if clinical judgement suggests this is needed, for example, if: \u2022 the baby appears very ill \u2022 the blood culture shows a Gram-negative infection. [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 29
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-1.22.1",
+          "text": "For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring and \u2022 the baby is tolerating oral feeds. [2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 31
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.16.1",
+          "text": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 26
+        }
+      ],
+      "task_mode": "care_plan"
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "antibiotic_review",
+          "text": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]"
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1"
+      ],
+      "reasons": []
+    },
+    "safety_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1"
+      ],
+      "reasons": []
+    },
+    "status": "supported_for_review",
+    "errors": [],
+    "resolution_log": [],
+    "packet_sha256": "417b72a762a7e655d79f72f4b40df59e23a0ede3a047d91ddd264b90ce8fe64f",
+    "verification_version": "explicit-audit-contract-v2",
+    "answer_mode": "question-focused immutable excerpts; observed findings rendered separately"
+  },
+  "seconds": 30.57184170000255,
+  "settings": {
+    "strict_schema": true,
+    "repairs": 1,
+    "budget": 120,
+    "auditor_tokens": 2400,
+    "temperature": 0
+  },
+  "code_sha256": {
+    "backend/rag/verification_v2.py": "5233b42c3b924d2831ff075db222d558b85424e49afb91b62f5b22caeaf914c7",
+    "backend/rag/verification_graph.py": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+  }
+}

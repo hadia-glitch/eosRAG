@@ -1,0 +1,16 @@
+{
+  "stage": "development_only",
+  "cases": 100,
+  "seed": 31,
+  "clinical_review_status": "not performed",
+  "ratings_blank": true,
+  "files_sha256": {
+    "definition_context_review.csv": "8491f63754ecbffe0b63f7a32b1337f7e2ce7cc641d9c132a45fb1056699f79b",
+    "engineering_priority_queue.csv": "ea09386b61f7e303ad14f7e4df7e0b28b8c3aaa73d4888c7c3c6e94519858237",
+    "panel_ratings.csv": "d2beb51861a23d45fee95f01bb59bc7f9eda00736920733b317add89693de908",
+    "passage_relevance_review.csv": "124e6d79b958d2e9493c377cda34991300215e8c23c1d9c4619f318dae35cbdc",
+    "README.md": "288b74f7cf1b299e8b77ec5259f3ff2b1b218a6bdadcafed4016d63f7d7c4d5c",
+    "review_cases.html": "1fb98f2ffbc5757b91de18e8b2405288d2165ea7011d008fecf20f0ddc3f6816",
+    "source_scope_review.csv": "294bc3a96d4540086bdb95012a3ad6285ea66407bb580bd9a2d8029ddb72f565"
+  }
+}

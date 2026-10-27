@@ -1,0 +1,20 @@
+{
+  "final_evaluation_allowed": false,
+  "failures": [
+    "NICE: recall_at_4 below 0.80 or unmeasured",
+    "NICE: development answer validity/coverage below target or unmeasured",
+    "NICE: fewer than six families checked",
+    "AAP: recall_at_4 below 0.80 or unmeasured",
+    "AAP: mrr_at_4 below 0.80 or unmeasured",
+    "AAP: development answer validity/coverage below target or unmeasured",
+    "AAP: fewer than six families checked",
+    "WHO: recall_at_4 below 0.80 or unmeasured",
+    "WHO: mrr_at_4 below 0.80 or unmeasured",
+    "WHO: development answer validity/coverage below target or unmeasured",
+    "WHO: fewer than six families checked",
+    "complete_audits is not established",
+    "scope_regressions_passed is not established",
+    "backend_regressions_passed is not established"
+  ],
+  "clinical_validation": "not established by this engineering gate"
+}

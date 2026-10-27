@@ -1,0 +1,53 @@
+{
+  "id": "initial_investigation-2",
+  "guideline": "NICE",
+  "family": "initial_investigation",
+  "stage": "development_only",
+  "rankings": {
+    "4": [
+      "NICE-1.13.2",
+      "NICE-1.13.5",
+      "NICE-1.14.7",
+      "NICE-1.13.3"
+    ],
+    "8": [
+      "NICE-1.13.2",
+      "NICE-1.13.5",
+      "NICE-1.14.7",
+      "NICE-1.13.3",
+      "NICE-1.13.1",
+      "NICE-1.14.4",
+      "NICE-1.21.3",
+      "NICE-1.15.4"
+    ]
+  },
+  "definition_context_ids": {
+    "4": [],
+    "8": []
+  },
+  "available": true,
+  "listwise_empty": false,
+  "candidate_ids": [
+    "NICE-1.13.2",
+    "NICE-1.10.4",
+    "NICE-1.13.5",
+    "NICE-1.14.7",
+    "NICE-1.13.3",
+    "NICE-1.14.4",
+    "NICE-1.11.1",
+    "NICE-1.10.3",
+    "NICE-1.13.1",
+    "NICE-1.14.9",
+    "NICE-1.14.5",
+    "NICE-1.14.8",
+    "NICE-1.17.2",
+    "NICE-1.10.5",
+    "NICE-1.16.2",
+    "NICE-1.35.2",
+    "NICE-1.15.4",
+    "NICE-1.21.3",
+    "NICE-1.10.2",
+    "NICE-1.9.2",
+    "NICE-1.20.6"
+  ]
+}

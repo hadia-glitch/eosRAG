@@ -45,11 +45,11 @@ def test_installed_model_uses_fitted_preprocessing_and_exact_export():
     assert json.loads(fixture.read_text())['input_contract']==metadata['input_contract']
 
 
-def test_extreme_research_score_exposes_sharpening_without_clipping_or_clinical_claim():
+def test_extreme_demo_score_exposes_sharpening_without_clipping_or_clinical_claim():
     root=Path(__file__).resolve().parents[2]
-    request=json.loads((root/'data/synthetic_eos_v2/probability_audit_input.json').read_text())
+    demo=json.loads((root/'backend/demo/case.json').read_text())
     model=load_supplied_model(Settings(_env_file=None).supplied_model_dir)
-    result=model.predict(SuppliedPredictionRequest.model_validate(request))
+    result=model.predict(SuppliedPredictionRequest.model_validate(demo['research_request']))
     details=result['probability_details']
     assert .99<details['raw_model_score']<.999
     assert result['probability']>.999999

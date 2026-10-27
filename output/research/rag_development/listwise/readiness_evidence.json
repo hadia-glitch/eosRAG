@@ -1,0 +1,28 @@
+{
+  "candidate": "bounded listwise selection",
+  "stage": "development_only",
+  "retrieval": {
+    "NICE": {
+      "complete": true,
+      "recall_at_4": 0.6791666666666667,
+      "mrr_at_4": 0.75625
+    },
+    "AAP": {
+      "complete": true,
+      "recall_at_4": 0.75,
+      "mrr_at_4": 0.722222222222222
+    },
+    "WHO": {
+      "complete": true,
+      "recall_at_4": 0.6333333333333333,
+      "mrr_at_4": 0.6833333333333333
+    }
+  },
+  "generation": {},
+  "config_pinned": true,
+  "complete_audits": false,
+  "scope_regressions_passed": false,
+  "backend_regressions_passed": false,
+  "safety": {},
+  "note": "Passage ranking is not a clinical answer. Generation coverage/usability and current fault audits remain unmeasured."
+}

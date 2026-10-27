@@ -1,0 +1,54 @@
+{
+  "candidate": "generic",
+  "stage": "development_only",
+  "retrieval": {
+    "NICE": {
+      "complete": true,
+      "n": 40,
+      "planned": 40,
+      "recall_at_4": 0.55,
+      "precision_at_4": 0.34375,
+      "mrr_at_4": 0.825,
+      "ndcg_at_4": 0.5660924088704824,
+      "hit_at_4": 0.9,
+      "precision_at_4_ceiling": 0.66875,
+      "recall_at_4_ceiling": 1.0
+    },
+    "AAP": {
+      "complete": true,
+      "n": 30,
+      "planned": 30,
+      "recall_at_4": 0.4166666666666667,
+      "precision_at_4": 0.20833333333333334,
+      "mrr_at_4": 0.5833333333333334,
+      "ndcg_at_4": 0.4355245321275764,
+      "hit_at_4": 0.6666666666666666,
+      "precision_at_4_ceiling": 0.5,
+      "recall_at_4_ceiling": 1.0
+    },
+    "WHO": {
+      "complete": true,
+      "n": 30,
+      "planned": 30,
+      "recall_at_4": 0.25,
+      "precision_at_4": 0.125,
+      "mrr_at_4": 0.2222222222222222,
+      "ndcg_at_4": 0.2177622660637882,
+      "hit_at_4": 0.3333333333333333,
+      "precision_at_4_ceiling": 0.5,
+      "recall_at_4_ceiling": 1.0
+    }
+  },
+  "generation": {},
+  "complete_audits": false,
+  "scope_regressions_passed": false,
+  "backend_regressions_passed": false,
+  "config_pinned": true,
+  "clinical_validation": "pending; never established by synthetic metrics",
+  "generation_note": "Release status alone does not establish task completeness or usability. A balanced six-family, three-source development pilot is still required.",
+  "safety": {
+    "fault_cases_completed": 36,
+    "unsafe_fault_releases": 0,
+    "evidence_type": "Exact-request replay of 36 saved model outcomes, not an independent repeated clinical test"
+  }
+}

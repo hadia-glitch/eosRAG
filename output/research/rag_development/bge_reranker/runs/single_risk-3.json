@@ -1,0 +1,79 @@
+{
+  "id": "single_risk-3",
+  "guideline": "NICE",
+  "family": "single_risk",
+  "rankings": {
+    "bge_only": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-1.10.2",
+        "NICE-1.9.2",
+        "NICE-box1"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-1.10.2",
+        "NICE-1.9.2",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.11.1",
+        "NICE-1.34.1",
+        "NICE-1.15.1"
+      ]
+    },
+    "bge_upstream_rrf_mmr": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-1.9.2"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-1.9.2",
+        "NICE-box1",
+        "NICE-1.34.1",
+        "NICE-1.11.1",
+        "NICE-1.15.1"
+      ]
+    },
+    "bge_consensus_rrf_mmr": {
+      "4": [
+        "NICE-box1",
+        "NICE-1.10.3",
+        "NICE-1.9.2",
+        "NICE-1.10.1"
+      ],
+      "8": [
+        "NICE-box1",
+        "NICE-1.10.3",
+        "NICE-1.9.2",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-1.9.1",
+        "NICE-1.34.1",
+        "NICE-1.15.1"
+      ]
+    }
+  },
+  "candidate_ids": [
+    "NICE-1.10.3",
+    "NICE-1.10.1",
+    "NICE-box1",
+    "NICE-1.9.2",
+    "NICE-1.10.2",
+    "NICE-1.34.1",
+    "NICE-1.15.1",
+    "NICE-1.9.1",
+    "NICE-1.11.1",
+    "NICE-1.10.4",
+    "NICE-1.1.4",
+    "NICE-1.34.2",
+    "NICE-1.1.6",
+    "NICE-1.10.5"
+  ],
+  "stage": "development_only",
+  "new_groq_calls": 0
+}

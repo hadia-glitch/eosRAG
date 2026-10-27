@@ -42,7 +42,7 @@ class TrendCalculator {
     if (previousAssessments.isEmpty) return ClinicalTrend.none;
     final lastScore =
         (previousAssessments.last['combined_score'] as num?)?.toInt() ??
-        currentScore;
+            currentScore;
     final delta = currentScore - lastScore;
     if (delta.abs() <= stableThreshold) return ClinicalTrend.stable;
     return delta > 0 ? ClinicalTrend.deteriorating : ClinicalTrend.improving;

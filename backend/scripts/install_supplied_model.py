@@ -11,7 +11,7 @@ if __name__=='__main__':
     root=Path(__file__).resolve().parents[2]
     source=root/'output/research/postnatal_days_0_2/model.json'
     target=root/'backend/ml/deployed/supplied_neonatal';target.mkdir(parents=True,exist_ok=True)
-    with zipfile.ZipFile(Path.home()/'Downloads/archive (1).zip') as z:raw=z.read('Neonatal_Sepsis.csv')
+    with zipfile.ZipFile(r'C:\Users\hadia\Downloads\archive (1).zip') as z:raw=z.read('Neonatal_Sepsis.csv')
     d=pd.read_csv(io.BytesIO(raw));fit_ids=partitions(d)[0]
     fit=d.loc[d.Patient_ID.isin(fit_ids)&d.Postnatal_Age.between(0,2)]
     missing_limit=int(fit[NUMERIC].isna().sum(axis=1).quantile(.995,interpolation='higher'))

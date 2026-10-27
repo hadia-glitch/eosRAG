@@ -1,0 +1,53 @@
+{
+  "id": "nice-expanded-single_risk-03",
+  "family": "single_risk",
+  "guideline": "NICE",
+  "stage": "development_only",
+  "eligible_passages": 115,
+  "scope_incompatible_gold_ids": [],
+  "scope_constrained_recall_at_4_ceiling": 1.0,
+  "rankings": {
+    "lexical_scoped": [
+      "NICE-1.9.2",
+      "NICE-1.10.1",
+      "NICE-box1",
+      "NICE-1.1.1"
+    ],
+    "medcpt_dense_dot": [
+      "NICE-1.10.1",
+      "NICE-1.9.2",
+      "NICE-1.10.5",
+      "NICE-1.10.4"
+    ],
+    "medcpt_dense_cosine": [
+      "NICE-1.10.1",
+      "NICE-1.10.5",
+      "NICE-1.10.4",
+      "NICE-1.9.2"
+    ],
+    "medcpt_hybrid": [
+      "NICE-1.9.2",
+      "NICE-1.10.1",
+      "NICE-box1",
+      "NICE-1.10.5"
+    ],
+    "hybrid_medcpt_ce_mmr": [
+      "NICE-1.10.1",
+      "NICE-1.9.2",
+      "NICE-box1",
+      "NICE-1.10.5"
+    ],
+    "hybrid_medcpt_graph_ce_mmr": [
+      "NICE-1.10.1",
+      "NICE-1.9.2",
+      "NICE-box1",
+      "NICE-1.10.5"
+    ],
+    "generic_scoped_control": [
+      "NICE-1.10.1",
+      "NICE-1.9.2",
+      "NICE-box1",
+      "NICE-1.10.3"
+    ]
+  }
+}

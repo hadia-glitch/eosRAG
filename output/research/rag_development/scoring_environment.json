@@ -1,0 +1,16 @@
+{
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.2.6",
+    "torch": null,
+    "transformers": "4.54.1",
+    "sentence-transformers": "5.6.0",
+    "rank-bm25": "0.2.2",
+    "pydantic": "2.11.7",
+    "pydantic-settings": "2.14.2",
+    "httpx": "0.28.1",
+    "langgraph": "1.2.17",
+    "pytest": "9.1.1"
+  },
+  "purpose": "Saved-request consensus, bootstrap scoring, Groq listwise requests and offline application regressions; Torch model work used a separate environment."
+}

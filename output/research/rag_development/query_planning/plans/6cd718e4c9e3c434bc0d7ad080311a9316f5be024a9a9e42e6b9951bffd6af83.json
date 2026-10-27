@@ -1,0 +1,27 @@
+{
+  "source": "WHO",
+  "query": "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold.",
+  "available": true,
+  "questions": [
+    "Does the WHO 2024 guideline endorse the use of a hospital laboratory test or a clinical prediction algorithm for diagnosing early\u2011onset neonatal sepsis?",
+    "What initial clinical assessment steps does the WHO 2024 guideline recommend for suspected neonatal sepsis without specifying laboratory thresholds?"
+  ],
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "6a3abfda85bd93cfb082bc7277ec12078bae274bafc584700f48bbd5fb4b141a",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"WHO\", \"question\": \"Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "Does the WHO 2024 guideline endorse the use of a hospital laboratory test or a clinical prediction algorithm for diagnosing early\u2011onset neonatal sepsis?",
+          "What initial clinical assessment steps does the WHO 2024 guideline recommend for suspected neonatal sepsis without specifying laboratory thresholds?"
+        ]
+      },
+      "seconds": 1.8372317000030307
+    }
+  ],
+  "stage": "development_only"
+}

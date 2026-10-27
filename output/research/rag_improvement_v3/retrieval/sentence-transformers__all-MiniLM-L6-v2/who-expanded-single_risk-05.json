@@ -1,0 +1,31 @@
+{
+  "id": "who-expanded-single_risk-05",
+  "guideline": "WHO",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "WHO2024-C-RISK",
+      "WHO2024-A.1",
+      "WHO2024-P34-B24",
+      "WHO2024-P4-B5"
+    ],
+    "expanded_rrf_ce": [
+      "WHO2024-A.1",
+      "WHO2024-A.2",
+      "WHO2024-C-RISK",
+      "WHO2024-A.5"
+    ],
+    "rrf_ce_mmr_guarded": [
+      "WHO2024-C-RISK",
+      "WHO2024-A.1",
+      "WHO2024-P4-B5",
+      "WHO2024-P3-B17"
+    ],
+    "rrf_ce_no_mmr": [
+      "WHO2024-C-RISK",
+      "WHO2024-A.1",
+      "WHO2024-P4-B5",
+      "WHO2024-P3-B17"
+    ]
+  }
+}

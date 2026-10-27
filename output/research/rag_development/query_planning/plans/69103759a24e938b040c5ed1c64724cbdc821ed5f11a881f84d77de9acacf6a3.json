@@ -1,0 +1,29 @@
+{
+  "source": "WHO",
+  "query": "Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs.",
+  "available": true,
+  "questions": [
+    "What clinical assessment and referral criteria should be used in primary care for a newborn presenting with new inability to feed?",
+    "How should isolated fast breathing (tachypnea) in a newborn be evaluated and when is referral indicated in primary care settings?",
+    "What are the recommended signs and symptoms that trigger referral of a newborn with feeding difficulty or isolated tachypnea according to WHO guidelines?"
+  ],
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "8de8c6f29518710b552ea4c9718d12a262fe1f95ce14ab14cc6ed595f73b554c",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"WHO\", \"question\": \"Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "What clinical assessment and referral criteria should be used in primary care for a newborn presenting with new inability to feed?",
+          "How should isolated fast breathing (tachypnea) in a newborn be evaluated and when is referral indicated in primary care settings?",
+          "What are the recommended signs and symptoms that trigger referral of a newborn with feeding difficulty or isolated tachypnea according to WHO guidelines?"
+        ]
+      },
+      "seconds": 2.8445900000006077
+    }
+  ],
+  "stage": "development_only"
+}

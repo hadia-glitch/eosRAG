@@ -1,0 +1,31 @@
+{
+  "id": "nice-expanded-single_risk-02",
+  "guideline": "NICE",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "NICE-box1",
+      "NICE-1.9.2",
+      "NICE-1.10.1",
+      "NICE-1.9.1"
+    ],
+    "expanded_rrf_ce": [
+      "NICE-box1",
+      "NICE-1.9.2",
+      "NICE-1.10.1",
+      "NICE-1.5.1"
+    ],
+    "expanded_rrf_ce_mmr": [
+      "NICE-box1",
+      "NICE-1.35.2",
+      "NICE-1.3.3",
+      "NICE-1.14.2"
+    ],
+    "decomposed_rrf_ce_mmr": [
+      "NICE-box1",
+      "NICE-1.35.2",
+      "NICE-1.3.3",
+      "NICE-1.14.2"
+    ]
+  }
+}

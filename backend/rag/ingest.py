@@ -194,7 +194,8 @@ def ingest_directory(
     pdf_paths = [p for p in pdf_paths if verify_local_document(p, settings)]
     if not pdf_paths:
         return {"status": "review_required", "chunks_inserted": 0, "message": "No hash-matching, reviewed current sources in manifest"}
-    embed_model = HuggingFaceEmbedding(model_name=settings.embedding_model)
+    from sentence_transformers import SentenceTransformer
+    embed_model = SentenceTransformer(settings.embedding_model)
     supabase = get_supabase()
     ingestion_date = datetime.now(timezone.utc).isoformat()
 
@@ -223,6 +224,8 @@ def ingest_directory(
         meta.source = reviewed["source"]
         meta.version = reviewed["version"]
         meta.source_name = reviewed["title"]
+        from rag.source_scope import nice_headings, late_only
+        source_headings = nice_headings(pdf_path) if meta.source.upper() == 'NICE' else {}
         print(
             f"[Ingest]   Mapped -> source={meta.source} version={meta.version} "
             f"region={meta.region_tag} confidence={meta.confidence} "
@@ -274,7 +277,15 @@ def ingest_directory(
         # ── Embed + insert ───────────────────────────────────────────────
         batch: list[dict] = []
         for i, c in enumerate(chunks):
-            embedding = embed_model.get_text_embedding(c["chunk_text"])
+            recommendation = str(c.get('recommendation_id') or '')
+            import re
+            section_match = re.match(r'1\.(\d+)\.', recommendation)
+            heading = source_headings.get(section_match.group(1), {}) if section_match else {}
+            indexed_text = ' / '.join(s for s in [heading.get('parent_heading'), heading.get('section_heading'), c['chunk_text']] if s)
+            embedding_text = ('passage: ' + indexed_text) if settings.embedding_model.startswith('intfloat/e5-') else indexed_text
+            embedding = embed_model.encode(embedding_text, normalize_embeddings=True).tolist()
+            if len(embedding) != settings.embedding_dim:
+                raise ValueError('Configured embedding dimension does not match the encoder; no incompatible vector is inserted')
             batch.append({
                 "document_id": document_id,
                 "chunk_text": c["chunk_text"],
@@ -290,6 +301,11 @@ def ingest_directory(
                 "region_tag": meta.region_tag,
                 "ingestion_date": ingestion_date,
                 "metadata": {
+                    "embedding_model": settings.embedding_model,
+                    "embedding_dim": settings.embedding_dim,
+                    "retrieval_parent_heading": heading.get('parent_heading', ''),
+                    "retrieval_section_heading": heading.get('section_heading', ''),
+                    "engineering_scope": 'late_only' if late_only(c['chunk_text'], heading.get('parent_heading','')) else 'not_clinically_adjudicated',
                     "document_sha256": reviewed["sha256"],
                     "document_url": reviewed["url"],
                     "source": meta.source,

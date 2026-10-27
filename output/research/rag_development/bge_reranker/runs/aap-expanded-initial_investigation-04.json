@@ -1,0 +1,82 @@
+{
+  "id": "aap-expanded-initial_investigation-04",
+  "guideline": "AAP",
+  "family": "initial_investigation",
+  "rankings": {
+    "bge_only": {
+      "4": [
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP5",
+        "AAP2018-35PLUS-P3-B7",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P5-B5"
+      ]
+    },
+    "bge_upstream_rrf_mmr": {
+      "4": [
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P5-B3"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B7",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P4-B7"
+      ]
+    },
+    "bge_consensus_rrf_mmr": {
+      "4": [
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P5-B13",
+        "AAP2018-35PLUS-P6-B2"
+      ]
+    }
+  },
+  "candidate_ids": [
+    "AAP2018-35PLUS-SP2",
+    "AAP2018-35PLUS-P4-B0",
+    "AAP2018-35PLUS-P5-B3",
+    "AAP2018-35PLUS-P3-B11",
+    "AAP2018-35PLUS-P5-B5",
+    "AAP2018-35PLUS-P4-B5",
+    "AAP2018-35PLUS-P3-B7",
+    "AAP2018-35PLUS-P6-B2",
+    "AAP2018-35PLUS-SP4",
+    "AAP2018-35PLUS-P4-B6",
+    "AAP2018-35PLUS-P6-B14",
+    "AAP2018-35PLUS-P5-B13",
+    "AAP2018-35PLUS-P5-B8",
+    "AAP2018-35PLUS-P4-B9",
+    "AAP2018-35PLUS-P4-B7",
+    "AAP2018-35PLUS-SP5",
+    "AAP2018-35PLUS-SP6"
+  ],
+  "stage": "development_only",
+  "new_groq_calls": 0
+}

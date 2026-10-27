@@ -3,7 +3,10 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class SupabaseRuntimeConfig {
-  const SupabaseRuntimeConfig({required this.url, required this.anonKey});
+  const SupabaseRuntimeConfig({
+    required this.url,
+    required this.anonKey,
+  });
 
   final String url;
   final String anonKey;
@@ -29,9 +32,7 @@ class SupabaseConfig {
       return current;
     }
 
-    debugPrint(
-      '.env is missing SUPABASE_URL/SUPABASE_ANON_KEY — falling back to backend config endpoint',
-    );
+    debugPrint('.env is missing SUPABASE_URL/SUPABASE_ANON_KEY — falling back to backend config endpoint');
 
     final apiBaseUrl = dotenv.env['API_BASE_URL']?.trim().isNotEmpty == true
         ? dotenv.env['API_BASE_URL']!.trim()

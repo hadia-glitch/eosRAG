@@ -1,0 +1,19 @@
+{
+  "model": "openai/gpt-oss-120b",
+  "planned_cases": 100,
+  "retrieval_variant": "rrf_ce_mmr_guarded",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "strict_schema": true,
+  "max_repairs": 1,
+  "temperature": 0,
+  "clinical_review": "pending",
+  "study_type": "Post-hoc development; no independent clinical test",
+  "reuse": "Identical role+prompt+model completed outputs can replay verbatim, including dissent. No patient-specific sharing between distinct cases.",
+  "code_sha256": {
+    "backend/rag/verification_v3.py": "f351c5b7994f9ff8e261275afd06a6887240357cca6feac17b49554c34a8d5eb",
+    "backend/rag/verification_v2.py": "5233b42c3b924d2831ff075db222d558b85424e49afb91b62f5b22caeaf914c7",
+    "backend/rag/verification_graph.py": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c",
+    "backend/rag/source_answer.py": "aa9cd9b16eb35986a2c4c6fce270b4739d574c88303533810c0d0d073e5ed2ec",
+    "backend/scripts/evaluate_guarded_answers.py": "3d3c72f33b1ba7b461b70e40872b04fd73fa023b7e104964efb427d9ec5dca1d"
+  }
+}

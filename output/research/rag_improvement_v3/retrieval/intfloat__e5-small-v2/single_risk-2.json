@@ -1,0 +1,31 @@
+{
+  "id": "single_risk-2",
+  "guideline": "NICE",
+  "model": "intfloat/e5-small-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "NICE-1.10.3",
+      "NICE-box1",
+      "NICE-1.9.2",
+      "NICE-1.10.1"
+    ],
+    "expanded_rrf_ce": [
+      "NICE-1.10.3",
+      "NICE-box1",
+      "NICE-1.9.2",
+      "NICE-1.10.2"
+    ],
+    "rrf_ce_mmr_guarded": [
+      "NICE-1.10.3",
+      "NICE-box1",
+      "NICE-1.9.2",
+      "NICE-1.10.1"
+    ],
+    "rrf_ce_no_mmr": [
+      "NICE-1.10.3",
+      "NICE-box1",
+      "NICE-1.9.2",
+      "NICE-1.10.1"
+    ]
+  }
+}

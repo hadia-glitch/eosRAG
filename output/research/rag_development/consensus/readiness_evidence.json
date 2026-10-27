@@ -1,0 +1,27 @@
+{
+  "candidate": "consensus",
+  "retrieval": {
+    "NICE": {
+      "recall_at_4": 0.6791666666666666,
+      "mrr_at_4": 0.7875,
+      "complete": true
+    },
+    "AAP": {
+      "recall_at_4": 0.75,
+      "mrr_at_4": 0.7083333333333334,
+      "complete": true
+    },
+    "WHO": {
+      "recall_at_4": 0.8,
+      "mrr_at_4": 0.85,
+      "complete": true
+    }
+  },
+  "generation": {},
+  "safety": {},
+  "config_pinned": true,
+  "complete_audits": false,
+  "scope_regressions_passed": true,
+  "backend_regressions_passed": true,
+  "validation_artifact": "output/research/rag_development/validation_status.json"
+}

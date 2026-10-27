@@ -1,0 +1,31 @@
+{
+  "id": "who-expanded-missing_results-03",
+  "guideline": "WHO",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "WHO2024-P24-B18",
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-P2-B17",
+      "WHO2024-C-REFERRAL"
+    ],
+    "expanded_rrf_ce": [
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-P10-B5",
+      "WHO2024-P2-B17",
+      "WHO2024-P24-B18"
+    ],
+    "expanded_rrf_ce_mmr": [
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-P1-B3",
+      "WHO2024-P47-B21",
+      "WHO2024-P34-B18"
+    ],
+    "decomposed_rrf_ce_mmr": [
+      "WHO2024-A.1-DEFINITION",
+      "WHO2024-P1-B3",
+      "WHO2024-P47-B21",
+      "WHO2024-P34-B18"
+    ]
+  }
+}

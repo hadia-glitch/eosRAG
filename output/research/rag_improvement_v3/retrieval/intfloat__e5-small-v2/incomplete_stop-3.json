@@ -1,0 +1,31 @@
+{
+  "id": "incomplete_stop-3",
+  "guideline": "NICE",
+  "model": "intfloat/e5-small-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "NICE-1.21.3",
+      "NICE-1.20.5",
+      "NICE-1.21.4",
+      "NICE-1.16.1"
+    ],
+    "expanded_rrf_ce": [
+      "NICE-1.21.3",
+      "NICE-1.20.5",
+      "NICE-1.22.1",
+      "NICE-1.16.1"
+    ],
+    "rrf_ce_mmr_guarded": [
+      "NICE-1.21.3",
+      "NICE-1.20.5",
+      "NICE-1.22.1",
+      "NICE-1.16.1"
+    ],
+    "rrf_ce_no_mmr": [
+      "NICE-1.21.3",
+      "NICE-1.20.5",
+      "NICE-1.22.1",
+      "NICE-1.16.1"
+    ]
+  }
+}

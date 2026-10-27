@@ -1,0 +1,9 @@
+{
+  "stage": "development_only",
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0,
+  "completion_tokens": 1000,
+  "inputs": "Focused question and selected guideline only. No gold IDs, references or candidate passages.",
+  "output": "At most three clinical search questions, not answers, doses or guideline claims.",
+  "code_sha256": "4bec6dbed46966aae96ae81707b7c2cd9767ccb0a39d420ba6ad30fb9ba35fdc"
+}

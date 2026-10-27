@@ -1,0 +1,13 @@
+{
+  "source": "NICE",
+  "query": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+  "available": true,
+  "questions": [
+    "What baseline investigations are recommended for early\u2011onset neonatal sepsis (0\u201172\u202fhours)?",
+    "How should serial inflammatory\u2011marker readings be used to guide management of early\u2011onset neonatal sepsis?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": false,
+  "original_record_sha256": "83033889099f3fc2cd167b4d1ed4b6262f8dfdea4325b2e8594d5011fa8192df",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

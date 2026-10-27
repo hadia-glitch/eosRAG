@@ -1,0 +1,31 @@
+{
+  "id": "aap-expanded-incomplete_stop-05",
+  "guideline": "AAP",
+  "model": "intfloat/e5-small-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "AAP2018-35PLUS-P6-STOP",
+      "AAP2018-35PLUS-SP6",
+      "AAP2018-35PLUS-P2-B2",
+      "AAP2018-35PLUS-P5-B8"
+    ],
+    "expanded_rrf_ce": [
+      "AAP2018-35PLUS-SP6",
+      "AAP2018-35PLUS-P6-STOP",
+      "AAP2018-35PLUS-P6-B10",
+      "AAP2018-35PLUS-P5-B9"
+    ],
+    "rrf_ce_mmr_guarded": [
+      "AAP2018-35PLUS-P6-STOP",
+      "AAP2018-35PLUS-SP6",
+      "AAP2018-35PLUS-P5-B8",
+      "AAP2018-35PLUS-P5-B9"
+    ],
+    "rrf_ce_no_mmr": [
+      "AAP2018-35PLUS-P6-STOP",
+      "AAP2018-35PLUS-SP6",
+      "AAP2018-35PLUS-P5-B8",
+      "AAP2018-35PLUS-P5-B9"
+    ]
+  }
+}

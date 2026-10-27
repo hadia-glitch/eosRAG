@@ -148,6 +148,20 @@ class DeidentifiedPatient {
   }
 }
 
+/// Recorded care context, kept outside the research model's predictor fields.
+Map<String, String> deidentifiedCareContext(PatientParameters patient) => {
+  'care_setting': patient.careSetting == 'hospital'
+      ? 'hospital'
+      : 'non_hospital',
+  // The form distinguishes Negative from Pending/not recorded. A false
+  // "positive" predicate alone does not establish that observation on the API.
+  'culture_status': patient.bloodCulturePositive == null
+      ? 'unknown'
+      : patient.bloodCulturePositive!
+      ? 'positive'
+      : 'negative',
+};
+
 /// De-identified risk payload for RAG + Gemini endpoints.
 Map<String, dynamic> buildRiskPayload(
   PatientParameters patient,
@@ -156,6 +170,7 @@ Map<String, dynamic> buildRiskPayload(
   return {
     'patient': {
       ...DeidentifiedPatient.fromPatient(patient).toJson(),
+      ...deidentifiedCareContext(patient),
       'age_hours':
           DateTime.now()
               .toUtc()

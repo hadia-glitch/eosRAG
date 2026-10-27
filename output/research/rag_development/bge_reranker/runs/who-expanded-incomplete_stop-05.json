@@ -1,0 +1,74 @@
+{
+  "id": "who-expanded-incomplete_stop-05",
+  "guideline": "WHO",
+  "family": "incomplete_stop",
+  "rankings": {
+    "bge_only": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.3",
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.3",
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.6",
+        "WHO2024-B.5",
+        "WHO2024-B.4"
+      ]
+    },
+    "bge_upstream_rrf_mmr": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-REFERRAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.5",
+        "WHO2024-B.6",
+        "WHO2024-B.4"
+      ]
+    },
+    "bge_consensus_rrf_mmr": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-REFERRAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.5",
+        "WHO2024-B.6",
+        "WHO2024-B.4"
+      ]
+    }
+  },
+  "candidate_ids": [
+    "WHO2024-B.2",
+    "WHO2024-B.1",
+    "WHO2024-C-REFERRAL",
+    "WHO2024-B.3",
+    "WHO2024-B.5",
+    "WHO2024-C-CLINICAL",
+    "WHO2024-B.6",
+    "WHO2024-B.4",
+    "WHO2024-C-RISK"
+  ],
+  "stage": "development_only",
+  "new_groq_calls": 0
+}

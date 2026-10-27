@@ -69,7 +69,11 @@ def header(canvas, doc):
     canvas.restoreState()
 
 
-def main(source=SOURCE,output=OUTPUT,*,copy_alias=True,include_architecture=True,report_date='25 October 2026',references_new_page=True):
+def main(source=SOURCE,output=OUTPUT,*,copy_alias=True,include_architecture=True,report_date=None,references_new_page=True):
+    if report_date is None:
+        date=re.search(r'(?:Updated\s+)?(\d{1,2}\s+[A-Z][a-z]+\s+20\d{2})',source.read_text(encoding='utf8'))
+        if date is None:raise ValueError('Report date missing from manuscript')
+        report_date=date.group(1)
     output.parent.mkdir(parents=True, exist_ok=True)
     styles = {
         'title': ParagraphStyle('title', fontName='Helvetica-Bold', fontSize=21, leading=26, textColor=NAVY, spaceAfter=16),
@@ -109,6 +113,8 @@ def main(source=SOURCE,output=OUTPUT,*,copy_alias=True,include_architecture=True
             headings=[c.strip() for c in block.splitlines()[0].strip().strip('|').split('|')]
             if headings==['Guideline','Arm','Judged / quality N','Grounding','Fidelity','Completeness','Actionability','Uncertainty','Unsafe claims']:
                 weights=[.85,1.3,.95,.95,.85,1.25,1.15,1.05,.9]
+            if headings==['Source','Method','Complete / N','Recall@4','Case 95% CI','Family 95% CI','MRR@4','Precision@4']:
+                weights=[.7,1.35,.95,.8,1.4,1.4,.8,.9]
             widths=[width*w/sum(weights) for w in weights]
             t=Table(rows,colWidths=widths,repeatRows=1,hAlign='LEFT')
             t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#E7EFF7')),('VALIGN',(0,0),(-1,-1),'TOP'),

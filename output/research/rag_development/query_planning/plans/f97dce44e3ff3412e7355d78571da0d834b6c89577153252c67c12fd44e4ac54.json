@@ -1,0 +1,26 @@
+{
+  "source": "AAP",
+  "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests.",
+  "available": false,
+  "questions": [
+    "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests."
+  ],
+  "completed_contract_error": "ValueError",
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "68772ecbefa9a70a417998b7c27f76560222288ea555b644386f12660e5ed9ef",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"AAP\", \"question\": \"Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "What are the recommended initial diagnostic investigations for suspected early\u2011onset neonatal sepsis (0\u201172\u202fhours) and what are their respective limitations?",
+          "How reliable are common laboratory tests (e.g., blood culture, complete blood count, C\u2011reactive protein, procalcitonin) in detecting early\u2011onset neonatal sepsis and what factors affect their sensitivity and specificity?"
+        ]
+      },
+      "seconds": 1.889843099997961
+    }
+  ]
+}

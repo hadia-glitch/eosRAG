@@ -1,0 +1,53 @@
+{
+  "id": "aap-expanded-missing_results-02",
+  "family": "missing_results",
+  "guideline": "AAP",
+  "stage": "development_only",
+  "eligible_passages": 43,
+  "scope_incompatible_gold_ids": [],
+  "scope_constrained_recall_at_4_ceiling": 1.0,
+  "rankings": {
+    "lexical_scoped": [
+      "AAP2018-35PLUS-P3-B0",
+      "AAP2018-35PLUS-P4-B3",
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-P1-B5"
+    ],
+    "medcpt_dense_dot": [
+      "AAP2018-35PLUS-P5-B13",
+      "AAP2018-35PLUS-P5-B8",
+      "AAP2018-35PLUS-P2-B11",
+      "AAP2018-35PLUS-P5-B9"
+    ],
+    "medcpt_dense_cosine": [
+      "AAP2018-35PLUS-P1-B3",
+      "AAP2018-35PLUS-P3-B13",
+      "AAP2018-35PLUS-P4-B6",
+      "AAP2018-35PLUS-P4-B9"
+    ],
+    "medcpt_hybrid": [
+      "AAP2018-35PLUS-P2-B11",
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-P3-B11",
+      "AAP2018-35PLUS-P3-B0"
+    ],
+    "hybrid_medcpt_ce_mmr": [
+      "AAP2018-35PLUS-P3-B0",
+      "AAP2018-35PLUS-P3-B11",
+      "AAP2018-35PLUS-P4-B9",
+      "AAP2018-35PLUS-P1-B3"
+    ],
+    "hybrid_medcpt_graph_ce_mmr": [
+      "AAP2018-35PLUS-P3-B0",
+      "AAP2018-35PLUS-P3-B11",
+      "AAP2018-35PLUS-P4-B9",
+      "AAP2018-35PLUS-P1-B3"
+    ],
+    "generic_scoped_control": [
+      "AAP2018-35PLUS-P3-B11",
+      "AAP2018-35PLUS-P4-B3",
+      "AAP2018-35PLUS-P4-B9",
+      "AAP2018-35PLUS-P3-B13"
+    ]
+  }
+}

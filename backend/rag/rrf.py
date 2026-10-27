@@ -31,7 +31,7 @@ def reciprocal_rank_fusion(
     id_fn: Callable[[Any], str] | None = None,
 ) -> list[tuple[Any, float]]:
     """Merge multiple ranked lists using Reciprocal Rank Fusion (RRF)."""
-
+    
     if id_fn is None:
         def default_id_fn(x: Any) -> str:
             if isinstance(x, dict):
@@ -48,14 +48,14 @@ def reciprocal_rank_fusion(
         seen_in_list = set()
         for rank, item in enumerate(ranked, start=1):
             item_id = id_fn(item)
-
+            
             # Avoid duplicate scoring within the same list
             if item_id in seen_in_list:
                 continue
             seen_in_list.add(item_id)
 
             scores[item_id] = scores.get(item_id, 0.0) + 1.0 / (k + rank)
-
+            
             # Store the first occurrence of the item
             if item_id not in items:
                 items[item_id] = item

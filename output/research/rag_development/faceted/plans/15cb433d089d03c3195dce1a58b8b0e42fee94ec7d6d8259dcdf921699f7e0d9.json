@@ -1,0 +1,14 @@
+{
+  "source": "NICE",
+  "query": "Review respiratory deterioration, hypoxia and abnormal vital signs over serial observations.",
+  "available": true,
+  "questions": [
+    "What assessments are recommended for respiratory deterioration and hypoxia in neonates with early\u2011onset sepsis during the first 72 hours?",
+    "How should serial vital sign trends be interpreted to identify worsening sepsis in newborns within the initial 0\u201172\u202fhour period?",
+    "What investigations are advised when abnormal vital signs and hypoxia develop in a neonate with suspected early\u2011onset sepsis?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": false,
+  "original_record_sha256": "c38b986af99853803acdee245063ce149fca8e96267bfaebb44b50ad1763b16f",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

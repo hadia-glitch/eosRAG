@@ -1,6 +1,9 @@
 """Thirteen review sections; absent evidence stays explicitly undetermined."""
 
 MEASUREMENTS={
+    'culture_status':('Recorded culture status',''),
+    'culture_incubation_hours':('Recorded culture incubation','hours'),
+    'antibiotic_exposure_hours':('Recorded neonatal antibiotic exposure','hours'),
     'age_hours':('Postnatal age','hours'),'gestational_age_weeks':('Gestational age','weeks'),
     'birth_weight_g':('Birth weight','g'),'heart_rate':('Heart rate','beats/min'),
     'respiratory_rate':('Respiratory rate','breaths/min'),'spo2':('Oxygen saturation','%'),
@@ -31,6 +34,8 @@ def build_sections(patient,trend,claims,supported):
         items=[c['text']+' '+' '.join(f"[{s['evidence_id']}]" for s in c['support']) for c in selected]
         if items and key=='antibiotic_review':
             items.insert(0,'This review does not establish eligibility to stop treatment. The following are conditional guideline options for prescriber review, not a medication order.')
+            if patient.get('culture_incubation_hours') is None or patient.get('antibiotic_exposure_hours') is None:
+                items.insert(1,'Culture incubation and neonatal antibiotic exposure are separate time fields. Missing durations are unknown; postnatal age is not a substitute.')
         labels=sorted({s['evidence_id'] for c in selected for s in c['support']})
         add(title,items or [SECTION_GAPS[key]],
             'evidence_supported' if items else 'not_determined' if supported else 'withheld',labels)

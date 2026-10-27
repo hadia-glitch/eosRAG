@@ -1,0 +1,53 @@
+{
+  "id": "who-expanded-initial_investigation-01",
+  "family": "initial_investigation",
+  "guideline": "WHO",
+  "stage": "development_only",
+  "eligible_passages": 83,
+  "scope_incompatible_gold_ids": [],
+  "scope_constrained_recall_at_4_ceiling": 1.0,
+  "rankings": {
+    "lexical_scoped": [
+      "WHO2024-P26-B3",
+      "WHO2024-B.1",
+      "WHO2024-P26-B5",
+      "WHO2024-P26-B2"
+    ],
+    "medcpt_dense_dot": [
+      "WHO2024-P26-B3",
+      "WHO2024-P24-B19",
+      "WHO2024-P26-B4",
+      "WHO2024-P26-B5"
+    ],
+    "medcpt_dense_cosine": [
+      "WHO2024-P26-B3",
+      "WHO2024-P24-B19",
+      "WHO2024-P26-B4",
+      "WHO2024-P26-B5"
+    ],
+    "medcpt_hybrid": [
+      "WHO2024-P26-B3",
+      "WHO2024-P24-B19",
+      "WHO2024-P26-B5",
+      "WHO2024-P26-B4"
+    ],
+    "hybrid_medcpt_ce_mmr": [
+      "WHO2024-P26-B3",
+      "WHO2024-P26-B5",
+      "WHO2024-P24-B19",
+      "WHO2024-P26-B2"
+    ],
+    "hybrid_medcpt_graph_ce_mmr": [
+      "WHO2024-P26-B3",
+      "WHO2024-P26-B5",
+      "WHO2024-P24-B19",
+      "WHO2024-P26-B2"
+    ],
+    "generic_scoped_control": [
+      "WHO2024-P26-B2",
+      "WHO2024-P24-B19",
+      "WHO2024-B.1",
+      "WHO2024-P26-B5"
+    ]
+  }
+}

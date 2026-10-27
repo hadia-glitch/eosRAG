@@ -1,0 +1,30 @@
+{
+  "seeded_case_ids": [
+    "crp_alone-1",
+    "crp_alone-2",
+    "crp_alone-3",
+    "deterioration-1",
+    "deterioration-2",
+    "deterioration-3",
+    "incomplete_stop-1",
+    "incomplete_stop-2",
+    "incomplete_stop-3",
+    "initial_investigation-1",
+    "initial_investigation-2",
+    "initial_investigation-3",
+    "missing_results-1",
+    "missing_results-2",
+    "missing_results-3",
+    "nice-expanded-deterioration-01",
+    "nice-expanded-deterioration-02",
+    "nice-expanded-deterioration-03",
+    "single_risk-1",
+    "single_risk-2",
+    "single_risk-3"
+  ],
+  "replayed": 62,
+  "computed": 17,
+  "pipeline_protocol_sha256": "48423c6c273d87227f70f807563b18d13e387475ae17a6f224ca4bee944bffb7",
+  "adapter_sha256": "2a673da7324557df748d525919ae23c7de2d69f1ba24e1ee344f95c38aab010e",
+  "interpretation": "Operational exact-input cache; no gold/reference/family affects rankings. Full 100-case denominators retained; repeated templates disclosed."
+}

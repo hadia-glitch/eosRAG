@@ -1,0 +1,27 @@
+{
+  "source": "AAP",
+  "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers.",
+  "available": false,
+  "questions": [
+    "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers."
+  ],
+  "completed_contract_error": "ValueError",
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "9697589947f8b279b431efec25bc9bdf5bfe5e6b969e064501015093f5b7e94b",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"AAP\", \"question\": \"Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "Can a single CRP measurement or a decreasing CRP level reliably exclude early\u2011onset neonatal sepsis (0\u201172\u202fhours)?",
+          "Is CRP alone sufficient to determine when antibiotics can be stopped in neonates evaluated for early\u2011onset sepsis?",
+          "What are the limitations of inflammatory markers such as CRP in diagnosing or ruling out early\u2011onset neonatal sepsis?"
+        ]
+      },
+      "seconds": 2.55313689999457
+    }
+  ]
+}

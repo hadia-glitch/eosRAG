@@ -1,0 +1,27 @@
+{
+  "source": "WHO",
+  "query": "Hospitalized suspected sepsis: a culture is negative at 36 hours but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway?",
+  "available": true,
+  "questions": [
+    "Does the WHO guideline include a 36\u2011hour antibiotic stopping pathway for neonates with suspected sepsis and a negative culture?",
+    "What does the WHO recommend for continuation of antibiotics beyond 36\u202fhours when cultures are negative but clinical signs of sepsis persist in neonates?"
+  ],
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "6d381fc63946d8ab6af9c8f5336bce27fa76de1c17ba1084ed9c12d98e6300ad",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"WHO\", \"question\": \"Hospitalized suspected sepsis: a culture is negative at 36 hours but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway?\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "Does the WHO guideline include a 36\u2011hour antibiotic stopping pathway for neonates with suspected sepsis and a negative culture?",
+          "What does the WHO recommend for continuation of antibiotics beyond 36\u202fhours when cultures are negative but clinical signs of sepsis persist in neonates?"
+        ]
+      },
+      "seconds": 1.9237339999963297
+    }
+  ],
+  "stage": "development_only"
+}

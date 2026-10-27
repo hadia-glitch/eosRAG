@@ -1,0 +1,29 @@
+{
+  "stage": "development_only",
+  "backend": {
+    "selected_tests": 85,
+    "passed": 85,
+    "failed": 0,
+    "checkout": "prepared publication checkout",
+    "care_context_followup": {
+      "passed": 21,
+      "failed": 0
+    }
+  },
+  "flutter": {
+    "tests": 26,
+    "passed": 26,
+    "failed": 0,
+    "demo_sources_present": false,
+    "static_analysis": "No issues found on the release checkout; subsequent small culture-status bridge verified by all 26 tests."
+  },
+  "tested_source_sha256": {
+    "backend/rag/evidence_policy.py": "67a3613716712214dad763efaffa4a767514b5d9f3b13129e1238a7ee0f5de95",
+    "backend/rag/production_retrieval.py": "9c8cde6fb2fbedb56d5000acb46e030fc874d11638e576de8d86cbeebb91f8d0",
+    "backend/services/clinical_pipeline.py": "674e32f919f9a52729970e71371f4bd58df4628e6b1ff06b0a2fb04aedf94928",
+    "backend/schemas.py": "5d1c794ac65beda481b2d0be859f4d98e66a714c9eeb0215b815beea83207fd4",
+    "lib/data/deidentify.dart": "812719f15c6df113614aee7e7a77ab83fef12dc45ef61a39300d08e308c2d92e",
+    "lib/presentation/patient_state.dart": "08af455607d9b39578e3418d7a60ef853b23b3f661bc4cc222ff2b9deab5ca6d"
+  },
+  "clinical_validation": "not performed"
+}

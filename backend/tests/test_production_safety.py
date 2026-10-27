@@ -224,11 +224,13 @@ def test_reviewed_hash_required_for_evidence(tmp_path):
     assert not admit_chunk(row, s, 'NICE', {'age_hours': 6, 'gestational_age_weeks': 30})
     manifest['documents'][0]['mixed_population']=True
     p.write_text(json.dumps(manifest))
-    patient={'age_hours':6,'gestational_age_weeks':38}
+    patient={'age_hours':6,'gestational_age_weeks':38,'care_setting':'hospital'}
     assert not admit_chunk(row,s,'NICE',patient)
     row['metadata'].update(population='late_onset_neonatal',scope_reviewed_by='scope reviewer',scope_reviewed_at='2026-10-25')
     assert not admit_chunk(row,s,'NICE',patient)
     row['metadata']['population']='early_onset_neonatal'
+    row['metadata']['scope']={'gestational_age_weeks':[35,44],'postnatal_age_hours':[0,72],
+                              'care_setting':['hospital']}
     assert admit_chunk(row,s,'NICE',patient)
 
 

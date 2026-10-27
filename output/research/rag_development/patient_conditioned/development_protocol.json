@@ -1,0 +1,40 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "total_existing_cases": 100,
+  "balanced_pilot": 18,
+  "pilot_case_ids": [
+    "deterioration-1",
+    "crp_alone-1",
+    "incomplete_stop-1",
+    "initial_investigation-1",
+    "single_risk-1",
+    "missing_results-1",
+    "aap-expanded-deterioration-01",
+    "aap-expanded-crp_alone-01",
+    "aap-expanded-incomplete_stop-01",
+    "aap-expanded-initial_investigation-01",
+    "aap-expanded-single_risk-01",
+    "aap-expanded-missing_results-01",
+    "who-expanded-deterioration-01",
+    "who-expanded-crp_alone-01",
+    "who-expanded-incomplete_stop-01",
+    "who-expanded-initial_investigation-01",
+    "who-expanded-single_risk-01",
+    "who-expanded-missing_results-01"
+  ],
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0,
+  "sampling_seed": null,
+  "candidate_budget": 24,
+  "selected_budget": 8,
+  "rrf_k": 60,
+  "change": "Original question plus unchanged recorded current/history facts; no labels or engineering answers in model inputs.",
+  "expansion": "Continue remaining existing cases only after reviewing the balanced development pilot; no untouched-test claim.",
+  "code_sha256": {
+    "backend/rag/patient_passage_ranker.py": "af9581e803cabe9703b79adb05752732f66b3bce6d91605b2ad176795c071cf9",
+    "backend/rag/listwise_rerank.py": "fdee2c20f86ad11efe584712f8f2ef9e71f81b6888ed0adfc082d9f5a28e99d7",
+    "backend/scripts/develop_patient_conditioned_retrieval.py": "de93ee27dd279a6e42595d7a22d6ced6edef700a5e0cd84ec03fe734d44fedd4"
+  },
+  "corpus_sha256": "953ce6746d5ef37bb64070d17bc6286dd183c358b5af8443908b244536e8ca20"
+}

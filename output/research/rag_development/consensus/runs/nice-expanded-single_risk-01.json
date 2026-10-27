@@ -1,0 +1,49 @@
+{
+  "id": "nice-expanded-single_risk-01",
+  "guideline": "NICE",
+  "family": "single_risk",
+  "stage": "development_only",
+  "rankings": {
+    "4": [
+      "NICE-box1",
+      "NICE-1.10.1",
+      "NICE-1.10.2",
+      "NICE-1.10.3"
+    ],
+    "8": [
+      "NICE-box1",
+      "NICE-1.10.1",
+      "NICE-1.10.2",
+      "NICE-1.10.3",
+      "NICE-1.11.1",
+      "NICE-1.1.1",
+      "NICE-1.5.1",
+      "NICE-1.9.2"
+    ]
+  },
+  "definition_context_ids": {
+    "4": [],
+    "8": []
+  },
+  "available": true,
+  "listwise_empty": false,
+  "candidate_ids": [
+    "NICE-box1",
+    "NICE-1.10.1",
+    "NICE-1.9.2",
+    "NICE-1.10.4",
+    "NICE-1.10.5",
+    "NICE-1.10.3",
+    "NICE-1.10.2",
+    "NICE-1.9.1",
+    "NICE-1.11.1",
+    "NICE-1.1.1",
+    "NICE-1.5.1",
+    "NICE-1.14.10",
+    "NICE-1.1.4",
+    "NICE-1.1.6",
+    "NICE-1.14.2",
+    "NICE-1.1.3",
+    "NICE-1.2.4"
+  ]
+}

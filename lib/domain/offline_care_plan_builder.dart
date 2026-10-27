@@ -27,15 +27,10 @@ class OfflineCarePlanBuilder {
     final category = result.riskCategory.name.toUpperCase();
 
     // ── Tier 1: synced guideline knowledge cache ────────────────────────────
-    final synced = await OfflineGuidelineCache.getProtocol(
-      activeGuideline,
-      category,
-    );
+    final synced = await OfflineGuidelineCache.getProtocol(activeGuideline, category);
     if (synced != null) {
       final lastSynced = await OfflineGuidelineCache.lastSynced();
-      final syncedLabel = lastSynced != null
-          ? _formatDate(lastSynced.toLocal())
-          : 'unknown date';
+      final syncedLabel = lastSynced != null ? _formatDate(lastSynced.toLocal()) : 'unknown date';
 
       final actions = (synced['recommended_actions'] as List<dynamic>? ?? [])
           .map((e) => e.toString())
@@ -43,26 +38,15 @@ class OfflineCarePlanBuilder {
       final abx = synced['antibiotic_plan'] as Map<String, dynamic>? ?? {};
       final antibioticPlan = AntibioticPlan(
         required: abx['required'] as bool? ?? false,
-        urgency:
-            abx['urgency'] as String? ?? 'Reassess when connectivity returns',
-        regimen: (abx['regimen'] as List<dynamic>? ?? [])
-            .map((e) => e.toString())
-            .toList(),
+        urgency: abx['urgency'] as String? ?? 'Reassess when connectivity returns',
+        regimen: (abx['regimen'] as List<dynamic>? ?? []).map((e) => e.toString()).toList(),
         duration: abx['duration'] as String? ?? '',
         stopCriteria: abx['stop_criteria'] as String? ?? '',
       );
 
       return ClinicalCarePlan(
-        clinicalSummary: _fill(
-          synced['clinical_summary_template'] as String?,
-          patient,
-          result,
-        ),
-        riskAnalysis: _fill(
-          synced['risk_analysis_template'] as String?,
-          patient,
-          result,
-        ),
+        clinicalSummary: _fill(synced['clinical_summary_template'] as String?, patient, result),
+        riskAnalysis: _fill(synced['risk_analysis_template'] as String?, patient, result),
         trendNarrative: '',
         driverBreakdown: _buildDriverBreakdown(result),
         recommendedActions: actions,
@@ -71,8 +55,7 @@ class OfflineCarePlanBuilder {
         escalationCriteria: synced['escalation_criteria'] as String? ?? '',
         guidelineCitations: const [],
         isSimulated: true,
-        sourceLabel:
-            'Offline · cached $activeGuideline protocol (synced $syncedLabel) '
+        sourceLabel: 'Offline · cached $activeGuideline protocol (synced $syncedLabel) '
             '— not generated for this specific patient',
       );
     }
@@ -83,9 +66,7 @@ class OfflineCarePlanBuilder {
     // yet, or the backend cache genuinely has no entry. CuratedCarePlanRules
     // always returns something, so this branch always succeeds.
     final curated = CuratedCarePlanRules.getProtocol(activeGuideline, category);
-    final isKnownGuideline = CuratedCarePlanRules.hasExplicitProtocolFor(
-      activeGuideline,
-    );
+    final isKnownGuideline = CuratedCarePlanRules.hasExplicitProtocolFor(activeGuideline);
 
     final antibioticPlan = AntibioticPlan(
       required: curated.antibioticRequired,
@@ -103,7 +84,7 @@ class OfflineCarePlanBuilder {
     final guidelineNote = isKnownGuideline
         ? activeGuideline
         : '$activeGuideline (using built-in general-practice defaults — this '
-              'guideline\'s specific content hasn\'t synced to this device yet)';
+            'guideline\'s specific content hasn\'t synced to this device yet)';
 
     return ClinicalCarePlan(
       clinicalSummary: _fill(curated.clinicalSummaryTemplate, patient, result),
@@ -116,23 +97,15 @@ class OfflineCarePlanBuilder {
       escalationCriteria: curated.escalationCriteria,
       guidelineCitations: const [],
       isSimulated: true,
-      sourceLabel:
-          'Offline · built-in rule-based protocol · $guidelineNote '
+      sourceLabel: 'Offline · built-in rule-based protocol · $guidelineNote '
           '— not AI-generated, not specific to this patient',
     );
   }
 
-  static String _fill(
-    String? template,
-    PatientParameters patient,
-    EoscalResult result,
-  ) {
+  static String _fill(String? template, PatientParameters patient, EoscalResult result) {
     if (template == null || template.isEmpty) return '';
     return template
-        .replaceAll(
-          '{patient_ref}',
-          patient.name.isNotEmpty ? patient.name : 'This patient',
-        )
+        .replaceAll('{patient_ref}', patient.name.isNotEmpty ? patient.name : 'This patient')
         .replaceAll('{total_score}', '${result.totalScore}')
         .replaceAll('{layer1_score}', '${result.layer1Score}')
         .replaceAll('{layer2_score}', '${result.layer2Score}')
@@ -157,31 +130,16 @@ class OfflineCarePlanBuilder {
 
     const layerNames = {1: 'Maternal', 2: 'Clinical', 3: 'Laboratory'};
 
-    return drivers
-        .map((d) {
-          final sign = d.points > 0 ? '+' : '';
-          final layerName = layerNames[d.layer] ?? 'Layer ${d.layer}';
-          return '• ${d.name} ($layerName, $sign${d.points} pts, '
-              '${d.contributionPercent.toStringAsFixed(0)}% of score): ${d.reason}';
-        })
-        .join('\n');
+    return drivers.map((d) {
+      final sign = d.points > 0 ? '+' : '';
+      final layerName = layerNames[d.layer] ?? 'Layer ${d.layer}';
+      return '• ${d.name} ($layerName, $sign${d.points} pts, '
+          '${d.contributionPercent.toStringAsFixed(0)}% of score): ${d.reason}';
+    }).join('\n');
   }
 
   static String _formatDate(DateTime d) {
-    final months = [
-      'Jan',
-      'Feb',
-      'Mar',
-      'Apr',
-      'May',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
-      'Oct',
-      'Nov',
-      'Dec',
-    ];
+    final months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     return '${months[d.month - 1]} ${d.day}, ${d.year}';
   }
 }

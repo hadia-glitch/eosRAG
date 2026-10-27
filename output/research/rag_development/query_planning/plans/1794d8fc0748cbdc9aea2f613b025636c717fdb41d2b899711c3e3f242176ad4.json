@@ -1,0 +1,25 @@
+{
+  "source": "WHO",
+  "query": "CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance?",
+  "available": true,
+  "questions": [
+    "What WHO-recommended clinical signs indicate the need for referral or inpatient care in neonates with worsening feeding and fever despite decreasing CRP?"
+  ],
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "6f2558357bf0cac1812d9c11aa7cf1e39ba6d8bb7d4c5078afe4ee4d8682218c",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"WHO\", \"question\": \"CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance?\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "What WHO-recommended clinical signs indicate the need for referral or inpatient care in neonates with worsening feeding and fever despite decreasing CRP?"
+        ]
+      },
+      "seconds": 1.841176700007054
+    }
+  ],
+  "stage": "development_only"
+}

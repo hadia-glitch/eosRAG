@@ -1,0 +1,8 @@
+{
+  "seeded_case_ids": [],
+  "replayed": 76,
+  "computed": 24,
+  "pipeline_protocol_sha256": "db8ce49e996f99271a9afd18121707f2813041eebe1fa42242f95e43388932a3",
+  "adapter_sha256": "2a673da7324557df748d525919ae23c7de2d69f1ba24e1ee344f95c38aab010e",
+  "interpretation": "Operational exact-input cache; no gold/reference/family affects rankings. Full 100-case denominators retained; repeated templates disclosed."
+}

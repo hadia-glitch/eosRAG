@@ -1,0 +1,14 @@
+{
+  "source": "WHO",
+  "query": "Current feeding, movement, temperature, breathing and culture results are missing. Explain what a WHO-based assessment can establish in the clinic.",
+  "available": true,
+  "questions": [
+    "What clinical criteria does the WHO early-onset neonatal sepsis assessment use to identify sepsis when feeding, movement, temperature, breathing, and culture results are unavailable?",
+    "How does the WHO algorithm classify risk of neonatal sepsis in the clinic without laboratory culture data?",
+    "Which WHO-recommended bedside signs can establish a diagnosis of early-onset neonatal sepsis in the absence of feeding, activity, temperature, respiratory, and culture information?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": true,
+  "original_record_sha256": "9e83a3ab95836c1e70aaed59b4f9f3b0c7d1350c20446d930716b960b953f7a4",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

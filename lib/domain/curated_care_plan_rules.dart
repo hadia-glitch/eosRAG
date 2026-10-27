@@ -61,25 +61,16 @@ class CuratedProtocol {
 }
 
 const _niceAbxRegimen = ['IV benzylpenicillin', 'IV gentamicin'];
-const _niceAbxDuration =
-    'Reassess at 36-48h; stop if culture-negative, clinically well, and CRP < 10 mg/L';
-const _niceAbxStop =
-    'Blood culture negative at 36-48h AND clinically well AND CRP < 10 mg/L';
+const _niceAbxDuration = 'Reassess at 36-48h; stop if culture-negative, clinically well, and CRP < 10 mg/L';
+const _niceAbxStop = 'Blood culture negative at 36-48h AND clinically well AND CRP < 10 mg/L';
 
 const _aapAbxRegimen = ['IV ampicillin', 'IV gentamicin'];
-const _aapAbxDuration =
-    '48-72 hours pending culture; extend per sensitivities if culture-positive';
-const _aapAbxStop =
-    'Blood culture negative AND clinically well AND CBC/CRP reassuring at 24-48h';
+const _aapAbxDuration = '48-72 hours pending culture; extend per sensitivities if culture-positive';
+const _aapAbxStop = 'Blood culture negative AND clinically well AND CBC/CRP reassuring at 24-48h';
 
-const _whoAbxRegimen = [
-  'Injectable ampicillin (or benzylpenicillin)',
-  'Injectable gentamicin',
-];
-const _whoAbxDuration =
-    'At least 7-10 days if confirmed; pre-referral IM dose if transfer needed';
-const _whoAbxStop =
-    'Only after completing the full course in confirmed cases — WHO protocol does not '
+const _whoAbxRegimen = ['Injectable ampicillin (or benzylpenicillin)', 'Injectable gentamicin'];
+const _whoAbxDuration = 'At least 7-10 days if confirmed; pre-referral IM dose if transfer needed';
+const _whoAbxStop = 'Only after completing the full course in confirmed cases — WHO protocol does not '
     'support early stopping in resource-limited settings without lab confirmation';
 
 class CuratedCarePlanRules {
@@ -100,10 +91,8 @@ class CuratedCarePlanRules {
         ],
         antibioticRequired: false,
         antibioticUrgency: 'Not indicated',
-        monitoringPlan:
-            'Routine observations per postnatal ward schedule. Reassess if any new clinical sign develops.',
-        escalationCriteria:
-            'Any red-flag sign (respiratory distress >4h after birth, seizures, signs of '
+        monitoringPlan: 'Routine observations per postnatal ward schedule. Reassess if any new clinical sign develops.',
+        escalationCriteria: 'Any red-flag sign (respiratory distress >4h after birth, seizures, signs of '
             'shock, need for CPR) — reassess immediately and escalate.',
       ),
       'INTERMEDIATE': CuratedProtocol(
@@ -121,11 +110,9 @@ class CuratedCarePlanRules {
         ],
         antibioticRequired: false,
         antibioticUrgency: 'Reassess if signs progress',
-        monitoringPlan:
-            '4-hourly observations for at least 12 hours; extend if any new sign or risk '
+        monitoringPlan: '4-hourly observations for at least 12 hours; extend if any new sign or risk '
             'factor identified. CRP at 18-24h if antibiotics are started.',
-        escalationCriteria:
-            'Progression to any red-flag clinical indicator, or two or more non-red-flag '
+        escalationCriteria: 'Progression to any red-flag clinical indicator, or two or more non-red-flag '
             'signs — escalate to senior review and treat as HIGH risk.',
       ),
       'HIGH': CuratedProtocol(
@@ -147,11 +134,9 @@ class CuratedCarePlanRules {
         antibioticRegimen: _niceAbxRegimen,
         antibioticDuration: _niceAbxDuration,
         antibioticStopCriteria: _niceAbxStop,
-        monitoringPlan:
-            'Continuous/hourly observations for the first 4 hours, then per unit escalation '
+        monitoringPlan: 'Continuous/hourly observations for the first 4 hours, then per unit escalation '
             'protocol. CRP at 18-24h and 36-48h.',
-        escalationCriteria:
-            'Clinical deterioration, positive blood culture, or CRP rising — escalate to '
+        escalationCriteria: 'Clinical deterioration, positive blood culture, or CRP rising — escalate to '
             'CRITICAL pathway and involve NICU/senior neonatology.',
       ),
       'CRITICAL': CuratedProtocol(
@@ -173,20 +158,16 @@ class CuratedCarePlanRules {
         antibioticRegimen: _niceAbxRegimen,
         antibioticDuration: _niceAbxDuration,
         antibioticStopCriteria: _niceAbxStop,
-        monitoringPlan:
-            'Continuous cardiorespiratory monitoring in a NICU/HDU setting. Serial CRP and '
+        monitoringPlan: 'Continuous cardiorespiratory monitoring in a NICU/HDU setting. Serial CRP and '
             'clinical review at least every 4 hours.',
-        escalationCriteria:
-            'Any further deterioration — escalate per local critical-illness pathway; '
+        escalationCriteria: 'Any further deterioration — escalate per local critical-illness pathway; '
             'involve consultant neonatologist without delay.',
       ),
     },
     'AAP': {
       'LOW': CuratedProtocol(
-        clinicalSummaryTemplate:
-            '{patient_ref} is well-appearing with LOW EOSCAL risk under AAP 2023 categorisation.',
-        riskAnalysisTemplate:
-            'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
+        clinicalSummaryTemplate: '{patient_ref} is well-appearing with LOW EOSCAL risk under AAP 2023 categorisation.',
+        riskAnalysisTemplate: 'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
         driverBreakdownTemplate: 'See individual risk drivers below.',
         recommendedActions: [
           'Routine care — no laboratory evaluation or antibiotics indicated',
@@ -195,15 +176,12 @@ class CuratedCarePlanRules {
         antibioticRequired: false,
         antibioticUrgency: 'Not indicated',
         monitoringPlan: 'Routine observation per postnatal protocol.',
-        escalationCriteria:
-            'Any change to equivocal or clinically-ill appearance — reassess and move '
+        escalationCriteria: 'Any change to equivocal or clinically-ill appearance — reassess and move '
             'to enhanced observation.',
       ),
       'INTERMEDIATE': CuratedProtocol(
-        clinicalSummaryTemplate:
-            '{patient_ref} is categorised as equivocal under AAP 2023, warranting enhanced observation.',
-        riskAnalysisTemplate:
-            'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
+        clinicalSummaryTemplate: '{patient_ref} is categorised as equivocal under AAP 2023, warranting enhanced observation.',
+        riskAnalysisTemplate: 'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
         driverBreakdownTemplate: 'See individual risk drivers below.',
         recommendedActions: [
           'Enhanced observation with vital signs at least every 4 hours',
@@ -212,18 +190,14 @@ class CuratedCarePlanRules {
         ],
         antibioticRequired: false,
         antibioticUrgency: 'Reassess if signs progress',
-        monitoringPlan:
-            '4-hourly vital signs; CBC/CRP most informative at 6-12h of age per AAP 2023.',
-        escalationCriteria:
-            'Respiratory distress, temperature instability, lethargy, or poor perfusion '
+        monitoringPlan: '4-hourly vital signs; CBC/CRP most informative at 6-12h of age per AAP 2023.',
+        escalationCriteria: 'Respiratory distress, temperature instability, lethargy, or poor perfusion '
             'developing — treat as clinically ill (HIGH).',
       ),
       'HIGH': CuratedProtocol(
-        clinicalSummaryTemplate:
-            '{patient_ref} is categorised as clinically ill under AAP 2023 — immediate '
+        clinicalSummaryTemplate: '{patient_ref} is categorised as clinically ill under AAP 2023 — immediate '
             'evaluation and empirical therapy are indicated.',
-        riskAnalysisTemplate:
-            'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
+        riskAnalysisTemplate: 'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
         driverBreakdownTemplate: 'See individual risk drivers below.',
         recommendedActions: [
           'Blood culture and CBC with differential (WBC, I:T ratio) and CRP',
@@ -235,18 +209,14 @@ class CuratedCarePlanRules {
         antibioticRegimen: _aapAbxRegimen,
         antibioticDuration: _aapAbxDuration,
         antibioticStopCriteria: _aapAbxStop,
-        monitoringPlan:
-            'Continuous monitoring; repeat CBC/CRP at 24h if initial values equivocal.',
-        escalationCriteria:
-            'Any further clinical decline, or blood culture turns positive — escalate to '
+        monitoringPlan: 'Continuous monitoring; repeat CBC/CRP at 24h if initial values equivocal.',
+        escalationCriteria: 'Any further clinical decline, or blood culture turns positive — escalate to '
             'CRITICAL/NICU pathway.',
       ),
       'CRITICAL': CuratedProtocol(
-        clinicalSummaryTemplate:
-            '{patient_ref} meets AAP 2023 criteria for critically ill — immediate '
+        clinicalSummaryTemplate: '{patient_ref} meets AAP 2023 criteria for critically ill — immediate '
             'treatment and NICU-level care are indicated.',
-        riskAnalysisTemplate:
-            'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
+        riskAnalysisTemplate: 'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
         driverBreakdownTemplate: 'See individual risk drivers below.',
         recommendedActions: [
           'Immediate blood culture and empirical ampicillin + gentamicin — do not delay for culture',
@@ -258,18 +228,14 @@ class CuratedCarePlanRules {
         antibioticRegimen: _aapAbxRegimen,
         antibioticDuration: _aapAbxDuration,
         antibioticStopCriteria: _aapAbxStop,
-        monitoringPlan:
-            'Continuous cardiorespiratory monitoring in NICU. Serial labs per consultant direction.',
-        escalationCriteria:
-            'Ongoing instability — escalate per local critical-illness pathway without delay.',
+        monitoringPlan: 'Continuous cardiorespiratory monitoring in NICU. Serial labs per consultant direction.',
+        escalationCriteria: 'Ongoing instability — escalate per local critical-illness pathway without delay.',
       ),
     },
     'WHO': {
       'LOW': CuratedProtocol(
-        clinicalSummaryTemplate:
-            '{patient_ref} shows no WHO danger signs. LOW risk — essential newborn care applies.',
-        riskAnalysisTemplate:
-            'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
+        clinicalSummaryTemplate: '{patient_ref} shows no WHO danger signs. LOW risk — essential newborn care applies.',
+        riskAnalysisTemplate: 'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
         driverBreakdownTemplate: 'See individual risk drivers below.',
         recommendedActions: [
           'Essential newborn care: skin-to-skin, early exclusive breastfeeding, hygienic cord care',
@@ -277,18 +243,14 @@ class CuratedCarePlanRules {
         ],
         antibioticRequired: false,
         antibioticUrgency: 'Not indicated',
-        monitoringPlan:
-            'Routine community/facility follow-up per WHO schedule.',
-        escalationCriteria:
-            'Any WHO danger sign appearing (poor feeding, convulsions, fast breathing '
+        monitoringPlan: 'Routine community/facility follow-up per WHO schedule.',
+        escalationCriteria: 'Any WHO danger sign appearing (poor feeding, convulsions, fast breathing '
             '>=60/min, severe chest indrawing, temperature extremes, severe lethargy) — refer urgently.',
       ),
       'INTERMEDIATE': CuratedProtocol(
-        clinicalSummaryTemplate:
-            '{patient_ref} has emerging risk factors without confirmed WHO danger '
+        clinicalSummaryTemplate: '{patient_ref} has emerging risk factors without confirmed WHO danger '
             'signs — close observation indicated.',
-        riskAnalysisTemplate:
-            'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
+        riskAnalysisTemplate: 'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
         driverBreakdownTemplate: 'See individual risk drivers below.',
         recommendedActions: [
           'Close observation for danger signs; reassess frequently',
@@ -297,18 +259,14 @@ class CuratedCarePlanRules {
         ],
         antibioticRequired: false,
         antibioticUrgency: 'Reassess if danger signs emerge',
-        monitoringPlan:
-            'Frequent reassessment for danger signs; supportive care (thermal, feeding).',
-        escalationCriteria:
-            'Any single WHO danger sign — treat as serious bacterial infection and '
+        monitoringPlan: 'Frequent reassessment for danger signs; supportive care (thermal, feeding).',
+        escalationCriteria: 'Any single WHO danger sign — treat as serious bacterial infection and '
             'refer/treat per HIGH pathway.',
       ),
       'HIGH': CuratedProtocol(
-        clinicalSummaryTemplate:
-            '{patient_ref} shows WHO danger sign(s) of possible serious bacterial '
+        clinicalSummaryTemplate: '{patient_ref} shows WHO danger sign(s) of possible serious bacterial '
             'infection — treatment indicated.',
-        riskAnalysisTemplate:
-            'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
+        riskAnalysisTemplate: 'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
         driverBreakdownTemplate: 'See individual risk drivers below.',
         recommendedActions: [
           'Start first-line injectable antibiotics (ampicillin/benzylpenicillin + gentamicin) without delay',
@@ -320,19 +278,15 @@ class CuratedCarePlanRules {
         antibioticRegimen: _whoAbxRegimen,
         antibioticDuration: _whoAbxDuration,
         antibioticStopCriteria: _whoAbxStop,
-        monitoringPlan:
-            'Close monitoring of oxygenation, hydration, glucose, and temperature during '
+        monitoringPlan: 'Close monitoring of oxygenation, hydration, glucose, and temperature during '
             'treatment/transfer.',
-        escalationCriteria:
-            'Any deterioration during treatment or transfer — treat as CRITICAL and '
+        escalationCriteria: 'Any deterioration during treatment or transfer — treat as CRITICAL and '
             'expedite referral.',
       ),
       'CRITICAL': CuratedProtocol(
-        clinicalSummaryTemplate:
-            '{patient_ref} shows multiple/severe WHO danger signs — treat as '
+        clinicalSummaryTemplate: '{patient_ref} shows multiple/severe WHO danger signs — treat as '
             'critical serious bacterial infection.',
-        riskAnalysisTemplate:
-            'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
+        riskAnalysisTemplate: 'Score {total_score}. Layer contributions: L1 {layer1_score}, L2 {layer2_score}, L3 {layer3_score}.',
         driverBreakdownTemplate: 'See individual risk drivers below.',
         recommendedActions: [
           'Give pre-referral IM dose of ampicillin/benzylpenicillin and gentamicin if transfer is needed',
@@ -345,11 +299,9 @@ class CuratedCarePlanRules {
         antibioticRegimen: _whoAbxRegimen,
         antibioticDuration: _whoAbxDuration,
         antibioticStopCriteria: _whoAbxStop,
-        monitoringPlan:
-            'Continuous monitoring during stabilisation and transfer; full course to be '
+        monitoringPlan: 'Continuous monitoring during stabilisation and transfer; full course to be '
             'completed at receiving facility.',
-        escalationCriteria:
-            'This is already the most urgent WHO pathway — ensure transfer/escalation '
+        escalationCriteria: 'This is already the most urgent WHO pathway — ensure transfer/escalation '
             'is not delayed.',
       ),
     },
@@ -361,16 +313,11 @@ class CuratedCarePlanRules {
   /// an unrecognised category, so this NEVER returns null — it is always
   /// the guaranteed final fallback.
   static CuratedProtocol getProtocol(String source, String category) {
-    final sourceKey = _protocols.containsKey(source.toUpperCase())
-        ? source.toUpperCase()
-        : 'NICE';
+    final sourceKey = _protocols.containsKey(source.toUpperCase()) ? source.toUpperCase() : 'NICE';
     final categoryMap = _protocols[sourceKey]!;
-    final categoryKey = categoryMap.containsKey(category.toUpperCase())
-        ? category.toUpperCase()
-        : 'INTERMEDIATE';
+    final categoryKey = categoryMap.containsKey(category.toUpperCase()) ? category.toUpperCase() : 'INTERMEDIATE';
     return categoryMap[categoryKey]!;
   }
 
-  static bool hasExplicitProtocolFor(String source) =>
-      _protocols.containsKey(source.toUpperCase());
+  static bool hasExplicitProtocolFor(String source) => _protocols.containsKey(source.toUpperCase());
 }

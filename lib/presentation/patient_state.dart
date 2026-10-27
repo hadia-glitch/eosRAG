@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../data/auth_service.dart';
+import '../data/deidentify.dart';
 import '../data/local_draft_service.dart';
 import '../data/supabase_config.dart';
 import '../domain/eoscal_calculator.dart';
@@ -308,6 +309,7 @@ class PatientsNotifier extends StateNotifier<List<PatientParameters>> {
                 'penicillin_allergy': patient.penicillinAllergy,
             },
             'neonatal_data': {
+              'care_setting': deidentifiedCareContext(patient)['care_setting'],
               'respiratory_distress': patient.respiratoryDistress,
               'oxygen_need': patient.oxygenNeed,
               'apgar_5_min': patient.apgar5Min,
@@ -329,6 +331,9 @@ class PatientsNotifier extends StateNotifier<List<PatientParameters>> {
               'gestational_age_weeks': patient.gestationalAgeWeeks,
             },
             'lab_data': {
+              'culture_status': deidentifiedCareContext(
+                patient,
+              )['culture_status'],
               if (patient.wbcCount != null) 'wbc_count': patient.wbcCount,
               if (patient.itRatio != null) 'it_ratio': patient.itRatio,
               if (patient.plateletCount != null)

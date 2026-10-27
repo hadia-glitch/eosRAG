@@ -1,0 +1,31 @@
+{
+  "id": "nice-expanded-initial_investigation-04",
+  "guideline": "NICE",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "NICE-1.14.8",
+      "NICE-1.10.5",
+      "NICE-1.23.2",
+      "NICE-box1"
+    ],
+    "expanded_rrf_ce": [
+      "NICE-1.12.3",
+      "NICE-1.23.2",
+      "NICE-box1",
+      "NICE-1.13.3"
+    ],
+    "expanded_rrf_ce_mmr": [
+      "NICE-1.12.3",
+      "NICE-1.13.3",
+      "NICE-1.23.2",
+      "NICE-1.14.6"
+    ],
+    "decomposed_rrf_ce_mmr": [
+      "NICE-1.12.3",
+      "NICE-1.13.3",
+      "NICE-1.23.2",
+      "NICE-1.14.6"
+    ]
+  }
+}

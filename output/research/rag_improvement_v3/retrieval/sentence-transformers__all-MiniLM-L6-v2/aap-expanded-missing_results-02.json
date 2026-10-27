@@ -1,0 +1,31 @@
+{
+  "id": "aap-expanded-missing_results-02",
+  "guideline": "AAP",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "rankings": {
+    "focused_hybrid": [
+      "AAP2018-35PLUS-P4-B9",
+      "AAP2018-35PLUS-P3-B11",
+      "AAP2018-35PLUS-P4-B3",
+      "AAP2018-35PLUS-SP2"
+    ],
+    "expanded_rrf_ce": [
+      "AAP2018-35PLUS-P5-B3",
+      "AAP2018-35PLUS-P5-B9",
+      "AAP2018-35PLUS-P3-B13",
+      "AAP2018-35PLUS-P6-B9"
+    ],
+    "rrf_ce_mmr_guarded": [
+      "AAP2018-35PLUS-P4-B3",
+      "AAP2018-35PLUS-P3-B11",
+      "AAP2018-35PLUS-P3-B13",
+      "AAP2018-35PLUS-P4-B9"
+    ],
+    "rrf_ce_no_mmr": [
+      "AAP2018-35PLUS-P4-B3",
+      "AAP2018-35PLUS-P3-B11",
+      "AAP2018-35PLUS-P3-B13",
+      "AAP2018-35PLUS-P4-B9"
+    ]
+  }
+}

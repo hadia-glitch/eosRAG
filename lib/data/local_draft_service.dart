@@ -25,16 +25,15 @@ class PendingSignupDraft {
   });
 
   Map<String, dynamic> toJson() => {
-    'draftId': draftId,
-    'fullName': fullName,
-    'email': email,
-    'phone': phone,
-    'password': password,
-    'createdAt': createdAt.toIso8601String(),
-  };
+        'draftId': draftId,
+        'fullName': fullName,
+        'email': email,
+        'phone': phone,
+        'password': password,
+        'createdAt': createdAt.toIso8601String(),
+      };
 
-  static PendingSignupDraft fromJson(Map<String, dynamic> json) =>
-      PendingSignupDraft(
+  static PendingSignupDraft fromJson(Map<String, dynamic> json) => PendingSignupDraft(
         draftId: json['draftId'] as String,
         fullName: json['fullName'] as String,
         email: json['email'] as String,
@@ -76,9 +75,7 @@ class LocalDraftService {
     final raw = await _storage.read(key: _draftKey);
     if (raw == null) return null;
     try {
-      return PendingSignupDraft.fromJson(
-        jsonDecode(raw) as Map<String, dynamic>,
-      );
+      return PendingSignupDraft.fromJson(jsonDecode(raw) as Map<String, dynamic>);
     } catch (_) {
       // Corrupt draft — better to drop it than get stuck in a bad loop.
       await clearDraft();

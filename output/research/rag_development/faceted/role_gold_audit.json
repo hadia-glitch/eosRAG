@@ -1,0 +1,402 @@
+[
+  {
+    "id": "deterioration-1",
+    "excluded_gold": []
+  },
+  {
+    "id": "deterioration-2",
+    "excluded_gold": []
+  },
+  {
+    "id": "deterioration-3",
+    "excluded_gold": []
+  },
+  {
+    "id": "crp_alone-1",
+    "excluded_gold": []
+  },
+  {
+    "id": "crp_alone-2",
+    "excluded_gold": []
+  },
+  {
+    "id": "crp_alone-3",
+    "excluded_gold": []
+  },
+  {
+    "id": "incomplete_stop-1",
+    "excluded_gold": []
+  },
+  {
+    "id": "incomplete_stop-2",
+    "excluded_gold": []
+  },
+  {
+    "id": "incomplete_stop-3",
+    "excluded_gold": []
+  },
+  {
+    "id": "initial_investigation-1",
+    "excluded_gold": []
+  },
+  {
+    "id": "initial_investigation-2",
+    "excluded_gold": []
+  },
+  {
+    "id": "initial_investigation-3",
+    "excluded_gold": []
+  },
+  {
+    "id": "single_risk-1",
+    "excluded_gold": []
+  },
+  {
+    "id": "single_risk-2",
+    "excluded_gold": []
+  },
+  {
+    "id": "single_risk-3",
+    "excluded_gold": []
+  },
+  {
+    "id": "missing_results-1",
+    "excluded_gold": []
+  },
+  {
+    "id": "missing_results-2",
+    "excluded_gold": []
+  },
+  {
+    "id": "missing_results-3",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-deterioration-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-deterioration-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-deterioration-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-deterioration-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-deterioration-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-crp_alone-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-crp_alone-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-crp_alone-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-crp_alone-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-crp_alone-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-initial_investigation-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-initial_investigation-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-initial_investigation-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-initial_investigation-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-initial_investigation-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-single_risk-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-single_risk-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-single_risk-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-single_risk-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-single_risk-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-missing_results-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-missing_results-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-missing_results-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-missing_results-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "aap-expanded-missing_results-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-deterioration-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-deterioration-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-deterioration-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-deterioration-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-deterioration-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-crp_alone-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-crp_alone-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-crp_alone-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-crp_alone-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-crp_alone-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-incomplete_stop-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-incomplete_stop-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-incomplete_stop-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-incomplete_stop-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-incomplete_stop-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-initial_investigation-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-initial_investigation-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-initial_investigation-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-initial_investigation-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-initial_investigation-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-single_risk-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-single_risk-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-single_risk-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-single_risk-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-single_risk-05",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-missing_results-01",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-missing_results-02",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-missing_results-03",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-missing_results-04",
+    "excluded_gold": []
+  },
+  {
+    "id": "who-expanded-missing_results-05",
+    "excluded_gold": []
+  }
+]

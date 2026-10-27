@@ -1,0 +1,607 @@
+{
+  "cases": [
+    {
+      "id": "deterioration-1",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "deterioration-2",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "deterioration-3",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "crp_alone-1",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "crp_alone-2",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "crp_alone-3",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "incomplete_stop-1",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "incomplete_stop-2",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "incomplete_stop-3",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "initial_investigation-1",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "initial_investigation-2",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "initial_investigation-3",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "single_risk-1",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "single_risk-2",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "single_risk-3",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "missing_results-1",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "missing_results-2",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "missing_results-3",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-deterioration-01",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-deterioration-02",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-deterioration-03",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-deterioration-04",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-deterioration-01",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-deterioration-02",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-deterioration-03",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-deterioration-04",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-deterioration-05",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-crp_alone-01",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-crp_alone-02",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-crp_alone-03",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-crp_alone-04",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-crp_alone-01",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-crp_alone-02",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-crp_alone-03",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-crp_alone-04",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-crp_alone-05",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-01",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-02",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-03",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-04",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-01",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-02",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-03",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-04",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-05",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-initial_investigation-01",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-initial_investigation-02",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-initial_investigation-03",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-initial_investigation-04",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-initial_investigation-01",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-initial_investigation-02",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-initial_investigation-03",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-initial_investigation-04",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-initial_investigation-05",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-single_risk-01",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-single_risk-02",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-single_risk-03",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-single_risk-01",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-single_risk-02",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-single_risk-03",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-single_risk-04",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-single_risk-05",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-missing_results-01",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-missing_results-02",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "nice-expanded-missing_results-03",
+      "guideline": "NICE",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-missing_results-01",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-missing_results-02",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-missing_results-03",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-missing_results-04",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "aap-expanded-missing_results-05",
+      "guideline": "AAP",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-deterioration-01",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-deterioration-02",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-deterioration-03",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-deterioration-04",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-deterioration-05",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-crp_alone-01",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-crp_alone-02",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-crp_alone-03",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-crp_alone-04",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-crp_alone-05",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-incomplete_stop-01",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-incomplete_stop-02",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-incomplete_stop-03",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-incomplete_stop-04",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-incomplete_stop-05",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-initial_investigation-01",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-initial_investigation-02",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-initial_investigation-03",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-initial_investigation-04",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-initial_investigation-05",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-single_risk-01",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-single_risk-02",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-single_risk-03",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-single_risk-04",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-single_risk-05",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-missing_results-01",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-missing_results-02",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-missing_results-03",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-missing_results-04",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    },
+    {
+      "id": "who-expanded-missing_results-05",
+      "guideline": "WHO",
+      "incompatible_gold_ids": [],
+      "scope_constrained_recall_at_4_ceiling": 1.0
+    }
+  ],
+  "conflict_cases": 0,
+  "original_benchmark_unchanged": true,
+  "clinical_scope_review": "pending"
+}

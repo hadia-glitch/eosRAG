@@ -86,14 +86,10 @@ class PatientParameters {
       researchInputsReviewedAt != null &&
       assessmentRecordedAt!.isAtSameMomentAs(researchInputsReviewedAt!);
 
-  // "hospital" (default) | "outpatient_no_referral". Set on the
-  // patient-creation screen; threaded through to
-  // ExplanationApi.generateCarePlan's careSetting parameter, which gates the
-  // backend's WHO PSBI outpatient-eligibility exclusions (birth weight
-  // <1500g / hospitalized in the prior 14 days -- see
-  // domain/contraindication_rules.check_who_outpatient_exclusions). Not sent
-  // as part of the de-identified risk payload (deidentify.dart) since it's a
-  // care-context flag, not a patient clinical field.
+  // "hospital" (default) | "outpatient_no_referral". De-identification
+  // sends this as a RAG scope field separately from the ML feature contract.
+  // The current backend supports hospital plans only and explicitly withholds
+  // outpatient plans until a separate pathway is validated.
   final String careSetting;
 
   PatientParameters({

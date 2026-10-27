@@ -1,0 +1,26 @@
+{
+  "source": "AAP",
+  "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings.",
+  "available": false,
+  "questions": [
+    "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings."
+  ],
+  "completed_contract_error": "ValueError",
+  "calls": [
+    {
+      "role": "You are a clinical search question planner. Output search questions only.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "7cba774b06102eb30fdabcb6bb342b3a7f03dcc5f4d436d80e390eb899df7886",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Decompose this clinical information need into one to three distinct short search QUESTIONS. Preserve negation, missingness and the requested clinical decision. Cover complementary assessment, investigation or treatment-review aspects only when required by the question. Use medical synonyms where helpful. Do not answer the questions, assert a guideline rule, introduce drugs, suggest numerical thresholds not in the question, invent patient facts or mention section/citation identifiers. Avoid generic filler and duplicate questions. These strings retrieve evidence from the selected source; they are not clinical advice.\", \"selected_guideline\": \"AAP\", \"question\": \"Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings.\", \"output_schema\": {\"additionalProperties\": false, \"properties\": {\"questions\": {\"items\": {\"type\": \"string\"}, \"maxItems\": 3, \"minItems\": 1, \"title\": \"Questions\", \"type\": \"array\"}}, \"required\": [\"questions\"], \"title\": \"Plan\", \"type\": \"object\"}}",
+      "completion_tokens": 1000,
+      "response": {
+        "questions": [
+          "In neonates 0-72 hours with suspected early\u2011onset sepsis, how should risk be assessed when maternal history and culture results are unavailable and the latest physical examination is missing?",
+          "What diagnostic investigations are recommended for evaluating early\u2011onset neonatal sepsis in the absence of maternal history, culture data, and recent examination findings?"
+        ]
+      },
+      "seconds": 2.284633600000234
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "runs": {
+    "quality_completed": 3,
+    "planned": 100,
+    "statuses": {
+      "abstained": 3
+    },
+    "invalid_or_incomplete_review_cases": 0,
+    "provider_pending": 1,
+    "coverage": 0.0
+  },
+  "stress": {
+    "quality_completed": 36,
+    "planned": 36,
+    "statuses": {
+      "abstained": 36
+    },
+    "invalid_or_incomplete_review_cases": 0,
+    "provider_pending": 0,
+    "coverage": 0.0
+  },
+  "complete": false,
+  "interpretation": "New system version on a development benchmark. Not a paired same-draft ablation; not clinical validation. Fault releases indicate a safety regression."
+}

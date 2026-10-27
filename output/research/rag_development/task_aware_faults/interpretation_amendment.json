@@ -1,0 +1,10 @@
+{
+  "stage": "development_contract_regression",
+  "cases": 36,
+  "structural_rejections": 36,
+  "auditor_calls": 0,
+  "released": 0,
+  "interpretation": "All original faults are materialized free-text claims. Current care-plan generation accepts quote-ID selections only. These challenges were rejected at that schema boundary, so this is not a semantic-auditor evaluation and cannot satisfy the fresh semantic-audit readiness criterion.",
+  "planned_semantic_claim": "not established",
+  "protocol_amendment": "Interpretation amendment after inspecting executed call roles; original records and protocol retained."
+}

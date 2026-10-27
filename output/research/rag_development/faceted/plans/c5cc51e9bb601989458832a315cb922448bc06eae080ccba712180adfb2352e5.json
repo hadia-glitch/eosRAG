@@ -1,0 +1,14 @@
+{
+  "source": "NICE",
+  "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings.",
+  "available": true,
+  "questions": [
+    "What clinical assessment and monitoring are recommended for suspected early\u2011onset neonatal sepsis when maternal history and culture results are unavailable and the most recent infant examination is missing?",
+    "How should uncertainty be managed in the diagnosis of early\u2011onset neonatal sepsis when key maternal and infant examination data are absent?",
+    "What investigations are advised to guide treatment decisions for early\u2011onset neonatal sepsis in the absence of maternal history, culture results, and a recent neonatal examination?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": true,
+  "original_record_sha256": "5b3e8493cf8363019147c822658930556740350f39ef7d689feaa3a6b9d5aaf9",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}
