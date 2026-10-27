@@ -1,0 +1,85 @@
+{
+  "completed": true,
+  "task_sha256": "e35f19772f7b9022a9199b65879e994f4b0b0c3be2c6d7e18966133cab114895",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.922486299998127,
+  "kind": "plan",
+  "case_id": "cp_case_003",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-1f8767d7-e470-4318-b08f-7ef4cd327fa0",
+    "object": "chat.completion",
+    "created": 1792952203,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 4,\n  \"citation_correctness\": 4,\n  \"citation_completeness\": 3,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"Exact risk estimate of 3.0 per 1000 live births is not stated in the provided passages; only the threshold for therapy is given (\u22653 per 1000).\"\n    },\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Combined score of 4 and its derivation are not found in any cited passage.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Percentage contributions (50% each) for ROM and CRP are not supported by the evidence.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"Most statements align with AAP multivariate risk guidance (S007) that \u22653/1000 warrants antibiotics, but specific numeric risk, score totals, and percentage driver breakdown lack source support. Citations are generally appropriate but mapping to exact lines is ambiguous, lowering completeness. No drug dosing is asserted, so no ungrounded dose issue.\"\n}",
+          "reasoning": "We need produce JSON with scores. Assess faithfulness: plan claims risk 3.0 per 1000 matches S007 which says >=3 per 1000 triggers antibiotics. Good. citation correctness? They cite but mapping unknown. Likely okay. citation completeness: all statements sourced? L002 risk calculation not directly in passages (S007 gives threshold but not exact 3.0). Might be unsupported. So completeness lower. Unsupported claims: L002 specific risk 3.0 per 1000 not in evidence. Also L005 combined score 4 not in evidence. L008 driver breakdown percentages not in evidence. L017 mentions guideline says empirical therapy recommended but no regimen \u2013 that's fine. Ungrounded dose: none provided. So ungrouned_dose false.\n\nProvide arrays with claim ids.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.308396149,
+      "prompt_tokens": 2704,
+      "prompt_time": 0.145687239,
+      "completion_tokens": 445,
+      "completion_time": 0.929494321,
+      "total_tokens": 3149,
+      "total_time": 1.07518156,
+      "completion_tokens_details": {
+        "reasoning_tokens": 166
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m5t4ewwtee18bggs2n5b2wzs",
+      "seed": 677696556
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "981",
+    "x-ratelimit-remaining-tokens": "4421",
+    "x-ratelimit-reset-requests": "27m21.6s",
+    "x-ratelimit-reset-tokens": "26.842s"
+  },
+  "result": {
+    "faithfulness": 4,
+    "citation_correctness": 4,
+    "citation_completeness": 3,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Exact risk estimate of 3.0 per 1000 live births is not stated in the provided passages; only the threshold for therapy is given (\u22653 per 1000).",
+        "claim_text": "This 34-week gestation neonate presents with an INTERMEDIATE risk for early-onset sepsis (EOS), driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L). The calculated risk is 3.0 per 1000 live births, which meets the threshold for empirical antibiotic therapy according to AAP guidelines."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Combined score of 4 and its derivation are not found in any cited passage.",
+        "claim_text": "The patient falls into the INTERMEDIATE risk category with a combined score of 4. The risk is equally driven by Layer 1 factors (Prolonged ROM >= 18h) and Layer 3 factors (Elevated CRP). The probability of EOS is 3.0 per 1000, which triggers the recommendation for blood culture and empirical antibiotic therapy."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Percentage contributions (50% each) for ROM and CRP are not supported by the evidence.",
+        "claim_text": "Prolonged rupture of membranes (20.0h, >=18h) contributes 50% to the risk score. Elevated CRP (12.0 mg/L) contributes 50% to the risk score."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "Most statements align with AAP multivariate risk guidance (S007) that \u22653/1000 warrants antibiotics, but specific numeric risk, score totals, and percentage driver breakdown lack source support. Citations are generally appropriate but mapping to exact lines is ambiguous, lowering completeness. No drug dosing is asserted, so no ungrounded dose issue."
+  }
+}

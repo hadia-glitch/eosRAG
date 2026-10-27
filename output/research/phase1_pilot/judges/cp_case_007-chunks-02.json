@@ -1,0 +1,116 @@
+{
+  "completed": true,
+  "task_sha256": "c5b8ea9eab1104be04d0b040e5b12d7cce5f99e9e7acf121239b4c532d7cea41",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.355259000003571,
+  "kind": "chunks",
+  "case_id": "cp_case_007",
+  "mapping": {
+    "P007": "AAP_pg3_late-preterm-infants_chunk1",
+    "P008": "AAP_pg3_multivariate-risk-assess_chunk1",
+    "P009": "AAP_pg3_multivariate-risk-assess_chunk2",
+    "P010": "AAP_pg3_multivariate-risk-assess_chunk3",
+    "P011": "AAP_pg3_multivariate-risk-assess_chunk4",
+    "P012": "AAP_pg4_newborn-clinical-conditi_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-95a75396-9b61-4394-90b8-f8a75253b7e3",
+    "object": "chat.completion",
+    "created": 1792945853,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"judgments\":[{\"passage\":\"P007\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":false,\"rationale\":\"Describes general approaches for infants \u226535\u202fweeks, providing background but no specific action for this well\u2011appearing term infant.\"},{\"passage\":\"P008\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Explains multivariate risk calculator using birth data (gestational age, temperature, ROM, etc.) relevant to estimating this infant's EOS risk.\"},{\"passage\":\"P009\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Specifies risk thresholds (\u22651/1000) and recommends blood culture/observation or antibiotics, directly guiding management if risk were calculated.\"},{\"passage\":\"P010\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":false,\"rationale\":\"Reports validation outcomes of the calculator, offering background evidence without direct clinical instruction for this case.\"},{\"passage\":\"P011\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":false,\"rationale\":\"Discusses advantages/concerns of the multivariate approach, serving as contextual information rather than actionable guidance.\"},{\"passage\":\"P012\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Recommends observation for well\u2011appearing term infants, matching this infant's normal clinical condition and low EOS risk.\"}]}",
+          "reasoning": "We need output judgments for each target passage. Determine grades. Case: term infant 38 weeks, no risk factors, well-appearing, low risk. Relevant passages about risk assessment.\n\nP007: about late-preterm infants >=35 weeks, discusses approaches, monitoring, not specific actionable. Provides background. Grade 1? It's background/marginal. So relevance 1, guideline_aligned true (AAP), scenario_applicable? It's about infants >=35w, applicable. But not direct actionable. clinically_useful requires grade>=2, so false.\n\nP008: describes multivariate risk assessment and calculator, mentions data known at birth. Could be useful to estimate risk. Not direct recommendation but informs. Might be grade 2 (useful applicable support). guideline aligned true. scenario applicable yes. clinically_useful true.\n\nP009: gives thresholds for risk estimate and recommendations for blood culture/antibiotics. Direct actionable if risk >=1 per 1000. Our case risk likely low, but passage provides actionable guidance. Grade 2 or 3? Since it gives specific recommendation based on risk estimate, but we don't have calculator output. It's applicable support. I'd give 2.\n\nP010: validation results, no direct recommendation. Background. Grade1.\n\nP011: advantages/concerns of multivariate approach, background. Grade1.\n\nP012: reliance on clinical signs, says well-appearing reduces risk, recommends observation. This is actionable: observation for well-appearing term infants. Grade 2 or 3. I'd give 2.\n\nNow construct JSON. Need judgments array with each passage. Use passage id. Provide integers."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377483757,
+      "prompt_tokens": 2485,
+      "prompt_time": 0.373362079,
+      "completion_tokens": 714,
+      "completion_time": 1.476963826,
+      "total_tokens": 3199,
+      "total_time": 1.850325905,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 336
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m5syd301erfrq6zxq7rftxt2",
+      "seed": 1377147300
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "984",
+    "x-ratelimit-remaining-tokens": "4766",
+    "x-ratelimit-reset-requests": "23m2.4s",
+    "x-ratelimit-reset-tokens": "24.255s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P007",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Describes general approaches for infants \u226535\u202fweeks, providing background but no specific action for this well\u2011appearing term infant."
+      },
+      {
+        "passage": "P008",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Explains multivariate risk calculator using birth data (gestational age, temperature, ROM, etc.) relevant to estimating this infant's EOS risk."
+      },
+      {
+        "passage": "P009",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Specifies risk thresholds (\u22651/1000) and recommends blood culture/observation or antibiotics, directly guiding management if risk were calculated."
+      },
+      {
+        "passage": "P010",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Reports validation outcomes of the calculator, offering background evidence without direct clinical instruction for this case."
+      },
+      {
+        "passage": "P011",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Discusses advantages/concerns of the multivariate approach, serving as contextual information rather than actionable guidance."
+      },
+      {
+        "passage": "P012",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends observation for well\u2011appearing term infants, matching this infant's normal clinical condition and low EOS risk."
+      }
+    ]
+  }
+}

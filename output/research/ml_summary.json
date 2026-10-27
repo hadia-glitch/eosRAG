@@ -1,0 +1,792 @@
+{
+  "audit": {
+    "csv_sha256": "fe1787c19c929324d2862e5fb66f5cf3945a6ba75a41623a5ba506fa6f9e294d",
+    "rows": 100000,
+    "patient_ids": 20000,
+    "positive_rows": 43035,
+    "prevalence": 0.43035,
+    "missing_by_column": {
+      "Patient_ID": 0,
+      "Observation_Hour": 0,
+      "Gestational_Age": 0,
+      "Birth_Weight": 0,
+      "Sex": 0,
+      "Postnatal_Age": 0,
+      "Delivery_Mode": 0,
+      "Apgar": 0,
+      "HR": 3443,
+      "Resp": 3550,
+      "Temp": 3432,
+      "SpO2": 3419,
+      "BP": 3517,
+      "Oxygen": 3522,
+      "WBC": 3529,
+      "CRP": 3593,
+      "PCT": 3533,
+      "Platelets": 3510,
+      "Lactate": 3562,
+      "Hemoglobin": 3548,
+      "Sepsis_Label": 0
+    },
+    "duplicate_patient_hour_rows": 13899,
+    "conflicting_label_patient_hour_pairs": 6858,
+    "inconsistent_baseline_patient_ids": {
+      "Gestational_Age": 13778,
+      "Birth_Weight": 7588,
+      "Sex": 6830,
+      "Delivery_Mode": 6861,
+      "Apgar": 11066
+    },
+    "postnatal_age_days_range": [
+      0,
+      28
+    ],
+    "birth_weight_at_upper_value_fraction": 0.67495,
+    "source": "User-supplied Kaggle neonatal sepsis CSV; dataset URL, study, collection sites and label adjudication unavailable",
+    "clinical_eos_eligible": false,
+    "limitations": [
+      "Sepsis_Label is an observation-associated supplied label, not established culture-confirmed EOS",
+      "Patient/hour conflicts and changing immutable covariates prevent defensible longitudinal reconstruction",
+      "Unit definitions and actual measurement/result availability times are unavailable",
+      "Real-patient versus generated-data provenance is unverified; distribution patterns do not prove either origin"
+    ]
+  },
+  "experiments": [
+    {
+      "cohort": "all_neonatal_ages",
+      "selection": "Lowest validation Brier among logistic and forest; test untouched until final reporting",
+      "split": "patient-ID-disjoint random 55/15/15/15, seed 31; NOT temporal",
+      "partitions": [
+        {
+          "name": "fit",
+          "rows": 55057,
+          "patient_ids": 11000,
+          "positive_rows": 24011
+        },
+        {
+          "name": "calibration",
+          "rows": 14967,
+          "patient_ids": 3000,
+          "positive_rows": 6529
+        },
+        {
+          "name": "validation",
+          "rows": 15039,
+          "patient_ids": 3000,
+          "positive_rows": 6245
+        },
+        {
+          "name": "test",
+          "rows": 14937,
+          "patient_ids": 3000,
+          "positive_rows": 6250
+        }
+      ],
+      "features": [
+        "Gestational_Age",
+        "Birth_Weight",
+        "Postnatal_Age",
+        "Apgar",
+        "HR",
+        "Resp",
+        "Temp",
+        "SpO2",
+        "BP",
+        "Oxygen",
+        "WBC",
+        "CRP",
+        "PCT",
+        "Platelets",
+        "Lactate",
+        "Hemoglobin",
+        "Sex=Female",
+        "Sex=Male",
+        "Delivery_Mode=Cesarean",
+        "Delivery_Mode=Vaginal"
+      ],
+      "longitudinal_features": false,
+      "candidates": {
+        "logistic": {
+          "validation": {
+            "n": 15039,
+            "positive": 6245,
+            "prevalence": 0.4152536737815014,
+            "auroc": 0.9994156617083525,
+            "auprc": 0.9992051544650631,
+            "brier": 0.008736386982450139,
+            "sensitivity": 0.9498799039231385,
+            "specificity": 0.998408005458267,
+            "ppv": 0.9976454759502187,
+            "threshold": 0.9307225486464147,
+            "calibration_bins": [
+              {
+                "n": 8511,
+                "predicted": 0.0035069015103200265,
+                "observed": 0.0022324051227822815
+              },
+              {
+                "n": 142,
+                "predicted": 0.1475688315118924,
+                "observed": 0.15492957746478872
+              },
+              {
+                "n": 63,
+                "predicted": 0.24524636150961449,
+                "observed": 0.19047619047619047
+              },
+              {
+                "n": 51,
+                "predicted": 0.3430905363610247,
+                "observed": 0.43137254901960786
+              },
+              {
+                "n": 46,
+                "predicted": 0.4462966227840314,
+                "observed": 0.45652173913043476
+              },
+              {
+                "n": 36,
+                "predicted": 0.5488876620531665,
+                "observed": 0.6111111111111112
+              },
+              {
+                "n": 39,
+                "predicted": 0.6540213324756021,
+                "observed": 0.6410256410256411
+              },
+              {
+                "n": 72,
+                "predicted": 0.7531581159963814,
+                "observed": 0.7916666666666666
+              },
+              {
+                "n": 91,
+                "predicted": 0.854789800617554,
+                "observed": 0.8461538461538461
+              },
+              {
+                "n": 5988,
+                "predicted": 0.9974863737609514,
+                "observed": 0.9966599866399466
+              }
+            ]
+          },
+          "test": {
+            "n": 14937,
+            "positive": 6250,
+            "prevalence": 0.4184240476668675,
+            "auroc": 0.9993106388856913,
+            "auprc": 0.9990501878741904,
+            "brier": 0.008950200433580467,
+            "sensitivity": 0.94784,
+            "specificity": 0.9980430528375733,
+            "ppv": 0.9971385288671941,
+            "threshold": 0.9307225486464147,
+            "calibration_bins": [
+              {
+                "n": 8398,
+                "predicted": 0.0034707274136347604,
+                "observed": 0.0025005953798523457
+              },
+              {
+                "n": 130,
+                "predicted": 0.14519012976483217,
+                "observed": 0.13076923076923078
+              },
+              {
+                "n": 68,
+                "predicted": 0.248128453469378,
+                "observed": 0.25
+              },
+              {
+                "n": 57,
+                "predicted": 0.3429100430567053,
+                "observed": 0.2982456140350877
+              },
+              {
+                "n": 44,
+                "predicted": 0.4464545614974817,
+                "observed": 0.5454545454545454
+              },
+              {
+                "n": 45,
+                "predicted": 0.5575906787871691,
+                "observed": 0.4666666666666667
+              },
+              {
+                "n": 46,
+                "predicted": 0.648266756452742,
+                "observed": 0.6956521739130435
+              },
+              {
+                "n": 53,
+                "predicted": 0.759095003221664,
+                "observed": 0.7358490566037735
+              },
+              {
+                "n": 96,
+                "predicted": 0.8535351762685299,
+                "observed": 0.84375
+              },
+              {
+                "n": 6000,
+                "predicted": 0.9973633974248098,
+                "observed": 0.9968333333333333
+              }
+            ],
+            "accuracy": 0.9770368882640423,
+            "f1": 0.9718644901976868
+          }
+        },
+        "forest": {
+          "validation": {
+            "n": 15039,
+            "positive": 6245,
+            "prevalence": 0.4152536737815014,
+            "auroc": 0.9996847330035964,
+            "auprc": 0.9995686654257075,
+            "brier": 0.006155623692939902,
+            "sensitivity": 0.9498799039231385,
+            "specificity": 0.9993177166249716,
+            "ppv": 0.998989558773998,
+            "threshold": 0.965083432748898,
+            "calibration_bins": [
+              {
+                "n": 8605,
+                "predicted": 0.002535855605123989,
+                "observed": 0.0010459035444509005
+              },
+              {
+                "n": 88,
+                "predicted": 0.13949248345922532,
+                "observed": 0.1590909090909091
+              },
+              {
+                "n": 42,
+                "predicted": 0.24103490409639244,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 30,
+                "predicted": 0.3472330665324846,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 34,
+                "predicted": 0.4495354835657021,
+                "observed": 0.5588235294117647
+              },
+              {
+                "n": 29,
+                "predicted": 0.5444563747893292,
+                "observed": 0.6896551724137931
+              },
+              {
+                "n": 24,
+                "predicted": 0.6498529486538694,
+                "observed": 0.5833333333333334
+              },
+              {
+                "n": 40,
+                "predicted": 0.7533223061928963,
+                "observed": 0.625
+              },
+              {
+                "n": 69,
+                "predicted": 0.8580585331645771,
+                "observed": 0.8695652173913043
+              },
+              {
+                "n": 6078,
+                "predicted": 0.9975971768557534,
+                "observed": 0.9970384995064165
+              }
+            ]
+          },
+          "test": {
+            "n": 14937,
+            "positive": 6250,
+            "prevalence": 0.4184240476668675,
+            "auroc": 0.9995617359272476,
+            "auprc": 0.9994163374300657,
+            "brier": 0.0063347886823814535,
+            "sensitivity": 0.94896,
+            "specificity": 0.9991941982272361,
+            "ppv": 0.9988211519029977,
+            "threshold": 0.965083432748898,
+            "calibration_bins": [
+              {
+                "n": 8477,
+                "predicted": 0.002334110697867998,
+                "observed": 0.0016515276630883566
+              },
+              {
+                "n": 96,
+                "predicted": 0.1430495055777962,
+                "observed": 0.125
+              },
+              {
+                "n": 40,
+                "predicted": 0.24314439620279016,
+                "observed": 0.1
+              },
+              {
+                "n": 24,
+                "predicted": 0.3508069514367567,
+                "observed": 0.375
+              },
+              {
+                "n": 37,
+                "predicted": 0.4549863706404259,
+                "observed": 0.5135135135135135
+              },
+              {
+                "n": 34,
+                "predicted": 0.5421103795910807,
+                "observed": 0.5294117647058824
+              },
+              {
+                "n": 33,
+                "predicted": 0.6533396170931969,
+                "observed": 0.5454545454545454
+              },
+              {
+                "n": 41,
+                "predicted": 0.7548850805728216,
+                "observed": 0.6829268292682927
+              },
+              {
+                "n": 80,
+                "predicted": 0.8567983151168658,
+                "observed": 0.8875
+              },
+              {
+                "n": 6075,
+                "predicted": 0.9975754464446644,
+                "observed": 0.997037037037037
+              }
+            ],
+            "accuracy": 0.9781750016736962,
+            "f1": 0.9732523793895635
+          }
+        }
+      },
+      "selected": "forest",
+      "selected_test_cluster_bootstrap_95ci": {
+        "auroc": [
+          0.9993985451409381,
+          0.999717737426811
+        ],
+        "auprc": [
+          0.9991934343794047,
+          0.9996234596532431
+        ],
+        "brier": [
+          0.0054518026692586,
+          0.0070794339843807804
+        ],
+        "sensitivity": [
+          0.9442812549012551,
+          0.95372340377781
+        ],
+        "specificity": [
+          0.9986026080777299,
+          0.9997685720897941
+        ]
+      },
+      "bootstrap_repeats": 300,
+      "prior_baseline_test": {
+        "n": 14937,
+        "positive": 6250,
+        "prevalence": 0.4184240476668675,
+        "auroc": 0.5,
+        "auprc": 0.4184240476668675,
+        "brier": 0.243529670482694,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "ppv": null,
+        "threshold": 0.5,
+        "calibration_bins": [
+          {
+            "n": 14937,
+            "predicted": 0.43200000000000016,
+            "observed": 0.4184240476668675
+          }
+        ]
+      },
+      "clinical_eos_eligible": false,
+      "portable_parity_atol": 1e-07
+    },
+    {
+      "cohort": "postnatal_days_0_2",
+      "selection": "Lowest validation Brier among logistic and forest; test untouched until final reporting",
+      "split": "patient-ID-disjoint random 55/15/15/15, seed 31; NOT temporal",
+      "partitions": [
+        {
+          "name": "fit",
+          "rows": 5378,
+          "patient_ids": 1795,
+          "positive_rows": 2360
+        },
+        {
+          "name": "calibration",
+          "rows": 1519,
+          "patient_ids": 498,
+          "positive_rows": 675
+        },
+        {
+          "name": "validation",
+          "rows": 1640,
+          "patient_ids": 535,
+          "positive_rows": 675
+        },
+        {
+          "name": "test",
+          "rows": 1598,
+          "patient_ids": 509,
+          "positive_rows": 735
+        }
+      ],
+      "features": [
+        "Gestational_Age",
+        "Birth_Weight",
+        "Postnatal_Age",
+        "Apgar",
+        "HR",
+        "Resp",
+        "Temp",
+        "SpO2",
+        "BP",
+        "Oxygen",
+        "WBC",
+        "CRP",
+        "PCT",
+        "Platelets",
+        "Lactate",
+        "Hemoglobin",
+        "Sex=Female",
+        "Sex=Male",
+        "Delivery_Mode=Cesarean",
+        "Delivery_Mode=Vaginal"
+      ],
+      "longitudinal_features": false,
+      "candidates": {
+        "logistic": {
+          "validation": {
+            "n": 1640,
+            "positive": 675,
+            "prevalence": 0.4115853658536585,
+            "auroc": 0.9993091537132988,
+            "auprc": 0.9990382787963625,
+            "brier": 0.0099152237195128,
+            "sensitivity": 0.9496296296296296,
+            "specificity": 0.9979274611398964,
+            "ppv": 0.9968895800933126,
+            "threshold": 0.9815656934281577,
+            "calibration_bins": [
+              {
+                "n": 931,
+                "predicted": 0.002289441228978524,
+                "observed": 0.00322234156820623
+              },
+              {
+                "n": 16,
+                "predicted": 0.1505576245391672,
+                "observed": 0.1875
+              },
+              {
+                "n": 4,
+                "predicted": 0.2502082717707247,
+                "observed": 0.0
+              },
+              {
+                "n": 7,
+                "predicted": 0.34762579076378286,
+                "observed": 0.14285714285714285
+              },
+              {
+                "n": 3,
+                "predicted": 0.45201859931007493,
+                "observed": 0.0
+              },
+              {
+                "n": 3,
+                "predicted": 0.5319685690528576,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 4,
+                "predicted": 0.6570864912701563,
+                "observed": 1.0
+              },
+              {
+                "n": 8,
+                "predicted": 0.7478945180997596,
+                "observed": 0.625
+              },
+              {
+                "n": 7,
+                "predicted": 0.8612469475636529,
+                "observed": 0.8571428571428571
+              },
+              {
+                "n": 657,
+                "predicted": 0.9987253013788804,
+                "observed": 0.9923896499238964
+              }
+            ]
+          },
+          "test": {
+            "n": 1598,
+            "positive": 735,
+            "prevalence": 0.4599499374217772,
+            "auroc": 0.9989815624975367,
+            "auprc": 0.9988458534591396,
+            "brier": 0.012947802665233139,
+            "sensitivity": 0.9360544217687075,
+            "specificity": 0.9988412514484357,
+            "ppv": 0.9985486211901307,
+            "threshold": 0.9815656934281577,
+            "calibration_bins": [
+              {
+                "n": 838,
+                "predicted": 0.00325783262133659,
+                "observed": 0.007159904534606206
+              },
+              {
+                "n": 18,
+                "predicted": 0.13879556088989264,
+                "observed": 0.2222222222222222
+              },
+              {
+                "n": 6,
+                "predicted": 0.24948421052291744,
+                "observed": 0.5
+              },
+              {
+                "n": 3,
+                "predicted": 0.34144332156487484,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 3,
+                "predicted": 0.42109639741007204,
+                "observed": 1.0
+              },
+              {
+                "n": 5,
+                "predicted": 0.5321076810583404,
+                "observed": 0.4
+              },
+              {
+                "n": 6,
+                "predicted": 0.6289107224574993,
+                "observed": 0.5
+              },
+              {
+                "n": 5,
+                "predicted": 0.7705759390421739,
+                "observed": 0.8
+              },
+              {
+                "n": 5,
+                "predicted": 0.8825602572193307,
+                "observed": 0.8
+              },
+              {
+                "n": 709,
+                "predicted": 0.9983543227231689,
+                "observed": 0.9943582510578279
+              }
+            ],
+            "accuracy": 0.9699624530663329,
+            "f1": 0.9662921348314607
+          }
+        },
+        "forest": {
+          "validation": {
+            "n": 1640,
+            "positive": 675,
+            "prevalence": 0.4115853658536585,
+            "auroc": 0.9993935904816734,
+            "auprc": 0.9991550804558809,
+            "brier": 0.009446889916086923,
+            "sensitivity": 0.9496296296296296,
+            "specificity": 0.9989637305699481,
+            "ppv": 0.9984423676012462,
+            "threshold": 0.9636427306960579,
+            "calibration_bins": [
+              {
+                "n": 928,
+                "predicted": 0.0031676643023121776,
+                "observed": 0.0010775862068965517
+              },
+              {
+                "n": 16,
+                "predicted": 0.1458627865307969,
+                "observed": 0.125
+              },
+              {
+                "n": 9,
+                "predicted": 0.24516964592243895,
+                "observed": 0.2222222222222222
+              },
+              {
+                "n": 7,
+                "predicted": 0.38292060454846977,
+                "observed": 0.42857142857142855
+              },
+              {
+                "n": 3,
+                "predicted": 0.43968189379238076,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 5,
+                "predicted": 0.546928146663069,
+                "observed": 0.6
+              },
+              {
+                "n": 1,
+                "predicted": 0.6070301221220787,
+                "observed": 0.0
+              },
+              {
+                "n": 2,
+                "predicted": 0.7699209734640982,
+                "observed": 0.0
+              },
+              {
+                "n": 13,
+                "predicted": 0.8590735499794201,
+                "observed": 0.6923076923076923
+              },
+              {
+                "n": 656,
+                "predicted": 0.9973778921696738,
+                "observed": 0.9954268292682927
+              }
+            ]
+          },
+          "test": {
+            "n": 1598,
+            "positive": 735,
+            "prevalence": 0.4599499374217772,
+            "auroc": 0.9992070060932832,
+            "auprc": 0.9991312927421774,
+            "brier": 0.009383224495805047,
+            "sensitivity": 0.9306122448979591,
+            "specificity": 1.0,
+            "ppv": 1.0,
+            "threshold": 0.9636427306960579,
+            "calibration_bins": [
+              {
+                "n": 837,
+                "predicted": 0.0029262593061051547,
+                "observed": 0.0047789725209080045
+              },
+              {
+                "n": 12,
+                "predicted": 0.1268794092690315,
+                "observed": 0.08333333333333333
+              },
+              {
+                "n": 8,
+                "predicted": 0.2524401692705459,
+                "observed": 0.375
+              },
+              {
+                "n": 11,
+                "predicted": 0.3447870929038073,
+                "observed": 0.45454545454545453
+              },
+              {
+                "n": 4,
+                "predicted": 0.4583514161570398,
+                "observed": 0.25
+              },
+              {
+                "n": 6,
+                "predicted": 0.5406585925158683,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 3,
+                "predicted": 0.664399700485515,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 4,
+                "predicted": 0.7764055368411394,
+                "observed": 1.0
+              },
+              {
+                "n": 9,
+                "predicted": 0.8484598370422041,
+                "observed": 1.0
+              },
+              {
+                "n": 704,
+                "predicted": 0.9967034301852926,
+                "observed": 0.9971590909090909
+              }
+            ],
+            "accuracy": 0.9680851063829787,
+            "f1": 0.9640591966173362
+          }
+        }
+      },
+      "selected": "forest",
+      "selected_test_cluster_bootstrap_95ci": {
+        "auroc": [
+          0.9985921903522755,
+          0.9996804904885325
+        ],
+        "auprc": [
+          0.9984004955087589,
+          0.9996372456791488
+        ],
+        "brier": [
+          0.006236599538668705,
+          0.012928500512742774
+        ],
+        "sensitivity": [
+          0.9125,
+          0.9456641369225469
+        ],
+        "specificity": [
+          1.0,
+          1.0
+        ]
+      },
+      "bootstrap_repeats": 300,
+      "prior_baseline_test": {
+        "n": 1598,
+        "positive": 735,
+        "prevalence": 0.4599499374217772,
+        "auroc": 0.5,
+        "auprc": 0.4599499374217772,
+        "brier": 0.24886668838026532,
+        "sensitivity": 0.0,
+        "specificity": 1.0,
+        "ppv": null,
+        "threshold": 0.5,
+        "calibration_bins": [
+          {
+            "n": 1598,
+            "predicted": 0.43825441039925733,
+            "observed": 0.4599499374217772
+          }
+        ]
+      },
+      "clinical_eos_eligible": false,
+      "portable_parity_atol": 1e-07
+    }
+  ],
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.3.1",
+    "scikit-learn": "1.7.0"
+  },
+  "seed": 31
+}

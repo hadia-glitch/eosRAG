@@ -1,0 +1,113 @@
+{
+  "completed": true,
+  "task_sha256": "e1bee14c70420d7440671a673e301866fce87157400befe7a4f775793ee57830",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 6.305853099998785,
+  "kind": "chunks",
+  "case_id": "cp_case_001",
+  "mapping": {
+    "P018": "NICE_pg31_2012-amended-2026_chunk2",
+    "P019": "NICE_pg33_infection_chunk1",
+    "P020": "NICE_pg34_2021_rec1_chunk1",
+    "P021": "NICE_pg34_treatment_rec1_chunk1",
+    "P022": "NICE_pg37_amended-2021_chunk2",
+    "P023": "NICE_pg44_2012_rec1_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-24d8b7f1-df87-42fd-b48b-82d518b4ba9e",
+    "object": "chat.completion",
+    "created": 1792944760,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P018\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes switching to oral after 36\u202fh in stable term babies; relevant to early\u2011onset care but not direct treatment choice.\"\n    },\n    {\n      \"passage\": \"P019\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Focuses on late\u2011onset infection antibiotics; not applicable to this early\u2011onset scenario.\"\n    },\n    {\n      \"passage\": \"P020\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Provides duration of therapy for positive cultures; our case has negative culture and concerns about gentamicin.\"\n    },\n    {\n      \"passage\": \"P021\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Guidance on stopping antibiotics for late\u2011onset infection; not relevant to early\u2011onset risk.\"\n    },\n    {\n      \"passage\": \"P022\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Details GBS meningitis regimen with gentamicin; our baby has no meningitis and gentamicin is contraindicated.\"\n    },\n    {\n      \"passage\": \"P023\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Mentions measuring peak gentamicin levels in selected babies; not applicable due to gentamicin contraindication.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for each target passage. Provide JSON array. Use given schema fields. Provide for each target passage. Compute grades.\n\nCase: neonatal early-onset infection risk high, propose benzylpenicillin + gentamicin but contraindication gentamicin_aki (acute kidney injury) indicated by urine output 0.3 ml/kg/hr low, creatinine 1.9 high. So gentamicin may be contraindicated. Evaluate passages:\n\nP018: guidance on switching to oral after 36h if negative culture and stable. Not directly about starting regimen; applicable if antibiotics given. Might be useful but scenario: we may avoid gentamicin, but still could start benzylpenicillin alone? P018 is about switching, not starting. Grade maybe 1 background.\n\nP019: choice of antibiotics for late-onset infection, not early-onset. Not applicable. Grade 0.\n\nP020: treatment duration 7 days for positive culture etc. Not about choice. Might be marginal. Grade 1.\n\nP021: stopping antibiotics at 48h for late-onset suspicion. Not early-onset. Grade 0.\n\nP022: specific regimen for GBS meningitis includes gentamicin dosing. Not our case (no meningitis). Also mentions gentamicin dosing. Might be background. Grade 1.\n\nP023: measuring peak gentamicin concentrations in selected babies such as oedema. Not applicable due to contraindication. Might be background. Grade 1.\n\nNow also need guideline_aligned: all from NICE, so true if content aligns with guideline scope. Even if not applicable, still aligned. scenario_applicable: whether passage is applicable to this specific scenario (early-onset infection, proposed drugs, contraindication). So:\n\nP018: scenario about early-onset? It mentions babies born 35+ weeks with negative culture needing >36h antibiotics. Our baby has risk factors, likely start antibiotics. Could be applicable. So true.\n\nP019: about late-onset, not applicable. false.\n\nP020: treatment duration for positive culture; our baby culture negative currently, but could be. Not directly applicable. scenario_applicable false.\n\nP021: late-onset stopping; false.\n\nP022: GBS meningitis regimen; not our case. false.\n\nP023: peak concentrations measurement; could be relevant if giving gentamicin, but contraindicated. Not applicable. false.\n\nClinically_useful = grade>=2 and scenario_applicable true. Only none have grade>=2. So all false.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377741518,
+      "prompt_tokens": 5529,
+      "prompt_time": 0.235183229,
+      "completion_tokens": 999,
+      "completion_time": 2.053344095,
+      "total_tokens": 6528,
+      "total_time": 2.288527324,
+      "completion_tokens_details": {
+        "reasoning_tokens": 520
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c15aa9c1b7",
+    "x_groq": {
+      "id": "req_01m5sxbq3fe56867mmfvw6gezx",
+      "seed": 1085868674
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-remaining-tokens": "1479",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-reset-tokens": "48.907s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P018",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Describes switching to oral after 36\u202fh in stable term babies; relevant to early\u2011onset care but not direct treatment choice."
+      },
+      {
+        "passage": "P019",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Focuses on late\u2011onset infection antibiotics; not applicable to this early\u2011onset scenario."
+      },
+      {
+        "passage": "P020",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Provides duration of therapy for positive cultures; our case has negative culture and concerns about gentamicin."
+      },
+      {
+        "passage": "P021",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Guidance on stopping antibiotics for late\u2011onset infection; not relevant to early\u2011onset risk."
+      },
+      {
+        "passage": "P022",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Details GBS meningitis regimen with gentamicin; our baby has no meningitis and gentamicin is contraindicated."
+      },
+      {
+        "passage": "P023",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Mentions measuring peak gentamicin levels in selected babies; not applicable due to gentamicin contraindication."
+      }
+    ]
+  }
+}

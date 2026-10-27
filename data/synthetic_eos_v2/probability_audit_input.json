@@ -1,0 +1,26 @@
+{
+  "input_contract_version": "supplied-neonatal-input-v1",
+  "purpose": "research",
+  "age_hours": 10,
+  "reviewed_inputs": true,
+  "values": {
+    "Gestational_Age": 36,
+    "Birth_Weight": 2.8,
+    "Sex": "Male",
+    "Postnatal_Age": 0,
+    "Delivery_Mode": "Cesarean",
+    "Apgar": 7,
+    "HR": 178,
+    "Resp": 74,
+    "Temp": 38.2,
+    "SpO2": 90,
+    "BP": 40,
+    "Oxygen": 35,
+    "WBC": 20,
+    "CRP": 20,
+    "PCT": 2,
+    "Platelets": 160,
+    "Lactate": 3.5,
+    "Hemoglobin": 14.5
+  }
+}

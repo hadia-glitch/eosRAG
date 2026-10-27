@@ -1,0 +1,185 @@
+{
+  "key": "cp_case_007-PLAN1-rubric4-clinical",
+  "kind": "plan",
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "case_id": "cp_case_007",
+  "prompt": {
+    "task": "Evaluate clinical usefulness/completeness and safety against this case and the supplied actual/gold guideline text. These are LLM proxy ratings, not clinician validation. Do not assess source faithfulness here or pretend that gold text was retrieved by the plan.",
+    "case": {
+      "case_id": "cp_case_007",
+      "active_guideline": "AAP",
+      "care_setting": "hospital",
+      "contraindication_type": null,
+      "trend_type": "deteriorating",
+      "ambiguous": false,
+      "previous_assessments": [
+        {
+          "created_at": "2026-07-25T06:00:00Z",
+          "combined_score": 0,
+          "category": "LOW"
+        },
+        {
+          "created_at": "2026-07-26T010:00:00Z",
+          "combined_score": 0,
+          "category": "LOW"
+        }
+      ],
+      "deltas": {
+        "score_delta": 0,
+        "crp_delta": 6.0,
+        "temp_delta": 0.6,
+        "hours_since_last": 6.0,
+        "aki_stage": 0
+      },
+      "proposed_drugs": [],
+      "retrieval_query": "AAP 2023 early-onset sepsis No significant risk factors Routine well-baby observation caesarean delivery white blood cell count WBC procalcitonin PCT thrombocytopenia platelet count multiple reassessments",
+      "patient": {
+        "gestational_age_weeks": 38.0,
+        "maternal_temperature": 36.8,
+        "rom_hours": 6.0,
+        "gbs_positive": false,
+        "respiratory_distress": "None",
+        "crp_level": 4.0,
+        "blood_culture_positive": false,
+        "urine_output_ml_kg_hr": 2.0,
+        "creatinine_mg_dl": 0.6,
+        "penicillin_allergy": false,
+        "adequate_intrapartum_antibiotics": true,
+        "clinical_chorioamnionitis": false,
+        "delivery_mode": "Caesarean",
+        "oxygen_need": "None",
+        "apgar_5_min": 9,
+        "poor_perfusion": false,
+        "neonatal_temperature": 37.0,
+        "neurological_status": "Normal",
+        "wbc_count": 12.0,
+        "it_ratio": 0.15,
+        "platelet_count": 260.0,
+        "pct_level": 0.3
+      },
+      "recorded_legacy_risk_category": "LOW",
+      "legacy_score_status": "Unvalidated legacy output, not clinical truth"
+    },
+    "gold_evidence": [
+      {
+        "source": "AAP",
+        "passage": "S001"
+      },
+      {
+        "source": "AAP",
+        "passage": "S002"
+      },
+      {
+        "source": "AAP",
+        "passage": "S003"
+      }
+    ],
+    "reference_status": "Template reference is evaluated separately for similarity and is not clinical ground truth. Actual gold/source passages are provided here.",
+    "plan": {
+      "plan_id": "PLAN1",
+      "evidence": [
+        {
+          "citation": "E1",
+          "passage": "S003"
+        },
+        {
+          "citation": "E2",
+          "passage": "S004"
+        },
+        {
+          "citation": "E3",
+          "passage": "S005"
+        },
+        {
+          "citation": "E4",
+          "passage": "S006"
+        },
+        {
+          "citation": "E5",
+          "passage": "S007"
+        }
+      ],
+      "numbered_citation_mapping": "Context-list order supplied for generation; citation list may differ and should be checked.",
+      "candidate_lines": {
+        "L001": "CLINICAL SUMMARY:",
+        "L002": "This is a 38-week gestation neonate assessed for early-onset sepsis (EOS) within the first 72 hours of life. The patient presents with no significant risk factors, normal clinical status, and adequate intrapartum antibiotic prophylaxis, resulting in a low-risk classification.",
+        "L004": "RISK ANALYSIS:",
+        "L005": "The patient is classified as LOW risk (Combined score: 0, Probability: 0.4 per 1000) based on the absence of significant risk factors. The multivariate risk assessment indicates that the risk is below the threshold for blood culture or empirical antibiotic therapy as defined by the AAP guidelines.",
+        "L007": "DRIVER BREAKDOWN:",
+        "L008": "No significant risk factors: Routine well-baby observation contributes 100% to the low risk score, with no points assigned for maternal or infant risk indicators.",
+        "L010": "RECOMMENDED ACTIONS:",
+        "L011": "- Routine well-baby observation",
+        "L012": "- No blood culture required",
+        "L013": "- No empirical antibiotic therapy required",
+        "L015": "ANTIBIOTIC PLAN: required=False urgency=Not applicable",
+        "L017": "duration=Not applicable stop_criteria=Not applicable",
+        "L019": "MONITORING PLAN:",
+        "L020": "Serial physical examinations to detect the presence of clinical signs of illness after birth, as per AAP recommendations for low-risk infants.",
+        "L022": "ESCALATION CRITERIA:",
+        "L023": "Development of clinical signs of illness or change in risk stratification to moderate/high risk.",
+        "L025": "NUTRITION/FLUID PLAN:",
+        "L026": "Routine neonatal feeding and fluid management as per standard well-baby care.",
+        "L028": "DISAMBIGUATION BLOCK:",
+        "L031": "CONTRAINDICATION FLAGS:",
+        "L034": "TREND STATE CHANGE:"
+      }
+    },
+    "response_schema": {
+      "clinical_correctness": "integer 1-5",
+      "clinical_completeness": "integer 1-5",
+      "clinical_utility": "integer 1-5",
+      "safety": "integer 1-5",
+      "contradictions": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "critical_omissions": [
+        "missing information or action + source/case reason"
+      ],
+      "regimen_incomplete": "boolean",
+      "rationale": "concise source-based justification; disclose ambiguous citation mapping"
+    },
+    "rubric_version": 4,
+    "passage_catalog": {
+      "S001": "Source: AAP\nSection: Newborn Clinical Condition\n\nA third strategy consists of the reliance on clinical signs of illness to identify infants with EOS. Under this approach, regardless of any estimation of neonatal or maternal risk factors for EOS, infants who appear ill at birth and those who develop signs of illness over the first 48 hours after birth are either treated empirically with antibiotic agents or further evaluated by laboratory screening. Among term and late- preterm infants, good clinical condition at birth is associated with a reduction in risk for EOS of approximately 60% to 70%. A multidisciplinary panel sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development advocated that infants be flagged for risk of EOS on the basis of the obstetric diagnosis of suspected intraamniotic infection but that those conducting newborn evaluation primarily rely on clinical observation alone for well-appearing term and late-preterm infants.",
+      "S002": "Source: AAP\nSection: Categorical Risk Factor Assessment\n\nA categorical risk factor assessment includes risk factor threshold values to identify infants who are at increased risk for EOS. Algorithms for the management of GBS-specific EOS have been used as a general framework for the prevention of all EOS. Risk factors used in such algorithms included (1) any newborn infant who is ill appearing;\n(2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation;\nor (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following:\nlaboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4.",
+      "S003": "Source: AAP\nSection: Multivariate Risk Assessment\n\nThe predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate. Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \u22653 per 1000 live births. A prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC). No adverse effects of the multivariate risk approach were noted during birth hospitalization.",
+      "S004": "Source: AAP\nSection: abstract\n\nThe incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy. However, EOS remains a serious and potentially fatal illness. Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions. Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy. The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth.",
+      "S005": "Source: AAP\nSection: abstract\n\nThe incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth. Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis among infants born at \u226535 0/7 weeks\u2019 gestation and a framework for the development of evidence-based approaches to sepsis risk assessment among these infants. Early-onset sepsis (EOS) is a serious and potentially fatal complication of birth.",
+      "S006": "Source: AAP\nSection: Newborn Clinical Condition\n\nA multidisciplinary panel sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development advocated that infants be flagged for risk of EOS on the basis of the obstetric diagnosis of suspected intraamniotic infection but that those conducting newborn evaluation primarily rely on clinical observation alone for well-appearing term and late-preterm infants. Those at several centers have reported experience with strategies based on the identification of at-risk newborn infants using categorical or multivariate approaches to risk accompanied by laboratory tests and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age.",
+      "S007": "Source: AAP\nSection: SUMMARY POINTS\n\nWe include the following summary points:\n1. The epidemiology of EOS differs substantially between term and/ or late-preterm infants and very preterm infants. 2. Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following:\no categorical algorithms in which threshold values for intrapartum risk factors are used;\no multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants. 3."
+    },
+    "finding_rules": "Select immutable candidate-line claim_id for contradictions. Missing details are critical_omissions. Apply patient age, contraindications, hospital/referral context and all guideline conditions. Safe expert referral/withholding may be appropriate and is not itself unsafe; it can still leave a regimen incomplete. Do not demand a numeric dose where the case/source cannot safely establish one. The case legacy risk category is unvalidated and cannot independently prove infection or treatment eligibility. Return the requested 1-5 ratings and concrete evidence-based findings.",
+    "evaluation_stage": "clinical"
+  },
+  "candidate_lines": {
+    "L001": "CLINICAL SUMMARY:",
+    "L002": "This is a 38-week gestation neonate assessed for early-onset sepsis (EOS) within the first 72 hours of life. The patient presents with no significant risk factors, normal clinical status, and adequate intrapartum antibiotic prophylaxis, resulting in a low-risk classification.",
+    "L004": "RISK ANALYSIS:",
+    "L005": "The patient is classified as LOW risk (Combined score: 0, Probability: 0.4 per 1000) based on the absence of significant risk factors. The multivariate risk assessment indicates that the risk is below the threshold for blood culture or empirical antibiotic therapy as defined by the AAP guidelines.",
+    "L007": "DRIVER BREAKDOWN:",
+    "L008": "No significant risk factors: Routine well-baby observation contributes 100% to the low risk score, with no points assigned for maternal or infant risk indicators.",
+    "L010": "RECOMMENDED ACTIONS:",
+    "L011": "- Routine well-baby observation",
+    "L012": "- No blood culture required",
+    "L013": "- No empirical antibiotic therapy required",
+    "L015": "ANTIBIOTIC PLAN: required=False urgency=Not applicable",
+    "L017": "duration=Not applicable stop_criteria=Not applicable",
+    "L019": "MONITORING PLAN:",
+    "L020": "Serial physical examinations to detect the presence of clinical signs of illness after birth, as per AAP recommendations for low-risk infants.",
+    "L022": "ESCALATION CRITERIA:",
+    "L023": "Development of clinical signs of illness or change in risk stratification to moderate/high risk.",
+    "L025": "NUTRITION/FLUID PLAN:",
+    "L026": "Routine neonatal feeding and fluid management as per standard well-baby care.",
+    "L028": "DISAMBIGUATION BLOCK:",
+    "L031": "CONTRAINDICATION FLAGS:",
+    "L034": "TREND STATE CHANGE:"
+  },
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  }
+}

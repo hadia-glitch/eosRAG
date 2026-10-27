@@ -1,0 +1,71 @@
+{
+  "completed": true,
+  "task_sha256": "913656ce93067c2396b07f121f1a5b49474efa49f0188071397f59d3d8de57be",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.6643604999990202,
+  "kind": "plan",
+  "case_id": "cp_case_003",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-a114327c-6fed-4975-9f87-881283c79362",
+    "object": "chat.completion",
+    "created": 1792952163,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":4,\"clinical_completeness\":3,\"clinical_utility\":4,\"safety\":5,\"contradictions\":[],\"critical_omissions\":[\"Missing specific dosing and frequency for ampicillin and gentamicin despite guideline recommending empirical therapy (S005,S006)\"],\"regimen_incomplete\":true,\"rationale\":\"Plan aligns with AAP recommendation for empirical ampicillin+gentamicin for EOS risk \u22653/1000 (S009,S005) and includes blood cultures (S004). No contraindications present. However, it omits dosing details, which are required for safe administration per treatment guidelines (S005,S006).\"}",
+          "reasoning": "We need produce JSON with fields. Assess plan: It recommends ampicillin and gentamicin but doses withheld. That's okay? guideline says combo first choice. No contraindications. Safety okay. Completeness: missing dosing but not required. Might note regimen_incomplete = false? Since doses not provided but acceptable? Probably regimen_incomplete = true because no dose. Contradictions? None. Critical omissions: specific antibiotic dosing. Also maybe need lumbar puncture? Not indicated unless ill. So omission of dosing. Provide contradictions list empty.\n\nRatings: clinical_correctness 4 (mostly aligns). completeness 3 (missing dosing). utility 4. safety 5.\n\nProvide contradictions empty array. critical_omissions list with item.\n\nReturn JSON compact."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.381441501,
+      "prompt_tokens": 3667,
+      "prompt_time": 0.172205946,
+      "completion_tokens": 298,
+      "completion_time": 0.612580493,
+      "total_tokens": 3965,
+      "total_time": 0.784786439,
+      "completion_tokens_details": {
+        "reasoning_tokens": 152
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c15aa9c1b7",
+    "x_groq": {
+      "id": "req_01m5t4dpa4er88jg7m70jzy0e0",
+      "seed": 402917947
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "982",
+    "x-ratelimit-remaining-tokens": "3458",
+    "x-ratelimit-reset-requests": "25m55.199s",
+    "x-ratelimit-reset-tokens": "34.064s"
+  },
+  "result": {
+    "clinical_correctness": 4,
+    "clinical_completeness": 3,
+    "clinical_utility": 4,
+    "safety": 5,
+    "contradictions": [],
+    "critical_omissions": [
+      "Missing specific dosing and frequency for ampicillin and gentamicin despite guideline recommending empirical therapy (S005,S006)"
+    ],
+    "regimen_incomplete": true,
+    "rationale": "Plan aligns with AAP recommendation for empirical ampicillin+gentamicin for EOS risk \u22653/1000 (S009,S005) and includes blood cultures (S004). No contraindications present. However, it omits dosing details, which are required for safe administration per treatment guidelines (S005,S006)."
+  }
+}

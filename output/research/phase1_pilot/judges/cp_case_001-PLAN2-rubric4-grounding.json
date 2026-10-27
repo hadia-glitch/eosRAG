@@ -1,0 +1,120 @@
+{
+  "completed": true,
+  "task_sha256": "1040f2a8068b4e7bcaf046b8d2d7d993e661d191d698b180b6f46134f19fb9cd",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.735044299988658,
+  "kind": "plan",
+  "case_id": "cp_case_001",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-2faf406b-961d-4ebb-97aa-c32148e5d508",
+    "object": "chat.completion",
+    "created": 1792951520,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 3,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\"claim_id\":\"L002\",\"reason\":\"Summary and risk justification not directly supported by any cited passage\"},\n    {\"claim_id\":\"L005\",\"reason\":\"Risk category, score and probability not found in provided evidence\"},\n    {\"claim_id\":\"L007\",\"reason\":\"Quantitative driver contribution percentages not sourced\"},\n    {\"claim_id\":\"L010\",\"reason\":\"Section header not a claim but lacks citation\"},\n    {\"claim_id\":\"L013\",\"reason\":\"Monitoring renal function due to gentamicin nephrotoxicity not mentioned in cited sources\"},\n    {\"claim_id\":\"L017\",\"reason\":\"Urgency statement not supported by evidence\"},\n    {\"claim_id\":\"L022\",\"reason\":\"Detailed monitoring plan (vital signs, urine output, creatinine) not cited\"},\n    {\"claim_id\":\"L025\",\"reason\":\"Escalation criteria not found in any passage\"},\n    {\"claim_id\":\"L028\",\"reason\":\"Nutrition/fluid plan not sourced\"},\n    {\"claim_id\":\"L034\",\"reason\":\"Contraindication flag wording not directly from evidence\"}\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"Key clinical statements (risk analysis, driver breakdown, monitoring, escalation, nutrition) lack grounding in the supplied evidence passages (S005,S006,S010,S011,S013,S005). Doses for benzylpenicillin and gentamicin match S005, giving partial citation correctness. Citation mapping is ambiguous, reducing completeness. No contradictory statements were identified.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Check citations: L018 dose benzylpenicillin 25 mg/kg matches S005. Good. L019 gentamicin 5 mg/kg matches S005. So citation correct? No citation mapping given; assume they refer to S005. Provide citation correctness maybe 5. Completeness: all claims have citations? Some like risk analysis not sourced. Those are unsupported. So citation completeness lower. Identify unsupported claims: L002 summary, L005 risk analysis, L007 driver breakdown percentages, L010 heading, L011- L015 actions partly from sources: monitoring renal function not in sources? S010 mentions monitoring times, not renal function. So L013 monitoring renal function is unsupported. L015 stop criteria from S011 yes. L017 urgency not sourced. L018 dose sourced. L019 dose sourced. L020 stop criteria partly from S011 but includes \"if blood culture negative, initial suspicion not strong...\" matches. ok. L022 monitoring plan includes urine output etc not in sources. So unsupported. L025 escalation criteria not sourced. L028 nutrition not sourced. L034 contraindication flag derived from case not source. So many unsupported.\n\nContradictions? None contradictory to sources.\n\nUngrounded dose: doses are grounded in S005, so none.\n\nProvide ratings: faithfulness maybe 2? citation correctness 3? citation completeness low 2. Provide arrays.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.306953293,
+      "prompt_tokens": 2886,
+      "prompt_time": 0.141485451,
+      "completion_tokens": 650,
+      "completion_time": 1.354238641,
+      "total_tokens": 3536,
+      "total_time": 1.4957240920000001,
+      "completion_tokens_details": {
+        "reasoning_tokens": 287
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m5t3t1ssegf88gt6xd4dha97",
+      "seed": 1888502555
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "997",
+    "x-ratelimit-remaining-tokens": "4347",
+    "x-ratelimit-reset-requests": "4m19.2s",
+    "x-ratelimit-reset-tokens": "27.397s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 3,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Summary and risk justification not directly supported by any cited passage",
+        "claim_text": "This term neonate presents with high-risk early-onset sepsis (EOS) driven by maternal GBS colonization, prolonged rupture of membranes, intrapartum fever, and clinical signs of respiratory distress with elevated CRP. Despite adequate intrapartum antibiotics, the strong clinical suspicion and laboratory markers necessitate immediate empirical treatment."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Risk category, score and probability not found in provided evidence",
+        "claim_text": "The patient is categorized as HIGH risk (Score 7) due to multiple Layer 1 drivers (Maternal GBS, ROM >18h, Maternal Fever) and Layer 2/3 drivers (Respiratory Distress, Elevated CRP). The probability of EOS is 12.0 per 1000. The presence of clinical indicators (respiratory distress) and elevated inflammatory markers (CRP 28.0 mg/L) prevents early cessation of antibiotics at 36 hours."
+      },
+      {
+        "claim_id": "L007",
+        "reason": "Quantitative driver contribution percentages not sourced",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      {
+        "claim_id": "L010",
+        "reason": "Section header not a claim but lacks citation",
+        "claim_text": "RECOMMENDED ACTIONS:"
+      },
+      {
+        "claim_id": "L013",
+        "reason": "Monitoring renal function due to gentamicin nephrotoxicity not mentioned in cited sources",
+        "claim_text": "- Monitor renal function closely due to potential nephrotoxicity risk with gentamicin."
+      },
+      {
+        "claim_id": "L017",
+        "reason": "Urgency statement not supported by evidence",
+        "claim_text": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour"
+      },
+      {
+        "claim_id": "L022",
+        "reason": "Detailed monitoring plan (vital signs, urine output, creatinine) not cited",
+        "claim_text": "MONITORING PLAN:"
+      },
+      {
+        "claim_id": "L025",
+        "reason": "Escalation criteria not found in any passage",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      {
+        "claim_id": "L028",
+        "reason": "Nutrition/fluid plan not sourced",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      },
+      {
+        "claim_id": "L034",
+        "reason": "Contraindication flag wording not directly from evidence",
+        "claim_text": "CONTRAINDICATION FLAGS:"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "Key clinical statements (risk analysis, driver breakdown, monitoring, escalation, nutrition) lack grounding in the supplied evidence passages (S005,S006,S010,S011,S013,S005). Doses for benzylpenicillin and gentamicin match S005, giving partial citation correctness. Citation mapping is ambiguous, reducing completeness. No contradictory statements were identified."
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "purpose": "post-hoc supplied-label separability diagnostic, not a selected deployable model",
+  "heldout_accuracy": 0.9728191738635603,
+  "heldout_auroc": 0.9886616783699781,
+  "tree": "|--- PCT <= 0.77\n|   |--- PCT <= 0.67\n|   |   |--- PCT <= 0.65\n|   |   |   |--- class: 0\n|   |   |--- PCT >  0.65\n|   |   |   |--- class: 0\n|   |--- PCT >  0.67\n|   |   |--- CRP <= 4.60\n|   |   |   |--- class: 0\n|   |   |--- CRP >  4.60\n|   |   |   |--- class: 1\n|--- PCT >  0.77\n|   |--- CRP <= 3.66\n|   |   |--- CRP <= 3.54\n|   |   |   |--- class: 0\n|   |   |--- CRP >  3.54\n|   |   |   |--- class: 0\n|   |--- CRP >  3.66\n|   |   |--- Lactate <= 0.76\n|   |   |   |--- class: 0\n|   |   |--- Lactate >  0.76\n|   |   |   |--- class: 1\n"
+}

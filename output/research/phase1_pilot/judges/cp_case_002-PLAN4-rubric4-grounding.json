@@ -1,0 +1,89 @@
+{
+  "completed": true,
+  "task_sha256": "083e551e3f9ff405f246ba4ed258ffedcacce6ab78bffafafca48e54af7a8da8",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.349564000003738,
+  "kind": "plan",
+  "case_id": "cp_case_002",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-6e374cbb-8e20-495a-bd8e-ed25c09e3495",
+    "object": "chat.completion",
+    "created": 1792952044,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Claims that prolonged ROM of 20\u202fh adds risk and contributes 50% of risk, but NICE evidence (S010) only identifies increased risk for >24\u202fh; the 20\u202fh threshold is not supported by the provided passages.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Assigns 2 points for elevated CRP based on a risk scoring system not present in any retrieved NICE passage.\"\n    }\n  ],\n  \"contradictions\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"States ROM 20\u202fh is a primary risk factor, whereas NICE evidence (S010) indicates risk increase is noted for >24\u202fh, creating a contradiction.\"\n    }\n  ],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan references evidence chunks S013, S014, S010, S008, S015 but citation mapping is unavailable, so specific line citations cannot be verified. Several risk statements (L005, L008) are not grounded in the supplied passages, and the risk threshold for ROM is inconsistent with NICE guidance. Antibiotic dosing is correctly flagged as missing, matching the evidence. Monitoring and CRP measurement recommendations are supported by S008 and S014. Overall grounding is limited.\"\n}",
+          "reasoning": "We need produce JSON with scores. Assess faithfulness: plan claims risk intermediate etc. Evidence: S010 mentions >24h threshold, but ROM 20h <24, guideline says risk increase >24h, so claim that ROM 20h contributes risk may not be supported. So unsupported. Also antibiotic plan withheld due to lack of dosing \u2013 that's accurate. Citation correctness: they cite [E1] but mapping missing. So low. Provide unsupported_claims list. Contradictions maybe claim L005 risk analysis contradicts evidence S010 (threshold >24h). So include. Ungrounded_dose false (no dose given). Return.\n\nScores: faithfulness maybe 2, citation_correctness 2, citation_completeness 2.\n\nProvide arrays.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.380407503,
+      "prompt_tokens": 2730,
+      "prompt_time": 0.168702854,
+      "completion_tokens": 496,
+      "completion_time": 1.059785462,
+      "total_tokens": 3226,
+      "total_time": 1.228488316,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 155
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5a93aea882",
+    "x_groq": {
+      "id": "req_01m5t4a1fke1h9p94zw7fpef59",
+      "seed": 1748352571
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "985",
+    "x-ratelimit-remaining-tokens": "4343",
+    "x-ratelimit-reset-requests": "21m36s",
+    "x-ratelimit-reset-tokens": "27.427s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L005",
+        "reason": "Claims that prolonged ROM of 20\u202fh adds risk and contributes 50% of risk, but NICE evidence (S010) only identifies increased risk for >24\u202fh; the 20\u202fh threshold is not supported by the provided passages.",
+        "claim_text": "The patient is categorized as INTERMEDIATE risk (Score 3) due to two primary drivers: prolonged rupture of membranes (20 hours, >=18h threshold) contributing 50% of the risk, and an elevated C-reactive protein (12.0 mg/L) contributing the remaining 50%. The absence of clinical chorioamnionitis and GBS positivity mitigates the risk from being high, but the laboratory and obstetric history indicators remain significant."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Assigns 2 points for elevated CRP based on a risk scoring system not present in any retrieved NICE passage.",
+        "claim_text": "['Prolonged rupture of membranes: ROM 20.0h (>=18h) adds 2 points (Layer 1).', 'Elevated CRP: CRP 12.0 mg/L adds 2 points (Layer 3).']"
+      }
+    ],
+    "contradictions": [
+      {
+        "claim_id": "L005",
+        "reason": "States ROM 20\u202fh is a primary risk factor, whereas NICE evidence (S010) indicates risk increase is noted for >24\u202fh, creating a contradiction.",
+        "claim_text": "The patient is categorized as INTERMEDIATE risk (Score 3) due to two primary drivers: prolonged rupture of membranes (20 hours, >=18h threshold) contributing 50% of the risk, and an elevated C-reactive protein (12.0 mg/L) contributing the remaining 50%. The absence of clinical chorioamnionitis and GBS positivity mitigates the risk from being high, but the laboratory and obstetric history indicators remain significant."
+      }
+    ],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan references evidence chunks S013, S014, S010, S008, S015 but citation mapping is unavailable, so specific line citations cannot be verified. Several risk statements (L005, L008) are not grounded in the supplied passages, and the risk threshold for ROM is inconsistent with NICE guidance. Antibiotic dosing is correctly flagged as missing, matching the evidence. Monitoring and CRP measurement recommendations are supported by S008 and S014. Overall grounding is limited."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 5,
+    "patient_fidelity": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "uncertainty": 5,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Candidate accurately reflects all cited guideline statements, correctly references the patient\u2019s falling CRP trend, includes baseline measurement, serial interpretation, and 24\u2011hour review criteria, and offers clear actionable guidance without making unsupported claims."
+    ]
+  }
+}

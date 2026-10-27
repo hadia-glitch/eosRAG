@@ -1,0 +1,255 @@
+{
+  "synthetic": true,
+  "case": "crp_alone-1",
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "seconds": 0.056077400004141964,
+  "packet": {
+    "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.15.3",
+        "text": "Do not use C-reactive protein results alone to make decisions about starting, continuing or stopping antibiotics. [2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 25
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.13.2",
+        "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 21
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-1.25.3",
+        "text": "If continuing antibiotics for longer than 48 hours for suspected late\u2011onset neonatal infection despite negative blood culture, review the baby at least once every 24 hours. At each review, decide whether to stop antibiotics, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 35
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.21.4",
+        "text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 31
+      }
+    ]
+  },
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-20b",
+      "seconds": 0.0,
+      "replayed": true,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "A falling C\u2011reactive protein alone does not exclude neonatal infection and should not be used to stop antibiotics.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "recommended_actions",
+            "text": "Baseline C\u2011reactive protein should be measured when antibiotics are started in a baby with possible neonatal infection.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "monitoring_plan",
+            "text": "Subsequent C\u2011reactive protein readings should be used together with clinical assessment to gauge infection likelihood and treatment response.",
+            "support": [
+              {
+                "quote_id": "E2Q2"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "escalation_criteria",
+            "text": "If antibiotics are continued beyond 36\u201348\u202fhours with negative cultures, the baby must be reviewed at least every 24\u202fhours.",
+            "support": [
+              {
+                "quote_id": "E3Q1"
+              },
+              {
+                "quote_id": "E4Q1"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "escalation_criteria",
+            "text": "Each review should consider initial suspicion, clinical progress, current condition and C\u2011reactive protein levels and trends.",
+            "support": [
+              {
+                "quote_id": "E3Q2"
+              },
+              {
+                "quote_id": "E3Q3"
+              },
+              {
+                "quote_id": "E3Q4"
+              },
+              {
+                "quote_id": "E3Q5"
+              },
+              {
+                "quote_id": "E4Q2"
+              },
+              {
+                "quote_id": "E4Q3"
+              },
+              {
+                "quote_id": "E4Q4"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "parent_communication_notes",
+            "text": "Parents should be informed that C\u2011reactive protein trends are part of the decision process for continuing or stopping antibiotics, but clinical signs remain paramount.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 12,
+        "gestational_age_weeks": 35,
+        "care_setting": "hospital",
+        "respiratory_rate": 48,
+        "spo2": 97,
+        "crp": 4,
+        "culture_status": "unknown",
+        "red_flags": "not fully documented",
+        "maternal_gbs": "unknown"
+      },
+      "history": [
+        {
+          "age_hours": 3,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 14
+        },
+        {
+          "age_hours": 6,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.15.3",
+          "text": "Do not use C-reactive protein results alone to make decisions about starting, continuing or stopping antibiotics. [2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 25
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.13.2",
+          "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 21
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-1.25.3",
+          "text": "If continuing antibiotics for longer than 48 hours for suspected late\u2011onset neonatal infection despite negative blood culture, review the baby at least once every 24 hours. At each review, decide whether to stop antibiotics, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 35
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.21.4",
+          "text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 31
+        }
+      ]
+    },
+    "draft": {},
+    "citation_errors": [
+      "Generation unavailable or schema invalid"
+    ],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Draft failed structural/source checks"
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Draft failed structural/source checks"
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "Generation unavailable or schema invalid",
+      "Draft failed structural/source checks",
+      "Draft failed structural/source checks"
+    ],
+    "packet_sha256": "aeae93db2d6df46c1faa611ca03f7130f8c3aa3bcc95d5f6a60030d5eb34bdb9"
+  }
+}

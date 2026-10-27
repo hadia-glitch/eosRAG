@@ -1,0 +1,113 @@
+{
+  "completed": true,
+  "task_sha256": "3ec64467c472fa31f2bdcdc5968dde19d8f9a189fc343c8ab59079bdd0dc788e",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.915803899988532,
+  "kind": "chunks",
+  "case_id": "cp_case_009",
+  "mapping": {
+    "P001": "NICE_pg10_chorioamnionitis_rec1_chunk1",
+    "P002": "NICE_pg10_neonatal-infection_rec1_chunk1",
+    "P003": "NICE_pg10_onset-neonatal-infection_rec1_chunk1",
+    "P004": "NICE_pg12_box-1-risk-factors-for-e_chunk1",
+    "P007": "NICE_pg14_including-red-flags_chunk3",
+    "P010": "NICE_pg27_for-early-onset-or-late-_rec1_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-8fcdfb52-63dc-4e20-9637-819a9013399e",
+    "object": "chat.completion",
+    "created": 1792946067,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P001\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Provides background on why antibiotics are offered during labour, not specific to neonatal treatment.\"\n    },\n    {\n      \"passage\": \"P002\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Recommends against rifampicin\u2011miconazole catheters, unrelated to neonatal infection or antibiotic choice.\"\n    },\n    {\n      \"passage\": \"P003\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Discusses immediate birth for prolonged ROM with GBS; case lacks GBS and focuses on postnatal care.\"\n    },\n    {\n      \"passage\": \"P004\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Lists ROM >18\u202fh as a red\u2011flag risk factor, directly matching the case's prolonged rupture.\"\n    },\n    {\n      \"passage\": \"P007\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Guidance applies only to babies without risk factors, whereas the case has risk factors.\"\n    },\n    {\n      \"passage\": \"P010\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Recommends CRP measurement 18\u201124\u202fh after starting antibiotics and lumbar puncture criteria, relevant to management.\"\n    }\n  ]\n}",
+          "reasoning": "We need output JSON with judgments for each target passage. Evaluate relevance to case: case needs antibiotics for neonate with risk factors (prolonged ROM, elevated CRP) penicillin allergy, proposed clindamycin+gentamicin. Passages:\n\nP001: about rationale for antibiotics during labour to prevent early-onset infection. Not specific actionable. Probably background. Grade 1. Guideline aligned yes (NICE). Scenario applicable? It's about offering antibiotics during labour, but case is postnatal antibiotic choice. Might be marginal. scenario_applicable false? It's about intrapartum prophylaxis, not neonatal treatment. So scenario_applicable false. Clinically_useful false (grade<2). \n\nP002: recommendation not to use rifampicin-miconazole catheters. Irrelevant. Grade0.\n\nP003: recommendation to offer immediate birth for women 34-37 weeks with prolonged ROM and GBS colonisation. Our case: ROM 20h, no GBS, but still risk factor. This is about delivery timing, not antibiotics. Background marginal. Grade1. Guideline aligned yes. scenario_applicable false. clinically_useful false.\n\nP004: Box 1 risk factors includes confirmed ROM >18h before preterm birth. Directly matches case. Provides risk factor info, background. Grade2? It's applicable support for risk assessment. Not actionable treatment. So grade2. guideline aligned yes. scenario_applicable true (risk factor relevant). clinically_useful true (grade>=2). \n\nP007: guidance on monitoring without risk factors. Our case has risk factors, so not directly. Might be background about when not to give antibiotics. Not relevant. Grade0 or 1? Probably 1 marginal. But says for babies without risk factors... not applicable. So grade0.\n\nP010: recommendation about CRP measurement 18-24h after starting antibiotics and lumbar puncture considerations. Our case has elevated CRP, but this is about monitoring after antibiotics started. Could be useful. Grade2. guideline aligned yes. scenario_applicable true (neonate with risk factors receiving antibiotics). Clinically_useful true.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.332979476,
+      "prompt_tokens": 4623,
+      "prompt_time": 0.188818489,
+      "completion_tokens": 912,
+      "completion_time": 1.893084527,
+      "total_tokens": 5535,
+      "total_time": 2.081903016,
+      "completion_tokens_details": {
+        "reasoning_tokens": 443
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m5sykk3we59bfye85n1vtxqk",
+      "seed": 952286178
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "981",
+    "x-ratelimit-remaining-tokens": "2644",
+    "x-ratelimit-reset-requests": "27m21.6s",
+    "x-ratelimit-reset-tokens": "40.17s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P001",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Provides background on why antibiotics are offered during labour, not specific to neonatal treatment."
+      },
+      {
+        "passage": "P002",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Recommends against rifampicin\u2011miconazole catheters, unrelated to neonatal infection or antibiotic choice."
+      },
+      {
+        "passage": "P003",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses immediate birth for prolonged ROM with GBS; case lacks GBS and focuses on postnatal care."
+      },
+      {
+        "passage": "P004",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Lists ROM >18\u202fh as a red\u2011flag risk factor, directly matching the case's prolonged rupture."
+      },
+      {
+        "passage": "P007",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Guidance applies only to babies without risk factors, whereas the case has risk factors."
+      },
+      {
+        "passage": "P010",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends CRP measurement 18\u201124\u202fh after starting antibiotics and lumbar puncture criteria, relevant to management."
+      }
+    ]
+  }
+}

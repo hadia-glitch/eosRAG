@@ -1,0 +1,74 @@
+{
+  "completed": true,
+  "task_sha256": "044a70e8b41d9e01c43d99eb551294388c356376a0f9ad1b9385e95d05429514",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.971500500003458,
+  "kind": "plan",
+  "case_id": "cp_case_004",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-29555e39-f1ef-4dfa-8a6f-51a0aa0e1c75",
+    "object": "chat.completion",
+    "created": 1792952463,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"clinical_correctness\": 5,\n  \"clinical_completeness\": 4,\n  \"clinical_utility\": 5,\n  \"safety\": 5,\n  \"contradictions\": [],\n  \"critical_omissions\": [\n    {\n      \"claim_id\": \"L028\",\n      \"reason\": \"Plan mentions IV fluids but does not specify an initial fluid bolus (e.g., 20\u202fmL/kg isotonic saline) for shock, which is recommended for neonates with poor perfusion (WHO sepsis management).\"\n    }\n  ],\n  \"regimen_incomplete\": false,\n  \"rationale\": \"The plan aligns with WHO recommendations for hospitalized infants with critical illness (S002, S003, S004) by prescribing ampicillin 50\u202fmg/kg q12h and gentamicin 5\u202fmg/kg daily for \u226510\u202fdays, and includes respiratory support, monitoring, and escalation criteria. No contradictory citations are present. The only notable gap is the lack of a specific fluid bolus recommendation for shock, which is part of standard WHO sepsis care.\"\n}",
+          "reasoning": "We need produce JSON with fields. Assess plan vs gold evidence. Plan uses ampicillin+gentamicin, matches WHO recommendation S002, S003 dosing. No contradictions. Completeness: includes respiratory support, monitoring, duration >=10 days. Might miss mention of referral? Already in hospital. Safety: no allergy, dosing appropriate. So ratings high. Contradictions none. Critical omissions? maybe no mention of labs like repeat cultures (included) and PCT (included). Might miss mention of fluid bolus for shock? Not explicit. Could be omission. Provide one omission. regimen_incomplete false. Provide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 1.026861003,
+      "prompt_tokens": 5103,
+      "prompt_time": 0.205935757,
+      "completion_tokens": 366,
+      "completion_time": 0.764536037,
+      "total_tokens": 5469,
+      "total_time": 0.970471794,
+      "completion_tokens_details": {
+        "reasoning_tokens": 127
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_854fa9be4c",
+    "x_groq": {
+      "id": "req_01m5t4pt1wem6t38ynae85ptdq",
+      "seed": 40496579
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "974",
+    "x-ratelimit-remaining-tokens": "2022",
+    "x-ratelimit-reset-requests": "37m26.4s",
+    "x-ratelimit-reset-tokens": "44.835s"
+  },
+  "result": {
+    "clinical_correctness": 5,
+    "clinical_completeness": 4,
+    "clinical_utility": 5,
+    "safety": 5,
+    "contradictions": [],
+    "critical_omissions": [
+      {
+        "claim_id": "L028",
+        "reason": "Plan mentions IV fluids but does not specify an initial fluid bolus (e.g., 20\u202fmL/kg isotonic saline) for shock, which is recommended for neonates with poor perfusion (WHO sepsis management)."
+      }
+    ],
+    "regimen_incomplete": false,
+    "rationale": "The plan aligns with WHO recommendations for hospitalized infants with critical illness (S002, S003, S004) by prescribing ampicillin 50\u202fmg/kg q12h and gentamicin 5\u202fmg/kg daily for \u226510\u202fdays, and includes respiratory support, monitoring, and escalation criteria. No contradictory citations are present. The only notable gap is the lack of a specific fluid bolus recommendation for shock, which is part of standard WHO sepsis care."
+  }
+}

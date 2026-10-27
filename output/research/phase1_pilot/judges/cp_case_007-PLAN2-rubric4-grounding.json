@@ -1,0 +1,80 @@
+{
+  "completed": true,
+  "task_sha256": "04d502165baff1bae62ca603fc10eb722c6c34bda5316b83eccda8d40ccb9a85",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.842320000010659,
+  "kind": "plan",
+  "case_id": "cp_case_007",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-9aa35910-8208-4c38-a169-dad033315d80",
+    "object": "chat.completion",
+    "created": 1792954326,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 3,\n  \"citation_correctness\": 3,\n  \"citation_completeness\": 3,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"Exact risk estimate of 0.4 per 1000 is not stated in any supplied passage; passages only give thresholds.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Statement that routine observation contributes 100% to low risk profile is not found in the evidence passages.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"Most recommendations (no culture, no antibiotics, observation) align with thresholds described in S003. However, the precise probability figure and the 100% contribution claim lack source support. Citation mapping is ambiguous, reducing correctness and completeness scores.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Check claims vs passages.\n\nKey claims: L002 risk estimate 0.4 per 1000. Passages S003/S004 talk about thresholds >=1 and >=3 but not specific 0.4. No source for exact 0.4. So unsupported.\n\nL011 routine observation \u2013 supported by S003 threshold <1 => observation. ok citation? Not given mapping but likely E1 S004 etc. Assume citation present but mapping ambiguous. citation correctness maybe partial.\n\nL012 No blood culture required based on risk <1 per 1000 \u2013 supported by S003 which says blood culture recommended for risk >=1. So claim aligns.\n\nL013 No empirical antibiotics required based on risk <3 \u2013 supported by S003.\n\nL015 antibiotic plan required=False \u2013 same.\n\nL016 statement \"Risk score <3 per 1000; AAP guidelines recommend observation only for this risk level.\" Supported.\n\nL023 escalation criteria mention risk >=1 for culture, >=3 for antibiotics \u2013 matches S003.\n\nOther lines about nutrition etc not needing citation.\n\nThus unsupported claim: L002 specific probability. Also maybe L008 driver breakdown quoting \"Routine well-baby observation contributes 100% to the low risk profile.\" Not directly in passages; passages mention observation but not 100% contribution. Might be unsupported.\n\nCheck citations: need correctness \u2013 we don't know mapping; assume citations present but may not match lines. Probably citation correctness moderate 3.\n\nCitation completeness: all factual claims have some citation? L002 lacks; L008 lacks. So completeness maybe 3.\n\nUnsupported claims list L002, L008.\n\nContradictions? None.\n\nUngrounded dose: none.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.308892732,
+      "prompt_tokens": 2638,
+      "prompt_time": 0.182700551,
+      "completion_tokens": 556,
+      "completion_time": 1.160824085,
+      "total_tokens": 3194,
+      "total_time": 1.343524636,
+      "completion_tokens_details": {
+        "reasoning_tokens": 346
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m5t6fnehewyb12kbsegsng05",
+      "seed": 958333813
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "981",
+    "x-ratelimit-remaining-tokens": "4968",
+    "x-ratelimit-reset-requests": "27m21.6s",
+    "x-ratelimit-reset-tokens": "22.74s"
+  },
+  "result": {
+    "faithfulness": 3,
+    "citation_correctness": 3,
+    "citation_completeness": 3,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Exact risk estimate of 0.4 per 1000 is not stated in any supplied passage; passages only give thresholds.",
+        "claim_text": "This is a 38-week gestation neonate assessed for early-onset sepsis (EOS) within the first 72 hours of life. The patient has a combined risk score of 0, placing them in the LOW risk category with an estimated probability of 0.4 per 1000 live births."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Statement that routine observation contributes 100% to low risk profile is not found in the evidence passages.",
+        "claim_text": "['No significant risk factors: Routine well-baby observation contributes 100% to the low risk profile.']"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "Most recommendations (no culture, no antibiotics, observation) align with thresholds described in S003. However, the precise probability figure and the 100% contribution claim lack source support. Citation mapping is ambiguous, reducing correctness and completeness scores."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "completed": true,
+  "task_sha256": "85546a2c878d2e3ff30ca88ee1e67bb5686a94a1a09dbe3d24ed726c8a155fd9",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.682624699998996,
+  "kind": "plan",
+  "case_id": "cp_case_003",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "dense_only_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-eb83c83f-bc7c-490f-8075-5e1c835277ca",
+    "object": "chat.completion",
+    "created": 1792952276,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"Exact probability (3.0 per 1000) and combined score of 4 are not presented in any retrieved passage.\"\n    },\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"States a specific probability of 3.0 per 1000; source only gives threshold >=3 per 1000, not the exact value.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Provides quantitative driver contributions (50% each) not found in the evidence.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"Key risk assessment details (probability, score, driver percentages) lack grounding in the supplied AAP passages. Antibiotic regimen (ampicillin + gentamicin) aligns with S011, but many recommendation statements lack explicit citation mapping, which is unavailable. Overall the plan contains several unsupported specifics, reducing faithfulness and citation metrics.\"\n}",
+          "reasoning": "We need to assess faithfulness, citation correctness/completeness, unsupported claims, contradictions, ungrouned dose. Check plan lines against evidence passages.\n\nKey claims: L002 risk assessment intermediate, probability 3.0 per 1000, driven by ROM and CRP. Evidence S009 says threshold >=3 per 1000 triggers antibiotics. It doesn't give probability 3.0 per 1000 for this case. No source for exact probability. So unsupported claim about probability 3.0 per 1000 and combined score of 4. Not in evidence. So unsupported.\n\nL005 similar claim about threshold meets >=3 per 1000. That part is supported (S009). But the specific probability 3.0 per 1000 is not sourced.\n\nL008 driver breakdown percentages 50% each \u2013 not in evidence.\n\nL010- L014 recommendations: observation, monitor vitals \u2013 general but not directly cited. Could be from S003 (clinical condition) which mentions observation for well-appearing infants. So maybe citation correct? No mapping given, but we can note missing mapping.\n\nAntibiotic plan L017- L018: ampicillin + gentamicin appropriate regimen \u2013 supported by S011. So citation correct.\n\nDose not specified \u2013 that's okay, not unsupported claim.\n\nThus faithfulness moderate: many statements not directly supported. I'd give faithfulness 2.\n\nCitation correctness: some claims lack citations, mapping missing. I'd give 2.\n\nCitation completeness: many claims lack citations. 2.\n\nUnsupported claims: list L002, L005 (probability), L008, maybe L011- L014? But those are general recommendations, could be considered supported by S003 and S010. We'll list the clear unsupported: L002, L005 (probability), L008.\n\nContradictions: none contradictory to evidence.\n\nUngrounded_dose: false (no dose given). So ungrouned_dose false, empty examples.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.298920211,
+      "prompt_tokens": 3016,
+      "prompt_time": 0.163480329,
+      "completion_tokens": 675,
+      "completion_time": 1.39800569,
+      "total_tokens": 3691,
+      "total_time": 1.561486019,
+      "completion_tokens_details": {
+        "reasoning_tokens": 403
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c868cf1eaa",
+    "x_groq": {
+      "id": "req_01m5t4h3wzev6smt7d9p7mbnfs",
+      "seed": 1405873460
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "979",
+    "x-ratelimit-remaining-tokens": "4109",
+    "x-ratelimit-reset-requests": "30m14.4s",
+    "x-ratelimit-reset-tokens": "29.182s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Exact probability (3.0 per 1000) and combined score of 4 are not presented in any retrieved passage.",
+        "claim_text": "This 34-week gestation neonate is assessed as INTERMEDIATE risk for early-onset sepsis (EOS) with a combined score of 4 and a probability of 3.0 per 1000 live births. The risk is driven by prolonged rupture of membranes (20 hours) and an elevated CRP level (12.0 mg/L), despite adequate intrapartum antibiotics and a reassuring clinical examination."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "States a specific probability of 3.0 per 1000; source only gives threshold >=3 per 1000, not the exact value.",
+        "claim_text": "The patient falls into the INTERMEDIATE risk category based on the AAP 2018 EOS Report multivariate risk assessment framework. The specific probability of 3.0 per 1000 meets the threshold for empirical antibiotic therapy as defined in the retrieved evidence (>=3 per 1000). The primary drivers are maternal risk factors (ROM >18h) and infant laboratory markers (elevated CRP)."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Provides quantitative driver contributions (50% each) not found in the evidence.",
+        "claim_text": "Prolonged rupture of membranes (20.0h, >=18h) contributes 50% to the risk score. Elevated CRP (12.0 mg/L) contributes 50% to the risk score."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "Key risk assessment details (probability, score, driver percentages) lack grounding in the supplied AAP passages. Antibiotic regimen (ampicillin + gentamicin) aligns with S011, but many recommendation statements lack explicit citation mapping, which is unavailable. Overall the plan contains several unsupported specifics, reducing faithfulness and citation metrics."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "completed": true,
+  "task_sha256": "70420d2703143bab36ced9c3ff739f40cbb1ead276c1752e9767c6048f2f5196",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 1.6965438000042923,
+  "kind": "plan",
+  "case_id": "cp_case_007",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-5e7590ca-521e-40dc-974d-f4400a892547",
+    "object": "chat.completion",
+    "created": 1792954352,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":5,\"clinical_completeness\":5,\"clinical_utility\":5,\"safety\":5,\"contradictions\":[],\"critical_omissions\":[],\"regimen_incomplete\":false,\"rationale\":\"The plan recommends routine observation, no blood cultures, and no empirical antibiotics for a term infant with a combined EOS risk score of 0, matching AAP guidance that blood culture is indicated at \u22651/1000 and antibiotics at \u22653/1000 (S003). The plan includes serial physical examinations and monitoring of temperature, respiration, and perfusion, consistent with clinical observation recommendations (S001, S006). No guideline\u2011based actions are omitted, and no unsafe recommendations are present.\"}",
+          "reasoning": "We need produce JSON with fields. Evaluate plan vs gold evidence. Plan says low risk, observation, no antibiotics. Guideline S003 says blood culture if risk >=1 per 1000, antibiotics if >=3. Here risk 0, so observation correct. No contradictions. Check any missing: maybe need mention serial exams, which is included. No need for labs. So completeness good. Safety high. Provide ratings maybe 5 each. No contradictions. critical_omissions none. regimen_incomplete false. Provide rationale."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.306705738,
+      "prompt_tokens": 3079,
+      "prompt_time": 0.143041219,
+      "completion_tokens": 262,
+      "completion_time": 0.591031284,
+      "total_tokens": 3341,
+      "total_time": 0.734072503,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m5t6gfwpejrtr1k90270grvq",
+      "seed": 1594708839
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "980",
+    "x-ratelimit-remaining-tokens": "4365",
+    "x-ratelimit-reset-requests": "28m48s",
+    "x-ratelimit-reset-tokens": "27.262s"
+  },
+  "result": {
+    "clinical_correctness": 5,
+    "clinical_completeness": 5,
+    "clinical_utility": 5,
+    "safety": 5,
+    "contradictions": [],
+    "critical_omissions": [],
+    "regimen_incomplete": false,
+    "rationale": "The plan recommends routine observation, no blood cultures, and no empirical antibiotics for a term infant with a combined EOS risk score of 0, matching AAP guidance that blood culture is indicated at \u22651/1000 and antibiotics at \u22653/1000 (S003). The plan includes serial physical examinations and monitoring of temperature, respiration, and perfusion, consistent with clinical observation recommendations (S001, S006). No guideline\u2011based actions are omitted, and no unsafe recommendations are present."
+  }
+}

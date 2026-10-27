@@ -1,0 +1,270 @@
+{
+  "available": true,
+  "version": "postnatal_days_0_2-forest-seed31",
+  "clinical_ready": false,
+  "validation_status": "research_only",
+  "input_contract_version": "supplied-neonatal-input-v1",
+  "input_contract": [
+    {
+      "name": "Gestational_Age",
+      "label": "Gestational age",
+      "unit": "weeks",
+      "minimum": 22,
+      "maximum": 44,
+      "required": true,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        24.0,
+        41.0
+      ]
+    },
+    {
+      "name": "Birth_Weight",
+      "label": "Birth weight",
+      "unit": "kg",
+      "minimum": 0.2,
+      "maximum": 6.5,
+      "required": true,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        0.52,
+        4.5
+      ]
+    },
+    {
+      "name": "Sex",
+      "label": "Sex recorded in the dataset",
+      "unit": "category",
+      "minimum": null,
+      "maximum": null,
+      "required": true,
+      "categories": [
+        "Female",
+        "Male"
+      ],
+      "read_only": false,
+      "development_range": null
+    },
+    {
+      "name": "Postnatal_Age",
+      "label": "Postnatal age",
+      "unit": "completed days",
+      "minimum": 0,
+      "maximum": 2,
+      "required": true,
+      "categories": null,
+      "read_only": true,
+      "development_range": [
+        0.0,
+        2.0
+      ]
+    },
+    {
+      "name": "Delivery_Mode",
+      "label": "Delivery mode",
+      "unit": "category",
+      "minimum": null,
+      "maximum": null,
+      "required": true,
+      "categories": [
+        "Cesarean",
+        "Vaginal"
+      ],
+      "read_only": false,
+      "development_range": null
+    },
+    {
+      "name": "Apgar",
+      "label": "Apgar score",
+      "unit": "score",
+      "minimum": 0,
+      "maximum": 10,
+      "required": true,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        3.0,
+        10.0
+      ]
+    },
+    {
+      "name": "HR",
+      "label": "Heart rate",
+      "unit": "beats/min",
+      "minimum": 0,
+      "maximum": 350,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        104.9,
+        206.3
+      ]
+    },
+    {
+      "name": "Resp",
+      "label": "Respiratory rate",
+      "unit": "breaths/min",
+      "minimum": 0,
+      "maximum": 150,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        25.5,
+        89.5
+      ]
+    },
+    {
+      "name": "Temp",
+      "label": "Temperature",
+      "unit": "degrees C",
+      "minimum": 30,
+      "maximum": 43,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        35.57,
+        38.31
+      ]
+    },
+    {
+      "name": "SpO2",
+      "label": "Oxygen saturation",
+      "unit": "%",
+      "minimum": 20,
+      "maximum": 100,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        87.6,
+        100.0
+      ]
+    },
+    {
+      "name": "BP",
+      "label": "Blood pressure as recorded",
+      "unit": "mmHg; type unspecified",
+      "minimum": 5,
+      "maximum": 150,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        25.0,
+        68.5
+      ]
+    },
+    {
+      "name": "Oxygen",
+      "label": "Numeric oxygen measurement",
+      "unit": "dataset units undocumented",
+      "minimum": 0,
+      "maximum": 100,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        21.0,
+        66.1
+      ]
+    },
+    {
+      "name": "WBC",
+      "label": "White blood cell count",
+      "unit": "dataset units undocumented",
+      "minimum": 0,
+      "maximum": 200,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        2.3,
+        45.0
+      ]
+    },
+    {
+      "name": "CRP",
+      "label": "C-reactive protein",
+      "unit": "dataset units undocumented",
+      "minimum": 0,
+      "maximum": 600,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        0.1,
+        24.7
+      ]
+    },
+    {
+      "name": "PCT",
+      "label": "Procalcitonin",
+      "unit": "dataset units undocumented",
+      "minimum": 0,
+      "maximum": 1000,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        0.02,
+        3.971
+      ]
+    },
+    {
+      "name": "Platelets",
+      "label": "Platelet count",
+      "unit": "dataset units undocumented",
+      "minimum": 0,
+      "maximum": 2000,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        35.0,
+        389.9
+      ]
+    },
+    {
+      "name": "Lactate",
+      "label": "Lactate",
+      "unit": "dataset units undocumented",
+      "minimum": 0,
+      "maximum": 30,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        0.3,
+        7.73
+      ]
+    },
+    {
+      "name": "Hemoglobin",
+      "label": "Hemoglobin",
+      "unit": "dataset units undocumented",
+      "minimum": 0,
+      "maximum": 30,
+      "required": false,
+      "categories": null,
+      "read_only": false,
+      "development_range": [
+        8.0,
+        21.0
+      ]
+    }
+  ],
+  "notice": "Research supplied-label classifier. This is not a validated probability of clinical early-onset sepsis and must not determine treatment.",
+  "age_scope_hours": [
+    0,
+    72
+  ],
+  "target": "supplied observation-associated Sepsis_Label",
+  "dataset_units_verified": false,
+  "max_missing_predictors": 3,
+  "missingness_policy": "fit-partition 99.5th percentile of missing predictor counts"
+}

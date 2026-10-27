@@ -1,0 +1,231 @@
+{
+  "key": "cp_case_014-PLAN2-rubric4-clinical",
+  "kind": "plan",
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "case_id": "cp_case_014",
+  "prompt": {
+    "task": "Evaluate clinical usefulness/completeness and safety against this case and the supplied actual/gold guideline text. These are LLM proxy ratings, not clinician validation. Do not assess source faithfulness here or pretend that gold text was retrieved by the plan.",
+    "case": {
+      "case_id": "cp_case_014",
+      "active_guideline": "NICE",
+      "care_setting": "hospital",
+      "contraindication_type": null,
+      "trend_type": "improving",
+      "ambiguous": false,
+      "previous_assessments": [
+        {
+          "created_at": "2026-07-25T06:00:00Z",
+          "combined_score": 11,
+          "category": "CRITICAL"
+        },
+        {
+          "created_at": "2026-07-26T010:00:00Z",
+          "combined_score": 9,
+          "category": "CRITICAL"
+        }
+      ],
+      "deltas": {
+        "score_delta": -2,
+        "crp_delta": -5.0,
+        "temp_delta": -0.4,
+        "hours_since_last": 6.0,
+        "aki_stage": 0
+      },
+      "proposed_drugs": [
+        "benzylpenicillin",
+        "gentamicin"
+      ],
+      "retrieval_query": "NICE NG195 Maternal GBS colonization GBS positive Prolonged rupture of membranes ROM 26.0h (>=18h) Maternal intrapartum fever Maternal temp 38.4C Respiratory distress Moderate respiratory distress Elevated CRP CRP 28.0 mg/L respiratory distress tachypnoea grunting prolonged ROM rupture of membranes maternal fever intrapartum fever GBS group B streptococcus intrapartum antibiotics caesarean delivery oxygen requirement respiratory support CPAP preterm prematurity CRP inflammatory markers white blood cell count WBC I:T ratio immature neutrophil ratio procalcitonin PCT thrombocytopenia platelet count laboratory evidence sepsis blood culture empirical antibiotics senior review multiple reassessments",
+      "patient": {
+        "gestational_age_weeks": 34.0,
+        "maternal_temperature": 38.4,
+        "rom_hours": 26.0,
+        "gbs_positive": true,
+        "respiratory_distress": "Moderate",
+        "crp_level": 28.0,
+        "blood_culture_positive": false,
+        "urine_output_ml_kg_hr": 2.0,
+        "creatinine_mg_dl": 0.6,
+        "penicillin_allergy": false,
+        "adequate_intrapartum_antibiotics": true,
+        "clinical_chorioamnionitis": false,
+        "delivery_mode": "Caesarean",
+        "oxygen_need": "Low-flow",
+        "apgar_5_min": 7,
+        "poor_perfusion": false,
+        "neonatal_temperature": 37.0,
+        "neurological_status": "Normal",
+        "wbc_count": 22.0,
+        "it_ratio": 0.28,
+        "platelet_count": 260.0,
+        "pct_level": 0.3
+      },
+      "recorded_legacy_risk_category": "HIGH",
+      "legacy_score_status": "Unvalidated legacy output, not clinical truth"
+    },
+    "gold_evidence": [
+      {
+        "source": "NICE",
+        "passage": "S001"
+      },
+      {
+        "source": "NICE",
+        "passage": "S002"
+      },
+      {
+        "source": "NICE",
+        "passage": "S003"
+      },
+      {
+        "source": "NICE",
+        "passage": "S004"
+      },
+      {
+        "source": "NICE",
+        "passage": "S005"
+      },
+      {
+        "source": "NICE",
+        "passage": "S006"
+      },
+      {
+        "source": "NICE",
+        "passage": "S007"
+      },
+      {
+        "source": "NICE",
+        "passage": "S008"
+      },
+      {
+        "source": "NICE",
+        "passage": "S009"
+      },
+      {
+        "source": "NICE",
+        "passage": "S010"
+      }
+    ],
+    "reference_status": "Template reference is evaluated separately for similarity and is not clinical ground truth. Actual gold/source passages are provided here.",
+    "plan": {
+      "plan_id": "PLAN2",
+      "evidence": [
+        {
+          "citation": "E1",
+          "passage": "S006"
+        },
+        {
+          "citation": "E2",
+          "passage": "S011"
+        },
+        {
+          "citation": "E3",
+          "passage": "S012"
+        },
+        {
+          "citation": "E4",
+          "passage": "S010"
+        },
+        {
+          "citation": "E5",
+          "passage": "S005"
+        }
+      ],
+      "numbered_citation_mapping": "Context-list order supplied for generation; citation list may differ and should be checked.",
+      "candidate_lines": {
+        "L001": "CLINICAL SUMMARY:",
+        "L002": "This 34-week neonate presents with high-risk early-onset sepsis (EOS) driven by maternal GBS colonization, prolonged rupture of membranes, and intrapartum fever, alongside clinical signs of respiratory distress and elevated CRP. Despite adequate intrapartum antibiotics, the combination of maternal risk factors and neonatal clinical indicators necessitates immediate empirical antibiotic treatment and close monitoring.",
+        "L004": "RISK ANALYSIS:",
+        "L005": "The patient is categorized as HIGH risk (Score 7) due to significant maternal risk factors (GBS positive, ROM >18h, fever) and neonatal clinical indicators (respiratory distress, elevated CRP). Although intrapartum antibiotics were administered, the presence of clinical signs of infection in the neonate overrides the protective effect, requiring full sepsis workup and treatment.",
+        "L007": "DRIVER BREAKDOWN:",
+        "L008": "['Maternal GBS colonization: GBS positive status contributes 2 points to Layer 1 risk.', 'Prolonged rupture of membranes: ROM duration of 26.0 hours (>=18h) contributes 2 points to Layer 1 risk.', 'Maternal intrapartum fever: Maternal temperature of 38.4\u00b0C contributes 2 points to Layer 1 risk.', 'Respiratory distress: Moderate respiratory distress contributes 2 points to Layer 2 risk.', 'Elevated CRP: CRP level of 28.0 mg/L contributes 2 points to Layer 3 risk.']",
+        "L010": "RECOMMENDED ACTIONS:",
+        "L011": "- Initiate empirical intravenous antibiotic therapy immediately.",
+        "L012": "- Perform full sepsis workup including blood culture, CRP, and inflammatory markers.",
+        "L013": "- Monitor respiratory status and oxygen requirements closely.",
+        "L014": "- Record times of gentamicin administration and sampling for therapeutic monitoring.",
+        "L015": "- Reassess clinical condition and inflammatory markers at 36 hours to determine if antibiotics can be stopped.",
+        "L017": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour",
+        "L018": "- IV benzylpenicillin sodium 25 mg/kg every 12 hours",
+        "L019": "- IV gentamicin 5 mg/kg starting dose",
+        "L020": "duration=7 days total if sepsis strongly suspected or blood culture positive; consider stopping at 36 hours if blood culture negative, initial suspicion not strong, clinical condition reassuring, and CRP trends reassuring. stop_criteria=Stop antibiotics at 36 hours if: blood culture is negative, initial clinical suspicion of infection was not strong, baby's clinical condition is reassuring with no clinical indicators of possible infection, and levels/trends of C-reactive protein are reassuring. Otherwise, continue for 7 days or longer if not fully recovered or based on pathogen advice.",
+        "L022": "MONITORING PLAN:",
+        "L023": "Monitor vital signs (temperature, heart rate, respiratory rate, oxygen saturation) every 4-6 hours. Monitor urine output and fluid balance. Repeat CRP and inflammatory markers as clinically indicated, typically at 24-48 hours. Record times of gentamicin administration and obtain levels for therapeutic monitoring.",
+        "L025": "ESCALATION CRITERIA:",
+        "L026": "Escalate care if respiratory distress worsens, if signs of poor perfusion develop, if temperature instability occurs, or if inflammatory markers rise significantly. Seek expert microbiological advice if Gram-negative infection is confirmed or if the baby does not recover within the expected timeframe.",
+        "L028": "NUTRITION/FLUID PLAN:",
+        "L029": "Maintain intravenous fluids as per standard neonatal protocols for 34-week gestation. Initiate or continue enteral feeding as tolerated, monitoring for signs of feeding intolerance. Ensure adequate hydration and caloric intake.",
+        "L031": "DISAMBIGUATION BLOCK:",
+        "L034": "CONTRAINDICATION FLAGS:",
+        "L037": "TREND STATE CHANGE:",
+        "L038": "Deterministic trend note: EOSCAL score improving (delta -2) since last assessment."
+      }
+    },
+    "response_schema": {
+      "clinical_correctness": "integer 1-5",
+      "clinical_completeness": "integer 1-5",
+      "clinical_utility": "integer 1-5",
+      "safety": "integer 1-5",
+      "contradictions": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "critical_omissions": [
+        "missing information or action + source/case reason"
+      ],
+      "regimen_incomplete": "boolean",
+      "rationale": "concise source-based justification; disclose ambiguous citation mapping"
+    },
+    "rubric_version": 4,
+    "passage_catalog": {
+      "S001": "Source: NICE\nSection: Box 1: Risk factors for early-onset neonatal infection, including 'red flags'\n\nRed flag risk factor:\n\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors:\n\u2022 invasive group\u00a0B streptococcal infection in a previous baby or maternal group\u00a0B streptococcal colonisation, bacteriuria or infection in the current pregnancy\n\u2022 pre-term birth following spontaneous labour before 37\u00a0weeks' gestation\n\u2022 confirmed rupture of membranes for more than 18\u00a0hours before a pre-term birth\n\u2022 confirmed rupture of membranes for more than 24\u00a0hours before a term birth",
+      "S002": "Source: NICE\nSection: period [2021, amended 2026]\nTopic: Assessment and risk management after birth\n\nIf there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection):\n\u2022 perform an immediate clinical assessment\n\u2022 review the maternal and neonatal history\n\u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]\nIf group\u00a0B streptococcus infection is identified in the woman, trans man or non- binary person within 72\u00a0hours after the baby's birth:\n\u2022 ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2\u00a0and\n\u2022 identify any other risk factors present and\n\u2022 look for clinical indicators of infection.",
+      "S003": "Source: NICE\nSection: including 'red flags'\n\nRed flag clinical indicators:\n\u2022 apnoea (temporary stopping of breathing)\n\u2022 seizures\n\u2022 need for cardiopulmonary resuscitation\n\u2022 need for mechanical ventilation\n\u2022 signs of shock Other clinical indicators:\n\u2022 altered behaviour or responsiveness\n\u2022 altered muscle tone (for example, floppiness)\n\u2022 feeding difficulties (for example, feed refusal)\n\u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension\n\u2022 abnormal heart rate (bradycardia or tachycardia)\n\u2022 signs of respiratory distress (including grunting, recession, tachypnoea)\n\u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level)\n\u2022 persistent pulmonary hypertension of newborns\n\u2022 jaundice within 24\u00a0hours of birth\n\u2022 signs of neonatal encephalopathy\n\u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors\n\u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation 98\n\n\u2022 altered",
+      "S004": "Source: NICE\nSection: chorioamnionitis\n\nEvidence Profile\n\u2022 Allergies: No penicillin allergy | Women, trans men and non-binary people without chorioamnionitis: Use benzylpenicillin sodium. | Women, trans men and non-binary people with chorioamnionitis: Use benzylpenicillin sodium plus gentamicin plus metronidazole.",
+      "S005": "Source: NICE\nSection: infection\nTopic: Choice and dosage of intravenous antibiotics\nRecommendation: rec1\n\nRecommendation: Use intravenous benzylpenicillin sodium with gentamicin as the first-choice antibiotic regimen for empirical treatment of suspected early-onset infection, unless microbiological surveillance data show local bacterial resistance patterns that indicate the need for a different antibiotic. [2012]\nGive benzylpenicillin sodium in a dosage of 25\u00a0mg/kg every 12\u00a0hours. Consider shortening the dose interval to every 8\u00a0hours, based on clinical judgement (for example, if the baby appears very ill). [2012]\nGive gentamicin in a starting dose of 5\u00a0mg/kg (see also recommendation 1.20.4).",
+      "S006": "Source: NICE\nSection: [2012]\nTopic: Treatment duration for intravenous antibiotics\nRecommendation: rec1\n\nRecommendation: Give intravenous antibiotic treatment for a total of 7 days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected. [2012]\nConsider continuing intravenous antibiotic treatment for more than 7\u00a0days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if:\n\u2022 the baby has not yet fully recovered or\n\u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary).",
+      "S007": "Source: NICE\nSection: infection\nTopic: Cultures, microscopy and C-reactive protein\n\nWhen starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose. [2021]\nMeasure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\nDo not routinely perform urine microscopy or culture as part of the investigations for early-onset neonatal infection, or late-onset neonatal infection for babies in neonatal units. [2021]\nPerform urine microscopy and culture for babies with suspected late-onset neonatal infection outside of neonatal units in line with NICE's guideline on urinary tract infection in under 16s. [2021]\nDo not perform skin swab microscopy or culture as part of the investigations for neonatal infection if there are no clinical signs of a localised infection.",
+      "S008": "Source: NICE\nSection: [2012, amended 2026]\nTopic: Switching to oral antibiotics\n\nFor babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if:\n\u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and\n\u2022 the levels and trends of C-reactive protein concentration are reassuring and\n\u2022 the baby is tolerating oral feeds. [2026]\nUse amoxicillin as the oral antibiotic, unless local bacterial resistance data indicates the need for a different antibiotic. May 2026: Amoxicillin is licensed for neonates but not specifically for the 98\n\nindication of early-onset neonatal infection.",
+      "S009": "Source: NICE\nSection: Why the committee made the recommendations\n\nIn 2026, evidence from 3 studies showed that the risk of early-onset neonatal infection increased as the time between prelabour rupture of membranes (PROM) at term and birth increased. The 2026 committee agreed to amend the risk factor in box 1 about rupture of membranes at term to refer to the time between rupture and birth rather than prelabour rupture and onset of labour. This reflected their view that whether membranes rupture before or after onset of labour is irrelevant and that is it the overall time between rupture and birth that is important for the risk of early-onset neonatal infection. The evidence was inconclusive in identifying a specific time interval at which the risk of early-onset neonatal infection significantly increased. So, using their clinical experience, the committee decided to keep this at more than 24 hours.",
+      "S010": "Source: NICE\nSection: How the recommendations might affect practice\n\nThe 2026 revised wording for the risk factor for early-onset neonatal infection of rupture of membranes more than 24 hours before a term birth could increase the number of neonates requiring monitoring for early-onset infection, although current practice is already largely aligned with this so no significant change in practice or resource impact is expected. There could be an increase in the number of pregnant women, trans men and non-binary people opting for induction of labour as soon as possible after rupture of membranes rather than expectant management. The 2026 revised wording in relation to the risk of factor on maternal sepsis should ensure that suspected (or confirmed) maternal sepsis in the early postpartum period will lead to the baby being assessed for early-onset neonatal infection.",
+      "S011": "Source: NICE\nSection: [2012]\nTopic: Record the times of:\n\n\u2022 gentamicin administration\n\u2022 sampling for therapeutic monitoring. [2012]\nIf there is microbiological evidence of Gram-negative bacterial sepsis, add another antibiotic to the benzylpenicillin sodium and gentamicin regimen that is active against Gram-negative bacteria (for example, cefotaxime). If Gram- negative infection is confirmed, stop benzylpenicillin sodium. [2012]",
+      "S012": "Source: NICE\nSection: [2012]\nTopic: Treatment duration for intravenous antibiotics\nRecommendation: rec1\n\n[2012]\nConsider continuing intravenous antibiotic treatment for more than 7\u00a0days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if:\n\u2022 the baby has not yet fully recovered or\n\u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary). [2012]\nFor babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36\u00a0hours if:\n\u2022 the blood culture is negative and 98\n\n\u2022 the initial clinical suspicion of infection was not strong and\n\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and\n\u2022 the levels and trends of C-reactive protein concentration are reassuring."
+    },
+    "finding_rules": "Select immutable candidate-line claim_id for contradictions. Missing details are critical_omissions. Apply patient age, contraindications, hospital/referral context and all guideline conditions. Safe expert referral/withholding may be appropriate and is not itself unsafe; it can still leave a regimen incomplete. Do not demand a numeric dose where the case/source cannot safely establish one. The case legacy risk category is unvalidated and cannot independently prove infection or treatment eligibility. Return the requested 1-5 ratings and concrete evidence-based findings.",
+    "evaluation_stage": "clinical"
+  },
+  "candidate_lines": {
+    "L001": "CLINICAL SUMMARY:",
+    "L002": "This 34-week neonate presents with high-risk early-onset sepsis (EOS) driven by maternal GBS colonization, prolonged rupture of membranes, and intrapartum fever, alongside clinical signs of respiratory distress and elevated CRP. Despite adequate intrapartum antibiotics, the combination of maternal risk factors and neonatal clinical indicators necessitates immediate empirical antibiotic treatment and close monitoring.",
+    "L004": "RISK ANALYSIS:",
+    "L005": "The patient is categorized as HIGH risk (Score 7) due to significant maternal risk factors (GBS positive, ROM >18h, fever) and neonatal clinical indicators (respiratory distress, elevated CRP). Although intrapartum antibiotics were administered, the presence of clinical signs of infection in the neonate overrides the protective effect, requiring full sepsis workup and treatment.",
+    "L007": "DRIVER BREAKDOWN:",
+    "L008": "['Maternal GBS colonization: GBS positive status contributes 2 points to Layer 1 risk.', 'Prolonged rupture of membranes: ROM duration of 26.0 hours (>=18h) contributes 2 points to Layer 1 risk.', 'Maternal intrapartum fever: Maternal temperature of 38.4\u00b0C contributes 2 points to Layer 1 risk.', 'Respiratory distress: Moderate respiratory distress contributes 2 points to Layer 2 risk.', 'Elevated CRP: CRP level of 28.0 mg/L contributes 2 points to Layer 3 risk.']",
+    "L010": "RECOMMENDED ACTIONS:",
+    "L011": "- Initiate empirical intravenous antibiotic therapy immediately.",
+    "L012": "- Perform full sepsis workup including blood culture, CRP, and inflammatory markers.",
+    "L013": "- Monitor respiratory status and oxygen requirements closely.",
+    "L014": "- Record times of gentamicin administration and sampling for therapeutic monitoring.",
+    "L015": "- Reassess clinical condition and inflammatory markers at 36 hours to determine if antibiotics can be stopped.",
+    "L017": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour",
+    "L018": "- IV benzylpenicillin sodium 25 mg/kg every 12 hours",
+    "L019": "- IV gentamicin 5 mg/kg starting dose",
+    "L020": "duration=7 days total if sepsis strongly suspected or blood culture positive; consider stopping at 36 hours if blood culture negative, initial suspicion not strong, clinical condition reassuring, and CRP trends reassuring. stop_criteria=Stop antibiotics at 36 hours if: blood culture is negative, initial clinical suspicion of infection was not strong, baby's clinical condition is reassuring with no clinical indicators of possible infection, and levels/trends of C-reactive protein are reassuring. Otherwise, continue for 7 days or longer if not fully recovered or based on pathogen advice.",
+    "L022": "MONITORING PLAN:",
+    "L023": "Monitor vital signs (temperature, heart rate, respiratory rate, oxygen saturation) every 4-6 hours. Monitor urine output and fluid balance. Repeat CRP and inflammatory markers as clinically indicated, typically at 24-48 hours. Record times of gentamicin administration and obtain levels for therapeutic monitoring.",
+    "L025": "ESCALATION CRITERIA:",
+    "L026": "Escalate care if respiratory distress worsens, if signs of poor perfusion develop, if temperature instability occurs, or if inflammatory markers rise significantly. Seek expert microbiological advice if Gram-negative infection is confirmed or if the baby does not recover within the expected timeframe.",
+    "L028": "NUTRITION/FLUID PLAN:",
+    "L029": "Maintain intravenous fluids as per standard neonatal protocols for 34-week gestation. Initiate or continue enteral feeding as tolerated, monitoring for signs of feeding intolerance. Ensure adequate hydration and caloric intake.",
+    "L031": "DISAMBIGUATION BLOCK:",
+    "L034": "CONTRAINDICATION FLAGS:",
+    "L037": "TREND STATE CHANGE:",
+    "L038": "Deterministic trend note: EOSCAL score improving (delta -2) since last assessment."
+  },
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  }
+}

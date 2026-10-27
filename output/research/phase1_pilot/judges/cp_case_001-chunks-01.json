@@ -1,0 +1,113 @@
+{
+  "completed": true,
+  "task_sha256": "62fa3649814a3e9d75331e289afb7cfb9b61d3810b05c644a12145908a4ecd57",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 5.510919500011369,
+  "kind": "chunks",
+  "case_id": "cp_case_001",
+  "mapping": {
+    "P001": "NICE_pg10_chorioamnionitis_rec1_chunk1",
+    "P002": "NICE_pg10_neonatal-infection_rec1_chunk1",
+    "P003": "NICE_pg10_onset-neonatal-infection_rec1_chunk1",
+    "P004": "NICE_pg12_box-1-risk-factors-for-e_chunk1",
+    "P007": "NICE_pg15_care-2021_rec1_chunk1",
+    "P010": "NICE_pg27_for-early-onset-or-late-_rec1_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-c347cec7-1597-4444-9d50-26323f097ffd",
+    "object": "chat.completion",
+    "created": 1792944510,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"judgments\":[{\"passage\":\"P001\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Mentions rationale for offering intrapartum antibiotics to prevent early\u2011onset infection, but does not give actionable neonatal treatment guidance.\"},{\"passage\":\"P002\",\"relevance_grade\":0,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Only advises against rifampicin\u2011miconazole catheters; unrelated to neonatal infection or proposed drugs.\"},{\"passage\":\"P003\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Recommends immediate birth for 34\u201137\u202fwks with prolonged ROM and GBS; patient is term (39\u202fwks) and already delivered.\"},{\"passage\":\"P004\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Lists rupture of membranes >24\u202fh before term birth as a red\u2011flag risk factor, matching the case\u2019s 26\u202fh ROM.\"},{\"passage\":\"P007\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Recommends the Kaiser sepsis calculator as an alternative decision tool for babies \u226534\u202fwks, applicable to this newborn.\"},{\"passage\":\"P010\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Advises measuring CRP 18\u201124\u202fh after starting antibiotics and considering lumbar puncture if response is poor, relevant to monitoring this infant.\"}]}",
+          "reasoning": "We need output JSON with judgments for each target passage. Evaluate relevance to case: case needs empirical antibiotics benzylpenicillin + gentamicin but contraindication gentamicin AKI (creatinine 1.9, urine output low). So gentamicin may be contraindicated. Assess passages:\n\nP001: about rationale for offering antibiotics during labour to prevent early-onset infection. Not specific actionable. Background. Grade 1. guideline_aligned? Yes NICE. scenario_applicable? It's about offering antibiotics during labour, not neonatal treatment. So not directly applicable. clinically_useful false. \n\nP002: recommendation not to use rifampicin-miconazole catheters. Irrelevant. Grade 0.\n\nP003: recommendation to offer immediate birth for women 34-37 weeks with prolonged ROM and GBS. Our case is term 39 weeks, caesarean already. Not applicable. Background maybe marginal. Grade 1? It's about timing of delivery, not treatment. So marginal. guideline aligned yes. scenario_applicable false. clinically_useful false.\n\nP004: Box 1 risk factors includes rupture >24h before term birth. Our case ROM 26h, term. Relevant risk factor. Provides background risk factor. Grade 2 (useful applicable support) for risk assessment. guideline aligned yes. scenario_applicable true (risk factor present). clinically_useful true (helps justify monitoring/antibiotics). \n\nP007: about using Kaiser sepsis calculator as alternative. Could be actionable for management decisions. Our case could use calculator. It's applicable. Grade 2 or 3? It is a recommendation to use calculator as alternative; actionable. I'd give 2 (useful). guideline aligned yes. scenario_applicable true. clinically_useful true.\n\nP010: recommendation to measure CRP 18-24h after starting antibiotics and consider lumbar puncture if not responding. Our case started antibiotics? Not yet. This is about monitoring after antibiotics. Could be useful. Grade 2. guideline aligned yes. scenario_applicable true (if antibiotics given). clinically_useful true.\n\nNow construct JSON array in order target_passages. Provide fields.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.248616848,
+      "prompt_tokens": 5180,
+      "prompt_time": 0.233764686,
+      "completion_tokens": 841,
+      "completion_time": 1.74358448,
+      "total_tokens": 6021,
+      "total_time": 1.977349166,
+      "completion_tokens_details": {
+        "reasoning_tokens": 443
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m5sx4380ec1bj04enw7vg724",
+      "seed": 1001338839
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-remaining-tokens": "620",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-reset-tokens": "55.35s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P001",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Mentions rationale for offering intrapartum antibiotics to prevent early\u2011onset infection, but does not give actionable neonatal treatment guidance."
+      },
+      {
+        "passage": "P002",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Only advises against rifampicin\u2011miconazole catheters; unrelated to neonatal infection or proposed drugs."
+      },
+      {
+        "passage": "P003",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Recommends immediate birth for 34\u201137\u202fwks with prolonged ROM and GBS; patient is term (39\u202fwks) and already delivered."
+      },
+      {
+        "passage": "P004",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Lists rupture of membranes >24\u202fh before term birth as a red\u2011flag risk factor, matching the case\u2019s 26\u202fh ROM."
+      },
+      {
+        "passage": "P007",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends the Kaiser sepsis calculator as an alternative decision tool for babies \u226534\u202fwks, applicable to this newborn."
+      },
+      {
+        "passage": "P010",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Advises measuring CRP 18\u201124\u202fh after starting antibiotics and considering lumbar puncture if response is poor, relevant to monitoring this infant."
+      }
+    ]
+  }
+}

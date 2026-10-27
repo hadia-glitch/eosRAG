@@ -1,0 +1,10 @@
+* text=auto
+*.pdf binary
+*.png binary
+*.jpg binary
+*.ico binary
+# Preserve exact bytes for model digests and frozen research provenance.
+backend/ml/deployed/** -text -whitespace
+test/fixtures/** -text -whitespace
+data/** -text -whitespace
+output/** -text -whitespace

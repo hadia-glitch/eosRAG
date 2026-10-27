@@ -1,0 +1,998 @@
+{
+  "analysis": "post-hoc development audit; previously examined test partition",
+  "source_csv_sha256": "fe1787c19c929324d2862e5fb66f5cf3945a6ba75a41623a5ba506fa6f9e294d",
+  "model_sha256": "17d246856f5fbc1941950d44f3f0194917f0150da4a87df233344ee94d909aa0",
+  "target": "supplied observation-associated Sepsis_Label",
+  "clinical_eos_eligible": false,
+  "csv_synthetic_status": "unverified; user confirmed only the RAG benchmark is synthetic",
+  "calibration": {
+    "slope": 3.267761146142852,
+    "intercept": 0.9684784989483102
+  },
+  "forest_trees": 150,
+  "model_test_raw": {
+    "n": 1598,
+    "auroc": 0.9992070060932832,
+    "accuracy_at_0_5": 0.986232790988736,
+    "brier": 0.018172021131562893,
+    "log_loss": 0.08638111865901364,
+    "ece_10_equal_width": 0.0563004508797568,
+    "bins": [
+      {
+        "lower": 0.0,
+        "n": 716,
+        "predicted": 0.026175944761672336,
+        "observed": 0.0
+      },
+      {
+        "lower": 0.1,
+        "n": 93,
+        "predicted": 0.13579958659257238,
+        "observed": 0.03225806451612903
+      },
+      {
+        "lower": 0.2,
+        "n": 36,
+        "predicted": 0.24854210804522023,
+        "observed": 0.05555555555555555
+      },
+      {
+        "lower": 0.30000000000000004,
+        "n": 23,
+        "predicted": 0.3555656612974059,
+        "observed": 0.34782608695652173
+      },
+      {
+        "lower": 0.4,
+        "n": 13,
+        "predicted": 0.4402819561280822,
+        "observed": 0.5384615384615384
+      },
+      {
+        "lower": 0.5,
+        "n": 14,
+        "predicted": 0.5507085585693496,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.6000000000000001,
+        "n": 29,
+        "predicted": 0.6501402102391652,
+        "observed": 0.9310344827586207
+      },
+      {
+        "lower": 0.7000000000000001,
+        "n": 49,
+        "predicted": 0.7469285694485279,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.8,
+        "n": 91,
+        "predicted": 0.8556154135099114,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.9,
+        "n": 534,
+        "predicted": 0.9752445500320823,
+        "observed": 1.0
+      }
+    ]
+  },
+  "model_test_calibrated": {
+    "n": 1598,
+    "auroc": 0.9992070060932832,
+    "accuracy_at_0_5": 0.9881101376720901,
+    "brier": 0.009383224495805047,
+    "log_loss": 0.0345906150857269,
+    "ece_10_equal_width": 0.0052793328991227444,
+    "bins": [
+      {
+        "lower": 0.0,
+        "n": 837,
+        "predicted": 0.0029262593061051547,
+        "observed": 0.0047789725209080045
+      },
+      {
+        "lower": 0.1,
+        "n": 12,
+        "predicted": 0.12687940926903152,
+        "observed": 0.08333333333333333
+      },
+      {
+        "lower": 0.2,
+        "n": 8,
+        "predicted": 0.2524401692705459,
+        "observed": 0.375
+      },
+      {
+        "lower": 0.30000000000000004,
+        "n": 11,
+        "predicted": 0.3447870929038074,
+        "observed": 0.45454545454545453
+      },
+      {
+        "lower": 0.4,
+        "n": 4,
+        "predicted": 0.4583514161570398,
+        "observed": 0.25
+      },
+      {
+        "lower": 0.5,
+        "n": 6,
+        "predicted": 0.5406585925158682,
+        "observed": 0.6666666666666666
+      },
+      {
+        "lower": 0.6000000000000001,
+        "n": 3,
+        "predicted": 0.6643997004855149,
+        "observed": 0.6666666666666666
+      },
+      {
+        "lower": 0.7000000000000001,
+        "n": 4,
+        "predicted": 0.7764055368411393,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.8,
+        "n": 9,
+        "predicted": 0.8484598370422041,
+        "observed": 1.0
+      },
+      {
+        "lower": 0.9,
+        "n": 704,
+        "predicted": 0.9967034301852926,
+        "observed": 0.9971590909090909
+      }
+    ]
+  },
+  "fit_prevalence": 0.4388248419486798,
+  "test_prevalence": 0.4599499374217772,
+  "demo": {
+    "raw_forest_probability": 0.9982920927203368,
+    "calibrated_supplied_label_probability": 0.9999999996547169,
+    "calibration_equation": "sigmoid(slope * logit(raw forest mean) + intercept)",
+    "tree_leaf_probability_quantiles": [
+      0.8857142857142858,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "individual_feature_context": {
+      "Gestational_Age": {
+        "case_value": 36,
+        "fit_percentile_all": 0.68110821866865,
+        "fit_label_quantiles": {
+          "0": [
+            29.0,
+            32.5,
+            34.7,
+            37.0,
+            40.4
+          ],
+          "1": [
+            27.7,
+            31.1,
+            33.7,
+            36.3,
+            40.3
+          ]
+        }
+      },
+      "Birth_Weight": {
+        "case_value": 2.8,
+        "fit_percentile_all": 0.07103012272220156,
+        "fit_label_quantiles": {
+          "0": [
+            2.93,
+            4.38,
+            4.5,
+            4.5,
+            4.5
+          ],
+          "1": [
+            2.06,
+            3.81,
+            4.5,
+            4.5,
+            4.5
+          ]
+        }
+      },
+      "Postnatal_Age": {
+        "case_value": 0,
+        "fit_percentile_all": 0.32595760505764226,
+        "fit_label_quantiles": {
+          "0": [
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            2.0
+          ],
+          "1": [
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            2.0
+          ]
+        }
+      },
+      "Apgar": {
+        "case_value": 7,
+        "fit_percentile_all": 0.43938267013759763,
+        "fit_label_quantiles": {
+          "0": [
+            5.0,
+            7.0,
+            8.0,
+            9.0,
+            10.0
+          ],
+          "1": [
+            5.0,
+            6.0,
+            8.0,
+            8.0,
+            10.0
+          ]
+        }
+      },
+      "HR": {
+        "case_value": 178,
+        "fit_percentile_all": 0.9433346139070303,
+        "fit_label_quantiles": {
+          "0": [
+            125.3,
+            138.5,
+            147.4,
+            155.8,
+            168.49
+          ],
+          "1": [
+            139.60999999999999,
+            152.8,
+            161.6,
+            171.2,
+            183.79000000000002
+          ]
+        }
+      },
+      "Resp": {
+        "case_value": 74,
+        "fit_percentile_all": 0.9773294908741594,
+        "fit_label_quantiles": {
+          "0": [
+            37.660000000000004,
+            44.7,
+            49.8,
+            54.7,
+            61.6
+          ],
+          "1": [
+            47.655,
+            55.0,
+            60.4,
+            65.7,
+            74.1
+          ]
+        }
+      },
+      "Temp": {
+        "case_value": 38.2,
+        "fit_percentile_all": 0.9998082086689681,
+        "fit_label_quantiles": {
+          "0": [
+            36.2145,
+            36.56,
+            36.79,
+            37.03,
+            37.36
+          ],
+          "1": [
+            36.2,
+            36.63,
+            36.91,
+            37.18,
+            37.5685
+          ]
+        }
+      },
+      "SpO2": {
+        "case_value": 90,
+        "fit_percentile_all": 0.008633921719109747,
+        "fit_label_quantiles": {
+          "0": [
+            93.5,
+            95.2,
+            96.3,
+            97.4,
+            99.0
+          ],
+          "1": [
+            90.9,
+            92.6,
+            93.8,
+            95.0,
+            96.7
+          ]
+        }
+      },
+      "BP": {
+        "case_value": 40,
+        "fit_percentile_all": 0.24932144241954246,
+        "fit_label_quantiles": {
+          "0": [
+            36.9,
+            43.0,
+            47.6,
+            51.8,
+            57.7
+          ],
+          "1": [
+            30.8,
+            37.2,
+            41.8,
+            46.1,
+            51.975
+          ]
+        }
+      },
+      "Oxygen": {
+        "case_value": 35,
+        "fit_percentile_all": 0.6111753371868979,
+        "fit_label_quantiles": {
+          "0": [
+            21.0,
+            21.0,
+            24.0,
+            28.1,
+            34.040000000000006
+          ],
+          "1": [
+            30.9,
+            37.2,
+            42.0,
+            46.7,
+            53.1
+          ]
+        }
+      },
+      "WBC": {
+        "case_value": 20,
+        "fit_percentile_all": 0.898921832884097,
+        "fit_label_quantiles": {
+          "0": [
+            5.922,
+            8.82,
+            11.42,
+            14.83,
+            21.08
+          ],
+          "1": [
+            8.958,
+            11.76,
+            14.25,
+            17.59,
+            24.647999999999996
+          ]
+        }
+      },
+      "CRP": {
+        "case_value": 20,
+        "fit_percentile_all": 0.9934261407579273,
+        "fit_label_quantiles": {
+          "0": [
+            0.6240000000000001,
+            1.69,
+            2.87,
+            4.72,
+            8.275999999999998
+          ],
+          "1": [
+            5.131,
+            8.155000000000001,
+            10.96,
+            13.754999999999999,
+            17.53
+          ]
+        }
+      },
+      "PCT": {
+        "case_value": 2,
+        "fit_percentile_all": 0.7820959010054138,
+        "fit_label_quantiles": {
+          "0": [
+            0.064,
+            0.174,
+            0.31,
+            0.479,
+            0.83875
+          ],
+          "1": [
+            0.82375,
+            1.36475,
+            1.9855,
+            2.66925,
+            3.17525
+          ]
+        }
+      },
+      "Platelets": {
+        "case_value": 160,
+        "fit_percentile_all": 0.14953810623556582,
+        "fit_label_quantiles": {
+          "0": [
+            154.475,
+            199.9,
+            229.1,
+            261.07500000000005,
+            303.7
+          ],
+          "1": [
+            111.44500000000001,
+            157.4,
+            189.3,
+            221.6,
+            266.0249999999996
+          ]
+        }
+      },
+      "Lactate": {
+        "case_value": 3.5,
+        "fit_percentile_all": 0.9186584425597533,
+        "fit_label_quantiles": {
+          "0": [
+            0.3,
+            0.6,
+            1.02,
+            1.62,
+            2.8644999999999983
+          ],
+          "1": [
+            1.2475,
+            1.91,
+            2.5,
+            3.16,
+            4.26
+          ]
+        }
+      },
+      "Hemoglobin": {
+        "case_value": 14.5,
+        "fit_percentile_all": 0.4632508155824218,
+        "fit_label_quantiles": {
+          "0": [
+            12.02,
+            13.7,
+            14.93,
+            16.13,
+            17.77
+          ],
+          "1": [
+            10.98,
+            13.05,
+            14.33,
+            15.5,
+            17.23
+          ]
+        }
+      }
+    },
+    "counterfactuals": [
+      {
+        "changes": {},
+        "status": "predicted",
+        "supplied_label_probability": 0.9999999996547169,
+        "not_a_causal_effect": true,
+        "no_clinical_outcome_assumed": true
+      },
+      {
+        "changes": {
+          "CRP": 5,
+          "PCT": 0.3,
+          "Lactate": 1.5
+        },
+        "status": "predicted",
+        "supplied_label_probability": 0.6102461011970265,
+        "not_a_causal_effect": true,
+        "no_clinical_outcome_assumed": true
+      },
+      {
+        "changes": {
+          "HR": 150,
+          "Resp": 48,
+          "Temp": 36.8,
+          "SpO2": 97,
+          "Oxygen": 21
+        },
+        "status": "predicted",
+        "supplied_label_probability": 0.8943676761175415,
+        "not_a_causal_effect": true,
+        "no_clinical_outcome_assumed": true
+      },
+      {
+        "changes": {
+          "HR": 150,
+          "Resp": 48,
+          "Temp": 36.8,
+          "SpO2": 97,
+          "Oxygen": 21,
+          "CRP": 5,
+          "PCT": 0.3,
+          "Lactate": 1.5
+        },
+        "status": "predicted",
+        "supplied_label_probability": 4.7817448532922067e-05,
+        "not_a_causal_effect": true,
+        "no_clinical_outcome_assumed": true
+      },
+      {
+        "changes": {
+          "CRP": null,
+          "PCT": null,
+          "Lactate": null
+        },
+        "status": "predicted",
+        "supplied_label_probability": 0.9955392181158943,
+        "not_a_causal_effect": true,
+        "no_clinical_outcome_assumed": true
+      }
+    ],
+    "measurement_perturbation": {
+      "n": 250,
+      "accepted": 153,
+      "abstained": 94,
+      "invalid_input_rejected": 3,
+      "accepted_probability_quantiles": [
+        0.9998272394476126,
+        0.999939866507284,
+        0.9999999939753952,
+        0.9999999999717677,
+        0.9999999999944551
+      ],
+      "interpretation": "Local engineering sensitivity, not probability correctness or clinical robustness"
+    }
+  },
+  "single_feature_diagnostics": {
+    "Gestational_Age": {
+      "test_auroc_oriented_on_fit": 0.5934495234942181,
+      "orientation": -1,
+      "fit_only_stump_threshold": 29.84999942779541,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.5830972481692562,
+        "accuracy_at_0_5": 0.613892365456821,
+        "brier": 0.23524018936671076,
+        "log_loss": 0.6631852087711411,
+        "ece_10_equal_width": 0.0233266266377276,
+        "bins": [
+          {
+            "lower": 0.4,
+            "n": 1424,
+            "predicted": 0.4120253164556961,
+            "observed": 0.413623595505618
+          },
+          {
+            "lower": 0.6000000000000001,
+            "n": 174,
+            "predicted": 0.6379310344827589,
+            "observed": 0.8390804597701149
+          }
+        ]
+      }
+    },
+    "Birth_Weight": {
+      "test_auroc_oriented_on_fit": 0.5993756946579327,
+      "orientation": -1,
+      "fit_only_stump_threshold": 3.2050000429153442,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.5877842678206856,
+        "accuracy_at_0_5": 0.6176470588235294,
+        "brier": 0.23489369634821033,
+        "log_loss": 0.6625282081890609,
+        "ece_10_equal_width": 0.027680834777419883,
+        "bins": [
+          {
+            "lower": 0.4,
+            "n": 1406,
+            "predicted": 0.41551939924906117,
+            "observed": 0.41038406827880514
+          },
+          {
+            "lower": 0.6000000000000001,
+            "n": 192,
+            "predicted": 0.6301369863013698,
+            "observed": 0.8229166666666666
+          }
+        ]
+      }
+    },
+    "Postnatal_Age": {
+      "test_auroc_oriented_on_fit": 0.504890391846194,
+      "orientation": 1,
+      "fit_only_stump_threshold": 1.5,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.4937332986497033,
+        "accuracy_at_0_5": 0.5400500625782227,
+        "brier": 0.24925600128557912,
+        "log_loss": 0.6916812189312732,
+        "ece_10_equal_width": 0.021795820565843508,
+        "bins": [
+          {
+            "lower": 0.4,
+            "n": 1598,
+            "predicted": 0.4381541168559337,
+            "observed": 0.4599499374217772
+          }
+        ]
+      }
+    },
+    "Apgar": {
+      "test_auroc_oriented_on_fit": 0.6103972063912472,
+      "orientation": -1,
+      "fit_only_stump_threshold": 5.5,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.5372423361001412,
+        "accuracy_at_0_5": 0.5713391739674594,
+        "brier": 0.24423712757211846,
+        "log_loss": 0.6815367315211576,
+        "ece_10_equal_width": 0.02155801618560921,
+        "bins": [
+          {
+            "lower": 0.4,
+            "n": 1484,
+            "predicted": 0.42492974708952225,
+            "observed": 0.44002695417789756
+          },
+          {
+            "lower": 0.6000000000000001,
+            "n": 114,
+            "predicted": 0.6136363636363635,
+            "observed": 0.7192982456140351
+          }
+        ]
+      }
+    },
+    "HR": {
+      "test_auroc_oriented_on_fit": 0.7375923254585727,
+      "orientation": 1,
+      "fit_only_stump_threshold": 157.1500015258789,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.6741488715996248,
+        "accuracy_at_0_5": 0.6808510638297872,
+        "brier": 0.21824458658308227,
+        "log_loss": 0.6285255345909171,
+        "ece_10_equal_width": 0.029938130199293277,
+        "bins": [
+          {
+            "lower": 0.2,
+            "n": 955,
+            "predicted": 0.277963019096696,
+            "observed": 0.31518324607329845
+          },
+          {
+            "lower": 0.6000000000000001,
+            "n": 643,
+            "predicted": 0.6940836940836942,
+            "observed": 0.6749611197511665
+          }
+        ]
+      }
+    },
+    "Resp": {
+      "test_auroc_oriented_on_fit": 0.8265093291082366,
+      "orientation": 1,
+      "fit_only_stump_threshold": 55.75,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.7471106171321368,
+        "accuracy_at_0_5": 0.7509386733416771,
+        "brier": 0.18715220742854133,
+        "log_loss": 0.5616447057233178,
+        "ece_10_equal_width": 0.011893462122743406,
+        "bins": [
+          {
+            "lower": 0.2,
+            "n": 907,
+            "predicted": 0.22793650793650796,
+            "observed": 0.24366041896361632
+          },
+          {
+            "lower": 0.7000000000000001,
+            "n": 691,
+            "predicted": 0.7369838420107718,
+            "observed": 0.743849493487699
+          }
+        ]
+      }
+    },
+    "Temp": {
+      "test_auroc_oriented_on_fit": 0.5616083745201441,
+      "orientation": 1,
+      "fit_only_stump_threshold": 37.2450008392334,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.5396670371508974,
+        "accuracy_at_0_5": 0.5688360450563203,
+        "brier": 0.24604732176647273,
+        "log_loss": 0.6852739915218227,
+        "ece_10_equal_width": 0.03200729433161161,
+        "bins": [
+          {
+            "lower": 0.4,
+            "n": 1386,
+            "predicted": 0.40574389980565767,
+            "observed": 0.43722943722943725
+          },
+          {
+            "lower": 0.6000000000000001,
+            "n": 212,
+            "predicted": 0.6439089692101739,
+            "observed": 0.6084905660377359
+          }
+        ]
+      }
+    },
+    "SpO2": {
+      "test_auroc_oriented_on_fit": 0.8202520869297892,
+      "orientation": -1,
+      "fit_only_stump_threshold": 94.85000228881836,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.7331275963456066,
+        "accuracy_at_0_5": 0.7377972465581978,
+        "brier": 0.19403540240149392,
+        "log_loss": 0.5769578253406988,
+        "ece_10_equal_width": 0.02017261324739486,
+        "bins": [
+          {
+            "lower": 0.2,
+            "n": 922,
+            "predicted": 0.22730158730158723,
+            "observed": 0.2592190889370933
+          },
+          {
+            "lower": 0.7000000000000001,
+            "n": 676,
+            "predicted": 0.7378815080789947,
+            "observed": 0.7337278106508875
+          }
+        ]
+      }
+    },
+    "BP": {
+      "test_auroc_oriented_on_fit": 0.7312050196671948,
+      "orientation": -1,
+      "fit_only_stump_threshold": 46.14999961853027,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.669103191682235,
+        "accuracy_at_0_5": 0.6614518147684606,
+        "brier": 0.2198632282017363,
+        "log_loss": 0.6307696750364614,
+        "ece_10_equal_width": 0.0207629088939204,
+        "bins": [
+          {
+            "lower": 0.2,
+            "n": 668,
+            "predicted": 0.24622892635315002,
+            "observed": 0.25898203592814373
+          },
+          {
+            "lower": 0.5,
+            "n": 930,
+            "predicted": 0.5777848911651731,
+            "observed": 0.6043010752688172
+          }
+        ]
+      }
+    },
+    "Oxygen": {
+      "test_auroc_oriented_on_fit": 0.9687713324031814,
+      "orientation": 1,
+      "fit_only_stump_threshold": 33.35000038146973,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.8968556136243605,
+        "accuracy_at_0_5": 0.9011264080100125,
+        "brier": 0.08873781754198087,
+        "log_loss": 0.3204164548461029,
+        "ece_10_equal_width": 0.02107965781429247,
+        "bins": [
+          {
+            "lower": 0.0,
+            "n": 935,
+            "predicted": 0.09850651414045122,
+            "observed": 0.12299465240641712
+          },
+          {
+            "lower": 0.9,
+            "n": 663,
+            "predicted": 0.9188704616763782,
+            "observed": 0.9351432880844646
+          }
+        ]
+      }
+    },
+    "WBC": {
+      "test_auroc_oriented_on_fit": 0.6594351297877205,
+      "orientation": 1,
+      "fit_only_stump_threshold": 10.974999904632568,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.625529516557492,
+        "accuracy_at_0_5": 0.6101376720901126,
+        "brier": 0.23094089278683932,
+        "log_loss": 0.6538669210081025,
+        "ece_10_equal_width": 0.018666505413637964,
+        "bins": [
+          {
+            "lower": 0.2,
+            "n": 508,
+            "predicted": 0.22831050228310493,
+            "observed": 0.2637795275590551
+          },
+          {
+            "lower": 0.5,
+            "n": 1090,
+            "predicted": 0.5405405405405406,
+            "observed": 0.5513761467889908
+          }
+        ]
+      }
+    },
+    "CRP": {
+      "test_auroc_oriented_on_fit": 0.9542735750151741,
+      "orientation": 1,
+      "fit_only_stump_threshold": 6.355000019073486,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.8692474440529399,
+        "accuracy_at_0_5": 0.8710888610763454,
+        "brier": 0.1124602796273457,
+        "log_loss": 0.38504542617198817,
+        "ece_10_equal_width": 0.012846596513777302,
+        "bins": [
+          {
+            "lower": 0.1,
+            "n": 883,
+            "predicted": 0.11675461741424799,
+            "observed": 0.12797281993204984
+          },
+          {
+            "lower": 0.8,
+            "n": 715,
+            "predicted": 0.855072463768116,
+            "observed": 0.8699300699300699
+          }
+        ]
+      }
+    },
+    "PCT": {
+      "test_auroc_oriented_on_fit": 0.985990178226563,
+      "orientation": 1,
+      "fit_only_stump_threshold": 0.8055000007152557,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.9263351226933415,
+        "accuracy_at_0_5": 0.9274092615769712,
+        "brier": 0.06744063348576271,
+        "log_loss": 0.2612924828168202,
+        "ece_10_equal_width": 0.009387274628695498,
+        "bins": [
+          {
+            "lower": 0.0,
+            "n": 875,
+            "predicted": 0.058649093904448085,
+            "observed": 0.07314285714285715
+          },
+          {
+            "lower": 0.9,
+            "n": 723,
+            "predicted": 0.9312846777635512,
+            "observed": 0.9280774550484094
+          }
+        ]
+      }
+    },
+    "Platelets": {
+      "test_auroc_oriented_on_fit": 0.7428760612008418,
+      "orientation": -1,
+      "fit_only_stump_threshold": 184.0500030517578,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.6601532385839619,
+        "accuracy_at_0_5": 0.6777221526908636,
+        "brier": 0.21690324275225795,
+        "log_loss": 0.6250574966335958,
+        "ece_10_equal_width": 0.024511237079824347,
+        "bins": [
+          {
+            "lower": 0.30000000000000004,
+            "n": 1170,
+            "predicted": 0.3350475700694266,
+            "observed": 0.35128205128205126
+          },
+          {
+            "lower": 0.7000000000000001,
+            "n": 428,
+            "predicted": 0.7098723975822699,
+            "observed": 0.7570093457943925
+          }
+        ]
+      }
+    },
+    "Lactate": {
+      "test_auroc_oriented_on_fit": 0.8640228281347302,
+      "orientation": 1,
+      "fit_only_stump_threshold": 1.5149999856948853,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.7761471216528326,
+        "accuracy_at_0_5": 0.7684605757196495,
+        "brier": 0.17171881327635283,
+        "log_loss": 0.5233008198530797,
+        "ece_10_equal_width": 0.014890744462929222,
+        "bins": [
+          {
+            "lower": 0.1,
+            "n": 681,
+            "predicted": 0.11404255319148936,
+            "observed": 0.13803230543318648
+          },
+          {
+            "lower": 0.6000000000000001,
+            "n": 917,
+            "predicted": 0.6908850726552179,
+            "observed": 0.6990185387131952
+          }
+        ]
+      }
+    },
+    "Hemoglobin": {
+      "test_auroc_oriented_on_fit": 0.5949897919770458,
+      "orientation": -1,
+      "fit_only_stump_threshold": 14.375,
+      "stump_test": {
+        "n": 1598,
+        "auroc": 0.5566501919423621,
+        "accuracy_at_0_5": 0.5632040050062578,
+        "brier": 0.24571702501914816,
+        "log_loss": 0.68458791720015,
+        "ece_10_equal_width": 0.021900574832048048,
+        "bins": [
+          {
+            "lower": 0.30000000000000004,
+            "n": 937,
+            "predicted": 0.38136407300672437,
+            "observed": 0.4119530416221985
+          },
+          {
+            "lower": 0.5,
+            "n": 661,
+            "predicted": 0.5184035476718404,
+            "observed": 0.5279878971255674
+          }
+        ]
+      }
+    }
+  },
+  "conclusions": [
+    "The supplied label has strong concurrent laboratory and vital-sign separation; identity and timing problems prevent clinical interpretation.",
+    "Platt calibration is fitted to the same supplied-label population; it can sharpen already high raw scores.",
+    "A high internal AUC and a small train-test gap do not establish culture-confirmed EOS prediction, calibrated clinical risk, or transportability.",
+    "Changing synthetic cases or clipping the probability would not repair invalid outcome provenance.",
+    "Raw data, fixed patient-disjoint partitions, gold evidence and original model parameters were not altered by this audit."
+  ]
+}

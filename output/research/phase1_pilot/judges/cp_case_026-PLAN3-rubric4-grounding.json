@@ -1,0 +1,165 @@
+{
+  "completed": true,
+  "task_sha256": "23d8ad55afa83a1f8646482508d6393bc5171c5c27cf6219cb4254a7328b62f3",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.923781699995743,
+  "kind": "plan",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "dense_only_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-0d95757b-8a2b-45de-8b4b-481da0e879c7",
+    "object": "chat.completion",
+    "created": 1792956104,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\"claim_id\":\"L002\",\"reason\":\"States intermediate risk driven by ROM and CRP without source evidence; guideline passages define PSBI signs but do not assign point scores.\"},\n    {\"claim_id\":\"L005\",\"reason\":\"Provides numeric risk category and probability per 1000 not found in any cited WHO passage.\"},\n    {\"claim_id\":\"L008\",\"reason\":\"Assigns point values and layer contributions for ROM and CRP not present in source texts.\"},\n    {\"claim_id\":\"L011\",\"reason\":\"Mandates hospitalization due to prior admission; source S001 only recommends referral for clinical severe infection, not a strict contraindication.\"},\n    {\"claim_id\":\"L012\",\"reason\":\"Calls for inpatient sepsis workup; not directly supported by cited passages.\"},\n    {\"claim_id\":\"L013\",\"reason\":\"Recommends IV Ampicillin and Gentamicin as inpatient regimen; source S010 mentions cloxacillin plus gentamicin for staphylococcal sepsis, not Ampicillin.\"},\n    {\"claim_id\":\"L019\",\"reason\":\"Specifies Ampicillin dosing frequency without any dose detail in retrieved evidence.\"},\n    {\"claim_id\":\"L020\",\"reason\":\"Provides duration and stop criteria not sourced from any passage.\"},\n    {\"claim_id\":\"L022\",\"reason\":\"Monitoring plan details not found in cited texts.\"},\n    {\"claim_id\":\"L025\",\"reason\":\"Escalation criteria not supported by the provided evidence.\"},\n    {\"claim_id\":\"L026\",\"reason\":\"Further escalation triggers not cited.\"},\n    {\"claim_id\":\"L028\",\"reason\":\"Nutrition/fluid plan not grounded in the evidence passages.\"},\n    {\"claim_id\":\"L034\",\"reason\":\"Section header without supporting content.\"},\n    {\"claim_id\":\"L035\",\"reason\":\"Repeats contraindication claim without source backing.\"}\n  ],\n  \"contradictions\": [\n    {\"claim_id\":\"L011\",\"reason\":\"Guideline S001 advises referral for clinical severe infection but does not state that prior hospitalization makes outpatient PSBI regimens invalid; the plan overstates the contraindication.\"},\n    {\"claim_id\":\"L013\",\"reason\":\"Guideline S010 recommends cloxacillin plus gentamicin for hospitalized infants with suspected staphylococcal sepsis, not Ampicillin plus Gentamicin as stated.\"}\n  ],\n  \"ungrounded_dose\": true,\n  \"ungrounded_dose_examples\": [\n    {\"claim_id\":\"L019\",\"reason\":\"Dose/frequency for Ampicillin is asserted without any dosage information in the retrieved WHO passages.\"},\n    {\"claim_id\":\"L020\",\"reason\":\"Duration and stop criteria are specified without source support.\"}\n  ],\n  \"rationale\": \"The plan contains many assertions (risk scoring, contraindication due to prior hospitalization, specific dosing) that are not found in the supplied WHO passages. Citation mapping is unavailable, and the plan frequently cites no source for numeric risk or dosing details. Some statements contradict the guideline wording (e.g., outpatient contraindication, choice of Ampicillin). Therefore, faithfulness, citation correctness, and completeness receive low scores, and several unsupported or contradictory claims are identified. Ungrounded dose statements are present.\"\n}",
+          "reasoning": "We need produce JSON with scores and lists. Assess faithfulness: plan claims about contraindication due to prior hospitalization. Evidence S001 says outpatient regimen requires referral; does it mention contraindication for recent hospitalization? Not directly. So claim not fully supported. Likely low faithfulness 2. Citation correctness: they didn't map numbers, so likely incorrect. maybe 2. Completeness: many claims lack citations. So 2. Unsupported claims: list L002, L005, L008, L011, L012, L013, L019, L020, L022, L025, L026, L028, L034, L035. Need reason. Contradictions: maybe claim that outpatient regimen contraindicated vs guideline says referral recommended not that outpatient prohibited. So contradiction L011 etc. Ungrounded_dose: L019 includes dose unspecified \"dose/frequency not specified\". That's ungrounded. Also L020 mentions duration but not sourced. Provide examples. Provide arrays."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.256318626,
+      "prompt_tokens": 6192,
+      "prompt_time": 0.261689313,
+      "completion_tokens": 895,
+      "completion_time": 1.868534787,
+      "total_tokens": 7087,
+      "total_time": 2.1302241,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 200
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m5t85xxre3xb5zbe87ysgfeg",
+      "seed": 768526791
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "970",
+    "x-ratelimit-remaining-tokens": "1019",
+    "x-ratelimit-reset-requests": "43m12s",
+    "x-ratelimit-reset-tokens": "52.357s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "States intermediate risk driven by ROM and CRP without source evidence; guideline passages define PSBI signs but do not assign point scores.",
+        "claim_text": "This 38-week neonate presents with an intermediate risk for early-onset sepsis driven by prolonged rupture of membranes (20 hours) and elevated CRP (12.0 mg/L). Although the care setting is listed as outpatient, the patient has a history of hospitalization within the prior 14 days, which constitutes a critical contraindication to WHO outpatient PSBI regimens."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Provides numeric risk category and probability per 1000 not found in any cited WHO passage.",
+        "claim_text": "The risk category is INTERMEDIATE (Score 3) based on two primary drivers: Prolonged rupture of membranes (>=18h) contributing 2 points and Elevated CRP (12.0 mg/L) contributing 2 points. The combined probability is 3.0 per 1000."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Assigns point values and layer contributions for ROM and CRP not present in source texts.",
+        "claim_text": "Prolonged rupture of membranes: ROM 20.0h (>=18h), 2 points, Layer 1, 50% contribution; Elevated CRP: CRP 12.0 mg/L, 2 points, Layer 3, 50% contribution"
+      },
+      {
+        "claim_id": "L011",
+        "reason": "Mandates hospitalization due to prior admission; source S001 only recommends referral for clinical severe infection, not a strict contraindication.",
+        "claim_text": "- HOSPITALIZE IMMEDIATELY: The patient was hospitalized for illness within the prior 14 days, which explicitly excludes them from WHO outpatient PSBI regimens."
+      },
+      {
+        "claim_id": "L012",
+        "reason": "Calls for inpatient sepsis workup; not directly supported by cited passages.",
+        "claim_text": "- Initiate inpatient sepsis workup including blood culture."
+      },
+      {
+        "claim_id": "L013",
+        "reason": "Recommends IV Ampicillin and Gentamicin as inpatient regimen; source S010 mentions cloxacillin plus gentamicin for staphylococcal sepsis, not Ampicillin.",
+        "claim_text": "- Administer inpatient-appropriate antibiotic regimen (e.g., IV Ampicillin and Gentamicin) per local hospital protocol, as WHO outpatient doses are contraindicated."
+      },
+      {
+        "claim_id": "L019",
+        "reason": "Specifies Ampicillin dosing frequency without any dose detail in retrieved evidence.",
+        "claim_text": "- [DETERMINISTIC DEFAULT] Ampicillin IM/IV [dose/frequency not specified in retrieved evidence] every 12 hours (first week of life), for at least 10 days"
+      },
+      {
+        "claim_id": "L020",
+        "reason": "Provides duration and stop criteria not sourced from any passage.",
+        "claim_text": "duration=Pending culture results and clinical response; typically 48-72 hours if cultures negative and clinical improvement, or 10-14 days if positive. stop_criteria=Negative blood cultures at 48 hours and clinical resolution of sepsis signs."
+      },
+      {
+        "claim_id": "L022",
+        "reason": "Monitoring plan details not found in cited texts.",
+        "claim_text": "MONITORING PLAN:"
+      },
+      {
+        "claim_id": "L025",
+        "reason": "Escalation criteria not supported by the provided evidence.",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      {
+        "claim_id": "L026",
+        "reason": "Further escalation triggers not cited.",
+        "claim_text": "Development of respiratory distress, hemodynamic instability, worsening perfusion, or positive blood cultures."
+      },
+      {
+        "claim_id": "L028",
+        "reason": "Nutrition/fluid plan not grounded in the evidence passages.",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      },
+      {
+        "claim_id": "L034",
+        "reason": "Section header without supporting content.",
+        "claim_text": "CONTRAINDICATION FLAGS:"
+      },
+      {
+        "claim_id": "L035",
+        "reason": "Repeats contraindication claim without source backing.",
+        "claim_text": "- [CRITICAL] WHO outpatient PSBI regimen (oral amoxicillin / IM gentamicin+amoxicillin): Infant was hospitalized for illness within the prior 14 days \u2014 WHO's outpatient regimens explicitly do not apply; this infant must be hospitalized for the current illness."
+      }
+    ],
+    "contradictions": [
+      {
+        "claim_id": "L011",
+        "reason": "Guideline S001 advises referral for clinical severe infection but does not state that prior hospitalization makes outpatient PSBI regimens invalid; the plan overstates the contraindication.",
+        "claim_text": "- HOSPITALIZE IMMEDIATELY: The patient was hospitalized for illness within the prior 14 days, which explicitly excludes them from WHO outpatient PSBI regimens."
+      },
+      {
+        "claim_id": "L013",
+        "reason": "Guideline S010 recommends cloxacillin plus gentamicin for hospitalized infants with suspected staphylococcal sepsis, not Ampicillin plus Gentamicin as stated.",
+        "claim_text": "- Administer inpatient-appropriate antibiotic regimen (e.g., IV Ampicillin and Gentamicin) per local hospital protocol, as WHO outpatient doses are contraindicated."
+      }
+    ],
+    "ungrounded_dose": true,
+    "ungrounded_dose_examples": [
+      {
+        "claim_id": "L019",
+        "reason": "Dose/frequency for Ampicillin is asserted without any dosage information in the retrieved WHO passages.",
+        "claim_text": "- [DETERMINISTIC DEFAULT] Ampicillin IM/IV [dose/frequency not specified in retrieved evidence] every 12 hours (first week of life), for at least 10 days"
+      },
+      {
+        "claim_id": "L020",
+        "reason": "Duration and stop criteria are specified without source support.",
+        "claim_text": "duration=Pending culture results and clinical response; typically 48-72 hours if cultures negative and clinical improvement, or 10-14 days if positive. stop_criteria=Negative blood cultures at 48 hours and clinical resolution of sepsis signs."
+      }
+    ],
+    "rationale": "The plan contains many assertions (risk scoring, contraindication due to prior hospitalization, specific dosing) that are not found in the supplied WHO passages. Citation mapping is unavailable, and the plan frequently cites no source for numeric risk or dosing details. Some statements contradict the guideline wording (e.g., outpatient contraindication, choice of Ampicillin). Therefore, faithfulness, citation correctness, and completeness receive low scores, and several unsupported or contradictory claims are identified. Ungrounded dose statements are present."
+  }
+}

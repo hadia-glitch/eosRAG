@@ -1,0 +1,69 @@
+{
+  "completed": true,
+  "task_sha256": "2a71d0c8a8a1aca0a058fc7fa83a6d682649fc939084a6c591950554665f1420",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.6047879999969155,
+  "kind": "chunks",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "P024": "WHO_pg9_recommendation-a-3a-upda_rec1_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-a2e1fb65-22db-480d-8100-d9f04a9d9be0",
+    "object": "chat.completion",
+    "created": 1792947282,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P024\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Provides referral and outpatient regimen for infants with IMCI signs; case lacks such signs, so only background.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for each target passage? target_passages list has [\"P024\"], but schema expects judgments list with passage field. Probably only P024. Provide grade etc. Evaluate P024 text: recommends referral, if not possible oral amox + gentamicin. Our case: outpatient_no_referral, referral not possible, infant 29 weeks, LBW 1200g, preterm, risk group but guideline says no specific rec for high-risk. Still recommendation applies. So relevance: direct actionable evidence for scenario -> grade 3. guideline_aligned: true (WHO). scenario_applicable: yes (outpatient no referral, infant 0-59 days, signs? Does infant have clinical severe infection signs? Not feeding well? Not listed. But risk factors ROM, CRP elevated but no signs. However recommendation is for infants with IMCI signs. No signs present, so not applicable? Might be marginal. Probably scenario_applicable false because no clinical signs. So clinically_useful false. Grade maybe 1? But text is about treatment if referral not possible, but without signs not applicable. So relevance low. I'd give grade 1 background. Provide rationale."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.248097684,
+      "prompt_tokens": 2432,
+      "prompt_time": 0.114578747,
+      "completion_tokens": 337,
+      "completion_time": 0.699163232,
+      "total_tokens": 2769,
+      "total_time": 0.813741979,
+      "completion_tokens_details": {
+        "reasoning_tokens": 240
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c868cf1eaa",
+    "x_groq": {
+      "id": "req_01m5szrqqee4as4p0y1kvhqpv7",
+      "seed": 1327761076
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 1,
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "965",
+    "x-ratelimit-remaining-tokens": "4741",
+    "x-ratelimit-reset-requests": "50m24s",
+    "x-ratelimit-reset-tokens": "24.442s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P024",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Provides referral and outpatient regimen for infants with IMCI signs; case lacks such signs, so only background."
+      }
+    ]
+  }
+}

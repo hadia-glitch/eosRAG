@@ -1,0 +1,117 @@
+{
+  "completed": true,
+  "task_sha256": "8951d31271fd6f3ec1643cf63298abe2a303f8b25ea6f582ad73b554f0ddd84a",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.554308699996909,
+  "kind": "chunks",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "P001": "WHO_pg10_background-and-definitio_chunk1",
+    "P002": "WHO_pg10_overview_chunk1",
+    "P003": "WHO_pg10_population-intervention-_chunk1",
+    "P006": "WHO_pg15_background-and-definitio_chunk1",
+    "P007": "WHO_pg15_recommendation-a-4-updat_rec1_chunk1",
+    "P008": "WHO_pg15_remarks_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-51d5a09e-c4de-47bb-b18c-e9d3a6899a95",
+    "object": "chat.completion",
+    "created": 1792947077,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"judgments\":[{\"passage\":\"P001\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Defines clinical severe infection and mentions oral amoxicillin+gentamicin regimen for non\u2011referral settings, but patient lacks listed signs.\"},{\"passage\":\"P002\",\"relevance_grade\":1,\"guideline_aligned\":false,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Poses research question about alternative regimens; provides no direct guidance for this case.\"},{\"passage\":\"P003\",\"relevance_grade\":1,\"guideline_aligned\":false,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Lists PICO elements for severe infection studies, not specific to current patient\u2019s presentation.\"},{\"passage\":\"P006\",\"relevance_grade\":0,\"guideline_aligned\":false,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Describes fast breathing definition and regimen for 0\u20116\u202fday infants; case has no fast breathing.\"},{\"passage\":\"P007\",\"relevance_grade\":0,\"guideline_aligned\":false,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Recommendation for fast breathing only; not relevant to this preterm infant without fast breathing.\"},{\"passage\":\"P008\",\"relevance_grade\":0,\"guideline_aligned\":false,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Remarks on evidence for fast breathing trials; unrelated to current scenario.\"}]}",
+          "reasoning": "We need output JSON with judgments for each target passage. Evaluate relevance.\n\nCase: preterm 29 weeks, low birth weight 1200g, outpatient no referral, proposed ampicillin+gentamicin. Guideline: WHO recommends referral; if not possible, oral amoxicillin + gentamicin IM/IV. Ampicillin not mentioned. Passages:\n\nP001: defines clinical severe infection signs and mentions simplified regimens (gentamicin IM + oral amoxicillin). Relevant background, but not direct actionable for ampicillin. Grade maybe 2? It's background and defines regimen. It's applicable to scenario (clinical severe infection, outpatient no referral). So grade 2, guideline_aligned true (mentions regimen), scenario_applicable true (signs match? patient has none of listed signs? Actually patient has prolonged ROM, elevated CRP but no clinical signs. Might not meet definition. So scenario_applicable maybe false. But relevance still background. So clinically_useful requires grade>=2 and alignment and applicability. Since not applicable, clinically_useful false. relevance grade 1? It's background but not directly applicable. I'd give 1.\n\nP002: question about effect of alternative regimens. Not actionable. Background. Grade 1, not aligned.\n\nP003: PICO details. Background. Grade 1.\n\nP006: defines fast breathing and regimen for 0-6 days fast breathing. Not relevant to case (no fast breathing). Grade 0.\n\nP007: recommendation for fast breathing only, referral or oral amoxicillin. Not applicable. Grade 0.\n\nP008: remarks about evidence for fast breathing. Not applicable. Grade 0.\n\nReturn JSON array judgments for each target passage.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.37737614,
+      "prompt_tokens": 3183,
+      "prompt_time": 0.23688928,
+      "completion_tokens": 694,
+      "completion_time": 1.6469997429999998,
+      "total_tokens": 3877,
+      "total_time": 1.883889023,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 349
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m5szjdmje4xbqt6r4yhvzwex",
+      "seed": 635599278
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 1,
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "968",
+    "x-ratelimit-remaining-tokens": "2901",
+    "x-ratelimit-reset-requests": "46m4.8s",
+    "x-ratelimit-reset-tokens": "38.242s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P001",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Defines clinical severe infection and mentions oral amoxicillin+gentamicin regimen for non\u2011referral settings, but patient lacks listed signs."
+      },
+      {
+        "passage": "P002",
+        "relevance_grade": 1,
+        "guideline_aligned": false,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Poses research question about alternative regimens; provides no direct guidance for this case."
+      },
+      {
+        "passage": "P003",
+        "relevance_grade": 1,
+        "guideline_aligned": false,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Lists PICO elements for severe infection studies, not specific to current patient\u2019s presentation."
+      },
+      {
+        "passage": "P006",
+        "relevance_grade": 0,
+        "guideline_aligned": false,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes fast breathing definition and regimen for 0\u20116\u202fday infants; case has no fast breathing."
+      },
+      {
+        "passage": "P007",
+        "relevance_grade": 0,
+        "guideline_aligned": false,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Recommendation for fast breathing only; not relevant to this preterm infant without fast breathing."
+      },
+      {
+        "passage": "P008",
+        "relevance_grade": 0,
+        "guideline_aligned": false,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Remarks on evidence for fast breathing trials; unrelated to current scenario."
+      }
+    ]
+  }
+}

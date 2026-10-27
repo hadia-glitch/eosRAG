@@ -1,0 +1,27 @@
+name: EOS validation
+on: [push, pull_request]
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    env:
+      LANGSMITH_TRACING: 'false'
+      LANGCHAIN_TRACING_V2: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install -r backend/requirements-development.txt
+      - run: pytest backend/tests -q
+  flutter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.44.1'
+          cache: true
+      - run: flutter pub get --enforce-lockfile
+      - run: flutter analyze --no-fatal-infos
+      - run: flutter test
+      - run: flutter build web --release --no-web-resources-cdn --dart-define=API_BASE_URL=https://example.invalid

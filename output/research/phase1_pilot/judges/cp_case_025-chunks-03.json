@@ -1,0 +1,114 @@
+{
+  "completed": true,
+  "task_sha256": "13d94b611e29d89a0a410b41d84bc958cd1ef23c49971e6fda989fd9c93c3c6a",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.4688014999992447,
+  "kind": "chunks",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "P015": "WHO_pg2_background-and-definitio_chunk1",
+    "P016": "WHO_pg31_background-and-definitio_chunk1",
+    "P017": "WHO_pg31_in-young-infants-aged-0-_rec1_chunk1",
+    "P018": "WHO_pg37_background-and-definitio_chunk1",
+    "P019": "WHO_pg3_overview_chunk1",
+    "P023": "WHO_pg6_recommendation-a-2-updat_rec1_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-b731ad85-4612-4913-912b-b60b59b2d747",
+    "object": "chat.completion",
+    "created": 1792947215,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P015\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Defines PSBI signs; background only, no treatment recommendation for this case.\"\n    },\n    {\n      \"passage\": \"P016\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes hospitalized staphylococcal sepsis and cloxacillin+gentamicin regimen; not outpatient.\"\n    },\n    {\n      \"passage\": \"P017\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Recommendation for hospitalized staphylococcal sepsis; not relevant to outpatient scenario.\"\n    },\n    {\n      \"passage\": \"P018\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Provides ampicillin+gentamicin for hospitalized pneumonia; outpatient setting not applicable.\"\n    },\n    {\n      \"passage\": \"P019\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Discusses diagnostic accuracy of PSBI algorithms; no direct treatment guidance for case.\"\n    },\n    {\n      \"passage\": \"P023\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Recommends ampicillin+gentamicin if referral impossible for critical illness; infant lacks required signs.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for target_passages only: P015,P016,P017,P018,P019,P023. Provide each with grades. Evaluate: case is outpatient_no_referral, preterm LBW, contraindication who_lbw? but guideline WHO. Proposed drugs ampicillin,gentamicin. Need relevance.\n\nP015 defines PSBI signs \u2013 background, not actionable. Grade1 maybe. guideline aligned yes. scenario applicable? defines signs, but not treatment. scenario_applicable false. clinically_useful false.\n\nP016 defines suspected staphylococcal sepsis and recommends cloxacillin+gentamicin IV for hospitalized. Not outpatient, not applicable. Grade1 background. guideline aligned yes. scenario_applicable false. clinically_useful false.\n\nP017 recommendation for hospitalized staph sepsis cloxacillin+gentamicin. Not outpatient. Grade1. scenario_applicable false.\n\nP018 defines pneumonia treatment ampicillin+gentamicin for hospitalized. Not outpatient. Might be background. Grade1. scenario_applicable false.\n\nP019 is about diagnostic accuracy of sign algorithms \u2013 not treatment. Grade1. scenario_applicable false.\n\nP023 recommendation A.2: critical illness referral; if not possible, ampicillin+gentamicin 10 days. This is actionable for non-referral outpatient. Our case has clinical severe infection? signs? infant has elevated CRP, prolonged ROM, but no clinical signs listed (temp 37.9 normal, feeding ok). So not meeting signs. So scenario_applicable false. But passage is relevant to guideline and treatment. Might be grade2? It gives regimen. However not applicable because no signs. So grade1. clinically_useful false.\n\nAll grades 1. Provide JSON array."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.302440277,
+      "prompt_tokens": 3544,
+      "prompt_time": 0.15845468,
+      "completion_tokens": 815,
+      "completion_time": 1.6979015629999998,
+      "total_tokens": 4359,
+      "total_time": 1.856356243,
+      "completion_tokens_details": {
+        "reasoning_tokens": 358
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m5szpmk1ehnrkpqccntvj00v",
+      "seed": 895392556
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 1,
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "966",
+    "x-ratelimit-remaining-tokens": "3651",
+    "x-ratelimit-reset-requests": "48m57.6s",
+    "x-ratelimit-reset-tokens": "32.617s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P015",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Defines PSBI signs; background only, no treatment recommendation for this case."
+      },
+      {
+        "passage": "P016",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes hospitalized staphylococcal sepsis and cloxacillin+gentamicin regimen; not outpatient."
+      },
+      {
+        "passage": "P017",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Recommendation for hospitalized staphylococcal sepsis; not relevant to outpatient scenario."
+      },
+      {
+        "passage": "P018",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Provides ampicillin+gentamicin for hospitalized pneumonia; outpatient setting not applicable."
+      },
+      {
+        "passage": "P019",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses diagnostic accuracy of PSBI algorithms; no direct treatment guidance for case."
+      },
+      {
+        "passage": "P023",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Recommends ampicillin+gentamicin if referral impossible for critical illness; infant lacks required signs."
+      }
+    ]
+  }
+}

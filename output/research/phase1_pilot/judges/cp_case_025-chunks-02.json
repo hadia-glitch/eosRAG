@@ -1,0 +1,117 @@
+{
+  "completed": true,
+  "task_sha256": "cd48b6545bf203cd5a10aed6b65b950c09b6b199a8185c1a6f6c30c1905066ac",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.40154099999927,
+  "kind": "chunks",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "P009": "WHO_pg15_remarks_chunk2",
+    "P010": "WHO_pg15_remarks_chunk3",
+    "P011": "WHO_pg19_recommendation-a-5-updat_rec1_chunk1",
+    "P012": "WHO_pg24_remarks_chunk1",
+    "P013": "WHO_pg24_remarks_chunk2",
+    "P014": "WHO_pg27_background-and-definitio_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-944afac6-1acc-44b1-8148-74ea85794865",
+    "object": "chat.completion",
+    "created": 1792947146,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P009\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Specifies oral amoxicillin 50\u202fmg/kg q12h for \u22657\u202fdays, matching WHO outpatient regimen for clinical severe infection when referral impossible.\"\n    },\n    {\n      \"passage\": \"P010\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Reiterates amoxicillin dosing (50\u202fmg/kg q12h \u22657\u202fdays) as WHO recommendation for non\u2011hospital management of unwell infants.\"\n    },\n    {\n      \"passage\": \"P011\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Recommends oral amoxicillin for fast breathing only in infants 7\u201159\u202fdays; case lacks fast\u2011breathing as sole sign.\"\n    },\n    {\n      \"passage\": \"P012\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes evidence review scope and lack of hospital\u2011based algorithm recommendations; no direct treatment guidance.\"\n    },\n    {\n      \"passage\": \"P013\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Notes absence of recommendations for hospital algorithms; provides background, not actionable for outpatient care.\"\n    },\n    {\n      \"passage\": \"P014\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Defines suspected sepsis and recommends ampicillin/penicillin\u202f+\u202fgentamicin for hospitalized infants; not applicable to outpatient setting.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for each target passage list: P009,P010,P011,P012,P013,P014. Provide fields. Determine grades. Likely: P009 discusses dose of amoxicillin oral 50 mg/kg q12h for 7 days \u2013 relevant to outpatient non-referral treatment. Grade 2 or 3? It's actionable dose recommendation. So grade 3. guideline_aligned true, scenario_applicable? case: outpatient no referral, infant 29 weeks, birth weight 1200g (LBW), but guideline says for clinical severe infection, if referral not possible, oral amox + gent IM. This applies. So true. clinically_useful true.\n\nP010 similar dose recommendation \u2013 also actionable. Grade 3.\n\nP011 recommendation for fast breathing only in 7-59 days oral amox. Our case has clinical severe infection signs? Not feeding? Not listed. But has prolonged ROM and elevated CRP, but infant is preterm LBW, but not fast breathing. So not directly applicable. Might be background. Grade 1. guideline_aligned true (WHO). scenario_applicable false. clinically_useful false.\n\nP012 remarks about studies, not actionable. Background. Grade 1. guideline_aligned true. scenario_applicable false. clinically_useful false.\n\nP013 similar. Grade1.\n\nP014 background definitions and recommendation of ampicillin+gentamicin for hospitalized infants. Not outpatient. So background. Grade1. guideline_aligned true. scenario_applicable false (outpatient). clinically_useful false.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.248685651,
+      "prompt_tokens": 3651,
+      "prompt_time": 0.153127646,
+      "completion_tokens": 827,
+      "completion_time": 1.760426671,
+      "total_tokens": 4478,
+      "total_time": 1.913554317,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 322
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_93703442d9",
+    "x_groq": {
+      "id": "req_01m5szmhj1e3etx1w5avpngdxw",
+      "seed": 300245669
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 1,
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "967",
+    "x-ratelimit-remaining-tokens": "3655",
+    "x-ratelimit-reset-requests": "47m31.2s",
+    "x-ratelimit-reset-tokens": "32.587s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P009",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Specifies oral amoxicillin 50\u202fmg/kg q12h for \u22657\u202fdays, matching WHO outpatient regimen for clinical severe infection when referral impossible."
+      },
+      {
+        "passage": "P010",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Reiterates amoxicillin dosing (50\u202fmg/kg q12h \u22657\u202fdays) as WHO recommendation for non\u2011hospital management of unwell infants."
+      },
+      {
+        "passage": "P011",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Recommends oral amoxicillin for fast breathing only in infants 7\u201159\u202fdays; case lacks fast\u2011breathing as sole sign."
+      },
+      {
+        "passage": "P012",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes evidence review scope and lack of hospital\u2011based algorithm recommendations; no direct treatment guidance."
+      },
+      {
+        "passage": "P013",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Notes absence of recommendations for hospital algorithms; provides background, not actionable for outpatient care."
+      },
+      {
+        "passage": "P014",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Defines suspected sepsis and recommends ampicillin/penicillin\u202f+\u202fgentamicin for hospitalized infants; not applicable to outpatient setting."
+      }
+    ]
+  }
+}

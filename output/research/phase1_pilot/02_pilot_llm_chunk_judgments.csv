@@ -1,0 +1,501 @@
+﻿case_id,guideline,arm,rank,chunk_id,relevance_grade,guideline_aligned,scenario_applicable,clinically_useful,rationale
+cp_case_001,NICE,sparse,1,NICE_pg10_chorioamnionitis_rec1_chunk1,1,True,False,False,"Mentions rationale for offering intrapartum antibiotics to prevent early‑onset infection, but does not give actionable neonatal treatment guidance."
+cp_case_001,NICE,sparse,2,NICE_pg10_neonatal-infection_rec1_chunk1,0,True,False,False,Only advises against rifampicin‑miconazole catheters; unrelated to neonatal infection or proposed drugs.
+cp_case_001,NICE,sparse,3,NICE_pg10_onset-neonatal-infection_rec1_chunk1,1,True,False,False,Recommends immediate birth for 34‑37 wks with prolonged ROM and GBS; patient is term (39 wks) and already delivered.
+cp_case_001,NICE,sparse,4,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists rupture of membranes >24 h before term birth as a red‑flag risk factor, matching the case’s 26 h ROM."
+cp_case_001,NICE,sparse,5,NICE_pg30_2012_chunk1,2,True,True,True,Instructs recording gentamicin timing and adds antibiotics for Gram‑negative sepsis; useful monitoring despite gentamicin risk.
+cp_case_001,NICE,sparse,6,NICE_pg30_2012_rec1_chunk1,1,True,False,False,Sets 7‑day IV antibiotic duration for confirmed/strongly suspected sepsis; not met in this case.
+cp_case_001,NICE,sparse,7,NICE_pg30_2012_rec1_chunk2,1,True,False,False,Guides stopping antibiotics at 36 h if low suspicion and negative culture; current risk factors suggest higher suspicion.
+cp_case_001,NICE,sparse,8,NICE_pg37_amended-2021_chunk2,1,True,False,False,Details GBS meningitis regimen with gentamicin; our baby has no meningitis and gentamicin is contraindicated.
+cp_case_001,NICE,sparse,9,NICE_pg61_how-the-recommendation-m_chunk1,1,True,False,False,"Discusses immediate delivery for prolonged ROM and GBS, but baby already delivered; only background."
+cp_case_001,NICE,sparse,10,NICE_pg61_why-the-committee-made-t_chunk1,1,True,False,False,"Provides evidence for delivery timing, not directly influencing current neonatal antibiotic plan."
+cp_case_001,NICE,dense,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists rupture of membranes >24 h before term birth as a red‑flag risk factor, matching the case’s 26 h ROM."
+cp_case_001,NICE,dense,2,NICE_pg30_2012_chunk1,2,True,True,True,Instructs recording gentamicin timing and adds antibiotics for Gram‑negative sepsis; useful monitoring despite gentamicin risk.
+cp_case_001,NICE,dense,3,NICE_pg30_2012_rec1_chunk1,1,True,False,False,Sets 7‑day IV antibiotic duration for confirmed/strongly suspected sepsis; not met in this case.
+cp_case_001,NICE,dense,4,NICE_pg30_2012_rec1_chunk2,1,True,False,False,Guides stopping antibiotics at 36 h if low suspicion and negative culture; current risk factors suggest higher suspicion.
+cp_case_001,NICE,dense,5,NICE_pg33_infection_chunk1,0,True,False,False,Focuses on late‑onset infection antibiotics; not applicable to this early‑onset scenario.
+cp_case_001,NICE,dense,6,NICE_pg37_amended-2021_chunk2,1,True,False,False,Details GBS meningitis regimen with gentamicin; our baby has no meningitis and gentamicin is contraindicated.
+cp_case_001,NICE,dense,7,NICE_pg44_2012_rec1_chunk1,1,True,False,False,Mentions measuring peak gentamicin levels in selected babies; not applicable due to gentamicin contraindication.
+cp_case_001,NICE,dense,8,NICE_pg44_receiving-gentamicin_chunk1,2,True,True,True,"Guidance on gentamicin trough monitoring and dose adjustment for renal impairment, matching AKI risk in case."
+cp_case_001,NICE,dense,9,NICE_pg44_receiving-gentamicin_chunk2,2,True,True,True,"Advises not to withhold gentamicin unless renal dysfunction present, directly relevant to AKI concern."
+cp_case_001,NICE,dense,10,NICE_pg64_why-the-committee-made-t_chunk1,2,True,True,True,"Clarifies that >24 h ROM at term raises infection risk, supporting need for antibiotics in this case."
+cp_case_001,NICE,vector,1,NICE_pg30_2012_chunk1,2,True,True,True,Instructs recording gentamicin timing and adds antibiotics for Gram‑negative sepsis; useful monitoring despite gentamicin risk.
+cp_case_001,NICE,vector,2,NICE_pg30_2012_rec1_chunk1,1,True,False,False,Sets 7‑day IV antibiotic duration for confirmed/strongly suspected sepsis; not met in this case.
+cp_case_001,NICE,vector,3,NICE_pg30_2012_rec1_chunk2,1,True,False,False,Guides stopping antibiotics at 36 h if low suspicion and negative culture; current risk factors suggest higher suspicion.
+cp_case_001,NICE,vector,4,NICE_pg37_amended-2021_chunk2,1,True,False,False,Details GBS meningitis regimen with gentamicin; our baby has no meningitis and gentamicin is contraindicated.
+cp_case_001,NICE,vector,5,NICE_pg44_2012_rec1_chunk1,1,True,False,False,Mentions measuring peak gentamicin levels in selected babies; not applicable due to gentamicin contraindication.
+cp_case_001,NICE,vector,6,NICE_pg44_receiving-gentamicin_chunk1,2,True,True,True,"Guidance on gentamicin trough monitoring and dose adjustment for renal impairment, matching AKI risk in case."
+cp_case_001,NICE,vector,7,NICE_pg44_receiving-gentamicin_chunk2,2,True,True,True,"Advises not to withhold gentamicin unless renal dysfunction present, directly relevant to AKI concern."
+cp_case_001,NICE,vector,8,NICE_pg61_how-the-recommendation-m_chunk1,1,True,False,False,"Discusses immediate delivery for prolonged ROM and GBS, but baby already delivered; only background."
+cp_case_001,NICE,vector,9,NICE_pg61_why-the-committee-made-t_chunk1,1,True,False,False,"Provides evidence for delivery timing, not directly influencing current neonatal antibiotic plan."
+cp_case_001,NICE,vector,10,NICE_pg64_why-the-committee-made-t_chunk1,2,True,True,True,"Clarifies that >24 h ROM at term raises infection risk, supporting need for antibiotics in this case."
+cp_case_001,NICE,graph,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists rupture of membranes >24 h before term birth as a red‑flag risk factor, matching the case’s 26 h ROM."
+cp_case_001,NICE,graph,2,NICE_pg27_for-early-onset-or-late-_rec1_chunk1,2,True,True,True,"Advises measuring CRP 18‑24 h after starting antibiotics and considering lumbar puncture if response is poor, relevant to monitoring this infant."
+cp_case_001,NICE,graph,3,NICE_pg29_infection_rec1_chunk1,2,True,False,True,Recommends benzylpenicillin + gentamicin for empirical early‑onset infection; gentamicin contraindicated here due to AKI.
+cp_case_001,NICE,graph,4,NICE_pg2_carers_chunk6,1,True,True,False,"Advises informing parents/GP about increased infection risk; background communication, not treatment."
+cp_case_001,NICE,graph,5,NICE_pg2_carers_chunk7,1,True,True,False,Provides reassurance and future‑pregnancy advice for GBS colonisation; unrelated to immediate drug choice.
+cp_case_001,NICE,graph,6,NICE_pg30_2012_rec1_chunk1,1,True,False,False,Sets 7‑day IV antibiotic duration for confirmed/strongly suspected sepsis; not met in this case.
+cp_case_001,NICE,graph,7,NICE_pg31_2012-amended-2026_chunk2,1,True,True,False,Describes switching to oral after 36 h in stable term babies; relevant to early‑onset care but not direct treatment choice.
+cp_case_001,NICE,graph,8,NICE_pg64_why-the-committee-made-t_chunk1,2,True,True,True,"Clarifies that >24 h ROM at term raises infection risk, supporting need for antibiotics in this case."
+cp_case_001,NICE,graph,9,NICE_pg64_why-the-committee-made-t_chunk3,1,True,True,False,Describes red‑flag framework retained from 2012; provides context but no direct actionable recommendation.
+cp_case_001,NICE,graph,10,NICE_pg8_prevent-early-onset-neon_chunk1,1,True,False,False,Describes intrapartum antibiotics for GBS prophylaxis; not a direct neonatal treatment recommendation for the presented baby.
+cp_case_001,NICE,hybrid,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists rupture of membranes >24 h before term birth as a red‑flag risk factor, matching the case’s 26 h ROM."
+cp_case_001,NICE,hybrid,2,NICE_pg15_care-2021_rec1_chunk1,2,True,True,True,"Recommends the Kaiser sepsis calculator as an alternative decision tool for babies ≥34 wks, applicable to this newborn."
+cp_case_001,NICE,hybrid,3,NICE_pg29_infection_rec1_chunk1,2,True,False,True,Recommends benzylpenicillin + gentamicin for empirical early‑onset infection; gentamicin contraindicated here due to AKI.
+cp_case_001,NICE,hybrid,4,NICE_pg30_2012_chunk1,2,True,True,True,Instructs recording gentamicin timing and adds antibiotics for Gram‑negative sepsis; useful monitoring despite gentamicin risk.
+cp_case_001,NICE,hybrid,5,NICE_pg30_2012_rec1_chunk1,1,True,False,False,Sets 7‑day IV antibiotic duration for confirmed/strongly suspected sepsis; not met in this case.
+cp_case_001,NICE,hybrid,6,NICE_pg30_2012_rec1_chunk2,1,True,False,False,Guides stopping antibiotics at 36 h if low suspicion and negative culture; current risk factors suggest higher suspicion.
+cp_case_001,NICE,hybrid,7,NICE_pg34_2021_rec1_chunk1,1,True,False,False,Provides duration of therapy for positive cultures; our case has negative culture and concerns about gentamicin.
+cp_case_001,NICE,hybrid,8,NICE_pg34_treatment_rec1_chunk1,0,True,False,False,Guidance on stopping antibiotics for late‑onset infection; not relevant to early‑onset risk.
+cp_case_001,NICE,hybrid,9,NICE_pg64_why-the-committee-made-t_chunk1,2,True,True,True,"Clarifies that >24 h ROM at term raises infection risk, supporting need for antibiotics in this case."
+cp_case_001,NICE,hybrid,10,NICE_pg8_prevent-early-onset-neon_chunk1,1,True,False,False,Describes intrapartum antibiotics for GBS prophylaxis; not a direct neonatal treatment recommendation for the presented baby.
+cp_case_002,NICE,sparse,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists confirmed ROM >18h before pre‑term birth as a red‑flag risk factor, matching this case's 20h ROM at 32 weeks."
+cp_case_002,NICE,sparse,2,NICE_pg37_amended-2021_chunk2,0,True,False,False,Focuses on meningitis management; no meningitis evidence in this case.
+cp_case_002,NICE,sparse,3,NICE_pg60_how-the-recommendations-_chunk1,1,True,False,False,Discusses intrapartum antibiotic choices for mothers; not directly about neonatal antibiotic management.
+cp_case_002,NICE,sparse,4,NICE_pg61_how-the-recommendation-m_chunk1,0,True,False,False,Focuses on immediate delivery for PROM with GBS positivity; patient is GBS negative.
+cp_case_002,NICE,sparse,5,NICE_pg61_why-the-committee-made-t_chunk1,0,True,False,False,Recommends delivery timing based on GBS status; not applicable to this GBS‑negative case.
+cp_case_002,NICE,sparse,6,NICE_pg64_why-the-committee-made-t_chunk1,2,True,True,True,"Notes ROM >24h increases risk; case has ROM 20h preterm, indicating relevance of prolonged rupture as risk factor."
+cp_case_002,NICE,sparse,7,NICE_pg64_why-the-committee-made-t_chunk2,1,True,True,False,"Discusses evidence uncertainty and removal of pre‑labour ROM factor, providing background but not direct guidance for this case."
+cp_case_002,NICE,sparse,8,NICE_pg67_how-the-recommendations-_chunk1,1,True,False,False,"Focuses on term births with >24h ROM; case is preterm, so impact is limited."
+cp_case_002,NICE,sparse,9,NICE_pg74_why-the-committee-made-t_rec1_chunk1,2,True,True,True,"States CRP should not alone dictate treatment; case has elevated CRP, making this guidance pertinent."
+cp_case_002,NICE,sparse,10,NICE_pg74_why-the-committee-made-t_rec1_chunk2,1,True,True,False,Mentions need for expert neonatal infection advice; general support but not specific to antibiotic choice.
+cp_case_002,NICE,dense,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists confirmed ROM >18h before pre‑term birth as a red‑flag risk factor, matching this case's 20h ROM at 32 weeks."
+cp_case_002,NICE,dense,2,NICE_pg37_amended-2021_chunk2,0,True,False,False,Focuses on meningitis management; no meningitis evidence in this case.
+cp_case_002,NICE,dense,3,NICE_pg44_2012_rec1_chunk1,1,True,False,False,"Mentions peak gentamicin monitoring in selected babies (e.g., oedema); not relevant to this preterm case."
+cp_case_002,NICE,dense,4,NICE_pg44_receiving-gentamicin_chunk1,2,True,True,True,Recommends measuring trough gentamicin before each dose and adjusting interval; directly applicable to proposed gentamicin regimen.
+cp_case_002,NICE,dense,5,NICE_pg44_receiving-gentamicin_chunk2,2,True,True,True,Guides gentamicin dose interval and withholding decisions; relevant for safe use in this neonate.
+cp_case_002,NICE,dense,6,NICE_pg60_how-the-recommendations-_chunk1,1,True,False,False,Discusses intrapartum antibiotic choices for mothers; not directly about neonatal antibiotic management.
+cp_case_002,NICE,dense,7,NICE_pg61_why-the-committee-made-t_chunk1,0,True,False,False,Recommends delivery timing based on GBS status; not applicable to this GBS‑negative case.
+cp_case_002,NICE,dense,8,NICE_pg64_why-the-committee-made-t_chunk1,2,True,True,True,"Notes ROM >24h increases risk; case has ROM 20h preterm, indicating relevance of prolonged rupture as risk factor."
+cp_case_002,NICE,dense,9,NICE_pg64_why-the-committee-made-t_chunk2,1,True,True,False,"Discusses evidence uncertainty and removal of pre‑labour ROM factor, providing background but not direct guidance for this case."
+cp_case_002,NICE,dense,10,NICE_pg67_how-the-recommendations-_chunk1,1,True,False,False,"Focuses on term births with >24h ROM; case is preterm, so impact is limited."
+cp_case_002,NICE,vector,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists confirmed ROM >18h before pre‑term birth as a red‑flag risk factor, matching this case's 20h ROM at 32 weeks."
+cp_case_002,NICE,vector,2,NICE_pg37_amended-2021_chunk2,0,True,False,False,Focuses on meningitis management; no meningitis evidence in this case.
+cp_case_002,NICE,vector,3,NICE_pg44_2012_rec1_chunk1,1,True,False,False,"Mentions peak gentamicin monitoring in selected babies (e.g., oedema); not relevant to this preterm case."
+cp_case_002,NICE,vector,4,NICE_pg44_receiving-gentamicin_chunk1,2,True,True,True,Recommends measuring trough gentamicin before each dose and adjusting interval; directly applicable to proposed gentamicin regimen.
+cp_case_002,NICE,vector,5,NICE_pg44_receiving-gentamicin_chunk2,2,True,True,True,Guides gentamicin dose interval and withholding decisions; relevant for safe use in this neonate.
+cp_case_002,NICE,vector,6,NICE_pg61_how-the-recommendation-m_chunk1,0,True,False,False,Focuses on immediate delivery for PROM with GBS positivity; patient is GBS negative.
+cp_case_002,NICE,vector,7,NICE_pg61_why-the-committee-made-t_chunk1,0,True,False,False,Recommends delivery timing based on GBS status; not applicable to this GBS‑negative case.
+cp_case_002,NICE,vector,8,NICE_pg64_why-the-committee-made-t_chunk1,2,True,True,True,"Notes ROM >24h increases risk; case has ROM 20h preterm, indicating relevance of prolonged rupture as risk factor."
+cp_case_002,NICE,vector,9,NICE_pg64_why-the-committee-made-t_chunk2,1,True,True,False,"Discusses evidence uncertainty and removal of pre‑labour ROM factor, providing background but not direct guidance for this case."
+cp_case_002,NICE,vector,10,NICE_pg67_how-the-recommendations-_chunk1,1,True,False,False,"Focuses on term births with >24h ROM; case is preterm, so impact is limited."
+cp_case_002,NICE,graph,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists confirmed ROM >18h before pre‑term birth as a red‑flag risk factor, matching this case's 20h ROM at 32 weeks."
+cp_case_002,NICE,graph,2,NICE_pg27_for-early-onset-or-late-_rec1_chunk1,3,True,True,True,"Recommends measuring CRP 18‑24 h after starting antibiotics and criteria for lumbar puncture, directly relevant to management."
+cp_case_002,NICE,graph,3,NICE_pg2_carers_chunk1,2,True,True,True,"Guides communication with parents about concerns and management options, applicable when initiating antibiotics."
+cp_case_002,NICE,graph,4,NICE_pg31_2012-amended-2026_chunk2,1,True,False,False,"Discusses oral switch after 36 h for babies ≥35 weeks; patient is 32 weeks, so not applicable."
+cp_case_002,NICE,graph,5,NICE_pg34_2021_rec1_chunk1,1,True,False,False,"Covers 7‑day duration for positive cultures; case has negative culture, providing only background."
+cp_case_002,NICE,graph,6,NICE_pg38_management-2012-amended-_chunk2,0,True,False,False,"Addresses fluid restriction in meningitis, not relevant to current early‑onset infection assessment."
+cp_case_002,NICE,graph,7,NICE_pg64_why-the-committee-made-t_chunk1,2,True,True,True,"Notes ROM >24h increases risk; case has ROM 20h preterm, indicating relevance of prolonged rupture as risk factor."
+cp_case_002,NICE,graph,8,NICE_pg64_why-the-committee-made-t_chunk3,2,True,True,True,"Describes red‑flag vs non‑red‑flag risk factor framework used to decide antibiotic initiation, directly applicable to case assessment."
+cp_case_002,NICE,graph,9,NICE_pg8_chorioamnionitis_chunk1,3,True,True,True,"Specifies benzylpenicillin alone for mothers without chorioamnionitis, directly guiding neonatal antibiotic choice in this preterm case."
+cp_case_002,NICE,graph,10,NICE_pg8_prevent-early-onset-neon_chunk1,2,True,True,True,"Recommends intrapartum antibiotics for pre‑term labour and prolonged ROM, supporting the maternal antibiotic context of this case."
+cp_case_002,NICE,hybrid,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists confirmed ROM >18h before pre‑term birth as a red‑flag risk factor, matching this case's 20h ROM at 32 weeks."
+cp_case_002,NICE,hybrid,2,NICE_pg14_including-red-flags_chunk3,1,True,False,False,"Describes monitoring when no risk factors are present, which does not apply because this baby has ROM risk."
+cp_case_002,NICE,hybrid,3,NICE_pg27_for-early-onset-or-late-_rec1_chunk1,3,True,True,True,"Recommends measuring CRP 18‑24 h after starting antibiotics and criteria for lumbar puncture, directly relevant to management."
+cp_case_002,NICE,hybrid,4,NICE_pg29_infection_rec1_chunk1,3,True,True,True,Specifies benzylpenicillin plus gentamicin as first‑choice empirical regimen for suspected early‑onset infection.
+cp_case_002,NICE,hybrid,5,NICE_pg30_2012_rec1_chunk1,2,True,True,True,"Sets 7‑day IV antibiotic duration for suspected sepsis, relevant for planning treatment length in this risk‑based case."
+cp_case_002,NICE,hybrid,6,NICE_pg30_2012_rec1_chunk2,3,True,True,True,"Specifies stopping antibiotics at 36 h if blood culture negative, low suspicion, reassuring clinical condition and CRP, matching this preterm case."
+cp_case_002,NICE,hybrid,7,NICE_pg34_2021_rec1_chunk1,1,True,False,False,"Covers 7‑day duration for positive cultures; case has negative culture, providing only background."
+cp_case_002,NICE,hybrid,8,NICE_pg34_treatment_rec1_chunk1,0,True,False,False,"Pertains to late‑onset infection stopping at 48 h, unrelated to early‑onset scenario."
+cp_case_002,NICE,hybrid,9,NICE_pg64_why-the-committee-made-t_chunk1,2,True,True,True,"Notes ROM >24h increases risk; case has ROM 20h preterm, indicating relevance of prolonged rupture as risk factor."
+cp_case_002,NICE,hybrid,10,NICE_pg8_chorioamnionitis_chunk1,3,True,True,True,"Specifies benzylpenicillin alone for mothers without chorioamnionitis, directly guiding neonatal antibiotic choice in this preterm case."
+cp_case_003,AAP,sparse,1,AAP_pg2_abstract_chunk1,1,True,False,False,"Provides general background on EOS incidence and risk factor variability, not specific to this case."
+cp_case_003,AAP,sparse,2,AAP_pg2_abstract_chunk2,1,True,False,False,Summarizes epidemiology of EOS in ≥35‑week infants; no direct guidance for the presented risk profile.
+cp_case_003,AAP,sparse,3,AAP_pg2_abstract_chunk3,1,True,False,False,"Discusses need to assess risk in well‑appearing infants; background only, no actionable recommendation."
+cp_case_003,AAP,sparse,4,AAP_pg2_risk-factors-for-eos_chunk1,2,True,True,True,"Lists ROM duration as a validated risk factor for EOS, directly relevant to ROM 20 h in this preterm infant."
+cp_case_003,AAP,sparse,5,AAP_pg3_categorical-risk-factor-_chunk1,3,True,True,True,Categorical algorithm flags ROM >18 h and <37 wks as indication for lab testing and empirical antibiotics.
+cp_case_003,AAP,sparse,6,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Describes multivariate risk model including ROM and gestational age, supporting risk‑based decision making."
+cp_case_003,AAP,sparse,7,AAP_pg3_multivariate-risk-assess_chunk2,3,True,True,True,"States antibiotics recommended for EOS risk ≥3/1000; case risk is 3/1000, directly supporting treatment."
+cp_case_003,AAP,sparse,8,AAP_pg4_newborn-clinical-conditi_chunk2,2,True,True,True,Notes reliance on obstetric risk flags and serial exams for well‑appearing term/late‑preterm infants.
+cp_case_003,AAP,sparse,9,AAP_pg5_white-blood-cell-count_chunk2,1,True,True,False,"States WBC count has poor predictive value for EOS, marginally relevant to case."
+cp_case_003,AAP,sparse,10,AAP_pg6_summary-points_chunk1,2,True,True,True,Describes categorical/multivariate risk stratification applicable to prolonged ROM and preterm infant.
+cp_case_003,AAP,dense,1,AAP_pg2_abstract_chunk1,1,True,False,False,"Provides general background on EOS incidence and risk factor variability, not specific to this case."
+cp_case_003,AAP,dense,2,AAP_pg2_abstract_chunk2,1,True,False,False,Summarizes epidemiology of EOS in ≥35‑week infants; no direct guidance for the presented risk profile.
+cp_case_003,AAP,dense,3,AAP_pg2_abstract_chunk3,1,True,False,False,"Discusses need to assess risk in well‑appearing infants; background only, no actionable recommendation."
+cp_case_003,AAP,dense,4,AAP_pg2_risk-factors-for-eos_chunk1,2,True,True,True,"Lists ROM duration as a validated risk factor for EOS, directly relevant to ROM 20 h in this preterm infant."
+cp_case_003,AAP,dense,5,AAP_pg3_categorical-risk-factor-_chunk1,3,True,True,True,Categorical algorithm flags ROM >18 h and <37 wks as indication for lab testing and empirical antibiotics.
+cp_case_003,AAP,dense,6,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Describes multivariate risk model including ROM and gestational age, supporting risk‑based decision making."
+cp_case_003,AAP,dense,7,AAP_pg3_multivariate-risk-assess_chunk2,3,True,True,True,"States antibiotics recommended for EOS risk ≥3/1000; case risk is 3/1000, directly supporting treatment."
+cp_case_003,AAP,dense,8,AAP_pg4_newborn-clinical-conditi_chunk2,2,True,True,True,Notes reliance on obstetric risk flags and serial exams for well‑appearing term/late‑preterm infants.
+cp_case_003,AAP,dense,9,AAP_pg5_white-blood-cell-count_chunk2,1,True,True,False,"States WBC count has poor predictive value for EOS, marginally relevant to case."
+cp_case_003,AAP,dense,10,AAP_pg6_summary-points_chunk1,2,True,True,True,Describes categorical/multivariate risk stratification applicable to prolonged ROM and preterm infant.
+cp_case_003,AAP,vector,1,AAP_pg2_abstract_chunk1,1,True,False,False,"Provides general background on EOS incidence and risk factor variability, not specific to this case."
+cp_case_003,AAP,vector,2,AAP_pg2_abstract_chunk2,1,True,False,False,Summarizes epidemiology of EOS in ≥35‑week infants; no direct guidance for the presented risk profile.
+cp_case_003,AAP,vector,3,AAP_pg2_abstract_chunk3,1,True,False,False,"Discusses need to assess risk in well‑appearing infants; background only, no actionable recommendation."
+cp_case_003,AAP,vector,4,AAP_pg2_risk-factors-for-eos_chunk1,2,True,True,True,"Lists ROM duration as a validated risk factor for EOS, directly relevant to ROM 20 h in this preterm infant."
+cp_case_003,AAP,vector,5,AAP_pg3_categorical-risk-factor-_chunk1,3,True,True,True,Categorical algorithm flags ROM >18 h and <37 wks as indication for lab testing and empirical antibiotics.
+cp_case_003,AAP,vector,6,AAP_pg3_multivariate-risk-assess_chunk2,3,True,True,True,"States antibiotics recommended for EOS risk ≥3/1000; case risk is 3/1000, directly supporting treatment."
+cp_case_003,AAP,vector,7,AAP_pg4_newborn-clinical-conditi_chunk2,2,True,True,True,Notes reliance on obstetric risk flags and serial exams for well‑appearing term/late‑preterm infants.
+cp_case_003,AAP,vector,8,AAP_pg5_white-blood-cell-count_chunk2,1,True,True,False,"States WBC count has poor predictive value for EOS, marginally relevant to case."
+cp_case_003,AAP,vector,9,AAP_pg6_other-inflammatory-marke_chunk1,2,True,True,True,Explains single CRP values are not sensitive/specific; informs that elevated CRP alone should not dictate antibiotics.
+cp_case_003,AAP,vector,10,AAP_pg6_summary-points_chunk1,2,True,True,True,Describes categorical/multivariate risk stratification applicable to prolonged ROM and preterm infant.
+cp_case_003,AAP,graph,1,AAP_pg3_categorical-risk-factor-_chunk1,3,True,True,True,Categorical algorithm flags ROM >18 h and <37 wks as indication for lab testing and empirical antibiotics.
+cp_case_003,AAP,graph,2,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Describes multivariate risk model including ROM and gestational age, supporting risk‑based decision making."
+cp_case_003,AAP,graph,3,AAP_pg3_multivariate-risk-assess_chunk2,3,True,True,True,"States antibiotics recommended for EOS risk ≥3/1000; case risk is 3/1000, directly supporting treatment."
+cp_case_003,AAP,graph,4,AAP_pg4_newborn-clinical-conditi_chunk1,2,True,True,True,"Describes clinical‑observation strategy for well‑appearing infants, relevant to deciding observation vs antibiotics."
+cp_case_003,AAP,graph,5,AAP_pg5_white-blood-cell-count_chunk2,1,True,True,False,"States WBC count has poor predictive value for EOS, marginally relevant to case."
+cp_case_003,AAP,graph,6,AAP_pg5_white-blood-cell-count_chunk3,1,True,True,False,Further emphasizes limited utility of WBC and platelet counts for EOS risk assessment.
+cp_case_003,AAP,graph,7,AAP_pg6_other-inflammatory-marke_chunk1,2,True,True,True,Explains single CRP values are not sensitive/specific; informs that elevated CRP alone should not dictate antibiotics.
+cp_case_003,AAP,graph,8,AAP_pg6_other-inflammatory-marke_chunk2,1,True,True,False,"Notes CRP normal should not guide antibiotics; case has elevated CRP, so only marginal relevance."
+cp_case_003,AAP,graph,9,AAP_pg6_treatment-of-eos_chunk2,3,True,True,True,"Specifies ampicillin (penicillin) + gentamicin as first‑choice empirical EOS therapy, matching proposed drugs."
+cp_case_003,AAP,graph,10,AAP_pg6_treatment-of-eos_chunk5,2,True,True,True,"Advises stopping antibiotics if blood cultures sterile at 36‑48 h, relevant for management after initiation."
+cp_case_003,AAP,hybrid,1,AAP_pg3_categorical-risk-factor-_chunk1,3,True,True,True,Categorical algorithm flags ROM >18 h and <37 wks as indication for lab testing and empirical antibiotics.
+cp_case_003,AAP,hybrid,2,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Describes multivariate risk model including ROM and gestational age, supporting risk‑based decision making."
+cp_case_003,AAP,hybrid,3,AAP_pg3_multivariate-risk-assess_chunk2,3,True,True,True,"States antibiotics recommended for EOS risk ≥3/1000; case risk is 3/1000, directly supporting treatment."
+cp_case_003,AAP,hybrid,4,AAP_pg4_newborn-clinical-conditi_chunk1,2,True,True,True,"Describes clinical‑observation strategy for well‑appearing infants, relevant to deciding observation vs antibiotics."
+cp_case_003,AAP,hybrid,5,AAP_pg5_white-blood-cell-count_chunk2,1,True,True,False,"States WBC count has poor predictive value for EOS, marginally relevant to case."
+cp_case_003,AAP,hybrid,6,AAP_pg5_white-blood-cell-count_chunk3,1,True,True,False,Further emphasizes limited utility of WBC and platelet counts for EOS risk assessment.
+cp_case_003,AAP,hybrid,7,AAP_pg6_other-inflammatory-marke_chunk1,2,True,True,True,Explains single CRP values are not sensitive/specific; informs that elevated CRP alone should not dictate antibiotics.
+cp_case_003,AAP,hybrid,8,AAP_pg6_other-inflammatory-marke_chunk2,1,True,True,False,"Notes CRP normal should not guide antibiotics; case has elevated CRP, so only marginal relevance."
+cp_case_003,AAP,hybrid,9,AAP_pg6_summary-points_chunk1,2,True,True,True,Describes categorical/multivariate risk stratification applicable to prolonged ROM and preterm infant.
+cp_case_003,AAP,hybrid,10,AAP_pg6_treatment-of-eos_chunk2,3,True,True,True,"Specifies ampicillin (penicillin) + gentamicin as first‑choice empirical EOS therapy, matching proposed drugs."
+cp_case_004,WHO,sparse,1,WHO_pg10_background-and-definitio_chunk1,1,True,False,False,"Defines clinical severe infection signs and non‑referral regimens; case is hospital‑based, so only background."
+cp_case_004,WHO,sparse,2,WHO_pg16_population-intervention-_chunk1,0,True,False,False,"PICO focuses on fast breathing only, not the critical sepsis presentation."
+cp_case_004,WHO,sparse,3,WHO_pg20_sources-and-characterist_chunk1,0,True,False,False,"Evidence pertains to isolated fast breathing, unrelated to the current critical infection."
+cp_case_004,WHO,sparse,4,WHO_pg24_background-and-definitio_chunk1,1,True,True,False,"Provides WHO definition of suspected sepsis for hospitalized infants; background only, no treatment specifics."
+cp_case_004,WHO,sparse,5,WHO_pg27_background-and-definitio_chunk1,3,True,True,True,Defines suspected sepsis signs and recommends ampicillin/penicillin plus gentamicin for hospitalized infants 0‑59 days.
+cp_case_004,WHO,sparse,6,WHO_pg2_background-and-definitio_chunk1,2,True,True,True,Provides WHO definition of PSBI signs matching the infant’s clinical presentation.
+cp_case_004,WHO,sparse,7,WHO_pg31_background-and-definitio_chunk1,0,True,False,False,"Describes staphylococcal sepsis and cloxacillin recommendation, not relevant to GBS sepsis."
+cp_case_004,WHO,sparse,8,WHO_pg31_background-and-definitio_chunk2,0,True,False,False,"Repeats cloxacillin plus gentamicin guidance for staphylococcal sepsis, unrelated to case."
+cp_case_004,WHO,sparse,9,WHO_pg31_in-young-infants-aged-0-_rec1_chunk1,0,True,False,False,"Recommendation for cloxacillin in suspected staphylococcal sepsis, not applicable here."
+cp_case_004,WHO,sparse,10,WHO_pg31_remarks_chunk1,0,True,False,False,"Dosing details for cloxacillin/gentamicin targeting staphylococcal sepsis, irrelevant to case."
+cp_case_004,WHO,dense,1,WHO_pg10_background-and-definitio_chunk1,1,True,False,False,"Defines clinical severe infection signs and non‑referral regimens; case is hospital‑based, so only background."
+cp_case_004,WHO,dense,2,WHO_pg11_sources-and-characterist_chunk1,2,True,True,True,Describes RCT evidence for hospital‑based antibiotic regimens for infants with clinical severe infection.
+cp_case_004,WHO,dense,3,WHO_pg20_sources-and-characterist_chunk1,0,True,False,False,"Evidence pertains to isolated fast breathing, unrelated to the current critical infection."
+cp_case_004,WHO,dense,4,WHO_pg24_background-and-definitio_chunk1,1,True,True,False,"Provides WHO definition of suspected sepsis for hospitalized infants; background only, no treatment specifics."
+cp_case_004,WHO,dense,5,WHO_pg27_background-and-definitio_chunk1,3,True,True,True,Defines suspected sepsis signs and recommends ampicillin/penicillin plus gentamicin for hospitalized infants 0‑59 days.
+cp_case_004,WHO,dense,6,WHO_pg2_background-and-definitio_chunk1,2,True,True,True,Provides WHO definition of PSBI signs matching the infant’s clinical presentation.
+cp_case_004,WHO,dense,7,WHO_pg31_background-and-definitio_chunk1,0,True,False,False,"Describes staphylococcal sepsis and cloxacillin recommendation, not relevant to GBS sepsis."
+cp_case_004,WHO,dense,8,WHO_pg31_background-and-definitio_chunk2,0,True,False,False,"Repeats cloxacillin plus gentamicin guidance for staphylococcal sepsis, unrelated to case."
+cp_case_004,WHO,dense,9,WHO_pg31_in-young-infants-aged-0-_rec1_chunk1,0,True,False,False,"Recommendation for cloxacillin in suspected staphylococcal sepsis, not applicable here."
+cp_case_004,WHO,dense,10,WHO_pg31_remarks_chunk1,0,True,False,False,"Dosing details for cloxacillin/gentamicin targeting staphylococcal sepsis, irrelevant to case."
+cp_case_004,WHO,vector,1,WHO_pg10_background-and-definitio_chunk1,1,True,False,False,"Defines clinical severe infection signs and non‑referral regimens; case is hospital‑based, so only background."
+cp_case_004,WHO,vector,2,WHO_pg20_sources-and-characterist_chunk1,0,True,False,False,"Evidence pertains to isolated fast breathing, unrelated to the current critical infection."
+cp_case_004,WHO,vector,3,WHO_pg24_background-and-definitio_chunk1,1,True,True,False,"Provides WHO definition of suspected sepsis for hospitalized infants; background only, no treatment specifics."
+cp_case_004,WHO,vector,4,WHO_pg27_background-and-definitio_chunk1,3,True,True,True,Defines suspected sepsis signs and recommends ampicillin/penicillin plus gentamicin for hospitalized infants 0‑59 days.
+cp_case_004,WHO,vector,5,WHO_pg2_background-and-definitio_chunk1,2,True,True,True,Provides WHO definition of PSBI signs matching the infant’s clinical presentation.
+cp_case_004,WHO,vector,6,WHO_pg31_background-and-definitio_chunk1,0,True,False,False,"Describes staphylococcal sepsis and cloxacillin recommendation, not relevant to GBS sepsis."
+cp_case_004,WHO,vector,7,WHO_pg31_background-and-definitio_chunk2,0,True,False,False,"Repeats cloxacillin plus gentamicin guidance for staphylococcal sepsis, unrelated to case."
+cp_case_004,WHO,vector,8,WHO_pg31_in-young-infants-aged-0-_rec1_chunk1,0,True,False,False,"Recommendation for cloxacillin in suspected staphylococcal sepsis, not applicable here."
+cp_case_004,WHO,vector,9,WHO_pg31_remarks_chunk1,0,True,False,False,"Dosing details for cloxacillin/gentamicin targeting staphylococcal sepsis, irrelevant to case."
+cp_case_004,WHO,vector,10,WHO_pg3_overview_chunk1,0,False,False,False,"Discusses diagnostic accuracy of PSBI algorithms, no treatment guidance."
+cp_case_004,WHO,graph,1,WHO_pg10_background-and-definitio_chunk1,1,True,False,False,"Defines clinical severe infection signs and non‑referral regimens; case is hospital‑based, so only background."
+cp_case_004,WHO,graph,2,WHO_pg27_background-and-definitio_chunk1,3,True,True,True,Defines suspected sepsis signs and recommends ampicillin/penicillin plus gentamicin for hospitalized infants 0‑59 days.
+cp_case_004,WHO,graph,3,WHO_pg2_background-and-definitio_chunk1,2,True,True,True,Provides WHO definition of PSBI signs matching the infant’s clinical presentation.
+cp_case_004,WHO,graph,4,WHO_pg31_background-and-definitio_chunk1,0,True,False,False,"Describes staphylococcal sepsis and cloxacillin recommendation, not relevant to GBS sepsis."
+cp_case_004,WHO,graph,5,WHO_pg31_in-young-infants-aged-0-_rec1_chunk1,0,True,False,False,"Recommendation for cloxacillin in suspected staphylococcal sepsis, not applicable here."
+cp_case_004,WHO,graph,6,WHO_pg34_recommendation-b-4-new_rec1_chunk1,1,True,False,False,"Mentions ampicillin+gentamicin for meningitis with 3‑week course, not sepsis critical illness."
+cp_case_004,WHO,graph,7,WHO_pg3_overview_chunk1,0,False,False,False,"Discusses diagnostic accuracy of PSBI algorithms, no treatment guidance."
+cp_case_004,WHO,graph,8,WHO_pg6_background-and-definitio_chunk1,3,True,True,True,Defines critical illness and recommends ampicillin+gentamicin ≥10 days for hospitalized infants with critical illness.
+cp_case_004,WHO,graph,9,WHO_pg6_recommendation-a-2-updat_rec1_chunk1,2,True,True,True,Recommends ampicillin+gentamicin ≥10 days if referral not possible; applicable regimen for hospitalized critical infant.
+cp_case_004,WHO,graph,10,WHO_pg9_recommendation-a-3a-upda_rec1_chunk1,1,True,False,False,Guides oral amoxicillin+gentamicin for clinical severe infection when referral impossible; not matched to critical illness IV regimen.
+cp_case_004,WHO,hybrid,1,WHO_pg10_background-and-definitio_chunk1,1,True,False,False,"Defines clinical severe infection signs and non‑referral regimens; case is hospital‑based, so only background."
+cp_case_004,WHO,hybrid,2,WHO_pg15_recommendation-a-4-updat_rec1_chunk1,0,True,False,False,Only addresses fast breathing as sole sign; case has multiple severe signs.
+cp_case_004,WHO,hybrid,3,WHO_pg24_background-and-definitio_chunk1,1,True,True,False,"Provides WHO definition of suspected sepsis for hospitalized infants; background only, no treatment specifics."
+cp_case_004,WHO,hybrid,4,WHO_pg27_background-and-definitio_chunk1,3,True,True,True,Defines suspected sepsis signs and recommends ampicillin/penicillin plus gentamicin for hospitalized infants 0‑59 days.
+cp_case_004,WHO,hybrid,5,WHO_pg2_background-and-definitio_chunk1,2,True,True,True,Provides WHO definition of PSBI signs matching the infant’s clinical presentation.
+cp_case_004,WHO,hybrid,6,WHO_pg31_background-and-definitio_chunk1,0,True,False,False,"Describes staphylococcal sepsis and cloxacillin recommendation, not relevant to GBS sepsis."
+cp_case_004,WHO,hybrid,7,WHO_pg31_in-young-infants-aged-0-_rec1_chunk1,0,True,False,False,"Recommendation for cloxacillin in suspected staphylococcal sepsis, not applicable here."
+cp_case_004,WHO,hybrid,8,WHO_pg3_overview_chunk1,0,False,False,False,"Discusses diagnostic accuracy of PSBI algorithms, no treatment guidance."
+cp_case_004,WHO,hybrid,9,WHO_pg6_background-and-definitio_chunk1,3,True,True,True,Defines critical illness and recommends ampicillin+gentamicin ≥10 days for hospitalized infants with critical illness.
+cp_case_004,WHO,hybrid,10,WHO_pg6_recommendation-a-2-updat_rec1_chunk1,2,True,True,True,Recommends ampicillin+gentamicin ≥10 days if referral not possible; applicable regimen for hospitalized critical infant.
+cp_case_007,AAP,sparse,1,AAP_pg2_abstract_chunk1,1,True,False,False,"Provides general background on EOS incidence and risk factors, not specific to this low‑risk term infant."
+cp_case_007,AAP,sparse,2,AAP_pg2_abstract_chunk2,1,True,False,False,"Describes epidemiology and risk‑assessment framework for ≥35‑week infants, but offers no direct action for this case."
+cp_case_007,AAP,sparse,3,AAP_pg2_abstract_chunk3,1,True,False,False,Highlights challenges in identifying high‑risk infants; serves as background rather than actionable guidance.
+cp_case_007,AAP,sparse,4,AAP_pg3_late-preterm-infants_chunk1,1,True,True,False,"Describes general approaches for infants ≥35 weeks, providing background but no specific action for this well‑appearing term infant."
+cp_case_007,AAP,sparse,5,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Explains multivariate risk calculator using birth data (gestational age, temperature, ROM, etc.) relevant to estimating this infant's EOS risk."
+cp_case_007,AAP,sparse,6,AAP_pg3_multivariate-risk-assess_chunk2,2,True,True,True,"Specifies risk thresholds (≥1/1000) and recommends blood culture/observation or antibiotics, directly guiding management if risk were calculated."
+cp_case_007,AAP,sparse,7,AAP_pg3_multivariate-risk-assess_chunk3,1,True,True,False,"Reports validation outcomes of the calculator, offering background evidence without direct clinical instruction for this case."
+cp_case_007,AAP,sparse,8,AAP_pg3_multivariate-risk-assess_chunk4,1,True,True,False,"Discusses advantages/concerns of the multivariate approach, serving as contextual information rather than actionable guidance."
+cp_case_007,AAP,sparse,9,AAP_pg4_newborn-clinical-conditi_chunk2,2,True,True,True,"Emphasizes clinical observation for well‑appearing term infants, matching low‑risk scenario."
+cp_case_007,AAP,sparse,10,AAP_pg6_summary-points_chunk1,2,True,True,True,"Summarizes risk‑stratification options, including observation for well‑appearing term infants."
+cp_case_007,AAP,dense,1,AAP_pg2_abstract_chunk1,1,True,False,False,"Provides general background on EOS incidence and risk factors, not specific to this low‑risk term infant."
+cp_case_007,AAP,dense,2,AAP_pg2_abstract_chunk2,1,True,False,False,"Describes epidemiology and risk‑assessment framework for ≥35‑week infants, but offers no direct action for this case."
+cp_case_007,AAP,dense,3,AAP_pg2_abstract_chunk3,1,True,False,False,Highlights challenges in identifying high‑risk infants; serves as background rather than actionable guidance.
+cp_case_007,AAP,dense,4,AAP_pg3_late-preterm-infants_chunk1,1,True,True,False,"Describes general approaches for infants ≥35 weeks, providing background but no specific action for this well‑appearing term infant."
+cp_case_007,AAP,dense,5,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Explains multivariate risk calculator using birth data (gestational age, temperature, ROM, etc.) relevant to estimating this infant's EOS risk."
+cp_case_007,AAP,dense,6,AAP_pg3_multivariate-risk-assess_chunk2,2,True,True,True,"Specifies risk thresholds (≥1/1000) and recommends blood culture/observation or antibiotics, directly guiding management if risk were calculated."
+cp_case_007,AAP,dense,7,AAP_pg3_multivariate-risk-assess_chunk3,1,True,True,False,"Reports validation outcomes of the calculator, offering background evidence without direct clinical instruction for this case."
+cp_case_007,AAP,dense,8,AAP_pg3_multivariate-risk-assess_chunk4,1,True,True,False,"Discusses advantages/concerns of the multivariate approach, serving as contextual information rather than actionable guidance."
+cp_case_007,AAP,dense,9,AAP_pg4_newborn-clinical-conditi_chunk2,2,True,True,True,"Emphasizes clinical observation for well‑appearing term infants, matching low‑risk scenario."
+cp_case_007,AAP,dense,10,AAP_pg6_summary-points_chunk1,2,True,True,True,"Summarizes risk‑stratification options, including observation for well‑appearing term infants."
+cp_case_007,AAP,vector,1,AAP_pg2_abstract_chunk1,1,True,False,False,"Provides general background on EOS incidence and risk factors, not specific to this low‑risk term infant."
+cp_case_007,AAP,vector,2,AAP_pg2_abstract_chunk2,1,True,False,False,"Describes epidemiology and risk‑assessment framework for ≥35‑week infants, but offers no direct action for this case."
+cp_case_007,AAP,vector,3,AAP_pg2_abstract_chunk3,1,True,False,False,Highlights challenges in identifying high‑risk infants; serves as background rather than actionable guidance.
+cp_case_007,AAP,vector,4,AAP_pg3_late-preterm-infants_chunk1,1,True,True,False,"Describes general approaches for infants ≥35 weeks, providing background but no specific action for this well‑appearing term infant."
+cp_case_007,AAP,vector,5,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Explains multivariate risk calculator using birth data (gestational age, temperature, ROM, etc.) relevant to estimating this infant's EOS risk."
+cp_case_007,AAP,vector,6,AAP_pg3_multivariate-risk-assess_chunk2,2,True,True,True,"Specifies risk thresholds (≥1/1000) and recommends blood culture/observation or antibiotics, directly guiding management if risk were calculated."
+cp_case_007,AAP,vector,7,AAP_pg3_multivariate-risk-assess_chunk3,1,True,True,False,"Reports validation outcomes of the calculator, offering background evidence without direct clinical instruction for this case."
+cp_case_007,AAP,vector,8,AAP_pg3_multivariate-risk-assess_chunk4,1,True,True,False,"Discusses advantages/concerns of the multivariate approach, serving as contextual information rather than actionable guidance."
+cp_case_007,AAP,vector,9,AAP_pg4_newborn-clinical-conditi_chunk2,2,True,True,True,"Emphasizes clinical observation for well‑appearing term infants, matching low‑risk scenario."
+cp_case_007,AAP,vector,10,AAP_pg6_summary-points_chunk1,2,True,True,True,"Summarizes risk‑stratification options, including observation for well‑appearing term infants."
+cp_case_007,AAP,graph,1,AAP_pg2_risk-factors-for-eos_chunk1,1,True,False,False,"Lists risk factors for EOS; case has none, so it is marginal background information."
+cp_case_007,AAP,graph,2,AAP_pg3_categorical-risk-factor-_chunk1,3,True,True,True,"Specifies observation for ≥48 h for well‑appearing infants (category 4), directly matching this low‑risk term newborn."
+cp_case_007,AAP,graph,3,AAP_pg3_categorical-risk-factor-_chunk2,1,True,False,False,Discusses limitations of categorical risk algorithms; does not provide direct management steps for this infant.
+cp_case_007,AAP,graph,4,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Explains multivariate risk calculator using birth data (gestational age, temperature, ROM, etc.) relevant to estimating this infant's EOS risk."
+cp_case_007,AAP,graph,5,AAP_pg3_multivariate-risk-assess_chunk2,2,True,True,True,"Specifies risk thresholds (≥1/1000) and recommends blood culture/observation or antibiotics, directly guiding management if risk were calculated."
+cp_case_007,AAP,graph,6,AAP_pg4_newborn-clinical-conditi_chunk1,2,True,True,True,"Recommends observation for well‑appearing term infants, matching this infant's normal clinical condition and low EOS risk."
+cp_case_007,AAP,graph,7,AAP_pg5_white-blood-cell-count_chunk2,1,True,False,False,"Describes poor performance of WBC/I‑T for EOS, offering no direct action for this case."
+cp_case_007,AAP,graph,8,AAP_pg5_white-blood-cell-count_chunk3,1,True,False,False,"Discusses ANC/I‑T ratios, not pertinent to management of a low‑risk newborn."
+cp_case_007,AAP,graph,9,AAP_pg6_treatment-of-eos_chunk2,1,True,False,False,"Describes empirical EOS antibiotics; case is low‑risk, well‑appearing infant, so treatment not indicated."
+cp_case_007,AAP,graph,10,AAP_pg6_treatment-of-eos_chunk5,2,True,True,True,"Recommends stopping antibiotics in well‑appearing term infants with sterile cultures, supporting observation without therapy."
+cp_case_007,AAP,hybrid,1,AAP_pg3_categorical-risk-factor-_chunk1,3,True,True,True,"Specifies observation for ≥48 h for well‑appearing infants (category 4), directly matching this low‑risk term newborn."
+cp_case_007,AAP,hybrid,2,AAP_pg3_categorical-risk-factor-_chunk2,1,True,False,False,Discusses limitations of categorical risk algorithms; does not provide direct management steps for this infant.
+cp_case_007,AAP,hybrid,3,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Explains multivariate risk calculator using birth data (gestational age, temperature, ROM, etc.) relevant to estimating this infant's EOS risk."
+cp_case_007,AAP,hybrid,4,AAP_pg3_multivariate-risk-assess_chunk2,2,True,True,True,"Specifies risk thresholds (≥1/1000) and recommends blood culture/observation or antibiotics, directly guiding management if risk were calculated."
+cp_case_007,AAP,hybrid,5,AAP_pg4_newborn-clinical-conditi_chunk1,2,True,True,True,"Recommends observation for well‑appearing term infants, matching this infant's normal clinical condition and low EOS risk."
+cp_case_007,AAP,hybrid,6,AAP_pg5_white-blood-cell-count_chunk1,1,True,False,False,Notes declining utility of WBC counts but does not guide management for this well‑baby.
+cp_case_007,AAP,hybrid,7,AAP_pg5_white-blood-cell-count_chunk2,1,True,False,False,"Describes poor performance of WBC/I‑T for EOS, offering no direct action for this case."
+cp_case_007,AAP,hybrid,8,AAP_pg5_white-blood-cell-count_chunk3,1,True,False,False,"Discusses ANC/I‑T ratios, not pertinent to management of a low‑risk newborn."
+cp_case_007,AAP,hybrid,9,AAP_pg6_summary-points_chunk1,2,True,True,True,"Summarizes risk‑stratification options, including observation for well‑appearing term infants."
+cp_case_007,AAP,hybrid,10,AAP_pg6_treatment-of-eos_chunk1,0,True,False,False,"Provides antibiotic treatment details for EOS, which is not indicated here."
+cp_case_009,NICE,sparse,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists ROM >18 h as a red‑flag risk factor, directly matching the case's prolonged rupture."
+cp_case_009,NICE,sparse,2,NICE_pg60_how-the-recommendations-_chunk1,1,True,False,False,"Describes intrapartum antibiotic extensions and delivery timing, unrelated to neonatal drug selection."
+cp_case_009,NICE,sparse,3,NICE_pg61_how-the-recommendation-m_chunk1,1,True,False,False,"Focuses on immediate delivery decisions, not on neonatal antibiotic regimen."
+cp_case_009,NICE,sparse,4,NICE_pg61_why-the-committee-made-t_chunk1,1,True,False,False,"Provides evidence for delivery timing, not guidance on alternative antibiotics."
+cp_case_009,NICE,sparse,5,NICE_pg64_why-the-committee-made-t_chunk1,1,True,False,False,"Updates risk‑factor timing for ROM, but does not address antibiotic selection."
+cp_case_009,NICE,sparse,6,NICE_pg64_why-the-committee-made-t_chunk2,1,True,False,False,"Explains risk‑factor revisions, no direct relevance to drug choice for penicillin allergy."
+cp_case_009,NICE,sparse,7,NICE_pg67_how-the-recommendations-_chunk1,1,True,True,False,"Discusses wording change for ROM risk factor; background only, no direct treatment guidance."
+cp_case_009,NICE,sparse,8,NICE_pg74_why-the-committee-made-t_rec1_chunk1,2,True,True,True,"Notes CRP should not alone dictate antibiotics, relevant to elevated CRP in this case."
+cp_case_009,NICE,sparse,9,NICE_pg74_why-the-committee-made-t_rec1_chunk2,1,True,True,False,"Mentions need for expert advice; background info, not specific to drug choice."
+cp_case_009,NICE,sparse,10,NICE_pg90_update-information_chunk1,2,True,True,True,"Notes updated ROM risk factor (>24h) and antibiotic switching guidance, relevant to this preterm ROM case."
+cp_case_009,NICE,dense,1,NICE_pg10_chorioamnionitis_rec1_chunk1,1,True,False,False,"Provides background on why antibiotics are offered during labour, not specific to neonatal treatment."
+cp_case_009,NICE,dense,2,NICE_pg10_neonatal-infection_rec1_chunk1,0,True,False,False,"Recommends against rifampicin‑miconazole catheters, unrelated to neonatal infection or antibiotic choice."
+cp_case_009,NICE,dense,3,NICE_pg10_onset-neonatal-infection_rec1_chunk1,1,True,False,False,Discusses immediate birth for prolonged ROM with GBS; case lacks GBS and focuses on postnatal care.
+cp_case_009,NICE,dense,4,NICE_pg14_including-red-flags_chunk3,0,True,False,False,"Guidance applies only to babies without risk factors, whereas the case has risk factors."
+cp_case_009,NICE,dense,5,NICE_pg37_amended-2021_chunk2,1,True,False,False,Discusses GBS meningitis regimen; does not address penicillin‑allergic empiric therapy.
+cp_case_009,NICE,dense,6,NICE_pg60_how-the-recommendations-_chunk1,1,True,False,False,"Describes intrapartum antibiotic extensions and delivery timing, unrelated to neonatal drug selection."
+cp_case_009,NICE,dense,7,NICE_pg64_why-the-committee-made-t_chunk1,1,True,False,False,"Updates risk‑factor timing for ROM, but does not address antibiotic selection."
+cp_case_009,NICE,dense,8,NICE_pg64_why-the-committee-made-t_chunk2,1,True,False,False,"Explains risk‑factor revisions, no direct relevance to drug choice for penicillin allergy."
+cp_case_009,NICE,dense,9,NICE_pg67_how-the-recommendations-_chunk1,1,True,True,False,"Discusses wording change for ROM risk factor; background only, no direct treatment guidance."
+cp_case_009,NICE,dense,10,NICE_pg74_why-the-committee-made-t_rec1_chunk1,2,True,True,True,"Notes CRP should not alone dictate antibiotics, relevant to elevated CRP in this case."
+cp_case_009,NICE,vector,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists ROM >18 h as a red‑flag risk factor, directly matching the case's prolonged rupture."
+cp_case_009,NICE,vector,2,NICE_pg60_how-the-recommendations-_chunk1,1,True,False,False,"Describes intrapartum antibiotic extensions and delivery timing, unrelated to neonatal drug selection."
+cp_case_009,NICE,vector,3,NICE_pg61_how-the-recommendation-m_chunk1,1,True,False,False,"Focuses on immediate delivery decisions, not on neonatal antibiotic regimen."
+cp_case_009,NICE,vector,4,NICE_pg61_why-the-committee-made-t_chunk1,1,True,False,False,"Provides evidence for delivery timing, not guidance on alternative antibiotics."
+cp_case_009,NICE,vector,5,NICE_pg64_why-the-committee-made-t_chunk1,1,True,False,False,"Updates risk‑factor timing for ROM, but does not address antibiotic selection."
+cp_case_009,NICE,vector,6,NICE_pg64_why-the-committee-made-t_chunk2,1,True,False,False,"Explains risk‑factor revisions, no direct relevance to drug choice for penicillin allergy."
+cp_case_009,NICE,vector,7,NICE_pg67_how-the-recommendations-_chunk1,1,True,True,False,"Discusses wording change for ROM risk factor; background only, no direct treatment guidance."
+cp_case_009,NICE,vector,8,NICE_pg74_why-the-committee-made-t_rec1_chunk1,2,True,True,True,"Notes CRP should not alone dictate antibiotics, relevant to elevated CRP in this case."
+cp_case_009,NICE,vector,9,NICE_pg74_why-the-committee-made-t_rec1_chunk2,1,True,True,False,"Mentions need for expert advice; background info, not specific to drug choice."
+cp_case_009,NICE,vector,10,NICE_pg90_update-information_chunk1,2,True,True,True,"Notes updated ROM risk factor (>24h) and antibiotic switching guidance, relevant to this preterm ROM case."
+cp_case_009,NICE,graph,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists ROM >18 h as a red‑flag risk factor, directly matching the case's prolonged rupture."
+cp_case_009,NICE,graph,2,NICE_pg27_for-early-onset-or-late-_rec1_chunk1,2,True,True,True,"Recommends CRP measurement 18‑24 h after starting antibiotics and lumbar puncture criteria, relevant to management."
+cp_case_009,NICE,graph,3,NICE_pg2_carers_chunk4,1,True,True,False,Describes communication with parents about antibiotic decisions; not direct treatment guidance.
+cp_case_009,NICE,graph,4,NICE_pg31_2012-amended-2026_chunk2,1,True,False,False,Suggests oral amoxicillin switch; not applicable due to penicillin allergy.
+cp_case_009,NICE,graph,5,NICE_pg34_2021_rec1_chunk1,2,True,True,True,"Provides 7‑day duration guidance for positive cultures and considerations for extension, applicable to treatment."
+cp_case_009,NICE,graph,6,NICE_pg38_management-2012-amended-_chunk2,1,True,False,False,"Discusses fluid management in meningitis, not antibiotic choice for penicillin‑allergic neonate."
+cp_case_009,NICE,graph,7,NICE_pg64_why-the-committee-made-t_chunk1,1,True,False,False,"Updates risk‑factor timing for ROM, but does not address antibiotic selection."
+cp_case_009,NICE,graph,8,NICE_pg64_why-the-committee-made-t_chunk3,2,True,True,True,"Describes retained red‑flag framework for antibiotic decisions, matching the case's risk factors."
+cp_case_009,NICE,graph,9,NICE_pg8_chorioamnionitis_chunk1,0,True,False,False,"Specifies no penicillin allergy; case has allergy, so recommendation not applicable."
+cp_case_009,NICE,graph,10,NICE_pg8_prevent-early-onset-neon_chunk1,0,True,False,False,"Covers intrapartum antibiotics, not neonatal treatment after birth."
+cp_case_009,NICE,hybrid,1,NICE_pg10_neonatal-infection_rec1_chunk1,0,True,False,False,"Recommends against rifampicin‑miconazole catheters, unrelated to neonatal infection or antibiotic choice."
+cp_case_009,NICE,hybrid,2,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists ROM >18 h as a red‑flag risk factor, directly matching the case's prolonged rupture."
+cp_case_009,NICE,hybrid,3,NICE_pg14_including-red-flags_chunk3,0,True,False,False,"Guidance applies only to babies without risk factors, whereas the case has risk factors."
+cp_case_009,NICE,hybrid,4,NICE_pg27_for-early-onset-or-late-_rec1_chunk1,2,True,True,True,"Recommends CRP measurement 18‑24 h after starting antibiotics and lumbar puncture criteria, relevant to management."
+cp_case_009,NICE,hybrid,5,NICE_pg30_2012_rec1_chunk1,2,True,True,True,"Recommends 7‑day IV antibiotic course for suspected early‑onset sepsis, matching the case's need for treatment."
+cp_case_009,NICE,hybrid,6,NICE_pg30_2012_rec1_chunk2,2,True,True,True,"Guides stopping antibiotics at 36 h if culture negative and clinical suspicion low, relevant to this infant."
+cp_case_009,NICE,hybrid,7,NICE_pg34_2021_rec1_chunk1,2,True,True,True,"Provides 7‑day duration guidance for positive cultures and considerations for extension, applicable to treatment."
+cp_case_009,NICE,hybrid,8,NICE_pg64_why-the-committee-made-t_chunk1,1,True,False,False,"Updates risk‑factor timing for ROM, but does not address antibiotic selection."
+cp_case_009,NICE,hybrid,9,NICE_pg8_chorioamnionitis_chunk1,0,True,False,False,"Specifies no penicillin allergy; case has allergy, so recommendation not applicable."
+cp_case_009,NICE,hybrid,10,NICE_pg9_chorioamnionitis_chunk1,2,True,True,True,"Provides alternative antibiotics for non‑severe penicillin allergy, directly informing drug choice in this case."
+cp_case_011,AAP,sparse,1,AAP_pg2_abstract_chunk1,1,True,False,False,Describes overall EOS incidence and risk factor importance; no direct guidance for this infant.
+cp_case_011,AAP,sparse,2,AAP_pg2_abstract_chunk2,1,True,False,False,"Provides background on EOS epidemiology and risk assessment framework, not specific to case."
+cp_case_011,AAP,sparse,3,AAP_pg2_abstract_chunk3,1,True,False,False,General discussion of EOS risk assessment tasks; lacks actionable detail for this scenario.
+cp_case_011,AAP,sparse,4,AAP_pg2_risk-factors-for-eos_chunk1,2,True,True,True,"Lists ROM duration as a validated EOS risk factor, directly matching the infant’s 20‑hour ROM."
+cp_case_011,AAP,sparse,5,AAP_pg3_categorical-risk-factor-_chunk1,1,True,False,False,"Describes categorical algorithm requiring GBS colonization; patient is GBS‑negative, so not applicable."
+cp_case_011,AAP,sparse,6,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Explains multivariate risk calculator using ROM, gestational age, CRP, etc., applicable to this infant."
+cp_case_011,AAP,sparse,7,AAP_pg3_multivariate-risk-assess_chunk2,3,True,True,True,Risk calculator recommends antibiotics for EOS risk ≥3/1000; case risk is 3/1000.
+cp_case_011,AAP,sparse,8,AAP_pg4_newborn-clinical-conditi_chunk2,2,True,True,True,"Supports reliance on clinical signs alone for well‑appearing infants, applicable to this case."
+cp_case_011,AAP,sparse,9,AAP_pg5_white-blood-cell-count_chunk2,1,True,True,False,"Notes limited utility of WBC count for EOS; case WBC is normal, but passage offers marginal relevance."
+cp_case_011,AAP,sparse,10,AAP_pg6_summary-points_chunk1,1,True,True,False,"Provides general risk‑stratification summary, background but not direct management guidance."
+cp_case_011,AAP,dense,1,AAP_pg2_abstract_chunk1,1,True,False,False,Describes overall EOS incidence and risk factor importance; no direct guidance for this infant.
+cp_case_011,AAP,dense,2,AAP_pg2_abstract_chunk2,1,True,False,False,"Provides background on EOS epidemiology and risk assessment framework, not specific to case."
+cp_case_011,AAP,dense,3,AAP_pg2_abstract_chunk3,1,True,False,False,General discussion of EOS risk assessment tasks; lacks actionable detail for this scenario.
+cp_case_011,AAP,dense,4,AAP_pg2_risk-factors-for-eos_chunk1,2,True,True,True,"Lists ROM duration as a validated EOS risk factor, directly matching the infant’s 20‑hour ROM."
+cp_case_011,AAP,dense,5,AAP_pg3_categorical-risk-factor-_chunk1,1,True,False,False,"Describes categorical algorithm requiring GBS colonization; patient is GBS‑negative, so not applicable."
+cp_case_011,AAP,dense,6,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Explains multivariate risk calculator using ROM, gestational age, CRP, etc., applicable to this infant."
+cp_case_011,AAP,dense,7,AAP_pg3_multivariate-risk-assess_chunk2,3,True,True,True,Risk calculator recommends antibiotics for EOS risk ≥3/1000; case risk is 3/1000.
+cp_case_011,AAP,dense,8,AAP_pg4_newborn-clinical-conditi_chunk2,2,True,True,True,"Supports reliance on clinical signs alone for well‑appearing infants, applicable to this case."
+cp_case_011,AAP,dense,9,AAP_pg5_white-blood-cell-count_chunk2,1,True,True,False,"Notes limited utility of WBC count for EOS; case WBC is normal, but passage offers marginal relevance."
+cp_case_011,AAP,dense,10,AAP_pg6_summary-points_chunk1,1,True,True,False,"Provides general risk‑stratification summary, background but not direct management guidance."
+cp_case_011,AAP,vector,1,AAP_pg2_abstract_chunk1,1,True,False,False,Describes overall EOS incidence and risk factor importance; no direct guidance for this infant.
+cp_case_011,AAP,vector,2,AAP_pg2_abstract_chunk2,1,True,False,False,"Provides background on EOS epidemiology and risk assessment framework, not specific to case."
+cp_case_011,AAP,vector,3,AAP_pg2_abstract_chunk3,1,True,False,False,General discussion of EOS risk assessment tasks; lacks actionable detail for this scenario.
+cp_case_011,AAP,vector,4,AAP_pg2_risk-factors-for-eos_chunk1,2,True,True,True,"Lists ROM duration as a validated EOS risk factor, directly matching the infant’s 20‑hour ROM."
+cp_case_011,AAP,vector,5,AAP_pg3_categorical-risk-factor-_chunk1,1,True,False,False,"Describes categorical algorithm requiring GBS colonization; patient is GBS‑negative, so not applicable."
+cp_case_011,AAP,vector,6,AAP_pg3_multivariate-risk-assess_chunk2,3,True,True,True,Risk calculator recommends antibiotics for EOS risk ≥3/1000; case risk is 3/1000.
+cp_case_011,AAP,vector,7,AAP_pg4_newborn-clinical-conditi_chunk2,2,True,True,True,"Supports reliance on clinical signs alone for well‑appearing infants, applicable to this case."
+cp_case_011,AAP,vector,8,AAP_pg5_white-blood-cell-count_chunk2,1,True,True,False,"Notes limited utility of WBC count for EOS; case WBC is normal, but passage offers marginal relevance."
+cp_case_011,AAP,vector,9,AAP_pg6_other-inflammatory-marke_chunk1,2,True,True,True,Indicates single CRP values are not sufficient for EOS decisions; case has elevated CRP.
+cp_case_011,AAP,vector,10,AAP_pg6_summary-points_chunk1,1,True,True,False,"Provides general risk‑stratification summary, background but not direct management guidance."
+cp_case_011,AAP,graph,1,AAP_pg3_categorical-risk-factor-_chunk1,1,True,False,False,"Describes categorical algorithm requiring GBS colonization; patient is GBS‑negative, so not applicable."
+cp_case_011,AAP,graph,2,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Explains multivariate risk calculator using ROM, gestational age, CRP, etc., applicable to this infant."
+cp_case_011,AAP,graph,3,AAP_pg3_multivariate-risk-assess_chunk2,3,True,True,True,Risk calculator recommends antibiotics for EOS risk ≥3/1000; case risk is 3/1000.
+cp_case_011,AAP,graph,4,AAP_pg4_newborn-clinical-conditi_chunk1,2,True,True,True,"Advocates clinical observation for well‑appearing term/late‑preterm infants, matching this infant's status."
+cp_case_011,AAP,graph,5,AAP_pg5_white-blood-cell-count_chunk2,1,True,True,False,"Notes limited utility of WBC count for EOS; case WBC is normal, but passage offers marginal relevance."
+cp_case_011,AAP,graph,6,AAP_pg5_white-blood-cell-count_chunk3,1,True,True,False,"States WBC and platelet counts are not associated with EOS, providing marginal background."
+cp_case_011,AAP,graph,7,AAP_pg6_other-inflammatory-marke_chunk1,2,True,True,True,Indicates single CRP values are not sufficient for EOS decisions; case has elevated CRP.
+cp_case_011,AAP,graph,8,AAP_pg6_other-inflammatory-marke_chunk2,2,True,True,True,"States CRP normality should not alone dictate antibiotics, relevant to elevated CRP in this case."
+cp_case_011,AAP,graph,9,AAP_pg6_treatment-of-eos_chunk2,3,True,True,True,Recommends ampicillin (benzylpenicillin) plus gentamicin as first‑choice empirical EOS therapy.
+cp_case_011,AAP,graph,10,AAP_pg6_treatment-of-eos_chunk5,2,True,True,True,"Advises stopping antibiotics at 36‑48 h if cultures sterile, guiding duration of proposed therapy."
+cp_case_011,AAP,hybrid,1,AAP_pg3_categorical-risk-factor-_chunk1,1,True,False,False,"Describes categorical algorithm requiring GBS colonization; patient is GBS‑negative, so not applicable."
+cp_case_011,AAP,hybrid,2,AAP_pg3_multivariate-risk-assess_chunk1,2,True,True,True,"Explains multivariate risk calculator using ROM, gestational age, CRP, etc., applicable to this infant."
+cp_case_011,AAP,hybrid,3,AAP_pg3_multivariate-risk-assess_chunk2,3,True,True,True,Risk calculator recommends antibiotics for EOS risk ≥3/1000; case risk is 3/1000.
+cp_case_011,AAP,hybrid,4,AAP_pg4_newborn-clinical-conditi_chunk1,2,True,True,True,"Advocates clinical observation for well‑appearing term/late‑preterm infants, matching this infant's status."
+cp_case_011,AAP,hybrid,5,AAP_pg5_white-blood-cell-count_chunk2,1,True,True,False,"Notes limited utility of WBC count for EOS; case WBC is normal, but passage offers marginal relevance."
+cp_case_011,AAP,hybrid,6,AAP_pg5_white-blood-cell-count_chunk3,1,True,True,False,"States WBC and platelet counts are not associated with EOS, providing marginal background."
+cp_case_011,AAP,hybrid,7,AAP_pg6_other-inflammatory-marke_chunk1,2,True,True,True,Indicates single CRP values are not sufficient for EOS decisions; case has elevated CRP.
+cp_case_011,AAP,hybrid,8,AAP_pg6_other-inflammatory-marke_chunk2,2,True,True,True,"States CRP normality should not alone dictate antibiotics, relevant to elevated CRP in this case."
+cp_case_011,AAP,hybrid,9,AAP_pg6_summary-points_chunk1,1,True,True,False,"Provides general risk‑stratification summary, background but not direct management guidance."
+cp_case_011,AAP,hybrid,10,AAP_pg6_treatment-of-eos_chunk2,3,True,True,True,Recommends ampicillin (benzylpenicillin) plus gentamicin as first‑choice empirical EOS therapy.
+cp_case_014,NICE,sparse,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists pre‑term birth, ROM >18 h, GBS colonisation – all present risk factors in this case."
+cp_case_014,NICE,sparse,2,NICE_pg23_bacterial-meningitis_chunk1,1,True,False,False,Details CSF work‑up for meningitis; no meningitis signs in this infant.
+cp_case_014,NICE,sparse,3,NICE_pg30_2012_chunk1,3,True,True,True,"Specifies benzylpenicillin plus gentamicin regimen and dosing, directly matching proposed drugs for this newborn."
+cp_case_014,NICE,sparse,4,NICE_pg30_2012_rec1_chunk1,3,True,True,True,"Recommends 7‑day IV antibiotic course for suspected sepsis, directly applicable to current treatment plan."
+cp_case_014,NICE,sparse,5,NICE_pg30_2012_rec1_chunk2,3,True,True,True,"Guides stopping antibiotics at 36 h if culture negative and clinical/CRP reassuring, relevant to improving risk trend."
+cp_case_014,NICE,sparse,6,NICE_pg59_why-the-committee-made-t_chunk1,2,True,True,True,"Explains why all GBS‑positive mothers should be treated, supporting antibiotic use in this infant."
+cp_case_014,NICE,sparse,7,NICE_pg61_how-the-recommendation-m_chunk1,1,True,False,False,Discusses impact of immediate delivery; not directly related to neonatal antibiotic management.
+cp_case_014,NICE,sparse,8,NICE_pg64_why-the-committee-made-t_chunk1,1,True,True,False,"Notes >24h ROM increases EOS risk, matching case ROM 26h."
+cp_case_014,NICE,sparse,9,NICE_pg64_why-the-committee-made-t_chunk4,1,True,True,False,"Explains removal of maternal antibiotics as a risk factor, contextual for case."
+cp_case_014,NICE,sparse,10,NICE_pg64_why-the-committee-made-t_chunk5,1,True,True,False,"Updates intrapartum fever definition, pertinent to maternal fever in case."
+cp_case_014,NICE,dense,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists pre‑term birth, ROM >18 h, GBS colonisation – all present risk factors in this case."
+cp_case_014,NICE,dense,2,NICE_pg30_2012_chunk1,3,True,True,True,"Specifies benzylpenicillin plus gentamicin regimen and dosing, directly matching proposed drugs for this newborn."
+cp_case_014,NICE,dense,3,NICE_pg30_2012_rec1_chunk1,3,True,True,True,"Recommends 7‑day IV antibiotic course for suspected sepsis, directly applicable to current treatment plan."
+cp_case_014,NICE,dense,4,NICE_pg30_2012_rec1_chunk2,3,True,True,True,"Guides stopping antibiotics at 36 h if culture negative and clinical/CRP reassuring, relevant to improving risk trend."
+cp_case_014,NICE,dense,5,NICE_pg37_amended-2021_chunk2,1,True,False,False,"Describes GBS meningitis regimen; case has no meningitis, only early‑onset infection."
+cp_case_014,NICE,dense,6,NICE_pg44_2012_rec1_chunk1,1,True,False,False,Mentions peak gentamicin measurement for babies with oedema; not present in this case.
+cp_case_014,NICE,dense,7,NICE_pg44_receiving-gentamicin_chunk1,3,True,True,True,Provides actionable guidance on measuring trough gentamicin levels for babies receiving gentamicin.
+cp_case_014,NICE,dense,8,NICE_pg44_receiving-gentamicin_chunk2,3,True,True,True,"Direct instructions to adjust gentamicin dosing based on trough concentrations, relevant to proposed regimen."
+cp_case_014,NICE,dense,9,NICE_pg64_why-the-committee-made-t_chunk1,1,True,True,False,"Notes >24h ROM increases EOS risk, matching case ROM 26h."
+cp_case_014,NICE,dense,10,NICE_pg64_why-the-committee-made-t_chunk4,1,True,True,False,"Explains removal of maternal antibiotics as a risk factor, contextual for case."
+cp_case_014,NICE,vector,1,NICE_pg30_2012_chunk1,3,True,True,True,"Specifies benzylpenicillin plus gentamicin regimen and dosing, directly matching proposed drugs for this newborn."
+cp_case_014,NICE,vector,2,NICE_pg30_2012_rec1_chunk1,3,True,True,True,"Recommends 7‑day IV antibiotic course for suspected sepsis, directly applicable to current treatment plan."
+cp_case_014,NICE,vector,3,NICE_pg30_2012_rec1_chunk2,3,True,True,True,"Guides stopping antibiotics at 36 h if culture negative and clinical/CRP reassuring, relevant to improving risk trend."
+cp_case_014,NICE,vector,4,NICE_pg37_amended-2021_chunk2,1,True,False,False,"Describes GBS meningitis regimen; case has no meningitis, only early‑onset infection."
+cp_case_014,NICE,vector,5,NICE_pg44_2012_rec1_chunk1,1,True,False,False,Mentions peak gentamicin measurement for babies with oedema; not present in this case.
+cp_case_014,NICE,vector,6,NICE_pg44_receiving-gentamicin_chunk1,3,True,True,True,Provides actionable guidance on measuring trough gentamicin levels for babies receiving gentamicin.
+cp_case_014,NICE,vector,7,NICE_pg44_receiving-gentamicin_chunk2,3,True,True,True,"Direct instructions to adjust gentamicin dosing based on trough concentrations, relevant to proposed regimen."
+cp_case_014,NICE,vector,8,NICE_pg61_how-the-recommendation-m_chunk1,1,True,False,False,Discusses impact of immediate delivery; not directly related to neonatal antibiotic management.
+cp_case_014,NICE,vector,9,NICE_pg64_why-the-committee-made-t_chunk1,1,True,True,False,"Notes >24h ROM increases EOS risk, matching case ROM 26h."
+cp_case_014,NICE,vector,10,NICE_pg64_why-the-committee-made-t_chunk4,1,True,True,False,"Explains removal of maternal antibiotics as a risk factor, contextual for case."
+cp_case_014,NICE,graph,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists pre‑term birth, ROM >18 h, GBS colonisation – all present risk factors in this case."
+cp_case_014,NICE,graph,2,NICE_pg27_for-early-onset-or-late-_rec1_chunk1,2,True,True,True,"Recommends CRP measurement 18‑24 h after antibiotics and lumbar puncture criteria, relevant to monitoring this baby."
+cp_case_014,NICE,graph,3,NICE_pg29_infection_rec1_chunk1,3,True,True,True,Specifies first‑line IV benzylpenicillin + gentamicin dosing for empirical treatment of early‑onset infection.
+cp_case_014,NICE,graph,4,NICE_pg2_carers_chunk6,2,True,True,True,"Advises informing parents of increased infection risk for at‑risk babies, matching this preterm infant’s risk profile."
+cp_case_014,NICE,graph,5,NICE_pg2_carers_chunk7,2,True,True,True,"Reassures breastfeeding and outlines future GBS risk counseling, relevant to mother with GBS colonisation."
+cp_case_014,NICE,graph,6,NICE_pg30_2012_rec1_chunk1,3,True,True,True,"Recommends 7‑day IV antibiotic course for suspected sepsis, directly applicable to current treatment plan."
+cp_case_014,NICE,graph,7,NICE_pg31_2012-amended-2026_chunk2,2,True,False,True,"Switch to oral amoxicillin applies only to babies ≥35 weeks; this infant is 34 weeks, so not applicable."
+cp_case_014,NICE,graph,8,NICE_pg64_why-the-committee-made-t_chunk1,1,True,True,False,"Notes >24h ROM increases EOS risk, matching case ROM 26h."
+cp_case_014,NICE,graph,9,NICE_pg64_why-the-committee-made-t_chunk3,1,True,True,False,"Describes retained red‑flag framework, relevant to assessing this newborn."
+cp_case_014,NICE,graph,10,NICE_pg8_prevent-early-onset-neon_chunk1,2,True,True,True,"Recommends intrapartum antibiotics for GBS‑positive mothers, supporting given treatment."
+cp_case_014,NICE,hybrid,1,NICE_pg12_box-1-risk-factors-for-e_chunk1,2,True,True,True,"Lists pre‑term birth, ROM >18 h, GBS colonisation – all present risk factors in this case."
+cp_case_014,NICE,hybrid,2,NICE_pg15_care-2021_rec1_chunk1,1,True,False,False,"Describes Kaiser calculator for babies ≥34 wks, but case is below EOSCAL scope (<35 wks) so not used."
+cp_case_014,NICE,hybrid,3,NICE_pg15_care-2021_rec1_chunk2,1,True,False,False,Repeats calculator recommendation; not applicable given the <35‑week warning.
+cp_case_014,NICE,hybrid,4,NICE_pg29_infection_rec1_chunk1,3,True,True,True,Specifies first‑line IV benzylpenicillin + gentamicin dosing for empirical treatment of early‑onset infection.
+cp_case_014,NICE,hybrid,5,NICE_pg30_2012_chunk1,3,True,True,True,"Specifies benzylpenicillin plus gentamicin regimen and dosing, directly matching proposed drugs for this newborn."
+cp_case_014,NICE,hybrid,6,NICE_pg30_2012_rec1_chunk1,3,True,True,True,"Recommends 7‑day IV antibiotic course for suspected sepsis, directly applicable to current treatment plan."
+cp_case_014,NICE,hybrid,7,NICE_pg30_2012_rec1_chunk2,3,True,True,True,"Guides stopping antibiotics at 36 h if culture negative and clinical/CRP reassuring, relevant to improving risk trend."
+cp_case_014,NICE,hybrid,8,NICE_pg64_why-the-committee-made-t_chunk1,1,True,True,False,"Notes >24h ROM increases EOS risk, matching case ROM 26h."
+cp_case_014,NICE,hybrid,9,NICE_pg64_why-the-committee-made-t_chunk3,1,True,True,False,"Describes retained red‑flag framework, relevant to assessing this newborn."
+cp_case_014,NICE,hybrid,10,NICE_pg8_prevent-early-onset-neon_chunk1,2,True,True,True,"Recommends intrapartum antibiotics for GBS‑positive mothers, supporting given treatment."
+cp_case_025,WHO,sparse,1,WHO_pg10_background-and-definitio_chunk1,1,True,False,False,"Defines clinical severe infection and mentions oral amoxicillin+gentamicin regimen for non‑referral settings, but patient lacks listed signs."
+cp_case_025,WHO,sparse,2,WHO_pg10_overview_chunk1,1,False,False,False,Poses research question about alternative regimens; provides no direct guidance for this case.
+cp_case_025,WHO,sparse,3,WHO_pg10_population-intervention-_chunk1,1,False,False,False,"Lists PICO elements for severe infection studies, not specific to current patient’s presentation."
+cp_case_025,WHO,sparse,4,WHO_pg15_background-and-definitio_chunk1,0,False,False,False,Describes fast breathing definition and regimen for 0‑6 day infants; case has no fast breathing.
+cp_case_025,WHO,sparse,5,WHO_pg15_recommendation-a-4-updat_rec1_chunk1,0,False,False,False,Recommendation for fast breathing only; not relevant to this preterm infant without fast breathing.
+cp_case_025,WHO,sparse,6,WHO_pg15_remarks_chunk1,0,False,False,False,Remarks on evidence for fast breathing trials; unrelated to current scenario.
+cp_case_025,WHO,sparse,7,WHO_pg15_remarks_chunk2,3,True,True,True,"Specifies oral amoxicillin 50 mg/kg q12h for ≥7 days, matching WHO outpatient regimen for clinical severe infection when referral impossible."
+cp_case_025,WHO,sparse,8,WHO_pg15_remarks_chunk3,3,True,True,True,Reiterates amoxicillin dosing (50 mg/kg q12h ≥7 days) as WHO recommendation for non‑hospital management of unwell infants.
+cp_case_025,WHO,sparse,9,WHO_pg2_background-and-definitio_chunk1,1,True,False,False,"Defines PSBI signs; background only, no treatment recommendation for this case."
+cp_case_025,WHO,sparse,10,WHO_pg31_background-and-definitio_chunk1,1,True,False,False,Describes hospitalized staphylococcal sepsis and cloxacillin+gentamicin regimen; not outpatient.
+cp_case_025,WHO,dense,1,WHO_pg10_background-and-definitio_chunk1,1,True,False,False,"Defines clinical severe infection and mentions oral amoxicillin+gentamicin regimen for non‑referral settings, but patient lacks listed signs."
+cp_case_025,WHO,dense,2,WHO_pg10_overview_chunk1,1,False,False,False,Poses research question about alternative regimens; provides no direct guidance for this case.
+cp_case_025,WHO,dense,3,WHO_pg10_population-intervention-_chunk1,1,False,False,False,"Lists PICO elements for severe infection studies, not specific to current patient’s presentation."
+cp_case_025,WHO,dense,4,WHO_pg15_background-and-definitio_chunk1,0,False,False,False,Describes fast breathing definition and regimen for 0‑6 day infants; case has no fast breathing.
+cp_case_025,WHO,dense,5,WHO_pg15_recommendation-a-4-updat_rec1_chunk1,0,False,False,False,Recommendation for fast breathing only; not relevant to this preterm infant without fast breathing.
+cp_case_025,WHO,dense,6,WHO_pg15_remarks_chunk1,0,False,False,False,Remarks on evidence for fast breathing trials; unrelated to current scenario.
+cp_case_025,WHO,dense,7,WHO_pg15_remarks_chunk2,3,True,True,True,"Specifies oral amoxicillin 50 mg/kg q12h for ≥7 days, matching WHO outpatient regimen for clinical severe infection when referral impossible."
+cp_case_025,WHO,dense,8,WHO_pg15_remarks_chunk3,3,True,True,True,Reiterates amoxicillin dosing (50 mg/kg q12h ≥7 days) as WHO recommendation for non‑hospital management of unwell infants.
+cp_case_025,WHO,dense,9,WHO_pg27_background-and-definitio_chunk1,1,True,False,False,Defines suspected sepsis and recommends ampicillin/penicillin + gentamicin for hospitalized infants; not applicable to outpatient setting.
+cp_case_025,WHO,dense,10,WHO_pg2_background-and-definitio_chunk1,1,True,False,False,"Defines PSBI signs; background only, no treatment recommendation for this case."
+cp_case_025,WHO,vector,1,WHO_pg10_background-and-definitio_chunk1,1,True,False,False,"Defines clinical severe infection and mentions oral amoxicillin+gentamicin regimen for non‑referral settings, but patient lacks listed signs."
+cp_case_025,WHO,vector,2,WHO_pg10_overview_chunk1,1,False,False,False,Poses research question about alternative regimens; provides no direct guidance for this case.
+cp_case_025,WHO,vector,3,WHO_pg10_population-intervention-_chunk1,1,False,False,False,"Lists PICO elements for severe infection studies, not specific to current patient’s presentation."
+cp_case_025,WHO,vector,4,WHO_pg15_background-and-definitio_chunk1,0,False,False,False,Describes fast breathing definition and regimen for 0‑6 day infants; case has no fast breathing.
+cp_case_025,WHO,vector,5,WHO_pg15_recommendation-a-4-updat_rec1_chunk1,0,False,False,False,Recommendation for fast breathing only; not relevant to this preterm infant without fast breathing.
+cp_case_025,WHO,vector,6,WHO_pg15_remarks_chunk1,0,False,False,False,Remarks on evidence for fast breathing trials; unrelated to current scenario.
+cp_case_025,WHO,vector,7,WHO_pg15_remarks_chunk2,3,True,True,True,"Specifies oral amoxicillin 50 mg/kg q12h for ≥7 days, matching WHO outpatient regimen for clinical severe infection when referral impossible."
+cp_case_025,WHO,vector,8,WHO_pg15_remarks_chunk3,3,True,True,True,Reiterates amoxicillin dosing (50 mg/kg q12h ≥7 days) as WHO recommendation for non‑hospital management of unwell infants.
+cp_case_025,WHO,vector,9,WHO_pg27_background-and-definitio_chunk1,1,True,False,False,Defines suspected sepsis and recommends ampicillin/penicillin + gentamicin for hospitalized infants; not applicable to outpatient setting.
+cp_case_025,WHO,vector,10,WHO_pg2_background-and-definitio_chunk1,1,True,False,False,"Defines PSBI signs; background only, no treatment recommendation for this case."
+cp_case_025,WHO,graph,1,WHO_pg10_background-and-definitio_chunk1,1,True,False,False,"Defines clinical severe infection and mentions oral amoxicillin+gentamicin regimen for non‑referral settings, but patient lacks listed signs."
+cp_case_025,WHO,graph,2,WHO_pg15_recommendation-a-4-updat_rec1_chunk1,0,False,False,False,Recommendation for fast breathing only; not relevant to this preterm infant without fast breathing.
+cp_case_025,WHO,graph,3,WHO_pg19_recommendation-a-5-updat_rec1_chunk1,1,True,False,False,Recommends oral amoxicillin for fast breathing only in infants 7‑59 days; case lacks fast‑breathing as sole sign.
+cp_case_025,WHO,graph,4,WHO_pg24_remarks_chunk1,1,True,False,False,Describes evidence review scope and lack of hospital‑based algorithm recommendations; no direct treatment guidance.
+cp_case_025,WHO,graph,5,WHO_pg24_remarks_chunk2,1,True,False,False,"Notes absence of recommendations for hospital algorithms; provides background, not actionable for outpatient care."
+cp_case_025,WHO,graph,6,WHO_pg27_background-and-definitio_chunk1,1,True,False,False,Defines suspected sepsis and recommends ampicillin/penicillin + gentamicin for hospitalized infants; not applicable to outpatient setting.
+cp_case_025,WHO,graph,7,WHO_pg2_background-and-definitio_chunk1,1,True,False,False,"Defines PSBI signs; background only, no treatment recommendation for this case."
+cp_case_025,WHO,graph,8,WHO_pg3_overview_chunk1,1,True,False,False,Discusses diagnostic accuracy of PSBI algorithms; no direct treatment guidance for case.
+cp_case_025,WHO,graph,9,WHO_pg6_recommendation-a-2-updat_rec1_chunk1,1,True,False,False,Recommends ampicillin+gentamicin if referral impossible for critical illness; infant lacks required signs.
+cp_case_025,WHO,graph,10,WHO_pg9_recommendation-a-3a-upda_rec1_chunk1,1,True,False,False,"Provides referral and outpatient regimen for infants with IMCI signs; case lacks such signs, so only background."
+cp_case_025,WHO,hybrid,1,WHO_pg10_background-and-definitio_chunk1,1,True,False,False,"Defines clinical severe infection and mentions oral amoxicillin+gentamicin regimen for non‑referral settings, but patient lacks listed signs."
+cp_case_025,WHO,hybrid,2,WHO_pg15_recommendation-a-4-updat_rec1_chunk1,0,False,False,False,Recommendation for fast breathing only; not relevant to this preterm infant without fast breathing.
+cp_case_025,WHO,hybrid,3,WHO_pg27_background-and-definitio_chunk1,1,True,False,False,Defines suspected sepsis and recommends ampicillin/penicillin + gentamicin for hospitalized infants; not applicable to outpatient setting.
+cp_case_025,WHO,hybrid,4,WHO_pg2_background-and-definitio_chunk1,1,True,False,False,"Defines PSBI signs; background only, no treatment recommendation for this case."
+cp_case_025,WHO,hybrid,5,WHO_pg31_background-and-definitio_chunk1,1,True,False,False,Describes hospitalized staphylococcal sepsis and cloxacillin+gentamicin regimen; not outpatient.
+cp_case_025,WHO,hybrid,6,WHO_pg31_in-young-infants-aged-0-_rec1_chunk1,1,True,False,False,Recommendation for hospitalized staphylococcal sepsis; not relevant to outpatient scenario.
+cp_case_025,WHO,hybrid,7,WHO_pg37_background-and-definitio_chunk1,1,True,False,False,Provides ampicillin+gentamicin for hospitalized pneumonia; outpatient setting not applicable.
+cp_case_025,WHO,hybrid,8,WHO_pg3_overview_chunk1,1,True,False,False,Discusses diagnostic accuracy of PSBI algorithms; no direct treatment guidance for case.
+cp_case_025,WHO,hybrid,9,WHO_pg6_recommendation-a-2-updat_rec1_chunk1,1,True,False,False,Recommends ampicillin+gentamicin if referral impossible for critical illness; infant lacks required signs.
+cp_case_025,WHO,hybrid,10,WHO_pg9_recommendation-a-3a-upda_rec1_chunk1,1,True,False,False,"Provides referral and outpatient regimen for infants with IMCI signs; case lacks such signs, so only background."
+cp_case_026,WHO,sparse,1,WHO_pg10_background-and-definitio_chunk1,2,True,True,True,Defines clinical severe infection and cites WHO simplified regimen (oral amoxicillin + IM gentamicin) for infants without referral.
+cp_case_026,WHO,sparse,2,WHO_pg10_overview_chunk1,1,True,False,False,Poses a research question about alternative regimens; provides no direct recommendation for the current case.
+cp_case_026,WHO,sparse,3,WHO_pg10_population-intervention-_chunk1,1,True,False,False,Lists PICO elements for trials; background information without actionable guidance for this infant.
+cp_case_026,WHO,sparse,4,WHO_pg11_sources-and-characterist_chunk1,1,True,False,False,Describes study characteristics of simplified regimens; informative but not a direct recommendation for treatment.
+cp_case_026,WHO,sparse,5,WHO_pg2_background-and-definitio_chunk1,2,True,True,True,Defines PSBI clinical signs used to identify infants needing treatment; relevant but lacks direct regimen.
+cp_case_026,WHO,sparse,6,WHO_pg31_background-and-definitio_chunk1,0,True,False,False,Describes staphylococcal sepsis and cloxacillin+gentamicin regimen; not relevant to current infant without staphylococcal signs.
+cp_case_026,WHO,sparse,7,WHO_pg31_background-and-definitio_chunk2,0,True,False,False,"Describes cloxacillin+gentamicin IV for suspected staphylococcal sepsis in hospitalized infants, not outpatient ampicillin."
+cp_case_026,WHO,sparse,8,WHO_pg31_in-young-infants-aged-0-_rec1_chunk1,0,True,False,False,Recommends cloxacillin+gentamicin for hospitalized infants with staphylococcal sepsis; not relevant to outpatient ampicillin regimen.
+cp_case_026,WHO,sparse,9,WHO_pg31_remarks_chunk1,0,True,False,False,Provides dosing details for cloxacillin+gentamicin; unrelated to the case's outpatient ampicillin/gentamicin need.
+cp_case_026,WHO,sparse,10,WHO_pg3_overview_chunk1,1,True,False,False,"Discusses diagnostic accuracy of PSBI sign algorithms, not treatment recommendations for the current scenario."
+cp_case_026,WHO,dense,1,WHO_pg10_background-and-definitio_chunk1,2,True,True,True,Defines clinical severe infection and cites WHO simplified regimen (oral amoxicillin + IM gentamicin) for infants without referral.
+cp_case_026,WHO,dense,2,WHO_pg10_overview_chunk1,1,True,False,False,Poses a research question about alternative regimens; provides no direct recommendation for the current case.
+cp_case_026,WHO,dense,3,WHO_pg10_population-intervention-_chunk1,1,True,False,False,Lists PICO elements for trials; background information without actionable guidance for this infant.
+cp_case_026,WHO,dense,4,WHO_pg11_sources-and-characterist_chunk1,1,True,False,False,Describes study characteristics of simplified regimens; informative but not a direct recommendation for treatment.
+cp_case_026,WHO,dense,5,WHO_pg27_background-and-definitio_chunk1,1,True,False,False,Recommends ampicillin/penicillin plus gentamicin for hospitalized infants; not applicable to non‑referral outpatient setting.
+cp_case_026,WHO,dense,6,WHO_pg2_background-and-definitio_chunk1,2,True,True,True,Defines PSBI clinical signs used to identify infants needing treatment; relevant but lacks direct regimen.
+cp_case_026,WHO,dense,7,WHO_pg31_background-and-definitio_chunk1,0,True,False,False,Describes staphylococcal sepsis and cloxacillin+gentamicin regimen; not relevant to current infant without staphylococcal signs.
+cp_case_026,WHO,dense,8,WHO_pg31_background-and-definitio_chunk2,0,True,False,False,"Describes cloxacillin+gentamicin IV for suspected staphylococcal sepsis in hospitalized infants, not outpatient ampicillin."
+cp_case_026,WHO,dense,9,WHO_pg31_in-young-infants-aged-0-_rec1_chunk1,0,True,False,False,Recommends cloxacillin+gentamicin for hospitalized infants with staphylococcal sepsis; not relevant to outpatient ampicillin regimen.
+cp_case_026,WHO,dense,10,WHO_pg31_remarks_chunk1,0,True,False,False,Provides dosing details for cloxacillin+gentamicin; unrelated to the case's outpatient ampicillin/gentamicin need.
+cp_case_026,WHO,vector,1,WHO_pg10_background-and-definitio_chunk1,2,True,True,True,Defines clinical severe infection and cites WHO simplified regimen (oral amoxicillin + IM gentamicin) for infants without referral.
+cp_case_026,WHO,vector,2,WHO_pg10_overview_chunk1,1,True,False,False,Poses a research question about alternative regimens; provides no direct recommendation for the current case.
+cp_case_026,WHO,vector,3,WHO_pg10_population-intervention-_chunk1,1,True,False,False,Lists PICO elements for trials; background information without actionable guidance for this infant.
+cp_case_026,WHO,vector,4,WHO_pg11_sources-and-characterist_chunk1,1,True,False,False,Describes study characteristics of simplified regimens; informative but not a direct recommendation for treatment.
+cp_case_026,WHO,vector,5,WHO_pg24_background-and-definitio_chunk1,1,True,False,False,"Defines hospitalized suspected sepsis signs; background only, not specific to outpatient non‑referral care."
+cp_case_026,WHO,vector,6,WHO_pg2_background-and-definitio_chunk1,2,True,True,True,Defines PSBI clinical signs used to identify infants needing treatment; relevant but lacks direct regimen.
+cp_case_026,WHO,vector,7,WHO_pg31_background-and-definitio_chunk1,0,True,False,False,Describes staphylococcal sepsis and cloxacillin+gentamicin regimen; not relevant to current infant without staphylococcal signs.
+cp_case_026,WHO,vector,8,WHO_pg31_background-and-definitio_chunk2,0,True,False,False,"Describes cloxacillin+gentamicin IV for suspected staphylococcal sepsis in hospitalized infants, not outpatient ampicillin."
+cp_case_026,WHO,vector,9,WHO_pg31_in-young-infants-aged-0-_rec1_chunk1,0,True,False,False,Recommends cloxacillin+gentamicin for hospitalized infants with staphylococcal sepsis; not relevant to outpatient ampicillin regimen.
+cp_case_026,WHO,vector,10,WHO_pg31_remarks_chunk1,0,True,False,False,Provides dosing details for cloxacillin+gentamicin; unrelated to the case's outpatient ampicillin/gentamicin need.
+cp_case_026,WHO,graph,1,WHO_pg10_background-and-definitio_chunk1,2,True,True,True,Defines clinical severe infection and cites WHO simplified regimen (oral amoxicillin + IM gentamicin) for infants without referral.
+cp_case_026,WHO,graph,2,WHO_pg15_recommendation-a-4-updat_rec1_chunk1,0,True,False,False,"Applies only to infants 0‑6 days with fast breathing alone; case involves clinical severe infection, not fast breathing only."
+cp_case_026,WHO,graph,3,WHO_pg19_recommendation-a-5-updat_rec1_chunk1,0,True,False,False,"Targets infants 7‑59 days with fast breathing only; case has clinical severe infection signs, so not applicable."
+cp_case_026,WHO,graph,4,WHO_pg24_remarks_chunk1,1,True,False,False,Remarks on study selection and algorithm feasibility; no direct treatment guidance for this case.
+cp_case_026,WHO,graph,5,WHO_pg24_remarks_chunk2,1,True,False,False,"Similar to P010, discusses lack of recommendation for hospital algorithms; not actionable for outpatient scenario."
+cp_case_026,WHO,graph,6,WHO_pg27_background-and-definitio_chunk1,1,True,False,False,Recommends ampicillin/penicillin plus gentamicin for hospitalized infants; not applicable to non‑referral outpatient setting.
+cp_case_026,WHO,graph,7,WHO_pg2_background-and-definitio_chunk1,2,True,True,True,Defines PSBI clinical signs used to identify infants needing treatment; relevant but lacks direct regimen.
+cp_case_026,WHO,graph,8,WHO_pg3_overview_chunk1,1,True,False,False,"Discusses diagnostic accuracy of PSBI sign algorithms, not treatment recommendations for the current scenario."
+cp_case_026,WHO,graph,9,WHO_pg6_recommendation-a-2-updat_rec1_chunk1,3,True,True,True,"Specifies ampicillin+gentamicin for at least 10 days when referral impossible, matching outpatient no‑referral setting."
+cp_case_026,WHO,graph,10,WHO_pg9_recommendation-a-3a-upda_rec1_chunk1,1,True,False,False,"Recommends amoxicillin+gentamicin for clinical severe infection; patient lacks required clinical signs, so not directly applicable."
+cp_case_026,WHO,hybrid,1,WHO_pg10_background-and-definitio_chunk1,2,True,True,True,Defines clinical severe infection and cites WHO simplified regimen (oral amoxicillin + IM gentamicin) for infants without referral.
+cp_case_026,WHO,hybrid,2,WHO_pg15_recommendation-a-4-updat_rec1_chunk1,0,True,False,False,"Applies only to infants 0‑6 days with fast breathing alone; case involves clinical severe infection, not fast breathing only."
+cp_case_026,WHO,hybrid,3,WHO_pg19_recommendation-a-5-updat_rec1_chunk1,0,True,False,False,"Targets infants 7‑59 days with fast breathing only; case has clinical severe infection signs, so not applicable."
+cp_case_026,WHO,hybrid,4,WHO_pg27_background-and-definitio_chunk1,1,True,False,False,Recommends ampicillin/penicillin plus gentamicin for hospitalized infants; not applicable to non‑referral outpatient setting.
+cp_case_026,WHO,hybrid,5,WHO_pg2_background-and-definitio_chunk1,2,True,True,True,Defines PSBI clinical signs used to identify infants needing treatment; relevant but lacks direct regimen.
+cp_case_026,WHO,hybrid,6,WHO_pg31_background-and-definitio_chunk1,0,True,False,False,Describes staphylococcal sepsis and cloxacillin+gentamicin regimen; not relevant to current infant without staphylococcal signs.
+cp_case_026,WHO,hybrid,7,WHO_pg31_in-young-infants-aged-0-_rec1_chunk1,0,True,False,False,Recommends cloxacillin+gentamicin for hospitalized infants with staphylococcal sepsis; not relevant to outpatient ampicillin regimen.
+cp_case_026,WHO,hybrid,8,WHO_pg3_overview_chunk1,1,True,False,False,"Discusses diagnostic accuracy of PSBI sign algorithms, not treatment recommendations for the current scenario."
+cp_case_026,WHO,hybrid,9,WHO_pg6_recommendation-a-2-updat_rec1_chunk1,3,True,True,True,"Specifies ampicillin+gentamicin for at least 10 days when referral impossible, matching outpatient no‑referral setting."
+cp_case_026,WHO,hybrid,10,WHO_pg9_recommendation-a-3a-upda_rec1_chunk1,1,True,False,False,"Recommends amoxicillin+gentamicin for clinical severe infection; patient lacks required clinical signs, so not directly applicable."

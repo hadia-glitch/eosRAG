@@ -1,0 +1,75 @@
+{
+  "completed": true,
+  "task_sha256": "3a6fa1252bf6ad9fabb2279cc0fcfcf22560b839c38271358779f0e782ff904f",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.9192605999996886,
+  "kind": "plan",
+  "case_id": "cp_case_004",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-d65e4db4-8f1f-44f7-91ec-daaf12402e46",
+    "object": "chat.completion",
+    "created": 1792952420,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"faithfulness\":4,\"citation_correctness\":3,\"citation_completeness\":3,\"unsupported_claims\":[{\"claim_id\":\"L018\",\"reason\":\"Dosage statement provided without an explicit citation linking to source evidence\"}],\"contradictions\":[],\"ungrounded_dose\":false,\"ungrounded_dose_examples\":[],\"rationale\":\"The plan accurately reflects the patient\u2019s critical sepsis presentation and follows WHO recommendations for ampicillin and gentamicin in hospitalized infants. Evidence passages (e.g., S002, S003) support the choice of antibiotics and dosing, but the plan does not explicitly cite these sources for the dosage lines (L018\u2011L020), reducing citation correctness/completeness. No contradictory statements were identified.\"}",
+          "reasoning": "We need produce JSON with scores. Assess faithfulness: plan aligns with case and evidence. Citations: lines L011-L020 etc need citations but mapping unclear. Likely missing citations for dose statements. So citation correctness maybe 3. Completeness 3. Unsupported claims? maybe claim L018 dosage is from S003 which is present. citation mapping not shown. Might be unsupported because no citation listed. We'll list unsupported claim L018 (dose) reason no citation. Contradictions none. Ungrounded_dose false (dose grounded in S003). Provide empty contradictions. Provide unsupported_claims list. Provide rationale."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.253433787,
+      "prompt_tokens": 4221,
+      "prompt_time": 0.189247653,
+      "completion_tokens": 287,
+      "completion_time": 0.594891968,
+      "total_tokens": 4508,
+      "total_time": 0.784139621,
+      "completion_tokens_details": {
+        "reasoning_tokens": 126
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m5t4nhdme6ba5eznh7skfanz",
+      "seed": 1039827510
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "975",
+    "x-ratelimit-remaining-tokens": "3093",
+    "x-ratelimit-reset-requests": "36m0s",
+    "x-ratelimit-reset-tokens": "36.802s"
+  },
+  "result": {
+    "faithfulness": 4,
+    "citation_correctness": 3,
+    "citation_completeness": 3,
+    "unsupported_claims": [
+      {
+        "claim_id": "L018",
+        "reason": "Dosage statement provided without an explicit citation linking to source evidence",
+        "claim_text": "- IV ampicillin 50 mg/kg every 12 hours"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan accurately reflects the patient\u2019s critical sepsis presentation and follows WHO recommendations for ampicillin and gentamicin in hospitalized infants. Evidence passages (e.g., S002, S003) support the choice of antibiotics and dosing, but the plan does not explicitly cite these sources for the dosage lines (L018\u2011L020), reducing citation correctness/completeness. No contradictory statements were identified."
+  }
+}

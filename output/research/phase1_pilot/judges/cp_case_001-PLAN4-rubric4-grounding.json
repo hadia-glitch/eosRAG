@@ -1,0 +1,75 @@
+{
+  "completed": true,
+  "task_sha256": "c447caba85cbfc58fb11ea1a7448086b277d8240f27d8e7954c856338124069f",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.829188599993358,
+  "kind": "plan",
+  "case_id": "cp_case_001",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-6a3b2c57-6b63-4b9f-bb92-1e31865dcc4d",
+    "object": "chat.completion",
+    "created": 1792951706,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 3,\n  \"citation_correctness\": 3,\n  \"citation_completeness\": 3,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L019\",\n      \"reason\": \"The plan states gentamicin is withheld due to possible nephrotoxicity, but none of the supplied NICE passages (S005, S006, S010, S011, S013) mention a contraindication or recommendation to withhold gentamicin on renal risk.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan correctly cites benzylpenicillin dosing (S005) and treatment duration of 7 days (S006). The stop\u2011at\u201136\u2011hour rule and monitoring of gentamicin timing are supported by S011 and S010 respectively. However, the justification for withholding gentamicin is not found in any provided source, making that claim unsupported. Citation mapping between line numbers and chunk IDs is unavailable, so citation correctness and completeness are limited.\"\n}",
+          "reasoning": "We need produce JSON with scores. Assess faithfulness: plan aligns with evidence? Evidence S005 says benzylpenicillin 25 mg/kg q12h and gentamicin 5 mg/kg. Plan includes benzylpenicillin dose correct, but says gentamicin withheld due to nephrotoxicity. Evidence does not discuss contraindication. So claim of withholding is not supported. Also duration 7 days from S006 matches. Stop at 36h criteria from S011 matches. Monitoring times from S010 matches. So some citations missing mapping. Provide unsupported claim L019 (gentamicin withheld) unsupported. Also maybe L020 duration stop criteria partially supported by S011. That's supported. No ungrouned dose except dose given is supported by S005. So ungrouned_dose false.\n\nProvide scores: faithfulness maybe 3 (some correct, some unsupported). citation_correctness maybe 3 (some citations not mapped). citation_completeness maybe 3.\n\nProvide arrays.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.381002102,
+      "prompt_tokens": 2879,
+      "prompt_time": 0.136786698,
+      "completion_tokens": 443,
+      "completion_time": 0.9120873,
+      "total_tokens": 3322,
+      "total_time": 1.048873998,
+      "completion_tokens_details": {
+        "reasoning_tokens": 201
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_86dc843b12",
+    "x_groq": {
+      "id": "req_01m5t3zqmmewp92vz4gkz65cxy",
+      "seed": 500766687
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "993",
+    "x-ratelimit-remaining-tokens": "4347",
+    "x-ratelimit-reset-requests": "10m4.8s",
+    "x-ratelimit-reset-tokens": "27.397s"
+  },
+  "result": {
+    "faithfulness": 3,
+    "citation_correctness": 3,
+    "citation_completeness": 3,
+    "unsupported_claims": [
+      {
+        "claim_id": "L019",
+        "reason": "The plan states gentamicin is withheld due to possible nephrotoxicity, but none of the supplied NICE passages (S005, S006, S010, S011, S013) mention a contraindication or recommendation to withhold gentamicin on renal risk.",
+        "claim_text": "- Gentamicin \u2014 WITHHELD: Possible nephrotoxicity risk with gentamicin (UNSTAGED \u2014 single reading only, no prior assessment to compare against, does not yet meet full KDIGO staging criteria): single urine output reading 0.3 mL/kg/hr (<0.5); single creatinine reading 1.9 mg/dL (>1.5, unstaged)"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan correctly cites benzylpenicillin dosing (S005) and treatment duration of 7 days (S006). The stop\u2011at\u201136\u2011hour rule and monitoring of gentamicin timing are supported by S011 and S010 respectively. However, the justification for withholding gentamicin is not found in any provided source, making that claim unsupported. Citation mapping between line numbers and chunk IDs is unavailable, so citation correctness and completeness are limited."
+  }
+}

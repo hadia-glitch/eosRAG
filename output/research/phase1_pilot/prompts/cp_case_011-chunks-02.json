@@ -1,0 +1,178 @@
+{
+  "key": "cp_case_011-chunks-02",
+  "kind": "chunks",
+  "case_id": "cp_case_011",
+  "prompt": {
+    "task": "Grade each target passage for this case. Grade 0=irrelevant/inapplicable, 1=background or marginal, 2=useful applicable support, 3=direct actionable evidence for this specific scenario. Score by actual text and applicability, never by gold membership. Guideline alignment requires compatible source/scope; safety exclusions may make a passage relevant even when the treatment is inapplicable. Scenario_applicable concerns the actual recommendation/population. Clinically_useful must equal grade>=2 and requires alignment and applicability. Judge each target exactly once. Rationale: 12-25 words, point to actual content/conditions and case facts.",
+    "case": {
+      "case_id": "cp_case_011",
+      "active_guideline": "AAP",
+      "care_setting": "hospital",
+      "contraindication_type": null,
+      "trend_type": null,
+      "ambiguous": false,
+      "risk_result": {
+        "total_score": 5,
+        "combined_score": 5,
+        "layer1_score": 2,
+        "layer2_score": 2,
+        "layer3_score": 0,
+        "category": "INTERMEDIATE",
+        "risk_category": "Intermediate Risk (Amber)",
+        "probability_per_1000": 3.0,
+        "drivers": [
+          {
+            "name": "Prolonged rupture of membranes",
+            "reason": "ROM 20.0h (>=18h)",
+            "points": 2,
+            "layer": 1,
+            "contribution_percent": 50.0
+          },
+          {
+            "name": "Elevated CRP",
+            "reason": "CRP 12.0 mg/L",
+            "points": 2,
+            "layer": 3,
+            "contribution_percent": 50.0
+          }
+        ],
+        "patient": {
+          "gestational_age_weeks": 36.0,
+          "maternal_temperature": 37.9,
+          "rom_hours": 20.0,
+          "gbs_positive": false,
+          "respiratory_distress": "None",
+          "crp_level": 12.0,
+          "blood_culture_positive": false,
+          "urine_output_ml_kg_hr": 2.0,
+          "creatinine_mg_dl": 0.6,
+          "penicillin_allergy": false,
+          "adequate_intrapartum_antibiotics": true,
+          "clinical_chorioamnionitis": false,
+          "delivery_mode": "Vaginal",
+          "oxygen_need": "None",
+          "apgar_5_min": 9,
+          "poor_perfusion": false,
+          "neonatal_temperature": 37.0,
+          "neurological_status": "Normal",
+          "wbc_count": 18.5,
+          "it_ratio": 0.15,
+          "platelet_count": 260.0,
+          "pct_level": 0.3
+        },
+        "warnings": []
+      },
+      "previous_assessments": [],
+      "deltas": null,
+      "proposed_drugs": [
+        "benzylpenicillin",
+        "gentamicin"
+      ],
+      "retrieval_query": "AAP 2023 early-onset sepsis Prolonged rupture of membranes ROM 20.0h (>=18h) Elevated CRP CRP 12.0 mg/L prolonged ROM rupture of membranes preterm prematurity CRP inflammatory markers white blood cell count WBC procalcitonin PCT thrombocytopenia platelet count"
+    },
+    "gold_evidence_aliases": [
+      "P005",
+      "P006",
+      "P008",
+      "P010",
+      "P016",
+      "P017"
+    ],
+    "passages": [
+      {
+        "passage": "P005",
+        "source": "AAP",
+        "section": "Categorical Risk Factor Assessment",
+        "text": "Source: AAP\nSection: Categorical Risk Factor Assessment\n\nA categorical risk factor assessment includes risk factor threshold values to identify infants who are at increased risk for EOS. Algorithms for the management of GBS-specific EOS have been used as a general framework for the prevention of all EOS. Risk factors used in such algorithms included (1) any newborn infant who is ill appearing;\n(2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation;\nor (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following:\nlaboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4."
+      },
+      {
+        "passage": "P006",
+        "source": "AAP",
+        "section": "Multivariate Risk Assessment",
+        "text": "Source: AAP\nSection: Multivariate Risk Assessment\n\nA multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\u2019s risk of EOS. A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth. The objective data include gestational age, the highest maternal intrapartum temperature, the 3\n\nmaternal GBS colonization status, the duration of ROM, and the type and duration of intrapartum antibiotic therapies. The predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate."
+      },
+      {
+        "passage": "P007",
+        "source": "AAP",
+        "section": "Multivariate Risk Assessment",
+        "text": "Source: AAP\nSection: Multivariate Risk Assessment\n\nThe predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate. Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \u22653 per 1000 live births. A prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC). No adverse effects of the multivariate risk approach were noted during birth hospitalization."
+      },
+      {
+        "passage": "P008",
+        "source": "AAP",
+        "section": "Newborn Clinical Condition",
+        "text": "Source: AAP\nSection: Newborn Clinical Condition\n\nA third strategy consists of the reliance on clinical signs of illness to identify infants with EOS. Under this approach, regardless of any estimation of neonatal or maternal risk factors for EOS, infants who appear ill at birth and those who develop signs of illness over the first 48 hours after birth are either treated empirically with antibiotic agents or further evaluated by laboratory screening. Among term and late- preterm infants, good clinical condition at birth is associated with a reduction in risk for EOS of approximately 60% to 70%. A multidisciplinary panel sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development advocated that infants be flagged for risk of EOS on the basis of the obstetric diagnosis of suspected intraamniotic infection but that those conducting newborn evaluation primarily rely on clinical observation alone for well-appearing term and late-preterm infants."
+      },
+      {
+        "passage": "P009",
+        "source": "AAP",
+        "section": "Newborn Clinical Condition",
+        "text": "Source: AAP\nSection: Newborn Clinical Condition\n\nA multidisciplinary panel sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development advocated that infants be flagged for risk of EOS on the basis of the obstetric diagnosis of suspected intraamniotic infection but that those conducting newborn evaluation primarily rely on clinical observation alone for well-appearing term and late-preterm infants. Those at several centers have reported experience with strategies based on the identification of at-risk newborn infants using categorical or multivariate approaches to risk accompanied by laboratory tests and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age."
+      },
+      {
+        "passage": "P010",
+        "source": "AAP",
+        "section": "Blood Culture",
+        "text": "Source: AAP\nSection: Blood Culture\n\nIn the absence of validated, clinically available molecular diagnostics, blood culture remains the diagnostic standard for EOS. Newborn surface cultures and gastric aspirate analysis cannot be used to diagnose EOS, and urine culture is not indicated in sepsis evaluations performed at <72 hours of age. In modern blood culture systems, optimized enriched culture media with antimicrobial neutralization properties, continuous-read detection systems, and specialized pediatric culture bottles are used. Concerns have been raised about the incomplete detection of low-level bacteremia and the effect of intrapartum antibiotic administration. However, these systems are used to reliably detect bacteremia at a level of 1 to 10 colony-forming units per mL if a minimum blood volume of 1 mL is inoculated. Furthermore, researchers in several studies have reported no effect on time to positivity."
+      },
+      {
+        "passage": "P011",
+        "source": "AAP",
+        "section": "White Blood Cell Count",
+        "text": "Source: AAP\nSection: White Blood Cell Count\n\nFetal bone marrow depression attributable to maternal preeclampsia or placental insufficiency and prolonged exposure to inflammatory signals, such as those associated with the premature ROM, frequently result in abnormal values in the absence of infection. As the incidence of EOS declines, the clinical utility of the WBC count also declines. Researchers in 2 large, multicenter studies applied the likelihood ratio, a test characteristic that is independent of disease incidence, to assess the relationship between WBC count and culture- confirmed EOS among term and late-preterm infants and found that none of the components (WBC count, I/T, nor ANC) performed well. Extreme values (total WBC count <5000/\u03bcL [I/T >0.3; ANC <2000/ \u03bcL] in one study and WBC count <1000/\u03bcL [ANC <100/\u03bcL; and I/T >0.5] in the other) were associated with the highest likelihood ratios but very low sensitivities."
+      },
+      {
+        "passage": "P012",
+        "source": "AAP",
+        "section": "White Blood Cell Count",
+        "text": "Source: AAP\nSection: White Blood Cell Count\n\n[ANC <100/\u03bcL; and I/T >0.5] in the other) were associated with the highest likelihood ratios but very low sensitivities. WBC count >20 000/\u03bcL and platelet counts were not associated with EOS in either study. The I/T squared (I/T divided by the ANC) performed better than any of the more traditional tests and was independent of age in hours 5\n\nbut also had modest sensitivity and specificity."
+      },
+      {
+        "passage": "P013",
+        "source": "AAP",
+        "section": "Other Inflammatory Markers",
+        "text": "Source: AAP\nSection: Other Inflammatory Markers\n\nResearchers in multiple studies address other markers of inflammation, including C-reactive protein (CRP), procalcitonin, interleukins (ILs) (soluble IL-2 receptor, IL-6, and IL-8), tumor necrosis factor \u03b1, and CD64. Both CRP and procalcitonin concentrations increase in newborn infants in response to a variety of inflammatory stimuli, including infection, asphyxia, and pneumothorax. Procalcitonin concentrations also increase naturally over the first 24 to 36 hours after birth. Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions. Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection."
+      },
+      {
+        "passage": "P016",
+        "source": "AAP",
+        "section": "TREATMENT OF EOS",
+        "text": "Source: AAP\nSection: TREATMENT OF EOS\n\nThe microbial causes of EOS in the United States have been unchanged over the past 10 years. Researchers in national surveillance studies continue to identify GBS as the most common bacteria isolated in EOS cases among term and late-preterm infants, accounting for approximately 40% to 45% of all cases, followed by E coli in approximately 10% to 15% of cases. The remaining cases are caused primarily by other Gram- positive organisms (predominantly viridans group streptococci and enterococci), and approximately 5% are caused by other Gram-negative 6 organisms. S aureus (approximately 3%\u20134%) and L monocytogenes (approximately 1%\u20132%) are less common causes of EOS among term infants. Ampicillin and gentamicin, in combination, is the first choice for empirical therapy for EOS. This combination will be effective against GBS, most other streptococcal and enterococcal species, and L monocytogenes."
+      },
+      {
+        "passage": "P017",
+        "source": "AAP",
+        "section": "TREATMENT OF EOS",
+        "text": "Source: AAP\nSection: TREATMENT OF EOS\n\nThis combination will be effective against GBS, most other streptococcal and enterococcal species, and L monocytogenes. Although two-thirds of E coli EOS isolates and most other Gram-negative EOS isolates are resistant to ampicillin, the majority remain sensitive to gentamicin. Extended-spectrum \u03b2-lactamase\u2013 producing organisms are rarely reported among EOS cases in the United States. Therefore, the routine empirical use of broader-spectrum antibiotic agents is typically not justified and may be harmful. Nonetheless, approximately 7% of E coli cases (1.7% of all EOS cases)\nwere resistant to both ampicillin and gentamicin in recent CDC surveillance studies.4 Among term newborn infants who are critically ill, the empirical addition of broader- spectrum therapy should be considered until culture results are available. When EOS is confirmed by using blood culture, lumbar puncture should be performed if not previously done."
+      }
+    ],
+    "target_passages": [
+      "P007",
+      "P008",
+      "P009",
+      "P011",
+      "P012",
+      "P013"
+    ],
+    "response_schema": {
+      "judgments": [
+        {
+          "passage": "P001",
+          "relevance_grade": "integer 0-3",
+          "guideline_aligned": "boolean",
+          "scenario_applicable": "boolean",
+          "clinically_useful": "boolean",
+          "rationale": "short source-based rationale"
+        }
+      ]
+    }
+  },
+  "mapping": {
+    "P007": "AAP_pg3_multivariate-risk-assess_chunk2",
+    "P008": "AAP_pg4_newborn-clinical-conditi_chunk1",
+    "P009": "AAP_pg4_newborn-clinical-conditi_chunk2",
+    "P011": "AAP_pg5_white-blood-cell-count_chunk2",
+    "P012": "AAP_pg5_white-blood-cell-count_chunk3",
+    "P013": "AAP_pg6_other-inflammatory-marke_chunk1"
+  }
+}

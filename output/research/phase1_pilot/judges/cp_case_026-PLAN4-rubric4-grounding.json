@@ -1,0 +1,130 @@
+{
+  "completed": true,
+  "task_sha256": "9001a0c6403e51b165324526682a80eb062c783b2ecfe1c160598a7b786884a0",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.1440914000122575,
+  "kind": "plan",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-cc668b50-7819-4489-8519-edf719d14cdd",
+    "object": "chat.completion",
+    "created": 1792956226,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"faithfulness\":2,\"citation_correctness\":2,\"citation_completeness\":2,\"unsupported_claims\":[{\"claim_id\":\"L002\",\"reason\":\"Risk categorization and attribution to ROM and CRP not supported by any provided source passages.\"},{\"claim_id\":\"L005\",\"reason\":\"Risk analysis and scoring details are not found in the cited WHO passages.\"},{\"claim_id\":\"L008\",\"reason\":\"Driver breakdown with point values is not present in the evidence.\"},{\"claim_id\":\"L009\",\"reason\":\"Driver breakdown with point values is not present in the evidence.\"},{\"claim_id\":\"L012\",\"reason\":\"Statement that outpatient management is contraindicated due to prior hospitalization is not supported by the provided sources.\"},{\"claim_id\":\"L018\",\"reason\":\"Withholding oral amoxicillin based on prior hospitalization is not mentioned in the evidence.\"},{\"claim_id\":\"L019\",\"reason\":\"Withholding IM gentamicin based on prior hospitalization is not mentioned in the evidence.\"},{\"claim_id\":\"L020\",\"reason\":\"Substitution of IV/IM gentamicin and reference to dosing lacking source support.\"},{\"claim_id\":\"L021\",\"reason\":\"Substitution of IV/IM ampicillin/amoxicillin lacks source support.\"},{\"claim_id\":\"L024\",\"reason\":\"Monitoring plan details are not sourced.\"},{\"claim_id\":\"L027\",\"reason\":\"Escalation criteria are not found in the cited passages.\"},{\"claim_id\":\"L030\",\"reason\":\"Nutrition/fluid plan not supported by the evidence.\"}],\"contradictions\":[],\"ungrounded_dose\":false,\"ungrounded_dose_examples\":[],\"rationale\":\"The plan contains many assertions (risk scoring, contraindication due to prior hospitalization, specific driver point values, and treatment substitutions) that are not present in the supplied WHO passages (S001, S002, S008, S009, S010). Citation mapping is unavailable, and the plan does not correctly link claims to the evidence, resulting in low faithfulness and citation scores. No numeric dosing information is provided, so there are no ungounded dose claims.\"}",
+          "reasoning": "We need to assess faithfulness etc. Identify unsupported claims. The plan cites S001, S002, S008, S009, S010. Check claims:\n\nL002 says intermediate risk due to ROM and CRP. Sources? S002 defines clinical severe infection signs, not risk scoring. S008 defines PSBI signs. No source for risk scoring. So unsupported.\n\nL005 risk analysis similar unsupported.\n\nL008, L009 driver breakdown also unsupported.\n\nL012 hospitalization contraindication due to prior hospitalization. Source? Not in provided passages. So unsupported.\n\nL018, L019 withholding outpatient regimen due to prior hospitalization. Not in sources.\n\nL020, L021 substitution claim: \"Specific dose/frequency not provided in retrieved WHO outpatient excerpts; refer to inpatient guidelines\". No source for substitution.\n\nL022 duration claim: \"At least 7 days (per WHO outpatient guideline reference)\" Source S001 mentions oral amoxicillin for at least 7 days plus gentamicin for at least 7 days. That supports duration for outpatient, but they are inpatient. Still claim of 7 days is from S001, okay.\n\nL024 monitoring plan not sourced.\n\nL027 escalation criteria not sourced.\n\nL030 nutrition ok.\n\nThus many unsupported.\n\nCitation correctness: mapping unknown, but they didn't provide numbered citations. So likely incorrect.\n\nFaithfulness: plan seems to overstate risk scoring not in sources. So low.\n\nUngrounded dose: No numeric dose given, so none. But they mention \"duration=At least 7 days\" which is sourced. No numeric dose, so ungrouned_dose false.\n\nReturn JSON.\n\nRatings: faithfulness 2, citation_correctness 2, citation_completeness 2.\n\nList unsupported_claims with claim ids and reason.\n\ncontradictions none? No contradictions with sources.\n\nungrounded_dose false, empty examples.\n\nProvide rationale.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.00951204,
+      "prompt_tokens": 2979,
+      "prompt_time": 0.161184669,
+      "completion_tokens": 811,
+      "completion_time": 1.724347426,
+      "total_tokens": 3790,
+      "total_time": 1.8855320949999999,
+      "completion_tokens_details": {
+        "reasoning_tokens": 380
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_7a4ab09ae4",
+    "x_groq": {
+      "id": "req_01m5t89n8ne4mrzbpcy6nq3kpd",
+      "seed": 1417381149
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "968",
+    "x-ratelimit-remaining-tokens": "4326",
+    "x-ratelimit-reset-requests": "46m4.8s",
+    "x-ratelimit-reset-tokens": "27.555s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Risk categorization and attribution to ROM and CRP not supported by any provided source passages.",
+        "claim_text": "This 38-week neonate presents with an INTERMEDIATE risk for early-onset sepsis, driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L). Although the initial care setting was designated as outpatient, the infant's history of hospitalization within the prior 14 days constitutes a critical contraindication to WHO outpatient regimens, necessitating immediate hospitalization for full inpatient management."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Risk analysis and scoring details are not found in the cited WHO passages.",
+        "claim_text": "The risk category is INTERMEDIATE (Score 3) due to two primary drivers: Prolonged rupture of membranes (>=18h) contributing 50% of the risk, and Elevated CRP (12.0 mg/L) contributing the remaining 50%. The infant is otherwise stable with normal respiratory status, temperature, and perfusion."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Driver breakdown with point values is not present in the evidence.",
+        "claim_text": "Prolonged rupture of membranes (20.0h, >=18h threshold): +2 points, Layer 1, 50% contribution."
+      },
+      {
+        "claim_id": "L009",
+        "reason": "Driver breakdown with point values is not present in the evidence.",
+        "claim_text": "Elevated CRP (12.0 mg/L): +2 points, Layer 3, 50% contribution."
+      },
+      {
+        "claim_id": "L012",
+        "reason": "Statement that outpatient management is contraindicated due to prior hospitalization is not supported by the provided sources.",
+        "claim_text": "- HOSPITALIZE IMMEDIATELY: Outpatient management is contraindicated due to prior hospitalization within 14 days."
+      },
+      {
+        "claim_id": "L018",
+        "reason": "Withholding oral amoxicillin based on prior hospitalization is not mentioned in the evidence.",
+        "claim_text": "- Oral amoxicillin \u2014 WITHHELD: WHO outpatient regimen (oral amoxicillin + IM gentamicin) is explicitly contraindicated for infants hospitalized within the prior 14 days; requires inpatient IV/IM regimen."
+      },
+      {
+        "claim_id": "L019",
+        "reason": "Withholding IM gentamicin based on prior hospitalization is not mentioned in the evidence.",
+        "claim_text": "- IM gentamicin \u2014 WITHHELD: WHO outpatient regimen (oral amoxicillin + IM gentamicin) is explicitly contraindicated for infants hospitalized within the prior 14 days; requires inpatient IV/IM regimen."
+      },
+      {
+        "claim_id": "L020",
+        "reason": "Substitution of IV/IM gentamicin and reference to dosing lacking source support.",
+        "claim_text": "- IV/IM Gentamicin \u2014 SUBSTITUTED for outpatient regimen: Inpatient management required. Specific dose/frequency not provided in retrieved WHO outpatient excerpts; refer to inpatient guidelines (e.g., WHO Pocket Book) for dosing."
+      },
+      {
+        "claim_id": "L021",
+        "reason": "Substitution of IV/IM ampicillin/amoxicillin lacks source support.",
+        "claim_text": "- IV/IM Amoxicillin or ampicillin \u2014 SUBSTITUTED for oral amoxicillin: Inpatient management required. Specific dose/frequency not provided in retrieved WHO outpatient excerpts; refer to inpatient guidelines for dosing."
+      },
+      {
+        "claim_id": "L024",
+        "reason": "Monitoring plan details are not sourced.",
+        "claim_text": "MONITORING PLAN:"
+      },
+      {
+        "claim_id": "L027",
+        "reason": "Escalation criteria are not found in the cited passages.",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      {
+        "claim_id": "L030",
+        "reason": "Nutrition/fluid plan not supported by the evidence.",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan contains many assertions (risk scoring, contraindication due to prior hospitalization, specific driver point values, and treatment substitutions) that are not present in the supplied WHO passages (S001, S002, S008, S009, S010). Citation mapping is unavailable, and the plan does not correctly link claims to the evidence, resulting in low faithfulness and citation scores. No numeric dosing information is provided, so there are no ungounded dose claims."
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "completed": true,
+  "task_sha256": "48cd2770384ed5ddfb981df1537e26cceb15a9b602039ea6a6bd572aa6a2bc3d",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.840396100000362,
+  "kind": "chunks",
+  "case_id": "cp_case_014",
+  "mapping": {
+    "P010": "NICE_pg2_carers_chunk6",
+    "P011": "NICE_pg2_carers_chunk7",
+    "P012": "NICE_pg30_2012_chunk1",
+    "P013": "NICE_pg30_2012_rec1_chunk1",
+    "P014": "NICE_pg30_2012_rec1_chunk2",
+    "P015": "NICE_pg31_2012-amended-2026_chunk2"
+  },
+  "raw_response": {
+    "id": "chatcmpl-16b2e667-6d3a-4e3e-815c-4cf37ed7aa8d",
+    "object": "chat.completion",
+    "created": 1792946682,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P010\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Advises informing parents of increased infection risk for at\u2011risk babies, matching this preterm infant\u2019s risk profile.\"\n    },\n    {\n      \"passage\": \"P011\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Reassures breastfeeding and outlines future GBS risk counseling, relevant to mother with GBS colonisation.\"\n    },\n    {\n      \"passage\": \"P012\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Specifies benzylpenicillin plus gentamicin regimen and dosing, directly matching proposed drugs for this newborn.\"\n    },\n    {\n      \"passage\": \"P013\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Recommends 7\u2011day IV antibiotic course for suspected sepsis, directly applicable to current treatment plan.\"\n    },\n    {\n      \"passage\": \"P014\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Guides stopping antibiotics at 36\u202fh if culture negative and clinical/CRP reassuring, relevant to improving risk trend.\"\n    },\n    {\n      \"passage\": \"P015\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Switch to oral amoxicillin applies only to babies \u226535\u202fweeks; this infant is 34\u202fweeks, so not applicable.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for each target passage (P010,P011,P012,P013,P014,P015). Provide grade, alignment, applicability, usefulness. Use concise rationale 12-25 words. Provide JSON array."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.248187854,
+      "prompt_tokens": 4350,
+      "prompt_time": 0.301717155,
+      "completion_tokens": 533,
+      "completion_time": 1.203128677,
+      "total_tokens": 4883,
+      "total_time": 1.504845832,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 45
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m5sz6d7xeqqvntx1xx36n013",
+      "seed": 620221861
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "972",
+    "x-ratelimit-remaining-tokens": "2713",
+    "x-ratelimit-reset-requests": "40m19.2s",
+    "x-ratelimit-reset-tokens": "39.652s"
+  },
+  "validation_error": "AssertionError",
+  "result": {
+    "judgments": [
+      {
+        "passage": "P010",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Advises informing parents of increased infection risk for at\u2011risk babies, matching this preterm infant\u2019s risk profile."
+      },
+      {
+        "passage": "P011",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Reassures breastfeeding and outlines future GBS risk counseling, relevant to mother with GBS colonisation."
+      },
+      {
+        "passage": "P012",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Specifies benzylpenicillin plus gentamicin regimen and dosing, directly matching proposed drugs for this newborn."
+      },
+      {
+        "passage": "P013",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends 7\u2011day IV antibiotic course for suspected sepsis, directly applicable to current treatment plan."
+      },
+      {
+        "passage": "P014",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Guides stopping antibiotics at 36\u202fh if culture negative and clinical/CRP reassuring, relevant to improving risk trend."
+      },
+      {
+        "passage": "P015",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Switch to oral amoxicillin applies only to babies \u226535\u202fweeks; this infant is 34\u202fweeks, so not applicable."
+      }
+    ]
+  },
+  "validation_note": "Relevance/applicability disagreement retained as evaluator inconsistency, not deleted or regraded."
+}

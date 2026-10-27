@@ -1,0 +1,117 @@
+{
+  "completed": true,
+  "task_sha256": "babff009451565006fb3d1faf0708a42ad78d0a96fdbe081c2f0b569ca962e75",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.6446871000080137,
+  "kind": "chunks",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "P001": "WHO_pg10_background-and-definitio_chunk1",
+    "P002": "WHO_pg10_overview_chunk1",
+    "P003": "WHO_pg10_population-intervention-_chunk1",
+    "P005": "WHO_pg11_sources-and-characterist_chunk1",
+    "P007": "WHO_pg15_recommendation-a-4-updat_rec1_chunk1",
+    "P008": "WHO_pg19_recommendation-a-5-updat_rec1_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-e6ae3161-71f7-4075-8be4-55d63f76e520",
+    "object": "chat.completion",
+    "created": 1792947351,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P001\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Defines clinical severe infection and cites WHO simplified regimen (oral amoxicillin + IM gentamicin) for infants without referral.\"\n    },\n    {\n      \"passage\": \"P002\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Poses a research question about alternative regimens; provides no direct recommendation for the current case.\"\n    },\n    {\n      \"passage\": \"P003\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Lists PICO elements for trials; background information without actionable guidance for this infant.\"\n    },\n    {\n      \"passage\": \"P005\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes study characteristics of simplified regimens; informative but not a direct recommendation for treatment.\"\n    },\n    {\n      \"passage\": \"P007\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Applies only to infants 0\u20116 days with fast breathing alone; case involves clinical severe infection, not fast breathing only.\"\n    },\n    {\n      \"passage\": \"P008\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Targets infants 7\u201159 days with fast breathing only; case has clinical severe infection signs, so not applicable.\"\n    }\n  ]\n}",
+          "reasoning": "We need output JSON with judgments for each target passage. Evaluate relevance.\n\nCase: outpatient_no_referral, contraindication recent hospital (recent hospitalization). Proposed drugs ampicillin, gentamicin. WHO guideline: for clinical severe infection, referral recommended; if not possible, oral amoxicillin + gentamicin IM/IV. Passages:\n\nP001: defines clinical severe infection signs and mentions simplified regimens (gentamicin IM + oral amoxicillin) for infants whose families cannot access referral. Relevant background. Grade? Provides definition and regimen context. Applicable? Yes, scenario outpatient no referral, need regimen. So grade 2 or 3? It's background, not direct actionable recommendation. So grade 2. guideline_aligned true. scenario_applicable true. clinically_useful true (grade>=2). Rationale.\n\nP002: question about effect of alternative regimens vs WHO recommended. Not direct recommendation. Background. Grade 1 maybe. It's marginal. So relevance 1. guideline aligned yes (WHO). scenario applicable? It's about comparison, not direct. scenario_applicable false? It is about the population but not actionable. Probably false. clinically_useful false (grade<2). Rationale.\n\nP003: PICO details. Background. Grade 1. guideline aligned true. scenario_applicable false. clinically_useful false.\n\nP005: describes studies of simplified regimens vs penicillin+gentamicin. Background. Grade 1. scenario_applicable false. clinically_useful false.\n\nP007: Recommendation A.4: fast breathing only in 0-6 days, refer; if not possible, oral amoxicillin. Not about clinical severe infection, only fast breathing. Our case has clinical severe infection signs? No fast breathing only. So not applicable. Grade 0. guideline aligned true. scenario_applicable false. clinically_useful false.\n\nP008: Recommendation A.5: fast breathing only 7-59 days, oral amoxicillin. Not applicable. Grade 0.\n\nReturn JSON array judgments.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377572878,
+      "prompt_tokens": 3094,
+      "prompt_time": 0.163013863,
+      "completion_tokens": 884,
+      "completion_time": 2.144766187,
+      "total_tokens": 3978,
+      "total_time": 2.30778005,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 414
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m5szts6weskaz41t3p92067b",
+      "seed": 1028702527
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 1,
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "964",
+    "x-ratelimit-remaining-tokens": "4079",
+    "x-ratelimit-reset-requests": "51m50.399s",
+    "x-ratelimit-reset-tokens": "29.407s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P001",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Defines clinical severe infection and cites WHO simplified regimen (oral amoxicillin + IM gentamicin) for infants without referral."
+      },
+      {
+        "passage": "P002",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Poses a research question about alternative regimens; provides no direct recommendation for the current case."
+      },
+      {
+        "passage": "P003",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Lists PICO elements for trials; background information without actionable guidance for this infant."
+      },
+      {
+        "passage": "P005",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes study characteristics of simplified regimens; informative but not a direct recommendation for treatment."
+      },
+      {
+        "passage": "P007",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Applies only to infants 0\u20116 days with fast breathing alone; case involves clinical severe infection, not fast breathing only."
+      },
+      {
+        "passage": "P008",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Targets infants 7\u201159 days with fast breathing only; case has clinical severe infection signs, so not applicable."
+      }
+    ]
+  }
+}

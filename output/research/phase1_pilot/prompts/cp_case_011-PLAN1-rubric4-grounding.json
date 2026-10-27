@@ -1,0 +1,168 @@
+{
+  "key": "cp_case_011-PLAN1-rubric4-grounding",
+  "kind": "plan",
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "case_id": "cp_case_011",
+  "prompt": {
+    "task": "Evaluate source faithfulness, citations and unsupported assertions against ONLY the actual retrieved plan evidence. Gold/reference evidence is deliberately withheld. Full patient facts are supplied separately as case data.",
+    "case": {
+      "case_id": "cp_case_011",
+      "active_guideline": "AAP",
+      "care_setting": "hospital",
+      "contraindication_type": null,
+      "trend_type": null,
+      "ambiguous": false,
+      "previous_assessments": [],
+      "deltas": null,
+      "proposed_drugs": [
+        "benzylpenicillin",
+        "gentamicin"
+      ],
+      "retrieval_query": "AAP 2023 early-onset sepsis Prolonged rupture of membranes ROM 20.0h (>=18h) Elevated CRP CRP 12.0 mg/L prolonged ROM rupture of membranes preterm prematurity CRP inflammatory markers white blood cell count WBC procalcitonin PCT thrombocytopenia platelet count",
+      "patient": {
+        "gestational_age_weeks": 36.0,
+        "maternal_temperature": 37.9,
+        "rom_hours": 20.0,
+        "gbs_positive": false,
+        "respiratory_distress": "None",
+        "crp_level": 12.0,
+        "blood_culture_positive": false,
+        "urine_output_ml_kg_hr": 2.0,
+        "creatinine_mg_dl": 0.6,
+        "penicillin_allergy": false,
+        "adequate_intrapartum_antibiotics": true,
+        "clinical_chorioamnionitis": false,
+        "delivery_mode": "Vaginal",
+        "oxygen_need": "None",
+        "apgar_5_min": 9,
+        "poor_perfusion": false,
+        "neonatal_temperature": 37.0,
+        "neurological_status": "Normal",
+        "wbc_count": 18.5,
+        "it_ratio": 0.15,
+        "platelet_count": 260.0,
+        "pct_level": 0.3
+      },
+      "recorded_legacy_risk_category": "INTERMEDIATE",
+      "legacy_score_status": "Unvalidated legacy output, not clinical truth"
+    },
+    "plan": {
+      "plan_id": "PLAN1",
+      "evidence": [
+        {
+          "citation": "E1",
+          "passage": "S007"
+        },
+        {
+          "citation": "E2",
+          "passage": "S008"
+        },
+        {
+          "citation": "E3",
+          "passage": "S009"
+        },
+        {
+          "citation": "E4",
+          "passage": "S001"
+        },
+        {
+          "citation": "E5",
+          "passage": "S010"
+        }
+      ],
+      "numbered_citation_mapping": "Context-list order supplied for generation; citation list may differ and should be checked.",
+      "candidate_lines": {
+        "L001": "CLINICAL SUMMARY:",
+        "L002": "This 36-week late-preterm infant is assessed as INTERMEDIATE risk for early-onset sepsis (EOS) with a combined score of 5 and a probability of 3.0 per 1000. The risk is driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L), despite adequate intrapartum antibiotics and a well-appearing clinical status.",
+        "L004": "RISK ANALYSIS:",
+        "L005": "The patient falls into the INTERMEDIATE risk category based on the AAP multivariate risk calculator. The probability of 3.0 per 1000 meets the threshold for empirical antibiotic therapy as defined in the retrieved evidence (>=3 per 1000). The primary drivers are prolonged ROM (>=18h) and elevated inflammatory markers (CRP 12.0 mg/L).",
+        "L007": "DRIVER BREAKDOWN:",
+        "L008": "Prolonged rupture of membranes (20.0h, >=18h threshold) contributes 50% to the risk score. Elevated CRP (12.0 mg/L) contributes 50% to the risk score.",
+        "L010": "RECOMMENDED ACTIONS:",
+        "L011": "- Initiate empirical antibiotic therapy immediately.",
+        "L012": "- Obtain blood culture prior to antibiotic administration if it does not delay treatment.",
+        "L013": "- Enhanced clinical observation for signs of sepsis.",
+        "L014": "- Repeat CRP and clinical assessment in 12-24 hours to guide duration.",
+        "L016": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour",
+        "L017": "- Ampicillin \u2014 WITHHELD: Specific dose and frequency not provided in retrieved evidence.",
+        "L018": "- Gentamicin \u2014 WITHHELD: Specific dose and frequency not provided in retrieved evidence.",
+        "L019": "duration=48-72 hours pending cultures stop_criteria=Blood cultures negative at 36-48 hours and infant clinically well.",
+        "L021": "MONITORING PLAN:",
+        "L022": "Monitor vital signs every 4-6 hours. Monitor urine output and fluid balance. Repeat CRP in 12-24 hours. Monitor for clinical signs of sepsis (temperature instability, respiratory distress, poor perfusion).",
+        "L024": "ESCALATION CRITERIA:",
+        "L025": "Escalate to pediatric infectious disease or neonatology if clinical status deteriorates, cultures are positive, or if there is no clinical improvement after 48 hours of antibiotics.",
+        "L027": "NUTRITION/FLUID PLAN:",
+        "L028": "Maintain normal feeding practices if infant is well-appearing and tolerating feeds. Ensure adequate hydration.",
+        "L030": "DISAMBIGUATION BLOCK:",
+        "L033": "CONTRAINDICATION FLAGS:",
+        "L036": "TREND STATE CHANGE:"
+      }
+    },
+    "response_schema": {
+      "faithfulness": "integer 1-5",
+      "citation_correctness": "integer 1-5",
+      "citation_completeness": "integer 1-5",
+      "unsupported_claims": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "contradictions": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "ungrounded_dose": "boolean",
+      "ungrounded_dose_examples": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "rationale": "concise source-based justification; disclose ambiguous citation mapping"
+    },
+    "rubric_version": 4,
+    "passage_catalog": {
+      "S001": "Source: AAP\nSection: Categorical Risk Factor Assessment\n\nA categorical risk factor assessment includes risk factor threshold values to identify infants who are at increased risk for EOS. Algorithms for the management of GBS-specific EOS have been used as a general framework for the prevention of all EOS. Risk factors used in such algorithms included (1) any newborn infant who is ill appearing;\n(2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation;\nor (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following:\nlaboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4.",
+      "S007": "Source: AAP\nSection: abstract\n\nOur purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis among infants born at \u226535 0/7 weeks\u2019 gestation and a framework for the development of evidence-based approaches to sepsis risk assessment among these infants. Early-onset sepsis (EOS) is a serious and potentially fatal complication of birth. Assessing term and late-preterm newborn infants for risk of EOS is one of the most common clinical tasks conducted by pediatric providers.1 As the use of preventive intrapartum antibiotic therapies has increased and the incidence of EOS has decreased, physicians are challenged to identify those newborn infants who are at the highest risk of infection. Pediatric providers are particularly concerned about initially well- appearing infants with identified risk factors for EOS for fear of missing the opportunity to intervene before infants become critically ill.",
+      "S008": "Source: AAP\nSection: abstract\n\nThe incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth. Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis among infants born at \u226535 0/7 weeks\u2019 gestation and a framework for the development of evidence-based approaches to sepsis risk assessment among these infants. Early-onset sepsis (EOS) is a serious and potentially fatal complication of birth.",
+      "S009": "Source: AAP\nSection: Multivariate Risk Assessment\n\nThe predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate. Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \u22653 per 1000 live births. A prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC). No adverse effects of the multivariate risk approach were noted during birth hospitalization.",
+      "S010": "Source: AAP\nSection: SUMMARY POINTS\n\nWe include the following summary points:\n1. The epidemiology of EOS differs substantially between term and/ or late-preterm infants and very preterm infants. 2. Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following:\no categorical algorithms in which threshold values for intrapartum risk factors are used;\no multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants. 3."
+    },
+    "finding_rules": "Select immutable candidate-line claim_id values, never invented text. Missing treatment/dose detail is an omission, not an unsupported affirmative assertion. Do not use medical memory or a passage absent from the actual plan evidence to claim that a missing dose was retrieved. Patient facts need not be sourced to a guideline. Distinguish a proposed treatment order from a cautious safety flag or request for expert review. Ungrounded numeric doses must actually be in the candidate; list examples. Disclose missing MA numbered citation mapping. Return empty arrays for no findings and the requested 1-5 ratings.",
+    "evaluation_stage": "grounding"
+  },
+  "candidate_lines": {
+    "L001": "CLINICAL SUMMARY:",
+    "L002": "This 36-week late-preterm infant is assessed as INTERMEDIATE risk for early-onset sepsis (EOS) with a combined score of 5 and a probability of 3.0 per 1000. The risk is driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L), despite adequate intrapartum antibiotics and a well-appearing clinical status.",
+    "L004": "RISK ANALYSIS:",
+    "L005": "The patient falls into the INTERMEDIATE risk category based on the AAP multivariate risk calculator. The probability of 3.0 per 1000 meets the threshold for empirical antibiotic therapy as defined in the retrieved evidence (>=3 per 1000). The primary drivers are prolonged ROM (>=18h) and elevated inflammatory markers (CRP 12.0 mg/L).",
+    "L007": "DRIVER BREAKDOWN:",
+    "L008": "Prolonged rupture of membranes (20.0h, >=18h threshold) contributes 50% to the risk score. Elevated CRP (12.0 mg/L) contributes 50% to the risk score.",
+    "L010": "RECOMMENDED ACTIONS:",
+    "L011": "- Initiate empirical antibiotic therapy immediately.",
+    "L012": "- Obtain blood culture prior to antibiotic administration if it does not delay treatment.",
+    "L013": "- Enhanced clinical observation for signs of sepsis.",
+    "L014": "- Repeat CRP and clinical assessment in 12-24 hours to guide duration.",
+    "L016": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour",
+    "L017": "- Ampicillin \u2014 WITHHELD: Specific dose and frequency not provided in retrieved evidence.",
+    "L018": "- Gentamicin \u2014 WITHHELD: Specific dose and frequency not provided in retrieved evidence.",
+    "L019": "duration=48-72 hours pending cultures stop_criteria=Blood cultures negative at 36-48 hours and infant clinically well.",
+    "L021": "MONITORING PLAN:",
+    "L022": "Monitor vital signs every 4-6 hours. Monitor urine output and fluid balance. Repeat CRP in 12-24 hours. Monitor for clinical signs of sepsis (temperature instability, respiratory distress, poor perfusion).",
+    "L024": "ESCALATION CRITERIA:",
+    "L025": "Escalate to pediatric infectious disease or neonatology if clinical status deteriorates, cultures are positive, or if there is no clinical improvement after 48 hours of antibiotics.",
+    "L027": "NUTRITION/FLUID PLAN:",
+    "L028": "Maintain normal feeding practices if infant is well-appearing and tolerating feeds. Ensure adequate hydration.",
+    "L030": "DISAMBIGUATION BLOCK:",
+    "L033": "CONTRAINDICATION FLAGS:",
+    "L036": "TREND STATE CHANGE:"
+  },
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  }
+}

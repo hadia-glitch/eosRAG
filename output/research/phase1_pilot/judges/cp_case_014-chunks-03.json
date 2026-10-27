@@ -1,0 +1,117 @@
+{
+  "completed": true,
+  "task_sha256": "0bf5ace638175d363c71b7058373a144caa7473fe67a70c5bb64a18515be117f",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 5.535500400001183,
+  "kind": "chunks",
+  "case_id": "cp_case_014",
+  "mapping": {
+    "P016": "NICE_pg37_amended-2021_chunk2",
+    "P017": "NICE_pg44_2012_rec1_chunk1",
+    "P018": "NICE_pg44_receiving-gentamicin_chunk1",
+    "P019": "NICE_pg44_receiving-gentamicin_chunk2",
+    "P020": "NICE_pg59_why-the-committee-made-t_chunk1",
+    "P021": "NICE_pg61_how-the-recommendation-m_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-3761a225-0eb6-4e21-92af-59878f619f88",
+    "object": "chat.completion",
+    "created": 1792946938,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P016\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes GBS meningitis regimen; case has no meningitis, only early\u2011onset infection.\"\n    },\n    {\n      \"passage\": \"P017\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Mentions peak gentamicin measurement for babies with oedema; not present in this case.\"\n    },\n    {\n      \"passage\": \"P018\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Provides actionable guidance on measuring trough gentamicin levels for babies receiving gentamicin.\"\n    },\n    {\n      \"passage\": \"P019\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Direct instructions to adjust gentamicin dosing based on trough concentrations, relevant to proposed regimen.\"\n    },\n    {\n      \"passage\": \"P020\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Explains why all GBS\u2011positive mothers should be treated, supporting antibiotic use in this infant.\"\n    },\n    {\n      \"passage\": \"P021\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Discusses impact of immediate delivery; not directly related to neonatal antibiotic management.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for target_passages only: P016,P017,P018,P019,P020,P021. Provide array with those. Grade per criteria. Likely: P016 about meningitis treatment not applicable (no meningitis). relevance maybe background? Contains antibiotic regimen for GBS meningitis, not scenario. So grade 1 background. guideline_aligned true (NICE). scenario_applicable false. clinically_useful false.\n\nP017 about measuring peak gentamicin in selected babies with oedema. Not applicable (no oedema). relevance low background. grade1. aligned true. scenario_applicable false. clinically_useful false.\n\nP018 about trough concentrations monitoring. Relevant to gentamicin use, scenario uses gentamicin. Provides actionable monitoring. So grade3 direct actionable. aligned true. scenario_applicable true (baby on gentamicin). clinically_useful true.\n\nP019 similar to P018, also actionable. grade3. aligned true. scenario_applicable true. clinically_useful true.\n\nP020 about committee rationale for GBS colonisation treatment. Background. grade1. aligned true. scenario_applicable true? It explains why treat all GBS positive. Could be applicable but not direct action. scenario_applicable maybe true (relevant to decision). But clinically_useful? maybe background supportive. grade2? It's about recommendation to treat all positive. That supports giving antibiotics. Could be useful applicable support. So grade2. aligned true. scenario_applicable true. clinically_useful true (>=2). Provide rationale.\n\nP021 about impact of immediate delivery recommendation. Not about antibiotics. Background. grade1. aligned true. scenario_applicable false (no delivery decision). clinically_useful false.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.302748206,
+      "prompt_tokens": 4746,
+      "prompt_time": 0.297739776,
+      "completion_tokens": 805,
+      "completion_time": 1.729505131,
+      "total_tokens": 5551,
+      "total_time": 2.027244907,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 352
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m5sze5yre5zaqk1zsvghxf9r",
+      "seed": 1039199013
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 1,
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "970",
+    "x-ratelimit-remaining-tokens": "1054",
+    "x-ratelimit-reset-requests": "43m12s",
+    "x-ratelimit-reset-tokens": "52.095s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P016",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes GBS meningitis regimen; case has no meningitis, only early\u2011onset infection."
+      },
+      {
+        "passage": "P017",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Mentions peak gentamicin measurement for babies with oedema; not present in this case."
+      },
+      {
+        "passage": "P018",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Provides actionable guidance on measuring trough gentamicin levels for babies receiving gentamicin."
+      },
+      {
+        "passage": "P019",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Direct instructions to adjust gentamicin dosing based on trough concentrations, relevant to proposed regimen."
+      },
+      {
+        "passage": "P020",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Explains why all GBS\u2011positive mothers should be treated, supporting antibiotic use in this infant."
+      },
+      {
+        "passage": "P021",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses impact of immediate delivery; not directly related to neonatal antibiotic management."
+      }
+    ]
+  }
+}

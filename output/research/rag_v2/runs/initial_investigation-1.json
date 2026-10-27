@@ -1,0 +1,303 @@
+{
+  "id": "initial_investigation-1",
+  "model": "openai/gpt-oss-120b",
+  "verifier_model": "openai/gpt-oss-120b",
+  "seconds": 48.064033499998914,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "seconds": 4.324394499999471,
+      "ok": false,
+      "error_code": "http_429",
+      "retried": true
+    },
+    {
+      "role": "You are the evidence synthesis agent.",
+      "seconds": 18.8986917000002,
+      "ok": true
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "seconds": 2.739903100002266,
+      "ok": false,
+      "error_code": "http_429",
+      "retried": true
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "seconds": 3.0401667000005546,
+      "ok": false,
+      "error_code": "http_429",
+      "retried": true
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "seconds": 15.900073199998587,
+      "ok": true
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "seconds": 18.083343700000114,
+      "ok": false,
+      "error_code": "http_429",
+      "retried": true
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "seconds": 29.101492800000415,
+      "ok": true
+    }
+  ],
+  "packet": {
+    "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.13.2",
+        "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 21
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.20.6",
+        "text": "Take account of blood gentamicin concentrations when deciding on subsequent gentamicin dosing regimen (see the section on therapeutic drug monitoring for babies receiving gentamicin). [2012] 1.20.7 Record the times of: \u2022 gentamicin administration \u2022 sampling for therapeutic monitoring. [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 30
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-1.14.8",
+        "text": "When interpreting the results of cerebrospinal fluid investigations, take into account: \u2022 red cells in the sample, which may suggest blood contamination or a different diagnosis \u2022 whether earlier antibiotics may have reduced the diagnostic reliability of these investigations. [2024]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 24
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.10.4",
+        "text": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \u2022 total number of babies assessed using the calculator \u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 15
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 12,
+        "gestational_age_weeks": 35,
+        "care_setting": "hospital",
+        "respiratory_rate": 48,
+        "spo2": 97,
+        "crp": 4,
+        "culture_status": "unknown",
+        "red_flags": "not fully documented",
+        "maternal_gbs": "unknown"
+      },
+      "history": [
+        {
+          "age_hours": 3,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 14
+        },
+        {
+          "age_hours": 6,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.13.2",
+          "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 21
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.20.6",
+          "text": "Take account of blood gentamicin concentrations when deciding on subsequent gentamicin dosing regimen (see the section on therapeutic drug monitoring for babies receiving gentamicin). [2012] 1.20.7 Record the times of: \u2022 gentamicin administration \u2022 sampling for therapeutic monitoring. [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 30
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-1.14.8",
+          "text": "When interpreting the results of cerebrospinal fluid investigations, take into account: \u2022 red cells in the sample, which may suggest blood contamination or a different diagnosis \u2022 whether earlier antibiotics may have reduced the diagnostic reliability of these investigations. [2024]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 24
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.10.4",
+          "text": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \u2022 total number of babies assessed using the calculator \u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 15
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "recommended_actions",
+          "text": "Obtain a baseline C\u2011reactive protein (CRP) concentration at the start of antibiotic therapy for any neonate being evaluated for early\u2011onset sepsis.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "monitoring_plan",
+          "text": "Repeat CRP measurements and compare them with the baseline to help assess the likelihood of infection and the infant's response to treatment.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Use this together with any subsequent readings to assess the likelihood of infection and response to treatment."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "risk_analysis",
+          "text": "Interpret rising CRP trends as increasing suspicion for infection, while falling or stable low values may suggest a lower probability, acknowledging that CRP alone is not definitive.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Use this together with any subsequent readings to assess the likelihood of infection and response to treatment."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "monitoring_plan",
+          "text": "Document the timing of each CRP sample to allow trend analysis over the first 72\u202fhours of life.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Use this together with any subsequent readings to assess the likelihood of infection and response to treatment."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "escalation_criteria",
+          "text": "If subsequent CRP readings remain elevated or increase despite therapy, consider escalation of antimicrobial coverage and further diagnostic work\u2011up.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Use this together with any subsequent readings to assess the likelihood of infection and response to treatment."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "parent_communication_notes",
+          "text": "Explain to parents that baseline and follow\u2011up CRP results are being used to gauge infection risk and guide treatment decisions.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C3: Evidence does not specify that rising CRP trends indicate increasing suspicion or that falling/stable low values suggest lower probability.",
+        "C4: Evidence does not mention documenting timing of CRP samples for trend analysis.",
+        "C5: Evidence does not state that persistent or increasing CRP should trigger escalation of antimicrobial coverage.",
+        "C6: Evidence does not address parent communication about using CRP results to gauge infection risk."
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C4",
+        "C5"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C4: Evidence does not mention documenting timing of CRP samples.",
+        "C5: Evidence does not specify escalation of antimicrobial coverage based on CRP trends."
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "C3: Evidence does not specify that rising CRP trends indicate increasing suspicion or that falling/stable low values suggest lower probability.",
+      "C4: Evidence does not mention documenting timing of CRP samples for trend analysis.",
+      "C5: Evidence does not state that persistent or increasing CRP should trigger escalation of antimicrobial coverage.",
+      "C6: Evidence does not address parent communication about using CRP results to gauge infection risk.",
+      "C4: Evidence does not mention documenting timing of CRP samples.",
+      "C5: Evidence does not specify escalation of antimicrobial coverage based on CRP trends."
+    ],
+    "packet_sha256": "9271cd4cda81994c7c79cd7eb3248e44b47de2da3fa3d93507f831836247c5bc"
+  },
+  "verification_source_sha256": "1b2e02a77b50b865f0fb4e9fb809d5349a1147025031808d02962af964da02d7"
+}

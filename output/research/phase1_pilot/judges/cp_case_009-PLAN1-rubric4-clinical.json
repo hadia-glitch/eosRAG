@@ -1,0 +1,78 @@
+{
+  "completed": true,
+  "task_sha256": "48db5f98a10ed0b1fa36b6f55574713a288db8f6c101b43d90edad87994fbdfb",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 5.208375200003502,
+  "kind": "plan",
+  "case_id": "cp_case_009",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-8bbb415d-d034-403b-b8a8-3ce49ebc59ac",
+    "object": "chat.completion",
+    "created": 1792954537,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":3,\"clinical_completeness\":3,\"clinical_utility\":3,\"safety\":3,\"contradictions\":[{\"claim_id\":\"L021\",\"reason\":\"Guideline S016 recommends cefotaxime (with metronidazole) for non\u2011severe penicillin allergy; clindamycin is not listed as an alternative, making its inclusion unsupported.\"}],\"critical_omissions\":[\"Metronidazole not included despite guideline S016 recommending cefotaxime plus metronidazole for non\u2011severe penicillin allergy\",\"Specific dosing information for the chosen antibiotics is absent, which NICE expects to be defined before administration (S004)\"],\"regimen_incomplete\":true,\"rationale\":\"The plan follows NICE on avoiding beta\u2011lactams and uses cefotaxime (S016) but adds clindamycin, which is not recommended for penicillin allergy, and omits the co\u2011prescribed metronidazole required with cefotaxime. Blood culture before antibiotics and monitoring are included, but dosing details are missing, reducing completeness and safety.\"}",
+          "reasoning": "We need produce JSON with fields. Evaluate plan.\n\nPlan recommends clindamycin, cefotaxime, etc. For penicillin allergy non-severe, NICE says use cephalosporin (cef) (S016). Also can use vancomycin for severe. Plan includes clindamycin as deterministic default but not guideline. Contradiction: L018 ampicillin withheld (good). L019 cefotaxime substituted but says \"non-severe specified in guideline context, but caution advised\" okay. L020 gentamicin withheld: guideline standard regimen includes gentamicin with penicillin; but with allergy, cefotaxime plus gentamicin? S016 mentions cefotaxime plus metronidazole, not gentamicin. So withholding gentamicin may be okay if not recommended. However standard EOS includes gentamicin; but with penicillin allergy, cefotaxime alone may be sufficient? Not clear. Might be omission of metronidazole. Also missing dosing details (but allowed). Need contradictions list: pick L019 maybe? Actually claim contradictory? Plan says cefotaxime substituted for ampicillin for penicillin allergy non-severe. S016 supports using cefotaxime for non-severe allergy. So not contradiction. L021 clindamycin default: not in guideline for penicillin allergy; guideline suggests cefotaxime, not clindamycin. So contradiction: using clindamycin not recommended. So claim L021 contradictory.\n\nCritical omissions: No mention of metronidazole which guideline suggests with cefotaxime (S016). Also no mention of duration guidance: guideline says stop at 36-48h if culture negative (S010). Plan mentions stop criteria but okay. Also missing blood culture before antibiotics (they have). So omission: metronidazole. Also missing dosing info but allowed.\n\nRegimen incomplete? Possibly because missing metronidazole, also missing clarification of allergy severity. But regimen includes clindamycin which is extra, but may be unnecessary. I'd say regimen incomplete because missing metronidazole per guideline for cefotaxime use. So boolean true.\n\nNow scores: clinical correctness: plan mostly aligns but includes clindamycin unnecessary and omits metronidazole. I'd give 3. completeness: missing metronidazole, dosing, maybe monitoring okay. give 3. utility: moderate 3. safety: inclusion of clindamycin not harmful but unnecessary; omission of metronidazole may reduce coverage; overall safety moderate 3.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.25282042,
+      "prompt_tokens": 5403,
+      "prompt_time": 0.225334843,
+      "completion_tokens": 763,
+      "completion_time": 1.589136477,
+      "total_tokens": 6166,
+      "total_time": 1.81447132,
+      "completion_tokens_details": {
+        "reasoning_tokens": 528
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m5t6p394efhv34hwprn95701",
+      "seed": 2084523113
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "974",
+    "x-ratelimit-remaining-tokens": "2041",
+    "x-ratelimit-reset-requests": "37m26.4s",
+    "x-ratelimit-reset-tokens": "44.692s"
+  },
+  "result": {
+    "clinical_correctness": 3,
+    "clinical_completeness": 3,
+    "clinical_utility": 3,
+    "safety": 3,
+    "contradictions": [
+      {
+        "claim_id": "L021",
+        "reason": "Guideline S016 recommends cefotaxime (with metronidazole) for non\u2011severe penicillin allergy; clindamycin is not listed as an alternative, making its inclusion unsupported.",
+        "claim_text": "- [DETERMINISTIC DEFAULT] IV clindamycin (per documented penicillin allergy \u2014 provides Group B Streptococcus coverage in place of the withheld beta-lactam)"
+      }
+    ],
+    "critical_omissions": [
+      "Metronidazole not included despite guideline S016 recommending cefotaxime plus metronidazole for non\u2011severe penicillin allergy",
+      "Specific dosing information for the chosen antibiotics is absent, which NICE expects to be defined before administration (S004)"
+    ],
+    "regimen_incomplete": true,
+    "rationale": "The plan follows NICE on avoiding beta\u2011lactams and uses cefotaxime (S016) but adds clindamycin, which is not recommended for penicillin allergy, and omits the co\u2011prescribed metronidazole required with cefotaxime. Blood culture before antibiotics and monitoring are included, but dosing details are missing, reducing completeness and safety."
+  }
+}

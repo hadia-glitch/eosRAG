@@ -1,0 +1,19 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 5,
+    "patient_fidelity": 5,
+    "completeness": 5,
+    "actionability": 3,
+    "uncertainty": 5,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "The statement correctly reflects the guideline that maternal GBS colonisation is a risk factor (E3).",
+      "It matches the patient data (maternal_gbs: positive) and the baby is described as well\u2011appearing with no red flags.",
+      "It addresses the single requested risk factor without adding extraneous information.",
+      "It does not provide management guidance (e.g., monitoring or antibiotic decision), so actionability is limited.",
+      "No unsafe or unsupported claims are present."
+    ]
+  }
+}

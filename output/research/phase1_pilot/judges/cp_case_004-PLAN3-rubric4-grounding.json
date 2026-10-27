@@ -1,0 +1,69 @@
+{
+  "completed": true,
+  "task_sha256": "96cf07e23ae4d1ea6a7f7ad7078e4d4c073e02bf51ca488da64800b006d49189",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.3892555000056745,
+  "kind": "plan",
+  "case_id": "cp_case_004",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "dense_only_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-6f2fb9e8-449d-4ce4-9074-b5c66eef32f4",
+    "object": "chat.completion",
+    "created": 1792952593,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 5,\n  \"citation_correctness\": 4,\n  \"citation_completeness\": 4,\n  \"unsupported_claims\": [],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan's clinical summary and risk analysis are consistent with the patient data. Recommendations to start IV ampicillin and gentamicin are supported by S002 (WHO recommendation for critical illness). The dosing details (50\u202fmg/kg q12h ampicillin, 5\u202fmg/kg daily gentamicin) are grounded in S003, which provides the same dosing guidance. No statements lack source support, and no contradictions with the retrieved passages are observed. Citation mapping is unavailable, limiting precise numeric citation matching, hence slightly lower citation scores.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Identify unsupported claims. The plan lines L011-L020 etc. Check citations: plan evidence list includes S002 recommending ampicillin+gentamicin for critical illness. So L011 matches. Citation mapping missing, but we can note. Dose lines L018-L019: doses 50 mg/kg q12h and 5 mg/kg daily. Source S003 provides dosing info. So supported. No unsupported. Any contradictions? Seems fine. No ungrouned dose. So arrays empty. Ratings: faithfulness high 5, citation_correctness 4 (since mapping missing), citation_completeness 4. Provide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.253597145,
+      "prompt_tokens": 4320,
+      "prompt_time": 0.174850983,
+      "completion_tokens": 324,
+      "completion_time": 0.678734873,
+      "total_tokens": 4644,
+      "total_time": 0.853585856,
+      "completion_tokens_details": {
+        "reasoning_tokens": 136
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m5t4tt77efx92d77zg0pgp3f",
+      "seed": 523208496
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "971",
+    "x-ratelimit-remaining-tokens": "3118",
+    "x-ratelimit-reset-requests": "41m45.6s",
+    "x-ratelimit-reset-tokens": "36.614s"
+  },
+  "result": {
+    "faithfulness": 5,
+    "citation_correctness": 4,
+    "citation_completeness": 4,
+    "unsupported_claims": [],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan's clinical summary and risk analysis are consistent with the patient data. Recommendations to start IV ampicillin and gentamicin are supported by S002 (WHO recommendation for critical illness). The dosing details (50\u202fmg/kg q12h ampicillin, 5\u202fmg/kg daily gentamicin) are grounded in S003, which provides the same dosing guidance. No statements lack source support, and no contradictions with the retrieved passages are observed. Citation mapping is unavailable, limiting precise numeric citation matching, hence slightly lower citation scores."
+  }
+}

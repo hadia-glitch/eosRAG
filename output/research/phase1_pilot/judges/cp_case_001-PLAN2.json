@@ -1,0 +1,74 @@
+{
+  "completed": true,
+  "task_sha256": "7b03bcb736cadc37c2195ee81bfe7b3d87b7c0e35e3eba6525baaa035762209f",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.921789499989245,
+  "kind": "plan",
+  "case_id": "cp_case_001",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-a96d3be1-4bd0-40e1-847c-0196e1fb25e0",
+    "object": "chat.completion",
+    "created": 1792946825,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"faithfulness\":4,\"citation_correctness\":1,\"citation_completeness\":1,\"clinical_correctness\":5,\"clinical_completeness\":5,\"clinical_utility\":5,\"safety\":5,\"unsupported_claims\":[],\"contradictions\":[],\"critical_omissions\":[\"Missing recommendation to measure gentamicin trough concentrations before the second dose as per NICE guidance (evidence on therapeutic drug monitoring)\"],\"regimen_incomplete\":false,\"ungrounded_dose\":false,\"rationale\":\"Plan follows NICE recommendations for empirical EOS treatment (benzylpenicillin 25\u202fmg/kg q12h, gentamicin 5\u202fmg/kg) and includes culture, monitoring, and duration, reflecting clinical correctness and utility. However, it provides no inline citations, so citation correctness/completeness are low. Safety considerations are addressed. The only notable omission is the lack of a specific instruction to obtain gentamicin trough levels before the second dose, which is advised in NICE guidance.\"}",
+          "reasoning": "We need to score plan. Check citations: plan mentions benzylpenicillin 25 mg/kg q12h and gentamicin 5 mg/kg. Evidence E5 supports both doses. Citation mapping not shown in plan; no citation numbers. So citation_correctness low. citation_completeness also low. Faithfulness: plan aligns with evidence? Yes uses recommended regimen. Clinical correctness: appropriate. Clinical completeness: includes culture, monitoring, duration, stop criteria. Good. Safety: notes nephrotoxicity risk, monitoring. Good. unsupported_claims? maybe claim \"stop antibiotics at 36h unlikely given indicators\" but evidence says can stop if criteria met; they say unlikely but that's judgment, not unsupported. No contradictions. Critical omissions: maybe omission of metronidazole? Evidence E4 says for chorioamnionitis use benzylpenicillin+gentamicin+metronidazole, but case has no chorioamnionitis. So fine. Regimen incomplete? No need metronidazole. So false. Ungrounded_dose: doses are supported by E5. So false.\n\nNow assign scores 1-5.\n\nFaithfulness: plan reflects evidence content? Yes but citations missing. Faithfulness maybe 4.\n\nCitation_correctness: citations absent or mismatched. 1.\n\nCitation_completeness: missing citations for many statements. 1.\n\nClinical_correctness: 5.\n\nClinical_completeness: covers key actions, monitoring, duration. Might miss mention of blood culture before antibiotics (they mention obtain blood culture). Good. 5.\n\nClinical_utility: actionable plan. 5.\n\nSafety: acknowledges nephrotoxicity, monitoring. Good. 5.\n\nunsupported_claims: none.\n\ncontradictions: none.\n\ncritical_omissions: maybe omission of therapeutic drug monitoring schedule for gentamicin trough before second dose. They mention record times but not measuring trough. Evidence E7 (not in list) but E2 mentions record times. E7 about trough not cited. Could be omission. Might be critical? Probably minor. Could list as omission: \"no mention of measuring gentamicin trough concentrations as per guideline\". Provide reason.\n\nregimen_incomplete: false.\n\nungrounded_dose: false.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377819782,
+      "prompt_tokens": 5800,
+      "prompt_time": 0.271440414,
+      "completion_tokens": 669,
+      "completion_time": 1.3820093230000001,
+      "total_tokens": 6469,
+      "total_time": 1.6534497369999999,
+      "completion_tokens_details": {
+        "reasoning_tokens": 459
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c15aa9c1b7",
+    "x_groq": {
+      "id": "req_01m5szaqyxermtxvggrvjakrp1",
+      "seed": 2009468167
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "970",
+    "x-ratelimit-remaining-tokens": "1263",
+    "x-ratelimit-reset-requests": "43m12s",
+    "x-ratelimit-reset-tokens": "50.527s"
+  },
+  "result": {
+    "faithfulness": 4,
+    "citation_correctness": 1,
+    "citation_completeness": 1,
+    "clinical_correctness": 5,
+    "clinical_completeness": 5,
+    "clinical_utility": 5,
+    "safety": 5,
+    "unsupported_claims": [],
+    "contradictions": [],
+    "critical_omissions": [
+      "Missing recommendation to measure gentamicin trough concentrations before the second dose as per NICE guidance (evidence on therapeutic drug monitoring)"
+    ],
+    "regimen_incomplete": false,
+    "ungrounded_dose": false,
+    "rationale": "Plan follows NICE recommendations for empirical EOS treatment (benzylpenicillin 25\u202fmg/kg q12h, gentamicin 5\u202fmg/kg) and includes culture, monitoring, and duration, reflecting clinical correctness and utility. However, it provides no inline citations, so citation correctness/completeness are low. Safety considerations are addressed. The only notable omission is the lack of a specific instruction to obtain gentamicin trough levels before the second dose, which is advised in NICE guidance."
+  }
+}

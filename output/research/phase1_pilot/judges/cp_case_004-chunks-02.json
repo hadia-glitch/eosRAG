@@ -1,0 +1,113 @@
+{
+  "completed": true,
+  "task_sha256": "e7202a2f9ab98330c5c4c507e00b663a66d27254502f16ec81dd5ae9e9ef3f8d",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 10.184929699986242,
+  "kind": "chunks",
+  "case_id": "cp_case_004",
+  "mapping": {
+    "P007": "WHO_pg27_background-and-definitio_chunk1",
+    "P009": "WHO_pg2_background-and-definitio_chunk1",
+    "P010": "WHO_pg31_background-and-definitio_chunk1",
+    "P011": "WHO_pg31_background-and-definitio_chunk2",
+    "P012": "WHO_pg31_in-young-infants-aged-0-_rec1_chunk1",
+    "P013": "WHO_pg31_remarks_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-87a5559e-fb47-4cf4-b5a5-e21abe4fdc79",
+    "object": "chat.completion",
+    "created": 1792945639,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P007\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Defines suspected sepsis signs and recommends ampicillin/penicillin plus gentamicin for hospitalized infants 0\u201159\u202fdays.\"\n    },\n    {\n      \"passage\": \"P009\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Provides WHO definition of PSBI signs matching the infant\u2019s clinical presentation.\"\n    },\n    {\n      \"passage\": \"P010\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes staphylococcal sepsis and cloxacillin recommendation, not relevant to GBS sepsis.\"\n    },\n    {\n      \"passage\": \"P011\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Repeats cloxacillin plus gentamicin guidance for staphylococcal sepsis, unrelated to case.\"\n    },\n    {\n      \"passage\": \"P012\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Recommendation for cloxacillin in suspected staphylococcal sepsis, not applicable here.\"\n    },\n    {\n      \"passage\": \"P013\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Dosing details for cloxacillin/gentamicin targeting staphylococcal sepsis, irrelevant to case.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for each target passage. Determine grades.\n\nCase: critical neonatal sepsis, hospital setting, WHO guideline, propose ampicillin+gentamicin. Passages:\n\nP007: defines suspected sepsis signs and recommends ampicillin or penicillin plus gentamicin for infants 0-59 days hospitalized. This is directly actionable. Grade 3. guideline_aligned true (WHO). scenario_applicable true (hospital, signs present). clinically_useful true.\n\nRationale short.\n\nP009: defines PSBI signs. Not treatment recommendation. Background definition. Useful but not direct actionable. Grade 2? It provides definition aligning with case signs. So grade 2. guideline_aligned true. scenario_applicable true (signs). clinically_useful true.\n\nP010: defines suspected staphylococcal sepsis and recommends cloxacillin+gentamicin. Not relevant to GBS sepsis. Not applicable. Grade 0 or 1? It's background but about different organism. Probably irrelevant. Grade 0. guideline_aligned true (WHO) but scenario_applicable false. clinically_useful false.\n\nP011: repeats cloxacillin+gentamicin recommendation. Same as above. Grade 0. scenario_applicable false.\n\nP012: recommendation for cloxacillin+gentamicin for staph sepsis. Same. Grade 0.\n\nP013: remarks about dosing cloxacillin+gentamicin. Same. Grade 0.\n\nReturn JSON with judgments array.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.248324348,
+      "prompt_tokens": 3955,
+      "prompt_time": 0.223503072,
+      "completion_tokens": 791,
+      "completion_time": 1.6409170290000001,
+      "total_tokens": 4746,
+      "total_time": 1.8644201009999999,
+      "completion_tokens_details": {
+        "reasoning_tokens": 310
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m5sy6hxre7sb1xc7whh23qh5",
+      "seed": 85750521
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "987",
+    "x-ratelimit-remaining-tokens": "3126",
+    "x-ratelimit-reset-requests": "18m43.2s",
+    "x-ratelimit-reset-tokens": "36.555s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P007",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Defines suspected sepsis signs and recommends ampicillin/penicillin plus gentamicin for hospitalized infants 0\u201159\u202fdays."
+      },
+      {
+        "passage": "P009",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Provides WHO definition of PSBI signs matching the infant\u2019s clinical presentation."
+      },
+      {
+        "passage": "P010",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes staphylococcal sepsis and cloxacillin recommendation, not relevant to GBS sepsis."
+      },
+      {
+        "passage": "P011",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Repeats cloxacillin plus gentamicin guidance for staphylococcal sepsis, unrelated to case."
+      },
+      {
+        "passage": "P012",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Recommendation for cloxacillin in suspected staphylococcal sepsis, not applicable here."
+      },
+      {
+        "passage": "P013",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Dosing details for cloxacillin/gentamicin targeting staphylococcal sepsis, irrelevant to case."
+      }
+    ]
+  }
+}

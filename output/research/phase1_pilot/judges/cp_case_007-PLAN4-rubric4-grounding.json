@@ -1,0 +1,69 @@
+{
+  "completed": true,
+  "task_sha256": "3d51daf8a66c5a14d73704d3372865be22401f370e90640317c28e0479c5bbdd",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 1.9202148000040324,
+  "kind": "plan",
+  "case_id": "cp_case_007",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-b60a00e5-aabb-46f3-ad1d-50e9095b128f",
+    "object": "chat.completion",
+    "created": 1792954441,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"faithfulness\":5,\"citation_correctness\":2,\"citation_completeness\":3,\"unsupported_claims\":[],\"contradictions\":[],\"ungrounded_dose\":false,\"ungrounded_dose_examples\":[],\"rationale\":\"The plan\u2019s risk assessment (L002\u2011L005) and recommendation for enhanced observation (L011\u2011L012, L020) are consistent with source S003, which states blood culture and observation are advised for EOS risk \u22651/1000 and that low\u2011risk infants (<1/1000) may be managed with observation alone. The discussion of blood culture thresholds (L012) aligns with S003\u2019s risk\u2011based thresholds. The statement that antibiotics are not required (L015) follows from the same low\u2011risk guidance. No claim in the candidate lines contradicts the supplied passages, and no dosage information is presented, so there are no ungrounded dose assertions. Citation mapping is unavailable, limiting citation correctness and completeness assessments.\"}",
+          "reasoning": "We need produce JSON with scores. Assess faithfulness: plan statements align with evidence? Evidence S003 says blood culture & observation recommended for risk \u22651/1000. Plan says low risk 0.4, recommends enhanced observation, says blood culture not mandated. That matches evidence. So faithful. citation correctness: mapping unavailable, but they didn't provide numbers. Likely missing citations. So low correctness maybe 2. completeness: they cite some but not all claims? Probably 3. Unsupported claims: any claim not supported by passages. Check L011 \"Enhanced clinical observation\" supported by S003 (yes). L012 discussion about blood culture threshold \u2013 supported by S003. L015 antibiotic plan required=False \u2013 supported by low risk no antibiotics per S003. L020 monitoring plan \u2013 supported. No contradictions. Ungrounded dose: none. So produce arrays empty. Provide rationale."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.21083271,
+      "prompt_tokens": 2780,
+      "prompt_time": 0.171052321,
+      "completion_tokens": 387,
+      "completion_time": 0.810513516,
+      "total_tokens": 3167,
+      "total_time": 0.981565837,
+      "completion_tokens_details": {
+        "reasoning_tokens": 178
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4140daa9c2",
+    "x_groq": {
+      "id": "req_01m5t6k6yzes7vxv6tqd422ene",
+      "seed": 1786393302
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "977",
+    "x-ratelimit-remaining-tokens": "4664",
+    "x-ratelimit-reset-requests": "33m7.2s",
+    "x-ratelimit-reset-tokens": "25.02s"
+  },
+  "result": {
+    "faithfulness": 5,
+    "citation_correctness": 2,
+    "citation_completeness": 3,
+    "unsupported_claims": [],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan\u2019s risk assessment (L002\u2011L005) and recommendation for enhanced observation (L011\u2011L012, L020) are consistent with source S003, which states blood culture and observation are advised for EOS risk \u22651/1000 and that low\u2011risk infants (<1/1000) may be managed with observation alone. The discussion of blood culture thresholds (L012) aligns with S003\u2019s risk\u2011based thresholds. The statement that antibiotics are not required (L015) follows from the same low\u2011risk guidance. No claim in the candidate lines contradicts the supplied passages, and no dosage information is presented, so there are no ungrounded dose assertions. Citation mapping is unavailable, limiting citation correctness and completeness assessments."
+  }
+}

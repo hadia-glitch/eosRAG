@@ -1,0 +1,52 @@
+{
+  "csv_sha256": "fe1787c19c929324d2862e5fb66f5cf3945a6ba75a41623a5ba506fa6f9e294d",
+  "rows": 100000,
+  "patient_ids": 20000,
+  "positive_rows": 43035,
+  "prevalence": 0.43035,
+  "missing_by_column": {
+    "Patient_ID": 0,
+    "Observation_Hour": 0,
+    "Gestational_Age": 0,
+    "Birth_Weight": 0,
+    "Sex": 0,
+    "Postnatal_Age": 0,
+    "Delivery_Mode": 0,
+    "Apgar": 0,
+    "HR": 3443,
+    "Resp": 3550,
+    "Temp": 3432,
+    "SpO2": 3419,
+    "BP": 3517,
+    "Oxygen": 3522,
+    "WBC": 3529,
+    "CRP": 3593,
+    "PCT": 3533,
+    "Platelets": 3510,
+    "Lactate": 3562,
+    "Hemoglobin": 3548,
+    "Sepsis_Label": 0
+  },
+  "duplicate_patient_hour_rows": 13899,
+  "conflicting_label_patient_hour_pairs": 6858,
+  "inconsistent_baseline_patient_ids": {
+    "Gestational_Age": 13778,
+    "Birth_Weight": 7588,
+    "Sex": 6830,
+    "Delivery_Mode": 6861,
+    "Apgar": 11066
+  },
+  "postnatal_age_days_range": [
+    0,
+    28
+  ],
+  "birth_weight_at_upper_value_fraction": 0.67495,
+  "source": "User-supplied Kaggle neonatal sepsis CSV; dataset URL, study, collection sites and label adjudication unavailable",
+  "clinical_eos_eligible": false,
+  "limitations": [
+    "Sepsis_Label is an observation-associated supplied label, not established culture-confirmed EOS",
+    "Patient/hour conflicts and changing immutable covariates prevent defensible longitudinal reconstruction",
+    "Unit definitions and actual measurement/result availability times are unavailable",
+    "Real-patient versus generated-data provenance is unverified; distribution patterns do not prove either origin"
+  ]
+}

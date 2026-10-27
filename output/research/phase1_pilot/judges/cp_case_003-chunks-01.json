@@ -1,0 +1,113 @@
+{
+  "completed": true,
+  "task_sha256": "ea0ea7a33f69c5a12fffba47cf972ec47af5046ffadd1772c2b296a28a57960f",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 6.181058400004986,
+  "kind": "chunks",
+  "case_id": "cp_case_003",
+  "mapping": {
+    "P001": "AAP_pg2_abstract_chunk1",
+    "P002": "AAP_pg2_abstract_chunk2",
+    "P003": "AAP_pg2_abstract_chunk3",
+    "P004": "AAP_pg2_risk-factors-for-eos_chunk1",
+    "P005": "AAP_pg3_categorical-risk-factor-_chunk1",
+    "P006": "AAP_pg3_multivariate-risk-assess_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-61e026a4-ef60-430b-9636-2e031f8869ef",
+    "object": "chat.completion",
+    "created": 1792945341,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P001\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Provides general background on EOS incidence and risk factor variability, not specific to this case.\"\n    },\n    {\n      \"passage\": \"P002\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Summarizes epidemiology of EOS in \u226535\u2011week infants; no direct guidance for the presented risk profile.\"\n    },\n    {\n      \"passage\": \"P003\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Discusses need to assess risk in well\u2011appearing infants; background only, no actionable recommendation.\"\n    },\n    {\n      \"passage\": \"P004\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Lists ROM duration as a validated risk factor for EOS, directly relevant to ROM\u202f20\u202fh in this preterm infant.\"\n    },\n    {\n      \"passage\": \"P005\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Categorical algorithm flags ROM\u202f>18\u202fh and <37\u202fwks as indication for lab testing and empirical antibiotics.\"\n    },\n    {\n      \"passage\": \"P006\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Describes multivariate risk model including ROM and gestational age, supporting risk\u2011based decision making.\"\n    }\n  ]\n}",
+          "reasoning": "We need output JSON with judgments for each target passage. Evaluate relevance to case: case is preterm 34 weeks, ROM 20h, CRP elevated, no GBS, no chorio, adequate IAP. Need antibiotics? Guidelines: risk factors include prolonged ROM >18h, so may need evaluation. Passages:\n\nP001 abstract about incidence, risk factors, labs. General background. Grade 1? It's background, marginal. Not direct actionable. So relevance_grade 1, guideline_aligned true (AAP source). scenario_applicable? It's general, not specific recommendation, but applicable context yes? scenario_applicable maybe false because not specific recommendation. Clinically_useful requires grade>=2, so false.\n\nP002 similar background about epidemiology. Grade1.\n\nP003 similar background. Grade1.\n\nP004 lists risk factors including ROM duration. This is applicable risk factor info. Could support decision. It's not direct recommendation but useful. Grade2. guideline_aligned true. scenario_applicable true (risk factor relevant). clinically_useful true.\n\nP005 categorical risk factor assessment includes ROM >18h and gestational <37 weeks as risk factor, recommends lab testing and antibiotics for categories. This is actionable. Grade3. guideline_aligned true. scenario_applicable true. clinically_useful true.\n\nP006 multivariate risk assessment mentions ROM as factor and risk calculator. Not direct recommendation but tool. Could be grade2. guideline_aligned true. scenario_applicable true. clinically_useful true.\n\nNow craft JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.248306733,
+      "prompt_tokens": 3093,
+      "prompt_time": 0.12258719,
+      "completion_tokens": 787,
+      "completion_time": 1.6429446410000001,
+      "total_tokens": 3880,
+      "total_time": 1.765531831,
+      "completion_tokens_details": {
+        "reasoning_tokens": 310
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m5sxxfe1exx8sh5smfbhznec",
+      "seed": 1688947297
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "991",
+    "x-ratelimit-remaining-tokens": "3985",
+    "x-ratelimit-reset-requests": "12m57.599s",
+    "x-ratelimit-reset-tokens": "30.112s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P001",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Provides general background on EOS incidence and risk factor variability, not specific to this case."
+      },
+      {
+        "passage": "P002",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Summarizes epidemiology of EOS in \u226535\u2011week infants; no direct guidance for the presented risk profile."
+      },
+      {
+        "passage": "P003",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses need to assess risk in well\u2011appearing infants; background only, no actionable recommendation."
+      },
+      {
+        "passage": "P004",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Lists ROM duration as a validated risk factor for EOS, directly relevant to ROM\u202f20\u202fh in this preterm infant."
+      },
+      {
+        "passage": "P005",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Categorical algorithm flags ROM\u202f>18\u202fh and <37\u202fwks as indication for lab testing and empirical antibiotics."
+      },
+      {
+        "passage": "P006",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Describes multivariate risk model including ROM and gestational age, supporting risk\u2011based decision making."
+      }
+    ]
+  }
+}

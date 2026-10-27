@@ -1,0 +1,7 @@
+{
+  "purpose": "Supplied-label research inference only",
+  "sha256": {
+    "model.json": "17d246856f5fbc1941950d44f3f0194917f0150da4a87df233344ee94d909aa0",
+    "scope.json": "7b4657860393bb2535d2ed1942c54e5a27d9a940d0a32c1f782387d585ce2138"
+  }
+}

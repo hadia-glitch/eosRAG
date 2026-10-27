@@ -1,0 +1,236 @@
+{
+  "key": "cp_case_004-PLAN1-rubric4-clinical",
+  "kind": "plan",
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "case_id": "cp_case_004",
+  "prompt": {
+    "task": "Evaluate clinical usefulness/completeness and safety against this case and the supplied actual/gold guideline text. These are LLM proxy ratings, not clinician validation. Do not assess source faithfulness here or pretend that gold text was retrieved by the plan.",
+    "case": {
+      "case_id": "cp_case_004",
+      "active_guideline": "WHO",
+      "care_setting": "hospital",
+      "contraindication_type": null,
+      "trend_type": null,
+      "ambiguous": true,
+      "previous_assessments": [],
+      "deltas": null,
+      "proposed_drugs": [
+        "ampicillin",
+        "gentamicin"
+      ],
+      "retrieval_query": "WHO newborn sepsis critical illness possible serious bacterial infection PSBI young infant 0-59 days clinical severe infection fast breathing severe chest indrawing not feeding well movement only when stimulated convulsions danger signs IMCI referral hospital Maternal GBS colonization GBS positive without adequate IAP Prolonged rupture of membranes ROM 40.0h (>=18h) Maternal intrapartum fever Maternal temp 39.1C Clinical chorioamnionitis Diagnosed intrapartum Respiratory distress Severe respiratory distress Elevated CRP CRP 65.0 mg/L Positive blood culture Culture-confirmed bacteremia Poor perfusion Delayed capillary refill / shock signs respiratory distress tachypnoea grunting prolonged ROM rupture of membranes maternal fever intrapartum fever GBS group B streptococcus intrapartum antibiotics chorioamnionitis intra-amniotic infection inadequate prophylaxis IAP caesarean delivery oxygen requirement respiratory support CPAP low Apgar score resuscitation poor perfusion shock capillary refill lethargy irritability neurological status Lethargic hypothermia temperature instability CRP inflammatory markers blood culture bacteremia empirical antibiotics white blood cell count WBC I:T ratio immature neutrophil ratio procalcitonin PCT thrombocytopenia platelet count laboratory evidence sepsis senior review",
+      "patient": {
+        "gestational_age_weeks": 39.0,
+        "maternal_temperature": 39.1,
+        "rom_hours": 40.0,
+        "gbs_positive": true,
+        "respiratory_distress": "Severe",
+        "crp_level": 65.0,
+        "blood_culture_positive": true,
+        "urine_output_ml_kg_hr": 2.0,
+        "creatinine_mg_dl": 0.6,
+        "penicillin_allergy": false,
+        "adequate_intrapartum_antibiotics": false,
+        "clinical_chorioamnionitis": true,
+        "delivery_mode": "Caesarean",
+        "oxygen_need": "CPAP",
+        "apgar_5_min": 5,
+        "poor_perfusion": true,
+        "neonatal_temperature": 35.6,
+        "neurological_status": "Lethargic",
+        "wbc_count": 27.5,
+        "it_ratio": 0.42,
+        "platelet_count": 95.0,
+        "pct_level": 4.8
+      },
+      "recorded_legacy_risk_category": "CRITICAL",
+      "legacy_score_status": "Unvalidated legacy output, not clinical truth"
+    },
+    "gold_evidence": [
+      {
+        "source": "WHO",
+        "passage": "S001"
+      },
+      {
+        "source": "WHO",
+        "passage": "S002"
+      },
+      {
+        "source": "WHO",
+        "passage": "S003"
+      },
+      {
+        "source": "WHO",
+        "passage": "S004"
+      },
+      {
+        "source": "WHO",
+        "passage": "S005"
+      },
+      {
+        "source": "WHO",
+        "passage": "S006"
+      },
+      {
+        "source": "WHO",
+        "passage": "S007"
+      },
+      {
+        "source": "WHO",
+        "passage": "S008"
+      }
+    ],
+    "reference_status": "Template reference is evaluated separately for similarity and is not clinical ground truth. Actual gold/source passages are provided here.",
+    "plan": {
+      "plan_id": "PLAN1",
+      "evidence": [
+        {
+          "citation": "E1",
+          "passage": "S001"
+        },
+        {
+          "citation": "E2",
+          "passage": "S009"
+        },
+        {
+          "citation": "E3",
+          "passage": "S010"
+        },
+        {
+          "citation": "E4",
+          "passage": "S011"
+        },
+        {
+          "citation": "E5",
+          "passage": "S012"
+        },
+        {
+          "citation": "E6",
+          "passage": "S013"
+        },
+        {
+          "citation": "E7",
+          "passage": "S004"
+        },
+        {
+          "citation": "E8",
+          "passage": "S002"
+        },
+        {
+          "citation": "E9",
+          "passage": "S003"
+        },
+        {
+          "citation": "E10",
+          "passage": "S014"
+        },
+        {
+          "citation": "E11",
+          "passage": "S015"
+        },
+        {
+          "citation": "E12",
+          "passage": "S016"
+        }
+      ],
+      "numbered_citation_mapping": "Context-list order supplied for generation; citation list may differ and should be checked.",
+      "candidate_lines": {
+        "L001": "CLINICAL SUMMARY:",
+        "L002": "This 39-week neonate presents with critical early-onset sepsis, evidenced by culture-confirmed bacteremia, severe respiratory distress requiring CPAP, poor perfusion, and lethargy. The clinical picture is driven by significant maternal risk factors including chorioamnionitis, GBS colonization without adequate intrapartum prophylaxis, and prolonged rupture of membranes.",
+        "L004": "RISK ANALYSIS:",
+        "L005": "The patient is classified as CRITICAL risk (Score 14) due to the presence of culture-confirmed bacteremia (Layer 3), severe clinical signs including respiratory distress and poor perfusion (Layer 2), and high-risk maternal factors such as chorioamnionitis and GBS positivity (Layer 1). The combination of confirmed infection and hemodynamic/respiratory compromise mandates immediate, aggressive intervention.",
+        "L007": "DRIVER BREAKDOWN:",
+        "L008": "['Maternal GBS colonization: GBS positive without adequate intrapartum antibiotics (2 points)', 'Prolonged rupture of membranes: ROM 40.0h (>=18h) (2 points)', 'Maternal intrapartum fever: Maternal temp 39.1C (2 points)', 'Clinical chorioamnionitis: Diagnosed intrapartum (3 points)', 'Respiratory distress: Severe respiratory distress (2 points)', 'Elevated CRP: CRP 65.0 mg/L (2 points)', 'Positive blood culture: Culture-confirmed bacteremia (4 points)', 'Poor perfusion: Delayed capillary refill / shock signs (2 points)']",
+        "L010": "RECOMMENDED ACTIONS:",
+        "L011": "- Initiate IV ampicillin and IV gentamicin immediately per WHO guidelines for hospitalized infants with suspected sepsis/critical illness.",
+        "L012": "- Provide respiratory support with CPAP and monitor oxygen saturation.",
+        "L013": "- Monitor hemodynamic status closely given signs of poor perfusion/shock.",
+        "L014": "- Repeat blood cultures to assess clearance of bacteremia.",
+        "L015": "- Monitor renal function and electrolytes due to gentamicin use.",
+        "L017": "ANTIBIOTIC PLAN: required=True urgency=Immediate (within 1 hour)",
+        "L018": "- IV ampicillin 50 mg/kg every 12 hours",
+        "L019": "- IV gentamicin 5 mg/kg once a day",
+        "L020": "duration=At least 10 days stop_criteria=Clinical improvement, negative follow-up blood cultures, and resolution of inflammatory markers (CRP/PCT) as per clinical judgment, minimum 10 days for confirmed bacteremia.",
+        "L022": "MONITORING PLAN:",
+        "L023": "Continuous cardiorespiratory monitoring. Monitor temperature, heart rate, respiratory rate, and oxygen saturation every 1-2 hours. Assess perfusion (capillary refill time) and urine output hourly. Monitor serum creatinine and electrolytes daily due to aminoglycoside use. Repeat CRP and PCT every 24-48 hours to track inflammatory response.",
+        "L025": "ESCALATION CRITERIA:",
+        "L026": "Worsening respiratory distress requiring intubation, persistent hypotension/shock despite fluid resuscitation, new onset seizures, or rising inflammatory markers despite 48 hours of appropriate antibiotic therapy.",
+        "L028": "NUTRITION/FLUID PLAN:",
+        "L029": "Initiate IV fluids for hydration and maintenance given severe illness and potential feeding intolerance. Consider trophic feeds if hemodynamically stable, otherwise maintain NPO status until clinical stability is achieved.",
+        "L031": "DISAMBIGUATION BLOCK:",
+        "L034": "CONTRAINDICATION FLAGS:",
+        "L037": "TREND STATE CHANGE:"
+      }
+    },
+    "response_schema": {
+      "clinical_correctness": "integer 1-5",
+      "clinical_completeness": "integer 1-5",
+      "clinical_utility": "integer 1-5",
+      "safety": "integer 1-5",
+      "contradictions": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "critical_omissions": [
+        "missing information or action + source/case reason"
+      ],
+      "regimen_incomplete": "boolean",
+      "rationale": "concise source-based justification; disclose ambiguous citation mapping"
+    },
+    "rubric_version": 4,
+    "passage_catalog": {
+      "S001": "Source: WHO\nSection: Background and definitions\n\nPossible serious bacterial infection (PSBI) is defined by WHO as an illness with one or more of the following seven clinical signs: not feeding well or not able to feed at all, movement only when stimulated or no movement at all, high body temperature (\u2265\u00a038\u00a0\u00b0C), low body temperature (<\u00a035.5\u00a0\u00b0C), severe chest indrawing, convulsions in infants aged 0\u201359 days or fast breathing (\u2265\u00a060 breaths per minute) in infants aged 0\u20136 days (see Table 1.1). In 2014, the IMCI programme was updated to include a \u201c7-sign IMCI algorithm\u201d with the signs listed in Table 1.1 to define the target population in need of treatment.",
+      "S002": "Source: WHO\nSection: Recommendation A.2 (UPDATED)\nRecommendation: rec1\n\nRecommendation: Young infants aged 0\u201359 days with the IMCI signs of critical illness should be referred to hospital. If referral is not possible, ampicillin IM/IV plus gentamicin IM/IV for at least 10 days is recommended. (Strong recommendation, very low-certainty evidence)",
+      "S003": "Source: WHO\nSection: Remarks\n\n\u25a0There were no included trials. \u25a0The GDG recognized that there were limited data on the appropriate dose of antibiotics. Based on current clinical practice, the GDG considered that the following antibiotic doses should be used: ampicillin intramuscular or intravenous (IM/IV) 50\u00a0mg/kg every 12 hours in the first week of life and every 8 hours after the first week of life for a total of at least 10 days plus gentamicin IM/IV 5\u00a0mg/kg once a day in the first week of life and 7.5\u00a0mg/kg once a day after the first week of life for a total of at least 10 days. \u25a0The GDG made a strong recommendation despite the lack of trials in non-hospital settings as they felt strongly about the importance of providing clear guidance for the management of critically ill infants when referral to hospital is not possible.",
+      "S004": "Source: WHO\nSection: Background and definitions\n\nFor hospitalized infants, the 2013 WHO Pocket book of hospital care for children defined suspected sepsis as one or more of the following clinical signs: not feeding well, movement only when stimulated, high body temperature (\u2265\u00a038\u00a0\u00b0C), low body temperature (<\u00a035.5\u00a0\u00b0C), severe chest indrawing, not able to feed at all, no movement on stimulation, convulsions, drowsiness or unconsciousness, grunting, central cyanosis, severe jaundice and severe abdominal distention in infants aged 0\u201359 days, or fast breathing (\u2265\u00a060 breaths per minute) in infants aged 0\u20136 days (13).\nThe WHO Pocket book of hospital care for children also recommended providing ampicillin or penicillin plus gentamicin IM/IV for at least 10 days to infants aged 0\u201359 days with suspected sepsis (13). However, there have been changes to AMR in hospital and community settings since that time.",
+      "S005": "Source: WHO\nSection: Critical outcomes\n\nFor this comparison, one, two, three and four studies assessed the following outcomes with the following findings. \u25a0Mortality: Very low-certainty evidence suggests a decrease in all-cause mortality from birth to hospital discharge (3 RCTs, 711 participants, RR 0.64, 95% CI: 0.25 to 1.65) (68, 93, 94). \u25a0Treatment failure: Very low-certainty evidence suggests little or no difference in treatment failure after seven days of enrolment (2 RCTs, 955 participants, RR 1.02, 95% CI: 0.38 to 2.71) (68, 92). \u25a0Treatment success: Moderate-certainty evidence suggests little or no difference in treatment success after 48 hours to treatment completion (4 RCTs, 1983 participants, RR 1.03, 95% CI: 0.93 to 1.13) (68, 92, 93, 95). \u25a0Neurodevelopment: Very low-certainty evidence suggests an increase in neurologic sequelae after six months (1 RCT, 140 participants, RR 1.39, 95% CI: 0.69 to 2.78) (94).",
+      "S006": "Source: WHO\nSection: A. Non-hospital settings\n\nA.2 Critical illness in young infants aged 0\u201359 days in non-hospital settings Ampicillin IM/IV for a total of at least 10 days \u25a050\u00a0mg/kg/dose every 12 hours (first week of life) \u25a050\u00a0mg/kg/dose every 8 hours (> first week of life)\nPlus Gentamicin IM/IV for a total of at least 10 days \u25a05\u00a0mg/kg once a day (first week of life)\n\u25a07.5\u00a0mg/kg once a day (> first week of life)\nA.3 Clinical severe infection in young infants aged 0\u201359 days in non-hospital settings Amoxicillin oral for a total of at least 7 days \u25a050\u00a0mg/kg/dose every 12 hours (first week of life) \u25a050\u00a0mg/kg/dose every 8 hours (> first week of life)\nPlus Gentamicin IM/IV for a total of at least 7 days, or 2 days if 7 days is not possible \u25a05\u00a0mg/kg once a day (first week of life)\n\u25a07.5\u00a0mg/kg once a day (> first week of life)",
+      "S007": "Source: WHO\nSection: referral is not possible\n\n\u25a0The GDG emphasized the importance of referring all infants aged 0\u201359 days with signs of PSBI to hospital and noted that the recommendations for non-hospital settings are only for situations where referral is not possible.",
+      "S008": "Source: WHO\nSection: Risk groups\n\n\u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence.\n\u25a0The GDG was also unable to recommend further risk stratification (e.g. by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.",
+      "S009": "Source: WHO\nSection: In young infants aged 0\u201359 days who are hospitalized with suspected staphylococcal sepsis, cloxacillin\nRecommendation: rec1\n\nRecommendation: IM/IV plus gentamicin IM/IV for at least 10 days is recommended as first-choice antibiotic management.\n(Strong recommendation, very low-certainty evidence)",
+      "S010": "Source: WHO\nSection: Remarks\n\n\u25a0There were no included trials.\n\u25a0The GDG recognized that there were limited data on antibiotic dosing. Based on clinical practice, the GDG considered that the following antibiotic doses should be used: cloxacillin IM/IV 50\u00a0mg/kg every 12 hours in the first week of life and every 8 hours after the first week of life for a total of at least 10 days plus gentamicin IM/IV 5\u00a0mg/kg once a day in the first week of life and 7.5 mg/kg once a day after the first week of life for a total of at least 10 days.\n\u25a0The GDG made a strong recommendation despite the lack of trials as they felt strongly about the importance of providing clear guidance for the management of infants with sepsis. The GDG were able to use their knowledge and experience in best practice clinical management in young infants to make this recommendation by consensus.",
+      "S011": "Source: WHO\nSection: Background and definitions\n\nFor hospitalized infants, the 2013 WHO Pocket book of hospital care for children defines suspected staphylococcal sepsis as one or more of the following clinical signs: not feeding well, movement only when stimulated, high body temperature (\u2265\u00a038\u00a0\u00b0C), low body temperature (<\u00a035.5\u00a0\u00b0C), severe chest indrawing, not able to feed at all, no movement on stimulation, convulsions, drowsiness or unconsciousness, grunting, central cyanosis, severe jaundice and severe abdominal distention in infants aged 0\u201359 days, or fast breathing (\u2265\u00a060 breaths per minute) in infants aged 0\u20136 days; plus one or more of the clinical signs of staphylococcal infection: skin infection, pustules, omphalitis or abscesses (13). The WHO Pocket book of hospital care for children recommended providing cloxacillin plus gentamicin IV for at least 10 days to infants aged 0\u201359 days with suspected staphylococcal sepsis (13).",
+      "S012": "Source: WHO\nSection: Background and definitions\n\nThe WHO Pocket book of hospital care for children recommended providing cloxacillin plus gentamicin IV for at least 10 days to infants aged 0\u201359 days with suspected staphylococcal sepsis (13). However, there have been changes to AMR in hospital and community settings since that time.",
+      "S013": "Source: WHO\nSection: Background and definitions\n\nClinical severe infection is defined by WHO as one or more of the following clinical signs in infants aged 0\u201359 days: not feeding well, movement only when stimulated, high body temperature (\u2265\u00a038\u00a0\u00b0C), low body temperature (<\u00a035.5\u00a0\u00b0C), and/or severe chest indrawing. An additional sign of clinical severe infection in infants aged 0\u20136 days is fast breathing (\u2265\u00a060 breaths per minute) (27, 28).\nIn 2014, WHO developed guidelines to provide simplified antibiotic regimens (gentamicin IM for either 2 or 7 days plus oral amoxicillin for 7 days) to infants aged 0\u201359 days with clinical severe illness whose families do not accept or cannot access referral care at a hospital (27, 28). However, there have been changes to AMR in hospital and community settings since that time.",
+      "S014": "Source: WHO\nSection: Remarks\n\n\u25a0The GDG made a strong recommendation despite the lack of trials in non-hospital settings as they felt strongly about the importance of providing clear guidance for the management of critically ill infants when referral to hospital is not possible. The GDG were able to use their knowledge and experience in best practice clinical management of sepsis in young infants to make this recommendation by consensus.",
+      "S015": "Source: WHO\nSection: Background and definitions\n\nCritical illness is defined as one or more of the following clinical signs: not able to feed at all, no movement on stimulation, convulsions in an infant aged 0\u201359 days (27, 28). There are pre-existing WHO recommendations (i)\u00a0to provide ampicillin plus gentamicin via the intramuscular or intravenous (IM or IV) routes for at least 10 days to hospitalized infants with critical illness (13) and (ii) that infants who have any sign of critical illness identified in the community should be hospitalized after a single dose of pre-referral treatment with ampicillin or benzyl penicillin and gentamicin IM/IV (11). These recommendations were made in 2013 and 2015 on the basis of GDG expert opinion (27, 28). However, there has been no WHO guidance on \u201cfollow- up\u201d doses of antibiotics after initial treatment of infants in the community where referral to hospital is not possible.",
+      "S016": "Source: WHO\nSection: Background and definitions\n\nHowever, there has been no WHO guidance on \u201cfollow- up\u201d doses of antibiotics after initial treatment of infants in the community where referral to hospital is not possible. There have also been changes to antimicrobial resistance (AMR) and new technologies for improving access to health facilities through telehealth and online platforms and community ambulances, especially in humanitarian settings (62, 63)."
+    },
+    "finding_rules": "Select immutable candidate-line claim_id for contradictions. Missing details are critical_omissions. Apply patient age, contraindications, hospital/referral context and all guideline conditions. Safe expert referral/withholding may be appropriate and is not itself unsafe; it can still leave a regimen incomplete. Do not demand a numeric dose where the case/source cannot safely establish one. The case legacy risk category is unvalidated and cannot independently prove infection or treatment eligibility. Return the requested 1-5 ratings and concrete evidence-based findings.",
+    "evaluation_stage": "clinical"
+  },
+  "candidate_lines": {
+    "L001": "CLINICAL SUMMARY:",
+    "L002": "This 39-week neonate presents with critical early-onset sepsis, evidenced by culture-confirmed bacteremia, severe respiratory distress requiring CPAP, poor perfusion, and lethargy. The clinical picture is driven by significant maternal risk factors including chorioamnionitis, GBS colonization without adequate intrapartum prophylaxis, and prolonged rupture of membranes.",
+    "L004": "RISK ANALYSIS:",
+    "L005": "The patient is classified as CRITICAL risk (Score 14) due to the presence of culture-confirmed bacteremia (Layer 3), severe clinical signs including respiratory distress and poor perfusion (Layer 2), and high-risk maternal factors such as chorioamnionitis and GBS positivity (Layer 1). The combination of confirmed infection and hemodynamic/respiratory compromise mandates immediate, aggressive intervention.",
+    "L007": "DRIVER BREAKDOWN:",
+    "L008": "['Maternal GBS colonization: GBS positive without adequate intrapartum antibiotics (2 points)', 'Prolonged rupture of membranes: ROM 40.0h (>=18h) (2 points)', 'Maternal intrapartum fever: Maternal temp 39.1C (2 points)', 'Clinical chorioamnionitis: Diagnosed intrapartum (3 points)', 'Respiratory distress: Severe respiratory distress (2 points)', 'Elevated CRP: CRP 65.0 mg/L (2 points)', 'Positive blood culture: Culture-confirmed bacteremia (4 points)', 'Poor perfusion: Delayed capillary refill / shock signs (2 points)']",
+    "L010": "RECOMMENDED ACTIONS:",
+    "L011": "- Initiate IV ampicillin and IV gentamicin immediately per WHO guidelines for hospitalized infants with suspected sepsis/critical illness.",
+    "L012": "- Provide respiratory support with CPAP and monitor oxygen saturation.",
+    "L013": "- Monitor hemodynamic status closely given signs of poor perfusion/shock.",
+    "L014": "- Repeat blood cultures to assess clearance of bacteremia.",
+    "L015": "- Monitor renal function and electrolytes due to gentamicin use.",
+    "L017": "ANTIBIOTIC PLAN: required=True urgency=Immediate (within 1 hour)",
+    "L018": "- IV ampicillin 50 mg/kg every 12 hours",
+    "L019": "- IV gentamicin 5 mg/kg once a day",
+    "L020": "duration=At least 10 days stop_criteria=Clinical improvement, negative follow-up blood cultures, and resolution of inflammatory markers (CRP/PCT) as per clinical judgment, minimum 10 days for confirmed bacteremia.",
+    "L022": "MONITORING PLAN:",
+    "L023": "Continuous cardiorespiratory monitoring. Monitor temperature, heart rate, respiratory rate, and oxygen saturation every 1-2 hours. Assess perfusion (capillary refill time) and urine output hourly. Monitor serum creatinine and electrolytes daily due to aminoglycoside use. Repeat CRP and PCT every 24-48 hours to track inflammatory response.",
+    "L025": "ESCALATION CRITERIA:",
+    "L026": "Worsening respiratory distress requiring intubation, persistent hypotension/shock despite fluid resuscitation, new onset seizures, or rising inflammatory markers despite 48 hours of appropriate antibiotic therapy.",
+    "L028": "NUTRITION/FLUID PLAN:",
+    "L029": "Initiate IV fluids for hydration and maintenance given severe illness and potential feeding intolerance. Consider trophic feeds if hemodynamically stable, otherwise maintain NPO status until clinical stability is achieved.",
+    "L031": "DISAMBIGUATION BLOCK:",
+    "L034": "CONTRAINDICATION FLAGS:",
+    "L037": "TREND STATE CHANGE:"
+  },
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "key": "cp_case_002-PLAN2-rubric4-clinical",
+  "kind": "plan",
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "case_id": "cp_case_002",
+  "prompt": {
+    "task": "Evaluate clinical usefulness/completeness and safety against this case and the supplied actual/gold guideline text. These are LLM proxy ratings, not clinician validation. Do not assess source faithfulness here or pretend that gold text was retrieved by the plan.",
+    "case": {
+      "case_id": "cp_case_002",
+      "active_guideline": "NICE",
+      "care_setting": "hospital",
+      "contraindication_type": null,
+      "trend_type": null,
+      "ambiguous": false,
+      "previous_assessments": [],
+      "deltas": null,
+      "proposed_drugs": [
+        "benzylpenicillin",
+        "gentamicin"
+      ],
+      "retrieval_query": "NICE NG195 Prolonged rupture of membranes ROM 20.0h (>=18h) Elevated CRP CRP 12.0 mg/L prolonged ROM rupture of membranes caesarean delivery preterm prematurity CRP inflammatory markers white blood cell count WBC procalcitonin PCT thrombocytopenia platelet count",
+      "patient": {
+        "gestational_age_weeks": 32.0,
+        "maternal_temperature": 37.9,
+        "rom_hours": 20.0,
+        "gbs_positive": false,
+        "respiratory_distress": "None",
+        "crp_level": 12.0,
+        "blood_culture_positive": false,
+        "urine_output_ml_kg_hr": 2.0,
+        "creatinine_mg_dl": 0.6,
+        "penicillin_allergy": false,
+        "adequate_intrapartum_antibiotics": true,
+        "clinical_chorioamnionitis": false,
+        "delivery_mode": "Caesarean",
+        "oxygen_need": "None",
+        "apgar_5_min": 9,
+        "poor_perfusion": false,
+        "neonatal_temperature": 37.0,
+        "neurological_status": "Normal",
+        "wbc_count": 18.5,
+        "it_ratio": 0.15,
+        "platelet_count": 260.0,
+        "pct_level": 0.3
+      },
+      "recorded_legacy_risk_category": "INTERMEDIATE",
+      "legacy_score_status": "Unvalidated legacy output, not clinical truth"
+    },
+    "gold_evidence": [
+      {
+        "source": "NICE",
+        "passage": "S001"
+      },
+      {
+        "source": "NICE",
+        "passage": "S002"
+      },
+      {
+        "source": "NICE",
+        "passage": "S003"
+      },
+      {
+        "source": "NICE",
+        "passage": "S004"
+      },
+      {
+        "source": "NICE",
+        "passage": "S005"
+      },
+      {
+        "source": "NICE",
+        "passage": "S006"
+      },
+      {
+        "source": "NICE",
+        "passage": "S007"
+      },
+      {
+        "source": "NICE",
+        "passage": "S008"
+      },
+      {
+        "source": "NICE",
+        "passage": "S009"
+      },
+      {
+        "source": "NICE",
+        "passage": "S010"
+      },
+      {
+        "source": "NICE",
+        "passage": "S011"
+      },
+      {
+        "source": "NICE",
+        "passage": "S012"
+      }
+    ],
+    "reference_status": "Template reference is evaluated separately for similarity and is not clinical ground truth. Actual gold/source passages are provided here.",
+    "plan": {
+      "plan_id": "PLAN2",
+      "evidence": [
+        {
+          "citation": "E1",
+          "passage": "S013"
+        },
+        {
+          "citation": "E2",
+          "passage": "S014"
+        },
+        {
+          "citation": "E3",
+          "passage": "S010"
+        },
+        {
+          "citation": "E4",
+          "passage": "S008"
+        },
+        {
+          "citation": "E5",
+          "passage": "S015"
+        }
+      ],
+      "numbered_citation_mapping": "Context-list order supplied for generation; citation list may differ and should be checked.",
+      "candidate_lines": {
+        "L001": "CLINICAL SUMMARY:",
+        "L002": "This is a 32-week preterm neonate assessed for early-onset sepsis with an INTERMEDIATE risk score of 3. The risk is driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L), despite adequate intrapartum antibiotics and no clinical chorioamnionitis.",
+        "L004": "RISK ANALYSIS:",
+        "L005": "The patient falls into the INTERMEDIATE risk category due to a combined score of 3. The primary drivers are prolonged rupture of membranes (>=18h, contributing 50% of the risk) and elevated CRP (contributing 50% of the risk). Although the patient received adequate intrapartum antibiotics, the prolonged ROM and inflammatory marker elevation necessitate further evaluation and potential treatment.",
+        "L007": "DRIVER BREAKDOWN:",
+        "L008": "['Prolonged rupture of membranes: ROM 20.0h (>=18h), Layer 1, 2 points, 50% contribution', 'Elevated CRP: CRP 12.0 mg/L, Layer 3, 2 points, 50% contribution']",
+        "L010": "RECOMMENDED ACTIONS:",
+        "L011": "- Initiate antibiotic therapy as per NICE NG195 for intermediate risk/clinical indicators.",
+        "L012": "- Monitor vital signs and clinical condition using a newborn early warning system for at least 12 hours.",
+        "L013": "- Measure C-reactive protein concentration 18 to 24 hours after starting antibiotics.",
+        "L014": "- Consider lumbar puncture if blood culture is positive, baby does not respond to treatment, or there is strong clinical suspicion of meningitis.",
+        "L016": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour",
+        "L017": "- IV benzylpenicillin sodium \u2014 DOSE/FREQUENCY NOT SPECIFIED IN RETRIEVED EVIDENCE: The retrieved NICE NG195 excerpts specify the drug (benzylpenicillin sodium) for women without chorioamnionitis or babies with risk factors, but do not provide specific neonatal mg/kg doses or dosing frequencies. Clinical judgment or local formulary must be used for dosing.",
+        "L018": "- IV gentamicin \u2014 WITHHELD: Not indicated as maternal chorioamnionitis is absent (NICE NG195 specifies gentamicin only for women with chorioamnionitis).",
+        "L019": "- IV metronidazole \u2014 WITHHELD: Not indicated as maternal chorioamnionitis is absent (NICE NG195 specifies metronidazole only for women with chorioamnionitis).",
+        "L020": "duration=48-72 hours pending cultures stop_criteria=Stop if blood cultures are negative at 48 hours and the baby is clinically well and CRP is normalizing.",
+        "L022": "MONITORING PLAN:",
+        "L023": "Monitor vital signs and clinical condition using a newborn early warning system for at least 12 hours. Measure CRP 18-24 hours after starting antibiotics.",
+        "L025": "ESCALATION CRITERIA:",
+        "L026": "Escalate if the baby develops clinical symptoms or signs suggesting meningitis, does not respond satisfactorily to antibiotic treatment, or has a positive blood culture.",
+        "L028": "NUTRITION/FLUID PLAN:",
+        "L029": "Continue routine postnatal care as covered in NICE's guideline on postnatal care, adjusted for preterm status (32 weeks).",
+        "L031": "DISAMBIGUATION BLOCK:",
+        "L034": "CONTRAINDICATION FLAGS:",
+        "L037": "TREND STATE CHANGE:"
+      }
+    },
+    "response_schema": {
+      "clinical_correctness": "integer 1-5",
+      "clinical_completeness": "integer 1-5",
+      "clinical_utility": "integer 1-5",
+      "safety": "integer 1-5",
+      "contradictions": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "critical_omissions": [
+        "missing information or action + source/case reason"
+      ],
+      "regimen_incomplete": "boolean",
+      "rationale": "concise source-based justification; disclose ambiguous citation mapping"
+    },
+    "rubric_version": 4,
+    "passage_catalog": {
+      "S001": "Source: NICE\nSection: Box 1: Risk factors for early-onset neonatal infection, including 'red flags'\n\nRed flag risk factor:\n\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors:\n\u2022 invasive group\u00a0B streptococcal infection in a previous baby or maternal group\u00a0B streptococcal colonisation, bacteriuria or infection in the current pregnancy\n\u2022 pre-term birth following spontaneous labour before 37\u00a0weeks' gestation\n\u2022 confirmed rupture of membranes for more than 18\u00a0hours before a pre-term birth\n\u2022 confirmed rupture of membranes for more than 24\u00a0hours before a term birth",
+      "S002": "Source: NICE\nSection: period [2021, amended 2026]\nTopic: Assessment and risk management after birth\n\nIf there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection):\n\u2022 perform an immediate clinical assessment\n\u2022 review the maternal and neonatal history\n\u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]\nIf group\u00a0B streptococcus infection is identified in the woman, trans man or non- binary person within 72\u00a0hours after the baby's birth:\n\u2022 ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2\u00a0and\n\u2022 identify any other risk factors present and\n\u2022 look for clinical indicators of infection.",
+      "S003": "Source: NICE\nSection: including 'red flags'\n\nglucose homeostasis (hypoglycaemia or hyperglycaemia)\n\u2022 metabolic acidosis (base deficit of 10\u00a0mmol/litre or greater)\nUse the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed:\n\u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators:\n\uff0d follow the recommendations in the section on investigations before starting antibiotics\u00a0and \uff0d start antibiotic treatment according to the recommendations in this guideline\u00a0and \uff0d do not wait for the test results before starting antibiotics\n\u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide:",
+      "S004": "Source: NICE\nSection: infection\nTopic: Choice and dosage of intravenous antibiotics\nRecommendation: rec1\n\nRecommendation: Use intravenous benzylpenicillin sodium with gentamicin as the first-choice antibiotic regimen for empirical treatment of suspected early-onset infection, unless microbiological surveillance data show local bacterial resistance patterns that indicate the need for a different antibiotic. [2012]\nGive benzylpenicillin sodium in a dosage of 25\u00a0mg/kg every 12\u00a0hours. Consider shortening the dose interval to every 8\u00a0hours, based on clinical judgement (for example, if the baby appears very ill). [2012]\nGive gentamicin in a starting dose of 5\u00a0mg/kg (see also recommendation 1.20.4).",
+      "S005": "Source: NICE\nSection: [2012]\nTopic: Treatment duration for intravenous antibiotics\nRecommendation: rec1\n\nRecommendation: Give intravenous antibiotic treatment for a total of 7 days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected. [2012]\nConsider continuing intravenous antibiotic treatment for more than 7\u00a0days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if:\n\u2022 the baby has not yet fully recovered or\n\u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary).",
+      "S006": "Source: NICE\nSection: infection\nTopic: Cultures, microscopy and C-reactive protein\n\nWhen starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose. [2021]\nMeasure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\nDo not routinely perform urine microscopy or culture as part of the investigations for early-onset neonatal infection, or late-onset neonatal infection for babies in neonatal units. [2021]\nPerform urine microscopy and culture for babies with suspected late-onset neonatal infection outside of neonatal units in line with NICE's guideline on urinary tract infection in under 16s. [2021]\nDo not perform skin swab microscopy or culture as part of the investigations for neonatal infection if there are no clinical signs of a localised infection.",
+      "S007": "Source: NICE\nSection: [2012, amended 2026]\nTopic: Switching to oral antibiotics\n\nFor babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if:\n\u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and\n\u2022 the levels and trends of C-reactive protein concentration are reassuring and\n\u2022 the baby is tolerating oral feeds. [2026]\nUse amoxicillin as the oral antibiotic, unless local bacterial resistance data indicates the need for a different antibiotic. May 2026: Amoxicillin is licensed for neonates but not specifically for the 98\n\nindication of early-onset neonatal infection.",
+      "S008": "Source: NICE\nSection: for early-onset or late-onset infection\nTopic: C-reactive protein and lumbar puncture\nRecommendation: rec1\n\nRecommendation: In babies given antibiotics because of risk factors for infection or clinical indicators of possible late-onset neonatal infection, measure the C reactive protein concentration 18 to 24 hours after starting antibiotics. [2021]\nConsider performing a lumbar puncture to obtain a cerebrospinal fluid sample in a baby who did not have a lumbar puncture at presentation who is receiving antibiotics, if it is thought safe to do so and if:\n\u2022 the baby has a positive blood culture (other than coagulase negative staphylococcus) or\n\u2022 the baby does not respond satisfactorily to antibiotic treatment, or\n\u2022 there is a strong clinical suspicion of infection or\n\u2022 there are clinical symptoms or signs suggesting meningitis. [2021]\n98",
+      "S009": "Source: NICE\nSection: [2012]\nTopic: Treatment duration for intravenous antibiotics\nRecommendation: rec1\n\n[2012]\nConsider continuing intravenous antibiotic treatment for more than 7\u00a0days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if:\n\u2022 the baby has not yet fully recovered or\n\u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary). [2012]\nFor babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36\u00a0hours if:\n\u2022 the blood culture is negative and 98\n\n\u2022 the initial clinical suspicion of infection was not strong and\n\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and\n\u2022 the levels and trends of C-reactive protein concentration are reassuring.",
+      "S010": "Source: NICE\nSection: Why the committee made the recommendations\n\nIn 2026, evidence from 3 studies showed that the risk of early-onset neonatal infection increased as the time between prelabour rupture of membranes (PROM) at term and birth increased. The 2026 committee agreed to amend the risk factor in box 1 about rupture of membranes at term to refer to the time between rupture and birth rather than prelabour rupture and onset of labour. This reflected their view that whether membranes rupture before or after onset of labour is irrelevant and that is it the overall time between rupture and birth that is important for the risk of early-onset neonatal infection. The evidence was inconclusive in identifying a specific time interval at which the risk of early-onset neonatal infection significantly increased. So, using their clinical experience, the committee decided to keep this at more than 24 hours.",
+      "S011": "Source: NICE\nSection: How the recommendations might affect practice\n\nThe 2026 revised wording for the risk factor for early-onset neonatal infection of rupture of membranes more than 24 hours before a term birth could increase the number of neonates requiring monitoring for early-onset infection, although current practice is already largely aligned with this so no significant change in practice or resource impact is expected. There could be an increase in the number of pregnant women, trans men and non-binary people opting for induction of labour as soon as possible after rupture of membranes rather than expectant management. The 2026 revised wording in relation to the risk of factor on maternal sepsis should ensure that suspected (or confirmed) maternal sepsis in the early postpartum period will lead to the baby being assessed for early-onset neonatal infection.",
+      "S012": "Source: NICE\nSection: infection\nTopic: Service and staffing requirements\nRecommendation: rec1\n\nRecommendation: Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]\nHealthcare professionals with specific experience in neonatal infection should be available every day to give clinical microbiology or paediatric infectious disease advice. [2021]\nFor a short explanation of why the committee made the 2021 recommendation and how it might affect practice, see the rationale and impact section on infectious disease advice.\nFull details of the evidence and the committee's discussion are in evidence review\u00a0H:\nantibiotics for treating late-onset neonatal infection.\n98",
+      "S013": "Source: NICE\nSection: chorioamnionitis\n\nEvidence Profile\n\u2022 Allergies: No penicillin allergy | Women, trans men and non-binary people without chorioamnionitis: Use benzylpenicillin sodium. | Women, trans men and non-binary people with chorioamnionitis: Use benzylpenicillin sodium plus gentamicin plus metronidazole.",
+      "S014": "Source: NICE\nSection: including 'red flags'\n\n\uff0d whether it is safe to withhold antibiotics and \uff0d whether the baby's vital signs and clinical condition need to be monitored. If monitoring is needed, continue for at least 12\u00a0hours using a newborn early warning system\n\u2022 for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal",
+      "S015": "Source: NICE\nSection: How the recommendation might affect practice\n\nThis recommendation could increase the number of women, trans men and non-binary 98\n\npeople who are offered immediate delivery when they have both prolonged prelabour rupture of membranes and a positive test for group\u00a0B streptococcus. This in turn could reduce the number of babies who need to be treated for neonatal infection and also reduce the number of women, trans men and non-binary people who need to be monitored throughout the expectant management period. The exact impact of these recommendations will vary between those hospitals where group\u00a0B streptococcus screening and testing is more routinely performed and those where it is not.\nRecommendations on group\u00a0B streptococcus screening were outside of the scope of this guideline. An economic model suggested that increasing the number of people offered immediate delivery would reduce costs overall.\nReturn to recommendation"
+    },
+    "finding_rules": "Select immutable candidate-line claim_id for contradictions. Missing details are critical_omissions. Apply patient age, contraindications, hospital/referral context and all guideline conditions. Safe expert referral/withholding may be appropriate and is not itself unsafe; it can still leave a regimen incomplete. Do not demand a numeric dose where the case/source cannot safely establish one. The case legacy risk category is unvalidated and cannot independently prove infection or treatment eligibility. Return the requested 1-5 ratings and concrete evidence-based findings.",
+    "evaluation_stage": "clinical"
+  },
+  "candidate_lines": {
+    "L001": "CLINICAL SUMMARY:",
+    "L002": "This is a 32-week preterm neonate assessed for early-onset sepsis with an INTERMEDIATE risk score of 3. The risk is driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L), despite adequate intrapartum antibiotics and no clinical chorioamnionitis.",
+    "L004": "RISK ANALYSIS:",
+    "L005": "The patient falls into the INTERMEDIATE risk category due to a combined score of 3. The primary drivers are prolonged rupture of membranes (>=18h, contributing 50% of the risk) and elevated CRP (contributing 50% of the risk). Although the patient received adequate intrapartum antibiotics, the prolonged ROM and inflammatory marker elevation necessitate further evaluation and potential treatment.",
+    "L007": "DRIVER BREAKDOWN:",
+    "L008": "['Prolonged rupture of membranes: ROM 20.0h (>=18h), Layer 1, 2 points, 50% contribution', 'Elevated CRP: CRP 12.0 mg/L, Layer 3, 2 points, 50% contribution']",
+    "L010": "RECOMMENDED ACTIONS:",
+    "L011": "- Initiate antibiotic therapy as per NICE NG195 for intermediate risk/clinical indicators.",
+    "L012": "- Monitor vital signs and clinical condition using a newborn early warning system for at least 12 hours.",
+    "L013": "- Measure C-reactive protein concentration 18 to 24 hours after starting antibiotics.",
+    "L014": "- Consider lumbar puncture if blood culture is positive, baby does not respond to treatment, or there is strong clinical suspicion of meningitis.",
+    "L016": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour",
+    "L017": "- IV benzylpenicillin sodium \u2014 DOSE/FREQUENCY NOT SPECIFIED IN RETRIEVED EVIDENCE: The retrieved NICE NG195 excerpts specify the drug (benzylpenicillin sodium) for women without chorioamnionitis or babies with risk factors, but do not provide specific neonatal mg/kg doses or dosing frequencies. Clinical judgment or local formulary must be used for dosing.",
+    "L018": "- IV gentamicin \u2014 WITHHELD: Not indicated as maternal chorioamnionitis is absent (NICE NG195 specifies gentamicin only for women with chorioamnionitis).",
+    "L019": "- IV metronidazole \u2014 WITHHELD: Not indicated as maternal chorioamnionitis is absent (NICE NG195 specifies metronidazole only for women with chorioamnionitis).",
+    "L020": "duration=48-72 hours pending cultures stop_criteria=Stop if blood cultures are negative at 48 hours and the baby is clinically well and CRP is normalizing.",
+    "L022": "MONITORING PLAN:",
+    "L023": "Monitor vital signs and clinical condition using a newborn early warning system for at least 12 hours. Measure CRP 18-24 hours after starting antibiotics.",
+    "L025": "ESCALATION CRITERIA:",
+    "L026": "Escalate if the baby develops clinical symptoms or signs suggesting meningitis, does not respond satisfactorily to antibiotic treatment, or has a positive blood culture.",
+    "L028": "NUTRITION/FLUID PLAN:",
+    "L029": "Continue routine postnatal care as covered in NICE's guideline on postnatal care, adjusted for preterm status (32 weeks).",
+    "L031": "DISAMBIGUATION BLOCK:",
+    "L034": "CONTRAINDICATION FLAGS:",
+    "L037": "TREND STATE CHANGE:"
+  },
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "key": "cp_case_026-PLAN4-rubric4-grounding",
+  "kind": "plan",
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "case_id": "cp_case_026",
+  "prompt": {
+    "task": "Evaluate source faithfulness, citations and unsupported assertions against ONLY the actual retrieved plan evidence. Gold/reference evidence is deliberately withheld. Full patient facts are supplied separately as case data.",
+    "case": {
+      "case_id": "cp_case_026",
+      "active_guideline": "WHO",
+      "care_setting": "outpatient_no_referral",
+      "contraindication_type": "who_recent_hosp",
+      "trend_type": null,
+      "ambiguous": false,
+      "previous_assessments": [],
+      "deltas": null,
+      "proposed_drugs": [
+        "ampicillin",
+        "gentamicin"
+      ],
+      "retrieval_query": "WHO newborn sepsis clinical severe infection possible serious bacterial infection PSBI possible serious bacterial infection PSBI young infant 0-59 days clinical severe infection fast breathing severe chest indrawing not feeding well movement only when stimulated convulsions danger signs IMCI referral hospital Prolonged rupture of membranes ROM 20.0h (>=18h) Elevated CRP CRP 12.0 mg/L prolonged ROM rupture of membranes caesarean delivery CRP inflammatory markers white blood cell count WBC procalcitonin PCT thrombocytopenia platelet count",
+      "patient": {
+        "gestational_age_weeks": 38.0,
+        "maternal_temperature": 37.9,
+        "rom_hours": 20.0,
+        "gbs_positive": false,
+        "respiratory_distress": "None",
+        "crp_level": 12.0,
+        "blood_culture_positive": false,
+        "urine_output_ml_kg_hr": 2.0,
+        "creatinine_mg_dl": 0.6,
+        "penicillin_allergy": false,
+        "adequate_intrapartum_antibiotics": true,
+        "clinical_chorioamnionitis": false,
+        "delivery_mode": "Caesarean",
+        "oxygen_need": "None",
+        "apgar_5_min": 9,
+        "poor_perfusion": false,
+        "neonatal_temperature": 37.0,
+        "neurological_status": "Normal",
+        "wbc_count": 18.5,
+        "it_ratio": 0.15,
+        "platelet_count": 260.0,
+        "pct_level": 0.3,
+        "hospitalized_within_prior_14_days": true
+      },
+      "recorded_legacy_risk_category": "INTERMEDIATE",
+      "legacy_score_status": "Unvalidated legacy output, not clinical truth"
+    },
+    "plan": {
+      "plan_id": "PLAN4",
+      "evidence": [
+        {
+          "chunk_id": "WHO_pg10_background-and-definitio_chunk1",
+          "passage": "S002"
+        },
+        {
+          "chunk_id": "WHO_pg2_background-and-definitio_chunk1",
+          "passage": "S008"
+        },
+        {
+          "chunk_id": "WHO_pg9_recommendation-a-3a-upda_rec1_chunk1",
+          "passage": "S001"
+        },
+        {
+          "chunk_id": "WHO_pg31_in-young-infants-aged-0-_rec1_chunk1",
+          "passage": "S009"
+        },
+        {
+          "chunk_id": "WHO_pg31_background-and-definitio_chunk1",
+          "passage": "S010"
+        }
+      ],
+      "numbered_citation_mapping": "Unavailable in saved MA trace. Do not assume joined chunk-ID order establishes E-number mapping; assess support by actual content and disclose missing mapping.",
+      "candidate_lines": {
+        "L001": "CLINICAL SUMMARY:",
+        "L002": "This 38-week neonate presents with an INTERMEDIATE risk for early-onset sepsis, driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L). Although the initial care setting was designated as outpatient, the infant's history of hospitalization within the prior 14 days constitutes a critical contraindication to WHO outpatient regimens, necessitating immediate hospitalization for full inpatient management.",
+        "L004": "RISK ANALYSIS:",
+        "L005": "The risk category is INTERMEDIATE (Score 3) due to two primary drivers: Prolonged rupture of membranes (>=18h) contributing 50% of the risk, and Elevated CRP (12.0 mg/L) contributing the remaining 50%. The infant is otherwise stable with normal respiratory status, temperature, and perfusion.",
+        "L007": "DRIVER BREAKDOWN:",
+        "L008": "Prolonged rupture of membranes (20.0h, >=18h threshold): +2 points, Layer 1, 50% contribution.",
+        "L009": "Elevated CRP (12.0 mg/L): +2 points, Layer 3, 50% contribution.",
+        "L011": "RECOMMENDED ACTIONS:",
+        "L012": "- HOSPITALIZE IMMEDIATELY: Outpatient management is contraindicated due to prior hospitalization within 14 days.",
+        "L013": "- Initiate inpatient antibiotic therapy for suspected early-onset sepsis.",
+        "L014": "- Obtain blood culture prior to antibiotic administration if it does not delay treatment.",
+        "L015": "- Monitor vital signs, respiratory status, and feeding tolerance closely.",
+        "L017": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour",
+        "L018": "- Oral amoxicillin \u2014 WITHHELD: WHO outpatient regimen (oral amoxicillin + IM gentamicin) is explicitly contraindicated for infants hospitalized within the prior 14 days; requires inpatient IV/IM regimen.",
+        "L019": "- IM gentamicin \u2014 WITHHELD: WHO outpatient regimen (oral amoxicillin + IM gentamicin) is explicitly contraindicated for infants hospitalized within the prior 14 days; requires inpatient IV/IM regimen.",
+        "L020": "- IV/IM Gentamicin \u2014 SUBSTITUTED for outpatient regimen: Inpatient management required. Specific dose/frequency not provided in retrieved WHO outpatient excerpts; refer to inpatient guidelines (e.g., WHO Pocket Book) for dosing.",
+        "L021": "- IV/IM Amoxicillin or ampicillin \u2014 SUBSTITUTED for oral amoxicillin: Inpatient management required. Specific dose/frequency not provided in retrieved WHO outpatient excerpts; refer to inpatient guidelines for dosing.",
+        "L022": "duration=At least 7 days (per WHO outpatient guideline reference, though inpatient duration may vary based on culture results and clinical response) stop_criteria=Negative blood cultures at 48 hours and clinical improvement (afebrile, normal feeding, stable vitals) for 48 hours, or as per inpatient protocol.",
+        "L024": "MONITORING PLAN:",
+        "L025": "Monitor temperature, respiratory rate, heart rate, and oxygen saturation every 4-6 hours. Monitor urine output and fluid balance. Repeat CRP and blood culture results as clinically indicated.",
+        "L027": "ESCALATION CRITERIA:",
+        "L028": "Escalate to pediatric intensive care if signs of severe infection develop (e.g., severe chest indrawing, convulsions, poor perfusion, apnea) or if the infant fails to improve on initial antibiotic therapy.",
+        "L030": "NUTRITION/FLUID PLAN:",
+        "L031": "Continue breastfeeding or formula feeding as tolerated. If feeding is poor or respiratory distress develops, initiate intravenous fluids.",
+        "L033": "DISAMBIGUATION BLOCK:",
+        "L036": "CONTRAINDICATION FLAGS:",
+        "L037": "- [CRITICAL] WHO outpatient PSBI regimen (oral amoxicillin / IM gentamicin+amoxicillin): Infant was hospitalized for illness within the prior 14 days \u2014 WHO's outpatient regimens explicitly do not apply; this infant must be hospitalized for the current illness.",
+        "L039": "TREND STATE CHANGE:"
+      }
+    },
+    "response_schema": {
+      "faithfulness": "integer 1-5",
+      "citation_correctness": "integer 1-5",
+      "citation_completeness": "integer 1-5",
+      "unsupported_claims": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "contradictions": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "ungrounded_dose": "boolean",
+      "ungrounded_dose_examples": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "rationale": "concise source-based justification; disclose ambiguous citation mapping"
+    },
+    "rubric_version": 4,
+    "passage_catalog": {
+      "S001": "Source: WHO\nSection: Recommendation A.3a (UPDATED)\nRecommendation: rec1\n\nRecommendation: Young infants aged 0\u201359 days with the IMCI signs of clinical severe infection should be referred to hospital.\nIf referral is not possible then oral amoxicillin for at least 7 days plus gentamicin IM/IV for at least 7 days is",
+      "S002": "Source: WHO\nSection: Background and definitions\n\nClinical severe infection is defined by WHO as one or more of the following clinical signs in infants aged 0\u201359 days: not feeding well, movement only when stimulated, high body temperature (\u2265\u00a038\u00a0\u00b0C), low body temperature (<\u00a035.5\u00a0\u00b0C), and/or severe chest indrawing. An additional sign of clinical severe infection in infants aged 0\u20136 days is fast breathing (\u2265\u00a060 breaths per minute) (27, 28).\nIn 2014, WHO developed guidelines to provide simplified antibiotic regimens (gentamicin IM for either 2 or 7 days plus oral amoxicillin for 7 days) to infants aged 0\u201359 days with clinical severe illness whose families do not accept or cannot access referral care at a hospital (27, 28). However, there have been changes to AMR in hospital and community settings since that time.",
+      "S008": "Source: WHO\nSection: Background and definitions\n\nPossible serious bacterial infection (PSBI) is defined by WHO as an illness with one or more of the following seven clinical signs: not feeding well or not able to feed at all, movement only when stimulated or no movement at all, high body temperature (\u2265\u00a038\u00a0\u00b0C), low body temperature (<\u00a035.5\u00a0\u00b0C), severe chest indrawing, convulsions in infants aged 0\u201359 days or fast breathing (\u2265\u00a060 breaths per minute) in infants aged 0\u20136 days (see Table 1.1). In 2014, the IMCI programme was updated to include a \u201c7-sign IMCI algorithm\u201d with the signs listed in Table 1.1 to define the target population in need of treatment.",
+      "S009": "Source: WHO\nSection: In young infants aged 0\u201359 days who are hospitalized with suspected staphylococcal sepsis, cloxacillin\nRecommendation: rec1\n\nRecommendation: IM/IV plus gentamicin IM/IV for at least 10 days is recommended as first-choice antibiotic management.\n(Strong recommendation, very low-certainty evidence)",
+      "S010": "Source: WHO\nSection: Background and definitions\n\nFor hospitalized infants, the 2013 WHO Pocket book of hospital care for children defines suspected staphylococcal sepsis as one or more of the following clinical signs: not feeding well, movement only when stimulated, high body temperature (\u2265\u00a038\u00a0\u00b0C), low body temperature (<\u00a035.5\u00a0\u00b0C), severe chest indrawing, not able to feed at all, no movement on stimulation, convulsions, drowsiness or unconsciousness, grunting, central cyanosis, severe jaundice and severe abdominal distention in infants aged 0\u201359 days, or fast breathing (\u2265\u00a060 breaths per minute) in infants aged 0\u20136 days; plus one or more of the clinical signs of staphylococcal infection: skin infection, pustules, omphalitis or abscesses (13). The WHO Pocket book of hospital care for children recommended providing cloxacillin plus gentamicin IV for at least 10 days to infants aged 0\u201359 days with suspected staphylococcal sepsis (13)."
+    },
+    "finding_rules": "Select immutable candidate-line claim_id values, never invented text. Missing treatment/dose detail is an omission, not an unsupported affirmative assertion. Do not use medical memory or a passage absent from the actual plan evidence to claim that a missing dose was retrieved. Patient facts need not be sourced to a guideline. Distinguish a proposed treatment order from a cautious safety flag or request for expert review. Ungrounded numeric doses must actually be in the candidate; list examples. Disclose missing MA numbered citation mapping. Return empty arrays for no findings and the requested 1-5 ratings.",
+    "evaluation_stage": "grounding"
+  },
+  "candidate_lines": {
+    "L001": "CLINICAL SUMMARY:",
+    "L002": "This 38-week neonate presents with an INTERMEDIATE risk for early-onset sepsis, driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L). Although the initial care setting was designated as outpatient, the infant's history of hospitalization within the prior 14 days constitutes a critical contraindication to WHO outpatient regimens, necessitating immediate hospitalization for full inpatient management.",
+    "L004": "RISK ANALYSIS:",
+    "L005": "The risk category is INTERMEDIATE (Score 3) due to two primary drivers: Prolonged rupture of membranes (>=18h) contributing 50% of the risk, and Elevated CRP (12.0 mg/L) contributing the remaining 50%. The infant is otherwise stable with normal respiratory status, temperature, and perfusion.",
+    "L007": "DRIVER BREAKDOWN:",
+    "L008": "Prolonged rupture of membranes (20.0h, >=18h threshold): +2 points, Layer 1, 50% contribution.",
+    "L009": "Elevated CRP (12.0 mg/L): +2 points, Layer 3, 50% contribution.",
+    "L011": "RECOMMENDED ACTIONS:",
+    "L012": "- HOSPITALIZE IMMEDIATELY: Outpatient management is contraindicated due to prior hospitalization within 14 days.",
+    "L013": "- Initiate inpatient antibiotic therapy for suspected early-onset sepsis.",
+    "L014": "- Obtain blood culture prior to antibiotic administration if it does not delay treatment.",
+    "L015": "- Monitor vital signs, respiratory status, and feeding tolerance closely.",
+    "L017": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour",
+    "L018": "- Oral amoxicillin \u2014 WITHHELD: WHO outpatient regimen (oral amoxicillin + IM gentamicin) is explicitly contraindicated for infants hospitalized within the prior 14 days; requires inpatient IV/IM regimen.",
+    "L019": "- IM gentamicin \u2014 WITHHELD: WHO outpatient regimen (oral amoxicillin + IM gentamicin) is explicitly contraindicated for infants hospitalized within the prior 14 days; requires inpatient IV/IM regimen.",
+    "L020": "- IV/IM Gentamicin \u2014 SUBSTITUTED for outpatient regimen: Inpatient management required. Specific dose/frequency not provided in retrieved WHO outpatient excerpts; refer to inpatient guidelines (e.g., WHO Pocket Book) for dosing.",
+    "L021": "- IV/IM Amoxicillin or ampicillin \u2014 SUBSTITUTED for oral amoxicillin: Inpatient management required. Specific dose/frequency not provided in retrieved WHO outpatient excerpts; refer to inpatient guidelines for dosing.",
+    "L022": "duration=At least 7 days (per WHO outpatient guideline reference, though inpatient duration may vary based on culture results and clinical response) stop_criteria=Negative blood cultures at 48 hours and clinical improvement (afebrile, normal feeding, stable vitals) for 48 hours, or as per inpatient protocol.",
+    "L024": "MONITORING PLAN:",
+    "L025": "Monitor temperature, respiratory rate, heart rate, and oxygen saturation every 4-6 hours. Monitor urine output and fluid balance. Repeat CRP and blood culture results as clinically indicated.",
+    "L027": "ESCALATION CRITERIA:",
+    "L028": "Escalate to pediatric intensive care if signs of severe infection develop (e.g., severe chest indrawing, convulsions, poor perfusion, apnea) or if the infant fails to improve on initial antibiotic therapy.",
+    "L030": "NUTRITION/FLUID PLAN:",
+    "L031": "Continue breastfeeding or formula feeding as tolerated. If feeding is poor or respiratory distress develops, initiate intravenous fluids.",
+    "L033": "DISAMBIGUATION BLOCK:",
+    "L036": "CONTRAINDICATION FLAGS:",
+    "L037": "- [CRITICAL] WHO outpatient PSBI regimen (oral amoxicillin / IM gentamicin+amoxicillin): Infant was hospitalized for illness within the prior 14 days \u2014 WHO's outpatient regimens explicitly do not apply; this infant must be hospitalized for the current illness.",
+    "L039": "TREND STATE CHANGE:"
+  },
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  }
+}

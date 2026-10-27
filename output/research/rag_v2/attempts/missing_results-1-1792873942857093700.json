@@ -1,0 +1,170 @@
+{
+  "id": "missing_results-1",
+  "model": "openai/gpt-oss-120b",
+  "verifier_model": "openai/gpt-oss-120b",
+  "seconds": 4.75545559999955,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "seconds": 4.721574700000929,
+      "ok": false,
+      "error_code": "http_429"
+    }
+  ],
+  "packet": {
+    "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.10.1",
+        "text": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \u2022 perform an immediate clinical assessment \u2022 review the maternal and neonatal history \u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 13
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.14.10",
+        "text": "Interpret cerebrospinal fluid results in babies alongside the clinical presentation and maternal history. [2024]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 24
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-1.10.4",
+        "text": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \u2022 total number of babies assessed using the calculator \u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 15
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.6.1",
+        "text": "Offer antibiotics during labour to women, trans men and non-binary people who: \u2022 are in pre-term labour or \u2022 have group B streptococcal colonisation, bacteriuria or infection during the current pregnancy or \u2022 have had group B streptococcal colonisation, bacteriuria or infection in a previous pregnancy, and have not had a negative test for group B streptococcus by enrichment culture or polymerase chain reaction (PCR) on a rectovaginal swab samples collected between 35 and 37 weeks' gestation or 3 to 5 weeks before the anticipated delivery date in the current pregnancy or \u2022 have had a previous baby with an invasive group B streptococcal infection or \u2022 have a clinical diagnosis of chorioamnionitis. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 8
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 12,
+        "gestational_age_weeks": 35,
+        "care_setting": "hospital",
+        "respiratory_rate": 48,
+        "spo2": 97,
+        "crp": 4,
+        "culture_status": "unknown",
+        "red_flags": "not fully documented",
+        "maternal_gbs": "unknown"
+      },
+      "history": [
+        {
+          "age_hours": 3,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 14
+        },
+        {
+          "age_hours": 6,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.10.1",
+          "text": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \u2022 perform an immediate clinical assessment \u2022 review the maternal and neonatal history \u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 13
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.14.10",
+          "text": "Interpret cerebrospinal fluid results in babies alongside the clinical presentation and maternal history. [2024]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 24
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-1.10.4",
+          "text": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \u2022 total number of babies assessed using the calculator \u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 15
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.6.1",
+          "text": "Offer antibiotics during labour to women, trans men and non-binary people who: \u2022 are in pre-term labour or \u2022 have group B streptococcal colonisation, bacteriuria or infection during the current pregnancy or \u2022 have had group B streptococcal colonisation, bacteriuria or infection in a previous pregnancy, and have not had a negative test for group B streptococcus by enrichment culture or polymerase chain reaction (PCR) on a rectovaginal swab samples collected between 35 and 37 weeks' gestation or 3 to 5 weeks before the anticipated delivery date in the current pregnancy or \u2022 have had a previous baby with an invasive group B streptococcal infection or \u2022 have a clinical diagnosis of chorioamnionitis. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 8
+        }
+      ]
+    },
+    "draft": {},
+    "citation_errors": [
+      "Generation unavailable or schema invalid"
+    ],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Draft failed structural/source checks"
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Draft failed structural/source checks"
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "Generation unavailable or schema invalid",
+      "Draft failed structural/source checks",
+      "Draft failed structural/source checks"
+    ],
+    "generation_error_code": "http_429",
+    "packet_sha256": "2b39ea16539a67c02a9a2748ee00b53f0bce12118e9a8367fa394bb1fd5b1564"
+  }
+}

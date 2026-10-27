@@ -1,0 +1,299 @@
+{
+  "source_rows": 489,
+  "distinct_ids": 481,
+  "duplicate_id_groups": 8,
+  "conflicting_text_groups": 8,
+  "selected_colliding_ids": 3,
+  "affected_selected_case_ids": [
+    "cp_case_003",
+    "cp_case_007",
+    "cp_case_011"
+  ],
+  "frozen_resolution": "Last CSV occurrence per identifier, exactly matching the already frozen inputs.json; not independent source adjudication.",
+  "original_inputs_or_gold_modified": false,
+  "interpretation": "Exact ID scores cannot disambiguate conflicting passage identity. Semantic/source judgments are conditional on the frozen last-row texts. Source identity must be resolved before expansion or a confirmatory comparison.",
+  "collisions": [
+    {
+      "chunk_id": "AAP_pg5_csf-culture_chunk1",
+      "distinct_texts": 2,
+      "affected_selected_cases": [],
+      "frozen_selected_row": 256,
+      "variants": [
+        {
+          "csv_row": 207,
+          "chunk_id": "AAP_pg5_csf-culture_chunk1",
+          "source": "AAP",
+          "page": "4",
+          "section": "CSF Culture",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "813",
+          "chunk_text": "Source: AAP\nSection: CSF Culture\n\nThe incidence of meningitis is higher among preterm infants (approximately 0.7 cases per 1000 live births at 22\u201328 weeks\u2019\ngestation) compared with the incidence in the overall birth population (approximately 0.02\u20130.04 cases per 1000 live births). In the study of differential EOS risk among very preterm infants, meningitis did not occur at all among lower-risk preterm infants. The true incidence of meningitis among preterm infants may be underestimated because of the common practice of performing a lumbar puncture after the initiation of empirical antibiotic therapy. Although most preterm with culture-confirmed early-onset meningitis grow the same organism from blood cultures, the concordance is not 100%, and CSF cell count parameters may not always identify meningitis.",
+          "text_sha256": "7b8a39d7035f437433d63548aad60d24b08108db6f016bc1492fb7a2ffae7bc1"
+        },
+        {
+          "csv_row": 256,
+          "chunk_id": "AAP_pg5_csf-culture_chunk1",
+          "source": "AAP",
+          "page": "4",
+          "section": "CSF Culture",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "890",
+          "chunk_text": "Source: AAP\nSection: CSF Culture\n\nCSF culture should ideally be performed along with blood culture and before the initiation of empirical antibiotic therapy for infants who are at the highest risk of EOS. Among infants born at \u226535 weeks\u2019 gestation, those at the highest risk include those with critical illness. CSF cell counts obtained after the initiation of empirical antibiotic therapy may be difficult to interpret. However, physicians must balance the challenges of CSF interpretation with the realities of care: lumbar puncture should not be performed if the newborn infant\u2019s clinical condition would be compromised or antibiotic initiation would be delayed by the procedure. Meningitis was diagnosed clinically in 4% of EOS cases in CDC surveillance, but only half of the diagnoses were made by using CSF culture, reflecting the practical difficulties in performing lumbar puncture.",
+          "text_sha256": "295616852f183e24cf1539c36260b580209c866b777c3b0ad6e4e080173a0ce8"
+        }
+      ]
+    },
+    {
+      "chunk_id": "AAP_pg5_csf-culture_chunk2",
+      "distinct_texts": 2,
+      "affected_selected_cases": [],
+      "frozen_selected_row": 257,
+      "variants": [
+        {
+          "csv_row": 208,
+          "chunk_id": "AAP_pg5_csf-culture_chunk2",
+          "source": "AAP",
+          "page": "4",
+          "section": "CSF Culture",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "577",
+          "chunk_text": "Source: AAP\nSection: CSF Culture\n\nAlthough most preterm with culture-confirmed early-onset meningitis grow the same organism from blood cultures, the concordance is not 100%, and CSF cell count parameters may not always identify meningitis. If a CSF culture has not been obtained before the initiation of empirical antibiotics, physicians should balance the physiologic stability of the infant, the risk of EOS, and the potential harms associated with prolonged antibiotic therapy when making the decision to perform a lumbar puncture in preterm infants who are critically ill.",
+          "text_sha256": "b3efcf82ab4d9f19ab57540d353915b9cfcb732ce2b8740715624e5a07824e23"
+        },
+        {
+          "csv_row": 257,
+          "chunk_id": "AAP_pg5_csf-culture_chunk2",
+          "source": "AAP",
+          "page": "4",
+          "section": "CSF Culture",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "795",
+          "chunk_text": "Source: AAP\nSection: CSF Culture\n\nMeningitis was diagnosed clinically in 4% of EOS cases in CDC surveillance, but only half of the diagnoses were made by using CSF culture, reflecting the practical difficulties in performing lumbar puncture. CSF culture and analysis should be performed if blood cultures grow a pathogen to optimize the type and duration of antibiotic therapy. CSF culture and analysis do not need to be performed in the vast majority of term infants for whom blood cultures are sterile. The incidence of culture-confirmed meningitis in the absence of culture-confirmed bacteremia is approximately 1 to 2 cases per 100 000 live births. Physicians may, therefore, use their best judgment to determine when CSF analysis should be performed in the absence of documented bacteremia.",
+          "text_sha256": "117138cfebc830a6b01e8fedaf5af8c1271f839b2c3ad87e23b5d5800870fbc3"
+        }
+      ]
+    },
+    {
+      "chunk_id": "AAP_pg5_white-blood-cell-count_chunk1",
+      "distinct_texts": 2,
+      "affected_selected_cases": [
+        "cp_case_007"
+      ],
+      "frozen_selected_row": 258,
+      "variants": [
+        {
+          "csv_row": 209,
+          "chunk_id": "AAP_pg5_white-blood-cell-count_chunk1",
+          "source": "AAP",
+          "page": "4",
+          "section": "White Blood Cell Count",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "915",
+          "chunk_text": "Source: AAP\nSection: White Blood Cell Count\n\nThe white blood cell (WBC) count, differential (immature-to-total neutrophil ratio), and absolute neutrophil count are commonly used to assess risk of EOS. Multiple clinical factors can affect the WBC count and differential, including gestational age at birth, sex, and mode of delivery. Fetal bone marrow depression attributable to maternal preeclampsia or placental insufficiency, as well as prolonged exposure to inflammatory signals (such as PROM), frequently result in abnormal values in the absence of infection. Most studies in which the performance characteristics of the complete blood cell (CBC) count in predicting infection is addressed have been focused on term infants. In 1 large multicenter study, the authors assessed the relationship between the WBC count and culture-confirmed EOS and analyzed data separately for infants born at <34 weeks\u2019 gestation.",
+          "text_sha256": "9599373851f8cb85c60c270bf90e8f6e5d55084027bc85be3e543da0b28041bf"
+        },
+        {
+          "csv_row": 258,
+          "chunk_id": "AAP_pg5_white-blood-cell-count_chunk1",
+          "source": "AAP",
+          "page": "4",
+          "section": "White Blood Cell Count",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "674",
+          "chunk_text": "Source: AAP\nSection: White Blood Cell Count\n\nThe white blood cell (WBC) count, immature/total neutrophil ratio (I/T), and absolute neutrophil count (ANC) are commonly used to assess the risk of EOS. Multiple clinical factors can affect the WBC count and differential, including gestational age at birth, sex, and mode of delivery. Fetal bone marrow depression attributable to maternal preeclampsia or placental insufficiency and prolonged exposure to inflammatory signals, such as those associated with the premature ROM, frequently result in abnormal values in the absence of infection. As the incidence of EOS declines, the clinical utility of the WBC count also declines.",
+          "text_sha256": "adc52e6a071fb827636b001bc9f6eede44eaf1e412fccdc8658ccf3ecc8c3248"
+        }
+      ]
+    },
+    {
+      "chunk_id": "AAP_pg5_white-blood-cell-count_chunk2",
+      "distinct_texts": 2,
+      "affected_selected_cases": [
+        "cp_case_003",
+        "cp_case_007",
+        "cp_case_011"
+      ],
+      "frozen_selected_row": 259,
+      "variants": [
+        {
+          "csv_row": 210,
+          "chunk_id": "AAP_pg5_white-blood-cell-count_chunk2",
+          "source": "AAP",
+          "page": "4",
+          "section": "White Blood Cell Count",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "811",
+          "chunk_text": "Source: AAP\nSection: White Blood Cell Count\n\nIn 1 large multicenter study, the authors assessed the relationship between the WBC count and culture-confirmed EOS and analyzed data separately for infants born at <34 weeks\u2019 gestation. They found that all components of the CBC count lacked sensitivity for predicting EOS. The highest likelihood ratios (LRs) for EOS were associated with extreme values. A positive LR of >3 (ie, a likelihood of infection at least 3 times higher than the entire group of infants born at <34 weeks\u2019 gestation)\nwas associated with a WBC count of <1000 cells per \u03bcL, an absolute neutrophil count of <1000, and an immature-to-total neutrophil ratio of >0.25. A total WBC count of >50 000 cells per \u03bcL (LR, 2.3) and a platelet count of <50 000 (LR, 2.2) had a modest relationship to EOS.",
+          "text_sha256": "3e38574e86923ef25475d1bc9db1e2a577baf4fe03c5b2d25f6c5a558cc3da15"
+        },
+        {
+          "csv_row": 259,
+          "chunk_id": "AAP_pg5_white-blood-cell-count_chunk2",
+          "source": "AAP",
+          "page": "4",
+          "section": "White Blood Cell Count",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "938",
+          "chunk_text": "Source: AAP\nSection: White Blood Cell Count\n\nFetal bone marrow depression attributable to maternal preeclampsia or placental insufficiency and prolonged exposure to inflammatory signals, such as those associated with the premature ROM, frequently result in abnormal values in the absence of infection. As the incidence of EOS declines, the clinical utility of the WBC count also declines. Researchers in 2 large, multicenter studies applied the likelihood ratio, a test characteristic that is independent of disease incidence, to assess the relationship between WBC count and culture- confirmed EOS among term and late-preterm infants and found that none of the components (WBC count, I/T, nor ANC) performed well. Extreme values (total WBC count <5000/\u03bcL [I/T >0.3; ANC <2000/ \u03bcL] in one study and WBC count <1000/\u03bcL [ANC <100/\u03bcL; and I/T >0.5] in the other) were associated with the highest likelihood ratios but very low sensitivities.",
+          "text_sha256": "003cdb135d6069e35b94068512772c0e8c05a527b072824bc244a86921cd4330"
+        }
+      ]
+    },
+    {
+      "chunk_id": "AAP_pg6_prevention-strategies_chunk1",
+      "distinct_texts": 2,
+      "affected_selected_cases": [],
+      "frozen_selected_row": 268,
+      "variants": [
+        {
+          "csv_row": 218,
+          "chunk_id": "AAP_pg6_prevention-strategies_chunk1",
+          "source": "AAP",
+          "page": "5",
+          "section": "PREVENTION STRATEGIES",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "981",
+          "chunk_text": "Source: AAP\nSection: PREVENTION STRATEGIES\n\nThe only proven preventive strategy for EOS is the appropriate administration of maternal intrapartum antibiotic prophylaxis. The most current recommendations from national organizations, such as the AAP, ACOG, and Centers for Disease Control and Prevention, should be followed for the administration of GBS intrapartum prophylaxis as well as for the administration of intrapartum antibiotic therapy when there is suspected or confirmed IAI. Neonatal practices are focused on the identification and empirical antibiotic treatment of preterm neonates at risk for EOS; these practices cannot prevent EOS. The empirical administration of intramuscular penicillin to all newborn infants to prevent neonatal, GBS-specific EOS is not justified and is not endorsed by the AAP. Neither GBS intrapartum antibiotic prophylaxis nor any neonatal EOS practice will prevent late-onset GBS infection or any other form of late-onset bacterial infection.",
+          "text_sha256": "eb2c29f9d85dbf73bf7caa63c0597b5700eff1b374bd2db7c0e02fe8e197cf86"
+        },
+        {
+          "csv_row": 268,
+          "chunk_id": "AAP_pg6_prevention-strategies_chunk1",
+          "source": "AAP",
+          "page": "5",
+          "section": "PREVENTION STRATEGIES",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "903",
+          "chunk_text": "Source: AAP\nSection: PREVENTION STRATEGIES\n\nThe only proven preventive strategy for EOS is the appropriate administration of maternal IAP.\nRecommendations from national professional organizations should be followed for the administration of GBS intrapartum prophylaxis as well as for the administration of intrapartum antibiotic therapy when there is suspected or confirmed intraamniotic infection. Neonatal practices are focused on the identification and empirical antibiotic treatment of newborn infants who are at risk for EOS; these practices cannot prevent EOS. The empirical administration of intramuscular penicillin to all newborn infants to prevent neonatal GBS-specific EOS is not justified and is not endorsed by the American Academy of Pediatrics.\nNeither GBS IAP nor any neonatal EOS practice will prevent late-onset GBS infection3,82,83 or any other form of late-onset bacterial infection.",
+          "text_sha256": "9037d159602d6904c10248aeaa29b56ca7580a78aacee83172bbbd6c62326054"
+        }
+      ]
+    },
+    {
+      "chunk_id": "AAP_pg6_summary-points_chunk1",
+      "distinct_texts": 2,
+      "affected_selected_cases": [
+        "cp_case_003",
+        "cp_case_007",
+        "cp_case_011"
+      ],
+      "frozen_selected_row": 269,
+      "variants": [
+        {
+          "csv_row": 220,
+          "chunk_id": "AAP_pg6_summary-points_chunk1",
+          "source": "AAP",
+          "page": "5",
+          "section": "SUMMARY POINTS",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "970",
+          "chunk_text": "Source: AAP\nSection: SUMMARY POINTS\n\n1. The epidemiology, microbiology, and pathogenesis of EOS differ substantially between term infants and preterm infants with VLBW. 2.  Infants born at \u226434 6/7 weeks\u2019\ngestation can be categorized by level of risk for EOS by the circumstances of their preterm birth. o Infants born preterm by cesarean delivery because of maternal noninfectious illness or placental insufficiency in the absence of labor, attempts to induce labor, or ROM before delivery are at a relatively low risk for EOS. Depending on the clinical condition of the neonate, physicians should consider the risk/benefit balance of an EOS evaluation and empirical o Infants born preterm because of maternal cervical incompetence, preterm labor, PROM, clinical concern for IAI, or acute onset of unexplained nonreassuring fetal status are at the highest risk for EOS. Such neonates should undergo EOS evaluation with a blood culture and empirical antibiotic treatment.",
+          "text_sha256": "c9fc13e6626fee93b284a8f5433b81024dca731c32c66dab880d7d9f27cd8e52"
+        },
+        {
+          "csv_row": 269,
+          "chunk_id": "AAP_pg6_summary-points_chunk1",
+          "source": "AAP",
+          "page": "5",
+          "section": "SUMMARY POINTS",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "928",
+          "chunk_text": "Source: AAP\nSection: SUMMARY POINTS\n\nWe include the following summary points:\n1. The epidemiology of EOS differs substantially between term and/ or late-preterm infants and very preterm infants. 2. Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following:\no categorical algorithms in which threshold values for intrapartum risk factors are used;\no multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants. 3.",
+          "text_sha256": "12a41de936200f46686b8808d1ed4a4a9ead845d1a5032ab1176cf337d019cd8"
+        }
+      ]
+    },
+    {
+      "chunk_id": "AAP_pg6_summary-points_chunk2",
+      "distinct_texts": 2,
+      "affected_selected_cases": [],
+      "frozen_selected_row": 270,
+      "variants": [
+        {
+          "csv_row": 221,
+          "chunk_id": "AAP_pg6_summary-points_chunk2",
+          "source": "AAP",
+          "page": "5",
+          "section": "SUMMARY POINTS",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "940",
+          "chunk_text": "Source: AAP\nSection: SUMMARY POINTS\n\nDepending on the clinical condition of the neonate, physicians should consider the risk/benefit balance of an EOS evaluation and empirical o Infants born preterm because of maternal cervical incompetence, preterm labor, PROM, clinical concern for IAI, or acute onset of unexplained nonreassuring fetal status are at the highest risk for EOS. Such neonates should undergo EOS evaluation with a blood culture and empirical antibiotic treatment. o Obstetric and neonatal care providers should communicate and document the circumstances of preterm birth to facilitate EOS risk assessment among preterm infants. 3. Clinical centers should consider the development of locally appropriate written guidelines for preterm EOS risk assessment and clinical management. After guidelines are implemented, ongoing surveillance, designed to identify low-frequency adverse events and affirm efficacy, is recommended. 4.",
+          "text_sha256": "ae6064911018bce229f040015678d1dd46aa49575c835d28bfe2472a69460606"
+        },
+        {
+          "csv_row": 270,
+          "chunk_id": "AAP_pg6_summary-points_chunk2",
+          "source": "AAP",
+          "page": "5",
+          "section": "SUMMARY POINTS",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "822",
+          "chunk_text": "Source: AAP\nSection: SUMMARY POINTS\n\nThis approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants. 3. Birth centers should consider the development of locally tailored, documented guidelines for EOS risk assessment and clinical management. Ongoing surveillance once guidelines are implemented is recommended. 4. The diagnosis of EOS is made by using blood or CSF cultures. EOS cannot be diagnosed by using laboratory tests, such as a complete blood cell count or CRP or by using surface cultures, gastric aspirate analysis, or urine culture. 5. The combination of ampicillin and gentamicin is the appropriate empirical antibiotic regimen for most infants who are at risk for EOS.",
+          "text_sha256": "76ade6f26046c1ee68ef1af19919e8daf03c6522d787c74491a208bf56e3590f"
+        }
+      ]
+    },
+    {
+      "chunk_id": "AAP_pg6_summary-points_chunk3",
+      "distinct_texts": 2,
+      "affected_selected_cases": [],
+      "frozen_selected_row": 271,
+      "variants": [
+        {
+          "csv_row": 222,
+          "chunk_id": "AAP_pg6_summary-points_chunk3",
+          "source": "AAP",
+          "page": "5",
+          "section": "SUMMARY POINTS",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "674",
+          "chunk_text": "Source: AAP\nSection: SUMMARY POINTS\n\nAfter guidelines are implemented, ongoing surveillance, designed to identify low-frequency adverse events and affirm efficacy, is recommended. 4. The diagnosis of EOS is made by a blood or CSF culture. EOS cannot be diagnosed by laboratory tests alone, such as CBC count or CRP levels. 5. The combination of ampicillin and gentamicin is the most appropriate empirical antibiotic regimen for infants at risk for EOS. Empirical administration of additional broad-spectrum antibiotics may be indicated in preterm infants who are severely ill and at a high risk for EOS, particularly after prolonged antepartum maternal antibiotic treatment.",
+          "text_sha256": "f38cd410738f417a3dd356b7b927231ee4c462465a679e219d510a988bfb0195"
+        },
+        {
+          "csv_row": 271,
+          "chunk_id": "AAP_pg6_summary-points_chunk3",
+          "source": "AAP",
+          "page": "5",
+          "section": "SUMMARY POINTS",
+          "subsection": "",
+          "recommendation_id": "",
+          "chunk_type": "paragraph",
+          "chars": "454",
+          "chunk_text": "Source: AAP\nSection: SUMMARY POINTS\n\nThe combination of ampicillin and gentamicin is the appropriate empirical antibiotic regimen for most infants who are at risk for EOS. The empirical administration of additional broad-spectrum agents may be indicated in term infants who are critically ill until appropriate culture results are known. 6. When blood cultures are sterile, antibiotic therapy should be discontinued by 36 to 48 hours of incubation unless",
+          "text_sha256": "d96bbe04e282edab20452c1b8e8f1a47e03700ab03ee7456e1c65e80ddff3ee0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "note": "Fill IDs from item_catalog.csv; verify units and availability. No invented default IDs or clinical review.",
+  "CHARTEVENTS": {},
+  "LABEVENTS": {}
+}

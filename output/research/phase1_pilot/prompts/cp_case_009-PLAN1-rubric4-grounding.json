@@ -1,0 +1,181 @@
+{
+  "key": "cp_case_009-PLAN1-rubric4-grounding",
+  "kind": "plan",
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "case_id": "cp_case_009",
+  "prompt": {
+    "task": "Evaluate source faithfulness, citations and unsupported assertions against ONLY the actual retrieved plan evidence. Gold/reference evidence is deliberately withheld. Full patient facts are supplied separately as case data.",
+    "case": {
+      "case_id": "cp_case_009",
+      "active_guideline": "NICE",
+      "care_setting": "hospital",
+      "contraindication_type": "penicillin_allergy",
+      "trend_type": null,
+      "ambiguous": false,
+      "previous_assessments": [],
+      "deltas": null,
+      "proposed_drugs": [
+        "clindamycin",
+        "gentamicin"
+      ],
+      "retrieval_query": "NICE NG195 Prolonged rupture of membranes ROM 20.0h (>=18h) Elevated CRP CRP 12.0 mg/L prolonged ROM rupture of membranes caesarean delivery preterm prematurity CRP inflammatory markers white blood cell count WBC procalcitonin PCT thrombocytopenia platelet count penicillin allergy alternative antibiotics",
+      "patient": {
+        "gestational_age_weeks": 36.0,
+        "maternal_temperature": 37.9,
+        "rom_hours": 20.0,
+        "gbs_positive": false,
+        "respiratory_distress": "None",
+        "crp_level": 12.0,
+        "blood_culture_positive": false,
+        "urine_output_ml_kg_hr": 2.0,
+        "creatinine_mg_dl": 0.6,
+        "penicillin_allergy": true,
+        "adequate_intrapartum_antibiotics": true,
+        "clinical_chorioamnionitis": false,
+        "delivery_mode": "Caesarean",
+        "oxygen_need": "None",
+        "apgar_5_min": 9,
+        "poor_perfusion": false,
+        "neonatal_temperature": 37.0,
+        "neurological_status": "Normal",
+        "wbc_count": 18.5,
+        "it_ratio": 0.15,
+        "platelet_count": 260.0,
+        "pct_level": 0.3
+      },
+      "recorded_legacy_risk_category": "INTERMEDIATE",
+      "legacy_score_status": "Unvalidated legacy output, not clinical truth"
+    },
+    "plan": {
+      "plan_id": "PLAN1",
+      "evidence": [
+        {
+          "citation": "E1",
+          "passage": "S012"
+        },
+        {
+          "citation": "E2",
+          "passage": "S013"
+        },
+        {
+          "citation": "E3",
+          "passage": "S015"
+        },
+        {
+          "citation": "E4",
+          "passage": "S016"
+        },
+        {
+          "citation": "E5",
+          "passage": "S017"
+        },
+        {
+          "citation": "E6",
+          "passage": "S018"
+        }
+      ],
+      "numbered_citation_mapping": "Context-list order supplied for generation; citation list may differ and should be checked.",
+      "candidate_lines": {
+        "L001": "CLINICAL SUMMARY:",
+        "L002": "This 36-week neonate presents with an INTERMEDIATE risk for early-onset sepsis (EOS), driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L). The patient has a documented penicillin allergy, which necessitates avoidance of beta-lactam agents such as ampicillin, requiring alternative antibiotic selection per NICE guidelines.",
+        "L004": "RISK ANALYSIS:",
+        "L005": "The risk category is INTERMEDIATE (Score 5) based on two primary drivers: Prolonged rupture of membranes (20.0h, contributing 50% of risk) and Elevated CRP (12.0 mg/L, contributing 50% of risk). Although the NICE guideline excerpt notes a threshold of >24 hours for PROM, the deterministic risk engine has flagged 20h as a significant driver in this specific assessment context. The elevated CRP further supports the need for clinical evaluation and potential antibiotic therapy.",
+        "L007": "DRIVER BREAKDOWN:",
+        "L008": "Prolonged rupture of membranes: ROM 20.0h (>=18h) contributes 2 points (Layer 1). Elevated CRP: CRP 12.0 mg/L contributes 2 points (Layer 3).",
+        "L010": "RECOMMENDED ACTIONS:",
+        "L011": "- Initiate antibiotic therapy immediately due to intermediate risk and elevated CRP.",
+        "L012": "- Select antibiotic regimen avoiding beta-lactams due to documented penicillin allergy.",
+        "L013": "- Obtain blood culture before starting antibiotics if it does not delay treatment.",
+        "L014": "- Monitor clinical status, vital signs, and inflammatory markers closely.",
+        "L015": "- Review antibiotic necessity at 36-48 hours based on culture results and clinical trajectory.",
+        "L017": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour",
+        "L018": "- Ampicillin \u2014 WITHHELD: Documented penicillin allergy \u2014 avoid beta-lactam agents",
+        "L019": "- Cefotaxime \u2014 SUBSTITUTED for Ampicillin: Penicillin allergy (non-severe specified in guideline context, but caution advised); Dose and frequency not specified in retrieved evidence",
+        "L020": "- Gentamicin \u2014 WITHHELD: Not explicitly recommended in retrieved evidence for this specific allergy scenario; standard EOS regimen often includes aminoglycoside but retrieved text focuses on beta-lactam alternatives",
+        "L021": "- [DETERMINISTIC DEFAULT] IV clindamycin (per documented penicillin allergy \u2014 provides Group B Streptococcus coverage in place of the withheld beta-lactam)",
+        "L022": "duration=48-72 hours pending cultures stop_criteria=Stop antibiotics if blood cultures are negative at 36-48 hours and the infant is clinically well, per NICE recommendation 1.21.3.",
+        "L024": "MONITORING PLAN:",
+        "L025": "Monitor vital signs (temperature, heart rate, respiratory rate, oxygen saturation) every 4-6 hours. Monitor urine output and fluid balance. Repeat CRP and inflammatory markers at 24-48 hours if clinical status changes or to guide duration of therapy.",
+        "L027": "ESCALATION CRITERIA:",
+        "L028": "Escalate to senior neonatal team if clinical deterioration occurs (e.g., respiratory distress, poor perfusion, temperature instability) or if blood cultures return positive.",
+        "L030": "NUTRITION/FLUID PLAN:",
+        "L031": "Maintain normal feeding practices if clinically stable. Monitor for signs of feeding intolerance. Ensure adequate hydration.",
+        "L033": "DISAMBIGUATION BLOCK:",
+        "L036": "CONTRAINDICATION FLAGS:",
+        "L037": "- [CRITICAL] ampicillin: Documented penicillin allergy \u2014 avoid beta-lactam agents",
+        "L039": "TREND STATE CHANGE:"
+      }
+    },
+    "response_schema": {
+      "faithfulness": "integer 1-5",
+      "citation_correctness": "integer 1-5",
+      "citation_completeness": "integer 1-5",
+      "unsupported_claims": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "contradictions": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "ungrounded_dose": "boolean",
+      "ungrounded_dose_examples": [
+        {
+          "claim_id": "one exact L-number from plan.candidate_lines",
+          "reason": "source/case-based justification"
+        }
+      ],
+      "rationale": "concise source-based justification; disclose ambiguous citation mapping"
+    },
+    "rubric_version": 4,
+    "passage_catalog": {
+      "S012": "Source: NICE\nSection: Why the committee made the recommendations\n\nIn 2026, evidence from 3 studies showed that the risk of early-onset neonatal infection increased as the time between prelabour rupture of membranes (PROM) at term and birth increased. The 2026 committee agreed to amend the risk factor in box 1 about rupture of membranes at term to refer to the time between rupture and birth rather than prelabour rupture and onset of labour. This reflected their view that whether membranes rupture before or after onset of labour is irrelevant and that is it the overall time between rupture and birth that is important for the risk of early-onset neonatal infection. The evidence was inconclusive in identifying a specific time interval at which the risk of early-onset neonatal infection significantly increased. So, using their clinical experience, the committee decided to keep this at more than 24 hours.",
+      "S013": "Source: NICE\nSection: How the recommendations might affect practice\n\nThe 2026 revised wording for the risk factor for early-onset neonatal infection of rupture of membranes more than 24 hours before a term birth could increase the number of neonates requiring monitoring for early-onset infection, although current practice is already largely aligned with this so no significant change in practice or resource impact is expected. There could be an increase in the number of pregnant women, trans men and non-binary people opting for induction of labour as soon as possible after rupture of membranes rather than expectant management. The 2026 revised wording in relation to the risk of factor on maternal sepsis should ensure that suspected (or confirmed) maternal sepsis in the early postpartum period will lead to the baby being assessed for early-onset neonatal infection.",
+      "S015": "Source: NICE\nSection: Update information\n\nMay 2026: We have reviewed the evidence on the time between prelabour rupture of membranes and birth (at term) to see if this affects the risk of early-onset neonatal infection. We have also amended the risk factors related to fever and chorioamnionitis because of safety concerns. See box 1 on risk factors for early-onset infection. We have reviewed the evidence on switching from intravenous to oral antibiotics when treating suspected early-onset neonatal infection. New recommendations are marked as [2026]. See the section on switching to oral antibiotics for early-onset infection. Recommendation 1.21.3 has been amended to say 'stop antibiotics' rather than 'consider stopping antibiotics' because the committee agreed it was safe for antibiotics to be stopped if the criteria in the recommendation were met.",
+      "S016": "Source: NICE\nSection: chorioamnionitis\n\nPenicillin allergy that is not severe Use cephalosporin with activity against group\u00a0B streptococcus (for example, cefotaxime). Use with caution. In April 2021 this was an off-label use of cephalosporins. See NICE's information on prescribing medicines. Use cephalosporin with activity against group\u00a0B streptococcus (for example, cefotaxime) plus metronidazole. Use with caution. In April 2021 this was an off-label use of cephalosporins. See NICE's information on prescribing medicines. Severe penicillin allergy Consider:\nVancomycin or An alternative antibiotic that would be expected to be active against group\u00a0B streptococcus based on either sensitivity testing performed on the woman's, trans man's or non-binary person's isolate or on local antibiotic susceptibility surveillance data. In April 2021 this was an off-label use of vancomycin. See NICE's information on prescribing medicines.",
+      "S017": "Source: NICE\nSection: Why the committee made the recommendation\nRecommendation: rec1\n\nRecommendation: Although the recommendations that refer to C-reactive protein (CRP) results make it clear that this measure should be used alongside factors that together help to build the full clinical picture, the 2026 committee wanted to make sure that CRP results alone were not determining antibiotic treatment. They, therefore, agreed to make a recommendation about this.",
+      "S018": "Source: NICE\nSection: Why the committee made the recommendation\nRecommendation: rec1\n\nRecommendation: To help with treatment decisions, the 2012 guideline on early-onset neonatal infection recommended that healthcare professionals with experience in neonatal infection should be available to provide microbiological or paediatric infection disease advice. The 2021 committee decided that this recommendation is also important when making decisions about antibiotic treatment for late-onset infection."
+    },
+    "finding_rules": "Select immutable candidate-line claim_id values, never invented text. Missing treatment/dose detail is an omission, not an unsupported affirmative assertion. Do not use medical memory or a passage absent from the actual plan evidence to claim that a missing dose was retrieved. Patient facts need not be sourced to a guideline. Distinguish a proposed treatment order from a cautious safety flag or request for expert review. Ungrounded numeric doses must actually be in the candidate; list examples. Disclose missing MA numbered citation mapping. Return empty arrays for no findings and the requested 1-5 ratings.",
+    "evaluation_stage": "grounding"
+  },
+  "candidate_lines": {
+    "L001": "CLINICAL SUMMARY:",
+    "L002": "This 36-week neonate presents with an INTERMEDIATE risk for early-onset sepsis (EOS), driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L). The patient has a documented penicillin allergy, which necessitates avoidance of beta-lactam agents such as ampicillin, requiring alternative antibiotic selection per NICE guidelines.",
+    "L004": "RISK ANALYSIS:",
+    "L005": "The risk category is INTERMEDIATE (Score 5) based on two primary drivers: Prolonged rupture of membranes (20.0h, contributing 50% of risk) and Elevated CRP (12.0 mg/L, contributing 50% of risk). Although the NICE guideline excerpt notes a threshold of >24 hours for PROM, the deterministic risk engine has flagged 20h as a significant driver in this specific assessment context. The elevated CRP further supports the need for clinical evaluation and potential antibiotic therapy.",
+    "L007": "DRIVER BREAKDOWN:",
+    "L008": "Prolonged rupture of membranes: ROM 20.0h (>=18h) contributes 2 points (Layer 1). Elevated CRP: CRP 12.0 mg/L contributes 2 points (Layer 3).",
+    "L010": "RECOMMENDED ACTIONS:",
+    "L011": "- Initiate antibiotic therapy immediately due to intermediate risk and elevated CRP.",
+    "L012": "- Select antibiotic regimen avoiding beta-lactams due to documented penicillin allergy.",
+    "L013": "- Obtain blood culture before starting antibiotics if it does not delay treatment.",
+    "L014": "- Monitor clinical status, vital signs, and inflammatory markers closely.",
+    "L015": "- Review antibiotic necessity at 36-48 hours based on culture results and clinical trajectory.",
+    "L017": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour",
+    "L018": "- Ampicillin \u2014 WITHHELD: Documented penicillin allergy \u2014 avoid beta-lactam agents",
+    "L019": "- Cefotaxime \u2014 SUBSTITUTED for Ampicillin: Penicillin allergy (non-severe specified in guideline context, but caution advised); Dose and frequency not specified in retrieved evidence",
+    "L020": "- Gentamicin \u2014 WITHHELD: Not explicitly recommended in retrieved evidence for this specific allergy scenario; standard EOS regimen often includes aminoglycoside but retrieved text focuses on beta-lactam alternatives",
+    "L021": "- [DETERMINISTIC DEFAULT] IV clindamycin (per documented penicillin allergy \u2014 provides Group B Streptococcus coverage in place of the withheld beta-lactam)",
+    "L022": "duration=48-72 hours pending cultures stop_criteria=Stop antibiotics if blood cultures are negative at 36-48 hours and the infant is clinically well, per NICE recommendation 1.21.3.",
+    "L024": "MONITORING PLAN:",
+    "L025": "Monitor vital signs (temperature, heart rate, respiratory rate, oxygen saturation) every 4-6 hours. Monitor urine output and fluid balance. Repeat CRP and inflammatory markers at 24-48 hours if clinical status changes or to guide duration of therapy.",
+    "L027": "ESCALATION CRITERIA:",
+    "L028": "Escalate to senior neonatal team if clinical deterioration occurs (e.g., respiratory distress, poor perfusion, temperature instability) or if blood cultures return positive.",
+    "L030": "NUTRITION/FLUID PLAN:",
+    "L031": "Maintain normal feeding practices if clinically stable. Monitor for signs of feeding intolerance. Ensure adequate hydration.",
+    "L033": "DISAMBIGUATION BLOCK:",
+    "L036": "CONTRAINDICATION FLAGS:",
+    "L037": "- [CRITICAL] ampicillin: Documented penicillin allergy \u2014 avoid beta-lactam agents",
+    "L039": "TREND STATE CHANGE:"
+  },
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  }
+}

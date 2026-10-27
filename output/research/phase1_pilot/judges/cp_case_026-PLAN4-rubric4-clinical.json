@@ -1,0 +1,72 @@
+{
+  "completed": true,
+  "task_sha256": "3c6c020c58de878fd4b808ad7178e17279a18d8861eebb51ece9491090198eda",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.0511011999915354,
+  "kind": "plan",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-28956d5e-0c96-4cc2-9719-b3720b6e953b",
+    "object": "chat.completion",
+    "created": 1792956258,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":5,\"clinical_completeness\":3,\"clinical_utility\":4,\"safety\":5,\"contradictions\":[],\"critical_omissions\":[\"Specific dosing and frequency for IV/IM gentamicin and ampicillin/amoxicillin not provided despite WHO inpatient guidance (S009,S010)\",\"No recommendation for adding cloxacillin when staphylococcal sepsis is a consideration per WHO pocket book (S009,S010)\"],\"regimen_incomplete\":true,\"rationale\":\"Plan correctly identifies contraindication (prior hospitalization) and follows WHO referral recommendation (S001,S006). It withholds outpatient regimen and calls for inpatient care, which is safe. However, it lacks concrete dosing details and does not address staphylococcal coverage recommended for hospitalized infants (S009,S010), leading to incomplete regimen. No contradictions with source text were found.\"}",
+          "reasoning": "We need produce JSON with ratings and lists. Assess plan: It correctly identifies contraindication (prior hospitalization) and recommends inpatient care. That aligns with S006 (referral not possible, but here referral is required). S001 says refer to hospital. So plan is correct. It withholds outpatient regimen, suggests inpatient IV/IM but no dosing \u2013 acceptable as regimen incomplete? Since dosing not provided, regimen_incomplete = true. No contradictions. Critical omissions: specific antibiotic dosing, duration for inpatient (they gave at least 7 days but inpatient may differ). Also no mention of cloxacillin for possible staph per S009/S010. Might be omission. Provide contradictions none. Provide ratings: clinical_correctness 5, completeness 3, utility 4, safety 5. Provide contradictions empty. critical_omissions list. regimen_incomplete true. Provide rationale."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.256097241,
+      "prompt_tokens": 3946,
+      "prompt_time": 0.191501112,
+      "completion_tokens": 373,
+      "completion_time": 0.782694002,
+      "total_tokens": 4319,
+      "total_time": 0.974195114,
+      "completion_tokens_details": {
+        "reasoning_tokens": 178
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m5t8amtaewa8x6j6trkz1jaa",
+      "seed": 1415297580
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "967",
+    "x-ratelimit-remaining-tokens": "3159",
+    "x-ratelimit-reset-requests": "47m31.2s",
+    "x-ratelimit-reset-tokens": "36.307s"
+  },
+  "result": {
+    "clinical_correctness": 5,
+    "clinical_completeness": 3,
+    "clinical_utility": 4,
+    "safety": 5,
+    "contradictions": [],
+    "critical_omissions": [
+      "Specific dosing and frequency for IV/IM gentamicin and ampicillin/amoxicillin not provided despite WHO inpatient guidance (S009,S010)",
+      "No recommendation for adding cloxacillin when staphylococcal sepsis is a consideration per WHO pocket book (S009,S010)"
+    ],
+    "regimen_incomplete": true,
+    "rationale": "Plan correctly identifies contraindication (prior hospitalization) and follows WHO referral recommendation (S001,S006). It withholds outpatient regimen and calls for inpatient care, which is safe. However, it lacks concrete dosing details and does not address staphylococcal coverage recommended for hospitalized infants (S009,S010), leading to incomplete regimen. No contradictions with source text were found."
+  }
+}

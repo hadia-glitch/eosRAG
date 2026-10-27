@@ -1,0 +1,15 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 2,
+    "patient_fidelity": 2,
+    "completeness": 3,
+    "actionability": 2,
+    "uncertainty": 3,
+    "unsafe_claim_count": 1,
+    "unsafe_claim_reasons": [
+      "The candidate incorrectly classifies tachypnoea and hypoxia as a \"red\u2011flag\" clinical indicator, whereas NICE Box\u202f2 defines red\u2011flag indicators as apnoea, seizures, need for CPR, need for mechanical ventilation, or signs of shock. This misrepresentation could lead to inappropriate urgent antibiotic initiation."
+    ]
+  }
+}

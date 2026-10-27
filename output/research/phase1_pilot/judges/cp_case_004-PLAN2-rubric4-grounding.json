@@ -1,0 +1,80 @@
+{
+  "completed": true,
+  "task_sha256": "072a2f6aae3b62604002a30195f0d4613d8303cc82351bb549c3ad59905a2119",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.044452200003434,
+  "kind": "plan",
+  "case_id": "cp_case_004",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-305be770-433d-4c15-88f7-495451db0849",
+    "object": "chat.completion",
+    "created": 1792952513,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 3,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 3,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Risk classification as CRITICAL with Score 14 and probability 45.0 per 1000 is not supported by any supplied passage.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Detailed point breakdown (e.g., GBS 2 points, ROM 2 points, etc.) is not found in the provided evidence.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan correctly cites WHO recommendation (S002) for ampicillin+gentamicin in critical illness, but other citations (S010, S011) do not substantiate the specific drug choice. Several quantitative risk statements lack source support. No numeric dosing is asserted, so no ungrounded dose claim.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Check citations: plan lines claim ampicillin+gentamicin. Evidence S002 says recommendation for critical illness: ampicillin IM/IV plus gentamicin IM/IV for at least 10 days. So citation correct. Also S010 and S011 about staphylococcal sepsis but still ampicillin+gentamicin? S010 says IM/IV plus gentamicin (missing ampicillin?). Actually S010: \"IM/IV plus gentamicin IM/IV for at least 10 days is recommended as first-choice antibiotic management.\" ambiguous drug. Might be cloxacillin? But plan cites ampicillin+gentamicin. S010 may not support ampicillin. S011 supports cloxacillin+gentamicin. So citation correctness partially off. Also S009 is background definitions, not recommendation. So lines L011-L019 rely on S002 primarily. Citation mapping unknown. So citation completeness: they cite multiple sources but some not needed. Might be okay.\n\nUnsupported claims: risk analysis numbers (Score 14, 45 per 1000) not in evidence. No source. So L005, L008 have point breakdown not in evidence. Also severity classification CRITICAL risk (Score 14) not sourced. So list those.\n\nUngrounded dose: they mention dose not specified, but they state \"Dose and frequency not specified in retrieved WHO guideline excerpts; consult local protocol\". That's fine, not ungrounded. No numeric dose given. So ungrouned_dose false.\n\nNow produce JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.253333269,
+      "prompt_tokens": 3039,
+      "prompt_time": 0.122480036,
+      "completion_tokens": 562,
+      "completion_time": 1.161847064,
+      "total_tokens": 3601,
+      "total_time": 1.2843271,
+      "completion_tokens_details": {
+        "reasoning_tokens": 326
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m5t4rbevekz9mgc3xjz2c52c",
+      "seed": 2113006720
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "973",
+    "x-ratelimit-remaining-tokens": "3720",
+    "x-ratelimit-reset-requests": "38m52.8s",
+    "x-ratelimit-reset-tokens": "32.1s"
+  },
+  "result": {
+    "faithfulness": 3,
+    "citation_correctness": 2,
+    "citation_completeness": 3,
+    "unsupported_claims": [
+      {
+        "claim_id": "L005",
+        "reason": "Risk classification as CRITICAL with Score 14 and probability 45.0 per 1000 is not supported by any supplied passage.",
+        "claim_text": "The patient is classified as CRITICAL risk (Score 14) due to the presence of culture-confirmed bacteremia (Layer 3, 4 points), clinical chorioamnionitis (Layer 1, 3 points), and severe physiological compromise including respiratory distress and poor perfusion. The combination of maternal GBS positivity without adequate intrapartum antibiotics and prolonged ROM further elevates the probability of severe infection to 45.0 per 1000."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Detailed point breakdown (e.g., GBS 2 points, ROM 2 points, etc.) is not found in the provided evidence.",
+        "claim_text": "Maternal GBS colonization without adequate IAP contributes 2 points (Layer 1). Prolonged ROM (40h) contributes 2 points (Layer 1). Maternal intrapartum fever (39.1C) contributes 2 points (Layer 1). Clinical chorioamnionitis contributes 3 points (Layer 1). Severe respiratory distress contributes 2 points (Layer 2). Elevated CRP (65.0 mg/L) contributes 2 points (Layer 3). Positive blood culture contributes 4 points (Layer 3). Poor perfusion/shock signs contribute 2 points (Layer 2)."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan correctly cites WHO recommendation (S002) for ampicillin+gentamicin in critical illness, but other citations (S010, S011) do not substantiate the specific drug choice. Several quantitative risk statements lack source support. No numeric dosing is asserted, so no ungrounded dose claim."
+  }
+}

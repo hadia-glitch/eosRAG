@@ -1,0 +1,113 @@
+{
+  "completed": true,
+  "task_sha256": "8495ebb6b1936993379e063de66f75f83108e84eb8ff5179a90c770edb9998c9",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 8.687957999994978,
+  "kind": "chunks",
+  "case_id": "cp_case_004",
+  "mapping": {
+    "P001": "WHO_pg10_background-and-definitio_chunk1",
+    "P002": "WHO_pg11_sources-and-characterist_chunk1",
+    "P003": "WHO_pg15_recommendation-a-4-updat_rec1_chunk1",
+    "P004": "WHO_pg16_population-intervention-_chunk1",
+    "P005": "WHO_pg20_sources-and-characterist_chunk1",
+    "P006": "WHO_pg24_background-and-definitio_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-d7ee25cc-27b9-4518-890f-0b0f1edb9cfa",
+    "object": "chat.completion",
+    "created": 1792945563,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P001\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Defines clinical severe infection signs and non\u2011referral regimens; case is hospital\u2011based, so only background.\"\n    },\n    {\n      \"passage\": \"P002\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Describes RCT evidence for hospital\u2011based antibiotic regimens for infants with clinical severe infection.\"\n    },\n    {\n      \"passage\": \"P003\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Only addresses fast breathing as sole sign; case has multiple severe signs.\"\n    },\n    {\n      \"passage\": \"P004\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"PICO focuses on fast breathing only, not the critical sepsis presentation.\"\n    },\n    {\n      \"passage\": \"P005\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Evidence pertains to isolated fast breathing, unrelated to the current critical infection.\"\n    },\n    {\n      \"passage\": \"P006\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Provides WHO definition of suspected sepsis for hospitalized infants; background only, no treatment specifics.\"\n    }\n  ]\n}",
+          "reasoning": "We need output JSON with judgments for each target passage. Evaluate relevance to case: case is critical neonatal sepsis, hospital setting, WHO guideline, proposed ampicillin+gentamicin. Passages:\n\nP001: defines clinical severe infection signs and mentions simplified regimens for infants whose families cannot access referral. Our case is hospital setting, referral possible. So relevance maybe background/marginal (grade1). Guideline aligned? It's WHO source but about non-referral. scenario_applicable? Not directly applicable (hospital). clinically_useful? grade<2 so false.\n\nP002: describes systematic review of hospital-based regimens vs simplified. Might be background evidence for hospital regimens. Could be useful applicable support (grade2). guideline aligned yes. scenario_applicable yes (hospital). clinically_useful true.\n\nP003: recommendation for fast breathing only, not our case (multiple signs). Not relevant. grade0.\n\nP004: PICO details for fast breathing only. Not relevant. grade0.\n\nP005: systematic review of fast breathing isolated. Not relevant. grade0.\n\nP006: definition of suspected sepsis for hospitalized infants, includes signs. Relevant background but not actionable. grade1. guideline aligned yes. scenario_applicable yes (hospital). clinically_useful false (grade<2).\n\nReturn JSON array judgments.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.303104245,
+      "prompt_tokens": 4361,
+      "prompt_time": 0.225881254,
+      "completion_tokens": 718,
+      "completion_time": 1.503326615,
+      "total_tokens": 5079,
+      "total_time": 1.7292078690000001,
+      "completion_tokens_details": {
+        "reasoning_tokens": 268
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m5sy47v3excv9a102k7dt6z9",
+      "seed": 651217869
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "988",
+    "x-ratelimit-remaining-tokens": "2717",
+    "x-ratelimit-reset-requests": "17m16.8s",
+    "x-ratelimit-reset-tokens": "39.622s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P001",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Defines clinical severe infection signs and non\u2011referral regimens; case is hospital\u2011based, so only background."
+      },
+      {
+        "passage": "P002",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Describes RCT evidence for hospital\u2011based antibiotic regimens for infants with clinical severe infection."
+      },
+      {
+        "passage": "P003",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Only addresses fast breathing as sole sign; case has multiple severe signs."
+      },
+      {
+        "passage": "P004",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "PICO focuses on fast breathing only, not the critical sepsis presentation."
+      },
+      {
+        "passage": "P005",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Evidence pertains to isolated fast breathing, unrelated to the current critical infection."
+      },
+      {
+        "passage": "P006",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Provides WHO definition of suspected sepsis for hospitalized infants; background only, no treatment specifics."
+      }
+    ]
+  }
+}

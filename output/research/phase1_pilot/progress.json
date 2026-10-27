@@ -1,0 +1,466 @@
+{
+  "selected_cases": 10,
+  "fresh_unique_chunk_judgments": 206,
+  "required_unique_chunk_judgments": 206,
+  "complete_semantic_cases": 10,
+  "fresh_plan_judgments": 40,
+  "required_plan_judgments": 40,
+  "fresh_plan_stage_judgments": 80,
+  "required_plan_stage_judgments": 80,
+  "generation_metric_pairs": 20,
+  "judge_relevance_applicability_disagreements": [
+    {
+      "case_id": "cp_case_001",
+      "chunk_id": "NICE_pg29_infection_rec1_chunk1",
+      "judgment": {
+        "passage": "P012",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": true,
+        "rationale": "Recommends benzylpenicillin\u202f+\u202fgentamicin for empirical early\u2011onset infection; gentamicin contraindicated here due to AKI."
+      }
+    },
+    {
+      "case_id": "cp_case_014",
+      "chunk_id": "NICE_pg31_2012-amended-2026_chunk2",
+      "judgment": {
+        "passage": "P015",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Switch to oral amoxicillin applies only to babies \u226535\u202fweeks; this infant is 34\u202fweeks, so not applicable."
+      }
+    },
+    {
+      "case_id": "cp_case_014",
+      "chunk_id": "NICE_pg31_2012-amended-2026_chunk2",
+      "type": "grade_usefulness_disagreement",
+      "judgment": {
+        "passage": "P015",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Switch to oral amoxicillin applies only to babies \u226535\u202fweeks; this infant is 34\u202fweeks, so not applicable."
+      }
+    },
+    {
+      "case_id": "cp_case_026",
+      "chunk_id": "WHO_pg2_background-and-definitio_chunk1",
+      "type": "grade_usefulness_disagreement",
+      "judgment": {
+        "passage": "P013",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Defines PSBI clinical signs used to identify infants needing treatment; relevant but lacks direct regimen."
+      }
+    }
+  ],
+  "semantic_per_case": [
+    {
+      "case_id": "cp_case_001",
+      "guideline": "NICE",
+      "arm": "sparse",
+      "utility_precision_at10": 0.2,
+      "semantic_mrr_at10": 0.25,
+      "semantic_ndcg_at10": 0.4455799764743288
+    },
+    {
+      "case_id": "cp_case_001",
+      "guideline": "NICE",
+      "arm": "dense",
+      "utility_precision_at10": 0.5,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.7413111165621336
+    },
+    {
+      "case_id": "cp_case_001",
+      "guideline": "NICE",
+      "arm": "vector",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.682765991082253
+    },
+    {
+      "case_id": "cp_case_001",
+      "guideline": "NICE",
+      "arm": "graph",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.7579099163139382
+    },
+    {
+      "case_id": "cp_case_001",
+      "guideline": "NICE",
+      "arm": "hybrid",
+      "utility_precision_at10": 0.5,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.7994358759181276
+    },
+    {
+      "case_id": "cp_case_002",
+      "guideline": "NICE",
+      "arm": "sparse",
+      "utility_precision_at10": 0.3,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.2684402087946693
+    },
+    {
+      "case_id": "cp_case_002",
+      "guideline": "NICE",
+      "arm": "dense",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.32856936830508243
+    },
+    {
+      "case_id": "cp_case_002",
+      "guideline": "NICE",
+      "arm": "vector",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.3136510097748767
+    },
+    {
+      "case_id": "cp_case_002",
+      "guideline": "NICE",
+      "arm": "graph",
+      "utility_precision_at10": 0.7,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.6137610814499016
+    },
+    {
+      "case_id": "cp_case_002",
+      "guideline": "NICE",
+      "arm": "hybrid",
+      "utility_precision_at10": 0.7,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.7144732470153144
+    },
+    {
+      "case_id": "cp_case_003",
+      "guideline": "AAP",
+      "arm": "sparse",
+      "utility_precision_at10": 0.6,
+      "semantic_mrr_at10": 0.25,
+      "semantic_ndcg_at10": 0.5257422742336549
+    },
+    {
+      "case_id": "cp_case_003",
+      "guideline": "AAP",
+      "arm": "dense",
+      "utility_precision_at10": 0.6,
+      "semantic_mrr_at10": 0.25,
+      "semantic_ndcg_at10": 0.5257422742336549
+    },
+    {
+      "case_id": "cp_case_003",
+      "guideline": "AAP",
+      "arm": "vector",
+      "utility_precision_at10": 0.6,
+      "semantic_mrr_at10": 0.25,
+      "semantic_ndcg_at10": 0.5285690563290806
+    },
+    {
+      "case_id": "cp_case_003",
+      "guideline": "AAP",
+      "arm": "graph",
+      "utility_precision_at10": 0.7,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.8448773501053716
+    },
+    {
+      "case_id": "cp_case_003",
+      "guideline": "AAP",
+      "arm": "hybrid",
+      "utility_precision_at10": 0.7,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.8427170260251138
+    },
+    {
+      "case_id": "cp_case_004",
+      "guideline": "WHO",
+      "arm": "sparse",
+      "utility_precision_at10": 0.2,
+      "semantic_mrr_at10": 0.2,
+      "semantic_ndcg_at10": 0.31227745866086576
+    },
+    {
+      "case_id": "cp_case_004",
+      "guideline": "WHO",
+      "arm": "dense",
+      "utility_precision_at10": 0.3,
+      "semantic_mrr_at10": 0.5,
+      "semantic_ndcg_at10": 0.42578716206373257
+    },
+    {
+      "case_id": "cp_case_004",
+      "guideline": "WHO",
+      "arm": "vector",
+      "utility_precision_at10": 0.2,
+      "semantic_mrr_at10": 0.25,
+      "semantic_ndcg_at10": 0.3403447965870187
+    },
+    {
+      "case_id": "cp_case_004",
+      "guideline": "WHO",
+      "arm": "graph",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 0.5,
+      "semantic_ndcg_at10": 0.6400623733647951
+    },
+    {
+      "case_id": "cp_case_004",
+      "guideline": "WHO",
+      "arm": "hybrid",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 0.25,
+      "semantic_ndcg_at10": 0.5187184664764508
+    },
+    {
+      "case_id": "cp_case_007",
+      "guideline": "AAP",
+      "arm": "sparse",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 0.2,
+      "semantic_ndcg_at10": 0.455756645644492
+    },
+    {
+      "case_id": "cp_case_007",
+      "guideline": "AAP",
+      "arm": "dense",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 0.2,
+      "semantic_ndcg_at10": 0.455756645644492
+    },
+    {
+      "case_id": "cp_case_007",
+      "guideline": "AAP",
+      "arm": "vector",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 0.2,
+      "semantic_ndcg_at10": 0.455756645644492
+    },
+    {
+      "case_id": "cp_case_007",
+      "guideline": "AAP",
+      "arm": "graph",
+      "utility_precision_at10": 0.5,
+      "semantic_mrr_at10": 0.5,
+      "semantic_ndcg_at10": 0.7114446673045873
+    },
+    {
+      "case_id": "cp_case_007",
+      "guideline": "AAP",
+      "arm": "hybrid",
+      "utility_precision_at10": 0.5,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.8528438473274689
+    },
+    {
+      "case_id": "cp_case_009",
+      "guideline": "NICE",
+      "arm": "sparse",
+      "utility_precision_at10": 0.3,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.5939544163717523
+    },
+    {
+      "case_id": "cp_case_009",
+      "guideline": "NICE",
+      "arm": "dense",
+      "utility_precision_at10": 0.1,
+      "semantic_mrr_at10": 0.1,
+      "semantic_ndcg_at10": 0.3110567045294194
+    },
+    {
+      "case_id": "cp_case_009",
+      "guideline": "NICE",
+      "arm": "vector",
+      "utility_precision_at10": 0.3,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.5939544163717523
+    },
+    {
+      "case_id": "cp_case_009",
+      "guideline": "NICE",
+      "arm": "graph",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.6604043250764834
+    },
+    {
+      "case_id": "cp_case_009",
+      "guideline": "NICE",
+      "arm": "hybrid",
+      "utility_precision_at10": 0.6,
+      "semantic_mrr_at10": 0.5,
+      "semantic_ndcg_at10": 0.5820057557521584
+    },
+    {
+      "case_id": "cp_case_011",
+      "guideline": "AAP",
+      "arm": "sparse",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 0.25,
+      "semantic_ndcg_at10": 0.4468807262402697
+    },
+    {
+      "case_id": "cp_case_011",
+      "guideline": "AAP",
+      "arm": "dense",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 0.25,
+      "semantic_ndcg_at10": 0.4468807262402697
+    },
+    {
+      "case_id": "cp_case_011",
+      "guideline": "AAP",
+      "arm": "vector",
+      "utility_precision_at10": 0.4,
+      "semantic_mrr_at10": 0.25,
+      "semantic_ndcg_at10": 0.4500797861863097
+    },
+    {
+      "case_id": "cp_case_011",
+      "guideline": "AAP",
+      "arm": "graph",
+      "utility_precision_at10": 0.7,
+      "semantic_mrr_at10": 0.5,
+      "semantic_ndcg_at10": 0.6818806543610487
+    },
+    {
+      "case_id": "cp_case_011",
+      "guideline": "AAP",
+      "arm": "hybrid",
+      "utility_precision_at10": 0.6,
+      "semantic_mrr_at10": 0.5,
+      "semantic_ndcg_at10": 0.6486812371160667
+    },
+    {
+      "case_id": "cp_case_014",
+      "guideline": "NICE",
+      "arm": "sparse",
+      "utility_precision_at10": 0.5,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.5646748886793298
+    },
+    {
+      "case_id": "cp_case_014",
+      "guideline": "NICE",
+      "arm": "dense",
+      "utility_precision_at10": 0.6,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.7376711710579924
+    },
+    {
+      "case_id": "cp_case_014",
+      "guideline": "NICE",
+      "arm": "vector",
+      "utility_precision_at10": 0.5,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.7995123304026336
+    },
+    {
+      "case_id": "cp_case_014",
+      "guideline": "NICE",
+      "arm": "graph",
+      "utility_precision_at10": 0.8,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.5893074134967109
+    },
+    {
+      "case_id": "cp_case_014",
+      "guideline": "NICE",
+      "arm": "hybrid",
+      "utility_precision_at10": 0.6,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.6020299327923029
+    },
+    {
+      "case_id": "cp_case_025",
+      "guideline": "WHO",
+      "arm": "sparse",
+      "utility_precision_at10": 0.2,
+      "semantic_mrr_at10": 0.14285714285714285,
+      "semantic_ndcg_at10": 0.5068422202081821
+    },
+    {
+      "case_id": "cp_case_025",
+      "guideline": "WHO",
+      "arm": "dense",
+      "utility_precision_at10": 0.2,
+      "semantic_mrr_at10": 0.14285714285714285,
+      "semantic_ndcg_at10": 0.5068422202081821
+    },
+    {
+      "case_id": "cp_case_025",
+      "guideline": "WHO",
+      "arm": "vector",
+      "utility_precision_at10": 0.2,
+      "semantic_mrr_at10": 0.14285714285714285,
+      "semantic_ndcg_at10": 0.5068422202081821
+    },
+    {
+      "case_id": "cp_case_025",
+      "guideline": "WHO",
+      "arm": "graph",
+      "utility_precision_at10": 0.0,
+      "semantic_mrr_at10": 0.0,
+      "semantic_ndcg_at10": 0.273054082030358
+    },
+    {
+      "case_id": "cp_case_025",
+      "guideline": "WHO",
+      "arm": "hybrid",
+      "utility_precision_at10": 0.0,
+      "semantic_mrr_at10": 0.0,
+      "semantic_ndcg_at10": 0.273054082030358
+    },
+    {
+      "case_id": "cp_case_026",
+      "guideline": "WHO",
+      "arm": "sparse",
+      "utility_precision_at10": 0.2,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.4694285780355358
+    },
+    {
+      "case_id": "cp_case_026",
+      "guideline": "WHO",
+      "arm": "dense",
+      "utility_precision_at10": 0.2,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.46988550338938895
+    },
+    {
+      "case_id": "cp_case_026",
+      "guideline": "WHO",
+      "arm": "vector",
+      "utility_precision_at10": 0.2,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.46988550338938895
+    },
+    {
+      "case_id": "cp_case_026",
+      "guideline": "WHO",
+      "arm": "graph",
+      "utility_precision_at10": 0.3,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.6157921361630427
+    },
+    {
+      "case_id": "cp_case_026",
+      "guideline": "WHO",
+      "arm": "hybrid",
+      "utility_precision_at10": 0.3,
+      "semantic_mrr_at10": 1.0,
+      "semantic_ndcg_at10": 0.570303458308834
+    }
+  ],
+  "complete": true
+}

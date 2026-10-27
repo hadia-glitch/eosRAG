@@ -1,0 +1,136 @@
+{
+  "completed": true,
+  "task_sha256": "a76f31509c6fa9b86a2a68157f24177b9a18bf3f51e9e45b7685a1bb0f677c2a",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.1484104999981355,
+  "kind": "plan",
+  "case_id": "cp_case_014",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "dense_only_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-fb211fe0-5f79-4413-b9a7-214b63af74bc",
+    "object": "chat.completion",
+    "created": 1792955451,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 1,\n  \"citation_completeness\": 1,\n  \"unsupported_claims\": [\n    {\"claim_id\": \"L002\", \"reason\": \"Risk score calculation and category assignment are not present in any retrieved passage.\"},\n    {\"claim_id\": \"L005\", \"reason\": \"Layered risk factor scoring and CRP interpretation are not supported by the supplied evidence.\"},\n    {\"claim_id\": \"L007\", \"reason\": \"Specific point values for each risk factor are not found in the provided passages.\"},\n    {\"claim_id\": \"L011\", \"reason\": \"Recommendation to start empiric IV antibiotics is not directly cited in the retrieved evidence.\"},\n    {\"claim_id\": \"L012\", \"reason\": \"Blood culture timing guidance is not in the supplied passages.\"},\n    {\"claim_id\": \"L014\", \"reason\": \"Repeat CRP timing is not mentioned in the evidence.\"},\n    {\"claim_id\": \"L017\", \"reason\": \"Urgency statement lacks source support.\"},\n    {\"claim_id\": \"L021\", \"reason\": \"Duration and stop\u2011criteria for therapy are not covered by the retrieved text.\"},\n    {\"claim_id\": \"L023\", \"reason\": \"Monitoring frequency details are not in the evidence.\"},\n    {\"claim_id\": \"L026\", \"reason\": \"Escalation criteria are not sourced from the provided passages.\"},\n    {\"claim_id\": \"L029\", \"reason\": \"Nutrition/fluid plan details are not supported by the evidence.\"}\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": true,\n  \"ungrounded_dose_examples\": [\n    {\"claim_id\": \"L018\", \"reason\": \"The plan withholds benzylpenicillin dosing despite the evidence (S004) only describing maternal regimens, not neonatal dosing.\"},\n    {\"claim_id\": \"L019\", \"reason\": \"The plan withholds gentamicin dosing; the evidence does not provide neonatal dosage information.\"}\n  ],\n  \"rationale\": \"The plan contains many clinical assertions (risk scoring, specific antibiotic dosing, monitoring intervals) that are not found in the retrieved NICE passages (S004, S009, S010, S011, S012). Citation mapping is missing, and the cited [E3] does not correspond to any provided chunk, making citation correctness low. Dose statements are ungrounded because the evidence only mentions maternal antibiotic regimens, not neonatal dosing. Ambiguities in citation mapping are disclosed.\"\n}",
+          "reasoning": "We need produce JSON with ratings and lists. Assess faithfulness: plan claims high risk etc. Evidence passages S004, S009, S010, S011, S012. Do they support risk factors? S009 supports ROM >24h risk. S011/012 discuss intrapartum fever as risk factor. S004 gives antibiotic regimens for maternal chorioamnionitis, not neonatal. No evidence for scoring or CRP etc. So many statements unsupported. Faithfulness low maybe 2. Citation correctness: they cite [E3] but mapping missing; actual evidence IDs not E3. So incorrect. maybe 1. Citation completeness: many claims lack citations. rating 1. Unsupported claims: list L002, L005, L007, L011-L015, L017, L018, L019, L020, L021, L023, L026, L029 etc that are not supported by provided passages. Provide some examples. Contradictions: any claim contradicts evidence? Not really. Ungrounded_dose: yes, they withhold benzylpenicillin and gentamicin dosing not supported. So true. Provide example L018. Return JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.305313898,
+      "prompt_tokens": 3147,
+      "prompt_time": 0.159510033,
+      "completion_tokens": 786,
+      "completion_time": 1.633506166,
+      "total_tokens": 3933,
+      "total_time": 1.793016199,
+      "completion_tokens_details": {
+        "reasoning_tokens": 242
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m5t7hzwheg1ss3wxdhzrnrme",
+      "seed": 489526728
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "986",
+    "x-ratelimit-remaining-tokens": "4327",
+    "x-ratelimit-reset-requests": "20m9.6s",
+    "x-ratelimit-reset-tokens": "27.547s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 1,
+    "citation_completeness": 1,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Risk score calculation and category assignment are not present in any retrieved passage.",
+        "claim_text": "This 34-week neonate is assessed as HIGH risk for early-onset sepsis (EOS) with a combined score of 7, driven by maternal GBS colonization, prolonged rupture of membranes (26h), and intrapartum fever (38.4\u00b0C), alongside neonatal respiratory distress and elevated CRP (28.0 mg/L). Although the risk score has improved by 2 points since the last assessment, the current category remains HIGH, necessitating immediate antibiotic therapy and close monitoring."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Layered risk factor scoring and CRP interpretation are not supported by the supplied evidence.",
+        "claim_text": "The HIGH risk category is determined by the accumulation of Layer 1 risk factors (Maternal GBS, ROM >24h, Maternal Fever) and Layer 2/3 clinical indicators (Respiratory Distress, Elevated CRP). The presence of maternal fever and GBS positivity significantly elevates the baseline probability, while the neonate's clinical signs (distress, CRP 28.0 mg/L) confirm active physiological stress consistent with potential infection."
+      },
+      {
+        "claim_id": "L007",
+        "reason": "Specific point values for each risk factor are not found in the provided passages.",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      {
+        "claim_id": "L011",
+        "reason": "Recommendation to start empiric IV antibiotics is not directly cited in the retrieved evidence.",
+        "claim_text": "- Initiate empiric intravenous antibiotic therapy immediately."
+      },
+      {
+        "claim_id": "L012",
+        "reason": "Blood culture timing guidance is not in the supplied passages.",
+        "claim_text": "- Obtain blood culture prior to antibiotic administration if not already done."
+      },
+      {
+        "claim_id": "L014",
+        "reason": "Repeat CRP timing is not mentioned in the evidence.",
+        "claim_text": "- Repeat CRP and clinical assessment in 12-24 hours to guide duration of therapy."
+      },
+      {
+        "claim_id": "L017",
+        "reason": "Urgency statement lacks source support.",
+        "claim_text": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour"
+      },
+      {
+        "claim_id": "L021",
+        "reason": "Duration and stop\u2011criteria for therapy are not covered by the retrieved text.",
+        "claim_text": "duration=48-72 hours pending culture results stop_criteria=Stop if blood cultures are negative at 48 hours and clinical signs (respiratory distress, CRP) are improving or resolved."
+      },
+      {
+        "claim_id": "L023",
+        "reason": "Monitoring frequency details are not in the evidence.",
+        "claim_text": "MONITORING PLAN:"
+      },
+      {
+        "claim_id": "L026",
+        "reason": "Escalation criteria are not sourced from the provided passages.",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      {
+        "claim_id": "L029",
+        "reason": "Nutrition/fluid plan details are not supported by the evidence.",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": true,
+    "ungrounded_dose_examples": [
+      {
+        "claim_id": "L018",
+        "reason": "The plan withholds benzylpenicillin dosing despite the evidence (S004) only describing maternal regimens, not neonatal dosing.",
+        "claim_text": "- Benzylpenicillin sodium \u2014 WITHHELD: Retrieved evidence [E3] specifies maternal intrapartum antibiotic regimens (benzylpenicillin sodium) but does not provide specific neonatal intravenous doses, routes, or frequencies for early-onset sepsis treatment. Dose must be verified against local neonatal formulary or additional guideline sections not provided in the retrieved evidence."
+      },
+      {
+        "claim_id": "L019",
+        "reason": "The plan withholds gentamicin dosing; the evidence does not provide neonatal dosage information.",
+        "claim_text": "- Gentamicin \u2014 WITHHELD: Retrieved evidence [E3] lists gentamicin only for maternal chorioamnionitis treatment; no neonatal dosing or indication for EOS is provided in the retrieved excerpts."
+      }
+    ],
+    "rationale": "The plan contains many clinical assertions (risk scoring, specific antibiotic dosing, monitoring intervals) that are not found in the retrieved NICE passages (S004, S009, S010, S011, S012). Citation mapping is missing, and the cited [E3] does not correspond to any provided chunk, making citation correctness low. Dose statements are ungrounded because the evidence only mentions maternal antibiotic regimens, not neonatal dosing. Ambiguities in citation mapping are disclosed."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "completed": true,
+  "task_sha256": "cacf8ed7a15712441795b18af523a52b0459b6b2c5bcd0d3fcc3bed417cce538",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 11.284386400002404,
+  "kind": "chunks",
+  "case_id": "cp_case_007",
+  "mapping": {
+    "P013": "AAP_pg4_newborn-clinical-conditi_chunk2",
+    "P014": "AAP_pg5_white-blood-cell-count_chunk1",
+    "P015": "AAP_pg5_white-blood-cell-count_chunk2",
+    "P016": "AAP_pg5_white-blood-cell-count_chunk3",
+    "P017": "AAP_pg6_summary-points_chunk1",
+    "P018": "AAP_pg6_treatment-of-eos_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-cd1fc76b-53da-4450-ae5e-13da1ddb06b3",
+    "object": "chat.completion",
+    "created": 1792945930,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P013\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Emphasizes clinical observation for well\u2011appearing term infants, matching low\u2011risk scenario.\"\n    },\n    {\n      \"passage\": \"P014\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Notes declining utility of WBC counts but does not guide management for this well\u2011baby.\"\n    },\n    {\n      \"passage\": \"P015\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes poor performance of WBC/I\u2011T for EOS, offering no direct action for this case.\"\n    },\n    {\n      \"passage\": \"P016\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Discusses ANC/I\u2011T ratios, not pertinent to management of a low\u2011risk newborn.\"\n    },\n    {\n      \"passage\": \"P017\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Summarizes risk\u2011stratification options, including observation for well\u2011appearing term infants.\"\n    },\n    {\n      \"passage\": \"P018\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Provides antibiotic treatment details for EOS, which is not indicated here.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for each target passage. Determine grades.\n\nCase: term infant 38 weeks, well-appearing, low risk. Need evidence about observation vs antibiotics. Passages:\n\nP013: repeats clinical observation recommendation for well-appearing term infants. Relevant background. Grade? It supports observation, applicable. It's actionable? It says rely on clinical observation, not specific action. Probably grade 2 (useful applicable support). guideline_aligned true, scenario_applicable true, clinically_useful true.\n\nP014: about WBC count utility declines, mentions mode of delivery etc. Not directly actionable for this scenario (no labs needed). Might be background. Grade 1. guideline_aligned true (source AAP), scenario_applicable? WBC not needed, but info about limited utility, maybe not applicable. scenario_applicable false. clinically_useful false.\n\nP015: similar, low utility of WBC, extreme values low sensitivity. Same grade 1.\n\nP016: about ANC and I/T squared, not directly used. Grade 1.\n\nP017: summary points include risk stratification approaches including observation. General. Could be background. Grade 2? It mentions observation as approach. Might be useful. I'll give grade 2.\n\nP018: treatment of EOS antibiotics. Not applicable because no EOS. So irrelevant. Grade 0.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.301711011,
+      "prompt_tokens": 2944,
+      "prompt_time": 0.157817815,
+      "completion_tokens": 733,
+      "completion_time": 1.668504044,
+      "total_tokens": 3677,
+      "total_time": 1.826321859,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 280
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m5syfdszeabr6z4a8hc4p5e6",
+      "seed": 24178179
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "983",
+    "x-ratelimit-remaining-tokens": "4306",
+    "x-ratelimit-reset-requests": "24m28.8s",
+    "x-ratelimit-reset-tokens": "27.705s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P013",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Emphasizes clinical observation for well\u2011appearing term infants, matching low\u2011risk scenario."
+      },
+      {
+        "passage": "P014",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Notes declining utility of WBC counts but does not guide management for this well\u2011baby."
+      },
+      {
+        "passage": "P015",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes poor performance of WBC/I\u2011T for EOS, offering no direct action for this case."
+      },
+      {
+        "passage": "P016",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses ANC/I\u2011T ratios, not pertinent to management of a low\u2011risk newborn."
+      },
+      {
+        "passage": "P017",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Summarizes risk\u2011stratification options, including observation for well\u2011appearing term infants."
+      },
+      {
+        "passage": "P018",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Provides antibiotic treatment details for EOS, which is not indicated here."
+      }
+    ]
+  }
+}

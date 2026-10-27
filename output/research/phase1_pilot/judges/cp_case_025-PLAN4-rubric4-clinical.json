@@ -1,0 +1,71 @@
+{
+  "completed": true,
+  "task_sha256": "b5d53524e4953c9474c1ce35a0b1a66c3d7af355d47f49da1eb688cb586a7463",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.435866400002851,
+  "kind": "plan",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-222b33fa-e350-4769-a4d5-0513cb7df11d",
+    "object": "chat.completion",
+    "created": 1792955900,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":4,\"clinical_completeness\":3,\"clinical_utility\":4,\"safety\":5,\"contradictions\":[],\"critical_omissions\":[\"Specific dosing regimen for IV ampicillin and IV gentamicin is not provided despite recommendation to start IV therapy; WHO outpatient guidance does not include IV dosing for hospitalized infants (source S005, S010)\"],\"regimen_incomplete\":true,\"rationale\":\"Plan correctly identifies need for hospitalization due to birth weight <1500\u202fg (supported by S001, S007) and recommends appropriate IV antibiotics, aligning with WHO referral guidance (S001, S006). However, it lacks concrete dosing details for IV ampicillin and gentamicin, which are not specified in the retrieved outpatient evidence (S005, S010), making the regimen incomplete. No contradictory statements were found.\"}",
+          "reasoning": "We need produce JSON with scores and contradictions etc. Assess plan: It recommends hospitalization (good, since weight <1500). Uses ampicillin+gentamicin IV but dose not specified \u2013 acceptable? Regimen incomplete? Probably regimen incomplete because dosing missing. Contradictions? Any claim contradictory to source? Claim L011 says must hospitalize \u2013 supported by S001 (referral required) and S007 (no outpatient for preterm). So not contradiction. No unsafe claim. Critical omissions: specific dosing for IV antibiotics. Also monitoring? Probably okay. Provide contradictions none. critical_omissions list dose info. regimen_incomplete true. Provide scores: clinical_correctness 4, completeness 3, utility 4, safety 5. Provide contradictions empty list."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.380142872,
+      "prompt_tokens": 3822,
+      "prompt_time": 0.17648904,
+      "completion_tokens": 341,
+      "completion_time": 0.706345674,
+      "total_tokens": 4163,
+      "total_time": 0.882834714,
+      "completion_tokens_details": {
+        "reasoning_tokens": 156
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5a93aea882",
+    "x_groq": {
+      "id": "req_01m5t7zq94erjb60aj2pgsd145",
+      "seed": 376551040
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "975",
+    "x-ratelimit-remaining-tokens": "3483",
+    "x-ratelimit-reset-requests": "36m0s",
+    "x-ratelimit-reset-tokens": "33.877s"
+  },
+  "result": {
+    "clinical_correctness": 4,
+    "clinical_completeness": 3,
+    "clinical_utility": 4,
+    "safety": 5,
+    "contradictions": [],
+    "critical_omissions": [
+      "Specific dosing regimen for IV ampicillin and IV gentamicin is not provided despite recommendation to start IV therapy; WHO outpatient guidance does not include IV dosing for hospitalized infants (source S005, S010)"
+    ],
+    "regimen_incomplete": true,
+    "rationale": "Plan correctly identifies need for hospitalization due to birth weight <1500\u202fg (supported by S001, S007) and recommends appropriate IV antibiotics, aligning with WHO referral guidance (S001, S006). However, it lacks concrete dosing details for IV ampicillin and gentamicin, which are not specified in the retrieved outpatient evidence (S005, S010), making the regimen incomplete. No contradictory statements were found."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "completed": true,
+  "task_sha256": "81cc275c59d09f7f06b4e07b0698bc7765be3e233fecf37fc63e611047f21004",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.901511899995967,
+  "kind": "plan",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "dense_only_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-1b1a5882-a65a-4bf1-915e-5292dc83d712",
+    "object": "chat.completion",
+    "created": 1792955771,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 4,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Risk score calculation (points for ROM and CRP) is not presented in any retrieved WHO passage.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Specific point attribution for prolonged ROM is not found in the evidence.\"\n    },\n    {\n      \"claim_id\": \"L021\",\n      \"reason\": \"Duration and stop\u2011criteria for antibiotics are not stated in the supplied passages.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan correctly notes that birth weight <1500\u202fg excludes outpatient PSBI regimens (S001) and that hospitalization is required, which is faithful. However, the plan provides no explicit citation mapping, and many statements (risk scoring, point values, treatment duration) lack supporting text in the retrieved WHO excerpts, lowering citation correctness and completeness. The gentamicin dose cited aligns with S018, so no ungrounded dose is present.\"\n}",
+          "reasoning": "We need produce JSON with scores and lists. Assess faithfulness: plan claims about hospitalization due to birth weight <1500g. Is that in evidence? S001 says outpatient regimen excluded for BW<1500g, implies need hospital. So claim supported. Good. Citation mapping missing but we can note. Overall faithfulness maybe 4. Citation correctness: they didn't map numbers, but citations present? They didn't provide numbered citations, so correctness low 2. Completeness: many claims lack citations, so 2. Unsupported claims: identify lines with unsupported. L005 risk score points not in evidence. No source for scoring. So claim unsupported. L008 similar. L020 about ampicillin dose not specified \u2013 they state not in evidence, that's accurate. Not unsupported. L021 duration etc not sourced. So list L005, L008, L021 maybe. Contradictions: none. Ungrounded_dose: they mention ampicillin dose not specified, but also mention gentamicin dose 5 mg/kg once a day \u2013 source S018 gives that dose. So okay. No ungrounded dose. So ungrouned_dose false. Provide empty examples. Rationale."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.255723866,
+      "prompt_tokens": 4654,
+      "prompt_time": 0.219471697,
+      "completion_tokens": 516,
+      "completion_time": 1.079300563,
+      "total_tokens": 5170,
+      "total_time": 1.29877226,
+      "completion_tokens_details": {
+        "reasoning_tokens": 243
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5082008e34",
+    "x_groq": {
+      "id": "req_01m5t7vs11ek2vaea8bd59hyea",
+      "seed": 203107770
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "978",
+    "x-ratelimit-remaining-tokens": "2720",
+    "x-ratelimit-reset-requests": "31m40.8s",
+    "x-ratelimit-reset-tokens": "39.6s"
+  },
+  "result": {
+    "faithfulness": 4,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L005",
+        "reason": "Risk score calculation (points for ROM and CRP) is not presented in any retrieved WHO passage.",
+        "claim_text": "The risk category is INTERMEDIATE (Score 3) due to two key drivers: Prolonged rupture of membranes (>=18h) contributing 2 points, and Elevated CRP (12.0 mg/L) contributing 2 points. The infant lacks other high-risk features such as clinical chorioamnionitis or GBS positivity, but the combination of ROM and inflammatory markers warrants treatment."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Specific point attribution for prolonged ROM is not found in the evidence.",
+        "claim_text": "Prolonged rupture of membranes: ROM 20.0h (>=18h) adds 2 points to risk score."
+      },
+      {
+        "claim_id": "L021",
+        "reason": "Duration and stop\u2011criteria for antibiotics are not stated in the supplied passages.",
+        "claim_text": "duration=At least 7 days pending culture results and clinical response stop_criteria=Negative blood cultures at 48 hours and clinical improvement (normalizing CRP, stable vitals, feeding well)"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan correctly notes that birth weight <1500\u202fg excludes outpatient PSBI regimens (S001) and that hospitalization is required, which is faithful. However, the plan provides no explicit citation mapping, and many statements (risk scoring, point values, treatment duration) lack supporting text in the retrieved WHO excerpts, lowering citation correctness and completeness. The gentamicin dose cited aligns with S018, so no ungrounded dose is present."
+  }
+}

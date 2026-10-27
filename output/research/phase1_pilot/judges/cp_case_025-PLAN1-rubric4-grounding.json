@@ -1,0 +1,106 @@
+{
+  "completed": true,
+  "task_sha256": "b3df6e5c4c0ecab0291ba4c5042e9f2c5080d31de4da3fe5fd03a52bc0e03310",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.937000900012208,
+  "kind": "plan",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-378d4795-f22b-4fbf-ad2b-de8317dba565",
+    "object": "chat.completion",
+    "created": 1792955605,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 1,\n  \"citation_correctness\": 1,\n  \"citation_completeness\": 1,\n  \"unsupported_claims\": [\n    {\"claim_id\": \"L002\", \"reason\": \"Weight <1500\u202fg exclusion for outpatient care is not stated in any supplied source\"},\n    {\"claim_id\": \"L005\", \"reason\": \"Risk score calculation and point values are not present in the provided passages\"},\n    {\"claim_id\": \"L008\", \"reason\": \"Driver point attribution (2 points each) is not sourced\"},\n    {\"claim_id\": \"L011\", \"reason\": \"Hospitalization requirement based on birth weight lacks citation\"},\n    {\"claim_id\": \"L012\", \"reason\": \"Urgency statement and requirement flag are not grounded in the evidence\"},\n    {\"claim_id\": \"L017\", \"reason\": \"Urgency/required flag not supported by any passage\"}\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": true,\n  \"ungrounded_dose_examples\": [\n    {\"claim_id\": \"L019\", \"reason\": \"Gentamicin dose (5\u202fmg/kg once daily) is given without a cited source linking to S011/S018\"}\n  ],\n  \"rationale\": \"Most plan statements (weight\u2011based outpatient exclusion, risk scoring, hospitalization mandate, urgency flags) are not found in the supplied WHO passages. The only dose mentioned (gentamicin 5\u202fmg/kg daily) appears in S011/S018 but the plan does not cite these passages, making the dose ungrounded. Consequently, faithfulness, citation correctness, and completeness receive the lowest ratings.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Identify unsupported claims. Look at plan lines and evidence passages.\n\nKey claims: L002 says birth weight <1500g contraindicates outpatient per WHO. Need source: S001 says outpatient regimen excluded for birth weight <1500g? S001 mentions \"young infants ... should be referred to hospital. If referral not possible then oral amoxicillin ...\". Doesn't state weight cutoff. No source for weight cutoff. So claim unsupported.\n\nL005 risk score etc not in sources. No scoring system in passages. Unsupported.\n\nL008 similar.\n\nL011 hospitalization due to weight <1500g unsupported.\n\nL012 antibiotic plan: \"required=True urgency=Within 1 hour\" not source.\n\nL018 says ampicillin withheld due to missing dose; source doesn't give dose. That's fine but claim about missing dose is okay.\n\nL019 Gentamicin dose: \"5 mg/kg once a day (first week)\" source S011 and S018 provide that dose. So citation? Not linked. Need citation correctness: not provided mapping. So citation missing.\n\nThus many unsupported.\n\nUngrounded dose: L019 provides dose but not cited. So ungounded.\n\nNow produce scores: faithfulness low maybe 1. citation correctness low 1. completeness low 1.\n\nList unsupported_claims: L002, L005, L008, L011, L012 maybe L017? L017 just urgency.\n\ncontradictions none? maybe claim that outpatient regimen contraindicated vs source S001 doesn't mention weight, so contradiction? It's unsupported not contradictory.\n\nungrounded_dose true with example L019.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.307172346,
+      "prompt_tokens": 4593,
+      "prompt_time": 0.20506505,
+      "completion_tokens": 688,
+      "completion_time": 1.431251045,
+      "total_tokens": 5281,
+      "total_time": 1.636316095,
+      "completion_tokens_details": {
+        "reasoning_tokens": 330
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m5t7pphmewrtt69amp69jmvn",
+      "seed": 470618199
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "982",
+    "x-ratelimit-remaining-tokens": "2712",
+    "x-ratelimit-reset-requests": "25m55.199s",
+    "x-ratelimit-reset-tokens": "39.66s"
+  },
+  "result": {
+    "faithfulness": 1,
+    "citation_correctness": 1,
+    "citation_completeness": 1,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Weight <1500\u202fg exclusion for outpatient care is not stated in any supplied source",
+        "claim_text": "This 29-week, 1200g preterm infant presents with intermediate risk for early-onset sepsis driven by prolonged rupture of membranes (20h) and elevated CRP (12.0 mg/L). Although the care setting is listed as outpatient, the infant's birth weight of 1200g is below the WHO 1500g threshold for outpatient management, necessitating immediate hospitalization and parenteral antibiotic therapy."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Risk score calculation and point values are not present in the provided passages",
+        "claim_text": "The risk category is INTERMEDIATE (Score 3) due to two key drivers: Prolonged rupture of membranes (>=18h) contributing 2 points and Elevated CRP (12.0 mg/L) contributing 2 points. The infant lacks clinical signs of severe infection (e.g., respiratory distress, temperature instability) but has significant risk factors and laboratory evidence of inflammation."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Driver point attribution (2 points each) is not sourced",
+        "claim_text": "Prolonged rupture of membranes: ROM 20.0h (>=18h) adds 2 points to the risk score. Elevated CRP: CRP 12.0 mg/L adds 2 points to the risk score."
+      },
+      {
+        "claim_id": "L011",
+        "reason": "Hospitalization requirement based on birth weight lacks citation",
+        "claim_text": "- IMMEDIATE HOSPITALIZATION: The infant must be admitted to a neonatal unit due to birth weight <1500g, which contraindicates outpatient management per WHO guidelines."
+      },
+      {
+        "claim_id": "L012",
+        "reason": "Urgency statement and requirement flag are not grounded in the evidence",
+        "claim_text": "- Initiate empiric intravenous antibiotic therapy for early-onset sepsis."
+      },
+      {
+        "claim_id": "L017",
+        "reason": "Urgency/required flag not supported by any passage",
+        "claim_text": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": true,
+    "ungrounded_dose_examples": [
+      {
+        "claim_id": "L019",
+        "reason": "Gentamicin dose (5\u202fmg/kg once daily) is given without a cited source linking to S011/S018",
+        "claim_text": "- Gentamicin \u2014 SUBSTITUTED for Ampicillin/Gentamicin combo due to missing Ampicillin dose in evidence: IV/IM gentamicin 5 mg/kg once a day (first week of life)"
+      }
+    ],
+    "rationale": "Most plan statements (weight\u2011based outpatient exclusion, risk scoring, hospitalization mandate, urgency flags) are not found in the supplied WHO passages. The only dose mentioned (gentamicin 5\u202fmg/kg daily) appears in S011/S018 but the plan does not cite these passages, making the dose ungrounded. Consequently, faithfulness, citation correctness, and completeness receive the lowest ratings."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "completed": true,
+  "task_sha256": "807a047f33caf3af0b6f22318c8e391d80feb2e3f6a7ed8ce4d6f0655e74587b",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.197627100002137,
+  "kind": "plan",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "dense_only_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-1c84a162-1383-4064-ba05-de53e496887b",
+    "object": "chat.completion",
+    "created": 1792956162,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"clinical_correctness\": 4,\n  \"clinical_completeness\": 3,\n  \"clinical_utility\": 4,\n  \"safety\": 5,\n  \"contradictions\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Risk scoring (points and probability per 1000) is not described in WHO guideline passages; the guideline uses clinical signs for referral, not a numeric risk score.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Driver breakdown with point values and layer contributions is not supported by any WHO source; guideline defines signs but not a point\u2011based algorithm.\"\n    }\n  ],\n  \"critical_omissions\": [\n    \"Specific ampicillin dosing (e.g., 50\u202fmg/kg q12h in first week) is not provided despite WHO dosing tables (S005, S011\u2011S018).\",\n    \"Duration of therapy for suspected sepsis in hospitalized infants is not clearly stated; WHO recommends at least 7\u201110\u202fdays (S010, S020) but plan leaves it pending.\",\n    \"No mention of obtaining CSF cultures or lumbar puncture when meningitis is a differential, as recommended for hospitalized infants (S020\u2011S023).\"\n  ],\n  \"regimen_incomplete\": true,\n  \"rationale\": \"The plan correctly identifies the contraindication to outpatient PSBI regimens (hospitalization within 14\u202fdays) and recommends inpatient care, aligning with S001 and S006. It proposes IV ampicillin and gentamicin, which matches WHO inpatient recommendations (S010, S020). However, the plan includes unsupported risk\u2011score calculations (L005, L008) and omits essential dosing details and duration that are present in WHO dosing guidance (S005, S011\u2011S018). Safety is high because the plan avoids inappropriate outpatient therapy, but completeness is limited by missing dosing and duration specifics, leading to a regimen_incomplete flag.\"\n}",
+          "reasoning": "We need produce JSON with scores and list contradictions, critical omissions, regimen_incomplete flag, rationale. Evaluate plan lines.\n\nKey: contraindication: hospitalized within prior 14 days => WHO outpatient PSBI contraindicated, so plan says hospitalize, correct. It recommends IV ampicillin/gentamicin but does not specify dose; that's okay. Regimen incomplete? It mentions default ampicillin dose not specified; but guideline provides dosing in S005 etc. Since not specified, regimen incomplete true.\n\nContradictions: any claim contradictory to guideline? L005 risk analysis uses points not in guideline; risk scoring not in WHO. So contradiction. L008 driver breakdown also unsupported. Also L011-13 hospitalization correct. L019 default ampicillin dose not specified \u2013 not contradiction but omission.\n\nCritical omissions: No mention of specific dosing per WHO (e.g., ampicillin 50 mg/kg q12h). No mention of duration specifics (10 days vs 7). No mention of monitoring labs? Monitoring plan okay. No mention of need for CSF if meningitis suspected? Not indicated. So list.\n\nNow produce JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.252499002,
+      "prompt_tokens": 7159,
+      "prompt_time": 0.284119064,
+      "completion_tokens": 655,
+      "completion_time": 1.354586573,
+      "total_tokens": 7814,
+      "total_time": 1.6387056370000002,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 230
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8655ddce88",
+    "x_groq": {
+      "id": "req_01m5t87pnze1ytzhtepz7789k1",
+      "seed": 1404503010
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "969",
+    "x-ratelimit-remaining-tokens": "146",
+    "x-ratelimit-reset-requests": "44m38.4s",
+    "x-ratelimit-reset-tokens": "58.905s"
+  },
+  "result": {
+    "clinical_correctness": 4,
+    "clinical_completeness": 3,
+    "clinical_utility": 4,
+    "safety": 5,
+    "contradictions": [
+      {
+        "claim_id": "L005",
+        "reason": "Risk scoring (points and probability per 1000) is not described in WHO guideline passages; the guideline uses clinical signs for referral, not a numeric risk score.",
+        "claim_text": "The risk category is INTERMEDIATE (Score 3) based on two primary drivers: Prolonged rupture of membranes (>=18h) contributing 2 points and Elevated CRP (12.0 mg/L) contributing 2 points. The combined probability is 3.0 per 1000."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Driver breakdown with point values and layer contributions is not supported by any WHO source; guideline defines signs but not a point\u2011based algorithm.",
+        "claim_text": "Prolonged rupture of membranes: ROM 20.0h (>=18h), 2 points, Layer 1, 50% contribution; Elevated CRP: CRP 12.0 mg/L, 2 points, Layer 3, 50% contribution"
+      }
+    ],
+    "critical_omissions": [
+      "Specific ampicillin dosing (e.g., 50\u202fmg/kg q12h in first week) is not provided despite WHO dosing tables (S005, S011\u2011S018).",
+      "Duration of therapy for suspected sepsis in hospitalized infants is not clearly stated; WHO recommends at least 7\u201110\u202fdays (S010, S020) but plan leaves it pending.",
+      "No mention of obtaining CSF cultures or lumbar puncture when meningitis is a differential, as recommended for hospitalized infants (S020\u2011S023)."
+    ],
+    "regimen_incomplete": true,
+    "rationale": "The plan correctly identifies the contraindication to outpatient PSBI regimens (hospitalization within 14\u202fdays) and recommends inpatient care, aligning with S001 and S006. It proposes IV ampicillin and gentamicin, which matches WHO inpatient recommendations (S010, S020). However, the plan includes unsupported risk\u2011score calculations (L005, L008) and omits essential dosing details and duration that are present in WHO dosing guidance (S005, S011\u2011S018). Safety is high because the plan avoids inappropriate outpatient therapy, but completeness is limited by missing dosing and duration specifics, leading to a regimen_incomplete flag."
+  }
+}

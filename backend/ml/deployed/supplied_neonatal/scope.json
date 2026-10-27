@@ -1,0 +1,76 @@
+{
+  "ranges": {
+    "Gestational_Age": [
+      24.0,
+      41.0
+    ],
+    "Birth_Weight": [
+      0.52,
+      4.5
+    ],
+    "Postnatal_Age": [
+      0.0,
+      2.0
+    ],
+    "Apgar": [
+      3.0,
+      10.0
+    ],
+    "HR": [
+      104.9,
+      206.3
+    ],
+    "Resp": [
+      25.5,
+      89.5
+    ],
+    "Temp": [
+      35.57,
+      38.31
+    ],
+    "SpO2": [
+      87.6,
+      100.0
+    ],
+    "BP": [
+      25.0,
+      68.5
+    ],
+    "Oxygen": [
+      21.0,
+      66.1
+    ],
+    "WBC": [
+      2.3,
+      45.0
+    ],
+    "CRP": [
+      0.1,
+      24.7
+    ],
+    "PCT": [
+      0.02,
+      3.971
+    ],
+    "Platelets": [
+      35.0,
+      389.9
+    ],
+    "Lactate": [
+      0.3,
+      7.73
+    ],
+    "Hemoglobin": [
+      8.0,
+      21.0
+    ]
+  },
+  "max_missing_predictors": 3,
+  "missingness_policy": "fit-partition 99.5th percentile of missing predictor counts",
+  "partition": "fit only",
+  "min_age_hours": 0,
+  "max_age_hours_exclusive": 72,
+  "clinical_eos_eligible": false,
+  "training_csv_sha256": "fe1787c19c929324d2862e5fb66f5cf3945a6ba75a41623a5ba506fa6f9e294d",
+  "units_verified": false
+}

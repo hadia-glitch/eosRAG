@@ -1,0 +1,87 @@
+{
+  "synthetic": true,
+  "request": {
+    "input_contract_version": "supplied-neonatal-input-v1",
+    "purpose": "research",
+    "age_hours": 12.0,
+    "reviewed_inputs": true,
+    "values": {
+      "Gestational_Age": 36.0,
+      "Birth_Weight": 3.2,
+      "Sex": "Male",
+      "Postnatal_Age": 0.0,
+      "Delivery_Mode": "Cesarean",
+      "Apgar": 8.0,
+      "HR": 150.0,
+      "Resp": 50.0,
+      "Temp": 36.8,
+      "SpO2": 97.0,
+      "BP": 45.0,
+      "Oxygen": 21.0,
+      "WBC": 12.0,
+      "CRP": 5.0,
+      "PCT": 0.7,
+      "Platelets": 220.0,
+      "Lactate": 1.5,
+      "Hemoglobin": 14.5
+    }
+  },
+  "response": {
+    "model_version": "postnatal_days_0_2-forest-seed31",
+    "input_contract_version": "supplied-neonatal-input-v1",
+    "validation_status": "research_only",
+    "clinical_use": false,
+    "target": "supplied observation-associated Sepsis_Label",
+    "missing_features": [],
+    "missing_fraction": 0.0,
+    "warnings": [
+      "Research supplied-label classifier. This is not a validated probability of clinical early-onset sepsis and must not determine treatment."
+    ],
+    "probability": 0.0004360975318374441,
+    "contributions": [
+      {
+        "feature": "Oxygen",
+        "value": 21.0,
+        "contribution": -0.004115254589367781
+      },
+      {
+        "feature": "CRP",
+        "value": 5.0,
+        "contribution": -0.0007190470084620803
+      },
+      {
+        "feature": "SpO2",
+        "value": 97.0,
+        "contribution": -0.0003132366813956834
+      },
+      {
+        "feature": "PCT",
+        "value": 0.7,
+        "contribution": 0.00028042424493862595
+      },
+      {
+        "feature": "Birth_Weight",
+        "value": 3.2,
+        "contribution": 0.0002748123656131532
+      },
+      {
+        "feature": "Resp",
+        "value": 50.0,
+        "contribution": -0.00024638771219236144
+      },
+      {
+        "feature": "HR",
+        "value": 150.0,
+        "contribution": -0.00012487196866978125
+      },
+      {
+        "feature": "Lactate",
+        "value": 1.5,
+        "contribution": -5.431279421143939e-05
+      }
+    ],
+    "contribution_method": "median replacement probability difference; not SHAP",
+    "status": "predicted",
+    "imputed_features": []
+  }
+}

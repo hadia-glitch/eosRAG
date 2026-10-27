@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-25",
+  "backend_tests": {
+    "passed": 91,
+    "warnings": "two sklearn/SciPy deprecations"
+  },
+  "frontend": {
+    "flutter_tests": 19,
+    "opt_in_synthetic_capture": "passed",
+    "analyze": "no issues",
+    "release_build": "passed"
+  },
+  "release_secret_scan": {
+    "files": 48,
+    "environment_assets": 0,
+    "configured_server_credentials_found": false
+  },
+  "container": {
+    "image": "neoguard-eos:staging",
+    "manifest_list_digest": "sha256:0ad6f8ed7a2516bdf70ffd915808a7a631d1bb4226d336e41c20c805009e4934",
+    "build": "passed",
+    "nonroot_readonly_no_network_startup_auth": "passed",
+    "bundled_model_prediction_and_shap": "passed",
+    "cached_encoder_and_cross_encoder": "passed",
+    "strict_output_schemas": "passed"
+  },
+  "groq_strict_schema_generation_and_two_audits": "passed synthetic control",
+  "ollama_qwen3_4b_strict_json_transport": "passed; no care-plan quality claim",
+  "provider_failures_in_model_quality_results": false,
+  "paper": {"pages": 15, "tables": 12, "figures": 3},
+  "test_data_bundle": {"files": 19, "mimic_patient_rows": false},
+  "demo": {"seconds": 62, "codec": "H.264", "synthetic_fixture_replay": true},
+  "hosted_deployment": false,
+  "clinical_release_enabled": false
+}

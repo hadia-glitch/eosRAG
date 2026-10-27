@@ -1,0 +1,276 @@
+import 'package:flutter/material.dart';
+import 'package:uuid/uuid.dart';
+import '../../core/theme.dart';
+import '../../domain/eoscal_calculator.dart';
+import '../patient_entry_flow.dart';
+
+/// Screen 10 — New Patient Setup
+class NewPatientScreen extends StatefulWidget {
+  const NewPatientScreen({super.key});
+
+  @override
+  State<NewPatientScreen> createState() => _NewPatientScreenState();
+}
+
+class _NewPatientScreenState extends State<NewPatientScreen> {
+  // Short, human-readable reference shown in the UI (e.g. "A1B2C3D4").
+  // This is NOT the database primary key — see _patientId below.
+  final _nameController = TextEditingController();
+  final _refController = TextEditingController(
+    text: const Uuid().v4().substring(0, 8).toUpperCase(),
+  );
+
+  // CRITICAL FIX: patient.id is written into patient_encounters.id and into
+  // the UUID foreign-key columns clinical_assessments.encounter_id,
+  // risk_results.encounter_id, and alerts.encounter_id. Those columns are
+  // real Postgres UUID columns — an 8-character truncated string like
+  // "A1B2C3D4" is not a valid UUID and every insert referencing it was
+  // failing silently (caught and only debugPrint'd as "non-fatal"). That is
+  // why patient_encounters/clinical_assessments/risk_results/alerts were
+  // never actually being populated. Generating a full v4 UUID here fixes it
+  // at the source, while the short reference above still shows up wherever
+  // the UI/mrn/encounter_ref is used.
+  final String _patientId = const Uuid().v4();
+
+  DateTime _birthDateTime = DateTime.now();
+  int _gaWeeks = 38;
+  int _gaDays = 0;
+  int _birthWeight = 3200;
+
+  // "hospital" (default) | "outpatient_no_referral". Threaded through to
+  // ExplanationApi.generateCarePlan's careSetting param, which gates the
+  // backend's WHO PSBI outpatient-eligibility exclusions (birth weight
+  // <1500g / hospitalized in the prior 14 days must still be hospitalized
+  // regardless of presenting signs) -- see
+  // domain/contraindication_rules.check_who_outpatient_exclusions. Set once
+  // here at patient creation since it describes the care CONTEXT for this
+  // encounter, not a clinical finding that changes between reassessments.
+  String _careSetting = 'hospital';
+
+  double get _gaTotal => _gaWeeks + _gaDays / 7.0;
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _refController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('New Patient')),
+      body: ListView(
+        padding: const EdgeInsets.all(16),
+        children: [
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  TextField(
+                    controller: _nameController,
+                    decoration: const InputDecoration(
+                      labelText: 'Patient Name (Local Only)',
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  TextField(
+                    controller: _refController,
+                    decoration: const InputDecoration(
+                      labelText: 'Patient Reference (MRN)',
+                    ),
+                  ),
+                  ListTile(
+                    title: const Text('Date & Time of Birth'),
+                    subtitle: Text(_birthDateTime.toString().substring(0, 16)),
+                    trailing: IconButton(
+                      icon: const Icon(Icons.calendar_today),
+                      onPressed: () async {
+                        final d = await showDatePicker(
+                          context: context,
+                          firstDate: DateTime.now().subtract(
+                            const Duration(days: 7),
+                          ),
+                          lastDate: DateTime.now(),
+                          initialDate: _birthDateTime,
+                        );
+                        if (d != null) setState(() => _birthDateTime = d);
+                      },
+                    ),
+                  ),
+                  Wrap(
+                    runSpacing: 8,
+                    children: [
+                      SizedBox(
+                        width: double.infinity,
+                        child: Row(
+                          children: [
+                            IconButton(
+                              onPressed: () => setState(
+                                () => _gaWeeks = (_gaWeeks - 1).clamp(22, 43),
+                              ),
+                              icon: const Icon(Icons.remove),
+                            ),
+                            Expanded(
+                              child: Text(
+                                '$_gaWeeks w',
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () => setState(
+                                () => _gaWeeks = (_gaWeeks + 1).clamp(22, 43),
+                              ),
+                              icon: const Icon(Icons.add),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        width: double.infinity,
+                        child: Row(
+                          children: [
+                            IconButton(
+                              onPressed: () => setState(
+                                () => _gaDays = (_gaDays - 1).clamp(0, 6),
+                              ),
+                              icon: const Icon(Icons.remove),
+                            ),
+                            Expanded(
+                              child: Text(
+                                '$_gaDays d',
+                                textAlign: TextAlign.center,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: () => setState(
+                                () => _gaDays = (_gaDays + 1).clamp(0, 6),
+                              ),
+                              icon: const Icon(Icons.add),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  TextFormField(
+                    initialValue: _birthWeight.toString(),
+                    decoration: const InputDecoration(
+                      labelText: 'Birth Weight (grams)',
+                      helperText: 'Review and enter the measured birth weight.',
+                    ),
+                    keyboardType: TextInputType.number,
+                    onChanged: (v) => _birthWeight = int.tryParse(v) ?? 0,
+                  ),
+                  const SizedBox(height: 16),
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'Care Setting',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.grey.shade600,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Wrap(
+                    spacing: 8,
+                    children: [
+                      ChoiceChip(
+                        label: const Text('Hospital'),
+                        selected: _careSetting == 'hospital',
+                        onSelected: (_) =>
+                            setState(() => _careSetting = 'hospital'),
+                      ),
+                      ChoiceChip(
+                        label: const Text('Outpatient — no referral possible'),
+                        selected: _careSetting == 'outpatient_no_referral',
+                        onSelected: (_) => setState(
+                          () => _careSetting = 'outpatient_no_referral',
+                        ),
+                      ),
+                    ],
+                  ),
+                  if (_careSetting == 'outpatient_no_referral')
+                    Container(
+                      margin: const EdgeInsets.only(top: 12),
+                      padding: const EdgeInsets.all(12),
+                      color: WhoTheme.riskIntermediate.withValues(alpha: 0.2),
+                      child: const Text(
+                        'WHO PSBI outpatient regimens do not apply to infants under '
+                        '1500g birth weight or hospitalized for illness in the prior '
+                        '14 days — care plans will flag hospitalization as required '
+                        'for those cases regardless of presenting signs.',
+                      ),
+                    ),
+                  if (_gaTotal < 35)
+                    Container(
+                      margin: const EdgeInsets.only(top: 12),
+                      padding: const EdgeInsets.all(12),
+                      color: WhoTheme.riskIntermediate.withValues(alpha: 0.2),
+                      child: const Text(
+                        'EOSCAL 2024 validated for ≥35 weeks. Outputs flagged as unvalidated below this threshold.',
+                      ),
+                    ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 24),
+          ElevatedButton(
+            onPressed: () {
+              if (_birthWeight < 200 || _birthWeight > 6500) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text(
+                      'Enter a measured birth weight between 200 and 6500 grams.',
+                    ),
+                  ),
+                );
+                return;
+              }
+              final patient = PatientParameters(
+                id: _patientId,
+                name: _nameController.text.trim().isNotEmpty
+                    ? _nameController.text.trim()
+                    : 'Patient ${_refController.text}',
+                mrn: 'MRN-${_refController.text}',
+                gestationalAgeWeeks: _gaTotal,
+                birthDateTime: _birthDateTime,
+                maternalTemperature: 37.0,
+                romHours: 4,
+                gbsPositive: false,
+                adequateIntrapartumAntibiotics: false,
+                clinicalChorioamnionitis: false,
+                deliveryMode: 'Vaginal',
+                respiratoryDistress: 'None',
+                oxygenNeed: 'None',
+                apgar5Min: 9,
+                poorPerfusion: false,
+                neonatalTemperature: 36.8,
+                neurologicalStatus: 'Normal',
+                birthWeightGrams: _birthWeight.toDouble(),
+                careSetting: _careSetting,
+              );
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => PatientEntryFlow(existingPatient: patient),
+                ),
+              );
+            },
+            child: const Text('Create Patient & Begin Assessment'),
+          ),
+        ],
+      ),
+    );
+  }
+}

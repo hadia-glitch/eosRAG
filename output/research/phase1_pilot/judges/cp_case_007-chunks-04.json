@@ -1,0 +1,77 @@
+{
+  "completed": true,
+  "task_sha256": "ad4205ec59585c98c0e04bf9e40c212fd77be1597881e4f3a990ed2500c289c6",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.814216700004181,
+  "kind": "chunks",
+  "case_id": "cp_case_007",
+  "mapping": {
+    "P019": "AAP_pg6_treatment-of-eos_chunk2",
+    "P020": "AAP_pg6_treatment-of-eos_chunk5"
+  },
+  "raw_response": {
+    "id": "chatcmpl-7f2054ca-38b3-4713-b9c8-5423525922e9",
+    "object": "chat.completion",
+    "created": 1792945998,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P019\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes empirical EOS antibiotics; case is low\u2011risk, well\u2011appearing infant, so treatment not indicated.\"\n    },\n    {\n      \"passage\": \"P020\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Recommends stopping antibiotics in well\u2011appearing term infants with sterile cultures, supporting observation without therapy.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for target_passages P019 and P020. Provide JSON array with those. Determine grades.\n\nCase: term infant, well-appearing, low risk EOS, observation only. P019 is about treatment antibiotics for EOS, not applicable as no EOS suspected. Relevance maybe background? It's about antibiotic choice, not needed. Grade 1? It's background about treatment but not applicable. So relevance 1, guideline_aligned true (source AAP treatment section). scenario_applicable false (not applicable). clinically_useful false (grade<2). Rationale.\n\nP020 about discontinuing antibiotics in well-appearing term infants when cultures negative. This is relevant to scenario of observation without antibiotics; but mentions stopping antibiotics, not starting. Could be marginal background. Might be grade 2? It supports not giving antibiotics. It says \"antibiotic therapy should be discontinued when blood cultures are sterile... particularly among well-appearing term infants.\" Our scenario has no antibiotics started, so it's not direct actionable but supports decision to not treat. Could be grade 2 applicable support. guideline_aligned true. scenario_applicable true (applies to well-appearing term infants). clinically_useful true. Grade 2.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377226935,
+      "prompt_tokens": 2021,
+      "prompt_time": 0.094875273,
+      "completion_tokens": 429,
+      "completion_time": 0.890620155,
+      "total_tokens": 2450,
+      "total_time": 0.985495428,
+      "completion_tokens_details": {
+        "reasoning_tokens": 254
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m5syhgzdeqy9r8bggzgfpe6j",
+      "seed": 1683696129
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "982",
+    "x-ratelimit-remaining-tokens": "5246",
+    "x-ratelimit-reset-requests": "25m55.199s",
+    "x-ratelimit-reset-tokens": "20.655s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P019",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes empirical EOS antibiotics; case is low\u2011risk, well\u2011appearing infant, so treatment not indicated."
+      },
+      {
+        "passage": "P020",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends stopping antibiotics in well\u2011appearing term infants with sterile cultures, supporting observation without therapy."
+      }
+    ]
+  }
+}

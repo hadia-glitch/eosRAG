@@ -1,0 +1,98 @@
+{
+  "completed": true,
+  "task_sha256": "4b985ed4b3a13d70dc722ce3d8f94b898410cc8d44fe283831c00bf1d444a1d1",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 7.186232399995788,
+  "kind": "chunks",
+  "case_id": "cp_case_003",
+  "mapping": {
+    "P014": "AAP_pg6_other-inflammatory-marke_chunk2",
+    "P015": "AAP_pg6_summary-points_chunk1",
+    "P017": "AAP_pg6_treatment-of-eos_chunk2",
+    "P018": "AAP_pg6_treatment-of-eos_chunk5"
+  },
+  "raw_response": {
+    "id": "chatcmpl-779c871e-430c-493d-8b64-13d28d716b0a",
+    "object": "chat.completion",
+    "created": 1792945489,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P014\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Notes CRP normal should not guide antibiotics; case has elevated CRP, so only marginal relevance.\"\n    },\n    {\n      \"passage\": \"P015\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Describes categorical/multivariate risk stratification applicable to prolonged ROM and preterm infant.\"\n    },\n    {\n      \"passage\": \"P017\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Specifies ampicillin (penicillin) + gentamicin as first\u2011choice empirical EOS therapy, matching proposed drugs.\"\n    },\n    {\n      \"passage\": \"P018\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Advises stopping antibiotics if blood cultures sterile at 36\u201148\u202fh, relevant for management after initiation.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for target_passages list. Provide for each P014,P015,P017,P018. Determine grades.\n\nCase: preterm 34 weeks, prolonged ROM 20h, CRP 12, no GBS, no chorio, well appearing? No illness signs. Proposed antibiotics benzylpenicillin+gentamicin. Guidelines: treatment section P016,P017 support ampicillin+gentamicin (benzylpenicillin similar). So P017 is direct actionable evidence for empirical therapy. Grade 3. guideline_aligned true, scenario_applicable true, clinically_useful true.\n\nP018 about stopping antibiotics when cultures negative. Not directly about starting. Might be marginal. Grade 2? It's applicable to scenario after cultures. Could be useful. Provide grade 2. guideline_aligned true, scenario_applicable true, clinically_useful true.\n\nP014 says CRP normal not to decide antibiotics; our case CRP elevated, so this passage indicates not to use CRP alone. Might be background. Grade 1. guideline_aligned true, scenario_applicable true (talks about CRP), clinically_useful false (grade<2). \n\nP015 summary points about risk stratification categories. Relevant background. Grade 2? It mentions categorical and multivariate assessment. Could be useful for risk assessment. Provide grade 2. guideline_aligned true, scenario_applicable true, clinically_useful true.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377961859,
+      "prompt_tokens": 2816,
+      "prompt_time": 0.853627534,
+      "completion_tokens": 616,
+      "completion_time": 1.41521312,
+      "total_tokens": 3432,
+      "total_time": 2.268840654,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 295
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m5sy1ygqexz9dmgh9gesvsfy",
+      "seed": 973351690
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "989",
+    "x-ratelimit-remaining-tokens": "4265",
+    "x-ratelimit-reset-requests": "15m50.4s",
+    "x-ratelimit-reset-tokens": "28.012s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P014",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Notes CRP normal should not guide antibiotics; case has elevated CRP, so only marginal relevance."
+      },
+      {
+        "passage": "P015",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Describes categorical/multivariate risk stratification applicable to prolonged ROM and preterm infant."
+      },
+      {
+        "passage": "P017",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Specifies ampicillin (penicillin) + gentamicin as first\u2011choice empirical EOS therapy, matching proposed drugs."
+      },
+      {
+        "passage": "P018",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Advises stopping antibiotics if blood cultures sterile at 36\u201148\u202fh, relevant for management after initiation."
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "completed": true,
+  "task_sha256": "781f3079a91f2be4ef2ae11c88df93a6394f06cc96ce87db4a089874a962f568",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.3896456999937072,
+  "kind": "plan",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-d70f58a3-a7d3-48f4-970c-a354f0264b66",
+    "object": "chat.completion",
+    "created": 1792955869,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"The statement that the infant must be hospitalized because birth weight <1500\u202fg is not found in any retrieved WHO source.\"\n    },\n    {\n      \"claim_id\": \"L011\",\n      \"reason\": \"The claim that hospitalization is required due to the 1500\u202fg exclusion threshold is not supported by the provided passages.\"\n    },\n    {\n      \"claim_id\": \"L017\",\n      \"reason\": \"Withholding oral amoxicillin based on the 1500\u202fg weight rule is not mentioned in the cited WHO texts.\"\n    },\n    {\n      \"claim_id\": \"L018\",\n      \"reason\": \"Withholding IM gentamicin for the same weight reason is not supported by the retrieved evidence.\"\n    }\n  ],\n  \"contradictions\": [\n    {\n      \"claim_id\": \"L011\",\n      \"reason\": \"S001 states that if referral is not possible, oral amoxicillin plus IM/IV gentamicin can be given outpatient; the plan asserts outpatient regimens are contraindicated solely due to weight, which conflicts with that guidance.\"\n    }\n  ],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan frequently cites WHO passages but the mapping to specific claims is missing; many assertions (e.g., weight\u2011based exclusion, hospitalization requirement) are not present in the supplied source texts. Dose details are correctly noted as absent in the evidence. Citation mapping is ambiguous, limiting verification.\"\n}",
+          "reasoning": "We need evaluate faithfulness etc. Identify unsupported claims. The plan cites sources S001,S002,S008,S009,S010 but mapping unknown. Check claims:\n\nL002 says outpatient not possible due to birth weight <1500g. Is that in sources? S001 mentions outpatient regimen contraindicated? S001 says referral to hospital; if not possible then oral amox + gent IM/IV. Doesn't mention weight threshold. No source about 1500g exclusion. So claim unsupported.\n\nL008 etc about risk score not in sources. So unsupported.\n\nL011 hospitalization due to weight threshold also unsupported.\n\nL013 antibiotic therapy appropriate per hospital protocol, not directly in sources but general. Might be okay but dose not specified.\n\nL017- L018 say oral amox and IM gent withheld due to weight threshold - unsupported.\n\nL019- L020 mention dose not specified in retrieved evidence \u2013 that's true, sources don't give IV dosing. So claim about dose not specified is supported (they state not in evidence). That's fine.\n\nThus many unsupported. Provide ratings low.\n\nFaithfulness 2, citation_correctness 2, completeness 2. List unsupported_claims with L002, L011, L017, L018. Contradictions? maybe claim that outpatient regimen contraindicated contradicts S001 which says if referral not possible, outpatient regimen is used. So contradiction.\n\nProvide ungrouned_dose false? No dose given, they note missing. So ungrouned_dose = false.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.306824556,
+      "prompt_tokens": 2855,
+      "prompt_time": 0.111058955,
+      "completion_tokens": 670,
+      "completion_time": 1.41012299,
+      "total_tokens": 3525,
+      "total_time": 1.521181945,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 304
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m5t7yrv2easa5ge1vm3djjvm",
+      "seed": 2123930082
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "976",
+    "x-ratelimit-remaining-tokens": "4519",
+    "x-ratelimit-reset-requests": "34m33.6s",
+    "x-ratelimit-reset-tokens": "26.107s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "The statement that the infant must be hospitalized because birth weight <1500\u202fg is not found in any retrieved WHO source.",
+        "claim_text": "This 29-week, 1200g preterm infant presents with intermediate risk for early-onset sepsis driven by prolonged rupture of membranes (20h) and elevated CRP (12.0 mg/L). Although the care setting is listed as outpatient, the infant's birth weight of 1200g is below the WHO 1500g threshold for outpatient management, necessitating immediate hospitalization."
+      },
+      {
+        "claim_id": "L011",
+        "reason": "The claim that hospitalization is required due to the 1500\u202fg exclusion threshold is not supported by the provided passages.",
+        "claim_text": "- IMMEDIATE HOSPITALIZATION: Do not manage as outpatient. The infant's birth weight (1200g) is below the WHO 1500g exclusion threshold for outpatient PSBI regimens."
+      },
+      {
+        "claim_id": "L017",
+        "reason": "Withholding oral amoxicillin based on the 1500\u202fg weight rule is not mentioned in the cited WHO texts.",
+        "claim_text": "- Oral Amoxicillin \u2014 WITHHELD: Birth weight 1200g is under WHO's explicit 1500g exclusion threshold for outpatient PSBI regimens; infant requires hospitalization and IV therapy."
+      },
+      {
+        "claim_id": "L018",
+        "reason": "Withholding IM gentamicin for the same weight reason is not supported by the retrieved evidence.",
+        "claim_text": "- IM Gentamicin \u2014 WITHHELD: Birth weight 1200g is under WHO's explicit 1500g exclusion threshold for outpatient PSBI regimens; infant requires hospitalization and IV therapy."
+      }
+    ],
+    "contradictions": [
+      {
+        "claim_id": "L011",
+        "reason": "S001 states that if referral is not possible, oral amoxicillin plus IM/IV gentamicin can be given outpatient; the plan asserts outpatient regimens are contraindicated solely due to weight, which conflicts with that guidance.",
+        "claim_text": "- IMMEDIATE HOSPITALIZATION: Do not manage as outpatient. The infant's birth weight (1200g) is below the WHO 1500g exclusion threshold for outpatient PSBI regimens."
+      }
+    ],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan frequently cites WHO passages but the mapping to specific claims is missing; many assertions (e.g., weight\u2011based exclusion, hospitalization requirement) are not present in the supplied source texts. Dose details are correctly noted as absent in the evidence. Citation mapping is ambiguous, limiting verification."
+  }
+}

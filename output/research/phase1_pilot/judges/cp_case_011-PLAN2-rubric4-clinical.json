@@ -1,0 +1,71 @@
+{
+  "completed": true,
+  "task_sha256": "a702caaa89fc9f24bc7ccf1e738407e1a304805b10d0da42e4fe6ddfa8caaf8c",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.675004800010356,
+  "kind": "plan",
+  "case_id": "cp_case_011",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-7b1d3ad5-3b0e-492e-aa39-c3b0237d394b",
+    "object": "chat.completion",
+    "created": 1792955126,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":5,\"clinical_completeness\":4,\"clinical_utility\":5,\"safety\":5,\"contradictions\":[],\"critical_omissions\":[\"Plan does not reference the categorical risk factor assessment for GBS colonization and inadequate intrapartum antibiotics as outlined in S001, which is part of AAP risk stratification.\"],\"regimen_incomplete\":false,\"rationale\":\"Plan aligns with multivariate risk calculator recommendation (S007) for empirical antibiotics at >=3/1000 risk and includes blood culture and observation. Antibiotic choice (ampicillin+gentamicin) matches first\u2011line therapy per S005\u2011S006. No safety issues given no penicillin allergy. Missing explicit reference to categorical GBS risk assessment (S001) reduces completeness. No contradictory statements identified.\"}",
+          "reasoning": "We need produce JSON with scores and lists. Evaluate plan vs guidelines.\n\nPlan: recommends blood culture, empirical antibiotics ampicillin+gentamicin, based on risk >=3/1000. Guideline S007 says >=3 per 1000 => blood culture and empirical antibiotics. So correct.\n\nSafety: ampicillin not listed in proposed drugs (they listed benzylpenicillin, gentamicin). But plan uses ampicillin default. No penicillin allergy. Safe.\n\nCompleteness: includes monitoring, nutrition, but does not specify dose (acceptable). Regimen incomplete? Dose not specified but allowed. Probably regimen_incomplete = false? Might be true because dose missing. Guidelines don't require dose. I'd set false.\n\nContradictions: any claim contradictory? L005 says risk category INTERMEDIATE with combined score 5, but guideline doesn't define score 5. Not contradictory. No.\n\nCritical omissions: They didn't mention checking GBS status (but patient GBS negative). They didn't mention duration of IAP adequacy (but case says adequate). Might be omission of mention of GBS risk factor assessment per S001. But not critical.\n\nThus produce scores: clinical_correctness 5, completeness 4 (missing mention of GBS risk factor assessment), utility 5, safety 5.\n\ncontradictions empty list. critical_omissions list maybe \"No mention of GBS colonization assessment per categorical risk factor algorithm (S001)\". Provide.\n\nregimen_incomplete false.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.307704221,
+      "prompt_tokens": 3591,
+      "prompt_time": 0.408144141,
+      "completion_tokens": 479,
+      "completion_time": 0.997998838,
+      "total_tokens": 4070,
+      "total_time": 1.406142979,
+      "completion_tokens_details": {
+        "reasoning_tokens": 305
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m5t7830zegy877tchrr0shsn",
+      "seed": 28964340
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "995",
+    "x-ratelimit-remaining-tokens": "3783",
+    "x-ratelimit-reset-requests": "7m12s",
+    "x-ratelimit-reset-tokens": "31.627s"
+  },
+  "result": {
+    "clinical_correctness": 5,
+    "clinical_completeness": 4,
+    "clinical_utility": 5,
+    "safety": 5,
+    "contradictions": [],
+    "critical_omissions": [
+      "Plan does not reference the categorical risk factor assessment for GBS colonization and inadequate intrapartum antibiotics as outlined in S001, which is part of AAP risk stratification."
+    ],
+    "regimen_incomplete": false,
+    "rationale": "Plan aligns with multivariate risk calculator recommendation (S007) for empirical antibiotics at >=3/1000 risk and includes blood culture and observation. Antibiotic choice (ampicillin+gentamicin) matches first\u2011line therapy per S005\u2011S006. No safety issues given no penicillin allergy. Missing explicit reference to categorical GBS risk assessment (S001) reduces completeness. No contradictory statements identified."
+  }
+}

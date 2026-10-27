@@ -1,0 +1,158 @@
+{
+  "key": "cp_case_007-chunks-02",
+  "kind": "chunks",
+  "case_id": "cp_case_007",
+  "prompt": {
+    "task": "Grade each target passage for this case. Grade 0=irrelevant/inapplicable, 1=background or marginal, 2=useful applicable support, 3=direct actionable evidence for this specific scenario. Score by actual text and applicability, never by gold membership. Guideline alignment requires compatible source/scope; safety exclusions may make a passage relevant even when the treatment is inapplicable. Scenario_applicable concerns the actual recommendation/population. Clinically_useful must equal grade>=2 and requires alignment and applicability. Judge each target exactly once. Rationale: 12-25 words, point to actual content/conditions and case facts.",
+    "case": {
+      "case_id": "cp_case_007",
+      "active_guideline": "AAP",
+      "care_setting": "hospital",
+      "contraindication_type": null,
+      "trend_type": "deteriorating",
+      "ambiguous": false,
+      "risk_result": {
+        "total_score": 0,
+        "combined_score": 0,
+        "layer1_score": 0,
+        "layer2_score": 0,
+        "layer3_score": 0,
+        "category": "LOW",
+        "risk_category": "Low Risk (Green)",
+        "probability_per_1000": 0.4,
+        "drivers": [
+          {
+            "name": "No significant risk factors",
+            "reason": "Routine well-baby observation",
+            "points": 0,
+            "layer": 1,
+            "contribution_percent": 100.0
+          }
+        ],
+        "patient": {
+          "gestational_age_weeks": 38.0,
+          "maternal_temperature": 36.8,
+          "rom_hours": 6.0,
+          "gbs_positive": false,
+          "respiratory_distress": "None",
+          "crp_level": 4.0,
+          "blood_culture_positive": false,
+          "urine_output_ml_kg_hr": 2.0,
+          "creatinine_mg_dl": 0.6,
+          "penicillin_allergy": false,
+          "adequate_intrapartum_antibiotics": true,
+          "clinical_chorioamnionitis": false,
+          "delivery_mode": "Caesarean",
+          "oxygen_need": "None",
+          "apgar_5_min": 9,
+          "poor_perfusion": false,
+          "neonatal_temperature": 37.0,
+          "neurological_status": "Normal",
+          "wbc_count": 12.0,
+          "it_ratio": 0.15,
+          "platelet_count": 260.0,
+          "pct_level": 0.3
+        },
+        "warnings": []
+      },
+      "previous_assessments": [
+        {
+          "created_at": "2026-07-25T06:00:00Z",
+          "combined_score": 0,
+          "category": "LOW"
+        },
+        {
+          "created_at": "2026-07-26T010:00:00Z",
+          "combined_score": 0,
+          "category": "LOW"
+        }
+      ],
+      "deltas": {
+        "score_delta": 0,
+        "crp_delta": 6.0,
+        "temp_delta": 0.6,
+        "hours_since_last": 6.0,
+        "aki_stage": 0
+      },
+      "proposed_drugs": [],
+      "retrieval_query": "AAP 2023 early-onset sepsis No significant risk factors Routine well-baby observation caesarean delivery white blood cell count WBC procalcitonin PCT thrombocytopenia platelet count multiple reassessments"
+    },
+    "gold_evidence_aliases": [
+      "P012",
+      "P005",
+      "P009"
+    ],
+    "passages": [
+      {
+        "passage": "P005",
+        "source": "AAP",
+        "section": "Categorical Risk Factor Assessment",
+        "text": "Source: AAP\nSection: Categorical Risk Factor Assessment\n\nA categorical risk factor assessment includes risk factor threshold values to identify infants who are at increased risk for EOS. Algorithms for the management of GBS-specific EOS have been used as a general framework for the prevention of all EOS. Risk factors used in such algorithms included (1) any newborn infant who is ill appearing;\n(2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation;\nor (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following:\nlaboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4."
+      },
+      {
+        "passage": "P007",
+        "source": "AAP",
+        "section": "LATE-PRETERM INFANTS",
+        "text": "Source: AAP\nSection: LATE-PRETERM INFANTS\n\nThree approaches currently exist for the use of risk factors to identify infants who are at increased risk of EOS, as detailed in the following sections. Each approach has merits and limitations, and each is a reasonable approach to risk assessment among infants who are born at \u226535 weeks\u2019 gestation. No strategy can be used to immediately identify all infants who will develop EOS or avoid the treatment of a substantial number of infants who are uninfected. Therefore, each strategy must include measures to monitor infants who are not initially identified and to minimize the duration of antibiotic administration to infants who are uninfected. Those at birth centers should develop institutional approaches that are best suited to their local resources and structures. Optimally, the effect of the chosen approach should be measured to identify low-frequency adverse events and to affirm efficacy."
+      },
+      {
+        "passage": "P008",
+        "source": "AAP",
+        "section": "Multivariate Risk Assessment",
+        "text": "Source: AAP\nSection: Multivariate Risk Assessment\n\nA multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\u2019s risk of EOS. A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth. The objective data include gestational age, the highest maternal intrapartum temperature, the 3\n\nmaternal GBS colonization status, the duration of ROM, and the type and duration of intrapartum antibiotic therapies. The predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate."
+      },
+      {
+        "passage": "P009",
+        "source": "AAP",
+        "section": "Multivariate Risk Assessment",
+        "text": "Source: AAP\nSection: Multivariate Risk Assessment\n\nThe predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate. Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \u22653 per 1000 live births. A prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC). No adverse effects of the multivariate risk approach were noted during birth hospitalization."
+      },
+      {
+        "passage": "P010",
+        "source": "AAP",
+        "section": "Multivariate Risk Assessment",
+        "text": "Source: AAP\nSection: Multivariate Risk Assessment\n\nA prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC). No adverse effects of the multivariate risk approach were noted during birth hospitalization. Readmissions for culture-confirmed infection during the week after discharge from the birth hospital were rare (approximately 5 in 100 000 births) and did not differ by the approach (sepsis risk calculator versus CDC risk algorithm) used at birth."
+      },
+      {
+        "passage": "P011",
+        "source": "AAP",
+        "section": "Multivariate Risk Assessment",
+        "text": "Source: AAP\nSection: Multivariate Risk Assessment\n\nReadmissions for culture-confirmed infection during the week after discharge from the birth hospital were rare (approximately 5 in 100 000 births) and did not differ by the approach (sepsis risk calculator versus CDC risk algorithm) used at birth. The advantages of the multivariate approach are that it (1) is used to provide differential information on an individual infant\u2019s risk rather than place infants in categories with a wide range of risk, (2)\nincludes only objective data and not a clinical diagnosis of maternal chorioamnionitis, and (3) results in relatively few well-appearing newborn infants being treated empirically with antibiotic agents. Potential concerns are derived from the anticipated effect on birth hospitals because this multivariate approach necessitates increased clinical surveillance for some 4 infants in the well nursery and/ or postpartum care unit."
+      },
+      {
+        "passage": "P012",
+        "source": "AAP",
+        "section": "Newborn Clinical Condition",
+        "text": "Source: AAP\nSection: Newborn Clinical Condition\n\nA third strategy consists of the reliance on clinical signs of illness to identify infants with EOS. Under this approach, regardless of any estimation of neonatal or maternal risk factors for EOS, infants who appear ill at birth and those who develop signs of illness over the first 48 hours after birth are either treated empirically with antibiotic agents or further evaluated by laboratory screening. Among term and late- preterm infants, good clinical condition at birth is associated with a reduction in risk for EOS of approximately 60% to 70%. A multidisciplinary panel sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development advocated that infants be flagged for risk of EOS on the basis of the obstetric diagnosis of suspected intraamniotic infection but that those conducting newborn evaluation primarily rely on clinical observation alone for well-appearing term and late-preterm infants."
+      }
+    ],
+    "target_passages": [
+      "P007",
+      "P008",
+      "P009",
+      "P010",
+      "P011",
+      "P012"
+    ],
+    "response_schema": {
+      "judgments": [
+        {
+          "passage": "P001",
+          "relevance_grade": "integer 0-3",
+          "guideline_aligned": "boolean",
+          "scenario_applicable": "boolean",
+          "clinically_useful": "boolean",
+          "rationale": "short source-based rationale"
+        }
+      ]
+    }
+  },
+  "mapping": {
+    "P007": "AAP_pg3_late-preterm-infants_chunk1",
+    "P008": "AAP_pg3_multivariate-risk-assess_chunk1",
+    "P009": "AAP_pg3_multivariate-risk-assess_chunk2",
+    "P010": "AAP_pg3_multivariate-risk-assess_chunk3",
+    "P011": "AAP_pg3_multivariate-risk-assess_chunk4",
+    "P012": "AAP_pg4_newborn-clinical-conditi_chunk1"
+  }
+}

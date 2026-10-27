@@ -1,0 +1,68 @@
+{
+  "completed": true,
+  "task_sha256": "d0b21c79e9a5efd3dac4b4577bf42fecba036ce68c8a9d5e75bb09468a23963e",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.530730800004676,
+  "kind": "chunks",
+  "case_id": "cp_case_001",
+  "mapping": {
+    "P033": "NICE_pg8_prevent-early-onset-neon_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-1d5341a9-c9d9-4d3c-9c08-aa6a18b4a18b",
+    "object": "chat.completion",
+    "created": 1792944899,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P033\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes intrapartum antibiotics for GBS prophylaxis; not a direct neonatal treatment recommendation for the presented baby.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for target_passages only: P033. Provide JSON with that entry. Determine grade: P033 describes intrapartum antibiotics for GBS etc. Scenario: newborn with risk factors, proposed drugs benzylpenicillin and gentamicin. Guideline: NICE recommends benzylpenicillin + gentamicin as empirical. P033 is about offering antibiotics to mother during labour, not neonatal treatment. Relevance to neonatal antibiotic choice? Indirect. Grade maybe 1 background. Not direct actionable for neonatal regimen. So relevance_grade 1, guideline_aligned? It aligns with guideline but not directly neonatal. scenario_applicable? It pertains to maternal prophylaxis, not neonatal treatment, so false. clinically_useful? grade<2 so false. Provide rationale 12-25 words."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.38634399,
+      "prompt_tokens": 4568,
+      "prompt_time": 0.235694403,
+      "completion_tokens": 261,
+      "completion_time": 0.544287975,
+      "total_tokens": 4829,
+      "total_time": 0.779982378,
+      "completion_tokens_details": {
+        "reasoning_tokens": 162
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m5sxfzegexnaxswt9hr2ehq2",
+      "seed": 415668975
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "997",
+    "x-ratelimit-remaining-tokens": "2433",
+    "x-ratelimit-reset-requests": "4m19.2s",
+    "x-ratelimit-reset-tokens": "41.752s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P033",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes intrapartum antibiotics for GBS prophylaxis; not a direct neonatal treatment recommendation for the presented baby."
+      }
+    ]
+  }
+}

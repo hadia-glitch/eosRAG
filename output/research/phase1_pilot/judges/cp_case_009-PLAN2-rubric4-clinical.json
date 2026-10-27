@@ -1,0 +1,83 @@
+{
+  "completed": true,
+  "task_sha256": "de7cf44b8702ad889bd9173cec803fd08d7faa1a9d45a5d4ff2d915b7b33c765",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.6446534999995492,
+  "kind": "plan",
+  "case_id": "cp_case_009",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-6842d929-f16f-4a60-b693-871b813b6214",
+    "object": "chat.completion",
+    "created": 1792954618,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"clinical_correctness\": 3,\n  \"clinical_completeness\": 2,\n  \"clinical_utility\": 3,\n  \"safety\": 3,\n  \"contradictions\": [\n    {\n      \"claim_id\": \"L021\",\n      \"reason\": \"Clindamycin is recommended as an alternative for penicillin allergy, but no supplied NICE passage (S001\u2011S014) supports its use in this context.\"\n    },\n    {\n      \"claim_id\": \"L020\",\n      \"reason\": \"Cefotaxime substitution is suggested, yet none of the provided NICE passages endorse cefotaxime as an alternative for penicillin allergy.\"\n    }\n  ],\n  \"critical_omissions\": [\n    \"The plan does not include vancomycin, which NICE S007 recommends as the primary alternative for severe penicillin allergy.\",\n    \"Duration of antibiotic therapy is not aligned with NICE S005/S010 recommendations (7\u202fdays or stop at 36\u202fh if culture negative and low risk).\"\n  ],\n  \"regimen_incomplete\": true,\n  \"rationale\": \"Risk assessment and need for antibiotics are supported (S003, S015). Blood culture and CRP monitoring follow S006 and S009. However, the antibiotic regimen lacks NICE\u2011supported alternatives for penicillin allergy (S007) and includes clindamycin/cefotaxime without citation, and omits recommended treatment duration (S005, S010).\"\n}",
+          "reasoning": "We need produce JSON with fields. Evaluate plan.\n\nCheck contradictions: L018 says ampicillin withheld due to allergy \u2013 correct. L019 Gentamicin substituted \u2013 guideline S004 recommends gentamicin with benzylpenicillin; with penicillin allergy, S007 suggests vancomycin +/- gentamicin +/- metronidazole. Plan uses gentamicin alone and cefotaxime and clindamycin. Is that supported? S007 mentions vancomycin or alternative active against GBS; clindamycin is alternative for penicillin allergy per other guidelines but not in provided NICE passages. No passage supporting clindamycin. So contradiction: recommending clindamycin without source. Also cefotaxime substitution not supported; S008 mentions cephalosporins with caution but not specific. Could be okay but no source. So contradictions: L021 (clindamycin) and L020 (cefotaxime) lack citation.\n\nCritical omissions: No dosing details for gentamicin, clindamycin, cefotaxime. But dosing not required per rules. Also no mention of vancomycin which NICE suggests for severe penicillin allergy. Might be omission of recommended alternative. So critical omission: not considering vancomycin as recommended alternative per S007. Also plan does not state duration of therapy explicitly beyond 48-72h; guideline S005 suggests 7 days for suspected sepsis. Omission of recommended duration. So list.\n\nRegimen_incomplete: true because missing recommended vancomycin and dosing.\n\nNow scores: clinical_correctness maybe 3 (some correct risk assessment, antibiotic initiation, culture, monitoring). completeness 2 (missing recommended alternative, duration). utility 3. safety 3 (clindamycin may be okay but lack evidence). Provide JSON.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.307354396,
+      "prompt_tokens": 5062,
+      "prompt_time": 0.2098837,
+      "completion_tokens": 687,
+      "completion_time": 1.432457662,
+      "total_tokens": 5749,
+      "total_time": 1.642341362,
+      "completion_tokens_details": {
+        "reasoning_tokens": 372
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m5t6rjqjejvbkwpq0n2cs2kp",
+      "seed": 1327487662
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "972",
+    "x-ratelimit-remaining-tokens": "2263",
+    "x-ratelimit-reset-requests": "40m19.2s",
+    "x-ratelimit-reset-tokens": "43.027s"
+  },
+  "result": {
+    "clinical_correctness": 3,
+    "clinical_completeness": 2,
+    "clinical_utility": 3,
+    "safety": 3,
+    "contradictions": [
+      {
+        "claim_id": "L021",
+        "reason": "Clindamycin is recommended as an alternative for penicillin allergy, but no supplied NICE passage (S001\u2011S014) supports its use in this context.",
+        "claim_text": "- [DETERMINISTIC DEFAULT] IV clindamycin (per documented penicillin allergy \u2014 provides Group B Streptococcus coverage in place of the withheld beta-lactam)"
+      },
+      {
+        "claim_id": "L020",
+        "reason": "Cefotaxime substitution is suggested, yet none of the provided NICE passages endorse cefotaxime as an alternative for penicillin allergy.",
+        "claim_text": "- Cefotaxime \u2014 SUBSTITUTED for Ampicillin: Penicillin allergy; specific dose/frequency not provided in retrieved evidence"
+      }
+    ],
+    "critical_omissions": [
+      "The plan does not include vancomycin, which NICE S007 recommends as the primary alternative for severe penicillin allergy.",
+      "Duration of antibiotic therapy is not aligned with NICE S005/S010 recommendations (7\u202fdays or stop at 36\u202fh if culture negative and low risk)."
+    ],
+    "regimen_incomplete": true,
+    "rationale": "Risk assessment and need for antibiotics are supported (S003, S015). Blood culture and CRP monitoring follow S006 and S009. However, the antibiotic regimen lacks NICE\u2011supported alternatives for penicillin allergy (S007) and includes clindamycin/cefotaxime without citation, and omits recommended treatment duration (S005, S010)."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "completed": true,
+  "task_sha256": "cd6a3f76e661a5aa34c51f029acae924ce4a3da15663af5067fc652bac5de0a4",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.73057259999041,
+  "kind": "plan",
+  "case_id": "cp_case_009",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-67907d37-4e58-476d-8195-a5df2c34f7e4",
+    "object": "chat.completion",
+    "created": 1792954586,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 1,\n  \"citation_completeness\": 1,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L011\",\n      \"reason\": \"The recommendation to initiate antibiotics and substitute ampicillin due to penicillin allergy is not supported by any retrieved passage.\"\n    },\n    {\n      \"claim_id\": \"L018\",\n      \"reason\": \"Statement that ampicillin is withheld because of documented penicillin allergy is not found in the evidence.\"\n    },\n    {\n      \"claim_id\": \"L019\",\n      \"reason\": \"Substitution of gentamicin for ampicillin due to penicillin allergy is not mentioned in the retrieved passages.\"\n    },\n    {\n      \"claim_id\": \"L020\",\n      \"reason\": \"Substitution of cefotaxime for ampicillin due to penicillin allergy is not supported by the evidence.\"\n    },\n    {\n      \"claim_id\": \"L021\",\n      \"reason\": \"Default recommendation of IV clindamycin for penicillin allergy is not cited in any provided passage.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan includes several antibiotic recommendations (L011, L018\u2011L021) that are not backed by any of the supplied evidence passages (S009, S011, S012, S015, S016). The only passages that map to the plan are S015 (monitoring for at least 12\u202fhours) and S009 (repeat CRP 18\u201124\u202fh and consider lumbar puncture), which are correctly cited for monitoring and CRP repeat. No passage provides guidance on specific antibiotic substitutions for penicillin allergy, so citations for those claims are missing or incorrect. Citation mapping is ambiguous because the plan does not link lines to specific citations, further reducing citation correctness and completeness.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Check citations: lines claim antibiotic plan. Evidence passages: S015 about monitoring 12h, S012 about ROM risk, S009 about CRP repeat and LP, S011 about oral switch, S016 about delivery not relevant. No passage gives specific antibiotic choices clindamycin, gentamicin, cefotaxime. So citations for antibiotic plan are unsupported. Identify unsupported claims lines L018-L021. Also L011 about initiating antibiotic substituting ampicillin due to allergy \u2013 not in evidence. So citation correctness low.\n\nCitation completeness: many lines lack citations. So low.\n\nUnsupported_claims list those L-lines.\n\nContradictions? None maybe.\n\nUngrounded_dose: no doses given, so not ungrounded. No numeric dose present, so false.\n\nReturn JSON.\n\nRatings: faithfulness maybe 2, citation_correctness 1, citation_completeness 1.\n\nProvide arrays.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.380089792,
+      "prompt_tokens": 2803,
+      "prompt_time": 0.16308725,
+      "completion_tokens": 610,
+      "completion_time": 1.271583735,
+      "total_tokens": 3413,
+      "total_time": 1.434670985,
+      "completion_tokens_details": {
+        "reasoning_tokens": 193
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m5t6qktyexeazwpjh26bsz0m",
+      "seed": 1619560496
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "973",
+    "x-ratelimit-remaining-tokens": "4522",
+    "x-ratelimit-reset-requests": "38m52.8s",
+    "x-ratelimit-reset-tokens": "26.085s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 1,
+    "citation_completeness": 1,
+    "unsupported_claims": [
+      {
+        "claim_id": "L011",
+        "reason": "The recommendation to initiate antibiotics and substitute ampicillin due to penicillin allergy is not supported by any retrieved passage.",
+        "claim_text": "- Initiate antibiotic therapy immediately, substituting ampicillin due to penicillin allergy."
+      },
+      {
+        "claim_id": "L018",
+        "reason": "Statement that ampicillin is withheld because of documented penicillin allergy is not found in the evidence.",
+        "claim_text": "- Ampicillin \u2014 WITHHELD: Documented penicillin allergy \u2014 avoid beta-lactam agents"
+      },
+      {
+        "claim_id": "L019",
+        "reason": "Substitution of gentamicin for ampicillin due to penicillin allergy is not mentioned in the retrieved passages.",
+        "claim_text": "- Gentamicin \u2014 SUBSTITUTED for Ampicillin: Penicillin allergy; specific dose/frequency not provided in retrieved evidence"
+      },
+      {
+        "claim_id": "L020",
+        "reason": "Substitution of cefotaxime for ampicillin due to penicillin allergy is not supported by the evidence.",
+        "claim_text": "- Cefotaxime \u2014 SUBSTITUTED for Ampicillin: Penicillin allergy; specific dose/frequency not provided in retrieved evidence"
+      },
+      {
+        "claim_id": "L021",
+        "reason": "Default recommendation of IV clindamycin for penicillin allergy is not cited in any provided passage.",
+        "claim_text": "- [DETERMINISTIC DEFAULT] IV clindamycin (per documented penicillin allergy \u2014 provides Group B Streptococcus coverage in place of the withheld beta-lactam)"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan includes several antibiotic recommendations (L011, L018\u2011L021) that are not backed by any of the supplied evidence passages (S009, S011, S012, S015, S016). The only passages that map to the plan are S015 (monitoring for at least 12\u202fhours) and S009 (repeat CRP 18\u201124\u202fh and consider lumbar puncture), which are correctly cited for monitoring and CRP repeat. No passage provides guidance on specific antibiotic substitutions for penicillin allergy, so citations for those claims are missing or incorrect. Citation mapping is ambiguous because the plan does not link lines to specific citations, further reducing citation correctness and completeness."
+  }
+}

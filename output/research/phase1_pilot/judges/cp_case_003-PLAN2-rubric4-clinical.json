@@ -1,0 +1,81 @@
+{
+  "completed": true,
+  "task_sha256": "279dbce052c74d9640ab56b830ef7149f4046841bd72ebf84663abd44090842c",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.612266999989515,
+  "kind": "plan",
+  "case_id": "cp_case_003",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-a3c8dacc-f53a-417b-bad7-ecd26924e109",
+    "object": "chat.completion",
+    "created": 1792952236,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"clinical_correctness\": 4,\n  \"clinical_completeness\": 3,\n  \"clinical_utility\": 4,\n  \"safety\": 5,\n  \"contradictions\": [\n    {\n      \"claim_id\": \"L017\",\n      \"reason\": \"Guideline S005/S006 specify ampicillin plus gentamicin as first\u2011choice empirical therapy for EOS, but the plan withholds specific drug names, doses, and frequencies.\"\n    }\n  ],\n  \"critical_omissions\": [\n    \"Specific empirical antibiotic regimen (ampicillin and gentamicin dosing) \u2013 source S005/S006\",\n    \"Explicit duration of therapy beyond pending culture results \u2013 guideline recommends duration based on clinical course\"\n  ],\n  \"regimen_incomplete\": true,\n  \"rationale\": \"The plan correctly identifies intermediate risk and the need for blood cultures and empirical antibiotics per S007, but it omits the recommended ampicillin\u2011gentamicin regimen (S005, S006) and does not specify therapy duration, reducing completeness and utility while remaining safe.\"\n}",
+          "reasoning": "We need produce JSON with fields. Assess plan.\n\nPlan says empirical antibiotics withheld, no drug names. Guideline S005 says ampicillin+gentamicin first choice. So regimen incomplete -> true. Contradictions: plan says \"Empirical antibiotic therapy \u2014 WITHHELD: Specific drug names, doses, and frequencies are not provided\". Not a contradiction but omission. Also plan says risk 3.0 per 1000 triggers antibiotics per S007 (>=3 per 1000). That's correct. No safety issues. No contraindications. So clinical correctness maybe 4. Completeness missing regimen details -> lower. Utility moderate. Safety 5.\n\nContradictions: maybe claim L017 says withheld specifics, but guideline recommends ampicillin+gentamicin. So contradiction: not providing regimen when guideline recommends. Use L017.\n\nCritical omissions: specific antibiotic regimen (drug, dose) per S005/S006. Also no mention of duration specifics beyond pending culture. So list.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.307775345,
+      "prompt_tokens": 3592,
+      "prompt_time": 0.161428948,
+      "completion_tokens": 440,
+      "completion_time": 0.914479715,
+      "total_tokens": 4032,
+      "total_time": 1.075908663,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 204
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_fe269835c7",
+    "x_groq": {
+      "id": "req_01m5t4fx1befw8jtafpj1x8796",
+      "seed": 365497923
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "980",
+    "x-ratelimit-remaining-tokens": "3533",
+    "x-ratelimit-reset-requests": "28m48s",
+    "x-ratelimit-reset-tokens": "33.502s"
+  },
+  "result": {
+    "clinical_correctness": 4,
+    "clinical_completeness": 3,
+    "clinical_utility": 4,
+    "safety": 5,
+    "contradictions": [
+      {
+        "claim_id": "L017",
+        "reason": "Guideline S005/S006 specify ampicillin plus gentamicin as first\u2011choice empirical therapy for EOS, but the plan withholds specific drug names, doses, and frequencies.",
+        "claim_text": "- Empirical antibiotic therapy \u2014 WITHHELD: Specific drug names, doses, and frequencies are not provided in the retrieved AAP guideline excerpts. The evidence states 'empirical antibiotic therapy are recommended' but does not specify the regimen details (e.g., ampicillin/gentamicin dosing). Do not invent doses."
+      }
+    ],
+    "critical_omissions": [
+      "Specific empirical antibiotic regimen (ampicillin and gentamicin dosing) \u2013 source S005/S006",
+      "Explicit duration of therapy beyond pending culture results \u2013 guideline recommends duration based on clinical course"
+    ],
+    "regimen_incomplete": true,
+    "rationale": "The plan correctly identifies intermediate risk and the need for blood cultures and empirical antibiotics per S007, but it omits the recommended ampicillin\u2011gentamicin regimen (S005, S006) and does not specify therapy duration, reducing completeness and utility while remaining safe."
+  }
+}

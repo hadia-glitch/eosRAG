@@ -1,0 +1,72 @@
+{
+  "completed": true,
+  "task_sha256": "472ae80307566d04cbd328ed6f1acbce470295774e95707c2009833cc71763c6",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.355347700009588,
+  "kind": "plan",
+  "case_id": "cp_case_011",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-92a97c9c-4276-4069-96b5-96e1ad9b2580",
+    "object": "chat.completion",
+    "created": 1792955061,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"clinical_correctness\": 4,\n  \"clinical_completeness\": 3,\n  \"clinical_utility\": 4,\n  \"safety\": 5,\n  \"contradictions\": [],\n  \"critical_omissions\": [\n    \"Specific ampicillin and gentamicin dosing not provided (guideline S005/S006 recommend the combination but require dose for safe administration).\",\n    \"Blood culture volume not specified (guideline S004 states a minimum of 1\u202fmL is needed for reliable detection).\"\n  ],\n  \"regimen_incomplete\": true,\n  \"rationale\": \"The plan follows AAP recommendations for empirical therapy (ampicillin + gentamicin, S005/S006) and correctly applies the risk threshold (>=3/1000, S009). It includes appropriate monitoring and escalation steps (S003, S004). No contraindications are present (case data). However, it omits essential dosing details for the antibiotics and does not state the required blood culture volume, which are safety\u2011critical elements per the source passages. Hence the regimen is incomplete, lowering completeness, while overall clinical correctness, utility, and safety remain high.\"\n}",
+          "reasoning": "We need produce JSON with fields. Assess plan vs guidelines. Plan recommends ampicillin and gentamicin but doses withheld. That's okay? guideline says ampicillin+gentamicin first choice. No contraindications. Safety good. Completeness: missing dosing info but not required. Might be considered incomplete regimen? regimen_incomplete true because doses not provided. Contradictions? None. Critical omissions: specific dosing, duration? Duration given 48-72h. Dosing missing. Also no mention of blood culture volume. But guideline S004 mentions need 1 mL. Could be omission. Provide. Provide contradictions none. Return ratings maybe: clinical_correctness 4 (mostly aligns), completeness 3 (missing dosing), utility 4, safety 5. Provide contradictions list empty. critical_omissions list with missing antibiotic dosing and blood culture volume. regimen_incomplete true. Provide rationale."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.307912686,
+      "prompt_tokens": 3683,
+      "prompt_time": 0.227327067,
+      "completion_tokens": 435,
+      "completion_time": 0.902038515,
+      "total_tokens": 4118,
+      "total_time": 1.129365582,
+      "completion_tokens_details": {
+        "reasoning_tokens": 183
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_f640395b96",
+    "x_groq": {
+      "id": "req_01m5t763kye1rty5p47ayvzhfh",
+      "seed": 1774552111
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "997",
+    "x-ratelimit-remaining-tokens": "3787",
+    "x-ratelimit-reset-requests": "4m19.2s",
+    "x-ratelimit-reset-tokens": "31.597s"
+  },
+  "result": {
+    "clinical_correctness": 4,
+    "clinical_completeness": 3,
+    "clinical_utility": 4,
+    "safety": 5,
+    "contradictions": [],
+    "critical_omissions": [
+      "Specific ampicillin and gentamicin dosing not provided (guideline S005/S006 recommend the combination but require dose for safe administration).",
+      "Blood culture volume not specified (guideline S004 states a minimum of 1\u202fmL is needed for reliable detection)."
+    ],
+    "regimen_incomplete": true,
+    "rationale": "The plan follows AAP recommendations for empirical therapy (ampicillin + gentamicin, S005/S006) and correctly applies the risk threshold (>=3/1000, S009). It includes appropriate monitoring and escalation steps (S003, S004). No contraindications are present (case data). However, it omits essential dosing details for the antibiotics and does not state the required blood culture volume, which are safety\u2011critical elements per the source passages. Hence the regimen is incomplete, lowering completeness, while overall clinical correctness, utility, and safety remain high."
+  }
+}

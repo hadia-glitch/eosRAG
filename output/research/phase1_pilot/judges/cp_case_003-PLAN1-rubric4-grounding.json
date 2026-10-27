@@ -1,0 +1,85 @@
+{
+  "completed": true,
+  "task_sha256": "6fd6e17b80fe16585767f0cac9589ccd69949e7159c5148925d96ac8a3a31c27",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.2981777999957558,
+  "kind": "plan",
+  "case_id": "cp_case_003",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-43aaf7b9-a001-4a8b-a56d-a831f2cc0ea0",
+    "object": "chat.completion",
+    "created": 1792952132,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 3,\n  \"citation_correctness\": 3,\n  \"citation_completeness\": 3,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"The plan states a combined score of 4 and risk categorization based on that score, but no retrieved passage provides a numeric score or such categorization.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"The percentages attributing 50% risk to prolonged ROM and 50% to elevated CRP are not found in any supplied passage.\"\n    },\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"The exact risk probability of 3.0 per 1000 is asserted, but the retrieved evidence only gives thresholds (\u22653 per 1000) without a specific calculated value for this patient.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"Key risk statements (probability, score, driver percentages) are not directly supported by the provided passages (S007\u2011S010). The threshold for initiating antibiotics (\u22653 per 1000) is supported by S009, but the exact numeric risk and score breakdown lack source backing. Citation mapping is ambiguous, leading to moderate citation correctness and completeness scores.\"\n}",
+          "reasoning": "We need produce JSON with scores. Assess faithfulness: claims about risk etc. Evidence: S009 gives threshold >=3 per 1000 for antibiotics. Good. S007,S008 are background. S001 categorical risk factors not directly about risk score 3 per 1000. The plan states risk probability 3.0 per 1000 meets threshold \u2013 supported by S009. Driver breakdown not directly in evidence. No citation mapping given, ambiguous. So citation correctness maybe 3. Unsupported claims: L008 driver breakdown percentages not in evidence. L005 combined score 4 not in evidence. L002 risk probability 3.0 per 1000 is supported by S009 (threshold) but actual probability not given. So maybe unsupported. Contradictions none. Ungrounded dose: L017 and L018 mention ampicillin and gentamicin withheld due to missing dose; that's acknowledging missing dose, not ungrounded dose. No dose provided, so not an unsupported numeric dose. So ungrouned_dose false.\n\nProvide arrays accordingly.\n\nScores: faithfulness maybe 3 (some claims unsupported). citation_correctness 3 (some citations not mapped). citation_completeness 3.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.307867422,
+      "prompt_tokens": 2603,
+      "prompt_time": 0.141941223,
+      "completion_tokens": 549,
+      "completion_time": 1.147264703,
+      "total_tokens": 3152,
+      "total_time": 1.289205926,
+      "completion_tokens_details": {
+        "reasoning_tokens": 247
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_dee443f41b",
+    "x_groq": {
+      "id": "req_01m5t4cqhde3992t0hj2b93v73",
+      "seed": 1044887472
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "983",
+    "x-ratelimit-remaining-tokens": "4470",
+    "x-ratelimit-reset-requests": "24m28.8s",
+    "x-ratelimit-reset-tokens": "26.474s"
+  },
+  "result": {
+    "faithfulness": 3,
+    "citation_correctness": 3,
+    "citation_completeness": 3,
+    "unsupported_claims": [
+      {
+        "claim_id": "L005",
+        "reason": "The plan states a combined score of 4 and risk categorization based on that score, but no retrieved passage provides a numeric score or such categorization.",
+        "claim_text": "The patient is categorized as INTERMEDIATE risk with a combined score of 4. The risk is equally driven by maternal factors (Prolonged ROM >= 18h) and infant laboratory findings (Elevated CRP). The probability of EOS is 3.0 per 1000 live births."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "The percentages attributing 50% risk to prolonged ROM and 50% to elevated CRP are not found in any supplied passage.",
+        "claim_text": "Prolonged rupture of membranes (20.0h, >=18h) contributes 50% to the risk score; Elevated CRP (12.0 mg/L) contributes 50% to the risk score."
+      },
+      {
+        "claim_id": "L002",
+        "reason": "The exact risk probability of 3.0 per 1000 is asserted, but the retrieved evidence only gives thresholds (\u22653 per 1000) without a specific calculated value for this patient.",
+        "claim_text": "This 34-week gestation neonate presents with an intermediate risk for early-onset sepsis (EOS), driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L). The patient is currently well-appearing with normal vital signs and no respiratory distress, but the calculated risk probability of 3.0 per 1000 meets the threshold for empirical antibiotic therapy according to AAP guidelines."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "Key risk statements (probability, score, driver percentages) are not directly supported by the provided passages (S007\u2011S010). The threshold for initiating antibiotics (\u22653 per 1000) is supported by S009, but the exact numeric risk and score breakdown lack source backing. Citation mapping is ambiguous, leading to moderate citation correctness and completeness scores."
+  }
+}

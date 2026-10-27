@@ -1,0 +1,116 @@
+{
+  "completed": true,
+  "task_sha256": "ecc48911d63f2d2cd2f2c0b9a6d717c3686f0db624999196eb7f7aa9f0ec11da",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.957790600004955,
+  "kind": "chunks",
+  "case_id": "cp_case_011",
+  "mapping": {
+    "P001": "AAP_pg2_abstract_chunk1",
+    "P002": "AAP_pg2_abstract_chunk2",
+    "P003": "AAP_pg2_abstract_chunk3",
+    "P004": "AAP_pg2_risk-factors-for-eos_chunk1",
+    "P005": "AAP_pg3_categorical-risk-factor-_chunk1",
+    "P006": "AAP_pg3_multivariate-risk-assess_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-071c74b6-a287-4233-9220-ff2a52df52d3",
+    "object": "chat.completion",
+    "created": 1792946409,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P001\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes overall EOS incidence and risk factor importance; no direct guidance for this infant.\"\n    },\n    {\n      \"passage\": \"P002\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Provides background on EOS epidemiology and risk assessment framework, not specific to case.\"\n    },\n    {\n      \"passage\": \"P003\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"General discussion of EOS risk assessment tasks; lacks actionable detail for this scenario.\"\n    },\n    {\n      \"passage\": \"P004\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Lists ROM duration as a validated EOS risk factor, directly matching the infant\u2019s 20\u2011hour ROM.\"\n    },\n    {\n      \"passage\": \"P005\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes categorical algorithm requiring GBS colonization; patient is GBS\u2011negative, so not applicable.\"\n    },\n    {\n      \"passage\": \"P006\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Explains multivariate risk calculator using ROM, gestational age, CRP, etc., applicable to this infant.\"\n    }\n  ]\n}",
+          "reasoning": "We need output JSON with judgments for each target passage. Evaluate relevance.\n\nCase: 36 wk gestation, ROM 20h, CRP 12, no GBS, no chorio, adequate IAP, well appearing. Need antibiotics? Guidelines: categorical risk factor includes ROM >18h with GBS colonization; not applicable. Multivariate risk calculator may suggest low risk. So passages about risk factors and treatment.\n\nP001: abstract about incidence and risk factors, general. Provides background, not actionable. Grade 1? It's background. relevance_grade 1, guideline_aligned true (AAP source). scenario_applicable? It's general, not specific actionable. So scenario_applicable false. clinically_useful false (needs >=2). rationale.\n\nP002 similar background. Grade1.\n\nP003 similar. Grade1.\n\nP004 lists risk factors including ROM duration as risk factor. Relevant to case (ROM 20h). Provides risk factor info but not direct recommendation. Useful applicable? Might be background for risk assessment. Could be grade2? It says ROM is risk factor. That supports assessing risk. So grade2, guideline_aligned true, scenario_applicable true (risk factor applicable), clinically_useful true. rationale.\n\nP005 categorical risk factor assessment includes ROM >18h with GBS colonization; but patient not GBS positive, so not applicable. Still describes algorithm. Might be marginal. Grade1. scenario_applicable false. clinically_useful false.\n\nP006 multivariate risk assessment description of calculator. Relevant to using risk calculator. Could be useful. Grade2. scenario_applicable true (could apply). clinically_useful true. rationale.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.37785439,
+      "prompt_tokens": 3093,
+      "prompt_time": 0.228229339,
+      "completion_tokens": 799,
+      "completion_time": 1.657768012,
+      "total_tokens": 3892,
+      "total_time": 1.8859973509999999,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 340
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c15aa9c1b7",
+    "x_groq": {
+      "id": "req_01m5syy1qkemj9wranedpf0b7q",
+      "seed": 1503488618
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "976",
+    "x-ratelimit-remaining-tokens": "3995",
+    "x-ratelimit-reset-requests": "34m33.6s",
+    "x-ratelimit-reset-tokens": "30.037s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P001",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes overall EOS incidence and risk factor importance; no direct guidance for this infant."
+      },
+      {
+        "passage": "P002",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Provides background on EOS epidemiology and risk assessment framework, not specific to case."
+      },
+      {
+        "passage": "P003",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "General discussion of EOS risk assessment tasks; lacks actionable detail for this scenario."
+      },
+      {
+        "passage": "P004",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Lists ROM duration as a validated EOS risk factor, directly matching the infant\u2019s 20\u2011hour ROM."
+      },
+      {
+        "passage": "P005",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes categorical algorithm requiring GBS colonization; patient is GBS\u2011negative, so not applicable."
+      },
+      {
+        "passage": "P006",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Explains multivariate risk calculator using ROM, gestational age, CRP, etc., applicable to this infant."
+      }
+    ]
+  }
+}

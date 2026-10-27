@@ -1,0 +1,99 @@
+{
+  "completed": true,
+  "task_sha256": "16319233989b5fc2b533a811e29cefea4ff3849423b1928fd387e93baa960e5b",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 6.05141710001044,
+  "kind": "plan",
+  "case_id": "cp_case_002",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-96d90730-613f-4e93-a134-14223670380f",
+    "object": "chat.completion",
+    "created": 1792951793,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Quantifies risk as 50% each and defines INTERMEDIATE risk score 3, which is not present in any retrieved NICE passages.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Assigns 2 points for ROM >18h; source only discusses >24h threshold and does not provide a point system.\"\n    },\n    {\n      \"claim_id\": \"L016\",\n      \"reason\": \"Specifies urgency \\\"Within 1 hour if clinical deterioration occurs\\\" without any supporting citation.\"\n    },\n    {\n      \"claim_id\": \"L019\",\n      \"reason\": \"States duration 48\u201172\u202fh and stop criteria based on culture results; source S016 only mentions stop antibiotics criteria, not a specific 48\u201172\u202fh duration.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan cites NICE passages that discuss ROM risk thresholds (>24\u202fh) and CRP usage, but the text attributes quantitative risk percentages, point values, specific urgency timing, and a 48\u201172\u202fh antibiotic course that are not found in the supplied evidence. Citations are therefore mismatched or incomplete. No numeric dosing is presented, so no ungrounded dose claim is identified.\",\n  \"rubric_version\": 4,\n  \"passage_catalog\": {\n    \"S010\": \"Source: NICE\\nSection: Why the committee made the recommendations\\n\\nIn 2026, evidence from 3 studies showed that the risk of early\u2011onset neonatal infection increased as the time between prelabour rupture of membranes (PROM) at term and birth increased. ... using their clinical experience, the committee decided to keep this at more than 24 hours.\",\n    \"S011\": \"Source: NICE\\nSection: How the recommendations might affect practice\\n\\nThe 2026 revised wording for the risk factor for early\u2011onset neonatal infection of rupture of membranes more than 24 hours before a term birth could increase the number of neonates requiring monitoring ...\",\n    \"S013\": \"Source: NICE\\nSection: Why the committee made the recommendations\\n\\nThe evidence was inconclusive ... committee decided to keep this at more than 24 hours. ... framework for making antibiotic decisions after birth ... retained from the 2012 guideline.\",\n    \"S014\": \"Source: NICE\\nSection: Why the committee made the recommendation\\nRecommendation: rec1\\n\\nCRP results should be used alongside other factors; not sole determinant for antibiotics.\",\n    \"S015\": \"Source: NICE\\nSection: Why the committee made the recommendation\\nRecommendation: rec1\\n\\nAdvice from experienced professionals should be available for treatment decisions.\",\n    \"S016\": \"Source: NICE\\nSection: Update information\\n\\nMay 2026: ... Recommendation 1.21.3 amended to say 'stop antibiotics' rather than 'consider stopping antibiotics' ...\"\n  }\n}",
+          "reasoning": "We need to assess faithfulness etc. Check citations: lines claim risk based on ROM>18h but sources say >24h. So citation mismatch. Identify unsupported claims: L005 says 50% risk etc not in source. Also L008 says 2 points layer1 not in source. L019 duration statement cites Recommendation 1.21.3 [2026 amendment] which is in S016 mentions stop antibiotics but not duration 48-72h. So unsupported. Ungrounded dose: lines L017 L018 say dose not specified, that's accurate (they note not specified). No numeric dose given, so no ungrounded numeric dose. But they claim \"required=True urgency=Within 1 hour...\" maybe unsupported? No source. So maybe unsupported claim L016? It states urgency etc not in source. Identify contradictions? None.\n\nNow ratings: faithfulness low maybe 2. citation_correctness low 2. citation_completeness maybe 2.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.381077921,
+      "prompt_tokens": 2803,
+      "prompt_time": 0.115395047,
+      "completion_tokens": 875,
+      "completion_time": 1.810405889,
+      "total_tokens": 3678,
+      "total_time": 1.925800936,
+      "completion_tokens_details": {
+        "reasoning_tokens": 200
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4727af4560",
+    "x_groq": {
+      "id": "req_01m5t42bcbe9tta6v1qbp2hkxd",
+      "seed": 779335078
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "991",
+    "x-ratelimit-remaining-tokens": "4340",
+    "x-ratelimit-reset-requests": "12m57.599s",
+    "x-ratelimit-reset-tokens": "27.45s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L005",
+        "reason": "Quantifies risk as 50% each and defines INTERMEDIATE risk score 3, which is not present in any retrieved NICE passages.",
+        "claim_text": "The patient is categorized as INTERMEDIATE risk (Score 3) due to two contributing factors: Prolonged rupture of membranes (20.0h, >=18h threshold in this model) contributing 50% of the risk, and Elevated CRP (12.0 mg/L) contributing 50%. The absence of maternal fever, chorioamnionitis, or neonatal respiratory distress prevents classification as HIGH risk, but the elevated inflammatory marker and ROM duration exceed low-risk thresholds."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Assigns 2 points for ROM >18h; source only discusses >24h threshold and does not provide a point system.",
+        "claim_text": "Prolonged rupture of membranes (20.0h) contributes 2 points (Layer 1) as it exceeds the 18-hour threshold used in this risk model, though NICE guidelines note >24h as a key risk factor for term births."
+      },
+      {
+        "claim_id": "L016",
+        "reason": "Specifies urgency \"Within 1 hour if clinical deterioration occurs\" without any supporting citation.",
+        "claim_text": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour if clinical deterioration occurs; otherwise per specialist assessment"
+      },
+      {
+        "claim_id": "L019",
+        "reason": "States duration 48\u201172\u202fh and stop criteria based on culture results; source S016 only mentions stop antibiotics criteria, not a specific 48\u201172\u202fh duration.",
+        "claim_text": "duration=48-72 hours pending culture results stop_criteria=Stop antibiotics if blood cultures are negative at 48 hours and the infant is clinically well, per NICE NG195 Recommendation 1.21.3 [2026 amendment]."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan cites NICE passages that discuss ROM risk thresholds (>24\u202fh) and CRP usage, but the text attributes quantitative risk percentages, point values, specific urgency timing, and a 48\u201172\u202fh antibiotic course that are not found in the supplied evidence. Citations are therefore mismatched or incomplete. No numeric dosing is presented, so no ungrounded dose claim is identified.",
+    "rubric_version": 4,
+    "passage_catalog": {
+      "S010": "Source: NICE\nSection: Why the committee made the recommendations\n\nIn 2026, evidence from 3 studies showed that the risk of early\u2011onset neonatal infection increased as the time between prelabour rupture of membranes (PROM) at term and birth increased. ... using their clinical experience, the committee decided to keep this at more than 24 hours.",
+      "S011": "Source: NICE\nSection: How the recommendations might affect practice\n\nThe 2026 revised wording for the risk factor for early\u2011onset neonatal infection of rupture of membranes more than 24 hours before a term birth could increase the number of neonates requiring monitoring ...",
+      "S013": "Source: NICE\nSection: Why the committee made the recommendations\n\nThe evidence was inconclusive ... committee decided to keep this at more than 24 hours. ... framework for making antibiotic decisions after birth ... retained from the 2012 guideline.",
+      "S014": "Source: NICE\nSection: Why the committee made the recommendation\nRecommendation: rec1\n\nCRP results should be used alongside other factors; not sole determinant for antibiotics.",
+      "S015": "Source: NICE\nSection: Why the committee made the recommendation\nRecommendation: rec1\n\nAdvice from experienced professionals should be available for treatment decisions.",
+      "S016": "Source: NICE\nSection: Update information\n\nMay 2026: ... Recommendation 1.21.3 amended to say 'stop antibiotics' rather than 'consider stopping antibiotics' ..."
+    }
+  }
+}

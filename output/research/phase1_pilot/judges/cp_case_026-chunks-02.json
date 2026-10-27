@@ -1,0 +1,114 @@
+{
+  "completed": true,
+  "task_sha256": "134371e28e664603cb120504fff292b7fce0415c50873046e5b3cd8897ab8865",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.2201594000071054,
+  "kind": "chunks",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "P009": "WHO_pg24_background-and-definitio_chunk1",
+    "P010": "WHO_pg24_remarks_chunk1",
+    "P011": "WHO_pg24_remarks_chunk2",
+    "P012": "WHO_pg27_background-and-definitio_chunk1",
+    "P013": "WHO_pg2_background-and-definitio_chunk1",
+    "P014": "WHO_pg31_background-and-definitio_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-7a21b9f0-9294-4c1e-aeb7-793bc2cf7757",
+    "object": "chat.completion",
+    "created": 1792947419,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P009\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Defines hospitalized suspected sepsis signs; background only, not specific to outpatient non\u2011referral care.\"\n    },\n    {\n      \"passage\": \"P010\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Remarks on study selection and algorithm feasibility; no direct treatment guidance for this case.\"\n    },\n    {\n      \"passage\": \"P011\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Similar to P010, discusses lack of recommendation for hospital algorithms; not actionable for outpatient scenario.\"\n    },\n    {\n      \"passage\": \"P012\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Recommends ampicillin/penicillin plus gentamicin for hospitalized infants; not applicable to non\u2011referral outpatient setting.\"\n    },\n    {\n      \"passage\": \"P013\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Defines PSBI clinical signs used to identify infants needing treatment; relevant but lacks direct regimen.\"\n    },\n    {\n      \"passage\": \"P014\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes staphylococcal sepsis and cloxacillin+gentamicin regimen; not relevant to current infant without staphylococcal signs.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for each target passage list: P009,P010,P011,P012,P013,P014. Provide grades. Evaluate relevance to case: outpatient no referral, but contraindication recent hospital? Actually contraindication_type who_recent_hosp meaning referral not possible? Probably referral not possible scenario. Need antibiotics ampicillin+gentamicin. Passages: P009 defines suspected sepsis signs includes labs now available \u2013 background, not actionable. Grade 1. guideline_aligned? It's WHO but about hospitalized definition. scenario_applicable? maybe marginal. clinically_useful false.\n\nP010 remarks about GDG not recommending algorithms \u2013 background. Grade1.\n\nP011 similar. Grade1.\n\nP012 gives recommendation ampicillin or penicillin plus gentamicin IM/IV for at least 10 days for suspected sepsis hospitalized. Outpatient no referral not aligned. Might be background. Grade1.\n\nP013 defines PSBI signs \u2013 background. Grade2? It defines target population for treatment. Could be applicable. It's WHO definition of PSBI which matches case signs? infant has fever 37.9 (not >=38) but prolonged ROM risk factor. Might be considered PSBI? Probably not direct. I'd give grade2? But actionable? No treatment recommendation. So clinically_useful false. grade2.\n\nP014 defines staphylococcal sepsis and cloxacillin+gentamicin. Not relevant. Grade0.\n\nNow produce JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377165726,
+      "prompt_tokens": 3917,
+      "prompt_time": 0.163098115,
+      "completion_tokens": 776,
+      "completion_time": 1.603900396,
+      "total_tokens": 4693,
+      "total_time": 1.7669985110000002,
+      "completion_tokens_details": {
+        "reasoning_tokens": 296
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4727af4560",
+    "x_groq": {
+      "id": "req_01m5szwwb5ekarrpc7vwvzp726",
+      "seed": 1342558301
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 1,
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "963",
+    "x-ratelimit-remaining-tokens": "3199",
+    "x-ratelimit-reset-requests": "53m16.799s",
+    "x-ratelimit-reset-tokens": "36.007s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P009",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Defines hospitalized suspected sepsis signs; background only, not specific to outpatient non\u2011referral care."
+      },
+      {
+        "passage": "P010",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Remarks on study selection and algorithm feasibility; no direct treatment guidance for this case."
+      },
+      {
+        "passage": "P011",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Similar to P010, discusses lack of recommendation for hospital algorithms; not actionable for outpatient scenario."
+      },
+      {
+        "passage": "P012",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Recommends ampicillin/penicillin plus gentamicin for hospitalized infants; not applicable to non\u2011referral outpatient setting."
+      },
+      {
+        "passage": "P013",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Defines PSBI clinical signs used to identify infants needing treatment; relevant but lacks direct regimen."
+      },
+      {
+        "passage": "P014",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes staphylococcal sepsis and cloxacillin+gentamicin regimen; not relevant to current infant without staphylococcal signs."
+      }
+    ]
+  }
+}

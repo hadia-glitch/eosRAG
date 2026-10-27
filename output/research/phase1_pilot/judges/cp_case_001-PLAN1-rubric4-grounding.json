@@ -1,0 +1,85 @@
+{
+  "completed": true,
+  "task_sha256": "c99c07b7f05d5ab22d7394d8cd6b8a9361a4a8bc5ad1286331d7bb017d761f4d",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 5.958956699992996,
+  "kind": "plan",
+  "case_id": "cp_case_001",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-1d9b5608-edff-4aa3-b023-dfeca6dc33c9",
+    "object": "chat.completion",
+    "created": 1792951432,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 3,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Risk categorization as HIGH (Score 7) and percentage contributions are not supported by any retrieved passage.\"\n    },\n    {\n      \"claim_id\": \"L007\",\n      \"reason\": \"Exact 20% risk contribution for each driver is not found in the evidence.\"\n    },\n    {\n      \"claim_id\": \"L020\",\n      \"reason\": \"Specific duration and stop criteria details are not directly cited from the provided passages.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan includes several quantitative risk statements and scoring that are not present in the supplied NICE passages, leading to unsupported claims. Citations are either missing or mismatched for many assertions, reducing citation correctness and completeness. No numeric antibiotic doses are asserted without source; the plan correctly notes that dosage details are absent for empiric EOS and references meningitis dosing only where appropriate.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Check citations: L018 mentions dose not specified, says retrieved evidence specifies 50 mg/kg q12h only for confirmed GBS meningitis, not initial EOS. That matches S017 which gives 50 mg/kg for meningitis. So citation correct? L018 cites? No citation given in line. Probably implied from evidence list. We assume citation mapping unknown. Might be missing. Evaluate unsupported claims: risk percentages 20% each not in evidence. No source for exact percentages. So unsupported. Also risk analysis score 7 not sourced. So contradictions? Not really. Ungrounded dose: L018 mentions dose not specified but says retrieved evidence specifies 50 mg/kg... That's okay. No dose given, so not ungrounded. L019 mentions gentamicin dosage 5 mg/kg q36h from evidence for meningitis, but says not for EOS. That is grounded. No unsupported numeric dose. So ungrouned_dose false.\n\nCitation completeness: many statements lack citations. Probably low.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.380973521,
+      "prompt_tokens": 3471,
+      "prompt_time": 0.150323227,
+      "completion_tokens": 475,
+      "completion_time": 0.994778581,
+      "total_tokens": 3946,
+      "total_time": 1.145101808,
+      "completion_tokens_details": {
+        "reasoning_tokens": 214
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m5t3qbb9ex6vw4amae4vaws1",
+      "seed": 1412976964
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-remaining-tokens": "3812",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-reset-tokens": "31.409s"
+  },
+  "result": {
+    "faithfulness": 3,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L005",
+        "reason": "Risk categorization as HIGH (Score 7) and percentage contributions are not supported by any retrieved passage.",
+        "claim_text": "The patient is categorized as HIGH risk (Score 7) due to significant Layer 1 drivers (Maternal GBS, ROM >24h, Maternal Fever) and Layer 2/3 drivers (Respiratory Distress, Elevated CRP). The presence of clinical indicators of infection (respiratory distress, elevated CRP) alongside strong maternal risk factors mandates treatment rather than observation alone."
+      },
+      {
+        "claim_id": "L007",
+        "reason": "Exact 20% risk contribution for each driver is not found in the evidence.",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      {
+        "claim_id": "L020",
+        "reason": "Specific duration and stop criteria details are not directly cited from the provided passages.",
+        "claim_text": "duration=7 days total if sepsis strongly suspected or blood culture positive; stop at 36 hours if blood culture negative, initial suspicion not strong, clinical condition reassuring, and CRP reassuring (currently not met due to high suspicion and clinical indicators). stop_criteria=Stop antibiotics at 36 hours if: blood culture is negative, initial clinical suspicion of infection was not strong, baby's clinical condition is reassuring with no clinical indicators of possible infection, and levels/trends of CRP are reassuring. Otherwise, continue for 7 days or longer if not fully recovered or advised by microbiology."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan includes several quantitative risk statements and scoring that are not present in the supplied NICE passages, leading to unsupported claims. Citations are either missing or mismatched for many assertions, reducing citation correctness and completeness. No numeric antibiotic doses are asserted without source; the plan correctly notes that dosage details are absent for empiric EOS and references meningitis dosing only where appropriate."
+  }
+}

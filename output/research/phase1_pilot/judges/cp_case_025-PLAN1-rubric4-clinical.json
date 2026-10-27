@@ -1,0 +1,87 @@
+{
+  "completed": true,
+  "task_sha256": "b52d47fca407b5134d910d67b35907706a48341833cbb1d32de43602b31294df",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.0325122000067495,
+  "kind": "plan",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-b7c791df-c0a4-4fa2-8266-24213cd2d574",
+    "object": "chat.completion",
+    "created": 1792955650,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"clinical_correctness\": 2,\n  \"clinical_completeness\": 2,\n  \"clinical_utility\": 2,\n  \"safety\": 2,\n  \"contradictions\": [\n    {\n      \"claim_id\": \"L018\",\n      \"reason\": \"Guideline S002 defines empiric EOS treatment as ampicillin (or penicillin) plus gentamicin. The plan withholds ampicillin citing missing dose, which contradicts the recommended regimen.\"\n    },\n    {\n      \"claim_id\": \"L019\",\n      \"reason\": \"Substituting gentamicin alone for the standard ampicillin+gentamicin combo is not supported by WHO guidance (S002, S010) and may lead to inadequate coverage.\"\n    }\n  ],\n  \"critical_omissions\": [\n    \"No ampicillin dosing or inclusion despite WHO recommendation for combined therapy (S002, S010).\",\n    \"Duration of parenteral therapy not aligned with WHO inpatient guidance (typically 48\u201172\u202fh if cultures negative) and not explicitly stated (S010).\",\n    \"Absence of recommended monitoring for renal function and hearing toxicity with gentamicin (standard safety monitoring, implied in WHO inpatient care).\"\n  ],\n  \"regimen_incomplete\": true,\n  \"rationale\": \"The plan correctly identifies the need for hospitalization due to low birth weight (<1500\u202fg) and recommends IV antibiotics, but it withholds ampicillin and relies solely on gentamicin, which conflicts with WHO EOS recommendations (S002, S010). Dosing details for ampicillin are missing, and the plan does not specify appropriate treatment duration or monitoring, reducing completeness, utility, and safety.\"\n}",
+          "reasoning": "We need produce JSON with scores and lists. Assess plan: It says immediate hospitalization (good). Antibiotic plan: Ampicillin withheld due to missing dose, uses gentamicin only? It substitutes gentamicin for combo but says \"SUBSTITUTED for Ampicillin/Gentamicin combo due to missing Ampicillin dose\". That's unsafe: guideline recommends ampicillin+gentamicin for EOS inpatient. Withholding ampicillin is not justified. Contradiction L018. Also regimen incomplete (missing ampicillin). Critical omission: no mention of ampicillin dosing, no coverage for typical Gram-negative/positive. Also no mention of duration specifics per guideline (48-72h). Provide contradictions list.\n\nNow scores: clinical_correctness maybe 2 (some correct like hospitalization, risk assessment). completeness 2 (missing ampicillin, dosing). utility 2. safety 2 (withholding ampicillin may be unsafe). regimen_incomplete true.\n\nProvide contradictions list with claim_id L018 reason. Also maybe L019 substitution is contradictory to guideline S002 which defines combo. Use source S002.\n\nCritical omissions list: missing ampicillin dosing and inclusion; missing mention of duration per guideline; missing monitoring of labs? Provide.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.380292485,
+      "prompt_tokens": 5560,
+      "prompt_time": 0.245132242,
+      "completion_tokens": 620,
+      "completion_time": 1.271939686,
+      "total_tokens": 6180,
+      "total_time": 1.517071928,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 255
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m5t7r29he9g9p70vh2j9pmqe",
+      "seed": 905331445
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "981",
+    "x-ratelimit-remaining-tokens": "1745",
+    "x-ratelimit-reset-requests": "27m21.6s",
+    "x-ratelimit-reset-tokens": "46.912s"
+  },
+  "result": {
+    "clinical_correctness": 2,
+    "clinical_completeness": 2,
+    "clinical_utility": 2,
+    "safety": 2,
+    "contradictions": [
+      {
+        "claim_id": "L018",
+        "reason": "Guideline S002 defines empiric EOS treatment as ampicillin (or penicillin) plus gentamicin. The plan withholds ampicillin citing missing dose, which contradicts the recommended regimen.",
+        "claim_text": "- Ampicillin \u2014 WITHHELD: WHO guideline excerpts provided do not specify a dose/frequency for Ampicillin; however, it is a standard first-line agent for EOS. Per system instructions, if evidence is missing, do not invent. Note: Standard care typically uses Ampicillin + Gentamicin."
+      },
+      {
+        "claim_id": "L019",
+        "reason": "Substituting gentamicin alone for the standard ampicillin+gentamicin combo is not supported by WHO guidance (S002, S010) and may lead to inadequate coverage.",
+        "claim_text": "- Gentamicin \u2014 SUBSTITUTED for Ampicillin/Gentamicin combo due to missing Ampicillin dose in evidence: IV/IM gentamicin 5 mg/kg once a day (first week of life)"
+      }
+    ],
+    "critical_omissions": [
+      "No ampicillin dosing or inclusion despite WHO recommendation for combined therapy (S002, S010).",
+      "Duration of parenteral therapy not aligned with WHO inpatient guidance (typically 48\u201172\u202fh if cultures negative) and not explicitly stated (S010).",
+      "Absence of recommended monitoring for renal function and hearing toxicity with gentamicin (standard safety monitoring, implied in WHO inpatient care)."
+    ],
+    "regimen_incomplete": true,
+    "rationale": "The plan correctly identifies the need for hospitalization due to low birth weight (<1500\u202fg) and recommends IV antibiotics, but it withholds ampicillin and relies solely on gentamicin, which conflicts with WHO EOS recommendations (S002, S010). Dosing details for ampicillin are missing, and the plan does not specify appropriate treatment duration or monitoring, reducing completeness, utility, and safety."
+  }
+}

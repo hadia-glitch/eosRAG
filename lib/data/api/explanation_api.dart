@@ -1,0 +1,329 @@
+import 'dart:developer' as developer;
+import 'package:dio/dio.dart';
+import '../deidentify.dart';
+import '../gemini_service.dart';
+import '../models/rag_chunk.dart';
+import '../../domain/eoscal_calculator.dart';
+import 'api_client.dart';
+
+/// Thrown when the backend is reachable but returns an error,
+/// or when it is completely unreachable.
+/// The UI catches this to show a targeted "check your backend URL" message.
+class BackendUnreachableException implements Exception {
+  final String backendUrl;
+  final String cause;
+  BackendUnreachableException(this.backendUrl, this.cause);
+
+  @override
+  String toString() => 'Backend unreachable at $backendUrl: $cause';
+}
+
+class ExplanationApi {
+  final ApiClient _client;
+  ExplanationApi({ApiClient? client}) : _client = client ?? apiClient;
+
+  Future<StructuredExplanation> generate({
+    required String encounterId,
+    required PatientParameters patient,
+    required EoscalResult result,
+    required String activeGuideline,
+    List<Map<String, dynamic>> previousAssessments = const [],
+  }) async {
+    final id = encounterId.isNotEmpty ? encounterId : patient.id;
+    final available = await _client.isBackendAvailable();
+
+    developer.log(
+      '[ExplanationApi] backend=$available url=${_client.baseUrl} id=$id',
+      name: 'ExplanationApi',
+    );
+
+    if (!available) {
+      // Throw so the UI can show a targeted error with the URL fix hint.
+      // Do NOT silently fall back — clinicians must know this is rule-based.
+      throw BackendUnreachableException(
+        _client.baseUrl,
+        'Health check failed. Is the backend running and is API_BASE_URL correct?',
+      );
+    }
+
+    try {
+      final payload = buildRiskPayload(patient, result);
+      final response = await _client.dio.post(
+        '/api/v1/encounters/$id/explanation',
+        data: {'risk_result': payload, 'active_guideline': activeGuideline},
+      );
+
+      if (response.statusCode != 200 || response.data == null) {
+        throw Exception('Unexpected status ${response.statusCode}');
+      }
+
+      final data = response.data as Map<String, dynamic>;
+      developer.log(
+        '[ExplanationApi] OK fallback=${data['fallback_used']} model=${data['model_version']}',
+        name: 'ExplanationApi',
+      );
+      return _fromBackendResponse(data, activeGuideline);
+    } on DioException catch (e, st) {
+      developer.log(
+        '[ExplanationApi] Dio error: ${e.message}',
+        name: 'ExplanationApi',
+        error: e,
+        stackTrace: st,
+      );
+      rethrow;
+    }
+  }
+
+  StructuredExplanation _fromBackendResponse(
+    Map<String, dynamic> data,
+    String activeGuideline,
+  ) {
+    final isFallback = data['fallback_used'] as bool? ?? false;
+    final modelVersion = data['model_version'] as String? ?? 'unknown';
+    final isCached = modelVersion.startsWith('cached:');
+    final isSimulated = isFallback || modelVersion == 'rule-based-fallback';
+
+    String sourceLabel;
+    if (isSimulated) {
+      sourceLabel = 'Automated plan withheld; clinician review required';
+    } else if (isCached) {
+      sourceLabel =
+          'Cached AI · ${modelVersion.replaceFirst('cached:', '')} · $activeGuideline';
+    } else {
+      sourceLabel = 'AI-generated · $modelVersion · $activeGuideline';
+    }
+
+    final actions = (data['recommended_actions'] as List<dynamic>? ?? [])
+        .map((e) => e.toString())
+        .toList();
+
+    final rawCitations = data['citation_list'] as List<dynamic>? ?? [];
+    final citations = rawCitations.map((c) {
+      final m = c as Map<String, dynamic>;
+      final item = CitationItem.fromJson(m);
+      // Backend may not always resolve document_url (e.g. a LOCAL-source
+      // guideline it doesn't have a hardcoded public URL for); fall back to
+      // the same lookup the citation string used to rely on so an external
+      // link is still available whenever fileName/pageNumber (in-app jump)
+      // isn't.
+      if (item.documentUrl.isEmpty) {
+        return CitationItem(
+          source: item.source,
+          section: item.section,
+          chunkId: item.chunkId,
+          similarityScore: item.similarityScore,
+          documentUrl: CitationItem.resolveDocumentUrl(item.source),
+          pageNumber: item.pageNumber,
+          fileName: item.fileName,
+        );
+      }
+      return item;
+    }).toList();
+
+    final perDriverList =
+        data['per_driver_explanations'] as List<dynamic>? ?? [];
+    final driverBreakdown = perDriverList
+        .map((e) {
+          final m = e as Map<String, dynamic>;
+          return '${m['factor'] ?? ''}: ${m['explanation'] ?? ''}';
+        })
+        .join('\n');
+
+    final antibioticPlan = data['antibiotic_plan'] is Map
+        ? AntibioticPlan.fromJson(
+            Map<String, dynamic>.from(data['antibiotic_plan'] as Map),
+          )
+        : _deriveAntibioticPlan(actions);
+
+    return StructuredExplanation(
+      clinicalSummary: data['clinical_summary'] as String? ?? '',
+      riskAnalysis: data['evidence_summary'] as String? ?? '',
+      driverBreakdown: driverBreakdown,
+      recommendedActions: actions,
+      antibioticPlan: antibioticPlan,
+      monitoringPlan: data['monitoring_plan'] as String? ?? '',
+      escalationCriteria: data['escalation_criteria'] as String? ?? '',
+      guidelineCitations: citations,
+      isSimulated: isSimulated,
+      sourceLabel: sourceLabel,
+      factCheck: FactCheckInfo.fromJson(
+        data['fact_check'] as Map<String, dynamic>?,
+      ),
+      evidenceLabels: _parseEvidenceLabels(data['evidence_labels']),
+    );
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Care plan (Feature 1) — structured 7-section clinical care plan
+  // ─────────────────────────────────────────────────────────────────────────
+
+  Future<ClinicalCarePlan> generateCarePlan({
+    required String encounterId,
+    required PatientParameters patient,
+    required EoscalResult result,
+    required String activeGuideline,
+    List<Map<String, dynamic>> previousAssessments = const [],
+    // 'hospital' (default, matches every existing call site's behavior) |
+    // 'outpatient_no_referral'. Gates the backend's WHO PSBI birth-weight /
+    // recent-hospitalization outpatient-eligibility exclusions (see
+    // backend/domain/contraindication_rules.check_who_outpatient_exclusions).
+    // NeoGuard has no outpatient-triage screen yet, so nothing in this app
+    // currently passes anything other than the default -- this parameter
+    // exists so that entry point can call this API correctly once it's
+    // built, without another round of backend/API changes.
+    String careSetting = 'hospital',
+  }) async {
+    final id = encounterId.isNotEmpty ? encounterId : patient.id;
+    final available = await _client.isBackendAvailable();
+
+    developer.log(
+      '[ExplanationApi] carePlan backend=$available url=${_client.baseUrl} id=$id',
+      name: 'ExplanationApi',
+    );
+
+    if (!available) {
+      throw BackendUnreachableException(
+        _client.baseUrl,
+        'Health check failed. Is the backend running and is API_BASE_URL correct?',
+      );
+    }
+
+    try {
+      final payload = buildRiskPayload(patient, result);
+      final response = await _client.dio.post(
+        '/api/v1/encounters/$id/care-plan',
+        data: {
+          'risk_result': payload,
+          'active_guideline': activeGuideline,
+          'care_setting': careSetting,
+        },
+      );
+
+      if (response.statusCode != 200 || response.data == null) {
+        throw Exception('Unexpected status ${response.statusCode}');
+      }
+
+      final data = response.data as Map<String, dynamic>;
+      developer.log(
+        '[ExplanationApi] carePlan OK fallback=${data['fallback_used']} model=${data['model_version']}',
+        name: 'ExplanationApi',
+      );
+      return _carePlanFromBackendResponse(data, activeGuideline);
+    } on DioException catch (e, st) {
+      developer.log(
+        '[ExplanationApi] carePlan Dio error: ${e.message}',
+        name: 'ExplanationApi',
+        error: e,
+        stackTrace: st,
+      );
+      rethrow;
+    }
+  }
+
+  ClinicalCarePlan _carePlanFromBackendResponse(
+    Map<String, dynamic> data,
+    String activeGuideline,
+  ) {
+    final isFallback = data['fallback_used'] as bool? ?? false;
+    final modelVersion = data['model_version'] as String? ?? 'unknown';
+    final isCached = modelVersion.startsWith('cached:');
+    final isSimulated = isFallback || modelVersion == 'rule-based-fallback';
+
+    String sourceLabel;
+    if (isSimulated) {
+      sourceLabel = 'Automated plan withheld; clinician review required';
+    } else if (isCached) {
+      sourceLabel =
+          'Cached AI · ${modelVersion.replaceFirst('cached:', '')} · $activeGuideline';
+    } else {
+      sourceLabel = 'AI-generated · $modelVersion · $activeGuideline';
+    }
+
+    final actions = (data['recommended_actions'] as List<dynamic>? ?? [])
+        .map((e) => e.toString())
+        .toList();
+
+    final rawCitations = data['citation_list'] as List<dynamic>? ?? [];
+    final citations = rawCitations.map((c) {
+      final m = c as Map<String, dynamic>;
+      final item = CitationItem.fromJson(m);
+      // Backend may not always resolve document_url (e.g. a LOCAL-source
+      // guideline it doesn't have a hardcoded public URL for); fall back to
+      // the same lookup the citation string used to rely on so an external
+      // link is still available whenever fileName/pageNumber (in-app jump)
+      // isn't.
+      if (item.documentUrl.isEmpty) {
+        return CitationItem(
+          source: item.source,
+          section: item.section,
+          chunkId: item.chunkId,
+          similarityScore: item.similarityScore,
+          documentUrl: CitationItem.resolveDocumentUrl(item.source),
+          pageNumber: item.pageNumber,
+          fileName: item.fileName,
+        );
+      }
+      return item;
+    }).toList();
+
+    final abx = data['antibiotic_plan'] as Map<String, dynamic>? ?? {};
+    final antibioticPlan = AntibioticPlan.fromJson(abx);
+
+    return ClinicalCarePlan(
+      planSections: (data['plan_sections'] as List? ?? [])
+          .map(
+            (s) =>
+                ReviewPlanSection.fromJson(Map<String, dynamic>.from(s as Map)),
+          )
+          .toList(),
+      clinicalSummary: data['clinical_summary'] as String? ?? '',
+      riskAnalysis: data['risk_analysis'] as String? ?? '',
+      trendNarrative: data['trend_narrative'] as String? ?? '',
+      driverBreakdown: data['driver_breakdown'] as String? ?? '',
+      recommendedActions: actions,
+      antibioticPlan: antibioticPlan,
+      monitoringPlan: data['monitoring_plan'] as String? ?? '',
+      escalationCriteria: data['escalation_criteria'] as String? ?? '',
+      guidelineCitations: citations,
+      isSimulated: isSimulated,
+      sourceLabel: sourceLabel,
+      factCheck: FactCheckInfo.fromJson(
+        data['fact_check'] as Map<String, dynamic>?,
+      ),
+      nutritionFluidPlan: data['nutrition_fluid_plan'] as String? ?? '',
+      parentCommunicationNotes:
+          data['parent_communication_notes'] as String? ?? '',
+      disambiguationBlock: data['disambiguation_block'] as String? ?? '',
+      contraindicationFlags:
+          (data['contraindication_flags'] as List<dynamic>? ?? [])
+              .map((e) => e.toString())
+              .toList(),
+      trendStateChange: data['trend_state_change'] as String? ?? '',
+      evidenceLabels: _parseEvidenceLabels(data['evidence_labels']),
+      resolutionLog: (data['resolution_log'] as List<dynamic>? ?? [])
+          .map((e) => e.toString())
+          .toList(),
+    );
+  }
+
+  /// Shared parser for the `evidence_labels` field on both the explanation
+  /// and care-plan backend responses — see EvidenceLabelRef.
+  List<EvidenceLabelRef> _parseEvidenceLabels(dynamic raw) {
+    return (raw as List<dynamic>? ?? [])
+        .map((e) => EvidenceLabelRef.fromJson(e as Map<String, dynamic>))
+        .toList();
+  }
+
+  AntibioticPlan _deriveAntibioticPlan(List<String> actions) {
+    // Prose actions do not establish a medication decision or stop criteria.
+    return const AntibioticPlan(
+      required: false,
+      urgency: 'Clinician decision required',
+      regimen: [],
+      duration: 'Not determined',
+      stopCriteria: 'Not determined',
+    );
+  }
+}
+
+final explanationApi = ExplanationApi();

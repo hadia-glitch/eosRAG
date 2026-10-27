@@ -1,0 +1,80 @@
+{
+  "completed": true,
+  "task_sha256": "bb7dd96f1aa902f905bda74e7422940df04ac71446c4aaefc2cdee65f202484c",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.554685700000846,
+  "kind": "plan",
+  "case_id": "cp_case_014",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-16652cb7-de1a-47bf-acd0-ee2a5a5ceeb7",
+    "object": "chat.completion",
+    "created": 1792955292,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 3,\n  \"citation_correctness\": 3,\n  \"citation_completeness\": 3,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"Combined EOS score of 7 and risk categorization are not presented in the retrieved NICE passages.\"\n    },\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Probability estimate of 12.0 per 1000 and detailed risk point attribution are not found in the supplied evidence.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan correctly cites NICE passages for antibiotic selection (S004) and notes lack of dosing details, matching the evidence. However, numeric risk scores, probability estimates, and the combined EOS score are not supported by any provided passage, making those statements unsupported. Citation mapping is ambiguous, reducing citation correctness and completeness.\"\n}",
+          "reasoning": "We need to evaluate faithfulness etc. Check citations: L018 says dose not specified in retrieved evidence: indeed passages S004 mention benzylpenicillin but no dose. So claim about not providing dose is faithful. L019 says gentamicin withheld: evidence S004 says gentamicin added only if chorioamnionitis. Patient has no chorioamnionitis, so correct. Citation? Not given mapping but likely S004. L005 probability 12 per 1000 not in evidence. No source. So unsupported claim. Also risk score 7 not sourced. L005 also mentions accumulation etc but numeric probability unsupported. L002 mentions combined score 7, driven by factors \u2013 not in evidence. So unsupported. L005 also risk analysis statement maybe unsupported. L010-... okay.\n\nCitation correctness: they list citations E1-E5 mapping to passages S010,S009,S004,S011,S012. Need check if statements correspond. L018 references S004 (benzylpenicillin). That's citation E3? Actually E3 is S004. But mapping unknown. Might be correct. L019 references S004 as well. L020 also S004. L011 etc no citation. Overall citation correctness moderate.\n\nCitation completeness: all claims that need citation? Some unsupported lack citation. So maybe 3/5.\n\nUnsupported claims list L002, L005, maybe L005 probability. Also L005 risk analysis numeric 12 per 1000. Also L005 risk categorization HIGH is okay but source? Not in evidence. So include.\n\nContradictions: none contradictory to evidence.\n\nUngrounded_dose: L018 mentions dose not specified, that's fine. No dose given. So no ungrouned dose. So false.\n\nReturn JSON.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.305655499,
+      "prompt_tokens": 3002,
+      "prompt_time": 0.144898779,
+      "completion_tokens": 580,
+      "completion_time": 1.220384284,
+      "total_tokens": 3582,
+      "total_time": 1.3652830630000001,
+      "completion_tokens_details": {
+        "reasoning_tokens": 357
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m5t7d4w9ecwass88tva1b6ct",
+      "seed": 2035422473
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "990",
+    "x-ratelimit-remaining-tokens": "4372",
+    "x-ratelimit-reset-requests": "14m24s",
+    "x-ratelimit-reset-tokens": "27.21s"
+  },
+  "result": {
+    "faithfulness": 3,
+    "citation_correctness": 3,
+    "citation_completeness": 3,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Combined EOS score of 7 and risk categorization are not presented in the retrieved NICE passages.",
+        "claim_text": "This 34-week neonate is assessed as HIGH risk for early-onset sepsis (EOS) with a combined score of 7, driven by maternal GBS colonization, prolonged rupture of membranes (>24h), intrapartum fever, and neonatal respiratory distress. Although the risk score has improved from previous CRITICAL assessments, the current clinical picture and elevated CRP warrant immediate antibiotic treatment and close monitoring."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Probability estimate of 12.0 per 1000 and detailed risk point attribution are not found in the supplied evidence.",
+        "claim_text": "The patient is categorized as HIGH risk due to the accumulation of Layer 1 maternal risk factors (GBS positive, ROM 26h, maternal fever 38.4C) and Layer 2/3 neonatal indicators (moderate respiratory distress, elevated CRP 28.0 mg/L). The presence of multiple independent risk drivers significantly elevates the probability of EOS to 12.0 per 1000."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan correctly cites NICE passages for antibiotic selection (S004) and notes lack of dosing details, matching the evidence. However, numeric risk scores, probability estimates, and the combined EOS score are not supported by any provided passage, making those statements unsupported. Citation mapping is ambiguous, reducing citation correctness and completeness."
+  }
+}

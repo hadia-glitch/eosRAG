@@ -1,0 +1,164 @@
+{
+  "key": "cp_case_007-chunks-01",
+  "kind": "chunks",
+  "case_id": "cp_case_007",
+  "prompt": {
+    "task": "Grade each target passage for this case. Grade 0=irrelevant/inapplicable, 1=background or marginal, 2=useful applicable support, 3=direct actionable evidence for this specific scenario. Score by actual text and applicability, never by gold membership. Guideline alignment requires compatible source/scope; safety exclusions may make a passage relevant even when the treatment is inapplicable. Scenario_applicable concerns the actual recommendation/population. Clinically_useful must equal grade>=2 and requires alignment and applicability. Judge each target exactly once. Rationale: 12-25 words, point to actual content/conditions and case facts.",
+    "case": {
+      "case_id": "cp_case_007",
+      "active_guideline": "AAP",
+      "care_setting": "hospital",
+      "contraindication_type": null,
+      "trend_type": "deteriorating",
+      "ambiguous": false,
+      "risk_result": {
+        "total_score": 0,
+        "combined_score": 0,
+        "layer1_score": 0,
+        "layer2_score": 0,
+        "layer3_score": 0,
+        "category": "LOW",
+        "risk_category": "Low Risk (Green)",
+        "probability_per_1000": 0.4,
+        "drivers": [
+          {
+            "name": "No significant risk factors",
+            "reason": "Routine well-baby observation",
+            "points": 0,
+            "layer": 1,
+            "contribution_percent": 100.0
+          }
+        ],
+        "patient": {
+          "gestational_age_weeks": 38.0,
+          "maternal_temperature": 36.8,
+          "rom_hours": 6.0,
+          "gbs_positive": false,
+          "respiratory_distress": "None",
+          "crp_level": 4.0,
+          "blood_culture_positive": false,
+          "urine_output_ml_kg_hr": 2.0,
+          "creatinine_mg_dl": 0.6,
+          "penicillin_allergy": false,
+          "adequate_intrapartum_antibiotics": true,
+          "clinical_chorioamnionitis": false,
+          "delivery_mode": "Caesarean",
+          "oxygen_need": "None",
+          "apgar_5_min": 9,
+          "poor_perfusion": false,
+          "neonatal_temperature": 37.0,
+          "neurological_status": "Normal",
+          "wbc_count": 12.0,
+          "it_ratio": 0.15,
+          "platelet_count": 260.0,
+          "pct_level": 0.3
+        },
+        "warnings": []
+      },
+      "previous_assessments": [
+        {
+          "created_at": "2026-07-25T06:00:00Z",
+          "combined_score": 0,
+          "category": "LOW"
+        },
+        {
+          "created_at": "2026-07-26T010:00:00Z",
+          "combined_score": 0,
+          "category": "LOW"
+        }
+      ],
+      "deltas": {
+        "score_delta": 0,
+        "crp_delta": 6.0,
+        "temp_delta": 0.6,
+        "hours_since_last": 6.0,
+        "aki_stage": 0
+      },
+      "proposed_drugs": [],
+      "retrieval_query": "AAP 2023 early-onset sepsis No significant risk factors Routine well-baby observation caesarean delivery white blood cell count WBC procalcitonin PCT thrombocytopenia platelet count multiple reassessments"
+    },
+    "gold_evidence_aliases": [
+      "P012",
+      "P005",
+      "P009"
+    ],
+    "passages": [
+      {
+        "passage": "P001",
+        "source": "AAP",
+        "section": "abstract",
+        "text": "Source: AAP\nSection: abstract\n\nThe incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy. However, EOS remains a serious and potentially fatal illness. Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions. Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy. The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth."
+      },
+      {
+        "passage": "P002",
+        "source": "AAP",
+        "section": "abstract",
+        "text": "Source: AAP\nSection: abstract\n\nThe incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth. Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis among infants born at \u226535 0/7 weeks\u2019 gestation and a framework for the development of evidence-based approaches to sepsis risk assessment among these infants. Early-onset sepsis (EOS) is a serious and potentially fatal complication of birth."
+      },
+      {
+        "passage": "P003",
+        "source": "AAP",
+        "section": "abstract",
+        "text": "Source: AAP\nSection: abstract\n\nOur purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis among infants born at \u226535 0/7 weeks\u2019 gestation and a framework for the development of evidence-based approaches to sepsis risk assessment among these infants. Early-onset sepsis (EOS) is a serious and potentially fatal complication of birth. Assessing term and late-preterm newborn infants for risk of EOS is one of the most common clinical tasks conducted by pediatric providers.1 As the use of preventive intrapartum antibiotic therapies has increased and the incidence of EOS has decreased, physicians are challenged to identify those newborn infants who are at the highest risk of infection. Pediatric providers are particularly concerned about initially well- appearing infants with identified risk factors for EOS for fear of missing the opportunity to intervene before infants become critically ill."
+      },
+      {
+        "passage": "P004",
+        "source": "AAP",
+        "section": "RISK FACTORS FOR EOS",
+        "text": "Source: AAP\nSection: RISK FACTORS FOR EOS\n\nThe occurrence, severity, and duration of specific clinical risk factors can be used to assess the risk of EOS among term and late-preterm infants. Evidence has supported the predictive value of gestational age, maternal intraamniotic infection (represented either by intrapartum fever or the obstetric clinical diagnosis of chorioamnionitis), the duration of rupture of membranes (ROM), maternal GBS colonization, the administration of appropriate intrapartum antibiotic therapy, and the newborn clinical condition. Surveillance studies in the United States reveal higher rates of EOS among infants who are born to mothers of African American race compared with those who are not of African American race, but race is not an independent predictor in multivariable analyses."
+      },
+      {
+        "passage": "P005",
+        "source": "AAP",
+        "section": "Categorical Risk Factor Assessment",
+        "text": "Source: AAP\nSection: Categorical Risk Factor Assessment\n\nA categorical risk factor assessment includes risk factor threshold values to identify infants who are at increased risk for EOS. Algorithms for the management of GBS-specific EOS have been used as a general framework for the prevention of all EOS. Risk factors used in such algorithms included (1) any newborn infant who is ill appearing;\n(2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation;\nor (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following:\nlaboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4."
+      },
+      {
+        "passage": "P006",
+        "source": "AAP",
+        "section": "Categorical Risk Factor Assessment",
+        "text": "Source: AAP\nSection: Categorical Risk Factor Assessment\n\nRecommendations in these algorithms include the following:\nlaboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4. Different versions of this approach have been published since 1996 and have been incorporated by physicians into local algorithms. An advantage of using categorical risk factors is that substantial data have been reported that are used to address the effects on GBS-specific disease and on the frequency of neonatal EOS evaluation. Limitations of this approach include a lack of clear definitions for newborn clinical illness, difficulties in establishing the clinical diagnosis of maternal chorioamnionitis, an inconsistent consideration of intrapartum antibiotics, and the absence of guidance on what is used to define abnormal laboratory test results in the newborn infant."
+      },
+      {
+        "passage": "P009",
+        "source": "AAP",
+        "section": "Multivariate Risk Assessment",
+        "text": "Source: AAP\nSection: Multivariate Risk Assessment\n\nThe predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate. Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \u22653 per 1000 live births. A prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC). No adverse effects of the multivariate risk approach were noted during birth hospitalization."
+      },
+      {
+        "passage": "P012",
+        "source": "AAP",
+        "section": "Newborn Clinical Condition",
+        "text": "Source: AAP\nSection: Newborn Clinical Condition\n\nA third strategy consists of the reliance on clinical signs of illness to identify infants with EOS. Under this approach, regardless of any estimation of neonatal or maternal risk factors for EOS, infants who appear ill at birth and those who develop signs of illness over the first 48 hours after birth are either treated empirically with antibiotic agents or further evaluated by laboratory screening. Among term and late- preterm infants, good clinical condition at birth is associated with a reduction in risk for EOS of approximately 60% to 70%. A multidisciplinary panel sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development advocated that infants be flagged for risk of EOS on the basis of the obstetric diagnosis of suspected intraamniotic infection but that those conducting newborn evaluation primarily rely on clinical observation alone for well-appearing term and late-preterm infants."
+      }
+    ],
+    "target_passages": [
+      "P001",
+      "P002",
+      "P003",
+      "P004",
+      "P005",
+      "P006"
+    ],
+    "response_schema": {
+      "judgments": [
+        {
+          "passage": "P001",
+          "relevance_grade": "integer 0-3",
+          "guideline_aligned": "boolean",
+          "scenario_applicable": "boolean",
+          "clinically_useful": "boolean",
+          "rationale": "short source-based rationale"
+        }
+      ]
+    }
+  },
+  "mapping": {
+    "P001": "AAP_pg2_abstract_chunk1",
+    "P002": "AAP_pg2_abstract_chunk2",
+    "P003": "AAP_pg2_abstract_chunk3",
+    "P004": "AAP_pg2_risk-factors-for-eos_chunk1",
+    "P005": "AAP_pg3_categorical-risk-factor-_chunk1",
+    "P006": "AAP_pg3_categorical-risk-factor-_chunk2"
+  }
+}

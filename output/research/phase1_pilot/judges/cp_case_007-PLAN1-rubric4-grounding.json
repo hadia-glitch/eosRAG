@@ -1,0 +1,69 @@
+{
+  "completed": true,
+  "task_sha256": "c182575c6e41030ebcd548f40e45d8fadf6eb595216d9bf296223ee8cab79fdf",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 1.8342646000091918,
+  "kind": "plan",
+  "case_id": "cp_case_007",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-2e4ba2b0-068b-4035-8520-e9f0f37f03fb",
+    "object": "chat.completion",
+    "created": 1792954267,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 4,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan accurately reflects the patient data (term infant, no risk factors, adequate antibiotics) and aligns with AAP guidance that low-risk infants (<1/1000) require observation only (S003). However, the candidate lines contain no explicit citations, so citation correctness and completeness are low. No unsupported statements or contradictions were identified.\"\n}",
+          "reasoning": "We need evaluate faithfulness etc. Check claims: L002 summary matches case low risk. Evidence: S003 says low risk <1 per 1000 no culture. So citation? No citations in plan lines. Assume mapping unknown. Faithfulness moderate. Provide ratings 4? citation_correctness low because none cited. citation_completeness low. No unsupported claims. No contradictions. Ungrounded_dose false. Provide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.306726155,
+      "prompt_tokens": 2427,
+      "prompt_time": 0.108960846,
+      "completion_tokens": 233,
+      "completion_time": 0.487559651,
+      "total_tokens": 2660,
+      "total_time": 0.596520497,
+      "completion_tokens_details": {
+        "reasoning_tokens": 87
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m5t6dxa6eg2shet8mxxeqaav",
+      "seed": 353141142
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "983",
+    "x-ratelimit-remaining-tokens": "4895",
+    "x-ratelimit-reset-requests": "24m28.8s",
+    "x-ratelimit-reset-tokens": "23.287s"
+  },
+  "result": {
+    "faithfulness": 4,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan accurately reflects the patient data (term infant, no risk factors, adequate antibiotics) and aligns with AAP guidance that low-risk infants (<1/1000) require observation only (S003). However, the candidate lines contain no explicit citations, so citation correctness and completeness are low. No unsupported statements or contradictions were identified."
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "completed": true,
+  "task_sha256": "39e6ad5c0e9a70e8146fef861dd5f79224e417ecc17126de296e8d14d4962bda",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.094875399998273,
+  "kind": "chunks",
+  "case_id": "cp_case_014",
+  "mapping": {
+    "P022": "NICE_pg64_why-the-committee-made-t_chunk1",
+    "P023": "NICE_pg64_why-the-committee-made-t_chunk3",
+    "P024": "NICE_pg64_why-the-committee-made-t_chunk4",
+    "P025": "NICE_pg64_why-the-committee-made-t_chunk5",
+    "P028": "NICE_pg8_prevent-early-onset-neon_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-84d62f1e-9c5d-4b0f-b973-76161c84e9c0",
+    "object": "chat.completion",
+    "created": 1792947007,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P022\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Notes >24h ROM increases EOS risk, matching case ROM 26h.\"\n    },\n    {\n      \"passage\": \"P023\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes retained red\u2011flag framework, relevant to assessing this newborn.\"\n    },\n    {\n      \"passage\": \"P024\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Explains removal of maternal antibiotics as a risk factor, contextual for case.\"\n    },\n    {\n      \"passage\": \"P025\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Updates intrapartum fever definition, pertinent to maternal fever in case.\"\n    },\n    {\n      \"passage\": \"P028\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Recommends intrapartum antibiotics for GBS\u2011positive mothers, supporting given treatment.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for target_passages only: P022,P023,P024,P025,P028. Provide array with those. Grade etc. Evaluate: These passages discuss guideline rationale, not direct actionable. Likely grade 1 or 2? They explain risk factor changes and antibiotic recommendations context. For scenario: preterm 34w, GBS+, ROM>18h, fever, etc. P022 explains rupture >24h risk factor relevance \u2013 applicable (risk factor). That's background/marginal => grade1. Guideline aligned yes. scenario_applicable? risk factor relevant yes but not direct action => maybe true? scenario_applicable means recommendation/population? It's about risk factor, so applicable. clinically_useful requires grade>=2, so false.\n\nP023 about framework retention, not direct. Grade1, guideline aligned, scenario_applicable? about red flags framework, maybe applicable but not specific. Could be true. clinically_useful false.\n\nP024 about removal of parenteral antibiotics as risk factor, background. Grade1, guideline aligned, scenario_applicable maybe true (affects risk factor list). clinically_useful false.\n\nP025 about intrapartum fever change to maternal sepsis. Relevant to fever risk factor. Grade1 or 2? It explains change, not action. So grade1. guideline aligned true. scenario_applicable true. clinically_useful false.\n\nP028 offers antibiotics during labour for GBS etc. This is actionable recommendation for intrapartum antibiotics, but case already had adequate intrapartum antibiotics. Still relevant background. Could be grade2 (useful applicable support) as it supports giving antibiotics. Since already given, but informs that antibiotics indicated. So grade2. guideline aligned true. scenario_applicable true (population matches). clinically_useful true (grade>=2).\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377809629,
+      "prompt_tokens": 4447,
+      "prompt_time": 0.245656461,
+      "completion_tokens": 741,
+      "completion_time": 1.705115015,
+      "total_tokens": 5188,
+      "total_time": 1.950771476,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 372
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c15aa9c1b7",
+    "x_groq": {
+      "id": "req_01m5szg9h1ee8bva79bzkhzyr7",
+      "seed": 124053245
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 1,
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "969",
+    "x-ratelimit-remaining-tokens": "2616",
+    "x-ratelimit-reset-requests": "44m38.4s",
+    "x-ratelimit-reset-tokens": "40.38s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P022",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Notes >24h ROM increases EOS risk, matching case ROM 26h."
+      },
+      {
+        "passage": "P023",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Describes retained red\u2011flag framework, relevant to assessing this newborn."
+      },
+      {
+        "passage": "P024",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Explains removal of maternal antibiotics as a risk factor, contextual for case."
+      },
+      {
+        "passage": "P025",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Updates intrapartum fever definition, pertinent to maternal fever in case."
+      },
+      {
+        "passage": "P028",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends intrapartum antibiotics for GBS\u2011positive mothers, supporting given treatment."
+      }
+    ]
+  }
+}

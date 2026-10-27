@@ -1,0 +1,621 @@
+{
+  "csv_sha256": "fe1787c19c929324d2862e5fb66f5cf3945a6ba75a41623a5ba506fa6f9e294d",
+  "analysis_role": "post-hoc audit; test partition previously reported",
+  "patient_split_overlap": {
+    "1-0": 0,
+    "2-0": 0,
+    "2-1": 0,
+    "3-0": 0,
+    "3-1": 0,
+    "3-2": 0
+  },
+  "label_is_explicit_predictor": false,
+  "preprocessing_partition": "fit only",
+  "experiments": {
+    "all_neonatal_ages": {
+      "selected_forest_partitions": {
+        "fit": {
+          "n": 55057,
+          "auroc": 0.9998113061265137,
+          "auprc": 0.9997632944801009,
+          "brier": 0.004513272005374271
+        },
+        "calibration": {
+          "n": 14967,
+          "auroc": 0.999660693002369,
+          "auprc": 0.9995640353805707,
+          "brier": 0.006145874751938249
+        },
+        "validation": {
+          "n": 15039,
+          "auroc": 0.9996847330035964,
+          "auprc": 0.9995686654257075,
+          "brier": 0.006155623692939905
+        },
+        "test": {
+          "n": 14937,
+          "auroc": 0.9995617359272476,
+          "auprc": 0.9994163374300657,
+          "brier": 0.0063347886823814535
+        }
+      },
+      "fit_minus_test_auroc": 0.00024957019926608037,
+      "exact_predictor_duplicates": 0,
+      "exact_predictor_split_overlap": {
+        "1-0": 0,
+        "2-0": 0,
+        "2-1": 0,
+        "3-0": 0,
+        "3-1": 0,
+        "3-2": 0
+      },
+      "preprocessing_recomputed_from_fit_matches": true,
+      "label_permutation_negative_controls": [
+        {
+          "seed": 113,
+          "permuted_test_labels": {
+            "n": 14937,
+            "auroc": 0.50310280649246,
+            "auprc": 0.4208617462715387,
+            "brier": 0.24371809847713746
+          },
+          "original_test_labels": {
+            "n": 14937,
+            "auroc": 0.33789804535512835,
+            "auprc": 0.32317067109823416,
+            "brier": 0.24663174223901088
+          }
+        },
+        {
+          "seed": 114,
+          "permuted_test_labels": {
+            "n": 14937,
+            "auroc": 0.5021571175319443,
+            "auprc": 0.42294108313669593,
+            "brier": 0.2436884305415748
+          },
+          "original_test_labels": {
+            "n": 14937,
+            "auroc": 0.5991298445953724,
+            "auprc": 0.5067427193188487,
+            "brier": 0.2422870579249682
+          }
+        },
+        {
+          "seed": 115,
+          "permuted_test_labels": {
+            "n": 14937,
+            "auroc": 0.5014439967767929,
+            "auprc": 0.4182245052946799,
+            "brier": 0.24372670445044076
+          },
+          "original_test_labels": {
+            "n": 14937,
+            "auroc": 0.5533785196270289,
+            "auprc": 0.4709090045521255,
+            "brier": 0.24307940543024023
+          }
+        }
+      ],
+      "feature_ablations_logistic": {
+        "all_predictors": {
+          "features": [
+            "Gestational_Age",
+            "Birth_Weight",
+            "Sex",
+            "Postnatal_Age",
+            "Delivery_Mode",
+            "Apgar",
+            "HR",
+            "Resp",
+            "Temp",
+            "SpO2",
+            "BP",
+            "Oxygen",
+            "WBC",
+            "CRP",
+            "PCT",
+            "Platelets",
+            "Lactate",
+            "Hemoglobin"
+          ],
+          "fit": {
+            "n": 55057,
+            "auroc": 0.9993957076722922,
+            "auprc": 0.99923795236377,
+            "brier": 0.008575443362113994
+          },
+          "test": {
+            "n": 14937,
+            "auroc": 0.9993210268216877,
+            "auprc": 0.9990622183693143,
+            "brier": 0.008887479269108012
+          },
+          "calibration": "none; discrimination diagnostic only"
+        },
+        "without_PCT": {
+          "features": [
+            "Gestational_Age",
+            "Birth_Weight",
+            "Sex",
+            "Postnatal_Age",
+            "Delivery_Mode",
+            "Apgar",
+            "HR",
+            "Resp",
+            "Temp",
+            "SpO2",
+            "BP",
+            "Oxygen",
+            "WBC",
+            "CRP",
+            "Platelets",
+            "Lactate",
+            "Hemoglobin"
+          ],
+          "fit": {
+            "n": 55057,
+            "auroc": 0.9970478512751273,
+            "auprc": 0.9964757234587673,
+            "brier": 0.019184348583485538
+          },
+          "test": {
+            "n": 14937,
+            "auroc": 0.9971030367215379,
+            "auprc": 0.9963200606053012,
+            "brier": 0.018848419075444833
+          },
+          "calibration": "none; discrimination diagnostic only"
+        },
+        "without_CRP_PCT": {
+          "features": [
+            "Gestational_Age",
+            "Birth_Weight",
+            "Sex",
+            "Postnatal_Age",
+            "Delivery_Mode",
+            "Apgar",
+            "HR",
+            "Resp",
+            "Temp",
+            "SpO2",
+            "BP",
+            "Oxygen",
+            "WBC",
+            "Platelets",
+            "Lactate",
+            "Hemoglobin"
+          ],
+          "fit": {
+            "n": 55057,
+            "auroc": 0.994046153656737,
+            "auprc": 0.9931126737783318,
+            "brier": 0.02751148924524471
+          },
+          "test": {
+            "n": 14937,
+            "auroc": 0.9942201634626454,
+            "auprc": 0.992703570758538,
+            "brier": 0.02665749637982731
+          },
+          "calibration": "none; discrimination diagnostic only"
+        },
+        "baseline_only": {
+          "features": [
+            "Gestational_Age",
+            "Birth_Weight",
+            "Sex",
+            "Postnatal_Age",
+            "Delivery_Mode",
+            "Apgar"
+          ],
+          "fit": {
+            "n": 55057,
+            "auroc": 0.5807885177592041,
+            "auprc": 0.5354742005743902,
+            "brier": 0.23874014375732316
+          },
+          "test": {
+            "n": 14937,
+            "auroc": 0.5835257373086221,
+            "auprc": 0.5112214720773942,
+            "brier": 0.2374393917874778
+          },
+          "calibration": "none; discrimination diagnostic only"
+        },
+        "vitals_without_laboratory": {
+          "features": [
+            "Gestational_Age",
+            "Birth_Weight",
+            "Sex",
+            "Postnatal_Age",
+            "Delivery_Mode",
+            "Apgar",
+            "HR",
+            "Resp",
+            "Temp",
+            "SpO2",
+            "BP"
+          ],
+          "fit": {
+            "n": 55057,
+            "auroc": 0.943526861908535,
+            "auprc": 0.9353999528362545,
+            "brier": 0.09254151316343039
+          },
+          "test": {
+            "n": 14937,
+            "auroc": 0.9410067457119835,
+            "auprc": 0.9286819265416696,
+            "brier": 0.09418766144082581
+          },
+          "calibration": "none; discrimination diagnostic only"
+        },
+        "laboratory_only": {
+          "features": [
+            "WBC",
+            "CRP",
+            "PCT",
+            "Platelets",
+            "Lactate",
+            "Hemoglobin"
+          ],
+          "fit": {
+            "n": 55057,
+            "auroc": 0.9960571081637186,
+            "auprc": 0.9948603009495189,
+            "brier": 0.024846225525089638
+          },
+          "test": {
+            "n": 14937,
+            "auroc": 0.9958800046045816,
+            "auprc": 0.9942081326694084,
+            "brier": 0.02516671083480145
+          },
+          "calibration": "none; discrimination diagnostic only"
+        }
+      },
+      "nearest_neighbor_diagnostic": {
+        "sampled_test_rows": 1000,
+        "standardized_euclidean_quantiles": [
+          1.1450136487885774,
+          1.347550508127104,
+          1.5073973847624567,
+          2.0156209226119306,
+          2.7673923304295442,
+          3.7081039151519035
+        ],
+        "distance_below_1e_6": 0,
+        "exhaustive": false
+      },
+      "wrong_unit_scale_stresses": {
+        "WBC_wrong_scale_x1000": {
+          "n": 14937,
+          "auroc": 0.9995274410037989,
+          "auprc": 0.9993766299900237,
+          "brier": 0.006620446482443609
+        },
+        "Platelets_wrong_scale_x1000": {
+          "n": 14937,
+          "auroc": 0.9995316588005065,
+          "auprc": 0.9993704218953255,
+          "brier": 0.006548398567269174
+        },
+        "Birth_Weight_wrong_scale_x1000": {
+          "n": 14937,
+          "auroc": 0.9995631541383677,
+          "auprc": 0.9994204624521705,
+          "brier": 0.006309438449406693
+        }
+      },
+      "label_timestamp_available": false,
+      "clinical_eos_eligible": false
+    },
+    "postnatal_days_0_2": {
+      "selected_forest_partitions": {
+        "fit": {
+          "n": 5378,
+          "auroc": 0.9997731127360133,
+          "auprc": 0.9997143141309467,
+          "brier": 0.005372628906172499
+        },
+        "calibration": {
+          "n": 1519,
+          "auroc": 0.9997156398104265,
+          "auprc": 0.9996481831619994,
+          "brier": 0.006006576866682381
+        },
+        "validation": {
+          "n": 1640,
+          "auroc": 0.9993935904816734,
+          "auprc": 0.9991550804558809,
+          "brier": 0.009446889916086923
+        },
+        "test": {
+          "n": 1598,
+          "auroc": 0.9992070060932832,
+          "auprc": 0.9991312927421774,
+          "brier": 0.009383224495805047
+        }
+      },
+      "fit_minus_test_auroc": 0.0005661066427301575,
+      "exact_predictor_duplicates": 0,
+      "exact_predictor_split_overlap": {
+        "1-0": 0,
+        "2-0": 0,
+        "2-1": 0,
+        "3-0": 0,
+        "3-1": 0,
+        "3-2": 0
+      },
+      "preprocessing_recomputed_from_fit_matches": true,
+      "label_permutation_negative_controls": [
+        {
+          "seed": 113,
+          "permuted_test_labels": {
+            "n": 1598,
+            "auroc": 0.5027297593429028,
+            "auprc": 0.46725148683821177,
+            "brier": 0.2503010034054506
+          },
+          "original_test_labels": {
+            "n": 1598,
+            "auroc": 0.5677710249800964,
+            "auprc": 0.5128636621444065,
+            "brier": 0.24623197122704707
+          }
+        },
+        {
+          "seed": 114,
+          "permuted_test_labels": {
+            "n": 1598,
+            "auroc": 0.5168743743151953,
+            "auprc": 0.47426488107859704,
+            "brier": 0.2496941874601204
+          },
+          "original_test_labels": {
+            "n": 1598,
+            "auroc": 0.3405853650846202,
+            "auprc": 0.36204295632656047,
+            "brier": 0.2619289717012985
+          }
+        },
+        {
+          "seed": 115,
+          "permuted_test_labels": {
+            "n": 1598,
+            "auroc": 0.5102245765049936,
+            "auprc": 0.47350719997203056,
+            "brier": 0.2495608010111245
+          },
+          "original_test_labels": {
+            "n": 1598,
+            "auroc": 0.39185249998029337,
+            "auprc": 0.3922825666404366,
+            "brier": 0.2572091466812805
+          }
+        }
+      ],
+      "feature_ablations_logistic": {
+        "all_predictors": {
+          "features": [
+            "Gestational_Age",
+            "Birth_Weight",
+            "Sex",
+            "Postnatal_Age",
+            "Delivery_Mode",
+            "Apgar",
+            "HR",
+            "Resp",
+            "Temp",
+            "SpO2",
+            "BP",
+            "Oxygen",
+            "WBC",
+            "CRP",
+            "PCT",
+            "Platelets",
+            "Lactate",
+            "Hemoglobin"
+          ],
+          "fit": {
+            "n": 5378,
+            "auroc": 0.9994128449641136,
+            "auprc": 0.9992622323301049,
+            "brier": 0.00910638137877263
+          },
+          "test": {
+            "n": 1598,
+            "auroc": 0.9989342666382891,
+            "auprc": 0.9988023450877991,
+            "brier": 0.012465561981485289
+          },
+          "calibration": "none; discrimination diagnostic only"
+        },
+        "without_PCT": {
+          "features": [
+            "Gestational_Age",
+            "Birth_Weight",
+            "Sex",
+            "Postnatal_Age",
+            "Delivery_Mode",
+            "Apgar",
+            "HR",
+            "Resp",
+            "Temp",
+            "SpO2",
+            "BP",
+            "Oxygen",
+            "WBC",
+            "CRP",
+            "Platelets",
+            "Lactate",
+            "Hemoglobin"
+          ],
+          "fit": {
+            "n": 5378,
+            "auroc": 0.9972669631925958,
+            "auprc": 0.9967712853043935,
+            "brier": 0.018572164304644895
+          },
+          "test": {
+            "n": 1598,
+            "auroc": 0.995708689037608,
+            "auprc": 0.9954001070970103,
+            "brier": 0.023794249663713747
+          },
+          "calibration": "none; discrimination diagnostic only"
+        },
+        "without_CRP_PCT": {
+          "features": [
+            "Gestational_Age",
+            "Birth_Weight",
+            "Sex",
+            "Postnatal_Age",
+            "Delivery_Mode",
+            "Apgar",
+            "HR",
+            "Resp",
+            "Temp",
+            "SpO2",
+            "BP",
+            "Oxygen",
+            "WBC",
+            "Platelets",
+            "Lactate",
+            "Hemoglobin"
+          ],
+          "fit": {
+            "n": 5378,
+            "auroc": 0.9947620772539902,
+            "auprc": 0.9939410984274817,
+            "brier": 0.02585846778905902
+          },
+          "test": {
+            "n": 1598,
+            "auroc": 0.992429509463113,
+            "auprc": 0.992168442198648,
+            "brier": 0.030935600753259143
+          },
+          "calibration": "none; discrimination diagnostic only"
+        },
+        "baseline_only": {
+          "features": [
+            "Gestational_Age",
+            "Birth_Weight",
+            "Sex",
+            "Postnatal_Age",
+            "Delivery_Mode",
+            "Apgar"
+          ],
+          "fit": {
+            "n": 5378,
+            "auroc": 0.587491295166852,
+            "auprc": 0.5369431217478405,
+            "brier": 0.23958823120286285
+          },
+          "test": {
+            "n": 1598,
+            "auroc": 0.575827086338591,
+            "auprc": 0.5746728693918055,
+            "brier": 0.2406850402291919
+          },
+          "calibration": "none; discrimination diagnostic only"
+        },
+        "vitals_without_laboratory": {
+          "features": [
+            "Gestational_Age",
+            "Birth_Weight",
+            "Sex",
+            "Postnatal_Age",
+            "Delivery_Mode",
+            "Apgar",
+            "HR",
+            "Resp",
+            "Temp",
+            "SpO2",
+            "BP"
+          ],
+          "fit": {
+            "n": 5378,
+            "auroc": 0.9441861542608755,
+            "auprc": 0.9369915414464046,
+            "brier": 0.09242457915911764
+          },
+          "test": {
+            "n": 1598,
+            "auroc": 0.9345441073300699,
+            "auprc": 0.9303738269507424,
+            "brier": 0.1022367663081728
+          },
+          "calibration": "none; discrimination diagnostic only"
+        },
+        "laboratory_only": {
+          "features": [
+            "WBC",
+            "CRP",
+            "PCT",
+            "Platelets",
+            "Lactate",
+            "Hemoglobin"
+          ],
+          "fit": {
+            "n": 5378,
+            "auroc": 0.9956676607024519,
+            "auprc": 0.9943640540382913,
+            "brier": 0.025931658439442187
+          },
+          "test": {
+            "n": 1598,
+            "auroc": 0.9965852389623289,
+            "auprc": 0.995934363139535,
+            "brier": 0.02482505671513778
+          },
+          "calibration": "none; discrimination diagnostic only"
+        }
+      },
+      "nearest_neighbor_diagnostic": {
+        "sampled_test_rows": 1000,
+        "standardized_euclidean_quantiles": [
+          0.9553540273142098,
+          1.5220567270934162,
+          1.7717301399988155,
+          2.4265773874768275,
+          3.269113780661835,
+          4.356990820653275
+        ],
+        "distance_below_1e_6": 0,
+        "exhaustive": false
+      },
+      "wrong_unit_scale_stresses": {
+        "WBC_wrong_scale_x1000": {
+          "n": 1598,
+          "auroc": 0.9991218735466376,
+          "auprc": 0.9990359679912115,
+          "brier": 0.009827313173190699
+        },
+        "Platelets_wrong_scale_x1000": {
+          "n": 1598,
+          "auroc": 0.9991139909034297,
+          "auprc": 0.9990462192386005,
+          "brier": 0.01000141403664173
+        },
+        "Birth_Weight_wrong_scale_x1000": {
+          "n": 1598,
+          "auroc": 0.9991880877495842,
+          "auprc": 0.9991132162257614,
+          "brier": 0.009439782105446888
+        }
+      },
+      "label_timestamp_available": false,
+      "clinical_eos_eligible": false
+    }
+  },
+  "interpretation_limits": [
+    "Patient-ID and exact-row checks cannot establish independence when supplied identities are inconsistent",
+    "No onset or result-availability timestamps: concurrent label proxies and diagnostic workflow leakage cannot be ruled out",
+    "Strong discrimination or a small train/test gap does not establish a clinically meaningful or externally valid outcome",
+    "Random-label performance near chance checks pipeline behavior, not the provenance or correctness of real labels",
+    "Ablations are post-hoc on the previously reported test; they do not select a clinically released model"
+  ]
+}

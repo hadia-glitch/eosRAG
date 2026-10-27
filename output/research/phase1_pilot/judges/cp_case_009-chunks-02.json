@@ -1,0 +1,113 @@
+{
+  "completed": true,
+  "task_sha256": "c7c9c1bbcefb44110ec1b2c35684452e58972a50b99651b3435606f9f43f5ba6",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.712539200001629,
+  "kind": "chunks",
+  "case_id": "cp_case_009",
+  "mapping": {
+    "P012": "NICE_pg2_carers_chunk4",
+    "P013": "NICE_pg30_2012_rec1_chunk1",
+    "P014": "NICE_pg30_2012_rec1_chunk2",
+    "P015": "NICE_pg31_2012-amended-2026_chunk2",
+    "P016": "NICE_pg34_2021_rec1_chunk1",
+    "P017": "NICE_pg37_amended-2021_chunk2"
+  },
+  "raw_response": {
+    "id": "chatcmpl-0235590a-c308-4c7a-80fe-610015fe5af1",
+    "object": "chat.completion",
+    "created": 1792946135,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P012\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes communication with parents about antibiotic decisions; not direct treatment guidance.\"\n    },\n    {\n      \"passage\": \"P013\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Recommends 7\u2011day IV antibiotic course for suspected early\u2011onset sepsis, matching the case's need for treatment.\"\n    },\n    {\n      \"passage\": \"P014\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Guides stopping antibiotics at 36\u202fh if culture negative and clinical suspicion low, relevant to this infant.\"\n    },\n    {\n      \"passage\": \"P015\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Suggests oral amoxicillin switch; not applicable due to penicillin allergy.\"\n    },\n    {\n      \"passage\": \"P016\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Provides 7\u2011day duration guidance for positive cultures and considerations for extension, applicable to treatment.\"\n    },\n    {\n      \"passage\": \"P017\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Discusses GBS meningitis regimen; does not address penicillin\u2011allergic empiric therapy.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for target passages list. Provide for each. Determine grades.\n\nCase: preterm 36w, ROM 20h, CRP 12, penicillin allergy, proposed clindamycin+gentamicin. Need evidence about alternative antibiotics.\n\nTarget passages:\n\nP012: about discussing with parents, not about antibiotic choice. Relevance? background. Grade 1 maybe. Not actionable. scenario_applicable? Yes about communication but not treatment. Clinically_useful requires grade>=2, so false.\n\nP013: duration 7 days for positive or suspected sepsis. Not about choice. Might be applicable if antibiotics given. Grade 2? It gives recommendation for duration. Applicable scenario (antibiotics). So grade 2. guideline_aligned true. scenario_applicable true. clinically_useful true (>=2). Rationale.\n\nP014: stopping antibiotics at 36h if negative culture and low suspicion. Relevant to scenario (consider stopping). Grade 2. guideline aligned true. scenario_applicable true. clinically_useful true.\n\nP015: switching to oral amoxicillin after 36h if criteria met. Not applicable because penicillin allergy. So maybe grade 1 (background). scenario_applicable false (due to allergy). guideline_aligned true but not applicable. clinically_useful false.\n\nP016: 7 days for positive culture, consider longer. Similar to P013. Grade 2. scenario_applicable true. clinically_useful true.\n\nP017: alternative regimen for penicillin allergy? It mentions severe penicillin allergy? Actually P017 is about meningitis and GBS, not allergy. Not about alternative. Might be marginal. Grade 1. scenario_applicable false. clinically_useful false.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.301467555,
+      "prompt_tokens": 4892,
+      "prompt_time": 0.234745407,
+      "completion_tokens": 820,
+      "completion_time": 1.6952675,
+      "total_tokens": 5712,
+      "total_time": 1.930012907,
+      "completion_tokens_details": {
+        "reasoning_tokens": 359
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_64b2f1c926",
+    "x_groq": {
+      "id": "req_01m5synpgeefxtq5nmhqy8wwwp",
+      "seed": 49315099
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "980",
+    "x-ratelimit-remaining-tokens": "2234",
+    "x-ratelimit-reset-requests": "28m48s",
+    "x-ratelimit-reset-tokens": "43.245s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P012",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Describes communication with parents about antibiotic decisions; not direct treatment guidance."
+      },
+      {
+        "passage": "P013",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends 7\u2011day IV antibiotic course for suspected early\u2011onset sepsis, matching the case's need for treatment."
+      },
+      {
+        "passage": "P014",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Guides stopping antibiotics at 36\u202fh if culture negative and clinical suspicion low, relevant to this infant."
+      },
+      {
+        "passage": "P015",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Suggests oral amoxicillin switch; not applicable due to penicillin allergy."
+      },
+      {
+        "passage": "P016",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Provides 7\u2011day duration guidance for positive cultures and considerations for extension, applicable to treatment."
+      },
+      {
+        "passage": "P017",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses GBS meningitis regimen; does not address penicillin\u2011allergic empiric therapy."
+      }
+    ]
+  }
+}

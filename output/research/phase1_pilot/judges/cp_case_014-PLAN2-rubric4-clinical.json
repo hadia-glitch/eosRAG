@@ -1,0 +1,69 @@
+{
+  "completed": true,
+  "task_sha256": "b1cb1cf66456cd6a45b37ae970a0f5ad9caffbcb581cea129326ffe2fff46a27",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.810177500010468,
+  "kind": "plan",
+  "case_id": "cp_case_014",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-0207cba8-6824-420d-ba19-debc1b63a7d7",
+    "object": "chat.completion",
+    "created": 1792955398,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":5,\"clinical_completeness\":5,\"clinical_utility\":5,\"safety\":5,\"contradictions\":[],\"critical_omissions\":[],\"regimen_incomplete\":false,\"rationale\":\"Plan aligns with NICE recommendations: uses benzylpenicillin 25\u202fmg/kg q12h and gentamicin 5\u202fmg/kg as first\u2011line empirical therapy (S005); duration 7\u202fdays or stop at 36\u202fh if culture negative and criteria met (S006, S012); records gentamicin timing (S011); includes blood culture and baseline CRP before antibiotics (S007); no penicillin allergy, appropriate for 34\u2011week neonate in hospital setting. No contradictory statements identified. All required safety and monitoring elements are present; regimen dosing is complete.\"}",
+          "reasoning": "We need produce JSON with fields. Assess plan vs gold evidence.\n\nPlan includes antibiotics benzylpenicillin 25 mg/kg q12h and gentamicin 5 mg/kg, duration 7 days or stop at 36h if criteria. This aligns with S005 (regimen), S006 (duration), S011 (record times), S012 (stop criteria). Citations: they used S006, S011, S012, S010, S005. S010 is about risk factor wording not directly relevant. No contradictions.\n\nCheck safety: patient no penicillin allergy, appropriate. No contraindication. Good.\n\nCompleteness: includes assessment, monitoring, escalation, nutrition, etc. Might miss blood culture before antibiotics (S007). Plan mentions \"Perform full sepsis workup including blood culture\" line L012, good. Also CRP baseline (S007) included. Urine culture not needed per guideline. Good.\n\nAny missing: guideline suggests consider oral switch at 36h for >35 weeks; baby is 34 weeks, so not applicable. So okay.\n\nRegimen incomplete? Doses provided, matches guideline. So regimen_incomplete false.\n\nContradictions: none.\n\nCritical omissions: maybe missing mention of performing blood culture before first dose (they said full sepsis workup includes blood culture, okay). Could be missing therapeutic drug monitoring for gentamicin levels (they mention record times, but not levels). S011 mentions record sampling for therapeutic monitoring, not explicit level measurement. Might be minor omission but not critical.\n\nThus ratings: clinical_correctness 5, completeness 5, utility 5, safety 5.\n\nProvide contradictions empty list, critical_omissions empty list.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.252831887,
+      "prompt_tokens": 4501,
+      "prompt_time": 0.185409734,
+      "completion_tokens": 526,
+      "completion_time": 1.082546228,
+      "total_tokens": 5027,
+      "total_time": 1.267955962,
+      "completion_tokens_details": {
+        "reasoning_tokens": 349
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c868cf1eaa",
+    "x_groq": {
+      "id": "req_01m5t7gd7qemx8qd14f49x8qm6",
+      "seed": 197033602
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "987",
+    "x-ratelimit-remaining-tokens": "1699",
+    "x-ratelimit-reset-requests": "18m43.2s",
+    "x-ratelimit-reset-tokens": "47.257s"
+  },
+  "result": {
+    "clinical_correctness": 5,
+    "clinical_completeness": 5,
+    "clinical_utility": 5,
+    "safety": 5,
+    "contradictions": [],
+    "critical_omissions": [],
+    "regimen_incomplete": false,
+    "rationale": "Plan aligns with NICE recommendations: uses benzylpenicillin 25\u202fmg/kg q12h and gentamicin 5\u202fmg/kg as first\u2011line empirical therapy (S005); duration 7\u202fdays or stop at 36\u202fh if culture negative and criteria met (S006, S012); records gentamicin timing (S011); includes blood culture and baseline CRP before antibiotics (S007); no penicillin allergy, appropriate for 34\u2011week neonate in hospital setting. No contradictory statements identified. All required safety and monitoring elements are present; regimen dosing is complete."
+  }
+}

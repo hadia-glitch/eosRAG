@@ -1,0 +1,108 @@
+{
+  "completed": true,
+  "task_sha256": "ea34836d4aa59b8e277e0ec7b0a846e1334300b45971c841a419816ca8a418ff",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.6490638999966905,
+  "kind": "plan",
+  "case_id": "cp_case_009",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-759c4199-b1c3-4c35-a42c-cee76c323439",
+    "object": "chat.completion",
+    "created": 1792954752,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\"claim_id\":\"L002\",\"reason\":\"Risk summary and penicillin allergy contraindication not found in supplied passages\"},\n    {\"claim_id\":\"L005\",\"reason\":\"Risk category and scoring details not present in evidence\"},\n    {\"claim_id\":\"L007\",\"reason\":\"Driver breakdown percentages not supported by any passage\"},\n    {\"claim_id\":\"L011\",\"reason\":\"Recommendation to substitute ampicillin due to allergy lacks source support\"},\n    {\"claim_id\":\"L020\",\"reason\":\"Use of clindamycin as default alternative not mentioned in provided evidence\"},\n    {\"claim_id\":\"L021\",\"reason\":\"Duration 48-72\u202fh and stop criteria not cited in any passage\"},\n    {\"claim_id\":\"L026\",\"reason\":\"Escalation criteria not grounded in the retrieved text\"}\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"Only monitoring guidance (at least 12\u202fh using early warning system) is supported by S015; all other clinical assertions (risk scoring, antibiotic substitution, clindamycin default, treatment duration, escalation) lack direct citation in the provided evidence. Citation mapping is unavailable, further reducing confidence in citation correctness and completeness.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Check claims against passages S009,S011,S012,S015,S016. Many plan statements not supported. Likely low scores. Identify unsupported claims: L002 risk summary uses intermediate risk based on score 5, but no passage gives scoring details. No evidence for score 5. So unsupported. L005 risk analysis similar unsupported. L007 driver breakdown unsupported. L011 initiate antibiotics substituting ampicillin due to allergy \u2013 guideline mentions alternative for penicillin allergy? Not in passages. No. So unsupported. L019 dose not specified \u2013 that's acknowledged as missing, not unsupported claim. L020 clindamycin default \u2013 no evidence. So unsupported. L021 duration 48-72h stop criteria \u2013 not in passages. L024 monitoring plan \u2013 S015 mentions monitor at least 12h using early warning system, so supported. L026 escalation criteria \u2013 not in passages. L032 disambiguation block not relevant.\n\nUngrounded dose: any dose mentioned? No dose given, but claim of \"dose not specified\" is fine. No numeric dose asserted. So ungrouned_dose false.\n\nCitation correctness: mapping unavailable, many claims lack citations. So low.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.252376653,
+      "prompt_tokens": 2902,
+      "prompt_time": 0.120404607,
+      "completion_tokens": 554,
+      "completion_time": 1.155757508,
+      "total_tokens": 3456,
+      "total_time": 1.276162115,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 249
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_bb691ea66b",
+    "x_groq": {
+      "id": "req_01m5t6wp6ae9wbgb2q71fdwgf1",
+      "seed": 46823615
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "969",
+    "x-ratelimit-remaining-tokens": "4335",
+    "x-ratelimit-reset-requests": "44m38.4s",
+    "x-ratelimit-reset-tokens": "27.487s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Risk summary and penicillin allergy contraindication not found in supplied passages",
+        "claim_text": "This 36-week neonate presents with an INTERMEDIATE risk for early-onset sepsis (EOS) driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L). The patient has a documented penicillin allergy, which critically contraindicates the standard first-line beta-lactam therapy (ampicillin)."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Risk category and scoring details not present in evidence",
+        "claim_text": "The risk category is INTERMEDIATE (Score 5) based on the NICE NG195 framework. The score is derived equally from Layer 1 (Prolonged ROM >= 18h, 2 points) and Layer 3 (Elevated CRP, 2 points). Although the patient received adequate intrapartum antibiotics, the prolonged ROM and inflammatory marker elevation necessitate further evaluation and likely treatment."
+      },
+      {
+        "claim_id": "L007",
+        "reason": "Driver breakdown percentages not supported by any passage",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      {
+        "claim_id": "L011",
+        "reason": "Recommendation to substitute ampicillin due to allergy lacks source support",
+        "claim_text": "- Initiate antibiotic therapy immediately, substituting ampicillin due to penicillin allergy."
+      },
+      {
+        "claim_id": "L020",
+        "reason": "Use of clindamycin as default alternative not mentioned in provided evidence",
+        "claim_text": "- [DETERMINISTIC DEFAULT] IV clindamycin (per documented penicillin allergy \u2014 provides Group B Streptococcus coverage in place of the withheld beta-lactam)"
+      },
+      {
+        "claim_id": "L021",
+        "reason": "Duration 48-72\u202fh and stop criteria not cited in any passage",
+        "claim_text": "duration=48-72 hours pending culture results stop_criteria=Stop antibiotics if blood cultures are negative at 48 hours and the baby is clinically well with reassuring CRP trends."
+      },
+      {
+        "claim_id": "L026",
+        "reason": "Escalation criteria not grounded in the retrieved text",
+        "claim_text": "ESCALATION CRITERIA:"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "Only monitoring guidance (at least 12\u202fh using early warning system) is supported by S015; all other clinical assertions (risk scoring, antibiotic substitution, clindamycin default, treatment duration, escalation) lack direct citation in the provided evidence. Citation mapping is unavailable, further reducing confidence in citation correctness and completeness."
+  }
+}

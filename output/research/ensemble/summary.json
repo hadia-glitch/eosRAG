@@ -1,0 +1,1396 @@
+{
+  "seed": 31,
+  "csv_sha256": "fe1787c19c929324d2862e5fb66f5cf3945a6ba75a41623a5ba506fa6f9e294d",
+  "experiments": [
+    {
+      "cohort": "all_neonatal_ages",
+      "target": "supplied observation-associated Sepsis_Label",
+      "clinical_eos_eligible": false,
+      "split": "Same previously reported patient-ID-disjoint fit/calibration/validation/test; post-hoc model comparison",
+      "estimators": [
+        "GradientBoostingClassifier",
+        "XGBClassifier",
+        "LinearSVC",
+        "RandomForestClassifier"
+      ],
+      "svm_kernel": "linear; this is not an RBF SVM",
+      "ensemble": "fixed equal mean of separately Platt-calibrated component probabilities",
+      "candidates": {
+        "gradient_boosting": {
+          "validation": {
+            "n": 15039,
+            "positive": 6245,
+            "prevalence": 0.4152536737815014,
+            "auroc": 0.9997324400343564,
+            "auprc": 0.9996206499073781,
+            "brier": 0.006185959305792853,
+            "sensitivity": 0.9498799039231385,
+            "specificity": 0.9992040027291335,
+            "ppv": 0.9988213503956895,
+            "threshold": 0.97374884920256,
+            "calibration_bins": [
+              {
+                "n": 8635,
+                "predicted": 0.0017091946928075108,
+                "observed": 0.0006948465547191662
+              },
+              {
+                "n": 72,
+                "predicted": 0.14188701825728017,
+                "observed": 0.2361111111111111
+              },
+              {
+                "n": 30,
+                "predicted": 0.24554150528461266,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 22,
+                "predicted": 0.3407376809359634,
+                "observed": 0.5454545454545454
+              },
+              {
+                "n": 25,
+                "predicted": 0.4522226377040881,
+                "observed": 0.56
+              },
+              {
+                "n": 27,
+                "predicted": 0.5499401459828203,
+                "observed": 0.5555555555555556
+              },
+              {
+                "n": 33,
+                "predicted": 0.649467947558364,
+                "observed": 0.7272727272727273
+              },
+              {
+                "n": 25,
+                "predicted": 0.7615048702766267,
+                "observed": 0.64
+              },
+              {
+                "n": 54,
+                "predicted": 0.8548650692181924,
+                "observed": 0.7962962962962963
+              },
+              {
+                "n": 6116,
+                "predicted": 0.9966911202718446,
+                "observed": 0.9954218443427076
+              }
+            ]
+          },
+          "test": {
+            "n": 14937,
+            "positive": 6250,
+            "prevalence": 0.4184240476668675,
+            "auroc": 0.9996424081961551,
+            "auprc": 0.9994699364176283,
+            "brier": 0.006196423809739908,
+            "sensitivity": 0.95264,
+            "specificity": 0.9988488546103372,
+            "ppv": 0.9983232729711603,
+            "threshold": 0.97374884920256,
+            "calibration_bins": [
+              {
+                "n": 8519,
+                "predicted": 0.0015768493099165043,
+                "observed": 0.0010564620260593966
+              },
+              {
+                "n": 56,
+                "predicted": 0.1454422896017886,
+                "observed": 0.14285714285714285
+              },
+              {
+                "n": 38,
+                "predicted": 0.24912283777667052,
+                "observed": 0.3157894736842105
+              },
+              {
+                "n": 29,
+                "predicted": 0.3450401513246135,
+                "observed": 0.3448275862068966
+              },
+              {
+                "n": 24,
+                "predicted": 0.4558224934428483,
+                "observed": 0.5
+              },
+              {
+                "n": 29,
+                "predicted": 0.5537192104076184,
+                "observed": 0.6206896551724138
+              },
+              {
+                "n": 26,
+                "predicted": 0.6507631162646292,
+                "observed": 0.5769230769230769
+              },
+              {
+                "n": 32,
+                "predicted": 0.7538546759409899,
+                "observed": 0.625
+              },
+              {
+                "n": 54,
+                "predicted": 0.8609133695345015,
+                "observed": 0.8148148148148148
+              },
+              {
+                "n": 6130,
+                "predicted": 0.9966781677221952,
+                "observed": 0.9954323001631321
+              }
+            ]
+          }
+        },
+        "xgboost": {
+          "validation": {
+            "n": 15039,
+            "positive": 6245,
+            "prevalence": 0.4152536737815014,
+            "auroc": 0.9997724993731624,
+            "auprc": 0.9996776575047125,
+            "brier": 0.005735115657952621,
+            "sensitivity": 0.9498799039231385,
+            "specificity": 0.9992040027291335,
+            "ppv": 0.9988213503956895,
+            "threshold": 0.9758430997122156,
+            "calibration_bins": [
+              {
+                "n": 8647,
+                "predicted": 0.0016810943304790072,
+                "observed": 0.0006938822713079681
+              },
+              {
+                "n": 60,
+                "predicted": 0.13773241100592312,
+                "observed": 0.21666666666666667
+              },
+              {
+                "n": 22,
+                "predicted": 0.2413472734653301,
+                "observed": 0.3181818181818182
+              },
+              {
+                "n": 19,
+                "predicted": 0.34205617218834855,
+                "observed": 0.5263157894736842
+              },
+              {
+                "n": 28,
+                "predicted": 0.4412232778905172,
+                "observed": 0.5357142857142857
+              },
+              {
+                "n": 23,
+                "predicted": 0.554964647982497,
+                "observed": 0.6956521739130435
+              },
+              {
+                "n": 28,
+                "predicted": 0.648659421904694,
+                "observed": 0.4642857142857143
+              },
+              {
+                "n": 28,
+                "predicted": 0.7503211258668873,
+                "observed": 0.6785714285714286
+              },
+              {
+                "n": 61,
+                "predicted": 0.8569027268015561,
+                "observed": 0.7704918032786885
+              },
+              {
+                "n": 6123,
+                "predicted": 0.9972305413455698,
+                "observed": 0.9960803527682509
+              }
+            ]
+          },
+          "test": {
+            "n": 14937,
+            "positive": 6250,
+            "prevalence": 0.4184240476668675,
+            "auroc": 0.999720980775872,
+            "auprc": 0.9995991798182123,
+            "brier": 0.005454936676107218,
+            "sensitivity": 0.9504,
+            "specificity": 0.9991941982272361,
+            "ppv": 0.9988229359340844,
+            "threshold": 0.9758430997122156,
+            "calibration_bins": [
+              {
+                "n": 8535,
+                "predicted": 0.0015567835624482832,
+                "observed": 0.0012888107791446982
+              },
+              {
+                "n": 44,
+                "predicted": 0.14112975684406212,
+                "observed": 0.022727272727272728
+              },
+              {
+                "n": 27,
+                "predicted": 0.24244894879253578,
+                "observed": 0.2962962962962963
+              },
+              {
+                "n": 31,
+                "predicted": 0.3485022244416835,
+                "observed": 0.22580645161290322
+              },
+              {
+                "n": 13,
+                "predicted": 0.4435333510740502,
+                "observed": 0.5384615384615384
+              },
+              {
+                "n": 29,
+                "predicted": 0.55772134070701,
+                "observed": 0.5862068965517241
+              },
+              {
+                "n": 31,
+                "predicted": 0.6541155466706917,
+                "observed": 0.6129032258064516
+              },
+              {
+                "n": 39,
+                "predicted": 0.7621797847985834,
+                "observed": 0.717948717948718
+              },
+              {
+                "n": 52,
+                "predicted": 0.8494218276384793,
+                "observed": 0.8076923076923077
+              },
+              {
+                "n": 6136,
+                "predicted": 0.9971492714884119,
+                "observed": 0.9957627118644068
+              }
+            ]
+          }
+        },
+        "svm": {
+          "validation": {
+            "n": 15039,
+            "positive": 6245,
+            "prevalence": 0.4152536737815014,
+            "auroc": 0.9994172094555335,
+            "auprc": 0.9992043336058086,
+            "brier": 0.008790619806836665,
+            "sensitivity": 0.9498799039231385,
+            "specificity": 0.9982942915624289,
+            "ppv": 0.9974777198587523,
+            "threshold": 0.9264349952840355,
+            "calibration_bins": [
+              {
+                "n": 8512,
+                "predicted": 0.003497080305820442,
+                "observed": 0.002232142857142857
+              },
+              {
+                "n": 133,
+                "predicted": 0.14343475035541714,
+                "observed": 0.14285714285714285
+              },
+              {
+                "n": 74,
+                "predicted": 0.24409866269758015,
+                "observed": 0.24324324324324326
+              },
+              {
+                "n": 48,
+                "predicted": 0.3542699747587082,
+                "observed": 0.3541666666666667
+              },
+              {
+                "n": 48,
+                "predicted": 0.45044572421120926,
+                "observed": 0.5416666666666666
+              },
+              {
+                "n": 32,
+                "predicted": 0.5571513780485581,
+                "observed": 0.53125
+              },
+              {
+                "n": 43,
+                "predicted": 0.6543039563293729,
+                "observed": 0.6976744186046512
+              },
+              {
+                "n": 67,
+                "predicted": 0.7530458442713726,
+                "observed": 0.8059701492537313
+              },
+              {
+                "n": 95,
+                "predicted": 0.8530026749107393,
+                "observed": 0.8421052631578947
+              },
+              {
+                "n": 5987,
+                "predicted": 0.9974576843355766,
+                "observed": 0.9963253716385502
+              }
+            ]
+          },
+          "test": {
+            "n": 14937,
+            "positive": 6250,
+            "prevalence": 0.4184240476668675,
+            "auroc": 0.999308889144699,
+            "auprc": 0.9990460639818548,
+            "brier": 0.008950843496199585,
+            "sensitivity": 0.94864,
+            "specificity": 0.9980430528375733,
+            "ppv": 0.9971409350824083,
+            "threshold": 0.9264349952840355,
+            "calibration_bins": [
+              {
+                "n": 8401,
+                "predicted": 0.003494840721476832,
+                "observed": 0.0024997024163790024
+              },
+              {
+                "n": 121,
+                "predicted": 0.14267854461837304,
+                "observed": 0.1322314049586777
+              },
+              {
+                "n": 75,
+                "predicted": 0.24597688698737605,
+                "observed": 0.2
+              },
+              {
+                "n": 53,
+                "predicted": 0.34228754212337614,
+                "observed": 0.3584905660377358
+              },
+              {
+                "n": 46,
+                "predicted": 0.4460260239746168,
+                "observed": 0.5217391304347826
+              },
+              {
+                "n": 47,
+                "predicted": 0.5562443405049888,
+                "observed": 0.574468085106383
+              },
+              {
+                "n": 43,
+                "predicted": 0.6473514402738569,
+                "observed": 0.6046511627906976
+              },
+              {
+                "n": 57,
+                "predicted": 0.760536967350367,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 95,
+                "predicted": 0.8560355100470732,
+                "observed": 0.9052631578947369
+              },
+              {
+                "n": 5999,
+                "predicted": 0.997357199084369,
+                "observed": 0.9964994165694282
+              }
+            ]
+          }
+        },
+        "forest": {
+          "validation": {
+            "n": 15039,
+            "positive": 6245,
+            "prevalence": 0.4152536737815014,
+            "auroc": 0.9996847330035964,
+            "auprc": 0.9995686654257075,
+            "brier": 0.006155623692939904,
+            "sensitivity": 0.9498799039231385,
+            "specificity": 0.9993177166249716,
+            "ppv": 0.998989558773998,
+            "threshold": 0.9650834327488982,
+            "calibration_bins": [
+              {
+                "n": 8605,
+                "predicted": 0.002535855605123989,
+                "observed": 0.0010459035444509005
+              },
+              {
+                "n": 88,
+                "predicted": 0.1394924834592253,
+                "observed": 0.1590909090909091
+              },
+              {
+                "n": 42,
+                "predicted": 0.24103490409639244,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 30,
+                "predicted": 0.3472330665324846,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 34,
+                "predicted": 0.4495354835657021,
+                "observed": 0.5588235294117647
+              },
+              {
+                "n": 29,
+                "predicted": 0.5444563747893292,
+                "observed": 0.6896551724137931
+              },
+              {
+                "n": 24,
+                "predicted": 0.6498529486538694,
+                "observed": 0.5833333333333334
+              },
+              {
+                "n": 40,
+                "predicted": 0.7533223061928963,
+                "observed": 0.625
+              },
+              {
+                "n": 69,
+                "predicted": 0.8580585331645771,
+                "observed": 0.8695652173913043
+              },
+              {
+                "n": 6078,
+                "predicted": 0.9975971768557534,
+                "observed": 0.9970384995064165
+              }
+            ]
+          },
+          "test": {
+            "n": 14937,
+            "positive": 6250,
+            "prevalence": 0.4184240476668675,
+            "auroc": 0.9995617359272476,
+            "auprc": 0.9994163374300657,
+            "brier": 0.0063347886823814535,
+            "sensitivity": 0.94896,
+            "specificity": 0.9991941982272361,
+            "ppv": 0.9988211519029977,
+            "threshold": 0.9650834327488982,
+            "calibration_bins": [
+              {
+                "n": 8477,
+                "predicted": 0.002334110697867998,
+                "observed": 0.0016515276630883566
+              },
+              {
+                "n": 96,
+                "predicted": 0.1430495055777962,
+                "observed": 0.125
+              },
+              {
+                "n": 40,
+                "predicted": 0.24314439620279016,
+                "observed": 0.1
+              },
+              {
+                "n": 24,
+                "predicted": 0.3508069514367567,
+                "observed": 0.375
+              },
+              {
+                "n": 37,
+                "predicted": 0.4549863706404259,
+                "observed": 0.5135135135135135
+              },
+              {
+                "n": 34,
+                "predicted": 0.5421103795910807,
+                "observed": 0.5294117647058824
+              },
+              {
+                "n": 33,
+                "predicted": 0.6533396170931969,
+                "observed": 0.5454545454545454
+              },
+              {
+                "n": 41,
+                "predicted": 0.7548850805728216,
+                "observed": 0.6829268292682927
+              },
+              {
+                "n": 80,
+                "predicted": 0.8567983151168658,
+                "observed": 0.8875
+              },
+              {
+                "n": 6075,
+                "predicted": 0.9975754464446644,
+                "observed": 0.997037037037037
+              }
+            ]
+          }
+        },
+        "equal_probability_ensemble": {
+          "validation": {
+            "n": 15039,
+            "positive": 6245,
+            "prevalence": 0.4152536737815014,
+            "auroc": 0.9997550553519914,
+            "auprc": 0.9996579431855815,
+            "brier": 0.005796376381937328,
+            "sensitivity": 0.9498799039231385,
+            "specificity": 0.9994314305208096,
+            "ppv": 0.9991578238167425,
+            "threshold": 0.9555154877293797,
+            "calibration_bins": [
+              {
+                "n": 8591,
+                "predicted": 0.0031596347527827165,
+                "observed": 0.0008148061925270633
+              },
+              {
+                "n": 95,
+                "predicted": 0.14324051536704097,
+                "observed": 0.11578947368421053
+              },
+              {
+                "n": 51,
+                "predicted": 0.24954584272320857,
+                "observed": 0.29411764705882354
+              },
+              {
+                "n": 25,
+                "predicted": 0.35212571460951614,
+                "observed": 0.52
+              },
+              {
+                "n": 36,
+                "predicted": 0.4496085528102099,
+                "observed": 0.4166666666666667
+              },
+              {
+                "n": 22,
+                "predicted": 0.5454219931520833,
+                "observed": 0.5454545454545454
+              },
+              {
+                "n": 40,
+                "predicted": 0.6497598223618256,
+                "observed": 0.7
+              },
+              {
+                "n": 47,
+                "predicted": 0.7579748020216992,
+                "observed": 0.7872340425531915
+              },
+              {
+                "n": 82,
+                "predicted": 0.8575838328335451,
+                "observed": 0.8536585365853658
+              },
+              {
+                "n": 6050,
+                "predicted": 0.9968920961204324,
+                "observed": 0.9978512396694215
+              }
+            ]
+          },
+          "test": {
+            "n": 14937,
+            "positive": 6250,
+            "prevalence": 0.4184240476668675,
+            "auroc": 0.9996848624381258,
+            "auprc": 0.9995557599020848,
+            "brier": 0.005765012359715748,
+            "sensitivity": 0.948,
+            "specificity": 0.9991941982272361,
+            "ppv": 0.99881995954147,
+            "threshold": 0.9555154877293797,
+            "calibration_bins": [
+              {
+                "n": 8454,
+                "predicted": 0.002847114467036104,
+                "observed": 0.0008280104092737166
+              },
+              {
+                "n": 109,
+                "predicted": 0.14000320440391287,
+                "observed": 0.09174311926605505
+              },
+              {
+                "n": 48,
+                "predicted": 0.2433198018003945,
+                "observed": 0.125
+              },
+              {
+                "n": 29,
+                "predicted": 0.3383970206070288,
+                "observed": 0.3448275862068966
+              },
+              {
+                "n": 33,
+                "predicted": 0.4567718082325344,
+                "observed": 0.5757575757575758
+              },
+              {
+                "n": 35,
+                "predicted": 0.5514067123687417,
+                "observed": 0.5714285714285714
+              },
+              {
+                "n": 42,
+                "predicted": 0.6557645304013777,
+                "observed": 0.6190476190476191
+              },
+              {
+                "n": 39,
+                "predicted": 0.756554815013421,
+                "observed": 0.7692307692307693
+              },
+              {
+                "n": 98,
+                "predicted": 0.8554028200125138,
+                "observed": 0.8571428571428571
+              },
+              {
+                "n": 6050,
+                "predicted": 0.9969495991625428,
+                "observed": 0.9980165289256199
+              }
+            ]
+          }
+        }
+      },
+      "selected_by_validation_brier": "xgboost",
+      "selected_test_cluster_bootstrap_95ci": {
+        "auroc": [
+          0.9996208481443405,
+          0.9998123665626817
+        ],
+        "auprc": [
+          0.9994372651870552,
+          0.999741935138594
+        ],
+        "brier": [
+          0.004638802067179113,
+          0.0061669114287168595
+        ],
+        "sensitivity": [
+          0.9454730875033425,
+          0.95541867559866
+        ],
+        "specificity": [
+          0.9986139377171753,
+          0.9997683937175638
+        ]
+      },
+      "portable_probability_parity_atol": 1e-05,
+      "application_model_changed": false,
+      "application_note": "Existing pinned forest remains deployed pending separate artifact/input contract review"
+    },
+    {
+      "cohort": "postnatal_days_0_2",
+      "target": "supplied observation-associated Sepsis_Label",
+      "clinical_eos_eligible": false,
+      "split": "Same previously reported patient-ID-disjoint fit/calibration/validation/test; post-hoc model comparison",
+      "estimators": [
+        "GradientBoostingClassifier",
+        "XGBClassifier",
+        "LinearSVC",
+        "RandomForestClassifier"
+      ],
+      "svm_kernel": "linear; this is not an RBF SVM",
+      "ensemble": "fixed equal mean of separately Platt-calibrated component probabilities",
+      "candidates": {
+        "gradient_boosting": {
+          "validation": {
+            "n": 1640,
+            "positive": 675,
+            "prevalence": 0.4115853658536585,
+            "auroc": 0.9994872385338708,
+            "auprc": 0.9992593179523681,
+            "brier": 0.008349347110820993,
+            "sensitivity": 0.9496296296296296,
+            "specificity": 0.9968911917098445,
+            "ppv": 0.9953416149068323,
+            "threshold": 0.9752206059964522,
+            "calibration_bins": [
+              {
+                "n": 940,
+                "predicted": 0.0031754877893675304,
+                "observed": 0.0
+              },
+              {
+                "n": 6,
+                "predicted": 0.16687908752921987,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 7,
+                "predicted": 0.23335646400385465,
+                "observed": 0.14285714285714285
+              },
+              {
+                "n": 4,
+                "predicted": 0.3648565091696693,
+                "observed": 0.25
+              },
+              {
+                "n": 1,
+                "predicted": 0.49852379167557087,
+                "observed": 0.0
+              },
+              {
+                "n": 2,
+                "predicted": 0.5472362898200072,
+                "observed": 1.0
+              },
+              {
+                "n": 2,
+                "predicted": 0.6399639578701919,
+                "observed": 0.5
+              },
+              {
+                "n": 3,
+                "predicted": 0.7323011697311448,
+                "observed": 1.0
+              },
+              {
+                "n": 5,
+                "predicted": 0.8430823371637862,
+                "observed": 0.4
+              },
+              {
+                "n": 670,
+                "predicted": 0.996280589889989,
+                "observed": 0.9895522388059701
+              }
+            ]
+          },
+          "test": {
+            "n": 1598,
+            "positive": 735,
+            "prevalence": 0.4599499374217772,
+            "auroc": 0.9995901025531881,
+            "auprc": 0.9995145588811648,
+            "brier": 0.007648585841278737,
+            "sensitivity": 0.9387755102040817,
+            "specificity": 0.9976825028968713,
+            "ppv": 0.9971098265895953,
+            "threshold": 0.9752206059964522,
+            "calibration_bins": [
+              {
+                "n": 847,
+                "predicted": 0.0032753129755472227,
+                "observed": 0.0023612750885478157
+              },
+              {
+                "n": 8,
+                "predicted": 0.15815273343235936,
+                "observed": 0.5
+              },
+              {
+                "n": 3,
+                "predicted": 0.25156138996179994,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 4,
+                "predicted": 0.34895780173814167,
+                "observed": 0.25
+              },
+              {
+                "n": 2,
+                "predicted": 0.41759555701509943,
+                "observed": 0.0
+              },
+              {
+                "n": 2,
+                "predicted": 0.5426121655543138,
+                "observed": 0.5
+              },
+              {
+                "n": 2,
+                "predicted": 0.6419314248853696,
+                "observed": 0.5
+              },
+              {
+                "n": 6,
+                "predicted": 0.7313522245840853,
+                "observed": 0.8333333333333334
+              },
+              {
+                "n": 7,
+                "predicted": 0.8535741749889031,
+                "observed": 0.8571428571428571
+              },
+              {
+                "n": 717,
+                "predicted": 0.99640606768189,
+                "observed": 0.99581589958159
+              }
+            ]
+          }
+        },
+        "xgboost": {
+          "validation": {
+            "n": 1640,
+            "positive": 675,
+            "prevalence": 0.4115853658536585,
+            "auroc": 0.9995148723853388,
+            "auprc": 0.9992876269519537,
+            "brier": 0.008014069565636082,
+            "sensitivity": 0.9496296296296296,
+            "specificity": 0.9989637305699481,
+            "ppv": 0.9984423676012462,
+            "threshold": 0.9847835965160497,
+            "calibration_bins": [
+              {
+                "n": 940,
+                "predicted": 0.002602763320684935,
+                "observed": 0.0
+              },
+              {
+                "n": 9,
+                "predicted": 0.13961447545815478,
+                "observed": 0.2222222222222222
+              },
+              {
+                "n": 4,
+                "predicted": 0.2489521381090881,
+                "observed": 0.25
+              },
+              {
+                "n": 2,
+                "predicted": 0.3712946486499169,
+                "observed": 0.0
+              },
+              {
+                "n": 2,
+                "predicted": 0.4505767774427106,
+                "observed": 0.0
+              },
+              {
+                "n": 7,
+                "predicted": 0.549991312351897,
+                "observed": 0.7142857142857143
+              },
+              {
+                "n": 1,
+                "predicted": 0.6710690515713735,
+                "observed": 1.0
+              },
+              {
+                "n": 1,
+                "predicted": 0.7010342401559196,
+                "observed": 1.0
+              },
+              {
+                "n": 2,
+                "predicted": 0.8155276056615866,
+                "observed": 0.5
+              },
+              {
+                "n": 672,
+                "predicted": 0.9972088916484599,
+                "observed": 0.9880952380952381
+              }
+            ]
+          },
+          "test": {
+            "n": 1598,
+            "positive": 735,
+            "prevalence": 0.4599499374217772,
+            "auroc": 0.999597985196396,
+            "auprc": 0.9995317368812562,
+            "brier": 0.0076200074373251854,
+            "sensitivity": 0.9360544217687075,
+            "specificity": 1.0,
+            "ppv": 1.0,
+            "threshold": 0.9847835965160497,
+            "calibration_bins": [
+              {
+                "n": 848,
+                "predicted": 0.0027013789272775876,
+                "observed": 0.003537735849056604
+              },
+              {
+                "n": 8,
+                "predicted": 0.14479866291254706,
+                "observed": 0.25
+              },
+              {
+                "n": 5,
+                "predicted": 0.25535220143136367,
+                "observed": 0.4
+              },
+              {
+                "n": 3,
+                "predicted": 0.3684605527356803,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 1,
+                "predicted": 0.4486588110962717,
+                "observed": 1.0
+              },
+              {
+                "n": 2,
+                "predicted": 0.5486508905145726,
+                "observed": 0.5
+              },
+              {
+                "n": 2,
+                "predicted": 0.620202740396683,
+                "observed": 1.0
+              },
+              {
+                "n": 6,
+                "predicted": 0.7524106466333192,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 6,
+                "predicted": 0.8571368114521304,
+                "observed": 0.8333333333333334
+              },
+              {
+                "n": 717,
+                "predicted": 0.9972782667323125,
+                "observed": 0.99581589958159
+              }
+            ]
+          }
+        },
+        "svm": {
+          "validation": {
+            "n": 1640,
+            "positive": 675,
+            "prevalence": 0.4115853658536585,
+            "auroc": 0.999330646708885,
+            "auprc": 0.9990602157963118,
+            "brier": 0.009976010713379412,
+            "sensitivity": 0.9496296296296296,
+            "specificity": 0.9979274611398964,
+            "ppv": 0.9968895800933126,
+            "threshold": 0.974099330566703,
+            "calibration_bins": [
+              {
+                "n": 931,
+                "predicted": 0.002524421624389066,
+                "observed": 0.0021482277121374865
+              },
+              {
+                "n": 14,
+                "predicted": 0.15072352192696575,
+                "observed": 0.2857142857142857
+              },
+              {
+                "n": 7,
+                "predicted": 0.2498983912987385,
+                "observed": 0.0
+              },
+              {
+                "n": 7,
+                "predicted": 0.3517096201072279,
+                "observed": 0.14285714285714285
+              },
+              {
+                "n": 1,
+                "predicted": 0.4116653422323287,
+                "observed": 0.0
+              },
+              {
+                "n": 2,
+                "predicted": 0.5655749610563726,
+                "observed": 0.5
+              },
+              {
+                "n": 6,
+                "predicted": 0.6487005767207848,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 6,
+                "predicted": 0.7454864428314312,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 8,
+                "predicted": 0.8469166641795549,
+                "observed": 0.75
+              },
+              {
+                "n": 658,
+                "predicted": 0.9982061275071998,
+                "observed": 0.9924012158054711
+              }
+            ]
+          },
+          "test": {
+            "n": 1598,
+            "positive": 735,
+            "prevalence": 0.4599499374217772,
+            "auroc": 0.9989657972111208,
+            "auprc": 0.9988262645019663,
+            "brier": 0.012958267903586947,
+            "sensitivity": 0.9401360544217687,
+            "specificity": 0.9976825028968713,
+            "ppv": 0.9971139971139971,
+            "threshold": 0.974099330566703,
+            "calibration_bins": [
+              {
+                "n": 838,
+                "predicted": 0.003701450548607454,
+                "observed": 0.007159904534606206
+              },
+              {
+                "n": 15,
+                "predicted": 0.13950012700634765,
+                "observed": 0.2
+              },
+              {
+                "n": 10,
+                "predicted": 0.24324185161954026,
+                "observed": 0.5
+              },
+              {
+                "n": 3,
+                "predicted": 0.32716144304767947,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 5,
+                "predicted": 0.45330300957979547,
+                "observed": 0.6
+              },
+              {
+                "n": 3,
+                "predicted": 0.5249749047313828,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 3,
+                "predicted": 0.6568213053887493,
+                "observed": 0.0
+              },
+              {
+                "n": 5,
+                "predicted": 0.7432675045894774,
+                "observed": 1.0
+              },
+              {
+                "n": 6,
+                "predicted": 0.8511752964541403,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 710,
+                "predicted": 0.9978899305103524,
+                "observed": 0.9943661971830986
+              }
+            ]
+          }
+        },
+        "forest": {
+          "validation": {
+            "n": 1640,
+            "positive": 675,
+            "prevalence": 0.4115853658536585,
+            "auroc": 0.9993935904816734,
+            "auprc": 0.9991550804558809,
+            "brier": 0.009446889916086923,
+            "sensitivity": 0.9496296296296296,
+            "specificity": 0.9989637305699481,
+            "ppv": 0.9984423676012462,
+            "threshold": 0.9636427306960579,
+            "calibration_bins": [
+              {
+                "n": 928,
+                "predicted": 0.0031676643023121794,
+                "observed": 0.0010775862068965517
+              },
+              {
+                "n": 16,
+                "predicted": 0.14586278653079693,
+                "observed": 0.125
+              },
+              {
+                "n": 9,
+                "predicted": 0.24516964592243895,
+                "observed": 0.2222222222222222
+              },
+              {
+                "n": 7,
+                "predicted": 0.38292060454846977,
+                "observed": 0.42857142857142855
+              },
+              {
+                "n": 3,
+                "predicted": 0.4396818937923807,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 5,
+                "predicted": 0.546928146663069,
+                "observed": 0.6
+              },
+              {
+                "n": 1,
+                "predicted": 0.6070301221220787,
+                "observed": 0.0
+              },
+              {
+                "n": 2,
+                "predicted": 0.7699209734640982,
+                "observed": 0.0
+              },
+              {
+                "n": 13,
+                "predicted": 0.85907354997942,
+                "observed": 0.6923076923076923
+              },
+              {
+                "n": 656,
+                "predicted": 0.9973778921696738,
+                "observed": 0.9954268292682927
+              }
+            ]
+          },
+          "test": {
+            "n": 1598,
+            "positive": 735,
+            "prevalence": 0.4599499374217772,
+            "auroc": 0.9992070060932832,
+            "auprc": 0.9991312927421774,
+            "brier": 0.009383224495805047,
+            "sensitivity": 0.9306122448979591,
+            "specificity": 1.0,
+            "ppv": 1.0,
+            "threshold": 0.9636427306960579,
+            "calibration_bins": [
+              {
+                "n": 837,
+                "predicted": 0.002926259306105156,
+                "observed": 0.0047789725209080045
+              },
+              {
+                "n": 12,
+                "predicted": 0.12687940926903143,
+                "observed": 0.08333333333333333
+              },
+              {
+                "n": 8,
+                "predicted": 0.2524401692705459,
+                "observed": 0.375
+              },
+              {
+                "n": 11,
+                "predicted": 0.3447870929038073,
+                "observed": 0.45454545454545453
+              },
+              {
+                "n": 4,
+                "predicted": 0.45835141615703967,
+                "observed": 0.25
+              },
+              {
+                "n": 6,
+                "predicted": 0.5406585925158681,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 3,
+                "predicted": 0.6643997004855149,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 4,
+                "predicted": 0.7764055368411394,
+                "observed": 1.0
+              },
+              {
+                "n": 9,
+                "predicted": 0.8484598370422041,
+                "observed": 1.0
+              },
+              {
+                "n": 704,
+                "predicted": 0.9967034301852926,
+                "observed": 0.9971590909090909
+              }
+            ]
+          }
+        },
+        "equal_probability_ensemble": {
+          "validation": {
+            "n": 1640,
+            "positive": 675,
+            "prevalence": 0.4115853658536585,
+            "auroc": 0.9996699289963539,
+            "auprc": 0.9995322254713702,
+            "brier": 0.007647113542012831,
+            "sensitivity": 0.9496296296296296,
+            "specificity": 1.0,
+            "ppv": 1.0,
+            "threshold": 0.9657373570729387,
+            "calibration_bins": [
+              {
+                "n": 930,
+                "predicted": 0.0036386410231762293,
+                "observed": 0.0
+              },
+              {
+                "n": 17,
+                "predicted": 0.13625422019460084,
+                "observed": 0.17647058823529413
+              },
+              {
+                "n": 4,
+                "predicted": 0.22496677066233384,
+                "observed": 0.0
+              },
+              {
+                "n": 5,
+                "predicted": 0.3441394978262774,
+                "observed": 0.4
+              },
+              {
+                "n": 3,
+                "predicted": 0.4312841019691836,
+                "observed": 0.3333333333333333
+              },
+              {
+                "n": 4,
+                "predicted": 0.5524228643380871,
+                "observed": 0.5
+              },
+              {
+                "n": 2,
+                "predicted": 0.6690550135521757,
+                "observed": 0.0
+              },
+              {
+                "n": 10,
+                "predicted": 0.7485817515207643,
+                "observed": 0.5
+              },
+              {
+                "n": 8,
+                "predicted": 0.8600116319419068,
+                "observed": 1.0
+              },
+              {
+                "n": 657,
+                "predicted": 0.9973600830763447,
+                "observed": 0.9954337899543378
+              }
+            ]
+          },
+          "test": {
+            "n": 1598,
+            "positive": 735,
+            "prevalence": 0.4599499374217772,
+            "auroc": 0.9995428066939406,
+            "auprc": 0.9994714856075984,
+            "brier": 0.007768263675856132,
+            "sensitivity": 0.9333333333333333,
+            "specificity": 1.0,
+            "ppv": 1.0,
+            "threshold": 0.9657373570729387,
+            "calibration_bins": [
+              {
+                "n": 834,
+                "predicted": 0.0033090530571922515,
+                "observed": 0.002398081534772182
+              },
+              {
+                "n": 18,
+                "predicted": 0.14604742280479285,
+                "observed": 0.16666666666666666
+              },
+              {
+                "n": 5,
+                "predicted": 0.2613334407201151,
+                "observed": 0.2
+              },
+              {
+                "n": 8,
+                "predicted": 0.3356392307896625,
+                "observed": 0.25
+              },
+              {
+                "n": 3,
+                "predicted": 0.4395020387301282,
+                "observed": 0.6666666666666666
+              },
+              {
+                "n": 4,
+                "predicted": 0.550813228072382,
+                "observed": 0.75
+              },
+              {
+                "n": 6,
+                "predicted": 0.6412146069019767,
+                "observed": 0.8333333333333334
+              },
+              {
+                "n": 4,
+                "predicted": 0.7436762604944709,
+                "observed": 0.75
+              },
+              {
+                "n": 8,
+                "predicted": 0.8495814491520617,
+                "observed": 1.0
+              },
+              {
+                "n": 708,
+                "predicted": 0.9966248984350073,
+                "observed": 0.9971751412429378
+              }
+            ]
+          }
+        }
+      },
+      "selected_by_validation_brier": "equal_probability_ensemble",
+      "selected_test_cluster_bootstrap_95ci": {
+        "auroc": [
+          0.9992222747107468,
+          0.9998299520023141
+        ],
+        "auprc": [
+          0.9990684237143822,
+          0.9997982936877935
+        ],
+        "brier": [
+          0.005041757963727639,
+          0.01085116477168304
+        ],
+        "sensitivity": [
+          0.9171646072374228,
+          0.9477979274611399
+        ],
+        "specificity": [
+          1.0,
+          1.0
+        ]
+      },
+      "portable_probability_parity_atol": 1e-05,
+      "application_model_changed": false,
+      "application_note": "Existing pinned forest remains deployed pending separate artifact/input contract review"
+    }
+  ],
+  "versions": {
+    "scikit-learn": "1.7.0",
+    "xgboost": "3.4.1",
+    "shap": "0.54.1",
+    "numpy": "2.2.6"
+  }
+}

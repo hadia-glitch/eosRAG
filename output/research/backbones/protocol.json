@@ -1,0 +1,28 @@
+{
+  "purpose": "synthetic backbone compatibility and release behavior only",
+  "cases": [
+    "deterioration-1",
+    "crp_alone-1",
+    "initial_investigation-1"
+  ],
+  "models": [
+    [
+      "groq",
+      "openai/gpt-oss-20b"
+    ],
+    [
+      "groq",
+      "qwen/qwen3.8-27b"
+    ]
+  ],
+  "case_source": "Previously exposed rag_v2 development cases",
+  "clinical_validation": false,
+  "untouched_test": false,
+  "transport_retries": 3,
+  "quality_population": "Cases with completed provider transport; malformed model answers and semantic rejections remain outcomes",
+  "paired_arm_population": "The same eligible cases for both release arms",
+  "minimum_cloud_call_gap_seconds": 20.0,
+  "local_timeout_seconds": 60,
+  "local_cloud_fallback": false,
+  "verification_source_sha256": "c35e12ecb847431e636c4084207de06615faa63ff62fe61c53fde1558e13e04d"
+}

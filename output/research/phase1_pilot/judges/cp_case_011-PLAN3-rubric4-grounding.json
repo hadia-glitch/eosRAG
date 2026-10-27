@@ -1,0 +1,80 @@
+{
+  "completed": true,
+  "task_sha256": "255e993ad99b1d7b9355e5157c00cd7afaf11072b58d5dc7fc00a78b9f9fa8ef",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.3368305999902077,
+  "kind": "plan",
+  "case_id": "cp_case_011",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "dense_only_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-564966bd-7392-451c-9173-2335a6f76a8e",
+    "object": "chat.completion",
+    "created": 1792955162,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"Specific numeric risk score (5) and probability (3.0/1000) are not present in any retrieved passage; passages only give thresholds and general statements.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Quantitative driver breakdown (2 points each for ROM and CRP) is not found in the source passages.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan cites AAP passages that describe overall EOS epidemiology, risk thresholds (>=3/1000 for antibiotics) and categorical risk factors, but do not provide the detailed numeric score, probability, or point allocation claimed in L002 and L008. Mapping of numbered citations is unavailable, limiting verification of citation correctness. No numeric dosing information is asserted, so no ungounded dose claim exists.\"\n}",
+          "reasoning": "We need evaluate faithfulness etc. Check claims against passages S001,S007,S008,S009,S010.\n\nKey claims: risk category intermediate, score 5, probability 3 per 1000, driven by ROM and CRP. Passages: S009 mentions threshold >=3 per 1000 for antibiotics. S001 mentions categorical risk factors but not score. No passage gives numeric score 5 or probability 3. So unsupported.\n\nCitation mapping missing, so citation correctness low.\n\nUngrounded dose: lines L017-L018 mention ampicillin and gentamicin withheld, no dose. That's omission not unsupported claim. No dose provided, but claim of withholding is okay. No numeric dose asserted, so ungrouned dose false.\n\nUnsupported claims list: L002 (risk assessment details), L005 (threshold statement matches S009 partially but says exactly 3.0 per 1000 meets criterion \u2013 threshold is >=3 per 1000, okay supported by S009). So L005 is supported. L008 driver breakdown points not in source. So unsupported.\n\nContradictions: none? maybe L002 says \"despite adequate intrapartum antibiotics\" but S001 mentions inadequate IAP as risk factor; not contradictory.\n\nReturn JSON.\n\nFaithfulness rating: many unsupported, maybe 2.\n\nCitation correctness: mapping unavailable, can't verify, maybe 2.\n\nCitation completeness: many claims lack citations, 2.\n\nunsupported_claims list with claim_ids and reason.\n\ncontradictions empty.\n\nungrounded_dose false, empty examples.\n\nProvide rationale.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.252408943,
+      "prompt_tokens": 2649,
+      "prompt_time": 0.10991534,
+      "completion_tokens": 567,
+      "completion_time": 1.186421914,
+      "total_tokens": 3216,
+      "total_time": 1.296337254,
+      "completion_tokens_details": {
+        "reasoning_tokens": 315
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m5t796b1ejk9nfm8bpywrk6w",
+      "seed": 1545484196
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "994",
+    "x-ratelimit-remaining-tokens": "4725",
+    "x-ratelimit-reset-requests": "8m38.4s",
+    "x-ratelimit-reset-tokens": "24.562s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Specific numeric risk score (5) and probability (3.0/1000) are not present in any retrieved passage; passages only give thresholds and general statements.",
+        "claim_text": "This 36-week gestation neonate is assessed as INTERMEDIATE risk for early-onset sepsis (EOS) with a combined score of 5 and a probability of 3.0 per 1000 live births. The risk is driven by prolonged rupture of membranes (20 hours) and an elevated CRP level (12.0 mg/L), despite adequate intrapartum antibiotics and a reassuring clinical examination."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Quantitative driver breakdown (2 points each for ROM and CRP) is not found in the source passages.",
+        "claim_text": "Prolonged rupture of membranes (20.0h, \u226518h) contributes 2 points (50% of risk). Elevated CRP (12.0 mg/L) contributes 2 points (50% of risk)."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan cites AAP passages that describe overall EOS epidemiology, risk thresholds (>=3/1000 for antibiotics) and categorical risk factors, but do not provide the detailed numeric score, probability, or point allocation claimed in L002 and L008. Mapping of numbered citations is unavailable, limiting verification of citation correctness. No numeric dosing information is asserted, so no ungounded dose claim exists."
+  }
+}

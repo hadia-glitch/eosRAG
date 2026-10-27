@@ -1,0 +1,222 @@
+{
+  "key": "cp_case_009-chunks-02",
+  "kind": "chunks",
+  "case_id": "cp_case_009",
+  "prompt": {
+    "task": "Grade each target passage for this case. Grade 0=irrelevant/inapplicable, 1=background or marginal, 2=useful applicable support, 3=direct actionable evidence for this specific scenario. Score by actual text and applicability, never by gold membership. Guideline alignment requires compatible source/scope; safety exclusions may make a passage relevant even when the treatment is inapplicable. Scenario_applicable concerns the actual recommendation/population. Clinically_useful must equal grade>=2 and requires alignment and applicability. Judge each target exactly once. Rationale: 12-25 words, point to actual content/conditions and case facts.",
+    "case": {
+      "case_id": "cp_case_009",
+      "active_guideline": "NICE",
+      "care_setting": "hospital",
+      "contraindication_type": "penicillin_allergy",
+      "trend_type": null,
+      "ambiguous": false,
+      "risk_result": {
+        "total_score": 5,
+        "combined_score": 5,
+        "layer1_score": 2,
+        "layer2_score": 2,
+        "layer3_score": 0,
+        "category": "INTERMEDIATE",
+        "risk_category": "Intermediate Risk (Amber)",
+        "probability_per_1000": 3.0,
+        "drivers": [
+          {
+            "name": "Prolonged rupture of membranes",
+            "reason": "ROM 20.0h (>=18h)",
+            "points": 2,
+            "layer": 1,
+            "contribution_percent": 50.0
+          },
+          {
+            "name": "Elevated CRP",
+            "reason": "CRP 12.0 mg/L",
+            "points": 2,
+            "layer": 3,
+            "contribution_percent": 50.0
+          }
+        ],
+        "patient": {
+          "gestational_age_weeks": 36.0,
+          "maternal_temperature": 37.9,
+          "rom_hours": 20.0,
+          "gbs_positive": false,
+          "respiratory_distress": "None",
+          "crp_level": 12.0,
+          "blood_culture_positive": false,
+          "urine_output_ml_kg_hr": 2.0,
+          "creatinine_mg_dl": 0.6,
+          "penicillin_allergy": true,
+          "adequate_intrapartum_antibiotics": true,
+          "clinical_chorioamnionitis": false,
+          "delivery_mode": "Caesarean",
+          "oxygen_need": "None",
+          "apgar_5_min": 9,
+          "poor_perfusion": false,
+          "neonatal_temperature": 37.0,
+          "neurological_status": "Normal",
+          "wbc_count": 18.5,
+          "it_ratio": 0.15,
+          "platelet_count": 260.0,
+          "pct_level": 0.3
+        },
+        "warnings": []
+      },
+      "previous_assessments": [],
+      "deltas": null,
+      "proposed_drugs": [
+        "clindamycin",
+        "gentamicin"
+      ],
+      "retrieval_query": "NICE NG195 Prolonged rupture of membranes ROM 20.0h (>=18h) Elevated CRP CRP 12.0 mg/L prolonged ROM rupture of membranes caesarean delivery preterm prematurity CRP inflammatory markers white blood cell count WBC procalcitonin PCT thrombocytopenia platelet count penicillin allergy alternative antibiotics"
+    },
+    "gold_evidence_aliases": [
+      "P004",
+      "P005",
+      "P006",
+      "P011",
+      "P013",
+      "P008",
+      "P032",
+      "P033",
+      "P010",
+      "P014",
+      "P015",
+      "P022",
+      "P025",
+      "P009"
+    ],
+    "passages": [
+      {
+        "passage": "P004",
+        "source": "NICE",
+        "section": "Box 1: Risk factors for early-onset neonatal infection, including 'red flags'",
+        "text": "Source: NICE\nSection: Box 1: Risk factors for early-onset neonatal infection, including 'red flags'\n\nRed flag risk factor:\n\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors:\n\u2022 invasive group\u00a0B streptococcal infection in a previous baby or maternal group\u00a0B streptococcal colonisation, bacteriuria or infection in the current pregnancy\n\u2022 pre-term birth following spontaneous labour before 37\u00a0weeks' gestation\n\u2022 confirmed rupture of membranes for more than 18\u00a0hours before a pre-term birth\n\u2022 confirmed rupture of membranes for more than 24\u00a0hours before a term birth"
+      },
+      {
+        "passage": "P005",
+        "source": "NICE",
+        "section": "period [2021, amended 2026]",
+        "text": "Source: NICE\nSection: period [2021, amended 2026]\nTopic: Assessment and risk management after birth\n\nIf there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection):\n\u2022 perform an immediate clinical assessment\n\u2022 review the maternal and neonatal history\n\u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]\nIf group\u00a0B streptococcus infection is identified in the woman, trans man or non- binary person within 72\u00a0hours after the baby's birth:\n\u2022 ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2\u00a0and\n\u2022 identify any other risk factors present and\n\u2022 look for clinical indicators of infection."
+      },
+      {
+        "passage": "P006",
+        "source": "NICE",
+        "section": "including 'red flags'",
+        "text": "Source: NICE\nSection: including 'red flags'\n\nglucose homeostasis (hypoglycaemia or hyperglycaemia)\n\u2022 metabolic acidosis (base deficit of 10\u00a0mmol/litre or greater)\nUse the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed:\n\u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators:\n\uff0d follow the recommendations in the section on investigations before starting antibiotics\u00a0and \uff0d start antibiotic treatment according to the recommendations in this guideline\u00a0and \uff0d do not wait for the test results before starting antibiotics\n\u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide:"
+      },
+      {
+        "passage": "P008",
+        "source": "NICE",
+        "section": "infection",
+        "text": "Source: NICE\nSection: infection\nTopic: Cultures, microscopy and C-reactive protein\n\nWhen starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose. [2021]\nMeasure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]\nDo not routinely perform urine microscopy or culture as part of the investigations for early-onset neonatal infection, or late-onset neonatal infection for babies in neonatal units. [2021]\nPerform urine microscopy and culture for babies with suspected late-onset neonatal infection outside of neonatal units in line with NICE's guideline on urinary tract infection in under 16s. [2021]\nDo not perform skin swab microscopy or culture as part of the investigations for neonatal infection if there are no clinical signs of a localised infection."
+      },
+      {
+        "passage": "P009",
+        "source": "NICE",
+        "section": "infection",
+        "text": "Source: NICE\nSection: infection\nTopic: Service and staffing requirements\nRecommendation: rec1\n\nRecommendation: Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]\nHealthcare professionals with specific experience in neonatal infection should be available every day to give clinical microbiology or paediatric infectious disease advice. [2021]\nFor a short explanation of why the committee made the 2021 recommendation and how it might affect practice, see the rationale and impact section on infectious disease advice.\nFull details of the evidence and the committee's discussion are in evidence review\u00a0H:\nantibiotics for treating late-onset neonatal infection.\n98"
+      },
+      {
+        "passage": "P010",
+        "source": "NICE",
+        "section": "for early-onset or late-onset infection",
+        "text": "Source: NICE\nSection: for early-onset or late-onset infection\nTopic: C-reactive protein and lumbar puncture\nRecommendation: rec1\n\nRecommendation: In babies given antibiotics because of risk factors for infection or clinical indicators of possible late-onset neonatal infection, measure the C reactive protein concentration 18 to 24 hours after starting antibiotics. [2021]\nConsider performing a lumbar puncture to obtain a cerebrospinal fluid sample in a baby who did not have a lumbar puncture at presentation who is receiving antibiotics, if it is thought safe to do so and if:\n\u2022 the baby has a positive blood culture (other than coagulase negative staphylococcus) or\n\u2022 the baby does not respond satisfactorily to antibiotic treatment, or\n\u2022 there is a strong clinical suspicion of infection or\n\u2022 there are clinical symptoms or signs suggesting meningitis. [2021]\n98"
+      },
+      {
+        "passage": "P011",
+        "source": "NICE",
+        "section": "infection",
+        "text": "Source: NICE\nSection: infection\nTopic: Choice and dosage of intravenous antibiotics\nRecommendation: rec1\n\nRecommendation: Use intravenous benzylpenicillin sodium with gentamicin as the first-choice antibiotic regimen for empirical treatment of suspected early-onset infection, unless microbiological surveillance data show local bacterial resistance patterns that indicate the need for a different antibiotic. [2012]\nGive benzylpenicillin sodium in a dosage of 25\u00a0mg/kg every 12\u00a0hours. Consider shortening the dose interval to every 8\u00a0hours, based on clinical judgement (for example, if the baby appears very ill). [2012]\nGive gentamicin in a starting dose of 5\u00a0mg/kg (see also recommendation 1.20.4)."
+      },
+      {
+        "passage": "P012",
+        "source": "NICE",
+        "section": "carers",
+        "text": "Source: NICE\nSection: carers\nTopic: Babies at increased risk of neonatal infection\n\n[2021]\nIf giving antibiotics because of clinical concerns about possible early-onset neonatal infection or late-onset neonatal infection, discuss with parents and carers:\n\u2022 the reason for the treatment\n\u2022 the risks and benefits in relation to their baby's circumstances\n\u2022 the observations and investigations that might be needed to guide treatment (for example, to help decide when to stop treatment)\n\u2022 the preferred antibiotic regimen (including how it will be delivered) and likely duration of treatment\n\u2022 the impact, if any, on where the woman, trans man or non-binary person or their baby will be cared for. [2021]\nTo maintain communication with a woman, trans man or non-binary person in labour whose baby is at increased risk of early-onset neonatal infection:\n98\n\n\u2022 involve the woman, trans man or non-binary person in any handover of care, either when additional expertise is brought in because of the risk of infection or during planned\n\nchanges in staff\n\u2022 include an update in the handover about the presence of any infection."
+      },
+      {
+        "passage": "P013",
+        "source": "NICE",
+        "section": "[2012]",
+        "text": "Source: NICE\nSection: [2012]\nTopic: Treatment duration for intravenous antibiotics\nRecommendation: rec1\n\nRecommendation: Give intravenous antibiotic treatment for a total of 7 days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected. [2012]\nConsider continuing intravenous antibiotic treatment for more than 7\u00a0days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if:\n\u2022 the baby has not yet fully recovered or\n\u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary)."
+      },
+      {
+        "passage": "P014",
+        "source": "NICE",
+        "section": "[2012]",
+        "text": "Source: NICE\nSection: [2012]\nTopic: Treatment duration for intravenous antibiotics\nRecommendation: rec1\n\n[2012]\nConsider continuing intravenous antibiotic treatment for more than 7\u00a0days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if:\n\u2022 the baby has not yet fully recovered or\n\u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary). [2012]\nFor babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36\u00a0hours if:\n\u2022 the blood culture is negative and 98\n\n\u2022 the initial clinical suspicion of infection was not strong and\n\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and\n\u2022 the levels and trends of C-reactive protein concentration are reassuring."
+      },
+      {
+        "passage": "P015",
+        "source": "NICE",
+        "section": "[2012, amended 2026]",
+        "text": "Source: NICE\nSection: [2012, amended 2026]\nTopic: Switching to oral antibiotics\n\nFor babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if:\n\u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and\n\u2022 the levels and trends of C-reactive protein concentration are reassuring and\n\u2022 the baby is tolerating oral feeds. [2026]\nUse amoxicillin as the oral antibiotic, unless local bacterial resistance data indicates the need for a different antibiotic. May 2026: Amoxicillin is licensed for neonates but not specifically for the 98\n\nindication of early-onset neonatal infection."
+      },
+      {
+        "passage": "P016",
+        "source": "NICE",
+        "section": "[2021]",
+        "text": "Source: NICE\nSection: [2021]\nTopic: Treatment duration\nRecommendation: rec1\n\nRecommendation: Give antibiotic treatment for 7\u00a0days for babies with a positive blood culture. Consider continuing antibiotic treatment for more than 7\u00a0days if:\n\u2022 the baby has not yet fully recovered or\n\u2022 longer treatment is needed because of the pathogen identified on blood culture (for example, Gram-negative bacteria or Staphylococcus aureus; seek expert microbiological advice if necessary) or\n\u2022 longer treatment is needed because of the site of the infection (such as intra- abdominal co-pathology, necrotising enterocolitis, osteomyelitis or infection of a central venous catheter). [2021]\n98\n\nUse a shorter treatment duration than 7\u00a0days when the baby makes a prompt recovery, and either no pathogen is identified or the pathogen identified is a common commensal (for example, coagulase negative staphylococcus)."
+      },
+      {
+        "passage": "P017",
+        "source": "NICE",
+        "section": "amended 2021]",
+        "text": "Source: NICE\nSection: amended 2021]\n\n[2012, amended 2021]\nIf a baby is in a neonatal unit and meningitis is shown (by cerebrospinal fluid Gram stain) to be caused by a Gram-positive bacterium:\n\u2022 continue treatment with intravenous amoxicillin and cefotaxime while waiting for the cerebrospinal fluid culture result and\n\u2022 seek expert microbiological advice. [2012, amended 2021]\nIf the cerebrospinal fluid culture is positive for group\u00a0B streptococcus, consider changing the antibiotic treatment to:\n\u2022 benzylpenicillin sodium 50\u00a0mg/kg every 12\u00a0hours, normally for at least 14\u00a0days and\n\u2022 gentamicin, with:\n\uff0d a starting dosage of 5\u00a0mg/kg every 36\u00a0hours \uff0d subsequent doses and intervals adjusted, if necessary, based on clinical judgement (for timing of the second dose, see recommendation 1.20.5 in the section on choice and dosage of intravenous antibiotics for suspected early-onset neonatal infection) and blood gentamicin 98"
+      },
+      {
+        "passage": "P022",
+        "source": "NICE",
+        "section": "Why the committee made the recommendations",
+        "text": "Source: NICE\nSection: Why the committee made the recommendations\n\nIn 2026, evidence from 3 studies showed that the risk of early-onset neonatal infection increased as the time between prelabour rupture of membranes (PROM) at term and birth increased. The 2026 committee agreed to amend the risk factor in box 1 about rupture of membranes at term to refer to the time between rupture and birth rather than prelabour rupture and onset of labour. This reflected their view that whether membranes rupture before or after onset of labour is irrelevant and that is it the overall time between rupture and birth that is important for the risk of early-onset neonatal infection. The evidence was inconclusive in identifying a specific time interval at which the risk of early-onset neonatal infection significantly increased. So, using their clinical experience, the committee decided to keep this at more than 24 hours."
+      },
+      {
+        "passage": "P025",
+        "source": "NICE",
+        "section": "How the recommendations might affect practice",
+        "text": "Source: NICE\nSection: How the recommendations might affect practice\n\nThe 2026 revised wording for the risk factor for early-onset neonatal infection of rupture of membranes more than 24 hours before a term birth could increase the number of neonates requiring monitoring for early-onset infection, although current practice is already largely aligned with this so no significant change in practice or resource impact is expected. There could be an increase in the number of pregnant women, trans men and non-binary people opting for induction of labour as soon as possible after rupture of membranes rather than expectant management. The 2026 revised wording in relation to the risk of factor on maternal sepsis should ensure that suspected (or confirmed) maternal sepsis in the early postpartum period will lead to the baby being assessed for early-onset neonatal infection."
+      },
+      {
+        "passage": "P032",
+        "source": "NICE",
+        "section": "chorioamnionitis",
+        "text": "Source: NICE\nSection: chorioamnionitis\n\nSevere penicillin allergy Consider:\nVancomycin or An alternative antibiotic that would be expected to be active against group\u00a0B streptococcus based on either sensitivity testing performed on the woman's, trans man's or non-binary person's isolate or on local antibiotic susceptibility surveillance data. In April 2021 this was an off-label use of vancomycin. See NICE's information on prescribing medicines. Consider:\nVancomycin plus gentamicin plus metronidazole or An alternative antibiotic to vancomycin that would be expected to be active against group\u00a0B streptococcus based on either sensitivity testing performed on the woman's, trans man's or non-binary person's isolate or on local antibiotic susceptibility surveillance data plus gentamicin plus metronidazole. In April 2021 this was an off-label use of vancomycin. See NICE's information on prescribing medicines. If using intravenous gentamicin during labour, use once-daily dosing."
+      },
+      {
+        "passage": "P033",
+        "source": "NICE",
+        "section": "chorioamnionitis",
+        "text": "Source: NICE\nSection: chorioamnionitis\n\nUse with caution. In April 2021 this was an off-label use of cephalosporins. See NICE's information on prescribing medicines. \u2022 Allergies: Severe penicillin allergy | Women, trans men and non-binary people without chorioamnionitis: Consider: Vancomycin or An alternative antibiotic that would be expected to be active against group B streptococcus based on either sensitivity testing performed on the woman's, trans man's or non-binary person's isolate or on local antibiotic susceptibility surveillance data. In April 2021 this was an off-label use of vancomycin. See NICE's information on prescribing medicines."
+      }
+    ],
+    "target_passages": [
+      "P012",
+      "P013",
+      "P014",
+      "P015",
+      "P016",
+      "P017"
+    ],
+    "response_schema": {
+      "judgments": [
+        {
+          "passage": "P001",
+          "relevance_grade": "integer 0-3",
+          "guideline_aligned": "boolean",
+          "scenario_applicable": "boolean",
+          "clinically_useful": "boolean",
+          "rationale": "short source-based rationale"
+        }
+      ]
+    }
+  },
+  "mapping": {
+    "P012": "NICE_pg2_carers_chunk4",
+    "P013": "NICE_pg30_2012_rec1_chunk1",
+    "P014": "NICE_pg30_2012_rec1_chunk2",
+    "P015": "NICE_pg31_2012-amended-2026_chunk2",
+    "P016": "NICE_pg34_2021_rec1_chunk1",
+    "P017": "NICE_pg37_amended-2021_chunk2"
+  }
+}

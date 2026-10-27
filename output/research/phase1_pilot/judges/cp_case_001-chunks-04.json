@@ -1,0 +1,113 @@
+{
+  "completed": true,
+  "task_sha256": "43e068273e5925288f157991040f76ccf7eee0c1afd1b05730d06b16338878bd",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.83820939999714,
+  "kind": "chunks",
+  "case_id": "cp_case_001",
+  "mapping": {
+    "P024": "NICE_pg44_receiving-gentamicin_chunk1",
+    "P025": "NICE_pg44_receiving-gentamicin_chunk2",
+    "P026": "NICE_pg61_how-the-recommendation-m_chunk1",
+    "P027": "NICE_pg61_why-the-committee-made-t_chunk1",
+    "P028": "NICE_pg64_why-the-committee-made-t_chunk1",
+    "P029": "NICE_pg64_why-the-committee-made-t_chunk3"
+  },
+  "raw_response": {
+    "id": "chatcmpl-9adb010e-56cb-4e5b-afce-6bce0dca208b",
+    "object": "chat.completion",
+    "created": 1792944830,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P024\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Guidance on gentamicin trough monitoring and dose adjustment for renal impairment, matching AKI risk in case.\"\n    },\n    {\n      \"passage\": \"P025\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Advises not to withhold gentamicin unless renal dysfunction present, directly relevant to AKI concern.\"\n    },\n    {\n      \"passage\": \"P026\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Discusses immediate delivery for prolonged ROM and GBS, but baby already delivered; only background.\"\n    },\n    {\n      \"passage\": \"P027\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Provides evidence for delivery timing, not directly influencing current neonatal antibiotic plan.\"\n    },\n    {\n      \"passage\": \"P028\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Clarifies that >24\u202fh ROM at term raises infection risk, supporting need for antibiotics in this case.\"\n    },\n    {\n      \"passage\": \"P029\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes red\u2011flag framework retained from 2012; provides context but no direct actionable recommendation.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for each target passage list: P024,P025,P026,P027,P028,P029. Provide JSON array. Compute grades.\n\nP024: about gentamicin trough monitoring. Scenario has contraindication gentamicin_aki (acute kidney injury) indicated by urine output 0.3 ml/kg/hr low, creatinine 1.9 high. So gentamicin may be contraindicated. Passage gives monitoring guidance, relevant for safety/exclusion. Grade? It provides actionable evidence about dosing adjustments due to renal function. Applicable? Yes, informs that if renal impairment, adjust or avoid. So grade 2 (useful applicable support). guideline aligned true. scenario_applicable? It addresses gentamicin use, but scenario has contraindication, so applicability is about decision to avoid; still relevant. So true. clinically_useful true (grade>=2). \n\nP025: similar, advises not to withhold dose unless renal impairment. Provides guidance relevant to AKI. Grade 2. aligned true. scenario_applicable true. clinically_useful true.\n\nP026: about immediate delivery recommendation for prolonged ROM and GBS positive. Our case: term (39w), ROM 26h, GBS positive, but delivery already Caesarean performed. This passage about delivery decision, not antibiotic. Not directly actionable for current scenario (already delivered). Might be background. Grade 1. aligned true (NICE). scenario_applicable? Not applicable to postnatal antibiotic choice. So false. clinically_useful false.\n\nP027: similar about immediate delivery benefit. Same reasoning grade 1, scenario_applicable false.\n\nP028: discusses risk factor timing >24h ROM. Relevant to risk assessment for early-onset infection. Provides background for risk factor. Could be useful for deciding antibiotics. Grade 2? It clarifies risk factor definition. Applicable to scenario (ROM 26h). So grade 2. aligned true. scenario_applicable true. clinically_useful true.\n\nP029: about framework red flags etc. Provides background on risk factor list changes. Relevant but more background. Grade 1. scenario_applicable maybe true for risk assessment but not direct. Could be marginal. Use grade1. clinically_useful false.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.335305288,
+      "prompt_tokens": 5118,
+      "prompt_time": 0.239341111,
+      "completion_tokens": 922,
+      "completion_time": 1.9288146529999999,
+      "total_tokens": 6040,
+      "total_time": 2.168155764,
+      "completion_tokens_details": {
+        "reasoning_tokens": 460
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_49bfac06f1",
+    "x_groq": {
+      "id": "req_01m5sxdvbfefb8wf458c1vvydp",
+      "seed": 187797715
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "998",
+    "x-ratelimit-remaining-tokens": "2041",
+    "x-ratelimit-reset-requests": "2m52.8s",
+    "x-ratelimit-reset-tokens": "44.692s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P024",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Guidance on gentamicin trough monitoring and dose adjustment for renal impairment, matching AKI risk in case."
+      },
+      {
+        "passage": "P025",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Advises not to withhold gentamicin unless renal dysfunction present, directly relevant to AKI concern."
+      },
+      {
+        "passage": "P026",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses immediate delivery for prolonged ROM and GBS, but baby already delivered; only background."
+      },
+      {
+        "passage": "P027",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Provides evidence for delivery timing, not directly influencing current neonatal antibiotic plan."
+      },
+      {
+        "passage": "P028",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Clarifies that >24\u202fh ROM at term raises infection risk, supporting need for antibiotics in this case."
+      },
+      {
+        "passage": "P029",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Describes red\u2011flag framework retained from 2012; provides context but no direct actionable recommendation."
+      }
+    ]
+  }
+}

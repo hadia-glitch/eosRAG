@@ -1,0 +1,95 @@
+{
+  "completed": true,
+  "task_sha256": "5e756f1d3839db0a18cc1f56de9de4351d034f7ad02644c1aa51bdb795e664e5",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.064673400003812,
+  "kind": "plan",
+  "case_id": "cp_case_009",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-48e4f566-f161-408e-8c6c-20fcd741cd22",
+    "object": "chat.completion",
+    "created": 1792954504,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 1,\n  \"citation_correctness\": 1,\n  \"citation_completeness\": 1,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"States that 20\u202fh ROM is a significant driver and contributes 50% risk, but NICE source (S012, S013) specifies risk increase only for >24\u202fh; no evidence for 20\u202fh.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Assigns point values (2 points) to ROM\u202f20\u202fh and CRP\u202f12\u202fmg/L without any source providing such scoring.\"\n    },\n    {\n      \"claim_id\": \"L019\",\n      \"reason\": \"Recommends cefotaxime substitution for ampicillin based on non\u2011severe penicillin allergy, but source S016 only mentions cefotaxime plus metronidazole for non\u2011severe allergy; the plan does not cite this source.\"\n    },\n    {\n      \"claim_id\": \"L021\",\n      \"reason\": \"Suggests IV clindamycin as default for penicillin allergy, yet no provided passage (S016) recommends clindamycin; it recommends cefotaxime or vancomycin.\"\n    },\n    {\n      \"claim_id\": \"L022\",\n      \"reason\": \"Specifies duration 48\u201172\u202fh and stop criteria referencing NICE recommendation 1.21.3, but the cited passages (S015) only note that the recommendation wording changed, not the exact duration or stop criteria.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"Most plan statements are not directly supported by the supplied NICE passages. The risk assessment uses a 20\u202fh ROM threshold contrary to the >24\u202fh threshold in S012/S013. Scoring points and specific antibiotic choices (clindamycin) lack source backing. Citation mapping is absent, leading to low citation correctness and completeness. No numeric dose is presented, so no ungounded dose issue.\"\n}",
+          "reasoning": "We need evaluate faithfulness etc. Identify unsupported claims. Look at plan lines with citations? No mapping given. Likely many claims not supported by provided passages. For example risk analysis uses >24h threshold but patient 20h; passage S012 says >24h threshold. Claim that 20h is significant not supported. So unsupported. Also antibiotic plan: clindamycin suggested but passage S016 mentions cefotaxime for non-severe allergy, not clindamycin. So unsupported. Dose not given, but no dose mentioned so ungrouned dose false. No numeric dose present. So ungrouned_dose = false.\n\nCitations: none provided in lines. So citation correctness low. Probably 1. citation completeness 1. Faithfulness low 1. Provide unsupported_claims list with line numbers. contradictions? maybe claim that ampicillin withheld due to allergy is supported by S016 (penicillin allergy not severe use cephalosporin). That aligns. So not contradiction.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.379311826,
+      "prompt_tokens": 2897,
+      "prompt_time": 0.132271578,
+      "completion_tokens": 675,
+      "completion_time": 1.398753696,
+      "total_tokens": 3572,
+      "total_time": 1.531025274,
+      "completion_tokens_details": {
+        "reasoning_tokens": 209
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c15aa9c1b7",
+    "x_groq": {
+      "id": "req_01m5t6n3paezeavffhr973njz6",
+      "seed": 1425151607
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "975",
+    "x-ratelimit-remaining-tokens": "4634",
+    "x-ratelimit-reset-requests": "36m0s",
+    "x-ratelimit-reset-tokens": "25.245s"
+  },
+  "result": {
+    "faithfulness": 1,
+    "citation_correctness": 1,
+    "citation_completeness": 1,
+    "unsupported_claims": [
+      {
+        "claim_id": "L005",
+        "reason": "States that 20\u202fh ROM is a significant driver and contributes 50% risk, but NICE source (S012, S013) specifies risk increase only for >24\u202fh; no evidence for 20\u202fh.",
+        "claim_text": "The risk category is INTERMEDIATE (Score 5) based on two primary drivers: Prolonged rupture of membranes (20.0h, contributing 50% of risk) and Elevated CRP (12.0 mg/L, contributing 50% of risk). Although the NICE guideline excerpt notes a threshold of >24 hours for PROM, the deterministic risk engine has flagged 20h as a significant driver in this specific assessment context. The elevated CRP further supports the need for clinical evaluation and potential antibiotic therapy."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Assigns point values (2 points) to ROM\u202f20\u202fh and CRP\u202f12\u202fmg/L without any source providing such scoring.",
+        "claim_text": "Prolonged rupture of membranes: ROM 20.0h (>=18h) contributes 2 points (Layer 1). Elevated CRP: CRP 12.0 mg/L contributes 2 points (Layer 3)."
+      },
+      {
+        "claim_id": "L019",
+        "reason": "Recommends cefotaxime substitution for ampicillin based on non\u2011severe penicillin allergy, but source S016 only mentions cefotaxime plus metronidazole for non\u2011severe allergy; the plan does not cite this source.",
+        "claim_text": "- Cefotaxime \u2014 SUBSTITUTED for Ampicillin: Penicillin allergy (non-severe specified in guideline context, but caution advised); Dose and frequency not specified in retrieved evidence"
+      },
+      {
+        "claim_id": "L021",
+        "reason": "Suggests IV clindamycin as default for penicillin allergy, yet no provided passage (S016) recommends clindamycin; it recommends cefotaxime or vancomycin.",
+        "claim_text": "- [DETERMINISTIC DEFAULT] IV clindamycin (per documented penicillin allergy \u2014 provides Group B Streptococcus coverage in place of the withheld beta-lactam)"
+      },
+      {
+        "claim_id": "L022",
+        "reason": "Specifies duration 48\u201172\u202fh and stop criteria referencing NICE recommendation 1.21.3, but the cited passages (S015) only note that the recommendation wording changed, not the exact duration or stop criteria.",
+        "claim_text": "duration=48-72 hours pending cultures stop_criteria=Stop antibiotics if blood cultures are negative at 36-48 hours and the infant is clinically well, per NICE recommendation 1.21.3."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "Most plan statements are not directly supported by the supplied NICE passages. The risk assessment uses a 20\u202fh ROM threshold contrary to the >24\u202fh threshold in S012/S013. Scoring points and specific antibiotic choices (clindamycin) lack source backing. Citation mapping is absent, leading to low citation correctness and completeness. No numeric dose is presented, so no ungounded dose issue."
+  }
+}

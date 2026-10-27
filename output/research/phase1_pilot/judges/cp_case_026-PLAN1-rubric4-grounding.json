@@ -1,0 +1,97 @@
+{
+  "completed": true,
+  "task_sha256": "e706913adcb3e40a43c2dcfe85cd3ecb71fd1c0f0884e89c5a14cc6e613d48dc",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.7985527999990154,
+  "kind": "plan",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-fd57c274-f581-4b5b-a5fc-09cfc8759b44",
+    "object": "chat.completion",
+    "created": 1792955940,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"States prior hospitalization is a critical contraindication to WHO outpatient protocol, but no cited WHO source provides this contraindication.\"\n    },\n    {\n      \"claim_id\": \"L011\",\n      \"reason\": \"Recommends immediate hospitalization due to prior hospitalization, without supporting citation.\"\n    },\n    {\n      \"claim_id\": \"L017\",\n      \"reason\": \"Withholds oral amoxicillin citing WHO outpatient regimen does not apply; source does not specify this rule.\"\n    },\n    {\n      \"claim_id\": \"L018\",\n      \"reason\": \"Withholds IM gentamicin for same reason; not supported by cited passages.\"\n    },\n    {\n      \"claim_id\": \"L019\",\n      \"reason\": \"Suggests inpatient Ampicillin/Penicillin substitution but provides no source for inpatient dosing; citation does not contain this recommendation.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"Key claims about contraindication and required hospitalization are not found in the supplied WHO passages (S001\u2011S018). Citations listed do not directly support these statements, reducing faithfulness and citation quality. No numeric dose is asserted, so no ungrounded dose issue.\",\n  \"rubric_version\": 4,\n  \"passage_catalog\": {}\n}",
+          "reasoning": "We need produce JSON with scores. Assess faithfulness: plan claims about contraindication, hospitalization needed, antibiotic plan etc. Evidence passages: S001 says outpatient regimen if cannot refer. Also mentions referral required. No mention of contraindication due to prior hospitalization. So claim L002 about contraindication not in evidence. So unsupported. Citation mapping unclear. So faithfulness low maybe 2. citation correctness: many citations but not matching lines. Likely low 2. completeness: missing citations for some claims. maybe 2. unsupported_claims list L002, L011, L017, L018, L019 maybe. contradictions? none. Ungrounded_dose: L019 mentions \"IV/IM Ampicillin or Penicillin \u2014 SUBSTITUTED ... Specific inpatient dose/frequency not provided\". No dose given, so not ungrounded. No numeric dose asserted. So false. So ungrouned_dose false. Provide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.306044487,
+      "prompt_tokens": 4421,
+      "prompt_time": 0.234085218,
+      "completion_tokens": 530,
+      "completion_time": 1.101285118,
+      "total_tokens": 4951,
+      "total_time": 1.335370336,
+      "completion_tokens_details": {
+        "reasoning_tokens": 190
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_02b0d31eca",
+    "x_groq": {
+      "id": "req_01m5t80xq3eg7amgxkby32hdra",
+      "seed": 1493279353
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "974",
+    "x-ratelimit-remaining-tokens": "2909",
+    "x-ratelimit-reset-requests": "37m26.4s",
+    "x-ratelimit-reset-tokens": "38.182s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "States prior hospitalization is a critical contraindication to WHO outpatient protocol, but no cited WHO source provides this contraindication.",
+        "claim_text": "This 38-week neonate presents with an intermediate risk for early-onset sepsis driven by prolonged rupture of membranes (20 hours) and elevated CRP (12.0 mg/L). Although the care setting is listed as outpatient, the patient has a history of hospitalization within the prior 14 days, which constitutes a critical contraindication to WHO outpatient management protocols."
+      },
+      {
+        "claim_id": "L011",
+        "reason": "Recommends immediate hospitalization due to prior hospitalization, without supporting citation.",
+        "claim_text": "- IMMEDIATE HOSPITALIZATION: The patient must be admitted to the hospital for inpatient management due to prior hospitalization within 14 days, which invalidates outpatient WHO protocols."
+      },
+      {
+        "claim_id": "L017",
+        "reason": "Withholds oral amoxicillin citing WHO outpatient regimen does not apply; source does not specify this rule.",
+        "claim_text": "- Oral amoxicillin \u2014 WITHHELD: WHO outpatient regimen explicitly does not apply due to hospitalization within prior 14 days; patient requires inpatient management."
+      },
+      {
+        "claim_id": "L018",
+        "reason": "Withholds IM gentamicin for same reason; not supported by cited passages.",
+        "claim_text": "- IM gentamicin \u2014 WITHHELD: WHO outpatient regimen explicitly does not apply due to hospitalization within prior 14 days; patient requires inpatient management."
+      },
+      {
+        "claim_id": "L019",
+        "reason": "Suggests inpatient Ampicillin/Penicillin substitution but provides no source for inpatient dosing; citation does not contain this recommendation.",
+        "claim_text": "- IV/IM Ampicillin or Penicillin \u2014 SUBSTITUTED for outpatient regimen: Patient requires inpatient standard of care (typically Ampicillin + Gentamicin) rather than WHO outpatient simplified regimen. Specific inpatient dose/frequency not provided in retrieved WHO outpatient excerpts."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "Key claims about contraindication and required hospitalization are not found in the supplied WHO passages (S001\u2011S018). Citations listed do not directly support these statements, reducing faithfulness and citation quality. No numeric dose is asserted, so no ungrounded dose issue.",
+    "rubric_version": 4,
+    "passage_catalog": {}
+  }
+}

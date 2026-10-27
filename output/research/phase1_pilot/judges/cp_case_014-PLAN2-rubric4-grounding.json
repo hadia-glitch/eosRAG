@@ -1,0 +1,83 @@
+{
+  "completed": true,
+  "task_sha256": "4b11a0da39c92967bf2270e1c19d411be1beabe2ea7dec107d1b5208aba11833",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.936386000001221,
+  "kind": "plan",
+  "case_id": "cp_case_014",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-9680bf4d-6f24-4769-9566-3c421fb760e6",
+    "object": "chat.completion",
+    "created": 1792955367,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 3,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Score 7 risk categorization is not supported by any provided source passages.\"\n    },\n    {\n      \"claim_id\": \"L020\",\n      \"reason\": \"Specific duration wording (\\\"7 days total if sepsis strongly suspected or blood culture positive; consider stopping at 36 hours ...\\\") combines elements from S006 and S012 but the exact composite statement is not directly found in any single cited passage.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"Dosage statements (L018, L019) are supported by S005. Duration and stop\u2011criteria statements draw from S006 and S012 but are re\u2011combined, so citation completeness and correctness are limited. The risk score claim lacks any source. Citation mapping between E1\u2011E5 and the S\u2011codes is ambiguous, reducing citation correctness.\"\n}",
+          "reasoning": "We need to evaluate faithfulness etc. Check citations: L018 dosage 25 mg/kg matches S005. Good. L019 gentamicin 5 mg/kg matches S005. Citation mapping unknown; plan evidence list includes citations E1-E5 but not mapped to S005 etc. Likely mismatched. So citation correctness low.\n\nCheck unsupported claims: risk analysis score 7 not sourced. No source gives score. So unsupported. Also claim about \"HIGH risk (Score 7)\" unsupported.\n\nContradictions? None.\n\nUngrounded_dose: doses are grounded in S005, so false.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.379755847,
+      "prompt_tokens": 2971,
+      "prompt_time": 0.127900742,
+      "completion_tokens": 379,
+      "completion_time": 0.907548639,
+      "total_tokens": 3350,
+      "total_time": 1.035449381,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 126
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_a655021f7d",
+    "x_groq": {
+      "id": "req_01m5t7fe7me4ea8kskkt0fa0wf",
+      "seed": 1210025663
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "988",
+    "x-ratelimit-remaining-tokens": "4403",
+    "x-ratelimit-reset-requests": "17m16.8s",
+    "x-ratelimit-reset-tokens": "26.977s"
+  },
+  "result": {
+    "faithfulness": 3,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L005",
+        "reason": "Score 7 risk categorization is not supported by any provided source passages.",
+        "claim_text": "The patient is categorized as HIGH risk (Score 7) due to significant maternal risk factors (GBS positive, ROM >18h, fever) and neonatal clinical indicators (respiratory distress, elevated CRP). Although intrapartum antibiotics were administered, the presence of clinical signs of infection in the neonate overrides the protective effect, requiring full sepsis workup and treatment."
+      },
+      {
+        "claim_id": "L020",
+        "reason": "Specific duration wording (\"7 days total if sepsis strongly suspected or blood culture positive; consider stopping at 36 hours ...\") combines elements from S006 and S012 but the exact composite statement is not directly found in any single cited passage.",
+        "claim_text": "duration=7 days total if sepsis strongly suspected or blood culture positive; consider stopping at 36 hours if blood culture negative, initial suspicion not strong, clinical condition reassuring, and CRP trends reassuring. stop_criteria=Stop antibiotics at 36 hours if: blood culture is negative, initial clinical suspicion of infection was not strong, baby's clinical condition is reassuring with no clinical indicators of possible infection, and levels/trends of C-reactive protein are reassuring. Otherwise, continue for 7 days or longer if not fully recovered or based on pathogen advice."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "Dosage statements (L018, L019) are supported by S005. Duration and stop\u2011criteria statements draw from S006 and S012 but are re\u2011combined, so citation completeness and correctness are limited. The risk score claim lacks any source. Citation mapping between E1\u2011E5 and the S\u2011codes is ambiguous, reducing citation correctness."
+  }
+}

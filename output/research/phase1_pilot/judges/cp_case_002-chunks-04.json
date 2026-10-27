@@ -1,0 +1,113 @@
+{
+  "completed": true,
+  "task_sha256": "dc2b84b9995660c9bda78a3c4b86d3b9ed204a18b74466bd15a39f6d38ebfde2",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 6.466797400003998,
+  "kind": "chunks",
+  "case_id": "cp_case_002",
+  "mapping": {
+    "P023": "NICE_pg64_why-the-committee-made-t_chunk1",
+    "P024": "NICE_pg64_why-the-committee-made-t_chunk2",
+    "P025": "NICE_pg64_why-the-committee-made-t_chunk3",
+    "P026": "NICE_pg67_how-the-recommendations-_chunk1",
+    "P027": "NICE_pg74_why-the-committee-made-t_rec1_chunk1",
+    "P028": "NICE_pg74_why-the-committee-made-t_rec1_chunk2"
+  },
+  "raw_response": {
+    "id": "chatcmpl-1565ff29-9dea-4398-b9ec-8ff983c48976",
+    "object": "chat.completion",
+    "created": 1792945188,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"judgments\":[{\"passage\":\"P023\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Notes ROM >24h increases risk; case has ROM 20h preterm, indicating relevance of prolonged rupture as risk factor.\"},{\"passage\":\"P024\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":false,\"rationale\":\"Discusses evidence uncertainty and removal of pre\u2011labour ROM factor, providing background but not direct guidance for this case.\"},{\"passage\":\"P025\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Describes red\u2011flag vs non\u2011red\u2011flag risk factor framework used to decide antibiotic initiation, directly applicable to case assessment.\"},{\"passage\":\"P026\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Focuses on term births with >24h ROM; case is preterm, so impact is limited.\"},{\"passage\":\"P027\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"States CRP should not alone dictate treatment; case has elevated CRP, making this guidance pertinent.\"},{\"passage\":\"P028\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":false,\"rationale\":\"Mentions need for expert neonatal infection advice; general support but not specific to antibiotic choice.\"}]}",
+          "reasoning": "We need output judgments for target_passages only. Schema expects list with each passage. Provide grades. Evaluate: P023 about PROM risk factor >24h term. Our case preterm 32w, ROM 20h preterm. Still relevant risk factor (preterm ROM >18h). P023 mentions term but concept of time >24h. Might be partially relevant but not direct. Grade 2? It's background. guideline_aligned true. scenario_applicable? risk factor applies though preterm not term, but still ROM risk. So applicable yes. clinically_useful grade>=2 so true.\n\nP024 about evidence inconclusive and removal of prelabour ROM etc. Relevant background. Grade1? Might be marginal. Provide relevance 1. guideline aligned true. scenario_applicable maybe yes but low. clinically_useful false.\n\nP025 about framework red flags etc. Relevant for decision making. Grade2. guideline aligned true. scenario_applicable true. clinically_useful true.\n\nP026 about impact of revised wording >24h term. Not directly applicable. Grade1. guideline aligned true. scenario_applicable false. clinically_useful false.\n\nP027 about CRP not sole. Our case CRP elevated 12. Relevant. Grade2. guideline aligned true. scenario_applicable true. clinically_useful true.\n\nP028 about expert advice availability. General. Grade1. guideline aligned true. scenario_applicable true (hospital setting). clinically_useful false (grade<2).\n\nReturn JSON with judgments array."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.248104623,
+      "prompt_tokens": 4335,
+      "prompt_time": 0.207843465,
+      "completion_tokens": 674,
+      "completion_time": 1.397681921,
+      "total_tokens": 5009,
+      "total_time": 1.605525386,
+      "completion_tokens_details": {
+        "reasoning_tokens": 308
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m5sxrsv3e0yrjmc7q17rrg52",
+      "seed": 701493404
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "993",
+    "x-ratelimit-remaining-tokens": "2816",
+    "x-ratelimit-reset-requests": "10m4.8s",
+    "x-ratelimit-reset-tokens": "38.88s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P023",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Notes ROM >24h increases risk; case has ROM 20h preterm, indicating relevance of prolonged rupture as risk factor."
+      },
+      {
+        "passage": "P024",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Discusses evidence uncertainty and removal of pre\u2011labour ROM factor, providing background but not direct guidance for this case."
+      },
+      {
+        "passage": "P025",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Describes red\u2011flag vs non\u2011red\u2011flag risk factor framework used to decide antibiotic initiation, directly applicable to case assessment."
+      },
+      {
+        "passage": "P026",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Focuses on term births with >24h ROM; case is preterm, so impact is limited."
+      },
+      {
+        "passage": "P027",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "States CRP should not alone dictate treatment; case has elevated CRP, making this guidance pertinent."
+      },
+      {
+        "passage": "P028",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Mentions need for expert neonatal infection advice; general support but not specific to antibiotic choice."
+      }
+    ]
+  }
+}

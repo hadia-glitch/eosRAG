@@ -1,0 +1,88 @@
+{
+  "completed": true,
+  "task_sha256": "a6304f5e0ba123d7ef5b0e52eb7372411f1fb1df4715beb9da727701924a9b76",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.5730153000040445,
+  "kind": "plan",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-0b66ec3d-6a9f-4f14-99ea-f37a73d002f5",
+    "object": "chat.completion",
+    "created": 1792955702,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\"claim_id\": \"L002\", \"reason\": \"Risk categorization and hospitalization rationale are not directly supported by the supplied WHO passages.\"},\n    {\"claim_id\": \"L005\", \"reason\": \"Quantitative risk score and percentage contributions are not found in the evidence.\"},\n    {\"claim_id\": \"L008\", \"reason\": \"Point values for ROM and CRP are not presented in any cited source.\"}\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan correctly cites WHO guidance that infants <1500\u202fg are excluded from outpatient PSBI regimens (S001), justifying hospitalization. However, most quantitative risk statements (L002, L005, L008) lack grounding in the provided passages, and citation mapping is absent, reducing citation correctness and completeness.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Check citations: claims about hospitalization due to birth weight <1500g \u2013 is that in any source? S001 says outpatient PSBI regimen excluded under 1500g, implies need hospital. So citation likely S001. L011 states that. Good.\n\nDose unspecified claim L019 says dose not specified in retrieved evidence \u2013 that's true, no dosing in sources. So ungrouned dose? It's stating not specified, not asserting dose. So no ungrouned numeric dose.\n\nCheck unsupported claims: L002 risk analysis percentages etc not in sources. Sources don't give risk scores. So unsupported.\n\nL005 similar. L008 driver breakdown points not in sources. So unsupported.\n\nCitation correctness: they didn't map citations to lines. No mapping provided. So likely incorrect.\n\nThus ratings low.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.252736096,
+      "prompt_tokens": 2696,
+      "prompt_time": 0.098251632,
+      "completion_tokens": 402,
+      "completion_time": 1.13613671,
+      "total_tokens": 3098,
+      "total_time": 1.234388342,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 169
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m5t7sp15ez6t1gwyb9s6564v",
+      "seed": 1101434052
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "980",
+    "x-ratelimit-remaining-tokens": "4518",
+    "x-ratelimit-reset-requests": "28m48s",
+    "x-ratelimit-reset-tokens": "26.115s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Risk categorization and hospitalization rationale are not directly supported by the supplied WHO passages.",
+        "claim_text": "This 29-week, 1200g preterm infant presents with intermediate risk for early-onset sepsis driven by prolonged rupture of membranes (20h) and elevated CRP (12.0 mg/L). Although the care setting is listed as outpatient, the infant's birth weight is below the WHO threshold for outpatient management, necessitating immediate hospitalization."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Quantitative risk score and percentage contributions are not found in the evidence.",
+        "claim_text": "The patient is categorized as INTERMEDIATE risk (Score 3) due to two key drivers: Prolonged rupture of membranes (>=18h) contributing 50% of the risk score, and an elevated CRP level of 12.0 mg/L contributing the remaining 50%. The absence of clinical signs of severe infection (e.g., respiratory distress, temperature instability) currently mitigates the immediate severity, but the laboratory and historical risk factors warrant close monitoring and likely antibiotic intervention upon hospital admission."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Point values for ROM and CRP are not presented in any cited source.",
+        "claim_text": "Prolonged rupture of membranes (20.0h, >=18h threshold) adds 2 points to the risk score. Elevated CRP (12.0 mg/L) adds 2 points to the risk score."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan correctly cites WHO guidance that infants <1500\u202fg are excluded from outpatient PSBI regimens (S001), justifying hospitalization. However, most quantitative risk statements (L002, L005, L008) lack grounding in the provided passages, and citation mapping is absent, reducing citation correctness and completeness."
+  }
+}

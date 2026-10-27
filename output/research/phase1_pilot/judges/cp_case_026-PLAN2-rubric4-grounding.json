@@ -1,0 +1,121 @@
+{
+  "completed": true,
+  "task_sha256": "1f71d53b662dc28efde556897b2575d219b79c671e105765bb4cb1b18d8e3b3d",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.339644200008479,
+  "kind": "plan",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-5bbb53f3-a7f4-42d9-a4a8-f62f69682c37",
+    "object": "chat.completion",
+    "created": 1792956034,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 1,\n  \"citation_completeness\": 1,\n  \"unsupported_claims\": [\n    {\"claim_id\": \"L002\", \"reason\": \"States prior hospitalization contraindicates WHO outpatient regimen, but no retrieved source (S001\u2011S010) mentions this contraindication.\"},\n    {\"claim_id\": \"L005\", \"reason\": \"Quantifies risk as 50% each and assigns a score of 3 without source support.\"},\n    {\"claim_id\": \"L008\", \"reason\": \"Assigns 2 points for ROM \u226518h; no source provides such point system.\"},\n    {\"claim_id\": \"L011\", \"reason\": \"Recommends admission due to prior hospitalization; not found in any cited passage.\"},\n    {\"claim_id\": \"L017\", \"reason\": \"Withholds oral amoxicillin citing contraindication, but no source discusses this rule.\"},\n    {\"claim_id\": \"L018\", \"reason\": \"Withholds IM gentamicin for same reason; unsupported by cited texts.\"},\n    {\"claim_id\": \"L019\", \"reason\": \"Suggests IV ampicillin or IM/IV gentamicin substitution without any dosage or source evidence.\"},\n    {\"claim_id\": \"L020\", \"reason\": \"Provides typical duration and stop criteria without source citation.\"},\n    {\"claim_id\": \"L025\", \"reason\": \"Escalation criteria listed without source backing.\"}\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": true,\n  \"ungrounded_dose_examples\": [\n    {\"claim_id\": \"L019\", \"reason\": \"Mentions IV ampicillin or IM/IV gentamicin substitution but gives no dosage; no dosage information is present in the retrieved WHO excerpts.\"}\n  ],\n  \"rationale\": \"The plan contains multiple assertions (e.g., contraindication due to prior hospitalization, risk scoring, point allocation, and treatment substitutions) that are not supported by any of the supplied evidence passages (S001\u2011S010). Citation mapping is ambiguous, and several claims lack any source citation, leading to low scores for faithfulness, citation correctness, and completeness.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Check citations: L002 claims contraindication due to prior hospitalization. No source mentions that. S001 is about referral, not contraindication. No source about prior hospitalization being contraindication. So citation incorrect/unsupported.\n\nIdentify unsupported claims: L002, L005 risk analysis percentages, L008 adds points, L011 admission statement, L017-019 dosing substitution, L020 duration not specified, etc.\n\nCheck citation mapping: not provided, ambiguous.\n\nUngrounded dose: L019 mentions IV ampicillin or IM/IV gentamicin substitution but no dose. That's ungrounded dose? It's a dose unspecified, but claim of substitution is not sourced. So list.\n\nNow produce JSON with ratings maybe low: faithfulness 2, citation_correctness 1, citation_completeness 1. Provide arrays.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.380037139,
+      "prompt_tokens": 2803,
+      "prompt_time": 0.126567106,
+      "completion_tokens": 648,
+      "completion_time": 1.345903066,
+      "total_tokens": 3451,
+      "total_time": 1.472470172,
+      "completion_tokens_details": {
+        "reasoning_tokens": 173
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5a93aea882",
+    "x_groq": {
+      "id": "req_01m5t83s84ehet42yn7f1h2trj",
+      "seed": 1414993807
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "972",
+    "x-ratelimit-remaining-tokens": "4530",
+    "x-ratelimit-reset-requests": "40m19.2s",
+    "x-ratelimit-reset-tokens": "26.025s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 1,
+    "citation_completeness": 1,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "States prior hospitalization contraindicates WHO outpatient regimen, but no retrieved source (S001\u2011S010) mentions this contraindication.",
+        "claim_text": "This 38-week neonate presents with an intermediate risk for early-onset sepsis driven by prolonged rupture of membranes (20 hours) and elevated CRP (12.0 mg/L). Although the initial care setting was outpatient, the patient's history of hospitalization within the prior 14 days constitutes a critical contraindication to WHO outpatient regimens, necessitating immediate hospitalization for full inpatient management."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Quantifies risk as 50% each and assigns a score of 3 without source support.",
+        "claim_text": "The patient is categorized as INTERMEDIATE risk (Score 3) due to two primary drivers: Prolonged rupture of membranes (20.0h, >=18h threshold) contributing 50% of the risk, and Elevated CRP (12.0 mg/L) contributing the remaining 50%. The absence of clinical severe infection signs (e.g., respiratory distress, temperature instability) prevents classification as high risk, but the laboratory and historical factors warrant significant clinical attention."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Assigns 2 points for ROM \u226518h; no source provides such point system.",
+        "claim_text": "Prolonged rupture of membranes: ROM 20.0h (>=18h) adds 2 points to the risk score."
+      },
+      {
+        "claim_id": "L011",
+        "reason": "Recommends admission due to prior hospitalization; not found in any cited passage.",
+        "claim_text": "- Admit the infant to the hospital immediately; outpatient management is contraindicated due to prior hospitalization within 14 days."
+      },
+      {
+        "claim_id": "L017",
+        "reason": "Withholds oral amoxicillin citing contraindication, but no source discusses this rule.",
+        "claim_text": "- Oral amoxicillin \u2014 WITHHELD: WHO outpatient regimen explicitly does not apply due to hospitalization within prior 14 days; infant must be hospitalized."
+      },
+      {
+        "claim_id": "L018",
+        "reason": "Withholds IM gentamicin for same reason; unsupported by cited texts.",
+        "claim_text": "- IM gentamicin \u2014 WITHHELD: WHO outpatient regimen explicitly does not apply due to hospitalization within prior 14 days; infant must be hospitalized."
+      },
+      {
+        "claim_id": "L019",
+        "reason": "Suggests IV ampicillin or IM/IV gentamicin substitution without any dosage or source evidence.",
+        "claim_text": "- IV ampicillin or IM/IV gentamicin \u2014 SUBSTITUTED for outpatient regimen: Specific inpatient dose/frequency not provided in retrieved WHO excerpts; clinician must determine appropriate inpatient dosing based on local hospital protocols for hospitalized infants with suspected EOS."
+      },
+      {
+        "claim_id": "L020",
+        "reason": "Provides typical duration and stop criteria without source citation.",
+        "claim_text": "duration=Duration not specified in retrieved evidence for this specific inpatient substitution; typically 48-72 hours pending culture results. stop_criteria=Stop if blood cultures are negative at 48 hours and the infant remains clinically well."
+      },
+      {
+        "claim_id": "L025",
+        "reason": "Escalation criteria listed without source backing.",
+        "claim_text": "ESCALATION CRITERIA:"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": true,
+    "ungrounded_dose_examples": [
+      {
+        "claim_id": "L019",
+        "reason": "Mentions IV ampicillin or IM/IV gentamicin substitution but gives no dosage; no dosage information is present in the retrieved WHO excerpts.",
+        "claim_text": "- IV ampicillin or IM/IV gentamicin \u2014 SUBSTITUTED for outpatient regimen: Specific inpatient dose/frequency not provided in retrieved WHO excerpts; clinician must determine appropriate inpatient dosing based on local hospital protocols for hospitalized infants with suspected EOS."
+      }
+    ],
+    "rationale": "The plan contains multiple assertions (e.g., contraindication due to prior hospitalization, risk scoring, point allocation, and treatment substitutions) that are not supported by any of the supplied evidence passages (S001\u2011S010). Citation mapping is ambiguous, and several claims lack any source citation, leading to low scores for faithfulness, citation correctness, and completeness."
+  }
+}

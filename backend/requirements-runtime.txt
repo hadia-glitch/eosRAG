@@ -1,0 +1,14 @@
+# Direct dependencies pinned to the tested environment. Container builds must
+# also retain their image digest/SBOM; this is not a transitive hash lock.
+fastapi==0.119.1
+uvicorn==0.38.0
+pydantic==2.11.7
+pydantic-settings==2.14.2
+supabase==2.31.0
+httpx==0.28.1
+numpy==2.2.6
+shap==0.54.1
+rank-bm25==0.2.2
+langgraph==1.2.17
+neo4j==6.2.0
+sentence-transformers==5.6.0

@@ -1,0 +1,81 @@
+{
+  "completed": true,
+  "task_sha256": "1a30d9a94fcfea772bb59e9bbf9928a610bfd523e6f856245dfa58a490247f4b",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.536154799992801,
+  "kind": "plan",
+  "case_id": "cp_case_001",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-02164f5f-7d24-41f3-bcb7-1ef852ebabd2",
+    "object": "chat.completion",
+    "created": 1792946756,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"clinical_correctness\": 2,\n  \"clinical_completeness\": 2,\n  \"clinical_utility\": 2,\n  \"safety\": 3,\n  \"unsupported_claims\": [\n    \"Dose of benzylpenicillin not specified \u2013 plan states dose not in evidence, but NICE recommends 25\u202fmg/kg q12h (source: NICE infection dosage recommendation).\",\n    \"Gentamicin dosing statement claims 5\u202fmg/kg every 36\u202fh for confirmed GBS meningitis, but NICE recommends 5\u202fmg/kg as starting dose for empiric EOS (source: NICE infection dosage recommendation).\"\n  ],\n  \"contradictions\": [\n    \"Plan withholds gentamicin due to AKI risk despite no absolute contraindication; NICE advises using gentamicin unless contraindicated, and to monitor renal function (source: NICE gentamicin monitoring).\"\n  ],\n  \"critical_omissions\": [\n    \"No mention of performing blood culture before antibiotics (required by NICE).\",\n    \"No guidance on CRP trend monitoring and criteria for stopping at 36\u202fh as per NICE recommendation.\",\n    \"Absence of recommended duration of therapy decision algorithm (stop at 36\u202fh vs 7\u202fdays) with specific clinical criteria.\"\n  ],\n  \"regimen_incomplete\": true,\n  \"ungrounded_dose\": true,\n  \"rationale\": \"The plan cites evidence but misrepresents dosage recommendations (benzylpenicillin dose omitted, gentamicin dose described incorrectly) and omits required actions such as obtaining a blood culture before antibiotics. It withholds gentamicin based on renal risk without noting that NICE advises continuation with monitoring, leading to an incomplete regimen. Citations are present but do not support the specific dosing statements, reducing citation correctness and completeness. Clinical content misses key NICE guidance, lowering clinical correctness, completeness, and utility. Safety is moderate because renal monitoring is noted, but omission of recommended antibiotics reduces overall safety.\"\n}",
+          "reasoning": "We need to score. The plan mentions benzylpenicillin dose not specified, says dose not specified in evidence (but evidence says 25 mg/kg q12h). So ungrounded_dose true. Regimen incomplete? They withhold gentamicin due to AKI risk but still need it per guideline unless contraindicated; AKI risk present but not absolute contraindication. Should note regimen incomplete because gentamicin omitted without alternative. Provide findings. Also citation correctness: they cite E1 etc but doses statements not supported. Many citations mismatched. So low scores.\n\nProvide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.248437938,
+      "prompt_tokens": 6370,
+      "prompt_time": 0.30026204,
+      "completion_tokens": 562,
+      "completion_time": 1.168486867,
+      "total_tokens": 6932,
+      "total_time": 1.468748907,
+      "completion_tokens_details": {
+        "reasoning_tokens": 120
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c868cf1eaa",
+    "x_groq": {
+      "id": "req_01m5sz8mx7e1kvfe3e6cybwjpk",
+      "seed": 381854361
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "971",
+    "x-ratelimit-remaining-tokens": "693",
+    "x-ratelimit-reset-requests": "41m45.6s",
+    "x-ratelimit-reset-tokens": "54.802s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "clinical_correctness": 2,
+    "clinical_completeness": 2,
+    "clinical_utility": 2,
+    "safety": 3,
+    "unsupported_claims": [
+      "Dose of benzylpenicillin not specified \u2013 plan states dose not in evidence, but NICE recommends 25\u202fmg/kg q12h (source: NICE infection dosage recommendation).",
+      "Gentamicin dosing statement claims 5\u202fmg/kg every 36\u202fh for confirmed GBS meningitis, but NICE recommends 5\u202fmg/kg as starting dose for empiric EOS (source: NICE infection dosage recommendation)."
+    ],
+    "contradictions": [
+      "Plan withholds gentamicin due to AKI risk despite no absolute contraindication; NICE advises using gentamicin unless contraindicated, and to monitor renal function (source: NICE gentamicin monitoring)."
+    ],
+    "critical_omissions": [
+      "No mention of performing blood culture before antibiotics (required by NICE).",
+      "No guidance on CRP trend monitoring and criteria for stopping at 36\u202fh as per NICE recommendation.",
+      "Absence of recommended duration of therapy decision algorithm (stop at 36\u202fh vs 7\u202fdays) with specific clinical criteria."
+    ],
+    "regimen_incomplete": true,
+    "ungrounded_dose": true,
+    "rationale": "The plan cites evidence but misrepresents dosage recommendations (benzylpenicillin dose omitted, gentamicin dose described incorrectly) and omits required actions such as obtaining a blood culture before antibiotics. It withholds gentamicin based on renal risk without noting that NICE advises continuation with monitoring, leading to an incomplete regimen. Citations are present but do not support the specific dosing statements, reducing citation correctness and completeness. Clinical content misses key NICE guidance, lowering clinical correctness, completeness, and utility. Safety is moderate because renal monitoring is noted, but omission of recommended antibiotics reduces overall safety."
+  }
+}

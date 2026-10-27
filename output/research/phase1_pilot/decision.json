@@ -1,0 +1,15 @@
+{
+  "decision": "REVISE",
+  "complete": true,
+  "selected_cases": 10,
+  "clinical_release_justified": false,
+  "metric_pairs": 20,
+  "unique_chunk_judgments": 206,
+  "plan_judgments": 40,
+  "plan_stage_judgments": 80,
+  "source_id_conflict_groups": 8,
+  "selected_source_conflict_ids": 3,
+  "selected_cases_without_postnatal_age": 10,
+  "automatically_flagged_evaluator_findings": 32,
+  "provider_failures_in_quality_scores": false
+}

@@ -1,0 +1,69 @@
+{
+  "completed": true,
+  "task_sha256": "ec082be0aa6b56d23ecb99388a14bf856a167ffbef9403087a75b871cb7ee55b",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.8420385000063106,
+  "kind": "plan",
+  "case_id": "cp_case_007",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "dense_only_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-e3c5baa3-3895-44c6-a1bd-5b97031c4691",
+    "object": "chat.completion",
+    "created": 1792954384,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 5,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 3,\n  \"unsupported_claims\": [],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan's statements about low EOS risk, no need for blood culture or empirical antibiotics, and routine observation are directly supported by source S003, which defines thresholds (<1/1000 no culture, <3/1000 no antibiotics). Additional contextual information from S004\u2011S007 aligns with the overall guideline but does not contradict any claim. Citation mapping is missing, so specific line-to-source links cannot be verified, reducing citation correctness and completeness scores.\"\n}",
+          "reasoning": "We need produce JSON with scores. Assess faithfulness: claims align with evidence S003 etc. The plan says risk low, no culture, no antibiotics. S003 supports thresholds and that low risk <1 per 1000 no culture. So faithful. citation correctness: mapping unknown, they didn't provide E numbers, but claim cites [E1] not mapped. So correctness low. completeness: all claims supported? Likely yes but citations missing. So maybe 3. Unsupported claims: none. Contradictions: none. Ungrounded_dose false. Provide empty arrays. Provide rationale."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.563660644,
+      "prompt_tokens": 2577,
+      "prompt_time": 0.732428792,
+      "completion_tokens": 290,
+      "completion_time": 0.609766773,
+      "total_tokens": 2867,
+      "total_time": 1.342195565,
+      "completion_tokens_details": {
+        "reasoning_tokens": 120
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_86dc843b12",
+    "x_groq": {
+      "id": "req_01m5t6hedve1jagbjvkg4z1bcf",
+      "seed": 1088404385
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "979",
+    "x-ratelimit-remaining-tokens": "4954",
+    "x-ratelimit-reset-requests": "30m14.4s",
+    "x-ratelimit-reset-tokens": "22.845s"
+  },
+  "result": {
+    "faithfulness": 5,
+    "citation_correctness": 2,
+    "citation_completeness": 3,
+    "unsupported_claims": [],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan's statements about low EOS risk, no need for blood culture or empirical antibiotics, and routine observation are directly supported by source S003, which defines thresholds (<1/1000 no culture, <3/1000 no antibiotics). Additional contextual information from S004\u2011S007 aligns with the overall guideline but does not contradict any claim. Citation mapping is missing, so specific line-to-source links cannot be verified, reducing citation correctness and completeness scores."
+  }
+}

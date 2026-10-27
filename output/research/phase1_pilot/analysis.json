@@ -1,0 +1,653 @@
+{
+  "seed": 20261025,
+  "bootstrap_replicates": 20000,
+  "uncertainty_scope": "Descriptive paired case bootstrap of ten development scenarios. Template/source dependence and selection from 30 eligible cases limit inference; no population-level clinical claim.",
+  "complete_plan_population": true,
+  "input_scope_audit": {
+    "missing_postnatal_age_case_ids": [
+      "cp_case_001",
+      "cp_case_002",
+      "cp_case_003",
+      "cp_case_004",
+      "cp_case_007",
+      "cp_case_009",
+      "cp_case_011",
+      "cp_case_014",
+      "cp_case_025",
+      "cp_case_026"
+    ],
+    "policy": "Missing age remains unknown in original judgments; corrected cases are separate and cannot repair original case scope."
+  },
+  "paired_comparisons": {
+    "retrieval_exact_mrr_at10": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": 0.28404761904761905,
+      "bootstrap_percentile_95": [
+        0.08,
+        0.5207142857142857
+      ],
+      "wins": 5,
+      "ties": 5,
+      "losses": 0
+    },
+    "retrieval_exact_ndcg_at10": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": 0.2562350938874346,
+      "bootstrap_percentile_95": [
+        0.12425764357102395,
+        0.39977518113461097
+      ],
+      "wins": 9,
+      "ties": 0,
+      "losses": 1
+    },
+    "retrieval_anchor_grounding_recall": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": 0.1253796203796204,
+      "bootstrap_percentile_95": [
+        0.0338961038961039,
+        0.21230769230769225
+      ],
+      "wins": 6,
+      "ties": 2,
+      "losses": 2
+    },
+    "utility_precision_at10": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": 0.11999999999999997,
+      "bootstrap_percentile_95": [
+        0.010000000000000004,
+        0.22999999999999998
+      ],
+      "wins": 7,
+      "ties": 2,
+      "losses": 1
+    },
+    "semantic_mrr_at10": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": 0.18071428571428574,
+      "bootstrap_percentile_95": [
+        -0.017857142857142856,
+        0.4050000000000001
+      ],
+      "wins": 4,
+      "ties": 4,
+      "losses": 2
+    },
+    "semantic_ndcg_at10": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": 0.14547600365278474,
+      "bootstrap_percentile_95": [
+        0.016748734383281394,
+        0.2652638601307026
+      ],
+      "wins": 8,
+      "ties": 0,
+      "losses": 2
+    },
+    "bleu": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": -0.012064253452908897,
+      "bootstrap_percentile_95": [
+        -0.02715509727506924,
+        0.005779157522122017
+      ],
+      "wins": 3,
+      "ties": 0,
+      "losses": 7
+    },
+    "meteor": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": -0.00881248262900312,
+      "bootstrap_percentile_95": [
+        -0.020698966772188878,
+        0.003514059414406573
+      ],
+      "wins": 4,
+      "ties": 0,
+      "losses": 6
+    },
+    "bertscore_f1": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": -0.0035741984844207763,
+      "bootstrap_percentile_95": [
+        -0.00646933376789093,
+        -0.0006271785497665456
+      ],
+      "wins": 2,
+      "ties": 0,
+      "losses": 8
+    },
+    "clinical_utility": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": 0.4,
+      "bootstrap_percentile_95": [
+        -0.1,
+        0.9
+      ],
+      "wins": 4,
+      "ties": 5,
+      "losses": 1
+    },
+    "safety": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": 0.3,
+      "bootstrap_percentile_95": [
+        -0.3,
+        1.0
+      ],
+      "wins": 3,
+      "ties": 5,
+      "losses": 2
+    },
+    "faithfulness": {
+      "n": 10,
+      "difference": "hybrid minus dense",
+      "mean_difference": 0.2,
+      "bootstrap_percentile_95": [
+        -0.4,
+        0.8
+      ],
+      "wins": 4,
+      "ties": 3,
+      "losses": 3
+    },
+    "dense_only_versus_ma_regimen_incomplete": {
+      "n": 10,
+      "difference": "dense_only_multiagent minus dense_only",
+      "mean_difference": 0.0,
+      "bootstrap_percentile_95": [
+        -0.3,
+        0.3
+      ],
+      "wins": 1,
+      "ties": 8,
+      "losses": 1
+    },
+    "dense_only_versus_ma_ungrounded_dose": {
+      "n": 10,
+      "difference": "dense_only_multiagent minus dense_only",
+      "mean_difference": 0.3,
+      "bootstrap_percentile_95": [
+        -0.1,
+        0.7
+      ],
+      "wins": 4,
+      "ties": 5,
+      "losses": 1
+    },
+    "dense_only_versus_ma_unsupported_claim_plan": {
+      "n": 10,
+      "difference": "dense_only_multiagent minus dense_only",
+      "mean_difference": -0.1,
+      "bootstrap_percentile_95": [
+        -0.3,
+        0.0
+      ],
+      "wins": 0,
+      "ties": 9,
+      "losses": 1
+    },
+    "hybrid_versus_ma_regimen_incomplete": {
+      "n": 10,
+      "difference": "hybrid_multiagent minus hybrid",
+      "mean_difference": 0.2,
+      "bootstrap_percentile_95": [
+        0.0,
+        0.5
+      ],
+      "wins": 2,
+      "ties": 8,
+      "losses": 0
+    },
+    "hybrid_versus_ma_ungrounded_dose": {
+      "n": 10,
+      "difference": "hybrid_multiagent minus hybrid",
+      "mean_difference": -0.1,
+      "bootstrap_percentile_95": [
+        -0.3,
+        0.0
+      ],
+      "wins": 0,
+      "ties": 9,
+      "losses": 1
+    },
+    "hybrid_versus_ma_unsupported_claim_plan": {
+      "n": 10,
+      "difference": "hybrid_multiagent minus hybrid",
+      "mean_difference": -0.2,
+      "bootstrap_percentile_95": [
+        -0.5,
+        0.0
+      ],
+      "wins": 0,
+      "ties": 8,
+      "losses": 2
+    }
+  },
+  "safety_all_four_arms": {
+    "dense_only": {
+      "n": 10,
+      "regimen_incomplete": 0.7,
+      "ungrounded_dose": 0.1,
+      "unsupported_claim_plan": 0.9
+    },
+    "hybrid": {
+      "n": 10,
+      "regimen_incomplete": 0.6,
+      "ungrounded_dose": 0.1,
+      "unsupported_claim_plan": 1.0
+    },
+    "dense_only_multiagent": {
+      "n": 10,
+      "regimen_incomplete": 0.7,
+      "ungrounded_dose": 0.4,
+      "unsupported_claim_plan": 0.8
+    },
+    "hybrid_multiagent": {
+      "n": 10,
+      "regimen_incomplete": 0.8,
+      "ungrounded_dose": 0.0,
+      "unsupported_claim_plan": 0.8
+    }
+  },
+  "exact_versus_semantic_ndcg_arm_rank_spearman": 0.7,
+  "suspicious_evaluator_findings": [
+    {
+      "case_id": "cp_case_001",
+      "arm": "dense_only",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L007",
+        "reason": "Exact 20% risk contribution for each driver is not found in the evidence.",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_001",
+      "arm": "hybrid",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L007",
+        "reason": "Quantitative driver contribution percentages not sourced",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_001",
+      "arm": "hybrid",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L010",
+        "reason": "Section header not a claim but lacks citation",
+        "claim_text": "RECOMMENDED ACTIONS:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_001",
+      "arm": "hybrid",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L022",
+        "reason": "Detailed monitoring plan (vital signs, urine output, creatinine) not cited",
+        "claim_text": "MONITORING PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_001",
+      "arm": "hybrid",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L025",
+        "reason": "Escalation criteria not found in any passage",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_001",
+      "arm": "hybrid",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L028",
+        "reason": "Nutrition/fluid plan not sourced",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_001",
+      "arm": "hybrid",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L034",
+        "reason": "Contraindication flag wording not directly from evidence",
+        "claim_text": "CONTRAINDICATION FLAGS:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_001",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L007",
+        "reason": "Driver breakdown with 20% each is not present in the source texts",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_002",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L007",
+        "reason": "Driver breakdown percentages not present in any source",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_002",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L022",
+        "reason": "Monitoring plan details not present in the evidence",
+        "claim_text": "MONITORING PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_002",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L025",
+        "reason": "Escalation criteria not sourced",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_002",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L028",
+        "reason": "Nutrition/fluid plan not mentioned in the excerpts",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_004",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L007",
+        "reason": "Driver breakdown list of point values not sourced from evidence",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_004",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L010",
+        "reason": "Section header not a claim but lacks source",
+        "claim_text": "RECOMMENDED ACTIONS:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_004",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L022",
+        "reason": "Monitoring plan details not found in evidence",
+        "claim_text": "MONITORING PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_004",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L025",
+        "reason": "Escalation criteria not described in retrieved passages",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_004",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L028",
+        "reason": "Nutrition/fluid plan not sourced from evidence",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_004",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L031",
+        "reason": "Disambiguation block and other headings are not supported by evidence",
+        "claim_text": "DISAMBIGUATION BLOCK:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_009",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L007",
+        "reason": "Driver breakdown percentages not supported by any passage",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_009",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L026",
+        "reason": "Escalation criteria not grounded in the retrieved text",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_014",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L007",
+        "reason": "Specific point values for each risk factor are not found in the provided passages.",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_014",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L023",
+        "reason": "Monitoring frequency details are not in the evidence.",
+        "claim_text": "MONITORING PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_014",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L026",
+        "reason": "Escalation criteria are not sourced from the provided passages.",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_014",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L029",
+        "reason": "Nutrition/fluid plan details are not supported by the evidence.",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_026",
+      "arm": "hybrid",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L025",
+        "reason": "Escalation criteria listed without source backing.",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_026",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L022",
+        "reason": "Monitoring plan details not found in cited texts.",
+        "claim_text": "MONITORING PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_026",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L025",
+        "reason": "Escalation criteria not supported by the provided evidence.",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_026",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L028",
+        "reason": "Nutrition/fluid plan not grounded in the evidence passages.",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_026",
+      "arm": "dense_only_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L034",
+        "reason": "Section header without supporting content.",
+        "claim_text": "CONTRAINDICATION FLAGS:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_026",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L024",
+        "reason": "Monitoring plan details are not sourced.",
+        "claim_text": "MONITORING PLAN:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_026",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L027",
+        "reason": "Escalation criteria are not found in the cited passages.",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      "requires_independent_review": true
+    },
+    {
+      "case_id": "cp_case_026",
+      "arm": "hybrid_multiagent",
+      "stage": "grounding",
+      "field": "unsupported_claims",
+      "finding": {
+        "claim_id": "L030",
+        "reason": "Nutrition/fluid plan not supported by the evidence.",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      },
+      "requires_independent_review": true
+    }
+  ],
+  "evaluator_audit_policy": "Preserve every completed final-rubric rating and finding. Suspect heading/empty-line findings are flagged for independent review, not silently deleted, rewritten or regraded."
+}

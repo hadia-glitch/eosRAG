@@ -1,0 +1,217 @@
+{
+  "protocol": "Phase 1 pilot supplied 2026-10-25",
+  "analysis_role": "development pilot; historical generated outputs newly evaluated",
+  "selection": "Deterministic greedy metadata coverage, case-ID tie-break; quotas NICE4 WHO3 AAP3; eligible only when all five retrieval and four generation/MA arms exist; no outcome scores used",
+  "eligible_cases": 30,
+  "selected_case_ids": [
+    "cp_case_001",
+    "cp_case_002",
+    "cp_case_003",
+    "cp_case_004",
+    "cp_case_007",
+    "cp_case_009",
+    "cp_case_011",
+    "cp_case_014",
+    "cp_case_025",
+    "cp_case_026"
+  ],
+  "selected_metadata": [
+    {
+      "case_id": "cp_case_001",
+      "guideline": "NICE",
+      "risk": "HIGH",
+      "contraindication": "gentamicin_aki",
+      "trend": null,
+      "ambiguous": false
+    },
+    {
+      "case_id": "cp_case_002",
+      "guideline": "NICE",
+      "risk": "INTERMEDIATE",
+      "contraindication": null,
+      "trend": null,
+      "ambiguous": false
+    },
+    {
+      "case_id": "cp_case_003",
+      "guideline": "AAP",
+      "risk": "INTERMEDIATE",
+      "contraindication": null,
+      "trend": null,
+      "ambiguous": false
+    },
+    {
+      "case_id": "cp_case_004",
+      "guideline": "WHO",
+      "risk": "CRITICAL",
+      "contraindication": null,
+      "trend": null,
+      "ambiguous": true
+    },
+    {
+      "case_id": "cp_case_007",
+      "guideline": "AAP",
+      "risk": "LOW",
+      "contraindication": null,
+      "trend": "deteriorating",
+      "ambiguous": false
+    },
+    {
+      "case_id": "cp_case_009",
+      "guideline": "NICE",
+      "risk": "INTERMEDIATE",
+      "contraindication": "penicillin_allergy",
+      "trend": null,
+      "ambiguous": false
+    },
+    {
+      "case_id": "cp_case_011",
+      "guideline": "AAP",
+      "risk": "INTERMEDIATE",
+      "contraindication": null,
+      "trend": null,
+      "ambiguous": false
+    },
+    {
+      "case_id": "cp_case_014",
+      "guideline": "NICE",
+      "risk": "HIGH",
+      "contraindication": null,
+      "trend": "improving",
+      "ambiguous": false
+    },
+    {
+      "case_id": "cp_case_025",
+      "guideline": "WHO",
+      "risk": "INTERMEDIATE",
+      "contraindication": "who_lbw",
+      "trend": null,
+      "ambiguous": false
+    },
+    {
+      "case_id": "cp_case_026",
+      "guideline": "WHO",
+      "risk": "INTERMEDIATE",
+      "contraindication": "who_recent_hosp",
+      "trend": null,
+      "ambiguous": false
+    }
+  ],
+  "input_hashes": {
+    "neoguard_care_plan_eval_dataset_100.json": "6eea32d2425bc7575d060e8447e9bf0bb42fb15670c7bc5cc14834b1220810c1",
+    "retrieval_only_metrics (14).csv": "2a11a856b5f8418a24858bdb00d6a4b47f1ab1f2447cdfb217209fe214401ab0",
+    "generation_evaluation_dense_hybrid.csv": "ea06d79ec003e2367cc2d726ca0f2758ab1da8b6f21b9543884357ccc37836d4",
+    "multi_agent_all_arms_results.csv": "1b940ecf16ad2b317c2dc8417973cdf472b5391234ceb1a79a132598dd85a2e0",
+    "chunks_ingested.csv": "c73f42dd36c4efc5f57fc4c08fa89b5be0e0492a8ce9f3ed0824fe150434c4ca"
+  },
+  "corpus_file": "chunks_ingested.csv",
+  "corpus_rows": 489,
+  "duplicate_chunk_ids": 8,
+  "missing_top10_chunk_ids": [],
+  "missing_gold_chunk_ids": [],
+  "historical_gold_mismatches": [
+    {
+      "file": "generation",
+      "case_id": "cp_case_001",
+      "arm": "dense_only",
+      "historical_gold_n": 13,
+      "canonical_gold_n": 15,
+      "overlap": 13
+    },
+    {
+      "file": "generation",
+      "case_id": "cp_case_002",
+      "arm": "dense_only",
+      "historical_gold_n": 11,
+      "canonical_gold_n": 12,
+      "overlap": 11
+    },
+    {
+      "file": "generation",
+      "case_id": "cp_case_009",
+      "arm": "dense_only",
+      "historical_gold_n": 13,
+      "canonical_gold_n": 14,
+      "overlap": 13
+    },
+    {
+      "file": "generation",
+      "case_id": "cp_case_001",
+      "arm": "hybrid",
+      "historical_gold_n": 13,
+      "canonical_gold_n": 15,
+      "overlap": 13
+    },
+    {
+      "file": "generation",
+      "case_id": "cp_case_002",
+      "arm": "hybrid",
+      "historical_gold_n": 11,
+      "canonical_gold_n": 12,
+      "overlap": 11
+    },
+    {
+      "file": "generation",
+      "case_id": "cp_case_009",
+      "arm": "hybrid",
+      "historical_gold_n": 13,
+      "canonical_gold_n": 14,
+      "overlap": 13
+    },
+    {
+      "file": "multiagent",
+      "case_id": "cp_case_001",
+      "arm": "dense_only_multiagent",
+      "historical_gold_n": 13,
+      "canonical_gold_n": 15,
+      "overlap": 13
+    },
+    {
+      "file": "multiagent",
+      "case_id": "cp_case_002",
+      "arm": "dense_only_multiagent",
+      "historical_gold_n": 11,
+      "canonical_gold_n": 12,
+      "overlap": 11
+    },
+    {
+      "file": "multiagent",
+      "case_id": "cp_case_009",
+      "arm": "dense_only_multiagent",
+      "historical_gold_n": 13,
+      "canonical_gold_n": 14,
+      "overlap": 13
+    },
+    {
+      "file": "multiagent",
+      "case_id": "cp_case_001",
+      "arm": "hybrid_multiagent",
+      "historical_gold_n": 13,
+      "canonical_gold_n": 15,
+      "overlap": 13
+    },
+    {
+      "file": "multiagent",
+      "case_id": "cp_case_002",
+      "arm": "hybrid_multiagent",
+      "historical_gold_n": 11,
+      "canonical_gold_n": 12,
+      "overlap": 11
+    },
+    {
+      "file": "multiagent",
+      "case_id": "cp_case_009",
+      "arm": "hybrid_multiagent",
+      "historical_gold_n": 13,
+      "canonical_gold_n": 14,
+      "overlap": 13
+    }
+  ],
+  "gold_modified": false,
+  "canonical_gold": "Original gold_chunk_ids and anchor_phrases in the supplied 100-case JSON",
+  "reference_validity": "Template-authored reference; metadata attribution to clinician curation is unverified; old rule-score probabilities are not validated ML outputs",
+  "strict_top_k": 10,
+  "expanded_context_in_exact_scores": false,
+  "semantic_ndcg_ideal": "Ideal DCG over the judged union of top-10 chunks across all five arms, same case, truncated to 10; not corpus-wide recall",
+  "missing_numeric_values": "NOT EVALUATED, never zero-imputed"
+}

@@ -1,0 +1,116 @@
+{
+  "completed": true,
+  "task_sha256": "c5fe70cfaa43168cfc7c4028e53ab66d6cc34e46b02b7abf672e8f63c53fad84",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 9.742640700002084,
+  "kind": "chunks",
+  "case_id": "cp_case_003",
+  "mapping": {
+    "P007": "AAP_pg3_multivariate-risk-assess_chunk2",
+    "P008": "AAP_pg4_newborn-clinical-conditi_chunk1",
+    "P009": "AAP_pg4_newborn-clinical-conditi_chunk2",
+    "P011": "AAP_pg5_white-blood-cell-count_chunk2",
+    "P012": "AAP_pg5_white-blood-cell-count_chunk3",
+    "P013": "AAP_pg6_other-inflammatory-marke_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-2ff5f79f-9839-45a2-b51a-e6affd7207db",
+    "object": "chat.completion",
+    "created": 1792945416,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P007\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"States antibiotics recommended for EOS risk \u22653/1000; case risk is 3/1000, directly supporting treatment.\"\n    },\n    {\n      \"passage\": \"P008\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Describes clinical\u2011observation strategy for well\u2011appearing infants, relevant to deciding observation vs antibiotics.\"\n    },\n    {\n      \"passage\": \"P009\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Notes reliance on obstetric risk flags and serial exams for well\u2011appearing term/late\u2011preterm infants.\"\n    },\n    {\n      \"passage\": \"P011\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"States WBC count has poor predictive value for EOS, marginally relevant to case.\"\n    },\n    {\n      \"passage\": \"P012\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Further emphasizes limited utility of WBC and platelet counts for EOS risk assessment.\"\n    },\n    {\n      \"passage\": \"P013\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Explains single CRP values are not sensitive/specific; informs that elevated CRP alone should not dictate antibiotics.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for each target passage: P007,P008,P009,P011,P012,P013. Provide grades. Evaluate: scenario: preterm 34w, prolonged ROM 20h, CRP 12, risk intermediate. Proposed antibiotics benzylpenicillin+gentamicin. Passages:\n\nP007: describes risk calculator thresholds: >=1 per 1000 culture, >=3 per 1000 antibiotics. This is actionable evidence for decision to give antibiotics based on risk estimate. It is applicable (risk estimate needed). Provides guidance to give antibiotics if risk >=3/1000. Our case risk 3 per 1000 (from risk result). So direct actionable. Grade 3, guideline aligned true, scenario applicable true, clinically useful true.\n\nP008: clinical condition strategy: rely on signs of illness; infant well-appearing => observation, not antibiotics. Our infant well-appearing. This is background/marginal? It informs that clinical observation alone may be used. Relevant but not direct recommendation for antibiotics. Grade 2? It provides applicable support that may argue against antibiotics. It's actionable (if ill treat). Here scenario well, so suggests observation. So useful. Grade 2.\n\nP009: similar to P008, about flagging based on obstetric diagnosis and serial exams. Also background. Grade 2.\n\nP011: WBC count utility low; mentions abnormal values not reliable. Our WBC 18.5 (normal). This indicates WBC not useful. Relevant background. Grade 1 or 2? It says WBC not useful, so informs that WBC shouldn't drive therapy. That's marginal. Grade 1.\n\nP012: similar about WBC and platelet not associated. Also marginal. Grade 1.\n\nP013: CRP not sensitive/specific; serial normal CRP suggests absence of EOS. Our CRP 12 (elevated). This indicates CRP may be abnormal but not decisive. Provides info that single CRP not enough. Relevant background. Grade 2? It says single CRP not sensitive nor specific to guide decisions. So informs that CRP alone shouldn't dictate antibiotics. Useful. Grade 2.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.248019044,
+      "prompt_tokens": 3417,
+      "prompt_time": 0.256417305,
+      "completion_tokens": 919,
+      "completion_time": 2.0316442,
+      "total_tokens": 4336,
+      "total_time": 2.288061505,
+      "prompt_tokens_details": {
+        "cached_tokens": 768
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 449
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m5sxzr32evjaksfr2asx3rbz",
+      "seed": 594741252
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "990",
+    "x-ratelimit-remaining-tokens": "3734",
+    "x-ratelimit-reset-requests": "14m24s",
+    "x-ratelimit-reset-tokens": "31.995s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P007",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "States antibiotics recommended for EOS risk \u22653/1000; case risk is 3/1000, directly supporting treatment."
+      },
+      {
+        "passage": "P008",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Describes clinical\u2011observation strategy for well\u2011appearing infants, relevant to deciding observation vs antibiotics."
+      },
+      {
+        "passage": "P009",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Notes reliance on obstetric risk flags and serial exams for well\u2011appearing term/late\u2011preterm infants."
+      },
+      {
+        "passage": "P011",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "States WBC count has poor predictive value for EOS, marginally relevant to case."
+      },
+      {
+        "passage": "P012",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Further emphasizes limited utility of WBC and platelet counts for EOS risk assessment."
+      },
+      {
+        "passage": "P013",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Explains single CRP values are not sensitive/specific; informs that elevated CRP alone should not dictate antibiotics."
+      }
+    ]
+  }
+}

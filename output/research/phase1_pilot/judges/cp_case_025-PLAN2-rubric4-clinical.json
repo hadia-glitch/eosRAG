@@ -1,0 +1,71 @@
+{
+  "completed": true,
+  "task_sha256": "d9eea2b1fcc1f46e104b35bb5f4757473195674e65b91a4b5558b60f3ec58c8d",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.3358015999983763,
+  "kind": "plan",
+  "case_id": "cp_case_025",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-503262c6-803f-439d-9b4f-dbafbb0fb58b",
+    "object": "chat.completion",
+    "created": 1792955734,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":4,\"clinical_completeness\":4,\"clinical_utility\":4,\"safety\":5,\"contradictions\":[],\"critical_omissions\":[\"Weight\u2011based contraindication for outpatient PSBI (birth weight <1500\u202fg) is asserted (L011, L035) but not explicitly stated in any supplied WHO passage\"],\"regimen_incomplete\":false,\"rationale\":\"Plan correctly recommends hospitalization for a 1200\u202fg preterm infant and IV ampicillin\u202f+\u202fgentamicin, aligning with WHO emphasis on referral for severe infection (S001, S006). It notes lack of dosing details (L019) which is acceptable as dosing is not provided in the supplied evidence. The only gap is the explicit weight cutoff justification, which is not found in the given passages.\"}",
+          "reasoning": "We need produce JSON with fields. Assess plan.\n\nPlan says immediate hospitalization due to birth weight <1500g, which matches WHO contraindication for outpatient PSBI. Evidence S001 says outpatient regimen only if cannot refer; but also S006 says referral is emphasized. No explicit weight cutoff in provided passages, but contraindication type \"who_lbw\" suggests low birth weight contraindicates outpatient. Not in passages though. However we can note omission of weight cutoff evidence. Contradictions: claim L019 says dose not specified; that's okay. No unsafe recommendation. Plan includes IV ampicillin but no dose; acceptable as dose not in evidence. Safety good.\n\nCritical omissions: No mention of duration of gentamicin, monitoring labs specifics? Might be okay.\n\nRegimen incomplete? IV ampicillin dose unspecified, but guideline doesn't provide dose; acceptable. Might mark regimen_incomplete false? Probably true because dosing missing? According to rules, do not demand numeric dose if cannot be established. So regimen_incomplete = false.\n\nProvide contradictions: any claim contradictory to source? L011 says hospitalization due to weight <1500g; source does not state weight cutoff. So that claim not directly supported; could be contradiction? It's not contradicted, just not in source. Might not list.\n\nCritical omissions: No mention of referral impossibility context? Already hospitalized. Might omit mention of need for referral if outpatient not possible\u2014already covered.\n\nThus ratings: clinical_correctness 4, completeness 4, utility 4, safety 5.\n\nProvide contradictions maybe none.\n\nCritical omissions list maybe \"Weight cutoff justification not in provided source\". Provide.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.253596386,
+      "prompt_tokens": 3663,
+      "prompt_time": 0.318346393,
+      "completion_tokens": 509,
+      "completion_time": 1.052351616,
+      "total_tokens": 4172,
+      "total_time": 1.370698009,
+      "completion_tokens_details": {
+        "reasoning_tokens": 332
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m5t7tmpqerm99t7zjrt9mrpg",
+      "seed": 128164353
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "979",
+    "x-ratelimit-remaining-tokens": "3711",
+    "x-ratelimit-reset-requests": "30m14.4s",
+    "x-ratelimit-reset-tokens": "32.167s"
+  },
+  "result": {
+    "clinical_correctness": 4,
+    "clinical_completeness": 4,
+    "clinical_utility": 4,
+    "safety": 5,
+    "contradictions": [],
+    "critical_omissions": [
+      "Weight\u2011based contraindication for outpatient PSBI (birth weight <1500\u202fg) is asserted (L011, L035) but not explicitly stated in any supplied WHO passage"
+    ],
+    "regimen_incomplete": false,
+    "rationale": "Plan correctly recommends hospitalization for a 1200\u202fg preterm infant and IV ampicillin\u202f+\u202fgentamicin, aligning with WHO emphasis on referral for severe infection (S001, S006). It notes lack of dosing details (L019) which is acceptable as dosing is not provided in the supplied evidence. The only gap is the explicit weight cutoff justification, which is not found in the given passages."
+  }
+}

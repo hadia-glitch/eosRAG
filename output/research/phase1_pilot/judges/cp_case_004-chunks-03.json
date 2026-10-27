@@ -1,0 +1,107 @@
+{
+  "completed": true,
+  "task_sha256": "0dd9c82a43172925516f11574608be96854a699f79bfbed436ce9e7608846f3c",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 7.87494290000177,
+  "kind": "chunks",
+  "case_id": "cp_case_004",
+  "mapping": {
+    "P014": "WHO_pg34_recommendation-b-4-new_rec1_chunk1",
+    "P015": "WHO_pg3_overview_chunk1",
+    "P019": "WHO_pg6_background-and-definitio_chunk1",
+    "P020": "WHO_pg6_recommendation-a-2-updat_rec1_chunk1",
+    "P022": "WHO_pg9_recommendation-a-3a-upda_rec1_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-33e9a7b1-9c40-4908-943d-cf1d5555ca14",
+    "object": "chat.completion",
+    "created": 1792945713,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"judgments\":[{\"passage\":\"P014\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Mentions ampicillin+gentamicin for meningitis with 3\u2011week course, not sepsis critical illness.\"},{\"passage\":\"P015\",\"relevance_grade\":0,\"guideline_aligned\":false,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Discusses diagnostic accuracy of PSBI algorithms, no treatment guidance.\"},{\"passage\":\"P019\",\"relevance_grade\":3,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Defines critical illness and recommends ampicillin+gentamicin \u226510\u202fdays for hospitalized infants with critical illness.\"},{\"passage\":\"P020\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Recommends ampicillin+gentamicin \u226510\u202fdays if referral not possible; applicable regimen for hospitalized critical infant.\"},{\"passage\":\"P022\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Guides oral amoxicillin+gentamicin for clinical severe infection when referral impossible; not matched to critical illness IV regimen.\"}]}",
+          "reasoning": "We need output judgments for each target passage. Determine grades.\n\nCase: hospitalized infant with critical illness, need ampicillin+gentamicin. Guideline WHO.\n\nPassages:\n\nP014: recommendation for meningitis hospitalized infants: ampicillin, cefotaxime or ceftriaxone plus gentamicin for at least three weeks. Not directly our case (sepsis not meningitis). Grade? background? It mentions ampicillin+gentamicin but for meningitis and 3 weeks. Not directly actionable. So grade 1 maybe. guideline aligned? It's WHO but for meningitis, not our scenario. scenario_applicable false. clinically_useful false.\n\nP015: overview question about diagnostic accuracy of sign algorithms. Not treatment. Irrelevant. grade 0. guideline aligned? Not about treatment. scenario_applicable false. clinically_useful false.\n\nP019: background defines critical illness and mentions recommendation to provide ampicillin+gentamicin for at least 10 days to hospitalized infants with critical illness. That's directly relevant. Grade 3 direct actionable. guideline aligned true. scenario_applicable true. clinically_useful true.\n\nP020: recommendation A.2: refer to hospital; if not possible, ampicillin+gentamicin for at least 10 days. Our case is hospitalized, so recommendation of referral not needed but still mentions antibiotic regimen for hospitalized? It says if referral not possible. Not directly for hospitalized but still gives regimen. Might be grade 2 useful. guideline aligned true. scenario_applicable true (hospitalized infant qualifies for same regimen). clinically_useful true.\n\nP022: recommendation for clinical severe infection, oral amoxicillin + gentamicin if referral not possible. Not our case (critical illness, need IV). So less relevant. Grade 1 maybe background. guideline aligned true. scenario_applicable false (different severity). clinically_useful false.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.24835186,
+      "prompt_tokens": 3770,
+      "prompt_time": 0.419348494,
+      "completion_tokens": 701,
+      "completion_time": 1.790161262,
+      "total_tokens": 4471,
+      "total_time": 2.209509756,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 390
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_803c0ba83d",
+    "x_groq": {
+      "id": "req_01m5sy8syse92t1y7bhwhcvh37",
+      "seed": 1000630141
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "986",
+    "x-ratelimit-remaining-tokens": "2030",
+    "x-ratelimit-reset-requests": "20m9.6s",
+    "x-ratelimit-reset-tokens": "44.775s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P014",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Mentions ampicillin+gentamicin for meningitis with 3\u2011week course, not sepsis critical illness."
+      },
+      {
+        "passage": "P015",
+        "relevance_grade": 0,
+        "guideline_aligned": false,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses diagnostic accuracy of PSBI algorithms, no treatment guidance."
+      },
+      {
+        "passage": "P019",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Defines critical illness and recommends ampicillin+gentamicin \u226510\u202fdays for hospitalized infants with critical illness."
+      },
+      {
+        "passage": "P020",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends ampicillin+gentamicin \u226510\u202fdays if referral not possible; applicable regimen for hospitalized critical infant."
+      },
+      {
+        "passage": "P022",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Guides oral amoxicillin+gentamicin for clinical severe infection when referral impossible; not matched to critical illness IV regimen."
+      }
+    ]
+  }
+}

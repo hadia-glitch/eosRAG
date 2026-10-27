@@ -1,0 +1,88 @@
+{
+  "completed": true,
+  "task_sha256": "0a68acb5520e97fe7b2ac37ba322e312b00019dcd2781275ec7b2823c94eb414",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.5722755000024335,
+  "kind": "plan",
+  "case_id": "cp_case_003",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-5d2bf7d1-c390-4b48-8656-5d4c7d225106",
+    "object": "chat.completion",
+    "created": 1792952349,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"Exact probability of 3.0 per 1000 and its meeting of the threshold are not stated in any retrieved passage; S007 only gives the threshold (\u22653/1000) but no case-specific estimate.\"\n    },\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Combined score of 4 and probability of 3.0 per 1000 are not found in the evidence; no source provides a numeric score or probability for this infant.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Point allocation (2 points each, 50% of risk) for ROM and CRP is not described in any cited passage.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan references AAP passages that describe thresholds, risk categories, and the limited utility of inflammatory markers, but it adds specific numeric risk estimates and point breakdowns not present in the supplied evidence. Citation mapping is unavailable, so many statements lack verifiable links to source text, reducing citation completeness and correctness.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. Identify unsupported claims. The plan cites passages S001,S002,S003,S007,S008,S009 but mapping unknown. Check claims:\n\nL002 says risk 3.0 per 1000 meets threshold. Source S007 says threshold >=3 per 1000 for antibiotics. It does not give specific probability 3.0 per 1000 for this case. So claim of 3.0 per 1000 is unsupported (no source provides that number). So unsupported.\n\nL005 similar claim of combined score 4, probability 3.0 per 1000. Unsupported.\n\nL008 driver breakdown says each contributes 2 points (50% risk). No source gives point system. So unsupported.\n\nL017 ampicillin dose not specified; claim of ampicillin but dose not given. Ungrounded dose? It says dose per formulary not specified, so no dose claim, okay.\n\nL018 gentamicin similar.\n\nL019 stop criteria statement: \"Consistently normal values of CRP and procalcitonin over the first 48 hours ... should not be used to decide ...\". This aligns with S009 which says serial abnormal values alone should not be used to decide antibiotics; also says normal values associated with absence of EOS. The claim is okay.\n\nCheck contradictions: L002 says intermediate risk driven by ROM and CRP. Source S001 categorical risk includes ROM >18h as risk factor, okay. S009 mentions CRP not specific. Not contradictory.\n\nCitation completeness: many claims lack citations because mapping missing. So citation completeness low.\n\nFaithfulness: many statements not directly in evidence. So low.\n\nProvide JSON with ratings maybe 2 for faithfulness, 2 citation correctness, 2 citation completeness. List unsupported_claims: L002, L005, L008. No contradictions. Ungrounded_dose false. Provide rationale.\n\n"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.308206297,
+      "prompt_tokens": 3024,
+      "prompt_time": 0.10476493,
+      "completion_tokens": 686,
+      "completion_time": 1.5549016089999999,
+      "total_tokens": 3710,
+      "total_time": 1.659666539,
+      "prompt_tokens_details": {
+        "cached_tokens": 512
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 385
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_8ea50c0161",
+    "x_groq": {
+      "id": "req_01m5t4kb6yew4b8y0s40taa1kg",
+      "seed": 740155987
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "977",
+    "x-ratelimit-remaining-tokens": "4451",
+    "x-ratelimit-reset-requests": "33m7.2s",
+    "x-ratelimit-reset-tokens": "26.617s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Exact probability of 3.0 per 1000 and its meeting of the threshold are not stated in any retrieved passage; S007 only gives the threshold (\u22653/1000) but no case-specific estimate.",
+        "claim_text": "This 34-week gestation neonate presents with an intermediate risk for early-onset sepsis (EOS), driven by prolonged rupture of membranes (20 hours) and an elevated CRP level (12.0 mg/L). The multivariate risk assessment estimates a probability of 3.0 per 1000 live births, which meets the threshold for empirical antibiotic therapy according to AAP guidelines."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Combined score of 4 and probability of 3.0 per 1000 are not found in the evidence; no source provides a numeric score or probability for this infant.",
+        "claim_text": "The patient is categorized as INTERMEDIATE risk with a combined score of 4. The risk is equally driven by Layer 1 factors (Prolonged ROM >= 18h) and Layer 3 factors (Elevated CRP). The calculated probability of 3.0 per 1000 exceeds the AAP threshold of >= 3 per 1000, which mandates blood culture and empirical antibiotic therapy."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Point allocation (2 points each, 50% of risk) for ROM and CRP is not described in any cited passage.",
+        "claim_text": "['Prolonged rupture of membranes: ROM 20.0h (>=18h) contributes 2 points (50% of risk).', 'Elevated CRP: CRP 12.0 mg/L contributes 2 points (50% of risk).']"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan references AAP passages that describe thresholds, risk categories, and the limited utility of inflammatory markers, but it adds specific numeric risk estimates and point breakdowns not present in the supplied evidence. Citation mapping is unavailable, so many statements lack verifiable links to source text, reducing citation completeness and correctness."
+  }
+}

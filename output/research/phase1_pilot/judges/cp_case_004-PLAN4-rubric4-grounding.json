@@ -1,0 +1,125 @@
+{
+  "completed": true,
+  "task_sha256": "02117dfb432668d84925c02e3c93238fa065f9b1a3440ce815670e62b37f2943",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.6779174000112107,
+  "kind": "plan",
+  "case_id": "cp_case_004",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-4eb27737-4a84-46e4-9b4e-177d42c0939e",
+    "object": "chat.completion",
+    "created": 1792954192,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 3,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\"claim_id\": \"L005\", \"reason\": \"Risk score and layer breakdown not present in any retrieved WHO passages\"},\n    {\"claim_id\": \"L007\", \"reason\": \"Driver breakdown list of point values not sourced from evidence\"},\n    {\"claim_id\": \"L010\", \"reason\": \"Section header not a claim but lacks source\"},\n    {\"claim_id\": \"L012\", \"reason\": \"Respiratory support via CPAP not mentioned in retrieved WHO passages\"},\n    {\"claim_id\": \"L013\", \"reason\": \"Hemodynamic management details not in evidence\"},\n    {\"claim_id\": \"L014\", \"reason\": \"Repeat blood cultures not specified in evidence\"},\n    {\"claim_id\": \"L015\", \"reason\": \"Monitoring inflammatory markers not covered by cited passages\"},\n    {\"claim_id\": \"L022\", \"reason\": \"Monitoring plan details not found in evidence\"},\n    {\"claim_id\": \"L025\", \"reason\": \"Escalation criteria not described in retrieved passages\"},\n    {\"claim_id\": \"L028\", \"reason\": \"Nutrition/fluid plan not sourced from evidence\"},\n    {\"claim_id\": \"L031\", \"reason\": \"Disambiguation block and other headings are not supported by evidence\"}\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan correctly cites WHO passage S002 for the recommendation of ampicillin plus gentamicin for critical illness, but most other statements (risk scoring, driver point values, respiratory support, fluid management, monitoring, escalation criteria) are not present in the supplied evidence passages. Citation mapping is ambiguous, and many claims lack any source, lowering citation completeness and overall faithfulness.\"\n}",
+          "reasoning": "We need to assess faithfulness etc. The plan claims ampicillin and gentamicin recommended. Evidence S002 says recommendation for critical illness: ampicillin IM/IV plus gentamicin IM/IV for at least 10 days. So citation correct. No dose specifics, plan notes dose not specified \u2013 that's fine. No unsupported claims? The risk analysis numbers etc not in evidence. Those are unsupported. So list unsupported claims: L005 risk analysis, L007 driver breakdown details, L010- L015 actions partly supported? Recommendation actions are supported by S002 for antibiotics, S010 for staph sepsis but not for respiratory support etc. Those are clinical management not in evidence. So mark as unsupported. Contradictions? None contradictory. Ungrounded_dose: plan does not give dose amounts, just says not specified. No numeric dose, so no ungrounded numeric dose. So ungrouned_dose false.\n\nCitation correctness: they didn't map numbers but they cite S002 for antibiotics. L011- L019 rely on S002. That's correct. Others lack citation. So citation correctness maybe 3? Faithfulness: plan includes many details not in evidence, so low faithfulness 2. Citation completeness: many claims lack citations, so 2. Provide arrays.\n\nLet's produce JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.38063426,
+      "prompt_tokens": 3048,
+      "prompt_time": 0.185860334,
+      "completion_tokens": 678,
+      "completion_time": 1.418764981,
+      "total_tokens": 3726,
+      "total_time": 1.604625315,
+      "completion_tokens_details": {
+        "reasoning_tokens": 266
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m5t6bjz8e6p8xvjdkvjtpzcf",
+      "seed": 1657188622
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "985",
+    "x-ratelimit-remaining-tokens": "4606",
+    "x-ratelimit-reset-requests": "21m36s",
+    "x-ratelimit-reset-tokens": "25.455s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 3,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L005",
+        "reason": "Risk score and layer breakdown not present in any retrieved WHO passages",
+        "claim_text": "The patient is classified as CRITICAL risk (Score 14) due to the presence of culture-confirmed bacteremia (Layer 3), severe clinical instability including respiratory distress and poor perfusion (Layer 2), and high-risk maternal factors such as chorioamnionitis and GBS positivity without adequate intrapartum prophylaxis (Layer 1)."
+      },
+      {
+        "claim_id": "L007",
+        "reason": "Driver breakdown list of point values not sourced from evidence",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      {
+        "claim_id": "L010",
+        "reason": "Section header not a claim but lacks source",
+        "claim_text": "RECOMMENDED ACTIONS:"
+      },
+      {
+        "claim_id": "L012",
+        "reason": "Respiratory support via CPAP not mentioned in retrieved WHO passages",
+        "claim_text": "- Provide respiratory support via CPAP and monitor oxygen saturation."
+      },
+      {
+        "claim_id": "L013",
+        "reason": "Hemodynamic management details not in evidence",
+        "claim_text": "- Manage hemodynamic instability with fluid resuscitation and vasopressors if indicated."
+      },
+      {
+        "claim_id": "L014",
+        "reason": "Repeat blood cultures not specified in evidence",
+        "claim_text": "- Repeat blood cultures to monitor clearance of bacteremia."
+      },
+      {
+        "claim_id": "L015",
+        "reason": "Monitoring inflammatory markers not covered by cited passages",
+        "claim_text": "- Monitor inflammatory markers (CRP, PCT) and complete blood count trends."
+      },
+      {
+        "claim_id": "L022",
+        "reason": "Monitoring plan details not found in evidence",
+        "claim_text": "MONITORING PLAN:"
+      },
+      {
+        "claim_id": "L025",
+        "reason": "Escalation criteria not described in retrieved passages",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      {
+        "claim_id": "L028",
+        "reason": "Nutrition/fluid plan not sourced from evidence",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      },
+      {
+        "claim_id": "L031",
+        "reason": "Disambiguation block and other headings are not supported by evidence",
+        "claim_text": "DISAMBIGUATION BLOCK:"
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan correctly cites WHO passage S002 for the recommendation of ampicillin plus gentamicin for critical illness, but most other statements (risk scoring, driver point values, respiratory support, fluid management, monitoring, escalation criteria) are not present in the supplied evidence passages. Citation mapping is ambiguous, and many claims lack any source, lowering citation completeness and overall faithfulness."
+  }
+}

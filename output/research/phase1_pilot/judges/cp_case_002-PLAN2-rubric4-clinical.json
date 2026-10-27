@@ -1,0 +1,86 @@
+{
+  "completed": true,
+  "task_sha256": "e45d3a976d8efcfce5b8f40405a112303ca33bd9e447c10adc420c5fd270c28e",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.6434420000005048,
+  "kind": "plan",
+  "case_id": "cp_case_002",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-75c7a6e5-80c2-4815-940b-03800911c6a9",
+    "object": "chat.completion",
+    "created": 1792951908,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"clinical_correctness\": 3,\n  \"clinical_completeness\": 2,\n  \"clinical_utility\": 3,\n  \"safety\": 2,\n  \"contradictions\": [\n    {\n      \"claim_id\": \"L018\",\n      \"reason\": \"Guideline S004 recommends IV gentamicin as part of first\u2011choice empirical regimen for suspected early\u2011onset infection; plan withholds it despite no chorioamnionitis.\"\n    },\n    {\n      \"claim_id\": \"L017\",\n      \"reason\": \"Guideline S004 provides specific dosing (penicillin 25\u202fmg/kg q12h, gentamicin 5\u202fmg/kg) which the plan omits, leaving dosing unspecified.\"\n    }\n  ],\n  \"critical_omissions\": [\n    \"No dosage/frequency for benzylpenicillin (S004)\",\n    \"No gentamicin dosing or justification for omission (S004)\",\n    \"Blood culture before first antibiotic dose not mentioned (S006)\",\n    \"Duration of therapy not specified (S005, S009)\",\n    \"Criteria for stopping antibiotics at 36\u202fh not addressed (S009)\"\n  ],\n  \"regimen_incomplete\": true,\n  \"rationale\": \"Plan aligns with risk assessment but omits required dosing details and excludes gentamicin contrary to NICE NG195 first\u2011line recommendation (S004). It also fails to note pre\u2011antibiotic blood culture, treatment duration, and stopping criteria, reducing completeness and safety.\"\n}",
+          "reasoning": "We need produce JSON with fields. Assess plan.\n\nPlan: recommends antibiotics: benzylpenicillin (dose not specified) and says gentamicin withheld (but guideline S004 says use both penicillin and gentamicin as first-choice unless chorioamnionitis absent? Actually S004 says use both as first-choice for empirical treatment, not limited to chorioamnionitis. So withholding gentamicin may be contradictory to guideline. Also S013 says for women without chorioamnionitis use benzylpenicillin only; that's maternal prophylaxis, not neonatal? Might be ambiguous. But neonatal guideline S004 recommends both. So contradiction.\n\nAlso missing dose info: guideline provides dose 25 mg/kg q12h for penicillin and 5 mg/kg for gentamicin. Plan lacks dose, but acceptable per instruction not to demand numeric dose if cannot safely establish? But guideline does give dose, so omission is critical omission.\n\nSafety: withholding gentamicin may be less coverage; but guideline suggests both. So safety rating lower.\n\nNow produce scores: clinical_correctness maybe 3, completeness 2, utility 3, safety 2.\n\ncontradictions: L018 (gentamicin withheld) contradict S004. Also L017 missing dose contradict S004 dose recommendation. Provide claim_id L018 and L017.\n\ncritical_omissions: missing dosing details for benzylpenicillin and gentamicin (though gentamicin withheld). Also missing mention of blood culture before antibiotics (S006) though plan mentions start antibiotics but not culture. Also missing duration guidance (7 days) per S005/S009. Provide list.\n\nregimen_incomplete: true (since dose missing and gentamicin omitted). Provide.\n\nRationale concise.\n\nReturn JSON compact."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.381147573,
+      "prompt_tokens": 4719,
+      "prompt_time": 0.206723684,
+      "completion_tokens": 678,
+      "completion_time": 1.3923850930000001,
+      "total_tokens": 5397,
+      "total_time": 1.599108777,
+      "completion_tokens_details": {
+        "reasoning_tokens": 357
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_69334c0be3",
+    "x_groq": {
+      "id": "req_01m5t45vxee4srrj27t5pqwtck",
+      "seed": 1411407147
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "988",
+    "x-ratelimit-remaining-tokens": "2406",
+    "x-ratelimit-reset-requests": "17m16.8s",
+    "x-ratelimit-reset-tokens": "41.955s"
+  },
+  "result": {
+    "clinical_correctness": 3,
+    "clinical_completeness": 2,
+    "clinical_utility": 3,
+    "safety": 2,
+    "contradictions": [
+      {
+        "claim_id": "L018",
+        "reason": "Guideline S004 recommends IV gentamicin as part of first\u2011choice empirical regimen for suspected early\u2011onset infection; plan withholds it despite no chorioamnionitis.",
+        "claim_text": "- IV gentamicin \u2014 WITHHELD: Not indicated as maternal chorioamnionitis is absent (NICE NG195 specifies gentamicin only for women with chorioamnionitis)."
+      },
+      {
+        "claim_id": "L017",
+        "reason": "Guideline S004 provides specific dosing (penicillin 25\u202fmg/kg q12h, gentamicin 5\u202fmg/kg) which the plan omits, leaving dosing unspecified.",
+        "claim_text": "- IV benzylpenicillin sodium \u2014 DOSE/FREQUENCY NOT SPECIFIED IN RETRIEVED EVIDENCE: The retrieved NICE NG195 excerpts specify the drug (benzylpenicillin sodium) for women without chorioamnionitis or babies with risk factors, but do not provide specific neonatal mg/kg doses or dosing frequencies. Clinical judgment or local formulary must be used for dosing."
+      }
+    ],
+    "critical_omissions": [
+      "No dosage/frequency for benzylpenicillin (S004)",
+      "No gentamicin dosing or justification for omission (S004)",
+      "Blood culture before first antibiotic dose not mentioned (S006)",
+      "Duration of therapy not specified (S005, S009)",
+      "Criteria for stopping antibiotics at 36\u202fh not addressed (S009)"
+    ],
+    "regimen_incomplete": true,
+    "rationale": "Plan aligns with risk assessment but omits required dosing details and excludes gentamicin contrary to NICE NG195 first\u2011line recommendation (S004). It also fails to note pre\u2011antibiotic blood culture, treatment duration, and stopping criteria, reducing completeness and safety."
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "completed": true,
+  "task_sha256": "40241aaca2b2bd0588c2dd373288425dbe371d49d413e47120871980dbd1347f",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 10.32360940000217,
+  "kind": "chunks",
+  "case_id": "cp_case_002",
+  "mapping": {
+    "P011": "NICE_pg30_2012_rec1_chunk2",
+    "P012": "NICE_pg31_2012-amended-2026_chunk2",
+    "P013": "NICE_pg34_2021_rec1_chunk1",
+    "P014": "NICE_pg34_treatment_rec1_chunk1",
+    "P015": "NICE_pg37_amended-2021_chunk2",
+    "P016": "NICE_pg38_management-2012-amended-_chunk2"
+  },
+  "raw_response": {
+    "id": "chatcmpl-ad5bb855-0a36-4cd0-934c-8b03ee5a265b",
+    "object": "chat.completion",
+    "created": 1792945044,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P011\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Specifies stopping antibiotics at 36\u202fh if blood culture negative, low suspicion, reassuring clinical condition and CRP, matching this preterm case.\"\n    },\n    {\n      \"passage\": \"P012\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Discusses oral switch after 36\u202fh for babies \u226535\u202fweeks; patient is 32\u202fweeks, so not applicable.\"\n    },\n    {\n      \"passage\": \"P013\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Covers 7\u2011day duration for positive cultures; case has negative culture, providing only background.\"\n    },\n    {\n      \"passage\": \"P014\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Pertains to late\u2011onset infection stopping at 48\u202fh, unrelated to early\u2011onset scenario.\"\n    },\n    {\n      \"passage\": \"P015\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Focuses on meningitis management; no meningitis evidence in this case.\"\n    },\n    {\n      \"passage\": \"P016\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Addresses fluid restriction in meningitis, not relevant to current early\u2011onset infection assessment.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for target_passages only. Provide entries for each. Determine grades.\n\nCase: preterm 32 weeks, ROM 20h, elevated CRP 12, no clinical signs. Proposed antibiotics benzylpenicillin+gentamicin. Need evidence about stopping at 36h etc. P011: talks about stopping antibiotics at 36h if blood culture negative, suspicion not strong, clinical condition reassuring, CRP reassuring. Applicable? Yes scenario fits (negative culture, risk factors, but suspicion maybe moderate). Grade 3? Direct actionable. So grade 3, guideline_aligned true, scenario_applicable true, clinically_useful true.\n\nP012: switching to oral after 36h for >35 weeks. Our baby 32 weeks, so not applicable. Grade 1 maybe background. Not scenario applicable. clinically_useful false. relevance grade 1.\n\nP013: duration 7 days for positive culture, consider longer. Not relevant as culture negative. Might be background. Grade1.\n\nP014: stopping at 48h for late-onset infection. Not early-onset. Not applicable. Maybe irrelevant grade0.\n\nP015: meningitis treatment specifics. Not applicable. Grade0.\n\nP016: fluid restriction in meningitis. Not applicable. Grade0.\n\nReturn JSON with judgments array for each target passage."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377753657,
+      "prompt_tokens": 4514,
+      "prompt_time": 0.124745988,
+      "completion_tokens": 752,
+      "completion_time": 1.766886653,
+      "total_tokens": 5266,
+      "total_time": 1.891632641,
+      "prompt_tokens_details": {
+        "cached_tokens": 1536
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 273
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c15aa9c1b7",
+    "x_groq": {
+      "id": "req_01m5sxmc6aeryv0yaag3x9zr2k",
+      "seed": 1289774001
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "995",
+    "x-ratelimit-remaining-tokens": "2564",
+    "x-ratelimit-reset-requests": "7m12s",
+    "x-ratelimit-reset-tokens": "40.769s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P011",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Specifies stopping antibiotics at 36\u202fh if blood culture negative, low suspicion, reassuring clinical condition and CRP, matching this preterm case."
+      },
+      {
+        "passage": "P012",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses oral switch after 36\u202fh for babies \u226535\u202fweeks; patient is 32\u202fweeks, so not applicable."
+      },
+      {
+        "passage": "P013",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Covers 7\u2011day duration for positive cultures; case has negative culture, providing only background."
+      },
+      {
+        "passage": "P014",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Pertains to late\u2011onset infection stopping at 48\u202fh, unrelated to early\u2011onset scenario."
+      },
+      {
+        "passage": "P015",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Focuses on meningitis management; no meningitis evidence in this case."
+      },
+      {
+        "passage": "P016",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Addresses fluid restriction in meningitis, not relevant to current early\u2011onset infection assessment."
+      }
+    ]
+  }
+}

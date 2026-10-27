@@ -1,0 +1,78 @@
+{
+  "completed": true,
+  "task_sha256": "dc0a9dd62adf7d2982caa7ca3f70c810e22a98c2c72c9bb7b0de4026242f6385",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.263731800005189,
+  "kind": "plan",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-1a7a88f9-683b-4b78-9183-e97024d5e6e6",
+    "object": "chat.completion",
+    "created": 1792956065,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":3,\"clinical_completeness\":3,\"clinical_utility\":3,\"safety\":4,\"contradictions\":[{\"claim_id\":\"L019\",\"reason\":\"Substitutes inpatient regimen with IV ampicillin or IM/IV gentamicin citing S009, which specifically addresses suspected staphylococcal sepsis and is not justified for this case lacking staphylococcal signs.\"}],\"critical_omissions\":[\"Missing specific dosing and frequency for inpatient ampicillin and gentamicin as per WHO inpatient guidelines (no source provides these details for EOS).\",\"No explicit duration recommendation grounded in guideline evidence; plan states typical 48\u201172\u202fh but lacks citation.\"],\"regimen_incomplete\":true,\"rationale\":\"Plan correctly identifies contraindication to WHO outpatient PSBI regimen and advises admission, aligning with S001 and S006. However, it introduces an inpatient regimen unsupported by the cited evidence (S009 pertains to staphylococcal sepsis) and omits dosing details, reducing correctness, completeness, and utility. Safety remains high due to appropriate admission recommendation.\"}",
+          "reasoning": "We need produce JSON with scores and lists. Evaluate plan against gold evidence.\n\nKey points: patient 0-59 days, outpatient setting but contraindication: hospitalized within prior 14 days => WHO outpatient regimen contraindicated, need inpatient. Plan says admit, withhold outpatient meds, substitute IV ampicillin or IM/IV gentamicin. Evidence: S001 says clinical severe infection should be referred to hospital; outpatient regimen only if referral not possible. Here referral possible (hospital). So admission correct.\n\nBut plan lacks specific inpatient regimen dosing; but acceptable as clinician to determine. Safety: recommending admission is safe. No contradictions? Need check citations: they cite S002 (background) ok, S008 (PSBI definition) ok, S001 (referral) ok, S009 (staph sepsis regimen) maybe not applicable as no staph signs. Using S009 is questionable. Contradiction: using staph regimen without indication. So claim L019 uses S009? Actually citation mapping unclear. We can note contradiction at L019 (substituted inpatient regimen) not supported by evidence for EOS generic; S009 is for staphylococcal sepsis. So contradiction.\n\nCritical omission: no mention of specific dosing for ampicillin/gentamicin per WHO inpatient guidelines (not provided). Also no mention of duration specifics beyond typical. Could be omission.\n\nRegimen incomplete: true (dose/frequency missing).\n\nNow assign scores: clinical_correctness maybe 3 (mostly correct but some unsupported regimen). completeness 3 (missing dosing). utility 3. safety 4 (admission safe). Provide contradictions list with claim_id L019 reason. critical_omissions list e.g., missing dosing details, missing indication for staph regimen. Provide regimen_incomplete true.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.380216519,
+      "prompt_tokens": 3770,
+      "prompt_time": 0.22067831,
+      "completion_tokens": 600,
+      "completion_time": 1.230986757,
+      "total_tokens": 4370,
+      "total_time": 1.451665067,
+      "completion_tokens_details": {
+        "reasoning_tokens": 365
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_86dc843b12",
+    "x_groq": {
+      "id": "req_01m5t84qxceqyb4vxtdyp4e792",
+      "seed": 1070865786
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "971",
+    "x-ratelimit-remaining-tokens": "3535",
+    "x-ratelimit-reset-requests": "41m45.6s",
+    "x-ratelimit-reset-tokens": "33.487s"
+  },
+  "result": {
+    "clinical_correctness": 3,
+    "clinical_completeness": 3,
+    "clinical_utility": 3,
+    "safety": 4,
+    "contradictions": [
+      {
+        "claim_id": "L019",
+        "reason": "Substitutes inpatient regimen with IV ampicillin or IM/IV gentamicin citing S009, which specifically addresses suspected staphylococcal sepsis and is not justified for this case lacking staphylococcal signs.",
+        "claim_text": "- IV ampicillin or IM/IV gentamicin \u2014 SUBSTITUTED for outpatient regimen: Specific inpatient dose/frequency not provided in retrieved WHO excerpts; clinician must determine appropriate inpatient dosing based on local hospital protocols for hospitalized infants with suspected EOS."
+      }
+    ],
+    "critical_omissions": [
+      "Missing specific dosing and frequency for inpatient ampicillin and gentamicin as per WHO inpatient guidelines (no source provides these details for EOS).",
+      "No explicit duration recommendation grounded in guideline evidence; plan states typical 48\u201172\u202fh but lacks citation."
+    ],
+    "regimen_incomplete": true,
+    "rationale": "Plan correctly identifies contraindication to WHO outpatient PSBI regimen and advises admission, aligning with S001 and S006. However, it introduces an inpatient regimen unsupported by the cited evidence (S009 pertains to staphylococcal sepsis) and omits dosing details, reducing correctness, completeness, and utility. Safety remains high due to appropriate admission recommendation."
+  }
+}

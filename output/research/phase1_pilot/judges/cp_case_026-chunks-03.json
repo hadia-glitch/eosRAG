@@ -1,0 +1,117 @@
+{
+  "completed": true,
+  "task_sha256": "0f68c2c18042faf37ab19c43c1f0a8a9d3c60c581b94a09c980d15a3eea35ebc",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.450629500002833,
+  "kind": "chunks",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "P015": "WHO_pg31_background-and-definitio_chunk2",
+    "P016": "WHO_pg31_in-young-infants-aged-0-_rec1_chunk1",
+    "P017": "WHO_pg31_remarks_chunk1",
+    "P018": "WHO_pg3_overview_chunk1",
+    "P022": "WHO_pg6_recommendation-a-2-updat_rec1_chunk1",
+    "P023": "WHO_pg9_recommendation-a-3a-upda_rec1_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-33e7981d-1180-4ed7-a8ab-98fe1a6cb0e3",
+    "object": "chat.completion",
+    "created": 1792947488,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P015\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes cloxacillin+gentamicin IV for suspected staphylococcal sepsis in hospitalized infants, not outpatient ampicillin.\"\n    },\n    {\n      \"passage\": \"P016\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Recommends cloxacillin+gentamicin for hospitalized infants with staphylococcal sepsis; not relevant to outpatient ampicillin regimen.\"\n    },\n    {\n      \"passage\": \"P017\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Provides dosing details for cloxacillin+gentamicin; unrelated to the case's outpatient ampicillin/gentamicin need.\"\n    },\n    {\n      \"passage\": \"P018\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Discusses diagnostic accuracy of PSBI sign algorithms, not treatment recommendations for the current scenario.\"\n    },\n    {\n      \"passage\": \"P022\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Specifies ampicillin+gentamicin for at least 10 days when referral impossible, matching outpatient no\u2011referral setting.\"\n    },\n    {\n      \"passage\": \"P023\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Recommends amoxicillin+gentamicin for clinical severe infection; patient lacks required clinical signs, so not directly applicable.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for target_passages list. Provide for each. Determine grades.\n\nCase: outpatient_no_referral, contraindication recent hospital (patient hospitalized within prior 14 days). So referral not possible? Actually contraindication type who_recent_hosp means recent hospitalization is a contraindication to referral? Probably referral not possible. Proposed drugs ampicillin, gentamicin.\n\nPassages:\n\nP015: cloxacillin plus gentamicin IV for suspected staphylococcal sepsis. Not relevant to ampicillin/gentamicin; inpatient hospital. So grade 0 irrelevant. guideline aligned? It's WHO but for hospital sepsis. scenario_applicable false. clinically_useful false.\n\nP016: recommendation IM/IV plus gentamicin for at least 10 days for suspected staphylococcal sepsis hospitalized. Not outpatient, not ampicillin. Grade 0.\n\nP017: remarks about dosing cloxacillin+gentamicin. Not relevant. Grade 0.\n\nP018: overview question about diagnostic accuracy of sign algorithms. Not treatment. Grade 1 maybe background. It's about diagnosis, not directly actionable. So grade 1 background. guideline aligned yes WHO. scenario_applicable? Not about treatment, so not applicable. clinically_useful false (needs >=2). So grade 1.\n\nP022: Recommendation A.2: critical illness referral; if not possible, ampicillin + gentamicin for at least 10 days. This matches scenario (outpatient no referral). So direct actionable evidence. Grade 3. guideline aligned true. scenario_applicable true. clinically_useful true.\n\nP023: Recommendation A.3a: clinical severe infection referral; if not possible then oral amoxicillin + gentamicin for at least 7 days. Our case has clinical severe infection? Patient has prolonged ROM and elevated CRP but no clinical signs per WHO definition (no fever >=38, temp 37.9, no feeding issues). So not meeting clinical severe infection signs. So recommendation may not apply. However still about non-referral treatment. Might be marginal. Grade 2? It's actionable for clinical severe infection, but scenario lacks signs, so not directly applicable. So grade 1? I'd give grade 1 background. guideline aligned true. scenario_applicable false. clinically_useful false.\n\nReturn JSON with judgments for each target passage."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.248207049,
+      "prompt_tokens": 3139,
+      "prompt_time": 0.119470871,
+      "completion_tokens": 989,
+      "completion_time": 2.097121027,
+      "total_tokens": 4128,
+      "total_time": 2.216591898,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 485
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m5szyz0kegmt0at9h75p4gvy",
+      "seed": 1356206247
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 1,
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "962",
+    "x-ratelimit-remaining-tokens": "3977",
+    "x-ratelimit-reset-requests": "54m43.2s",
+    "x-ratelimit-reset-tokens": "30.172s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P015",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes cloxacillin+gentamicin IV for suspected staphylococcal sepsis in hospitalized infants, not outpatient ampicillin."
+      },
+      {
+        "passage": "P016",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Recommends cloxacillin+gentamicin for hospitalized infants with staphylococcal sepsis; not relevant to outpatient ampicillin regimen."
+      },
+      {
+        "passage": "P017",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Provides dosing details for cloxacillin+gentamicin; unrelated to the case's outpatient ampicillin/gentamicin need."
+      },
+      {
+        "passage": "P018",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses diagnostic accuracy of PSBI sign algorithms, not treatment recommendations for the current scenario."
+      },
+      {
+        "passage": "P022",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Specifies ampicillin+gentamicin for at least 10 days when referral impossible, matching outpatient no\u2011referral setting."
+      },
+      {
+        "passage": "P023",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Recommends amoxicillin+gentamicin for clinical severe infection; patient lacks required clinical signs, so not directly applicable."
+      }
+    ]
+  }
+}

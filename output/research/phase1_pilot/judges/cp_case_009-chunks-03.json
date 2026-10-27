@@ -1,0 +1,116 @@
+{
+  "completed": true,
+  "task_sha256": "6d4dfa1761519241abf109b00a24206e4299e8cb666f4dfb7f3de3f7820d3309",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.184727500003646,
+  "kind": "chunks",
+  "case_id": "cp_case_009",
+  "mapping": {
+    "P018": "NICE_pg38_management-2012-amended-_chunk2",
+    "P019": "NICE_pg60_how-the-recommendations-_chunk1",
+    "P020": "NICE_pg61_how-the-recommendation-m_chunk1",
+    "P021": "NICE_pg61_why-the-committee-made-t_chunk1",
+    "P022": "NICE_pg64_why-the-committee-made-t_chunk1",
+    "P023": "NICE_pg64_why-the-committee-made-t_chunk2"
+  },
+  "raw_response": {
+    "id": "chatcmpl-cff31632-d7c1-4378-baa2-72b21668582a",
+    "object": "chat.completion",
+    "created": 1792946204,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"judgments\":[{\"passage\":\"P018\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Discusses fluid management in meningitis, not antibiotic choice for penicillin\u2011allergic neonate.\"},{\"passage\":\"P019\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Describes intrapartum antibiotic extensions and delivery timing, unrelated to neonatal drug selection.\"},{\"passage\":\"P020\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Focuses on immediate delivery decisions, not on neonatal antibiotic regimen.\"},{\"passage\":\"P021\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Provides evidence for delivery timing, not guidance on alternative antibiotics.\"},{\"passage\":\"P022\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Updates risk\u2011factor timing for ROM, but does not address antibiotic selection.\"},{\"passage\":\"P023\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Explains risk\u2011factor revisions, no direct relevance to drug choice for penicillin allergy.\"}]}",
+          "reasoning": "Need output JSON with judgments for each target passage. Evaluate relevance to case: case needs antibiotics alternative due to penicillin allergy, prolonged ROM, elevated CRP. Target passages P018-023 are about fluid restriction, delivery timing, risk factor timing, etc. Not about antibiotic choice. So relevance likely 0 or 1. They are background about delivery, risk factor definitions. Might be marginal (background). So grade 1. guideline_aligned? Yes NICE but not directly about antibiotic choice; still aligned to guideline scope (early-onset infection). scenario_applicable? Not directly applicable to antibiotic recommendation. So false. clinically_useful requires grade>=2, so false.\n\nProvide for each.\n\nReturn JSON compact."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377986554,
+      "prompt_tokens": 5149,
+      "prompt_time": 0.230653335,
+      "completion_tokens": 471,
+      "completion_time": 0.997493342,
+      "total_tokens": 5620,
+      "total_time": 1.228146677,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 145
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m5syqsv3erfs8p9099jqzent",
+      "seed": 1044406591
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "979",
+    "x-ratelimit-remaining-tokens": "1866",
+    "x-ratelimit-reset-requests": "30m14.4s",
+    "x-ratelimit-reset-tokens": "46.005s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P018",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Discusses fluid management in meningitis, not antibiotic choice for penicillin\u2011allergic neonate."
+      },
+      {
+        "passage": "P019",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes intrapartum antibiotic extensions and delivery timing, unrelated to neonatal drug selection."
+      },
+      {
+        "passage": "P020",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Focuses on immediate delivery decisions, not on neonatal antibiotic regimen."
+      },
+      {
+        "passage": "P021",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Provides evidence for delivery timing, not guidance on alternative antibiotics."
+      },
+      {
+        "passage": "P022",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Updates risk\u2011factor timing for ROM, but does not address antibiotic selection."
+      },
+      {
+        "passage": "P023",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Explains risk\u2011factor revisions, no direct relevance to drug choice for penicillin allergy."
+      }
+    ]
+  }
+}

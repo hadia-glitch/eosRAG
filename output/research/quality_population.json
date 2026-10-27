@@ -1,0 +1,44 @@
+{
+  "rag": {
+    "planned_n": 18,
+    "n": 8,
+    "eligible_case_ids": [
+      "crp_alone-1",
+      "deterioration-1",
+      "deterioration-2",
+      "deterioration-3",
+      "incomplete_stop-2",
+      "initial_investigation-1",
+      "initial_investigation-3",
+      "missing_results-3"
+    ],
+    "generated": 8,
+    "released": 0
+  },
+  "rag_v2": {
+    "planned_n": 18,
+    "n": 18,
+    "eligible_case_ids": [
+      "crp_alone-1",
+      "crp_alone-2",
+      "crp_alone-3",
+      "deterioration-1",
+      "deterioration-2",
+      "deterioration-3",
+      "incomplete_stop-1",
+      "incomplete_stop-2",
+      "incomplete_stop-3",
+      "initial_investigation-1",
+      "initial_investigation-2",
+      "initial_investigation-3",
+      "missing_results-1",
+      "missing_results-2",
+      "missing_results-3",
+      "single_risk-1",
+      "single_risk-2",
+      "single_risk-3"
+    ],
+    "generated": 15,
+    "released": 4
+  }
+}

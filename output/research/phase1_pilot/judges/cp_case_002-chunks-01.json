@@ -1,0 +1,116 @@
+{
+  "completed": true,
+  "task_sha256": "1ef320fee18da1e8b2af568e4e27a6a169d3d7fbea4d7ce5ed9ba87c260e28c8",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.484542299993336,
+  "kind": "chunks",
+  "case_id": "cp_case_002",
+  "mapping": {
+    "P001": "NICE_pg12_box-1-risk-factors-for-e_chunk1",
+    "P004": "NICE_pg14_including-red-flags_chunk3",
+    "P007": "NICE_pg27_for-early-onset-or-late-_rec1_chunk1",
+    "P008": "NICE_pg29_infection_rec1_chunk1",
+    "P009": "NICE_pg2_carers_chunk1",
+    "P010": "NICE_pg30_2012_rec1_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-067e6262-d598-4c74-bea8-11910e7bbdee",
+    "object": "chat.completion",
+    "created": 1792944968,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"judgments\":[{\"passage\":\"P001\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Lists confirmed ROM >18h before pre\u2011term birth as a red\u2011flag risk factor, matching this case's 20h ROM at 32\u202fweeks.\"},{\"passage\":\"P004\",\"relevance_grade\":1,\"guideline_aligned\":true,\"scenario_applicable\":false,\"clinically_useful\":false,\"rationale\":\"Describes monitoring when no risk factors are present, which does not apply because this baby has ROM risk.\"},{\"passage\":\"P007\",\"relevance_grade\":3,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Recommends measuring CRP 18\u201124\u202fh after starting antibiotics and criteria for lumbar puncture, directly relevant to management.\"},{\"passage\":\"P008\",\"relevance_grade\":3,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Specifies benzylpenicillin plus gentamicin as first\u2011choice empirical regimen for suspected early\u2011onset infection.\"},{\"passage\":\"P009\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Guides communication with parents about concerns and management options, applicable when initiating antibiotics.\"},{\"passage\":\"P010\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Sets 7\u2011day IV antibiotic duration for suspected sepsis, relevant for planning treatment length in this risk\u2011based case.\"}]}",
+          "reasoning": "We need output JSON with judgments for each target passage. Evaluate.\n\nCase: preterm 32 weeks, ROM 20h, elevated CRP 12, no clinical signs. Proposed antibiotics benzylpenicillin+gentamicin.\n\nGuideline: NICE.\n\nAssess each passage:\n\nP001: mentions red flag risk factor: confirmed ROM >18h before preterm birth. That's applicable. It's a risk factor, not direct treatment. Grade? Provides background risk factor => grade 2 (useful applicable support). guideline_aligned true. scenario_applicable true (risk factor present). clinically_useful true (grade>=2). Rationale.\n\nP004: talks about monitoring and withholding antibiotics if no risk factors. Here we have risk factor, so passage indicates when no risk factors. Not applicable. Might be background but not relevant. Grade 1? It's about babies without risk factors, so not applicable. So relevance low. grade 1 maybe marginal. guideline aligned yes. scenario_applicable false. clinically_useful false.\n\nP007: CRP measurement after antibiotics and lumbar puncture criteria. Our case: considering antibiotics, CRP measurement 18-24h after start. This is actionable. Grade 3 direct actionable evidence for scenario (measure CRP). guideline aligned true. scenario_applicable true. clinically_useful true.\n\nP008: recommendation of benzylpenicillin+gentamicin as first-choice empirical regimen. Direct actionable. Grade 3. guideline aligned true. scenario_applicable true. clinically_useful true.\n\nP009: communication with parents. Relevant but general. Might be background. Grade 1 or 2? It's about discussing options if concerns arise. Could be useful. I'd give grade 2? It's actionable communication. But scenario: antibiotics being started, so communication needed. Might be useful. I'll assign grade 2. guideline aligned true. scenario_applicable true. clinically_useful true.\n\nP010: treatment duration 7 days for positive culture or strong suspicion. Our case: risk factors, but not strong suspicion? Might be relevant for duration. Could be background. Grade 2? It's about duration, not immediate decision. I'll give grade 2. guideline aligned true. scenario_applicable true (applies to babies with risk factors). clinically_useful true.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377690903,
+      "prompt_tokens": 3948,
+      "prompt_time": 0.269485665,
+      "completion_tokens": 848,
+      "completion_time": 1.827832712,
+      "total_tokens": 4796,
+      "total_time": 2.097318377,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 468
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c15aa9c1b7",
+    "x_groq": {
+      "id": "req_01m5sxj2dyea2a8f60ggk060ye",
+      "seed": 1053452271
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "996",
+    "x-ratelimit-remaining-tokens": "3033",
+    "x-ratelimit-reset-requests": "5m45.6s",
+    "x-ratelimit-reset-tokens": "37.252s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P001",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Lists confirmed ROM >18h before pre\u2011term birth as a red\u2011flag risk factor, matching this case's 20h ROM at 32\u202fweeks."
+      },
+      {
+        "passage": "P004",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes monitoring when no risk factors are present, which does not apply because this baby has ROM risk."
+      },
+      {
+        "passage": "P007",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends measuring CRP 18\u201124\u202fh after starting antibiotics and criteria for lumbar puncture, directly relevant to management."
+      },
+      {
+        "passage": "P008",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Specifies benzylpenicillin plus gentamicin as first\u2011choice empirical regimen for suspected early\u2011onset infection."
+      },
+      {
+        "passage": "P009",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Guides communication with parents about concerns and management options, applicable when initiating antibiotics."
+      },
+      {
+        "passage": "P010",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Sets 7\u2011day IV antibiotic duration for suspected sepsis, relevant for planning treatment length in this risk\u2011based case."
+      }
+    ]
+  }
+}

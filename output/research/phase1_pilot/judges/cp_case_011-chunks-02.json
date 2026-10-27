@@ -1,0 +1,116 @@
+{
+  "completed": true,
+  "task_sha256": "1c121dc5c98ca929e6d7ed65d481017ffd498b89756141f2d7db7a34771e83c3",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.49228089999815,
+  "kind": "chunks",
+  "case_id": "cp_case_011",
+  "mapping": {
+    "P007": "AAP_pg3_multivariate-risk-assess_chunk2",
+    "P008": "AAP_pg4_newborn-clinical-conditi_chunk1",
+    "P009": "AAP_pg4_newborn-clinical-conditi_chunk2",
+    "P011": "AAP_pg5_white-blood-cell-count_chunk2",
+    "P012": "AAP_pg5_white-blood-cell-count_chunk3",
+    "P013": "AAP_pg6_other-inflammatory-marke_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-ffaa1d55-26ec-4902-97e2-7fea5d9fda56",
+    "object": "chat.completion",
+    "created": 1792946477,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P007\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Risk calculator recommends antibiotics for EOS risk \u22653/1000; case risk is 3/1000.\"\n    },\n    {\n      \"passage\": \"P008\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Advocates clinical observation for well\u2011appearing term/late\u2011preterm infants, matching this infant's status.\"\n    },\n    {\n      \"passage\": \"P009\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Supports reliance on clinical signs alone for well\u2011appearing infants, applicable to this case.\"\n    },\n    {\n      \"passage\": \"P011\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Notes limited utility of WBC count for EOS; case WBC is normal, but passage offers marginal relevance.\"\n    },\n    {\n      \"passage\": \"P012\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"States WBC and platelet counts are not associated with EOS, providing marginal background.\"\n    },\n    {\n      \"passage\": \"P013\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Indicates single CRP values are not sufficient for EOS decisions; case has elevated CRP.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for each target passage: P007,P008,P009,P011,P012,P013. Provide grades. Evaluate: P007 is about risk calculator thresholds and antibiotic recommendation at risk >=3/1000. Our case risk 3 per 1000? risk result probability 3 per 1000, so threshold met, recommendation antibiotics. So direct actionable evidence. grade 3, guideline aligned true, scenario applicable true, clinically useful true. Rationale short.\n\nP008: clinical condition strategy: rely on signs; infant well-appearing, no illness, suggests observation not antibiotics. Not direct actionable for antibiotics. Provides background. grade 2? It supports decision to not treat. It's applicable. So grade 2, aligned, scenario applicable (well-appearing), clinically useful true. Rationale.\n\nP009: similar to P008, about clinical observation and studies. Also supports observation. grade 2, aligned, scenario applicable, clinically useful true.\n\nP011: WBC count utility low, mentions abnormal values not reliable. Our WBC 18.5 (normal). This passage indicates WBC not useful, supports not using WBC to decide. Relevant background. grade 1? It's marginal. Probably grade 1. Not directly actionable. guideline aligned yes. scenario applicable yes. clinically_useful false (grade<2). So grade1, aligned true, scenario true, clinically_useful false.\n\nP012: similar about WBC and platelet not associated. Also marginal. grade1, aligned true, scenario true, clinically_useful false.\n\nP013: CRP not sensitive alone, serial normal indicates absence. Our CRP 12 (elevated). Passage says single CRP not enough. This informs that CRP alone not decisive. Relevant background. grade2? It informs that elevated CRP not sufficient for antibiotics. Could be useful. I'd give grade2. aligned true, scenario applicable, clinically_useful true.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.247993148,
+      "prompt_tokens": 3417,
+      "prompt_time": 0.148024354,
+      "completion_tokens": 869,
+      "completion_time": 1.850008052,
+      "total_tokens": 4286,
+      "total_time": 1.998032406,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 402
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_90620edd96",
+    "x_groq": {
+      "id": "req_01m5sz04nfecbvz9jnrr879cxz",
+      "seed": 226385594
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "975",
+    "x-ratelimit-remaining-tokens": "3671",
+    "x-ratelimit-reset-requests": "36m0s",
+    "x-ratelimit-reset-tokens": "32.467s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P007",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Risk calculator recommends antibiotics for EOS risk \u22653/1000; case risk is 3/1000."
+      },
+      {
+        "passage": "P008",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Advocates clinical observation for well\u2011appearing term/late\u2011preterm infants, matching this infant's status."
+      },
+      {
+        "passage": "P009",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Supports reliance on clinical signs alone for well\u2011appearing infants, applicable to this case."
+      },
+      {
+        "passage": "P011",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Notes limited utility of WBC count for EOS; case WBC is normal, but passage offers marginal relevance."
+      },
+      {
+        "passage": "P012",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "States WBC and platelet counts are not associated with EOS, providing marginal background."
+      },
+      {
+        "passage": "P013",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Indicates single CRP values are not sufficient for EOS decisions; case has elevated CRP."
+      }
+    ]
+  }
+}

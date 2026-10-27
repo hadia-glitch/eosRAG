@@ -1,0 +1,113 @@
+{
+  "completed": true,
+  "task_sha256": "df46152df1804212750dae838f943676313a95c39b20d7562d790d4b4a57f8ce",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.3142975000082515,
+  "kind": "chunks",
+  "case_id": "cp_case_009",
+  "mapping": {
+    "P024": "NICE_pg64_why-the-committee-made-t_chunk3",
+    "P025": "NICE_pg67_how-the-recommendations-_chunk1",
+    "P026": "NICE_pg74_why-the-committee-made-t_rec1_chunk1",
+    "P027": "NICE_pg74_why-the-committee-made-t_rec1_chunk2",
+    "P028": "NICE_pg8_chorioamnionitis_chunk1",
+    "P029": "NICE_pg8_prevent-early-onset-neon_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-8e4b8766-8e9b-4f91-9f7f-aef1d9f69443",
+    "object": "chat.completion",
+    "created": 1792946272,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P024\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Describes retained red\u2011flag framework for antibiotic decisions, matching the case's risk factors.\"\n    },\n    {\n      \"passage\": \"P025\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Discusses wording change for ROM risk factor; background only, no direct treatment guidance.\"\n    },\n    {\n      \"passage\": \"P026\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Notes CRP should not alone dictate antibiotics, relevant to elevated CRP in this case.\"\n    },\n    {\n      \"passage\": \"P027\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": false,\n      \"rationale\": \"Mentions need for expert advice; background info, not specific to drug choice.\"\n    },\n    {\n      \"passage\": \"P028\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Specifies no penicillin allergy; case has allergy, so recommendation not applicable.\"\n    },\n    {\n      \"passage\": \"P029\",\n      \"relevance_grade\": 0,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Covers intrapartum antibiotics, not neonatal treatment after birth.\"\n    }\n  ]\n}",
+          "reasoning": "Need output JSON with judgments for each target passage. Evaluate relevance to case: case has penicillin allergy, ROM 20h preterm, CRP 12, need antibiotics clindamycin+gentamicin proposed. Guidelines: need alternative to penicillin. Passages:\n\nP024: about framework retained, red flag etc. Relevant? Provides decision framework but not specific antibiotic choice. Grade maybe 1 or 2? It mentions risk factors and red flags, applicable to scenario (risk factors present). So useful applicable support for decision to start antibiotics. Probably grade 2.\n\nGuideline aligned yes (NICE). scenario_applicable yes (framework applies). clinically_useful true (grade>=2). Rationale.\n\nP025: about impact of revised risk factor wording, not directly actionable. Background. Grade 1.\n\nP026: about CRP not sole determinant. Relevant to using CRP. Could inform decision. Grade 2 maybe. scenario applicable yes. clinically useful true.\n\nP027: about need for expert advice. Not directly actionable. Grade 1.\n\nP028: chorioamnionitis section with allergy info: says no penicillin allergy -> use benzylpenicillin. Not applicable because allergy present. But mentions allergy context? It says \"Allergies: No penicillin allergy\". So not relevant. Grade 0.\n\nP029: intrapartum antibiotics recommendations, not postnatal. Not relevant to neonatal antibiotics. Grade 0.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.303012712,
+      "prompt_tokens": 4940,
+      "prompt_time": 0.246811673,
+      "completion_tokens": 742,
+      "completion_time": 1.5504714229999998,
+      "total_tokens": 5682,
+      "total_time": 1.7972830960000001,
+      "completion_tokens_details": {
+        "reasoning_tokens": 301
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4200b3f836",
+    "x_groq": {
+      "id": "req_01m5sysw3weqe8n4ndxxyeva4b",
+      "seed": 621643220
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "978",
+    "x-ratelimit-remaining-tokens": "2148",
+    "x-ratelimit-reset-requests": "31m40.8s",
+    "x-ratelimit-reset-tokens": "43.89s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P024",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Describes retained red\u2011flag framework for antibiotic decisions, matching the case's risk factors."
+      },
+      {
+        "passage": "P025",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Discusses wording change for ROM risk factor; background only, no direct treatment guidance."
+      },
+      {
+        "passage": "P026",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Notes CRP should not alone dictate antibiotics, relevant to elevated CRP in this case."
+      },
+      {
+        "passage": "P027",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": false,
+        "rationale": "Mentions need for expert advice; background info, not specific to drug choice."
+      },
+      {
+        "passage": "P028",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Specifies no penicillin allergy; case has allergy, so recommendation not applicable."
+      },
+      {
+        "passage": "P029",
+        "relevance_grade": 0,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Covers intrapartum antibiotics, not neonatal treatment after birth."
+      }
+    ]
+  }
+}

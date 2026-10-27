@@ -1,0 +1,31 @@
+{
+  "analysis_scripts_sha256": {
+    "scripts/prepare_pilot.py": "d9d0c2122c94b41e94aefa49c5fc02f48b62aaeaed5f27005731391d6ade30b3",
+    "scripts/score_pilot.py": "e6a6221cb5bc87067ed3ebf4b9f973c5ee122d01362628442226f8a00578de79",
+    "scripts/analyze_pilot.py": "92cf50502c9f8ed74546c232c0d85890a56e0fbc3ed817334d10cf509d1141fc",
+    "scripts/audit_pilot_source_ids.py": "9e895d693517a846a7812efa1236f2d8fb33089b29e8c266fc7c5a292b469e34",
+    "scripts/build_pilot_report.py": "a190e1a80f1e84426b41cb54829d7f6376384df92ee7e0a55357ab4c741d5e2a",
+    "scripts/integrate_pilot_paper.py": "adfee5c8675382aff1b237b94bec3825f2effaf85449f311e13d656daad6b6ee",
+    "backend/scripts/pilot_judge.py": "e5b0d8e73479a6ee368cde20542bdeee4571d7ff97013aae78ffb246c700f66d",
+    "backend/scripts/pilot_metrics.py": "71e9e98d7905b3e71a9eeeef0600138de26b9e39a72ce78d5e59e4d561186d2e",
+    "backend/scripts/audit_probability.py": "83a22bd655eb508870229f1f0399c0b8970a754f9768ce033c82ec9deab74bf1"
+  },
+  "subsequent_runtime_code_sha256": {
+    "backend/demo_api.py": "ec8ceb0ab0318970eddce800f84605d78c923c70272820e84258f8965535d027",
+    "backend/rag/verification_graph.py": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c",
+    "backend/Dockerfile.demo": "8254313e77817772485ad33d2dc22a911ae1e5b147dc1f04d4cf1ccec9ae2350",
+    "scripts/start_demo.ps1": "49171b6ef7b61d6b5e2eddc0c7ef0875519fe8024b724f583698f5ca0d560804",
+    "backend/demo/source_boundaries.py": "c27fdf4bd371f4ba3d5f2813180fca6376d0eb91ca9b3c77e325fca247d17259",
+    "backend/demo/retrieval.py": "7f8bd0ae5727cd38f42a2899f599150e4331e7a2b074ff5be2660aaf39267123",
+    "backend/demo/corpus.json": "90c3b5c6e795362dacb2cd7b3f0550fa94bf5399a96c3bb3be9c4f9ac6f96c3e",
+    "backend/rag/production_retrieval.py": "8b5cf63aac422959b1522822bd67c5322b43e21c6d95c33da3692a75e3a7bedf",
+    "scripts/clean_demo_source_boundaries.py": "ed5945f1ae07e004317cba53dd866dd621204b320e89526f483649c3f4ca9d49",
+    "scripts/record_native_demo.py": "dab1aa63175a512dda1c33cbd6f4cd829b61797ccdd033c886b4b4decaba3075",
+    "integration_test/mobile_demo_test.dart": "88b8d3354381d6607486849fe4fea8df6650774cb25b39452d5156d29e4c00ef"
+  },
+  "note": "Runtime refinements follow the frozen historical experiment and are not credited with its scores. Exact task hashes/prompts/raw responses remain per judgment.",
+  "plan_stage_responses": 80,
+  "plan_assessments": 40,
+  "chunk_judgments": 206,
+  "provider_errors_in_quality_population": false
+}

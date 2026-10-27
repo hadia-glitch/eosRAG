@@ -1,0 +1,80 @@
+{
+  "completed": true,
+  "task_sha256": "3757845f982f79c79ce56ffacc8835bfcb756f8b26960d26c447126c00d2a8a3",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.95175229999586,
+  "kind": "chunks",
+  "case_id": "cp_case_009",
+  "mapping": {
+    "P030": "NICE_pg90_update-information_chunk1",
+    "P031": "NICE_pg9_chorioamnionitis_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-2521ab6a-228e-4263-a4f1-f3c3cacc187d",
+    "object": "chat.completion",
+    "created": 1792946340,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P030\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Notes updated ROM risk factor (>24h) and antibiotic switching guidance, relevant to this preterm ROM case.\"\n    },\n    {\n      \"passage\": \"P031\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Provides alternative antibiotics for non\u2011severe penicillin allergy, directly informing drug choice in this case.\"\n    }\n  ]\n}",
+          "reasoning": "We need output judgments for target_passages P030 and P031. Provide array with those. Determine grades.\n\nCase: preterm 36w, ROM 20h, elevated CRP, penicillin allergy (not severe? says penicillin_allergy true, but severity unknown; assume allergy not severe? unclear). Proposed drugs clindamycin, gentamicin. Need evidence relevance.\n\nP030: update info about risk factors and switching antibiotics. Mentions review of ROM time and amendment of risk factors, also switching IV to oral. Relevant to risk assessment and management. Provides background but not direct actionable for antibiotic choice given penicillin allergy. Grade maybe 2 (useful applicable support) as informs risk factor timing and that guidelines updated. It's aligned, scenario applicable (ROM >18h). Clinically useful >=2 yes. So grade 2.\n\nP031: chorioamnionitis section gives alternative antibiotics for penicillin allergy not severe: use cephalosporin (cef) +/- metronidazole. Not clindamycin. Provides guidance for penicillin allergy. Relevant to antibiotic choice. Direct actionable? It suggests cephalosporin, not clindamycin. For scenario with penicillin allergy, informs alternative. So grade 2 as useful. Not direct prescription of clindamycin. So clinically_useful true.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377836882,
+      "prompt_tokens": 4523,
+      "prompt_time": 0.250738667,
+      "completion_tokens": 450,
+      "completion_time": 1.035559615,
+      "total_tokens": 4973,
+      "total_time": 1.286298282,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 278
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c15aa9c1b7",
+    "x_groq": {
+      "id": "req_01m5syvyy5e3gvx8sa2hbx4fwx",
+      "seed": 12579038
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "977",
+    "x-ratelimit-remaining-tokens": "2657",
+    "x-ratelimit-reset-requests": "33m7.2s",
+    "x-ratelimit-reset-tokens": "40.072s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P030",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Notes updated ROM risk factor (>24h) and antibiotic switching guidance, relevant to this preterm ROM case."
+      },
+      {
+        "passage": "P031",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Provides alternative antibiotics for non\u2011severe penicillin allergy, directly informing drug choice in this case."
+      }
+    ]
+  }
+}

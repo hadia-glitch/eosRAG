@@ -1,0 +1,90 @@
+{
+  "completed": true,
+  "task_sha256": "1c41c97131ade2a5e368bc86a5be5f977805e0f124d8d47ba52b14449422d9c9",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.289131900004577,
+  "kind": "plan",
+  "case_id": "cp_case_011",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-5db9c80d-ca5f-4c6a-a1b0-9fc30a81c696",
+    "object": "chat.completion",
+    "created": 1792955023,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 1,\n  \"citation_completeness\": 1,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"Probability 3.0 per 1000 and combined score of 5 are not stated in any retrieved passage.\"\n    },\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Threshold statement relies on probability figure not sourced; only the >=3 per 1000 threshold is in S009.\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Exact contribution percentages (50% each) are not provided in the evidence.\"\n    },\n    {\n      \"claim_id\": \"L019\",\n      \"reason\": \"Duration 48-72\u202fhours and stop criteria are not mentioned in the supplied passages.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan cites passages S007\u2011S010, which describe risk assessment concepts and the >=3 per 1000 antibiotic threshold (S009). However, specific numeric risk (3.0/1000), score of 5, driver contribution percentages, and treatment duration are not found in those passages. Citation mapping is ambiguous, and many statements lack direct source support.\"\n}",
+          "reasoning": "We need produce JSON with scores and lists. Assess faithfulness: claims about risk category, probability, thresholds. Evidence: S009 says >=3 per 1000 triggers antibiotics. S007, S008 are background. No source gives probability 3.0 per 1000 or score 5. So unsupported. citation correctness? They didn't map citations to lines. Likely incorrect. citation completeness? missing. Ungrounded dose: they mention ampicillin and gentamicin withheld due to no dose; that's okay not ungrounded. No dose provided, but not claiming dose. So ungrouned_dose false. unsupported_claims list lines with unsupported: L002 (probability 3.0 per 1000 and score 5), L005 (probability meets threshold), L008 (driver breakdown percentages), L016-019 maybe dosage withheld not claim. L019 includes duration 48-72 hours; source does not specify duration. So unsupported. contradictions? none. Provide scores maybe low: faithfulness 2, citation_correctness 1, citation_completeness 1."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.2524422,
+      "prompt_tokens": 2619,
+      "prompt_time": 0.107292272,
+      "completion_tokens": 530,
+      "completion_time": 1.111360551,
+      "total_tokens": 3149,
+      "total_time": 1.218652823,
+      "completion_tokens_details": {
+        "reasoning_tokens": 224
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m5t74yy1exz8sq3877y3ahz1",
+      "seed": 681702624
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "998",
+    "x-ratelimit-remaining-tokens": "3581",
+    "x-ratelimit-reset-requests": "2m52.8s",
+    "x-ratelimit-reset-tokens": "33.142s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 1,
+    "citation_completeness": 1,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Probability 3.0 per 1000 and combined score of 5 are not stated in any retrieved passage.",
+        "claim_text": "This 36-week late-preterm infant is assessed as INTERMEDIATE risk for early-onset sepsis (EOS) with a combined score of 5 and a probability of 3.0 per 1000. The risk is driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L), despite adequate intrapartum antibiotics and a well-appearing clinical status."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Threshold statement relies on probability figure not sourced; only the >=3 per 1000 threshold is in S009.",
+        "claim_text": "The patient falls into the INTERMEDIATE risk category based on the AAP multivariate risk calculator. The probability of 3.0 per 1000 meets the threshold for empirical antibiotic therapy as defined in the retrieved evidence (>=3 per 1000). The primary drivers are prolonged ROM (>=18h) and elevated inflammatory markers (CRP 12.0 mg/L)."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Exact contribution percentages (50% each) are not provided in the evidence.",
+        "claim_text": "Prolonged rupture of membranes (20.0h, >=18h threshold) contributes 50% to the risk score. Elevated CRP (12.0 mg/L) contributes 50% to the risk score."
+      },
+      {
+        "claim_id": "L019",
+        "reason": "Duration 48-72\u202fhours and stop criteria are not mentioned in the supplied passages.",
+        "claim_text": "duration=48-72 hours pending cultures stop_criteria=Blood cultures negative at 36-48 hours and infant clinically well."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan cites passages S007\u2011S010, which describe risk assessment concepts and the >=3 per 1000 antibiotic threshold (S009). However, specific numeric risk (3.0/1000), score of 5, driver contribution percentages, and treatment duration are not found in those passages. Citation mapping is ambiguous, and many statements lack direct source support."
+  }
+}

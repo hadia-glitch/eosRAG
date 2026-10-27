@@ -1,0 +1,77 @@
+{
+  "completed": true,
+  "task_sha256": "2f5b42363ef23d3eeba63fb621aa8b2b451a22b673fe7d0b239671ab5a7e9114",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.843352899988531,
+  "kind": "plan",
+  "case_id": "cp_case_026",
+  "mapping": {
+    "collection": "generation",
+    "arm": "dense_only"
+  },
+  "raw_response": {
+    "id": "chatcmpl-c928ac88-e5cb-478b-a397-02f313980f9c",
+    "object": "chat.completion",
+    "created": 1792955983,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":4,\"clinical_completeness\":3,\"clinical_utility\":4,\"safety\":5,\"contradictions\":[{\"claim_id\":\"L005\",\"reason\":\"Risk scoring (points and probability) is not presented in any WHO source; WHO guidelines define risk groups but do not assign numeric scores, so this claim lacks source support.\"}],\"critical_omissions\":[\"Specific inpatient antibiotic dosing (mg/kg) for ampicillin/penicillin and gentamicin not provided despite WHO inpatient guidance (e.g., dosing regimens in S010\u2011S012); exact duration of therapy beyond vague statement not detailed (WHO recommends at least 7\u201110 days)\"],\"regimen_incomplete\":true,\"rationale\":\"Plan correctly identifies contraindication to outpatient WHO PSBI regimen and recommends hospitalization, aligning with S001, S006. However, it introduces an unsupported numeric risk score (L005) and omits concrete dosing details required for safe inpatient management, which are present in WHO inpatient references (S010\u2011S012). Safety is high due to appropriate referral, but completeness and correctness are limited by missing dosing information and unsupported risk quantification.\"}",
+          "reasoning": "We need produce JSON with fields. Assess plan: It says inpatient needed, with ampicillin or penicillin substituted, but no dose. Contradictions? It withholds oral amoxicillin/gentamicin outpatient, correct due to contraindication. Seems safe. Completeness: missing specific dosing, duration vague. So regimen_incomplete true. Critical omissions: specific antibiotic dosing, duration specifics. Contradictions: maybe claim L005 risk analysis uses points but not from guideline. Not sure. We'll list contradiction L005 because risk scoring not in WHO. Provide source: no source. So contradiction.\n\nProvide ratings: clinical_correctness 4, completeness 3, utility 4, safety 5.\n\nProvide contradictions list with claim_id L005 reason. critical_omissions list.\n\nReturn JSON compact."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.20345979,
+      "prompt_tokens": 5388,
+      "prompt_time": 0.228183328,
+      "completion_tokens": 409,
+      "completion_time": 0.855853182,
+      "total_tokens": 5797,
+      "total_time": 1.08403651,
+      "completion_tokens_details": {
+        "reasoning_tokens": 163
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_60e4b492db",
+    "x_groq": {
+      "id": "req_01m5t8284yebds30c3awdtyy07",
+      "seed": 1086438679
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "973",
+    "x-ratelimit-remaining-tokens": "1942",
+    "x-ratelimit-reset-requests": "38m52.8s",
+    "x-ratelimit-reset-tokens": "45.435s"
+  },
+  "result": {
+    "clinical_correctness": 4,
+    "clinical_completeness": 3,
+    "clinical_utility": 4,
+    "safety": 5,
+    "contradictions": [
+      {
+        "claim_id": "L005",
+        "reason": "Risk scoring (points and probability) is not presented in any WHO source; WHO guidelines define risk groups but do not assign numeric scores, so this claim lacks source support.",
+        "claim_text": "The patient is categorized as INTERMEDIATE risk (Score 3) due to two specific drivers: Prolonged rupture of membranes (>=18h) contributing 2 points, and Elevated CRP (12.0 mg/L) contributing 2 points. The combined probability is 3.0 per 1000."
+      }
+    ],
+    "critical_omissions": [
+      "Specific inpatient antibiotic dosing (mg/kg) for ampicillin/penicillin and gentamicin not provided despite WHO inpatient guidance (e.g., dosing regimens in S010\u2011S012); exact duration of therapy beyond vague statement not detailed (WHO recommends at least 7\u201110 days)"
+    ],
+    "regimen_incomplete": true,
+    "rationale": "Plan correctly identifies contraindication to outpatient WHO PSBI regimen and recommends hospitalization, aligning with S001, S006. However, it introduces an unsupported numeric risk score (L005) and omits concrete dosing details required for safe inpatient management, which are present in WHO inpatient references (S010\u2011S012). Safety is high due to appropriate referral, but completeness and correctness are limited by missing dosing information and unsupported risk quantification."
+  }
+}

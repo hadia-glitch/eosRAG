@@ -1,0 +1,87 @@
+{
+  "completed": true,
+  "task_sha256": "b68a50c0ba337b4aa3fa72bf245dd1b83b7a0a21665044c6336c54773b6e6821",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 3.61791469999298,
+  "kind": "plan",
+  "case_id": "cp_case_001",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-a00cd59a-30fc-47d9-bf98-ee5dfaad5160",
+    "object": "chat.completion",
+    "created": 1792950898,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 4,\n  \"citation_correctness\": 4,\n  \"citation_completeness\": 3,\n  \"clinical_correctness\": 5,\n  \"clinical_completeness\": 4,\n  \"clinical_utility\": 4,\n  \"safety\": 5,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L013\",\n      \"reason\": \"Statement to monitor renal function and nephrotoxicity risk is not directly supported by any cited passage (S006, S010, S011, S013, S005).\"\n    },\n    {\n      \"claim_id\": \"L023\",\n      \"reason\": \"Monitoring serum creatinine and urine output closely is not cited in the retrieved evidence.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"critical_omissions\": [\n    \"Gentamicin trough concentration monitoring per NICE (S008) is not included despite the drug being prescribed/considered.\"\n  ],\n  \"regimen_incomplete\": true,\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan largely follows NICE recommendations: benzylpenicillin 25\u202fmg/kg q12h and gentamicin 5\u202fmg/kg are supported by S005; 7\u2011day duration and 36\u2011hour stop criteria are supported by S006 and S011. Citations are correctly linked for these items. However, several monitoring actions (renal function, creatinine, urine output) lack explicit citation, reducing citation completeness. The plan omits recommended gentamicin trough level monitoring (S008), a notable clinical omission. Gentamicin is withheld due to AKI risk, making the regimen incomplete relative to guideline default. All doses are grounded in cited evidence.\"\n}",
+          "reasoning": "We need produce JSON with scores and findings. Evaluate plan.\n\nCheck citations: plan uses E1->S006, E2->S010, E3->S011, E4->S013, E5->S005. Need citation correctness/completeness.\n\nFaithfulness: does plan statements match cited evidence? Eg antibiotic regimen: benzylpenicillin 25 mg/kg q12h supported by S005 (yes). Gentamicin 5 mg/kg supported by S005 (yes). Duration 7 days stop criteria: S006 gives 7 days for strong suspicion, also stop at 36h if criteria met (S011). So matches. Monitoring renal function: not directly cited but reasonable. Citation for monitoring? Not cited. Might be unsupported claim without citation. So citation completeness low.\n\nClinical correctness: aligns with NICE. Safety: mentions nephrotoxicity risk, appropriate monitoring. Good.\n\nUnsupported claims: e.g., \"Monitor renal function closely due to potential nephrotoxicity risk with gentamicin.\" No citation. Also \"Record times of gentamicin administration and sampling for therapeutic monitoring.\" Cited S010 supports recording times. Good. \"Monitor serum creatinine and urine output closely\" not cited. So list those lines L013, L023 maybe.\n\nContradictions: none.\n\nCritical omissions: maybe omission of dosing interval adjustment based on renal function? Not required. Maybe omission of gentamicin trough monitoring per S008 not mentioned. Could be omission.\n\nRegimen_incomplete: gentamicin withheld due to risk, but plan says withheld? Actually line L019 says \"- IV gentamicin 5 mg/kg \u2014 WITHHELD: Possible nephrotoxicity risk\". So regimen incomplete (gentamicin withheld). According to guideline, both should be given unless contraindicated. Here contraindication type is gentamicin_aki, and they flagged risk. Withholding may be acceptable but regimen incomplete relative to guideline. So regimen_incomplete true.\n\nUngrounded_dose: any dose without support? Doses are supported by S005. So false.\n\nNow assign scores 1-5.\n\nFaithfulness: 4 (most statements align, minor missing citations). Citation_correctness: 4 (cited correctly). Citation_completeness: 3 (some statements lack citations). Clinical_correctness: 5 (clinically correct). Clinical_completeness: 4 (missing gentamicin trough monitoring). Clinical_utility: 4 (useful). Safety: 5 (addresses nephrotoxicity). Provide arrays.\n\nNow produce JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.253577473,
+      "prompt_tokens": 5136,
+      "prompt_time": 0.214599194,
+      "completion_tokens": 903,
+      "completion_time": 1.881787367,
+      "total_tokens": 6039,
+      "total_time": 2.096386561,
+      "completion_tokens_details": {
+        "reasoning_tokens": 521
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_19b184c447",
+    "x_groq": {
+      "id": "req_01m5t371ffetnsj416xqqsahs1",
+      "seed": 517362603
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 3,
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "996",
+    "x-ratelimit-remaining-tokens": "1907",
+    "x-ratelimit-reset-requests": "5m45.6s",
+    "x-ratelimit-reset-tokens": "45.697s"
+  },
+  "result": {
+    "faithfulness": 4,
+    "citation_correctness": 4,
+    "citation_completeness": 3,
+    "clinical_correctness": 5,
+    "clinical_completeness": 4,
+    "clinical_utility": 4,
+    "safety": 5,
+    "unsupported_claims": [
+      {
+        "claim_id": "L013",
+        "reason": "Statement to monitor renal function and nephrotoxicity risk is not directly supported by any cited passage (S006, S010, S011, S013, S005).",
+        "claim_text": "- Monitor renal function closely due to potential nephrotoxicity risk with gentamicin."
+      },
+      {
+        "claim_id": "L023",
+        "reason": "Monitoring serum creatinine and urine output closely is not cited in the retrieved evidence.",
+        "claim_text": "Monitor vital signs, respiratory status, and urine output hourly. Monitor serum creatinine and urine output closely to assess for acute kidney injury. Record times of antibiotic administration. Repeat CRP as clinically indicated to assess trend."
+      }
+    ],
+    "contradictions": [],
+    "critical_omissions": [
+      "Gentamicin trough concentration monitoring per NICE (S008) is not included despite the drug being prescribed/considered."
+    ],
+    "regimen_incomplete": true,
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan largely follows NICE recommendations: benzylpenicillin 25\u202fmg/kg q12h and gentamicin 5\u202fmg/kg are supported by S005; 7\u2011day duration and 36\u2011hour stop criteria are supported by S006 and S011. Citations are correctly linked for these items. However, several monitoring actions (renal function, creatinine, urine output) lack explicit citation, reducing citation completeness. The plan omits recommended gentamicin trough level monitoring (S008), a notable clinical omission. Gentamicin is withheld due to AKI risk, making the regimen incomplete relative to guideline default. All doses are grounded in cited evidence."
+  }
+}

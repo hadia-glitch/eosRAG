@@ -1,0 +1,116 @@
+{
+  "completed": true,
+  "task_sha256": "37cf983dcbd20321c0971cef48f25e54e5e8c9bffd707690e6fe90dcd810b527",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.060584099992411,
+  "kind": "chunks",
+  "case_id": "cp_case_014",
+  "mapping": {
+    "P001": "NICE_pg12_box-1-risk-factors-for-e_chunk1",
+    "P004": "NICE_pg15_care-2021_rec1_chunk1",
+    "P005": "NICE_pg15_care-2021_rec1_chunk2",
+    "P007": "NICE_pg23_bacterial-meningitis_chunk1",
+    "P008": "NICE_pg27_for-early-onset-or-late-_rec1_chunk1",
+    "P009": "NICE_pg29_infection_rec1_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-2bb0fc95-2570-4659-b4d6-72f6d25ae98d",
+    "object": "chat.completion",
+    "created": 1792946614,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"judgments\": [\n    {\n      \"passage\": \"P001\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Lists pre\u2011term birth, ROM >18\u202fh, GBS colonisation \u2013 all present risk factors in this case.\"\n    },\n    {\n      \"passage\": \"P004\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Describes Kaiser calculator for babies \u226534\u202fwks, but case is below EOSCAL scope (<35\u202fwks) so not used.\"\n    },\n    {\n      \"passage\": \"P005\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Repeats calculator recommendation; not applicable given the <35\u2011week warning.\"\n    },\n    {\n      \"passage\": \"P007\",\n      \"relevance_grade\": 1,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": false,\n      \"clinically_useful\": false,\n      \"rationale\": \"Details CSF work\u2011up for meningitis; no meningitis signs in this infant.\"\n    },\n    {\n      \"passage\": \"P008\",\n      \"relevance_grade\": 2,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Recommends CRP measurement 18\u201124\u202fh after antibiotics and lumbar puncture criteria, relevant to monitoring this baby.\"\n    },\n    {\n      \"passage\": \"P009\",\n      \"relevance_grade\": 3,\n      \"guideline_aligned\": true,\n      \"scenario_applicable\": true,\n      \"clinically_useful\": true,\n      \"rationale\": \"Specifies first\u2011line IV benzylpenicillin\u202f+\u202fgentamicin dosing for empirical treatment of early\u2011onset infection.\"\n    }\n  ]\n}",
+          "reasoning": "We need output JSON with judgments for each target passage. Evaluate.\n\nCase: preterm 34 weeks, risk factors present. Need empirical antibiotics benzylpenicillin+gentamicin. Also guidelines about risk assessment, use of calculator maybe not applicable (<35 weeks warning). Evaluate each passage:\n\nP001: lists risk factors including preterm birth before 37 weeks, ROM >18h preterm, GBS colonization. Relevant background. Grade 2? It's applicable support for risk assessment. Not direct actionable. So grade 2. guideline_aligned true (NICE). scenario_applicable true (risk factors present). clinically_useful true (grade>=2). rationale.\n\nP004: about using Kaiser calculator for babies born after 34+0 weeks in unit. Our baby 34 weeks exactly, but warning says below EOSCAL scope (<35 weeks) use categorical risk. So this passage mentions alternative tool but not recommended here. Might be marginal background. Grade 1. guideline_aligned true. scenario_applicable? Tool not applicable due to scope, but mentions applicability condition (>=34+0). Could be partially applicable but not used. scenario_applicable false? Since not used. Clinically_useful false (grade<2). Provide rationale.\n\nP005: similar to P004, repeats recommendation to use calculator classification. Same assessment. Grade 1, guideline_aligned true, scenario_applicable false, clinically_useful false.\n\nP007: CSF investigations for meningitis. Not directly needed now. Might be background if suspicion. Not actionable now. Grade 1. guideline_aligned true. scenario_applicable false (no meningitis signs). clinically_useful false.\n\nP008: CRP measurement after antibiotics and lumbar puncture considerations. Relevant for monitoring CRP at 18-24h; case has CRP now. Could be actionable later. Grade 2 (useful). guideline_aligned true. scenario_applicable true (CRP measurement). clinically_useful true.\n\nP009: antibiotic regimen recommendation benzylpenicillin+gentamicin. Direct actionable. Grade 3. guideline_aligned true. scenario_applicable true (no allergy, preterm). clinically_useful true.\n\nNow construct JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377363285,
+      "prompt_tokens": 4419,
+      "prompt_time": 0.281824859,
+      "completion_tokens": 937,
+      "completion_time": 1.999397292,
+      "total_tokens": 5356,
+      "total_time": 2.281222151,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 450
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c3da0d4bb9",
+    "x_groq": {
+      "id": "req_01m5sz4a2cejxbzphe33vaj241",
+      "seed": 299536684
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "973",
+    "x-ratelimit-remaining-tokens": "2761",
+    "x-ratelimit-reset-requests": "38m52.8s",
+    "x-ratelimit-reset-tokens": "39.292s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P001",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Lists pre\u2011term birth, ROM >18\u202fh, GBS colonisation \u2013 all present risk factors in this case."
+      },
+      {
+        "passage": "P004",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Describes Kaiser calculator for babies \u226534\u202fwks, but case is below EOSCAL scope (<35\u202fwks) so not used."
+      },
+      {
+        "passage": "P005",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Repeats calculator recommendation; not applicable given the <35\u2011week warning."
+      },
+      {
+        "passage": "P007",
+        "relevance_grade": 1,
+        "guideline_aligned": true,
+        "scenario_applicable": false,
+        "clinically_useful": false,
+        "rationale": "Details CSF work\u2011up for meningitis; no meningitis signs in this infant."
+      },
+      {
+        "passage": "P008",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends CRP measurement 18\u201124\u202fh after antibiotics and lumbar puncture criteria, relevant to monitoring this baby."
+      },
+      {
+        "passage": "P009",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Specifies first\u2011line IV benzylpenicillin\u202f+\u202fgentamicin dosing for empirical treatment of early\u2011onset infection."
+      }
+    ]
+  }
+}

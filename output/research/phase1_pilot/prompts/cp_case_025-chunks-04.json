@@ -1,0 +1,146 @@
+{
+  "key": "cp_case_025-chunks-04",
+  "kind": "chunks",
+  "case_id": "cp_case_025",
+  "prompt": {
+    "task": "Grade each target passage for this case. Grade 0=irrelevant/inapplicable, 1=background or marginal, 2=useful applicable support, 3=direct actionable evidence for this specific scenario. Score by actual text and applicability, never by gold membership. Guideline alignment requires compatible source/scope; safety exclusions may make a passage relevant even when the treatment is inapplicable. Scenario_applicable concerns the actual recommendation/population. Clinically_useful must equal grade>=2 and requires alignment and applicability. Judge each target exactly once. Rationale: 12-25 words, point to actual content/conditions and case facts.",
+    "case": {
+      "case_id": "cp_case_025",
+      "active_guideline": "WHO",
+      "care_setting": "outpatient_no_referral",
+      "contraindication_type": "who_lbw",
+      "trend_type": null,
+      "ambiguous": false,
+      "risk_result": {
+        "total_score": 3,
+        "combined_score": 3,
+        "layer1_score": 0,
+        "layer2_score": 2,
+        "layer3_score": 0,
+        "category": "INTERMEDIATE",
+        "risk_category": "Intermediate Risk (Amber)",
+        "probability_per_1000": 3.0,
+        "drivers": [
+          {
+            "name": "Prolonged rupture of membranes",
+            "reason": "ROM 20.0h (>=18h)",
+            "points": 2,
+            "layer": 1,
+            "contribution_percent": 50.0
+          },
+          {
+            "name": "Elevated CRP",
+            "reason": "CRP 12.0 mg/L",
+            "points": 2,
+            "layer": 3,
+            "contribution_percent": 50.0
+          }
+        ],
+        "patient": {
+          "gestational_age_weeks": 29.0,
+          "maternal_temperature": 37.9,
+          "rom_hours": 20.0,
+          "gbs_positive": false,
+          "respiratory_distress": "None",
+          "crp_level": 12.0,
+          "blood_culture_positive": false,
+          "urine_output_ml_kg_hr": 2.0,
+          "creatinine_mg_dl": 0.6,
+          "penicillin_allergy": false,
+          "adequate_intrapartum_antibiotics": true,
+          "clinical_chorioamnionitis": false,
+          "delivery_mode": "Caesarean",
+          "oxygen_need": "None",
+          "apgar_5_min": 9,
+          "poor_perfusion": false,
+          "neonatal_temperature": 37.0,
+          "neurological_status": "Normal",
+          "wbc_count": 18.5,
+          "it_ratio": 0.15,
+          "platelet_count": 260.0,
+          "pct_level": 0.3,
+          "birth_weight_g": 1200
+        },
+        "warnings": []
+      },
+      "previous_assessments": [],
+      "deltas": null,
+      "proposed_drugs": [
+        "ampicillin",
+        "gentamicin"
+      ],
+      "retrieval_query": "WHO newborn sepsis clinical severe infection possible serious bacterial infection PSBI possible serious bacterial infection PSBI young infant 0-59 days clinical severe infection fast breathing severe chest indrawing not feeding well movement only when stimulated convulsions danger signs IMCI referral hospital Prolonged rupture of membranes ROM 20.0h (>=18h) Elevated CRP CRP 12.0 mg/L prolonged ROM rupture of membranes caesarean delivery preterm prematurity CRP inflammatory markers white blood cell count WBC procalcitonin PCT thrombocytopenia platelet count low birth weight LBW"
+    },
+    "gold_evidence_aliases": [
+      "P024",
+      "P001",
+      "P004",
+      "P005",
+      "P022",
+      "P020",
+      "P021"
+    ],
+    "passages": [
+      {
+        "passage": "P001",
+        "source": "WHO",
+        "section": "Background and definitions",
+        "text": "Source: WHO\nSection: Background and definitions\n\nClinical severe infection is defined by WHO as one or more of the following clinical signs in infants aged 0\u201359 days: not feeding well, movement only when stimulated, high body temperature (\u2265\u00a038\u00a0\u00b0C), low body temperature (<\u00a035.5\u00a0\u00b0C), and/or severe chest indrawing. An additional sign of clinical severe infection in infants aged 0\u20136 days is fast breathing (\u2265\u00a060 breaths per minute) (27, 28).\nIn 2014, WHO developed guidelines to provide simplified antibiotic regimens (gentamicin IM for either 2 or 7 days plus oral amoxicillin for 7 days) to infants aged 0\u201359 days with clinical severe illness whose families do not accept or cannot access referral care at a hospital (27, 28). However, there have been changes to AMR in hospital and community settings since that time."
+      },
+      {
+        "passage": "P004",
+        "source": "WHO",
+        "section": "Critical outcomes",
+        "text": "Source: WHO\nSection: Critical outcomes\n\nFor this comparison (using regimen 1, as labelled above), one study with 288 participants assessed the following outcomes with the following findings (68).\n\u25a0Mortality: Moderate-certainty evidence suggests increased all-cause mortality after two weeks (1 RCT, 288 participants, RR 5.58, 95% CI: 1.26 to 24.72).\n\u25a0Treatment failure: Moderate-certainty evidence suggests increased treatment failure after 7 days (1\u00a0RCT, 288 participants, RR 2.03, 95% CI: 1.09 to 3.79).\n\u25a0Treatment success: Moderate-certainty evidence suggests a decrease in treatment success after 7\u00a0days (1 RCT, 288 participants, RR 0.90, 95% CI:"
+      },
+      {
+        "passage": "P005",
+        "source": "WHO",
+        "section": "Critical outcomes",
+        "text": "Source: WHO\nSection: Critical outcomes\n\nFor this comparison (using regimen 4, as labelled above), one, two and three studies assessed the following outcomes with the following findings. \u25a0Mortality: Low-certainty evidence suggests little or no difference in all-cause mortality after two weeks (3 RCTs, 5054 participants, RR 0.86, 95% CI: 0.55 to 1.34) (65-67). \u25a0Treatment failure: Low-certainty evidence suggests little or no difference in treatment failure after one week (3 RCTs, 5054 participants, RR 0.86, 95% CI: 0.72 to 1.02) (65-67). \u25a0Relapse: Low-certainty evidence suggests little or no difference in relapse after two weeks (2\u00a0RCTs, 3294 participants, RR 1.05, 95% CI: 0.57 to 1.93) (65, 66). \u25a0Treatment success: Low-certainty evidence suggests little or no difference in treatment success after 11\u201315 days (1 RCT, 1640 participants, RR 0.99, 95% CI: 0.97 to 1.03) (65)."
+      },
+      {
+        "passage": "P020",
+        "source": "WHO",
+        "section": "referral is not possible",
+        "text": "Source: WHO\nSection: referral is not possible\n\n\u25a0The GDG emphasized the importance of referring all infants aged 0\u201359 days with signs of PSBI to hospital and noted that the recommendations for non-hospital settings are only for situations where referral is not possible."
+      },
+      {
+        "passage": "P021",
+        "source": "WHO",
+        "section": "Risk groups",
+        "text": "Source: WHO\nSection: Risk groups\n\n\u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence.\n\u25a0The GDG was also unable to recommend further risk stratification (e.g. by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research."
+      },
+      {
+        "passage": "P022",
+        "source": "WHO",
+        "section": "A. Non-hospital settings",
+        "text": "Source: WHO\nSection: A. Non-hospital settings\n\n\u25a050\u00a0mg/kg/dose every 8 hours (> first week of life)\nPlus Gentamicin IM/IV for a total of at least 7 days, or 2 days if 7 days is not possible \u25a05\u00a0mg/kg once a day (first week of life)\n\u25a07.5\u00a0mg/kg once a day (> first week of life) A.4 Fast breathing as the only clinical sign of illness in young infants aged 0\u20136 days in non-hospital settings Amoxicillin oral for at least 7 days \u25a050\u00a0mg/kg/dose every 12 hours A.5 Fast breathing as the only clinical sign of illness in young infants aged 7\u201359 days in non-hospital settings Amoxicillin oral for at least 7 days \u25a050\u00a0mg/kg/dose every 12 hours"
+      },
+      {
+        "passage": "P024",
+        "source": "WHO",
+        "section": "Recommendation A.3a (UPDATED)",
+        "text": "Source: WHO\nSection: Recommendation A.3a (UPDATED)\nRecommendation: rec1\n\nRecommendation: Young infants aged 0\u201359 days with the IMCI signs of clinical severe infection should be referred to hospital.\nIf referral is not possible then oral amoxicillin for at least 7 days plus gentamicin IM/IV for at least 7 days is"
+      }
+    ],
+    "target_passages": [
+      "P024"
+    ],
+    "response_schema": {
+      "judgments": [
+        {
+          "passage": "P001",
+          "relevance_grade": "integer 0-3",
+          "guideline_aligned": "boolean",
+          "scenario_applicable": "boolean",
+          "clinically_useful": "boolean",
+          "rationale": "short source-based rationale"
+        }
+      ]
+    }
+  },
+  "mapping": {
+    "P024": "WHO_pg9_recommendation-a-3a-upda_rec1_chunk1"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "completed": true,
+  "task_sha256": "af9e182999deb83d2f0bcb68f3b12674241277fc9abed00c83b92ff366fa1f51",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 4.19275750000088,
+  "kind": "plan",
+  "case_id": "cp_case_002",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-e0d85bf1-a344-459b-8fe6-c034316c3384",
+    "object": "chat.completion",
+    "created": 1792951876,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 3,\n  \"unsupported_claims\": [\n    {\n      \"claim_id\": \"L005\",\n      \"reason\": \"Risk category and point allocation (\\\"INTERMEDIATE risk category due to a combined score of 3\\\" and \\\"prolonged ROM (>=18h) contributing 50% of risk\\\") are not supported by the supplied evidence, which only mentions >24h as a risk threshold (S010).\"\n    },\n    {\n      \"claim_id\": \"L008\",\n      \"reason\": \"Driver breakdown cites \\\">=18h\\\" and specific point values, which are not found in any provided passage.\"\n    },\n    {\n      \"claim_id\": \"L002\",\n      \"reason\": \"Statement of \\\"INTERMEDIATE risk score of 3\\\" is not grounded in the retrieved evidence.\"\n    }\n  ],\n  \"contradictions\": [],\n  \"ungrounded_dose\": false,\n  \"ungrounded_dose_examples\": [],\n  \"rationale\": \"The plan correctly cites S013 for benzylpenicillin use and withholding gentamicin/metronidazole, S014 for 12\u2011hour monitoring, and S008 for CRP re\u2011measurement and lumbar puncture criteria. However, claims about risk scoring and the >=18\u2011hour ROM threshold are not present in the retrieved passages (S010 only references >24h). Citation mapping is ambiguous for these unsupported statements.\"\n}",
+          "reasoning": "We need produce JSON with scores and lists. Assess faithfulness: plan statements align with evidence passages. Evidence: S013 says benzylpenicillin sodium used for women without chorioamnionitis; also mentions gentamicin+metronidazole for chorioamnionitis. Plan says initiate benzylpenicillin, gentamicin withheld, metronidazole withheld \u2013 matches. S014 mentions monitoring at least 12h. Plan includes that. S008 about CRP measurement 18-24h and lumbar puncture criteria \u2013 plan includes. S015 about GBS etc not used. S010 about ROM >24h but says >24h; our case ROM 20h, plan says prolonged >=18h risk. Evidence does not support 18h threshold; S010 says committee kept >24h. So claim L005/L008 about >=18h contributing risk is not supported. So unsupported claim. Also risk score 3 etc not in evidence. So citation correctness moderate. Provide scores: faithfulness maybe 2. citation_correctness 2. citation_completeness maybe 3 (they cited but some claims lack citation). unsupported_claims list L005 and L008 maybe also L002 risk score. contradictions none. Ungrounded_dose: they say dose not specified, that's fine. No numeric dose given, so no ungrouned dose. So ungrouned_dose false. Provide JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.390581371,
+      "prompt_tokens": 2641,
+      "prompt_time": 0.162848865,
+      "completion_tokens": 613,
+      "completion_time": 1.279294176,
+      "total_tokens": 3254,
+      "total_time": 1.442143041,
+      "completion_tokens_details": {
+        "reasoning_tokens": 290
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_4a7bb72c24",
+    "x_groq": {
+      "id": "req_01m5t44wq4e25ay04e1ke1jp5v",
+      "seed": 163231111
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "989",
+    "x-ratelimit-remaining-tokens": "4484",
+    "x-ratelimit-reset-requests": "15m50.4s",
+    "x-ratelimit-reset-tokens": "26.37s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 3,
+    "unsupported_claims": [
+      {
+        "claim_id": "L005",
+        "reason": "Risk category and point allocation (\"INTERMEDIATE risk category due to a combined score of 3\" and \"prolonged ROM (>=18h) contributing 50% of risk\") are not supported by the supplied evidence, which only mentions >24h as a risk threshold (S010).",
+        "claim_text": "The patient falls into the INTERMEDIATE risk category due to a combined score of 3. The primary drivers are prolonged rupture of membranes (>=18h, contributing 50% of the risk) and elevated CRP (contributing 50% of the risk). Although the patient received adequate intrapartum antibiotics, the prolonged ROM and inflammatory marker elevation necessitate further evaluation and potential treatment."
+      },
+      {
+        "claim_id": "L008",
+        "reason": "Driver breakdown cites \">=18h\" and specific point values, which are not found in any provided passage.",
+        "claim_text": "['Prolonged rupture of membranes: ROM 20.0h (>=18h), Layer 1, 2 points, 50% contribution', 'Elevated CRP: CRP 12.0 mg/L, Layer 3, 2 points, 50% contribution']"
+      },
+      {
+        "claim_id": "L002",
+        "reason": "Statement of \"INTERMEDIATE risk score of 3\" is not grounded in the retrieved evidence.",
+        "claim_text": "This is a 32-week preterm neonate assessed for early-onset sepsis with an INTERMEDIATE risk score of 3. The risk is driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L), despite adequate intrapartum antibiotics and no clinical chorioamnionitis."
+      }
+    ],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "The plan correctly cites S013 for benzylpenicillin use and withholding gentamicin/metronidazole, S014 for 12\u2011hour monitoring, and S008 for CRP re\u2011measurement and lumbar puncture criteria. However, claims about risk scoring and the >=18\u2011hour ROM threshold are not present in the retrieved passages (S010 only references >24h). Citation mapping is ambiguous for these unsupported statements."
+  }
+}

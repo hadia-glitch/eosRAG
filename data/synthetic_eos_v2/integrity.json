@@ -1,0 +1,13 @@
+{
+  "cases": 100,
+  "observations": 300,
+  "families": 10,
+  "unique_case_ids": 100,
+  "duplicate_case_observation_ids": 0,
+  "age_hours_below_72": true,
+  "future_result_leakage": false,
+  "immutable_demographics": true,
+  "invented_outcome_labels": false,
+  "original_gold_modified": false,
+  "sha256": "9a4d9a36502497c3bd172de591fe44bc5640700555f39fb543dc74b49392ea94"
+}

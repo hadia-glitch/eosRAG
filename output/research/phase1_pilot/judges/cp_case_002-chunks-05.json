@@ -1,0 +1,77 @@
+{
+  "completed": true,
+  "task_sha256": "aff6fb2ba1486ddabd26d0f097cf64723e00693d4c59ebc144632e77aaf78231",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 16.557701700003236,
+  "kind": "chunks",
+  "case_id": "cp_case_002",
+  "mapping": {
+    "P029": "NICE_pg8_chorioamnionitis_chunk1",
+    "P030": "NICE_pg8_prevent-early-onset-neon_chunk1"
+  },
+  "raw_response": {
+    "id": "chatcmpl-f1b36bf7-49c2-478d-9fee-569f433c6c4a",
+    "object": "chat.completion",
+    "created": 1792945270,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"judgments\":[{\"passage\":\"P029\",\"relevance_grade\":3,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Specifies benzylpenicillin alone for mothers without chorioamnionitis, directly guiding neonatal antibiotic choice in this preterm case.\"},{\"passage\":\"P030\",\"relevance_grade\":2,\"guideline_aligned\":true,\"scenario_applicable\":true,\"clinically_useful\":true,\"rationale\":\"Recommends intrapartum antibiotics for pre\u2011term labour and prolonged ROM, supporting the maternal antibiotic context of this case.\"}]}",
+          "reasoning": "We need output judgments for each target passage only? Schema shows judgments list with passage field. target_passages are P029, P030. So include those only. Provide grades. Evaluate: case preterm 32 weeks, ROM 20h, no chorioamnionitis, antibiotics proposed. P029 says: women without chorioamnionitis use benzylpenicillin; with chorioamnionitis add gentamicin+metronidazole. Our case no chorioamnionitis, so recommendation matches benzylpenicillin only, but proposed includes gentamicin. So passage provides direct actionable evidence about antibiotic choice. Grade 3? It is directly actionable for scenario (choice). Guideline aligned yes. Scenario applicable: yes (preterm, no chorioamnionitis). Clinically useful: grade>=2 so true. Rationale short.\n\nP030: offers intrapartum antibiotics to women in preterm labour etc. Our case: delivery already occurred (Caesarean) and ROM 20h, but intrapartum antibiotics maybe given? She had adequate intrapartum antibiotics (true). This passage about giving antibiotics during labour to women with risk factors. Our case already had adequate intrapartum antibiotics, so passage is background but not directly actionable for neonatal treatment. Might be grade 2? It supports giving antibiotics to mother, which is already done. It's applicable. Provide actionable? Not for neonatal antibiotics. So grade 2 (useful applicable support). guideline aligned yes. scenario applicable yes (preterm, ROM). clinically useful true. Provide rationale.\n\nReturn JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.377619875,
+      "prompt_tokens": 4055,
+      "prompt_time": 0.182884936,
+      "completion_tokens": 467,
+      "completion_time": 0.968713748,
+      "total_tokens": 4522,
+      "total_time": 1.151598684,
+      "completion_tokens_details": {
+        "reasoning_tokens": 325
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_27194a498a",
+    "x_groq": {
+      "id": "req_01m5sxva6rekzbhxxsn45zj3vz",
+      "seed": 1271812042
+    },
+    "service_tier": "on_demand"
+  },
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "992",
+    "x-ratelimit-remaining-tokens": "1745",
+    "x-ratelimit-reset-requests": "11m31.2s",
+    "x-ratelimit-reset-tokens": "46.912s"
+  },
+  "result": {
+    "judgments": [
+      {
+        "passage": "P029",
+        "relevance_grade": 3,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Specifies benzylpenicillin alone for mothers without chorioamnionitis, directly guiding neonatal antibiotic choice in this preterm case."
+      },
+      {
+        "passage": "P030",
+        "relevance_grade": 2,
+        "guideline_aligned": true,
+        "scenario_applicable": true,
+        "clinically_useful": true,
+        "rationale": "Recommends intrapartum antibiotics for pre\u2011term labour and prolonged ROM, supporting the maternal antibiotic context of this case."
+      }
+    ]
+  }
+}

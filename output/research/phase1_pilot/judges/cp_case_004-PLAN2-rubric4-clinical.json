@@ -1,0 +1,74 @@
+{
+  "completed": true,
+  "task_sha256": "1059ed7a315a57cbe335d4e3aebfa9ba9c5af1a9d9b1f455d9a0a192e18e2678",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.969764599998598,
+  "kind": "plan",
+  "case_id": "cp_case_004",
+  "mapping": {
+    "collection": "generation",
+    "arm": "hybrid"
+  },
+  "raw_response": {
+    "id": "chatcmpl-83b77467-2285-41c6-b772-c57cfca768d4",
+    "object": "chat.completion",
+    "created": 1792952550,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"clinical_correctness\":5,\"clinical_completeness\":4,\"clinical_utility\":5,\"safety\":5,\"contradictions\":[],\"critical_omissions\":[\"Missing specific ampicillin and gentamicin dosing (e.g., ampicillin 50\u202fmg/kg q12h first week, then q8h; gentamicin 5\u202fmg/kg daily first week, then 7.5\u202fmg/kg) as outlined in WHO dosing guidance (S003, S006)\"],\"regimen_incomplete\":true,\"rationale\":\"Plan aligns with WHO recommendations for critical illness (S002, S012) and includes appropriate supportive care. However it omits the explicit antibiotic dose regimens provided by WHO (S003, S006), which is a critical omission for safe prescribing. No contradictions with patient data were found; safety is high given no allergies and appropriate hospital setting.\"}",
+          "reasoning": "We need produce JSON with fields. Evaluate plan.\n\nPlan recommends ampicillin+gentamicin, aligns with WHO rec for critical illness (S002, S012). Doses not specified but note missing; regimen_incomplete? Since dose not given, but guideline provides dosing (S003, S006). Plan says consult local protocol. Might be considered incomplete regimen because dosing absent. Safety: appropriate, no contraindication. Completeness: includes respiratory support, fluids, monitoring, escalation. Might miss mention of duration (they gave at least 10 days). They included duration. So regimen complete except dosing specifics. So regimen_incomplete = true? Probably true because dosing not specified.\n\nContradictions: none. Critical omissions: specific antibiotic dosing per WHO (50 mg/kg q12h etc). Also mention of need for referral? Already in hospital setting, okay.\n\nProvide scores: clinical_correctness 5 (matches guidelines). completeness 4 (missing dosing). utility 5. safety 5.\n\nProvide contradictions empty list. critical_omissions list with missing dosing info citing S003/S006. Provide rationale.\n\nReturn JSON compact."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.381027501,
+      "prompt_tokens": 4581,
+      "prompt_time": 0.354082965,
+      "completion_tokens": 422,
+      "completion_time": 0.866173482,
+      "total_tokens": 5003,
+      "total_time": 1.220256447,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 229
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_c15aa9c1b7",
+    "x_groq": {
+      "id": "req_01m5t4sfr5e1s8xkvszxp35c3j",
+      "seed": 1299960662
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "clinical",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "972",
+    "x-ratelimit-remaining-tokens": "2857",
+    "x-ratelimit-reset-requests": "40m19.2s",
+    "x-ratelimit-reset-tokens": "38.572s"
+  },
+  "result": {
+    "clinical_correctness": 5,
+    "clinical_completeness": 4,
+    "clinical_utility": 5,
+    "safety": 5,
+    "contradictions": [],
+    "critical_omissions": [
+      "Missing specific ampicillin and gentamicin dosing (e.g., ampicillin 50\u202fmg/kg q12h first week, then q8h; gentamicin 5\u202fmg/kg daily first week, then 7.5\u202fmg/kg) as outlined in WHO dosing guidance (S003, S006)"
+    ],
+    "regimen_incomplete": true,
+    "rationale": "Plan aligns with WHO recommendations for critical illness (S002, S012) and includes appropriate supportive care. However it omits the explicit antibiotic dose regimens provided by WHO (S003, S006), which is a critical omission for safe prescribing. No contradictions with patient data were found; safety is high given no allergies and appropriate hospital setting."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "completed": true,
+  "task_sha256": "c98e4c6bf21f320f391dd07433a1908c4158ec7161ef4b4914331880fafd11f8",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 2.6799808999930974,
+  "kind": "plan",
+  "case_id": "cp_case_014",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "hybrid_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-f3d88fc6-71c9-45b3-8ae1-cc2e198d2227",
+    "object": "chat.completion",
+    "created": 1792955529,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"faithfulness\":5,\"citation_correctness\":5,\"citation_completeness\":5,\"unsupported_claims\":[],\"contradictions\":[],\"ungrounded_dose\":false,\"ungrounded_dose_examples\":[],\"rationale\":\"All candidate lines (L002, L005, L008, L011\u2011L019) are consistent with the supplied NICE passages S005, S006, S010, S011, S012. Dosage statements (L017\u2011L018) match S005; duration and stop\u2011criteria (L019) match S006 and S012; recommendation to start antibiotics (L011) aligns with S005. No claim lacks a supporting source, and no contradictions with the case data are present. Citation mapping is unavailable, but the content of the passages directly supports the statements.\"}",
+          "reasoning": "We need to evaluate faithfulness etc. Check citations: lines L017 dosage 25 mg/kg every 12h \u2013 source S005 includes that. Good. L018 gentamicin 5 mg/kg \u2013 source S005 includes. So citation correct though mapping missing. We assume they are supported. L019 duration 7 days stop criteria \u2013 source S006 and S012 support 7 days and stop at 36h criteria. So supported. L011 recommendation to initiate antibiotics \u2013 general but source maybe S005 recommendation use regimen. Accept. L014 review at 36h \u2013 supported by S012. So citation completeness? All claims have some source. No unsupported. No contradictions. Ungrounded dose? doses are grounded. So false. Provide scores: faithfulness 5, citation_correctness 5, citation_completeness 5. No unsupported_claims, contradictions, ungrouned_dose false empty arrays. Provide rationale."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.252219559,
+      "prompt_tokens": 2936,
+      "prompt_time": 0.111550464,
+      "completion_tokens": 366,
+      "completion_time": 0.945745621,
+      "total_tokens": 3302,
+      "total_time": 1.057296085,
+      "prompt_tokens_details": {
+        "cached_tokens": 256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 190
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_9241e9962b",
+    "x_groq": {
+      "id": "req_01m5t7md7neg8tdbjggcc3x3ep",
+      "seed": 1708483844
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "984",
+    "x-ratelimit-remaining-tokens": "4369",
+    "x-ratelimit-reset-requests": "23m2.4s",
+    "x-ratelimit-reset-tokens": "27.232s"
+  },
+  "result": {
+    "faithfulness": 5,
+    "citation_correctness": 5,
+    "citation_completeness": 5,
+    "unsupported_claims": [],
+    "contradictions": [],
+    "ungrounded_dose": false,
+    "ungrounded_dose_examples": [],
+    "rationale": "All candidate lines (L002, L005, L008, L011\u2011L019) are consistent with the supplied NICE passages S005, S006, S010, S011, S012. Dosage statements (L017\u2011L018) match S005; duration and stop\u2011criteria (L019) match S006 and S012; recommendation to start antibiotics (L011) aligns with S005. No claim lacks a supporting source, and no contradictions with the case data are present. Citation mapping is unavailable, but the content of the passages directly supports the statements."
+  }
+}

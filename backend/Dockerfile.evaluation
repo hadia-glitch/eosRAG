@@ -1,0 +1,6 @@
+# Offline scoring reuses the application's CPU Torch and cached encoders.
+# Cache the additional BERT model separately and mount it read-only at runtime.
+FROM neoguard-eos:staging
+USER root
+RUN pip install --no-cache-dir sacrebleu==2.6.0 nltk==3.9.4 bert-score==0.3.13 rouge-score==0.1.2 matplotlib==3.10.7 pandas==2.3.1
+USER 10001

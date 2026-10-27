@@ -1,0 +1,157 @@
+{
+  "completed": true,
+  "task_sha256": "6fb49b10e29fe46c16837d7505579102247627e26bfe6d9320d66d8ae3f4c3b5",
+  "model": "openai/gpt-oss-120b",
+  "seconds": 6.152605499999481,
+  "kind": "plan",
+  "case_id": "cp_case_002",
+  "mapping": {
+    "collection": "multiagent",
+    "arm": "dense_only_multiagent"
+  },
+  "raw_response": {
+    "id": "chatcmpl-fb6239df-a500-4eeb-9aa5-97898b6da980",
+    "object": "chat.completion",
+    "created": 1792951958,
+    "model": "openai/gpt-oss-120b",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"faithfulness\": 2,\n  \"citation_correctness\": 2,\n  \"citation_completeness\": 2,\n  \"unsupported_claims\": [\n    {\"claim_id\":\"L002\",\"reason\":\"Risk summary and intermediate risk categorization not directly stated in retrieved NICE passages\"},\n    {\"claim_id\":\"L005\",\"reason\":\"Assigns points for ROM >=18h and CRP, but evidence specifies >24h threshold for term births and does not provide a point system\"},\n    {\"claim_id\":\"L007\",\"reason\":\"Driver breakdown percentages not present in any source\"},\n    {\"claim_id\":\"L011\",\"reason\":\"Recommendation to obtain blood culture before antibiotics not mentioned in provided excerpts\"},\n    {\"claim_id\":\"L012\",\"reason\":\"Empirical antibiotic initiation guidance not found in the retrieved evidence\"},\n    {\"claim_id\":\"L013\",\"reason\":\"Repeat CRP recommendation not supported by the passages\"},\n    {\"claim_id\":\"L015\",\"reason\":\"Monitoring red flags suggestion not sourced from the evidence\"},\n    {\"claim_id\":\"L017\",\"reason\":\"Urgency statement for antibiotic start lacks citation\"},\n    {\"claim_id\":\"L020\",\"reason\":\"Stop criteria wording derived from S016 but the exact phrasing and timing are not directly quoted\"},\n    {\"claim_id\":\"L022\",\"reason\":\"Monitoring plan details not present in the evidence\"},\n    {\"claim_id\":\"L025\",\"reason\":\"Escalation criteria not sourced\"},\n    {\"claim_id\":\"L028\",\"reason\":\"Nutrition/fluid plan not mentioned in the excerpts\"}\n  ],\n  \"contradictions\": [\n    {\"claim_id\":\"L005\",\"reason\":\"Claims ROM 20h contributes to risk, whereas evidence states risk factor is >24h for term births\"},\n    {\"claim_id\":\"L018\",\"reason\":\"Provides specific dose placeholders not found in evidence, implying dosage when none is given\"},\n    {\"claim_id\":\"L019\",\"reason\":\"Same as L018 for gentamicin\"}\n  ],\n  \"ungrounded_dose\": true,\n  \"ungrounded_dose_examples\": [\n    {\"claim_id\":\"L018\",\"reason\":\"Specifies benzylpenicillin dose/frequency despite no dosage information in the retrieved NICE passages\"},\n    {\"claim_id\":\"L019\",\"reason\":\"Specifies gentamicin dose/frequency without source support\"}\n  ],\n  \"rationale\":\"The plan contains many statements (risk scoring, driver percentages, culture and monitoring actions, dosing details) that are not found in the supplied NICE excerpts. The only supported items are the need for specialist consultation (S015) and the stop\u2011antibiotics criteria amendment (S016). Citation mapping is unavailable, and the plan frequently cites non\u2011existent E\u2011numbers, reducing citation correctness and completeness. Consequently, faithfulness and citation metrics are low.\"\n}",
+          "reasoning": "We need produce JSON with scores and lists. Assess faithfulness: plan aligns with evidence? Evidence only mentions ROM >24h threshold, CRP use, recommendation for specialist consult, stop antibiotics criteria. Plan claims intermediate risk based on ROM 20h and CRP, but evidence says threshold >24h for term; patient preterm 32w, guideline may differ but not in evidence. So claim not supported. So faithfulness low maybe 2. Citation correctness: they cite [E1-E6] but mapping missing; many statements not in evidence. So low 2. Citation completeness: many claims lack citations. So 2. Unsupported claims: list lines with unsupported: L002 (risk summary), L005 (risk analysis points), L007 driver breakdown, L011- L015 some supported partially (consult specialist from S015, stop antibiotics from S016). L011 \"Obtain blood culture\" not in evidence. L012 \"Initiate empirical antibiotic therapy\" not in evidence. L013 repeat CRP not in evidence. L014 consult specialist supported by S015. L015 monitor red flags not in evidence. L017 antibiotic plan urgency not in evidence. L018 and L019 doses not in evidence (also flagged as ungrouned dose). So list unsupported_claims with reason.\n\nContradictions: any claim contradicts evidence? Evidence says ROM threshold >24h, plan uses 20h as risk factor, contradictory. So L005 contradictory. Also claim that CRP alone not determining treatment (S014) but plan suggests CRP contributes 50% to risk, maybe not contradiction. We'll list L005.\n\nUngrounded_dose: true. Provide examples L018, L019.\n\nNow produce JSON."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "queue_time": 0.381103401,
+      "prompt_tokens": 3026,
+      "prompt_time": 0.127913722,
+      "completion_tokens": 927,
+      "completion_time": 1.915756598,
+      "total_tokens": 3953,
+      "total_time": 2.04367032,
+      "completion_tokens_details": {
+        "reasoning_tokens": 352
+      }
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_5a93aea882",
+    "x_groq": {
+      "id": "req_01m5t47cfzegmbdd2ybmh8yzze",
+      "seed": 1117958669
+    },
+    "service_tier": "on_demand"
+  },
+  "rubric_version": 4,
+  "evaluation_stage": "grounding",
+  "rate_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-requests": "987",
+    "x-ratelimit-remaining-tokens": "4200",
+    "x-ratelimit-reset-requests": "18m43.2s",
+    "x-ratelimit-reset-tokens": "28.5s"
+  },
+  "result": {
+    "faithfulness": 2,
+    "citation_correctness": 2,
+    "citation_completeness": 2,
+    "unsupported_claims": [
+      {
+        "claim_id": "L002",
+        "reason": "Risk summary and intermediate risk categorization not directly stated in retrieved NICE passages",
+        "claim_text": "This 32-week preterm neonate presents with an INTERMEDIATE risk for early-onset sepsis (EOS), driven by prolonged rupture of membranes (20 hours) and an elevated CRP (12.0 mg/L). Although the patient received adequate intrapartum antibiotics and has no clinical signs of infection (normal temperature, perfusion, and respiratory status), the intermediate risk category necessitates a structured assessment and potential antibiotic initiation pending culture results."
+      },
+      {
+        "claim_id": "L005",
+        "reason": "Assigns points for ROM >=18h and CRP, but evidence specifies >24h threshold for term births and does not provide a point system",
+        "claim_text": "The patient is categorized as INTERMEDIATE risk (Score 3) due to two contributing factors: prolonged rupture of membranes (20 hours, contributing 2 points) and elevated CRP (12.0 mg/L, contributing 2 points). Note: The provided risk engine assigns points for ROM >=18h, whereas the retrieved NICE guideline excerpt [E1, E2] specifies a threshold of >24 hours for term births; however, the deterministic risk result provided must be followed. The absence of red flags (e.g., poor perfusion, respiratory distress) prevents classification as HIGH risk."
+      },
+      {
+        "claim_id": "L007",
+        "reason": "Driver breakdown percentages not present in any source",
+        "claim_text": "DRIVER BREAKDOWN:"
+      },
+      {
+        "claim_id": "L011",
+        "reason": "Recommendation to obtain blood culture before antibiotics not mentioned in provided excerpts",
+        "claim_text": "- Obtain blood culture immediately before starting antibiotics."
+      },
+      {
+        "claim_id": "L012",
+        "reason": "Empirical antibiotic initiation guidance not found in the retrieved evidence",
+        "claim_text": "- Initiate empirical antibiotic therapy as per local protocol for intermediate risk EOS, considering the patient's gestational age and weight."
+      },
+      {
+        "claim_id": "L013",
+        "reason": "Repeat CRP recommendation not supported by the passages",
+        "claim_text": "- Repeat CRP and clinical assessment in 12-24 hours."
+      },
+      {
+        "claim_id": "L015",
+        "reason": "Monitoring red flags suggestion not sourced from the evidence",
+        "claim_text": "- Monitor for any development of red flags (e.g., temperature instability, respiratory distress, poor perfusion)."
+      },
+      {
+        "claim_id": "L017",
+        "reason": "Urgency statement for antibiotic start lacks citation",
+        "claim_text": "ANTIBIOTIC PLAN: required=True urgency=Within 1 hour of assessment"
+      },
+      {
+        "claim_id": "L020",
+        "reason": "Stop criteria wording derived from S016 but the exact phrasing and timing are not directly quoted",
+        "claim_text": "duration=48-72 hours pending culture results stop_criteria=Stop antibiotics if blood cultures are negative at 48 hours and the infant remains clinically well with normal inflammatory markers (per NICE rec 1.21.3 amended [E6])."
+      },
+      {
+        "claim_id": "L022",
+        "reason": "Monitoring plan details not present in the evidence",
+        "claim_text": "MONITORING PLAN:"
+      },
+      {
+        "claim_id": "L025",
+        "reason": "Escalation criteria not sourced",
+        "claim_text": "ESCALATION CRITERIA:"
+      },
+      {
+        "claim_id": "L028",
+        "reason": "Nutrition/fluid plan not mentioned in the excerpts",
+        "claim_text": "NUTRITION/FLUID PLAN:"
+      }
+    ],
+    "contradictions": [
+      {
+        "claim_id": "L005",
+        "reason": "Claims ROM 20h contributes to risk, whereas evidence states risk factor is >24h for term births",
+        "claim_text": "The patient is categorized as INTERMEDIATE risk (Score 3) due to two contributing factors: prolonged rupture of membranes (20 hours, contributing 2 points) and elevated CRP (12.0 mg/L, contributing 2 points). Note: The provided risk engine assigns points for ROM >=18h, whereas the retrieved NICE guideline excerpt [E1, E2] specifies a threshold of >24 hours for term births; however, the deterministic risk result provided must be followed. The absence of red flags (e.g., poor perfusion, respiratory distress) prevents classification as HIGH risk."
+      },
+      {
+        "claim_id": "L018",
+        "reason": "Provides specific dose placeholders not found in evidence, implying dosage when none is given",
+        "claim_text": "- IV Benzylpenicillin \u2014 DOSE NOT SPECIFIED IN RETRIEVED EVIDENCE: The provided NICE excerpts [E1-E6] discuss risk factors and decision frameworks but do not contain specific drug names, doses, or frequencies. Clinical judgment and local formulary must be used to determine the appropriate dose (e.g., typically 25-[dose/frequency not specified in retrieved evidence] IV [dose/frequency not specified in retrieved evidence] for neonates <7 days, but this is NOT in the text)."
+      },
+      {
+        "claim_id": "L019",
+        "reason": "Same as L018 for gentamicin",
+        "claim_text": "- IV Gentamicin \u2014 DOSE NOT SPECIFIED IN RETRIEVED EVIDENCE: The provided NICE excerpts [E1-E6] do not contain specific drug names, doses, or frequencies. Clinical judgment and local formulary must be used to determine the appropriate dose (e.g., typically 4-[dose/frequency not specified in retrieved evidence] IV [dose/frequency not specified in retrieved evidence] or every 24-36 hours depending on gestational age, but this is NOT in the text)."
+      }
+    ],
+    "ungrounded_dose": true,
+    "ungrounded_dose_examples": [
+      {
+        "claim_id": "L018",
+        "reason": "Specifies benzylpenicillin dose/frequency despite no dosage information in the retrieved NICE passages",
+        "claim_text": "- IV Benzylpenicillin \u2014 DOSE NOT SPECIFIED IN RETRIEVED EVIDENCE: The provided NICE excerpts [E1-E6] discuss risk factors and decision frameworks but do not contain specific drug names, doses, or frequencies. Clinical judgment and local formulary must be used to determine the appropriate dose (e.g., typically 25-[dose/frequency not specified in retrieved evidence] IV [dose/frequency not specified in retrieved evidence] for neonates <7 days, but this is NOT in the text)."
+      },
+      {
+        "claim_id": "L019",
+        "reason": "Specifies gentamicin dose/frequency without source support",
+        "claim_text": "- IV Gentamicin \u2014 DOSE NOT SPECIFIED IN RETRIEVED EVIDENCE: The provided NICE excerpts [E1-E6] do not contain specific drug names, doses, or frequencies. Clinical judgment and local formulary must be used to determine the appropriate dose (e.g., typically 4-[dose/frequency not specified in retrieved evidence] IV [dose/frequency not specified in retrieved evidence] or every 24-36 hours depending on gestational age, but this is NOT in the text)."
+      }
+    ],
+    "rationale": "The plan contains many statements (risk scoring, driver percentages, culture and monitoring actions, dosing details) that are not found in the supplied NICE excerpts. The only supported items are the need for specialist consultation (S015) and the stop\u2011antibiotics criteria amendment (S016). Citation mapping is unavailable, and the plan frequently cites non\u2011existent E\u2011numbers, reducing citation correctness and completeness. Consequently, faithfulness and citation metrics are low."
+  }
+}
