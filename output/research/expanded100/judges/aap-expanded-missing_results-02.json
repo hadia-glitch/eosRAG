@@ -1,0 +1,18 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 4,
+    "patient_fidelity": 3,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 4,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Candidate correctly cites AAP risk\u2011category recommendations and suggests labs/antibiotics for categories 1\u20112",
+      "It omits the available 4\u2011hour CRP value (19\u202fmg/L) and earlier vital signs, reducing fidelity to the provided patient data",
+      "Overall plan is thorough and actionable, and it appropriately flags missing maternal and exam information"
+    ]
+  },
+  "reason": null
+}

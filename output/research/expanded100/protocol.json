@@ -1,0 +1,63 @@
+{
+  "seed": 31,
+  "bootstrap_resamples": 2000,
+  "top_k": 4,
+  "rrf_k": 60,
+  "primary_model": "openai/gpt-oss-120b",
+  "verifier_model": "openai/gpt-oss-120b",
+  "temperature": 0,
+  "api_sampling_seed": null,
+  "schema_enforcement": false,
+  "primary_max_repairs": 0,
+  "backbone_models": [
+    "openai/gpt-oss-20b",
+    "qwen/qwen3.8-27b"
+  ],
+  "bounded_resolution": {
+    "max_repairs": 1,
+    "budget_seconds": 120,
+    "design": "paired initial draft and audits; cached initial wall time deducted from remaining budget; fresh post-revision audits"
+  },
+  "guideline_gating": "Each guideline is evaluated against its complete source-only index. No pooled headline metrics.",
+  "references": "Engineering-authored before inference; not clinician adjudicated.",
+  "review_status": "All sources technically checked; gold relevance and clinical applicability pending clinician review.",
+  "historical_runtime_drift": "Historical verifier SHA differs; original 18 are rerun using current frozen verifier. Historical numbers are not a bit-identical runtime comparison.",
+  "transport": "Provider failures excluded from quality and logged separately; semantic failures retained; checkpoint every completed role.",
+  "faults": "12 faults per guideline, 36 total; original four fault families and three variants",
+  "code_sha256": {
+    "backend/scripts/evaluate_generation.py": "9327c9e52bbc16d436a23fc2f3bff3deb37d82670893f3009c6276693ac7844b",
+    "backend/rag/verification_graph.py": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c",
+    "backend/rag/knowledge_graph.py": "f4d4a65639b910f63117934459cdfbaccbb81fdc80d6cf6105319a4c966a35e0",
+    "backend/services/groq_client.py": "78a397f38e122160481c1360000f84c17b62a1a6b89123000ef11502ba2283fc",
+    "backend/scripts/evaluation_transport.py": "b91f4fd1e8c10d623619c9820d0951919454e505b81a3f49695f852a0e85a923"
+  },
+  "benchmark_size": 100,
+  "guideline_counts": {
+    "NICE": 40,
+    "AAP": 30,
+    "WHO": 30
+  },
+  "scope_amendment": "User requested exactly 100 cases and inclusion of WHO before any generation. Earlier retrieval-only 114-case prototype is retained separately. No retrieval hyperparameters changed.",
+  "index_amendment": "Removed exact duplicate WHO text blocks using source text SHA only. Case text, gold IDs, retrieval algorithms, RRF60 and top4 unchanged. Pre-generation structural correction, not score-based tuning.",
+  "orchestration_sha256": "c21c77a2dc127f2072ee91f7563135acc65963964a4385ee0ee9b39f056b50dd",
+  "statistics_sha256": "c8034758bd2fc612f1feb0483a5d8a76fcb6f55a1519573c6385c8256dcfadd3",
+  "transport_retries": 3,
+  "operational_amendment": "Restore the original three bounded retries for minute-rate/server errors; stop immediately on daily quota. Preserve every completed role and all semantic outcomes. No model/prompt/retrieval change.",
+  "backbone_call_pacing": "Original 20-second minimum cloud-call gap is shared across cases and models; no backbone inference preceded this pacing correction.",
+  "statistics_implementation_notes": "Added original-18 control and explicit partial-score snapshots; unchanged metric/model/seed/bootstrap configurations. Partial snapshots cannot update the manuscript.",
+  "effective_completion_limits": {
+    "synthesis": 3000,
+    "auditors": 1000,
+    "resolution": 2200
+  },
+  "historical_transport_deviation": "Current frozen verifier passes a 1000-token auditor completion limit. The historical evaluator wrapper omitted completion kwargs and therefore used the transport default. Historical and current results must not be claimed to use identical verifier/transport code.",
+  "quality_classification_correction": "Plain ValueError in complete_json denotes decoded non-object model content, not provider unavailability. Retain this completed malformed reply as a quality outcome; do not resample it.",
+  "completed_error_checkpoint_recovery": "Hydrate missing older role-cache entries from saved completed responses/error classes; never resample malformed non-object replies.",
+  "judge_error_policy": "Completed malformed or truncated judge replies are unavailable ratings and retained without resampling. Only provider errors stop for later transport resume.",
+  "decoder_rejection_policy": "Provider json_validate_failed is a completed model contract failure even when carried in HTTP 400. Preserve it and do not resample. Genuine HTTP configuration errors remain provider failures.",
+  "preparation_sha256": "54f5b416e2557c2f4ed68d024135fa8e707068f88edd213a15f416d1b38f682c",
+  "paper_updater_sha256": "d80689385c49543cfa779ac84e52bfc5682664aee3d7dd07d489c2f0d886d06f",
+  "renderer_sha256": "16b855adceed686002c82695204495eaf70c5f0478603fbdb119a464ef7865a6",
+  "completion_status": "All 100 primary cases, 36 faults, 100 judge stages and 200 backbone pairs completed.",
+  "integrity_checker_sha256": "02f0d7728d30614c54ee0c171e6f737e11178f6f0c9ca19933cf814d6c0db232"
+}

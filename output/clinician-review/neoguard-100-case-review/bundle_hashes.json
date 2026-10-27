@@ -1,0 +1,13 @@
+{
+  "benchmark_report.md": "825b9b12accce1f01a2b5d64b29ba62bf4f4f5bdbf597619839870871639e327",
+  "candidate_snapshot.json": "5accce34e2b38ecc6b2d6223afe5085f6f00a212b4875a9a3be81f81392df686",
+  "cases.json": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45",
+  "clinician_ratings.csv": "7eab240e2b89144bee90bf5e9b38cae72215f17f6e60c35d2c4b2cb92d3a9620",
+  "clinician_review_queue.json": "f09b81f2607df27ec8337d0e935e54d023fff0ffcd45d5098e5f062d3e36069a",
+  "corpus.json": "884734ef2c07b228482481123ed06d03f00f36d1bafb8f4999a5102b55fac6e2",
+  "manifest.json": "a957607d9d03394eec5a0edfa2905d6ea37f61f591d22cb104be42cd6259cb5a",
+  "protocol.json": "bf418590ffe2ee57a49aaa15ff8930f02bf23cf25d9ba46294e77075380b864f",
+  "README.md": "264081377dbc10f66f426c8863bf007c4d66d1eddeec8386bb3cc7e4388eaf65",
+  "review.html": "9153912d9ed00a60362935cf91a92a796993aa7c7ff7a9cd5a6cf9a7387d735f",
+  "review_handbook.pdf": "cb1e1b057a3f48ae350aa16cc3d40ea67c7c68e58db0c7f4d3c6f33eaecea1be"
+}

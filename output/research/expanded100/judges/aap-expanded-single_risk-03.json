@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 5,
+    "patient_fidelity": 5,
+    "completeness": 5,
+    "actionability": 5,
+    "uncertainty": 5,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Candidate accurately reflects guideline categories and recommendations for a single maternal GBS risk (category\u202f4) and aligns with the patient\u2019s well\u2011appearing status, gestational age, and lack of additional risk factors. No unsupported or unsafe statements were identified."
+    ]
+  },
+  "reason": null
+}

@@ -1,0 +1,414 @@
+{
+  "id": "who-expanded-missing_results-05",
+  "family": "missing_results",
+  "model": "openai/gpt-oss-20b",
+  "verifier_model": "openai/gpt-oss-20b",
+  "seconds": 68.64698979999957,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "9058371c0448b04a03d564ef3821a45491e3b5028d7546d4ee910bc2efd0f1ff",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 60, \"gestational_age_weeks\": 38, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"unknown\", \"respiratory_rate\": null, \"spo2\": null, \"crp\": null, \"culture_status\": \"unavailable\", \"temperature_c\": null, \"feeding\": \"unknown\", \"movement\": \"unknown\", \"convulsions\": null, \"severe_chest_indrawing\": null, \"referral_possible\": true, \"red_flags\": \"not fully documented\"}, \"history\": [], \"evaluation_question\": \"Current feeding, movement, temperature, breathing and culture results are missing. Explain what a WHO-based assessment can establish in the clinic. Gestation 38 weeks; age 60 hours; setting primary_health_clinic.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"WHO2024-P3-B5\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 3, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Question: Among young infants aged 0\\u201359 days with PSBI, in non-hospital settings, what is the diagnostic accuracy (sensitivity and specificity) of clinical sign-based algorithms of PSBI\\u1d43 compared with a reference standard (culture-confirmed sepsis, physician judgement of sepsis, or mortality) in identifying infants who require treatment for PSBI?\"}]}, {\"id\": \"E2\", \"chunk_id\": \"WHO2024-P26-B3\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 26, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\\u201359 days at the time of presentation to health facilities.\"}, {\"quote_id\": \"E2Q2\", \"text\": \"Brown et al.\"}, {\"quote_id\": \"E2Q3\", \"text\": \"(2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88).\"}, {\"quote_id\": \"E2Q4\", \"text\": \"(2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference\"}]}, {\"id\": \"E3\", \"chunk_id\": \"WHO2024-P36-B8\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 36, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"RCT (98) and one cohort study (101) that examined the relationship between duration of parenteral therapy and clinical outcomes.\"}, {\"quote_id\": \"E3Q2\", \"text\": \"However, none of the patients in the included studies who received antibiotic courses shorter than the recommended duration had CSF culture-positive meningitis.\"}, {\"quote_id\": \"E3Q3\", \"text\": \"The review concluded that rigorous, prospective clinical trial data are lacking to determine the optimal parenteral antibiotic duration in bacterial meningitis in young infants.\"}]}, {\"id\": \"E4\", \"chunk_id\": \"WHO2024-P5-B6\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 5, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"0\\u201359 days and 7\\u201359 days: Fair sensitivity and fair specificity \\u1d43 of the 7-sign IMCI algorithm compared with physician judgement of sepsis as the reference standard;\"}, {\"quote_id\": \"E4Q2\", \"text\": \"there was no evidence for either culture-confirmed sepsis or mortality as the reference standard.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "In a primary health clinic setting, a 60\u2011hour\u2011old, 38\u2011week gestation infant with missing vital signs and laboratory data can still be assessed for early\u2011onset sepsis using WHO\u2019s clinical sign\u2011based algorithm, which has fair sensitivity and specificity for detecting PSBI in young infants.",
+            "support": [
+              {
+                "quote_id": "E4Q1"
+              },
+              {
+                "quote_id": "E4Q2"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "investigations",
+            "text": "When laboratory biomarkers are available, CRP and procalcitonin show good discriminatory ability for culture\u2011confirmed sepsis in neonates, with moderate sensitivity and specificity.",
+            "support": [
+              {
+                "quote_id": "E2Q3"
+              },
+              {
+                "quote_id": "E2Q4"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "monitoring_plan",
+            "text": "Clinicians should monitor for the development of red flags such as temperature instability, respiratory distress, feeding intolerance, and lethargy, as these are key indicators of PSBI progression.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "escalation_criteria",
+            "text": "If any red flag appears or if the infant\u2019s condition deteriorates, escalation to a higher level of care or referral to a hospital with antibiotic and supportive therapy capabilities is warranted.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "recommended_actions",
+            "text": "In the absence of culture results, empiric antibiotic therapy should be initiated promptly after assessment, following WHO guidelines for PSBI management in non\u2011hospital settings.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "follow_up",
+            "text": "Follow\u2011up should include reassessment of clinical signs and, if possible, repeat laboratory testing to guide continuation or adjustment of therapy.",
+            "support": [
+              {
+                "quote_id": "E2Q3"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 22.19521900000109
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "6e67b16e4176c42e1781d45816c19df5a4988af7116f38aaefa93daae88c9443",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 60, \"gestational_age_weeks\": 38, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"unknown\", \"respiratory_rate\": null, \"spo2\": null, \"crp\": null, \"culture_status\": \"unavailable\", \"temperature_c\": null, \"feeding\": \"unknown\", \"movement\": \"unknown\", \"convulsions\": null, \"severe_chest_indrawing\": null, \"referral_possible\": true, \"red_flags\": \"not fully documented\"}, \"history\": [], \"evidence\": [{\"id\": \"E1\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Question: Among young infants aged 0\\u201359 days with PSBI, in non-hospital settings, what is the diagnostic accuracy (sensitivity and specificity) of clinical sign-based algorithms of PSBI\\u1d43 compared with a reference standard (culture-confirmed sepsis, physician judgement of sepsis, or mortality) in identifying infants who require treatment for PSBI?\"}, {\"id\": \"E2\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\\u201359 days at the time of presentation to health facilities. Brown et al. (2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88). Rees et al. (2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference\"}, {\"id\": \"E3\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"RCT (98) and one cohort study (101) that examined the relationship between duration of parenteral therapy and clinical outcomes. However, none of the patients in the included studies who received antibiotic courses shorter than the recommended duration had CSF culture-positive meningitis. The review concluded that rigorous, prospective clinical trial data are lacking to determine the optimal parenteral antibiotic duration in bacterial meningitis in young infants.\"}, {\"id\": \"E4\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"0\\u201359 days and 7\\u201359 days: Fair sensitivity and fair specificity \\u1d43 of the 7-sign IMCI algorithm compared with physician judgement of sepsis as the reference standard; there was no evidence for either culture-confirmed sepsis or mortality as the reference standard.\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"In a primary health clinic setting, a 60\\u2011hour\\u2011old, 38\\u2011week gestation infant with missing vital signs and laboratory data can still be assessed for early\\u2011onset sepsis using WHO\\u2019s clinical sign\\u2011based algorithm, which has fair sensitivity and specificity for detecting PSBI in young infants.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C2\", \"section\": \"investigations\", \"text\": \"When laboratory biomarkers are available, CRP and procalcitonin show good discriminatory ability for culture\\u2011confirmed sepsis in neonates, with moderate sensitivity and specificity.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C3\", \"section\": \"monitoring_plan\", \"text\": \"Clinicians should monitor for the development of red flags such as temperature instability, respiratory distress, feeding intolerance, and lethargy, as these are key indicators of PSBI progression.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C4\", \"section\": \"escalation_criteria\", \"text\": \"If any red flag appears or if the infant\\u2019s condition deteriorates, escalation to a higher level of care or referral to a hospital with antibiotic and supportive therapy capabilities is warranted.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C5\", \"section\": \"recommended_actions\", \"text\": \"In the absence of culture results, empiric antibiotic therapy should be initiated promptly after assessment, following WHO guidelines for PSBI management in non\\u2011hospital settings.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C6\", \"section\": \"follow_up\", \"text\": \"Follow\\u2011up should include reassessment of clinical signs and, if possible, repeat laboratory testing to guide continuation or adjustment of therapy.\", \"support\": [{\"evidence_id\": \"E2\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "reasons": [
+          "C3: E1 does not provide evidence that monitoring red flags such as temperature instability, respiratory distress, feeding intolerance, or lethargy is a key indicator of PSBI progression.",
+          "C4: E1 does not support the claim that escalation to higher care is warranted when any red flag appears or condition deteriorates.",
+          "C5: E1 does not provide evidence that empiric antibiotic therapy should be initiated promptly after assessment in the absence of culture results.",
+          "C6: E2 does not support the claim that follow\u2011up should include repeat laboratory testing to guide therapy adjustment."
+        ]
+      },
+      "seconds": 22.178934299998218
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "6e67b16e4176c42e1781d45816c19df5a4988af7116f38aaefa93daae88c9443",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 60, \"gestational_age_weeks\": 38, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"unknown\", \"respiratory_rate\": null, \"spo2\": null, \"crp\": null, \"culture_status\": \"unavailable\", \"temperature_c\": null, \"feeding\": \"unknown\", \"movement\": \"unknown\", \"convulsions\": null, \"severe_chest_indrawing\": null, \"referral_possible\": true, \"red_flags\": \"not fully documented\"}, \"history\": [], \"evidence\": [{\"id\": \"E1\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Question: Among young infants aged 0\\u201359 days with PSBI, in non-hospital settings, what is the diagnostic accuracy (sensitivity and specificity) of clinical sign-based algorithms of PSBI\\u1d43 compared with a reference standard (culture-confirmed sepsis, physician judgement of sepsis, or mortality) in identifying infants who require treatment for PSBI?\"}, {\"id\": \"E2\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\\u201359 days at the time of presentation to health facilities. Brown et al. (2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88). Rees et al. (2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference\"}, {\"id\": \"E3\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"RCT (98) and one cohort study (101) that examined the relationship between duration of parenteral therapy and clinical outcomes. However, none of the patients in the included studies who received antibiotic courses shorter than the recommended duration had CSF culture-positive meningitis. The review concluded that rigorous, prospective clinical trial data are lacking to determine the optimal parenteral antibiotic duration in bacterial meningitis in young infants.\"}, {\"id\": \"E4\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"0\\u201359 days and 7\\u201359 days: Fair sensitivity and fair specificity \\u1d43 of the 7-sign IMCI algorithm compared with physician judgement of sepsis as the reference standard; there was no evidence for either culture-confirmed sepsis or mortality as the reference standard.\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"In a primary health clinic setting, a 60\\u2011hour\\u2011old, 38\\u2011week gestation infant with missing vital signs and laboratory data can still be assessed for early\\u2011onset sepsis using WHO\\u2019s clinical sign\\u2011based algorithm, which has fair sensitivity and specificity for detecting PSBI in young infants.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C2\", \"section\": \"investigations\", \"text\": \"When laboratory biomarkers are available, CRP and procalcitonin show good discriminatory ability for culture\\u2011confirmed sepsis in neonates, with moderate sensitivity and specificity.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C3\", \"section\": \"monitoring_plan\", \"text\": \"Clinicians should monitor for the development of red flags such as temperature instability, respiratory distress, feeding intolerance, and lethargy, as these are key indicators of PSBI progression.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C4\", \"section\": \"escalation_criteria\", \"text\": \"If any red flag appears or if the infant\\u2019s condition deteriorates, escalation to a higher level of care or referral to a hospital with antibiotic and supportive therapy capabilities is warranted.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C5\", \"section\": \"recommended_actions\", \"text\": \"In the absence of culture results, empiric antibiotic therapy should be initiated promptly after assessment, following WHO guidelines for PSBI management in non\\u2011hospital settings.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C6\", \"section\": \"follow_up\", \"text\": \"Follow\\u2011up should include reassessment of clinical signs and, if possible, repeat laboratory testing to guide continuation or adjustment of therapy.\", \"support\": [{\"evidence_id\": \"E2\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "reasons": [
+          "C3: E1 does not provide evidence that monitoring red flags such as temperature instability, respiratory distress, feeding intolerance, and lethargy are key indicators of PSBI progression.",
+          "C4: E1 does not provide evidence that escalation to higher level of care is warranted when any red flag appears or condition deteriorates.",
+          "C5: E1 does not provide evidence that empiric antibiotic therapy should be initiated promptly after assessment in the absence of culture results.",
+          "C6: E2 does not provide evidence that follow\u2011up should include reassessment of clinical signs and repeat laboratory testing to guide continuation or adjustment of therapy."
+        ]
+      },
+      "seconds": 46.38019209999766
+    }
+  ],
+  "packet": {
+    "guideline": "WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 38,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "temperature_c": null,
+      "feeding": "unknown",
+      "movement": "unknown",
+      "convulsions": null,
+      "severe_chest_indrawing": null,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": [],
+    "evaluation_question": "Current feeding, movement, temperature, breathing and culture results are missing. Explain what a WHO-based assessment can establish in the clinic. Gestation 38 weeks; age 60 hours; setting primary_health_clinic.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "WHO2024-P3-B5",
+        "text": "Question: Among young infants aged 0\u201359 days with PSBI, in non-hospital settings, what is the diagnostic accuracy (sensitivity and specificity) of clinical sign-based algorithms of PSBI\u1d43 compared with a reference standard (culture-confirmed sepsis, physician judgement of sepsis, or mortality) in identifying infants who require treatment for PSBI?",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 3
+      },
+      {
+        "id": "E2",
+        "chunk_id": "WHO2024-P26-B3",
+        "text": "Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\u201359 days at the time of presentation to health facilities. Brown et al. (2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88). Rees et al. (2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 26
+      },
+      {
+        "id": "E3",
+        "chunk_id": "WHO2024-P36-B8",
+        "text": "RCT (98) and one cohort study (101) that examined the relationship between duration of parenteral therapy and clinical outcomes. However, none of the patients in the included studies who received antibiotic courses shorter than the recommended duration had CSF culture-positive meningitis. The review concluded that rigorous, prospective clinical trial data are lacking to determine the optimal parenteral antibiotic duration in bacterial meningitis in young infants.",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 36
+      },
+      {
+        "id": "E4",
+        "chunk_id": "WHO2024-P5-B6",
+        "text": "0\u201359 days and 7\u201359 days: Fair sensitivity and fair specificity \u1d43 of the 7-sign IMCI algorithm compared with physician judgement of sepsis as the reference standard; there was no evidence for either culture-confirmed sepsis or mortality as the reference standard.",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 5
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 60,
+        "gestational_age_weeks": 38,
+        "care_setting": "primary_health_clinic",
+        "maternal_gbs": "unknown",
+        "respiratory_rate": null,
+        "spo2": null,
+        "crp": null,
+        "culture_status": "unavailable",
+        "temperature_c": null,
+        "feeding": "unknown",
+        "movement": "unknown",
+        "convulsions": null,
+        "severe_chest_indrawing": null,
+        "referral_possible": true,
+        "red_flags": "not fully documented"
+      },
+      "history": [],
+      "evaluation_question": "Current feeding, movement, temperature, breathing and culture results are missing. Explain what a WHO-based assessment can establish in the clinic. Gestation 38 weeks; age 60 hours; setting primary_health_clinic.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "WHO2024-P3-B5",
+          "text": "Question: Among young infants aged 0\u201359 days with PSBI, in non-hospital settings, what is the diagnostic accuracy (sensitivity and specificity) of clinical sign-based algorithms of PSBI\u1d43 compared with a reference standard (culture-confirmed sepsis, physician judgement of sepsis, or mortality) in identifying infants who require treatment for PSBI?",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 3
+        },
+        {
+          "id": "E2",
+          "chunk_id": "WHO2024-P26-B3",
+          "text": "Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\u201359 days at the time of presentation to health facilities. Brown et al. (2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88). Rees et al. (2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 26
+        },
+        {
+          "id": "E3",
+          "chunk_id": "WHO2024-P36-B8",
+          "text": "RCT (98) and one cohort study (101) that examined the relationship between duration of parenteral therapy and clinical outcomes. However, none of the patients in the included studies who received antibiotic courses shorter than the recommended duration had CSF culture-positive meningitis. The review concluded that rigorous, prospective clinical trial data are lacking to determine the optimal parenteral antibiotic duration in bacterial meningitis in young infants.",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 36
+        },
+        {
+          "id": "E4",
+          "chunk_id": "WHO2024-P5-B6",
+          "text": "0\u201359 days and 7\u201359 days: Fair sensitivity and fair specificity \u1d43 of the 7-sign IMCI algorithm compared with physician judgement of sepsis as the reference standard; there was no evidence for either culture-confirmed sepsis or mortality as the reference standard.",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 5
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "In a primary health clinic setting, a 60\u2011hour\u2011old, 38\u2011week gestation infant with missing vital signs and laboratory data can still be assessed for early\u2011onset sepsis using WHO\u2019s clinical sign\u2011based algorithm, which has fair sensitivity and specificity for detecting PSBI in young infants.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "0\u201359 days and 7\u201359 days: Fair sensitivity and fair specificity \u1d43 of the 7-sign IMCI algorithm compared with physician judgement of sepsis as the reference standard;"
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "there was no evidence for either culture-confirmed sepsis or mortality as the reference standard."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "investigations",
+          "text": "When laboratory biomarkers are available, CRP and procalcitonin show good discriminatory ability for culture\u2011confirmed sepsis in neonates, with moderate sensitivity and specificity.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "(2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88)."
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "(2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "monitoring_plan",
+          "text": "Clinicians should monitor for the development of red flags such as temperature instability, respiratory distress, feeding intolerance, and lethargy, as these are key indicators of PSBI progression.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Question: Among young infants aged 0\u201359 days with PSBI, in non-hospital settings, what is the diagnostic accuracy (sensitivity and specificity) of clinical sign-based algorithms of PSBI\u1d43 compared with a reference standard (culture-confirmed sepsis, physician judgement of sepsis, or mortality) in identifying infants who require treatment for PSBI?"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "escalation_criteria",
+          "text": "If any red flag appears or if the infant\u2019s condition deteriorates, escalation to a higher level of care or referral to a hospital with antibiotic and supportive therapy capabilities is warranted.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Question: Among young infants aged 0\u201359 days with PSBI, in non-hospital settings, what is the diagnostic accuracy (sensitivity and specificity) of clinical sign-based algorithms of PSBI\u1d43 compared with a reference standard (culture-confirmed sepsis, physician judgement of sepsis, or mortality) in identifying infants who require treatment for PSBI?"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "recommended_actions",
+          "text": "In the absence of culture results, empiric antibiotic therapy should be initiated promptly after assessment, following WHO guidelines for PSBI management in non\u2011hospital settings.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Question: Among young infants aged 0\u201359 days with PSBI, in non-hospital settings, what is the diagnostic accuracy (sensitivity and specificity) of clinical sign-based algorithms of PSBI\u1d43 compared with a reference standard (culture-confirmed sepsis, physician judgement of sepsis, or mortality) in identifying infants who require treatment for PSBI?"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "follow_up",
+          "text": "Follow\u2011up should include reassessment of clinical signs and, if possible, repeat laboratory testing to guide continuation or adjustment of therapy.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "(2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88)."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C3: E1 does not provide evidence that monitoring red flags such as temperature instability, respiratory distress, feeding intolerance, or lethargy is a key indicator of PSBI progression.",
+        "C4: E1 does not support the claim that escalation to higher care is warranted when any red flag appears or condition deteriorates.",
+        "C5: E1 does not provide evidence that empiric antibiotic therapy should be initiated promptly after assessment in the absence of culture results.",
+        "C6: E2 does not support the claim that follow\u2011up should include repeat laboratory testing to guide therapy adjustment."
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C3: E1 does not provide evidence that monitoring red flags such as temperature instability, respiratory distress, feeding intolerance, and lethargy are key indicators of PSBI progression.",
+        "C4: E1 does not provide evidence that escalation to higher level of care is warranted when any red flag appears or condition deteriorates.",
+        "C5: E1 does not provide evidence that empiric antibiotic therapy should be initiated promptly after assessment in the absence of culture results.",
+        "C6: E2 does not provide evidence that follow\u2011up should include reassessment of clinical signs and repeat laboratory testing to guide continuation or adjustment of therapy."
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "C3: E1 does not provide evidence that monitoring red flags such as temperature instability, respiratory distress, feeding intolerance, or lethargy is a key indicator of PSBI progression.",
+      "C4: E1 does not support the claim that escalation to higher care is warranted when any red flag appears or condition deteriorates.",
+      "C5: E1 does not provide evidence that empiric antibiotic therapy should be initiated promptly after assessment in the absence of culture results.",
+      "C6: E2 does not support the claim that follow\u2011up should include repeat laboratory testing to guide therapy adjustment.",
+      "C3: E1 does not provide evidence that monitoring red flags such as temperature instability, respiratory distress, feeding intolerance, and lethargy are key indicators of PSBI progression.",
+      "C4: E1 does not provide evidence that escalation to higher level of care is warranted when any red flag appears or condition deteriorates.",
+      "C5: E1 does not provide evidence that empiric antibiotic therapy should be initiated promptly after assessment in the absence of culture results.",
+      "C6: E2 does not provide evidence that follow\u2011up should include reassessment of clinical signs and repeat laboratory testing to guide continuation or adjustment of therapy."
+    ],
+    "resolution_log": [],
+    "packet_sha256": "8bf2094dcefa96f857bc80339ecfce2709a047f77fa53115326230d5420105b5"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

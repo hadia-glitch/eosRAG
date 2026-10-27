@@ -1,5 +1,10 @@
 # Reproducing the neonatal research experiments
 
+The active three-guideline RAG fixture now contains exactly 100 synthetic cases
+(NICE 40, AAP 30, WHO 30). See [the expanded protocol](research/expanded100_protocol.md)
+for its frozen definitions and resumable commands. The eighteen-case commands
+below describe the retained historical development experiment.
+
 The Kaggle archive is read in place; raw rows and patient identifiers are not
 copied to public outputs. The supplied description does not identify an original
 clinical study, collection sites, license, culture confirmation or onset times.

@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 4,
+    "patient_fidelity": 3,
+    "completeness": 4,
+    "actionability": 5,
+    "uncertainty": 3,
+    "unsafe_claim_count": 1,
+    "unsafe_claim_reasons": [
+      "Assumes maternal intrapartum antibiotics were adequate despite no data in patient record"
+    ]
+  },
+  "reason": null
+}

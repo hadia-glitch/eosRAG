@@ -1,0 +1,14 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 4,
+    "patient_fidelity": 3,
+    "completeness": 3,
+    "actionability": 4,
+    "uncertainty": 3,
+    "unsafe_claim_count": 0,
+    "unsafe_claim_reasons": []
+  },
+  "reason": null
+}

@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 2,
+    "patient_fidelity": 3,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 3,
+    "unsafe_claim_count": 1,
+    "unsafe_claim_reasons": [
+      "Recommends routine laboratory testing (CBC, CRP) for the lowest GBS\u2011only risk category, which is not supported by the cited AAP guideline (category 4 recommends observation without labs)."
+    ]
+  },
+  "reason": null
+}

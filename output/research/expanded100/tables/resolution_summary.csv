@@ -1,0 +1,7 @@
+model,guideline,planned_n,paired_n,no_repair_released,one_repair_released,resolution_attempts,mean,case_low,case_high,family_low,family_high,family_n,resamples,seed
+openai/gpt-oss-20b,NICE,40,40,1,2,2,0.025,0.0,0.075,0.0,0.07894736842105263,6,2000,31
+openai/gpt-oss-20b,AAP,30,30,0,0,2,0.0,0.0,0.0,0.0,0.0,6,2000,31
+openai/gpt-oss-20b,WHO,30,30,0,0,5,0.0,0.0,0.0,0.0,0.0,6,2000,31
+qwen/qwen3.8-27b,NICE,40,40,23,24,1,0.025,0.0,0.075,0.0,0.075,6,2000,31
+qwen/qwen3.8-27b,AAP,30,30,26,26,0,0.0,0.0,0.0,0.0,0.0,6,2000,31
+qwen/qwen3.8-27b,WHO,30,30,27,27,0,0.0,0.0,0.0,0.0,0.0,6,2000,31

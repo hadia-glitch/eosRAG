@@ -1,0 +1,403 @@
+{
+  "id": "nice-expanded-deterioration-04",
+  "family": "deterioration",
+  "model": "openai/gpt-oss-20b",
+  "verifier_model": "openai/gpt-oss-20b",
+  "seconds": 85.55216959999962,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "c52458ea2d9eb720c4468521b095b858147d3302ecb6b62be7ab47d7a9ee50e2",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 41, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 76, \"spo2\": 89, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 62, \"spo2\": 94, \"crp\": 9}], \"evaluation_question\": \"Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 41 weeks; age 36 hours; setting hospital birth.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"NICE-1.12.3\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 18, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Refer to NICE's guidelines on fever in under 5s and suspected sepsis in under 16s when assessing babies for late-onset neonatal infection who have been admitted to the hospital from home.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"[2021] Be aware that some pulse oximeters can underestimate or overestimate oxygen saturation levels, especially if the saturation level is borderline.\"}, {\"quote_id\": \"E1Q3\", \"text\": \"Overestimation has been reported in people with dark skin.\"}, {\"quote_id\": \"E1Q4\", \"text\": \"See also the NHS England Patient Safety Alert on the risk of harm from inappropriate placement of pulse oximeter probes.\"}, {\"quote_id\": \"E1Q5\", \"text\": \"Table 2: Clinical indicators of possible late-onset neonatal infection (observations and events in the baby) Category Indicators Behaviour Parent or care-giver concern for change in behaviour Appears ill to a healthcare professional Does not wake, or if roused does not stay awake Weak high-pitched or continuous cry Respiratory Raised respiratory rate: 60 breaths per minute or more Grunting Apnoea Oxygen saturation of less than 90% in air or increased oxygen requirement over baseline Circulation and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia\"}, {\"quote_id\": \"E1Q6\", \"text\": \"and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia: heart rate less than 100 beats per minute Skin Mottled or ashen appearance Cyanosis of skin, lips or tongue Non-blanching rash of skin Other Temperature 38\\u00b0C or more unexplained by environmental factors Temperature less than 36\\u00b0C unexplained by environmental factors Alterations in feeding pattern Abdominal distension Seizures Bulging fontanelle This table has been adapted from the high-risk criteria in table 1 of NICE's guideline on suspected sepsis in under 16s.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"NICE-1.10.2\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 13, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"If group B streptococcus infection is identified in the woman, trans man or non- binary person within 72 hours after the baby's birth:\"}, {\"quote_id\": \"E2Q2\", \"text\": \"ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2 and\"}, {\"quote_id\": \"E2Q3\", \"text\": \"identify any other risk factors present and\"}, {\"quote_id\": \"E2Q4\", \"text\": \"look for clinical indicators of infection.\"}, {\"quote_id\": \"E2Q5\", \"text\": \"Use this assessment to decide on clinical management (see recommendation 1.10.3 for the framework for making antibiotic decisions).\"}, {\"quote_id\": \"E2Q6\", \"text\": \"[2021] Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators:\"}, {\"quote_id\": \"E2Q7\", \"text\": \"apnoea (temporary stopping of breathing)\"}, {\"quote_id\": \"E2Q8\", \"text\": \"need for cardiopulmonary resuscitation\"}, {\"quote_id\": \"E2Q9\", \"text\": \"need for mechanical ventilation\"}, {\"quote_id\": \"E2Q10\", \"text\": \"signs of shock Other clinical indicators:\"}, {\"quote_id\": \"E2Q11\", \"text\": \"altered behaviour or responsiveness\"}, {\"quote_id\": \"E2Q12\", \"text\": \"altered muscle tone (for example, floppiness)\"}, {\"quote_id\": \"E2Q13\", \"text\": \"feeding difficulties (for example, feed refusal)\"}, {\"quote_id\": \"E2Q14\", \"text\": \"feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension\"}, {\"quote_id\": \"E2Q15\", \"text\": \"abnormal heart rate (bradycardia or tachycardia)\"}, {\"quote_id\": \"E2Q16\", \"text\": \"signs of respiratory distress (including grunting, recession, tachypnoea)\"}, {\"quote_id\": \"E2Q17\", \"text\": \"hypoxia (for example, central cyanosis or reduced oxygen saturation level)\"}, {\"quote_id\": \"E2Q18\", \"text\": \"persistent pulmonary hypertension of newborns\"}, {\"quote_id\": \"E2Q19\", \"text\": \"jaundice within 24 hours of birth\"}, {\"quote_id\": \"E2Q20\", \"text\": \"signs of neonatal encephalopathy\"}, {\"quote_id\": \"E2Q21\", \"text\": \"temperature abnormality (lower than 36\\u00b0C or higher than 38\\u00b0C) unexplained by environmental factors\"}, {\"quote_id\": \"E2Q22\", \"text\": \"unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation\"}, {\"quote_id\": \"E2Q23\", \"text\": \"altered glucose homeostasis (hypoglycaemia or hyperglycaemia)\"}, {\"quote_id\": \"E2Q24\", \"text\": \"metabolic acidosis (base deficit of 10 mmol/litre or greater)\"}]}, {\"id\": \"E3\", \"chunk_id\": \"NICE-box2\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 14, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators:\"}, {\"quote_id\": \"E3Q2\", \"text\": \"apnoea (temporary stopping of breathing)\"}, {\"quote_id\": \"E3Q3\", \"text\": \"need for cardiopulmonary resuscitation\"}, {\"quote_id\": \"E3Q4\", \"text\": \"need for mechanical ventilation\"}, {\"quote_id\": \"E3Q5\", \"text\": \"signs of shock Other clinical indicators:\"}, {\"quote_id\": \"E3Q6\", \"text\": \"altered behaviour or responsiveness\"}, {\"quote_id\": \"E3Q7\", \"text\": \"altered muscle tone (for example, floppiness)\"}, {\"quote_id\": \"E3Q8\", \"text\": \"feeding difficulties (for example, feed refusal)\"}, {\"quote_id\": \"E3Q9\", \"text\": \"feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension\"}, {\"quote_id\": \"E3Q10\", \"text\": \"abnormal heart rate (bradycardia or tachycardia)\"}, {\"quote_id\": \"E3Q11\", \"text\": \"signs of respiratory distress (including grunting, recession, tachypnoea)\"}, {\"quote_id\": \"E3Q12\", \"text\": \"hypoxia (for example, central cyanosis or reduced oxygen saturation level)\"}, {\"quote_id\": \"E3Q13\", \"text\": \"persistent pulmonary hypertension of newborns\"}, {\"quote_id\": \"E3Q14\", \"text\": \"jaundice within 24 hours of birth\"}, {\"quote_id\": \"E3Q15\", \"text\": \"signs of neonatal encephalopathy\"}, {\"quote_id\": \"E3Q16\", \"text\": \"temperature abnormality (lower than 36\\u00b0C or higher than 38\\u00b0C) unexplained by environmental factors\"}, {\"quote_id\": \"E3Q17\", \"text\": \"unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation\"}]}, {\"id\": \"E4\", \"chunk_id\": \"NICE-1.11.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 16, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"In babies being monitored for possible early-onset neonatal infection:\"}, {\"quote_id\": \"E4Q2\", \"text\": \"Consider starting antibiotic treatment (see the section on investigations before starting antibiotics for next steps).\"}, {\"quote_id\": \"E4Q3\", \"text\": \"\\u2022 If no further concerns arise during observation reassure the family and, if the baby is to be discharged, give information and advice to the parents and carers (see the sections on information and support for parents and carers before transferring babies home and post discharge planning for babies who have not been given antibiotics).\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "monitoring_plan",
+            "text": "Continue hourly observation of respiratory rate, oxygen saturation and temperature, noting the trend of rising respiratory rate and falling saturation.",
+            "support": [
+              {
+                "quote_id": "E1Q5"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "The infant meets two clinical indicators of possible early\u2011onset infection: respiratory rate >60 breaths/min and oxygen saturation <90% in air.",
+            "support": [
+              {
+                "quote_id": "E1Q5"
+              },
+              {
+                "quote_id": "E1Q6"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "escalation_criteria",
+            "text": "Escalate care if the infant develops any red\u2011flag indicators such as apnea, need for mechanical ventilation or signs of shock.",
+            "support": [
+              {
+                "quote_id": "E2Q7"
+              },
+              {
+                "quote_id": "E2Q8"
+              },
+              {
+                "quote_id": "E2Q9"
+              },
+              {
+                "quote_id": "E2Q10"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "recommended_actions",
+            "text": "Initiate a sepsis work\u2011up: obtain blood cultures, complete blood count and CRP, and consider starting empiric antibiotics per local protocol.",
+            "support": [
+              {
+                "quote_id": "E4Q2"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "parent_communication_notes",
+            "text": "Inform parents of the observed deterioration, explain the need for urgent investigations and potential antibiotic therapy, and provide reassurance that monitoring is intensified.",
+            "support": [
+              {
+                "quote_id": "E4Q3"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "follow_up",
+            "text": "Re\u2011assess clinical status within 1\u20132 hours after initiating investigations; if no improvement, consider escalation to neonatal intensive care.",
+            "support": [
+              {
+                "quote_id": "E1Q5"
+              },
+              {
+                "quote_id": "E2Q5"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 26.896474900000612
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "3dc6401af9ab55fe69e7aa24925a085e1c9ecf1178a8c8210ad3ffff7f6f9c2b",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 41, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 76, \"spo2\": 89, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 62, \"spo2\": 94, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Refer to NICE's guidelines on fever in under 5s and suspected sepsis in under 16s when assessing babies for late-onset neonatal infection who have been admitted to the hospital from home. [2021] Be aware that some pulse oximeters can underestimate or overestimate oxygen saturation levels, especially if the saturation level is borderline. Overestimation has been reported in people with dark skin. See also the NHS England Patient Safety Alert on the risk of harm from inappropriate placement of pulse oximeter probes. Table 2: Clinical indicators of possible late-onset neonatal infection (observations and events in the baby) Category Indicators Behaviour Parent or care-giver concern for change in behaviour Appears ill to a healthcare professional Does not wake, or if roused does not stay awake Weak high-pitched or continuous cry Respiratory Raised respiratory rate: 60 breaths per minute or more Grunting Apnoea Oxygen saturation of less than 90% in air or increased oxygen requirement over baseline Circulation and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia: heart rate less than 100 beats per minute Skin Mottled or ashen appearance Cyanosis of skin, lips or tongue Non-blanching rash of skin Other Temperature 38\\u00b0C or more unexplained by environmental factors Temperature less than 36\\u00b0C unexplained by environmental factors Alterations in feeding pattern Abdominal distension Seizures Bulging fontanelle This table has been adapted from the high-risk criteria in table 1 of NICE's guideline on suspected sepsis in under 16s.\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"If group B streptococcus infection is identified in the woman, trans man or non- binary person within 72 hours after the baby's birth: \\u2022 ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2 and \\u2022 identify any other risk factors present and \\u2022 look for clinical indicators of infection. Use this assessment to decide on clinical management (see recommendation 1.10.3 for the framework for making antibiotic decisions). [2021] Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \\u2022 apnoea (temporary stopping of breathing) \\u2022 seizures \\u2022 need for cardiopulmonary resuscitation \\u2022 need for mechanical ventilation \\u2022 signs of shock Other clinical indicators: \\u2022 altered behaviour or responsiveness \\u2022 altered muscle tone (for example, floppiness) \\u2022 feeding difficulties (for example, feed refusal) \\u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \\u2022 abnormal heart rate (bradycardia or tachycardia) \\u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \\u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \\u2022 persistent pulmonary hypertension of newborns \\u2022 jaundice within 24 hours of birth \\u2022 signs of neonatal encephalopathy \\u2022 temperature abnormality (lower than 36\\u00b0C or higher than 38\\u00b0C) unexplained by environmental factors \\u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation \\u2022 altered glucose homeostasis (hypoglycaemia or hyperglycaemia) \\u2022 metabolic acidosis (base deficit of 10 mmol/litre or greater)\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \\u2022 apnoea (temporary stopping of breathing) \\u2022 seizures \\u2022 need for cardiopulmonary resuscitation \\u2022 need for mechanical ventilation \\u2022 signs of shock Other clinical indicators: \\u2022 altered behaviour or responsiveness \\u2022 altered muscle tone (for example, floppiness) \\u2022 feeding difficulties (for example, feed refusal) \\u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \\u2022 abnormal heart rate (bradycardia or tachycardia) \\u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \\u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \\u2022 persistent pulmonary hypertension of newborns \\u2022 jaundice within 24 hours of birth \\u2022 signs of neonatal encephalopathy \\u2022 temperature abnormality (lower than 36\\u00b0C or higher than 38\\u00b0C) unexplained by environmental factors \\u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"In babies being monitored for possible early-onset neonatal infection: \\u2022 Consider starting antibiotic treatment (see the section on investigations before starting antibiotics for next steps). \\u2022 If no further concerns arise during observation reassure the family and, if the baby is to be discharged, give information and advice to the parents and carers (see the sections on information and support for parents and carers before transferring babies home and post discharge planning for babies who have not been given antibiotics). [2021]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"monitoring_plan\", \"text\": \"Continue hourly observation of respiratory rate, oxygen saturation and temperature, noting the trend of rising respiratory rate and falling saturation.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"The infant meets two clinical indicators of possible early\\u2011onset infection: respiratory rate >60 breaths/min and oxygen saturation <90% in air.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"escalation_criteria\", \"text\": \"Escalate care if the infant develops any red\\u2011flag indicators such as apnea, need for mechanical ventilation or signs of shock.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C4\", \"section\": \"recommended_actions\", \"text\": \"Initiate a sepsis work\\u2011up: obtain blood cultures, complete blood count and CRP, and consider starting empiric antibiotics per local protocol.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C5\", \"section\": \"parent_communication_notes\", \"text\": \"Inform parents of the observed deterioration, explain the need for urgent investigations and potential antibiotic therapy, and provide reassurance that monitoring is intensified.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"follow_up\", \"text\": \"Re\\u2011assess clinical status within 1\\u20132 hours after initiating investigations; if no improvement, consider escalation to neonatal intensive care.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E2\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [
+          "C1",
+          "C2",
+          "C4",
+          "C6"
+        ],
+        "rejected_reasons": [
+          "C1: Evidence E1 lists indicators but does not state hourly observation or trend; claim not entailed.",
+          "C2: Evidence E1 lists indicators but does not assert the infant meets them; claim not entailed.",
+          "C4: Evidence E4 recommends considering antibiotics but does not mention obtaining cultures, CBC, or CRP; claim not entailed.",
+          "C6: Evidence E1 and E2 discuss observation but do not specify a 1\u20112 hour reassessment interval; claim not entailed."
+        ]
+      },
+      "seconds": 26.79245230000015
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "3dc6401af9ab55fe69e7aa24925a085e1c9ecf1178a8c8210ad3ffff7f6f9c2b",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 41, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 76, \"spo2\": 89, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 62, \"spo2\": 94, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Refer to NICE's guidelines on fever in under 5s and suspected sepsis in under 16s when assessing babies for late-onset neonatal infection who have been admitted to the hospital from home. [2021] Be aware that some pulse oximeters can underestimate or overestimate oxygen saturation levels, especially if the saturation level is borderline. Overestimation has been reported in people with dark skin. See also the NHS England Patient Safety Alert on the risk of harm from inappropriate placement of pulse oximeter probes. Table 2: Clinical indicators of possible late-onset neonatal infection (observations and events in the baby) Category Indicators Behaviour Parent or care-giver concern for change in behaviour Appears ill to a healthcare professional Does not wake, or if roused does not stay awake Weak high-pitched or continuous cry Respiratory Raised respiratory rate: 60 breaths per minute or more Grunting Apnoea Oxygen saturation of less than 90% in air or increased oxygen requirement over baseline Circulation and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia: heart rate less than 100 beats per minute Skin Mottled or ashen appearance Cyanosis of skin, lips or tongue Non-blanching rash of skin Other Temperature 38\\u00b0C or more unexplained by environmental factors Temperature less than 36\\u00b0C unexplained by environmental factors Alterations in feeding pattern Abdominal distension Seizures Bulging fontanelle This table has been adapted from the high-risk criteria in table 1 of NICE's guideline on suspected sepsis in under 16s.\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"If group B streptococcus infection is identified in the woman, trans man or non- binary person within 72 hours after the baby's birth: \\u2022 ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2 and \\u2022 identify any other risk factors present and \\u2022 look for clinical indicators of infection. Use this assessment to decide on clinical management (see recommendation 1.10.3 for the framework for making antibiotic decisions). [2021] Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \\u2022 apnoea (temporary stopping of breathing) \\u2022 seizures \\u2022 need for cardiopulmonary resuscitation \\u2022 need for mechanical ventilation \\u2022 signs of shock Other clinical indicators: \\u2022 altered behaviour or responsiveness \\u2022 altered muscle tone (for example, floppiness) \\u2022 feeding difficulties (for example, feed refusal) \\u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \\u2022 abnormal heart rate (bradycardia or tachycardia) \\u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \\u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \\u2022 persistent pulmonary hypertension of newborns \\u2022 jaundice within 24 hours of birth \\u2022 signs of neonatal encephalopathy \\u2022 temperature abnormality (lower than 36\\u00b0C or higher than 38\\u00b0C) unexplained by environmental factors \\u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation \\u2022 altered glucose homeostasis (hypoglycaemia or hyperglycaemia) \\u2022 metabolic acidosis (base deficit of 10 mmol/litre or greater)\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \\u2022 apnoea (temporary stopping of breathing) \\u2022 seizures \\u2022 need for cardiopulmonary resuscitation \\u2022 need for mechanical ventilation \\u2022 signs of shock Other clinical indicators: \\u2022 altered behaviour or responsiveness \\u2022 altered muscle tone (for example, floppiness) \\u2022 feeding difficulties (for example, feed refusal) \\u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \\u2022 abnormal heart rate (bradycardia or tachycardia) \\u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \\u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \\u2022 persistent pulmonary hypertension of newborns \\u2022 jaundice within 24 hours of birth \\u2022 signs of neonatal encephalopathy \\u2022 temperature abnormality (lower than 36\\u00b0C or higher than 38\\u00b0C) unexplained by environmental factors \\u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"In babies being monitored for possible early-onset neonatal infection: \\u2022 Consider starting antibiotic treatment (see the section on investigations before starting antibiotics for next steps). \\u2022 If no further concerns arise during observation reassure the family and, if the baby is to be discharged, give information and advice to the parents and carers (see the sections on information and support for parents and carers before transferring babies home and post discharge planning for babies who have not been given antibiotics). [2021]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"monitoring_plan\", \"text\": \"Continue hourly observation of respiratory rate, oxygen saturation and temperature, noting the trend of rising respiratory rate and falling saturation.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"The infant meets two clinical indicators of possible early\\u2011onset infection: respiratory rate >60 breaths/min and oxygen saturation <90% in air.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"escalation_criteria\", \"text\": \"Escalate care if the infant develops any red\\u2011flag indicators such as apnea, need for mechanical ventilation or signs of shock.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C4\", \"section\": \"recommended_actions\", \"text\": \"Initiate a sepsis work\\u2011up: obtain blood cultures, complete blood count and CRP, and consider starting empiric antibiotics per local protocol.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C5\", \"section\": \"parent_communication_notes\", \"text\": \"Inform parents of the observed deterioration, explain the need for urgent investigations and potential antibiotic therapy, and provide reassurance that monitoring is intensified.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"follow_up\", \"text\": \"Re\\u2011assess clinical status within 1\\u20132 hours after initiating investigations; if no improvement, consider escalation to neonatal intensive care.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E2\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "rejected_claim_ids": [
+          "C1",
+          "C4",
+          "C6"
+        ],
+        "reasons": [
+          "C1 lacks evidence for hourly observation and trend note",
+          "C4 not directly supported by evidence for work\u2011up initiation",
+          "C6 timeframe not specified in evidence"
+        ]
+      },
+      "seconds": 57.417673100000684
+    }
+  ],
+  "packet": {
+    "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 41 weeks; age 36 hours; setting hospital birth.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.12.3",
+        "text": "Refer to NICE's guidelines on fever in under 5s and suspected sepsis in under 16s when assessing babies for late-onset neonatal infection who have been admitted to the hospital from home. [2021] Be aware that some pulse oximeters can underestimate or overestimate oxygen saturation levels, especially if the saturation level is borderline. Overestimation has been reported in people with dark skin. See also the NHS England Patient Safety Alert on the risk of harm from inappropriate placement of pulse oximeter probes. Table 2: Clinical indicators of possible late-onset neonatal infection (observations and events in the baby) Category Indicators Behaviour Parent or care-giver concern for change in behaviour Appears ill to a healthcare professional Does not wake, or if roused does not stay awake Weak high-pitched or continuous cry Respiratory Raised respiratory rate: 60 breaths per minute or more Grunting Apnoea Oxygen saturation of less than 90% in air or increased oxygen requirement over baseline Circulation and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia: heart rate less than 100 beats per minute Skin Mottled or ashen appearance Cyanosis of skin, lips or tongue Non-blanching rash of skin Other Temperature 38\u00b0C or more unexplained by environmental factors Temperature less than 36\u00b0C unexplained by environmental factors Alterations in feeding pattern Abdominal distension Seizures Bulging fontanelle This table has been adapted from the high-risk criteria in table 1 of NICE's guideline on suspected sepsis in under 16s.",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 18
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.10.2",
+        "text": "If group B streptococcus infection is identified in the woman, trans man or non- binary person within 72 hours after the baby's birth: \u2022 ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2 and \u2022 identify any other risk factors present and \u2022 look for clinical indicators of infection. Use this assessment to decide on clinical management (see recommendation 1.10.3 for the framework for making antibiotic decisions). [2021] Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \u2022 apnoea (temporary stopping of breathing) \u2022 seizures \u2022 need for cardiopulmonary resuscitation \u2022 need for mechanical ventilation \u2022 signs of shock Other clinical indicators: \u2022 altered behaviour or responsiveness \u2022 altered muscle tone (for example, floppiness) \u2022 feeding difficulties (for example, feed refusal) \u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \u2022 abnormal heart rate (bradycardia or tachycardia) \u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \u2022 persistent pulmonary hypertension of newborns \u2022 jaundice within 24 hours of birth \u2022 signs of neonatal encephalopathy \u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors \u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation \u2022 altered glucose homeostasis (hypoglycaemia or hyperglycaemia) \u2022 metabolic acidosis (base deficit of 10 mmol/litre or greater)",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 13
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-box2",
+        "text": "Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \u2022 apnoea (temporary stopping of breathing) \u2022 seizures \u2022 need for cardiopulmonary resuscitation \u2022 need for mechanical ventilation \u2022 signs of shock Other clinical indicators: \u2022 altered behaviour or responsiveness \u2022 altered muscle tone (for example, floppiness) \u2022 feeding difficulties (for example, feed refusal) \u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \u2022 abnormal heart rate (bradycardia or tachycardia) \u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \u2022 persistent pulmonary hypertension of newborns \u2022 jaundice within 24 hours of birth \u2022 signs of neonatal encephalopathy \u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors \u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 14
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.11.1",
+        "text": "In babies being monitored for possible early-onset neonatal infection: \u2022 Consider starting antibiotic treatment (see the section on investigations before starting antibiotics for next steps). \u2022 If no further concerns arise during observation reassure the family and, if the baby is to be discharged, give information and advice to the parents and carers (see the sections on information and support for parents and carers before transferring babies home and post discharge planning for babies who have not been given antibiotics). [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 16
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 36,
+        "gestational_age_weeks": 41,
+        "care_setting": "hospital_birth",
+        "respiratory_rate": 76,
+        "spo2": 89,
+        "crp": 6,
+        "culture_status": "unknown",
+        "maternal_gbs": "unknown",
+        "red_flags": "not fully documented"
+      },
+      "history": [
+        {
+          "age_hours": 12.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 21
+        },
+        {
+          "age_hours": 24.0,
+          "respiratory_rate": 62,
+          "spo2": 94,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 41 weeks; age 36 hours; setting hospital birth.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.12.3",
+          "text": "Refer to NICE's guidelines on fever in under 5s and suspected sepsis in under 16s when assessing babies for late-onset neonatal infection who have been admitted to the hospital from home. [2021] Be aware that some pulse oximeters can underestimate or overestimate oxygen saturation levels, especially if the saturation level is borderline. Overestimation has been reported in people with dark skin. See also the NHS England Patient Safety Alert on the risk of harm from inappropriate placement of pulse oximeter probes. Table 2: Clinical indicators of possible late-onset neonatal infection (observations and events in the baby) Category Indicators Behaviour Parent or care-giver concern for change in behaviour Appears ill to a healthcare professional Does not wake, or if roused does not stay awake Weak high-pitched or continuous cry Respiratory Raised respiratory rate: 60 breaths per minute or more Grunting Apnoea Oxygen saturation of less than 90% in air or increased oxygen requirement over baseline Circulation and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia: heart rate less than 100 beats per minute Skin Mottled or ashen appearance Cyanosis of skin, lips or tongue Non-blanching rash of skin Other Temperature 38\u00b0C or more unexplained by environmental factors Temperature less than 36\u00b0C unexplained by environmental factors Alterations in feeding pattern Abdominal distension Seizures Bulging fontanelle This table has been adapted from the high-risk criteria in table 1 of NICE's guideline on suspected sepsis in under 16s.",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 18
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.10.2",
+          "text": "If group B streptococcus infection is identified in the woman, trans man or non- binary person within 72 hours after the baby's birth: \u2022 ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2 and \u2022 identify any other risk factors present and \u2022 look for clinical indicators of infection. Use this assessment to decide on clinical management (see recommendation 1.10.3 for the framework for making antibiotic decisions). [2021] Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \u2022 apnoea (temporary stopping of breathing) \u2022 seizures \u2022 need for cardiopulmonary resuscitation \u2022 need for mechanical ventilation \u2022 signs of shock Other clinical indicators: \u2022 altered behaviour or responsiveness \u2022 altered muscle tone (for example, floppiness) \u2022 feeding difficulties (for example, feed refusal) \u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \u2022 abnormal heart rate (bradycardia or tachycardia) \u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \u2022 persistent pulmonary hypertension of newborns \u2022 jaundice within 24 hours of birth \u2022 signs of neonatal encephalopathy \u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors \u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation \u2022 altered glucose homeostasis (hypoglycaemia or hyperglycaemia) \u2022 metabolic acidosis (base deficit of 10 mmol/litre or greater)",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 13
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-box2",
+          "text": "Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \u2022 apnoea (temporary stopping of breathing) \u2022 seizures \u2022 need for cardiopulmonary resuscitation \u2022 need for mechanical ventilation \u2022 signs of shock Other clinical indicators: \u2022 altered behaviour or responsiveness \u2022 altered muscle tone (for example, floppiness) \u2022 feeding difficulties (for example, feed refusal) \u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \u2022 abnormal heart rate (bradycardia or tachycardia) \u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \u2022 persistent pulmonary hypertension of newborns \u2022 jaundice within 24 hours of birth \u2022 signs of neonatal encephalopathy \u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors \u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 14
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.11.1",
+          "text": "In babies being monitored for possible early-onset neonatal infection: \u2022 Consider starting antibiotic treatment (see the section on investigations before starting antibiotics for next steps). \u2022 If no further concerns arise during observation reassure the family and, if the baby is to be discharged, give information and advice to the parents and carers (see the sections on information and support for parents and carers before transferring babies home and post discharge planning for babies who have not been given antibiotics). [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 16
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "monitoring_plan",
+          "text": "Continue hourly observation of respiratory rate, oxygen saturation and temperature, noting the trend of rising respiratory rate and falling saturation.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Table 2: Clinical indicators of possible late-onset neonatal infection (observations and events in the baby) Category Indicators Behaviour Parent or care-giver concern for change in behaviour Appears ill to a healthcare professional Does not wake, or if roused does not stay awake Weak high-pitched or continuous cry Respiratory Raised respiratory rate: 60 breaths per minute or more Grunting Apnoea Oxygen saturation of less than 90% in air or increased oxygen requirement over baseline Circulation and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "The infant meets two clinical indicators of possible early\u2011onset infection: respiratory rate >60 breaths/min and oxygen saturation <90% in air.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Table 2: Clinical indicators of possible late-onset neonatal infection (observations and events in the baby) Category Indicators Behaviour Parent or care-giver concern for change in behaviour Appears ill to a healthcare professional Does not wake, or if roused does not stay awake Weak high-pitched or continuous cry Respiratory Raised respiratory rate: 60 breaths per minute or more Grunting Apnoea Oxygen saturation of less than 90% in air or increased oxygen requirement over baseline Circulation and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia"
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia: heart rate less than 100 beats per minute Skin Mottled or ashen appearance Cyanosis of skin, lips or tongue Non-blanching rash of skin Other Temperature 38\u00b0C or more unexplained by environmental factors Temperature less than 36\u00b0C unexplained by environmental factors Alterations in feeding pattern Abdominal distension Seizures Bulging fontanelle This table has been adapted from the high-risk criteria in table 1 of NICE's guideline on suspected sepsis in under 16s."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "escalation_criteria",
+          "text": "Escalate care if the infant develops any red\u2011flag indicators such as apnea, need for mechanical ventilation or signs of shock.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "apnoea (temporary stopping of breathing)"
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "need for cardiopulmonary resuscitation"
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "need for mechanical ventilation"
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "signs of shock Other clinical indicators:"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "recommended_actions",
+          "text": "Initiate a sepsis work\u2011up: obtain blood cultures, complete blood count and CRP, and consider starting empiric antibiotics per local protocol.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "Consider starting antibiotic treatment (see the section on investigations before starting antibiotics for next steps)."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "parent_communication_notes",
+          "text": "Inform parents of the observed deterioration, explain the need for urgent investigations and potential antibiotic therapy, and provide reassurance that monitoring is intensified.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "\u2022 If no further concerns arise during observation reassure the family and, if the baby is to be discharged, give information and advice to the parents and carers (see the sections on information and support for parents and carers before transferring babies home and post discharge planning for babies who have not been given antibiotics)."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "follow_up",
+          "text": "Re\u2011assess clinical status within 1\u20132 hours after initiating investigations; if no improvement, consider escalation to neonatal intensive care.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Table 2: Clinical indicators of possible late-onset neonatal infection (observations and events in the baby) Category Indicators Behaviour Parent or care-giver concern for change in behaviour Appears ill to a healthcare professional Does not wake, or if roused does not stay awake Weak high-pitched or continuous cry Respiratory Raised respiratory rate: 60 breaths per minute or more Grunting Apnoea Oxygen saturation of less than 90% in air or increased oxygen requirement over baseline Circulation and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia"
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "Use this assessment to decide on clinical management (see recommendation 1.10.3 for the framework for making antibiotic decisions)."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Verifier unavailable, incomplete, or invalid"
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Verifier unavailable, incomplete, or invalid"
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "Verifier unavailable, incomplete, or invalid",
+      "Verifier unavailable, incomplete, or invalid"
+    ],
+    "resolution_log": [],
+    "packet_sha256": "c26319096a8136f8349c366d9ad7ba44e60c43b734faf5c3eaf0f0ba82a5bc99"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

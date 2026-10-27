@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 2,
+    "patient_fidelity": 4,
+    "completeness": 4,
+    "actionability": 3,
+    "uncertainty": 2,
+    "unsafe_claim_count": 1,
+    "unsafe_claim_reasons": [
+      "Candidate incorrectly classifies tachypnoea and hypoxia as 'red\u2011flag' indicators and states NICE recommends immediate antibiotics based on red\u2011flags, which is not supported by the provided guideline text."
+    ]
+  },
+  "reason": null
+}

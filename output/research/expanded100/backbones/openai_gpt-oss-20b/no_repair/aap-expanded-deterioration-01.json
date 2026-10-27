@@ -1,0 +1,445 @@
+{
+  "id": "aap-expanded-deterioration-01",
+  "family": "deterioration",
+  "model": "openai/gpt-oss-20b",
+  "verifier_model": "openai/gpt-oss-20b",
+  "seconds": 71.54945760000192,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "3c83342e65b33b805047ce06f39e413557492cb96ebfc4bb0e375acb06a3b3c7",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 6, \"gestational_age_weeks\": 37, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 76, \"spo2\": 89, \"crp\": 3, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 2.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 18}, {\"age_hours\": 4.0, \"respiratory_rate\": 62, \"spo2\": 94, \"crp\": 9}], \"evaluation_question\": \"Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 37 weeks; age 6 hours; setting hospital birth.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"AAP2018-35PLUS-P4-B7\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 4, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"and serial examinations of at-risk newborn infants.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age.\"}, {\"quote_id\": \"E1Q3\", \"text\": \"Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort.\"}, {\"quote_id\": \"E1Q4\", \"text\": \"Two infants who developed EOS in the second cohort were identified as they developed signs of illness.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"AAP2018-35PLUS-SP2\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 7, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Infants born at \\u226535 0/7 weeks\\u2019 gestation can be stratified by the level of risk for EOS.\"}, {\"quote_id\": \"E2Q2\", \"text\": \"Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used;\"}, {\"quote_id\": \"E2Q3\", \"text\": \"o multivariate risk assessment based on both intrapartum risk factors and infant examinations.\"}, {\"quote_id\": \"E2Q4\", \"text\": \"The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach;\"}, {\"quote_id\": \"E2Q5\", \"text\": \"and o serial physical examination to detect the presence of clinical signs of illness after birth.\"}, {\"quote_id\": \"E2Q6\", \"text\": \"This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"AAP2018-35PLUS-P4-B9\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 4, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"The primary advantage of this approach is a significant reduction in the rate of antibiotic use.\"}, {\"quote_id\": \"E3Q2\", \"text\": \"Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk.\"}, {\"quote_id\": \"E3Q3\", \"text\": \"Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS.\"}, {\"quote_id\": \"E3Q4\", \"text\": \"The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition.\"}, {\"quote_id\": \"E3Q5\", \"text\": \"Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration.\"}, {\"quote_id\": \"E3Q6\", \"text\": \"Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care.\"}, {\"quote_id\": \"E3Q7\", \"text\": \"Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop\"}]}, {\"id\": \"E4\", \"chunk_id\": \"AAP2018-35PLUS-P3-B7\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 3, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"Three approaches currently exist for the use of risk factors to identify infants who are at increased risk of EOS, as detailed in the following sections.\"}, {\"quote_id\": \"E4Q2\", \"text\": \"Each approach has merits and limitations, and each is a reasonable approach to risk assessment among infants who are born at \\u226535 weeks\\u2019 gestation.\"}, {\"quote_id\": \"E4Q3\", \"text\": \"No strategy can be used to immediately identify all infants who will develop EOS or avoid the treatment of a substantial number of infants who are uninfected.\"}, {\"quote_id\": \"E4Q4\", \"text\": \"Therefore, each strategy must include measures to monitor infants who are not initially identified and to minimize the duration of antibiotic administration to infants who are uninfected.\"}, {\"quote_id\": \"E4Q5\", \"text\": \"Those at birth centers should develop institutional approaches that are best suited to their local resources and structures.\"}, {\"quote_id\": \"E4Q6\", \"text\": \"Optimally, the effect of the chosen approach should be measured to identify low-frequency adverse events and to affirm efficacy.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "monitoring_plan",
+            "text": "Serial physical examinations every 4\u20136\u202fhours should be performed to detect evolving signs of illness such as increasing respiratory rate and decreasing oxygen saturation.",
+            "support": [
+              {
+                "quote_id": "E2Q5"
+              },
+              {
+                "quote_id": "E3Q4"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "An infant with a rising respiratory rate and falling SpO\u2082 is at increased risk for early\u2011onset sepsis and warrants prompt evaluation.",
+            "support": [
+              {
+                "quote_id": "E1Q4"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "escalation_criteria",
+            "text": "If serial exams reveal progressive tachypnea or hypoxia, consider immediate laboratory testing and empiric antibiotic therapy.",
+            "support": [
+              {
+                "quote_id": "E1Q4"
+              },
+              {
+                "quote_id": "E3Q5"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "recommended_actions",
+            "text": "Initiate a sepsis work\u2011up, including blood cultures, and start empiric antibiotics per institutional protocol while awaiting results.",
+            "support": [
+              {
+                "quote_id": "E1Q3"
+              },
+              {
+                "quote_id": "E3Q5"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "monitoring_plan",
+            "text": "Continue monitoring vital signs and clinical status every 2\u20134\u202fhours until the infant stabilizes or sepsis is ruled out.",
+            "support": [
+              {
+                "quote_id": "E2Q5"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "follow_up",
+            "text": "After resolution of symptoms and negative cultures, discontinue antibiotics and document the episode in the infant\u2019s chart for quality improvement.",
+            "support": [
+              {
+                "quote_id": "E3Q5"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 23.989193200002774
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "87d76191a94bd15222c39e8c41831cfb2e55915dae262ed3b86a9439ecb5a0fe",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 6, \"gestational_age_weeks\": 37, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 76, \"spo2\": 89, \"crp\": 3, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 2.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 18}, {\"age_hours\": 4.0, \"respiratory_rate\": 62, \"spo2\": 94, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.\"}, {\"id\": \"E2\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"Infants born at \\u226535 0/7 weeks\\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.\"}, {\"id\": \"E3\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"The primary advantage of this approach is a significant reduction in the rate of antibiotic use. Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk. Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS. The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition. Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration. Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care. Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop\"}, {\"id\": \"E4\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"Three approaches currently exist for the use of risk factors to identify infants who are at increased risk of EOS, as detailed in the following sections. Each approach has merits and limitations, and each is a reasonable approach to risk assessment among infants who are born at \\u226535 weeks\\u2019 gestation. No strategy can be used to immediately identify all infants who will develop EOS or avoid the treatment of a substantial number of infants who are uninfected. Therefore, each strategy must include measures to monitor infants who are not initially identified and to minimize the duration of antibiotic administration to infants who are uninfected. Those at birth centers should develop institutional approaches that are best suited to their local resources and structures. Optimally, the effect of the chosen approach should be measured to identify low-frequency adverse events and to affirm efficacy.\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"monitoring_plan\", \"text\": \"Serial physical examinations every 4\\u20136\\u202fhours should be performed to detect evolving signs of illness such as increasing respiratory rate and decreasing oxygen saturation.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"An infant with a rising respiratory rate and falling SpO\\u2082 is at increased risk for early\\u2011onset sepsis and warrants prompt evaluation.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"escalation_criteria\", \"text\": \"If serial exams reveal progressive tachypnea or hypoxia, consider immediate laboratory testing and empiric antibiotic therapy.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C4\", \"section\": \"recommended_actions\", \"text\": \"Initiate a sepsis work\\u2011up, including blood cultures, and start empiric antibiotics per institutional protocol while awaiting results.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C5\", \"section\": \"monitoring_plan\", \"text\": \"Continue monitoring vital signs and clinical status every 2\\u20134\\u202fhours until the infant stabilizes or sepsis is ruled out.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C6\", \"section\": \"follow_up\", \"text\": \"After resolution of symptoms and negative cultures, discontinue antibiotics and document the episode in the infant\\u2019s chart for quality improvement.\", \"support\": [{\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "reasons": [
+          "C2 not directly supported by evidence; E1 mentions signs of illness but not specific RR/SpO2 rise and fall as risk factor.",
+          "C3 lacks explicit support for immediate labs and empiric antibiotics based on progressive tachypnea/hypoxia; E1 and E3 discuss reduced use but not this escalation.",
+          "C4 not supported; evidence discusses reduced lab use and antibiotics overall, not initiation of workup and empiric therapy.",
+          "C5 contradicts evidence interval; E2 specifies 4-6h, not 2-4h.",
+          "C6 not supported; evidence does not describe discontinuation after resolution or documentation for quality improvement."
+        ]
+      },
+      "seconds": 24.01994580000246
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "87d76191a94bd15222c39e8c41831cfb2e55915dae262ed3b86a9439ecb5a0fe",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 6, \"gestational_age_weeks\": 37, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 76, \"spo2\": 89, \"crp\": 3, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 2.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 18}, {\"age_hours\": 4.0, \"respiratory_rate\": 62, \"spo2\": 94, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.\"}, {\"id\": \"E2\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"Infants born at \\u226535 0/7 weeks\\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.\"}, {\"id\": \"E3\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"The primary advantage of this approach is a significant reduction in the rate of antibiotic use. Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk. Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS. The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition. Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration. Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care. Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop\"}, {\"id\": \"E4\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"Three approaches currently exist for the use of risk factors to identify infants who are at increased risk of EOS, as detailed in the following sections. Each approach has merits and limitations, and each is a reasonable approach to risk assessment among infants who are born at \\u226535 weeks\\u2019 gestation. No strategy can be used to immediately identify all infants who will develop EOS or avoid the treatment of a substantial number of infants who are uninfected. Therefore, each strategy must include measures to monitor infants who are not initially identified and to minimize the duration of antibiotic administration to infants who are uninfected. Those at birth centers should develop institutional approaches that are best suited to their local resources and structures. Optimally, the effect of the chosen approach should be measured to identify low-frequency adverse events and to affirm efficacy.\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"monitoring_plan\", \"text\": \"Serial physical examinations every 4\\u20136\\u202fhours should be performed to detect evolving signs of illness such as increasing respiratory rate and decreasing oxygen saturation.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"An infant with a rising respiratory rate and falling SpO\\u2082 is at increased risk for early\\u2011onset sepsis and warrants prompt evaluation.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"escalation_criteria\", \"text\": \"If serial exams reveal progressive tachypnea or hypoxia, consider immediate laboratory testing and empiric antibiotic therapy.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C4\", \"section\": \"recommended_actions\", \"text\": \"Initiate a sepsis work\\u2011up, including blood cultures, and start empiric antibiotics per institutional protocol while awaiting results.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C5\", \"section\": \"monitoring_plan\", \"text\": \"Continue monitoring vital signs and clinical status every 2\\u20134\\u202fhours until the infant stabilizes or sepsis is ruled out.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C6\", \"section\": \"follow_up\", \"text\": \"After resolution of symptoms and negative cultures, discontinue antibiotics and document the episode in the infant\\u2019s chart for quality improvement.\", \"support\": [{\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "reasons": [
+          "C2: evidence does not state that rising RR and falling SpO2 warrants prompt evaluation.",
+          "C3: evidence does not specify immediate lab testing or empiric antibiotics for progressive tachypnea/hypoxia.",
+          "C4: evidence does not mandate initiating sepsis work\u2011up and empiric antibiotics per protocol.",
+          "C5: evidence does not prescribe 2\u20114h monitoring intervals; only 4\u20116h is mentioned.",
+          "C6: evidence does not explicitly state discontinuation after negative cultures or documentation for quality improvement."
+        ]
+      },
+      "seconds": 47.3372832999994
+    }
+  ],
+  "packet": {
+    "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 37 weeks; age 6 hours; setting hospital birth.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "AAP2018-35PLUS-P4-B7",
+        "text": "and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 4
+      },
+      {
+        "id": "E2",
+        "chunk_id": "AAP2018-35PLUS-SP2",
+        "text": "Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 7
+      },
+      {
+        "id": "E3",
+        "chunk_id": "AAP2018-35PLUS-P4-B9",
+        "text": "The primary advantage of this approach is a significant reduction in the rate of antibiotic use. Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk. Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS. The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition. Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration. Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care. Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 4
+      },
+      {
+        "id": "E4",
+        "chunk_id": "AAP2018-35PLUS-P3-B7",
+        "text": "Three approaches currently exist for the use of risk factors to identify infants who are at increased risk of EOS, as detailed in the following sections. Each approach has merits and limitations, and each is a reasonable approach to risk assessment among infants who are born at \u226535 weeks\u2019 gestation. No strategy can be used to immediately identify all infants who will develop EOS or avoid the treatment of a substantial number of infants who are uninfected. Therefore, each strategy must include measures to monitor infants who are not initially identified and to minimize the duration of antibiotic administration to infants who are uninfected. Those at birth centers should develop institutional approaches that are best suited to their local resources and structures. Optimally, the effect of the chosen approach should be measured to identify low-frequency adverse events and to affirm efficacy.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 3
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+      "patient": {
+        "age_hours": 6,
+        "gestational_age_weeks": 37,
+        "care_setting": "hospital_birth",
+        "respiratory_rate": 76,
+        "spo2": 89,
+        "crp": 3,
+        "culture_status": "unknown",
+        "maternal_gbs": "unknown",
+        "red_flags": "not fully documented"
+      },
+      "history": [
+        {
+          "age_hours": 2.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 18
+        },
+        {
+          "age_hours": 4.0,
+          "respiratory_rate": 62,
+          "spo2": 94,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 37 weeks; age 6 hours; setting hospital birth.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "AAP2018-35PLUS-P4-B7",
+          "text": "and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 4
+        },
+        {
+          "id": "E2",
+          "chunk_id": "AAP2018-35PLUS-SP2",
+          "text": "Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 7
+        },
+        {
+          "id": "E3",
+          "chunk_id": "AAP2018-35PLUS-P4-B9",
+          "text": "The primary advantage of this approach is a significant reduction in the rate of antibiotic use. Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk. Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS. The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition. Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration. Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care. Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 4
+        },
+        {
+          "id": "E4",
+          "chunk_id": "AAP2018-35PLUS-P3-B7",
+          "text": "Three approaches currently exist for the use of risk factors to identify infants who are at increased risk of EOS, as detailed in the following sections. Each approach has merits and limitations, and each is a reasonable approach to risk assessment among infants who are born at \u226535 weeks\u2019 gestation. No strategy can be used to immediately identify all infants who will develop EOS or avoid the treatment of a substantial number of infants who are uninfected. Therefore, each strategy must include measures to monitor infants who are not initially identified and to minimize the duration of antibiotic administration to infants who are uninfected. Those at birth centers should develop institutional approaches that are best suited to their local resources and structures. Optimally, the effect of the chosen approach should be measured to identify low-frequency adverse events and to affirm efficacy.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 3
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "monitoring_plan",
+          "text": "Serial physical examinations every 4\u20136\u202fhours should be performed to detect evolving signs of illness such as increasing respiratory rate and decreasing oxygen saturation.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "and o serial physical examination to detect the presence of clinical signs of illness after birth."
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "An infant with a rising respiratory rate and falling SpO\u2082 is at increased risk for early\u2011onset sepsis and warrants prompt evaluation.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Two infants who developed EOS in the second cohort were identified as they developed signs of illness."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "escalation_criteria",
+          "text": "If serial exams reveal progressive tachypnea or hypoxia, consider immediate laboratory testing and empiric antibiotic therapy.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Two infants who developed EOS in the second cohort were identified as they developed signs of illness."
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "recommended_actions",
+          "text": "Initiate a sepsis work\u2011up, including blood cultures, and start empiric antibiotics per institutional protocol while awaiting results.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort."
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "monitoring_plan",
+          "text": "Continue monitoring vital signs and clinical status every 2\u20134\u202fhours until the infant stabilizes or sepsis is ruled out.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "and o serial physical examination to detect the presence of clinical signs of illness after birth."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "follow_up",
+          "text": "After resolution of symptoms and negative cultures, discontinue antibiotics and document the episode in the infant\u2019s chart for quality improvement.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C2 not directly supported by evidence; E1 mentions signs of illness but not specific RR/SpO2 rise and fall as risk factor.",
+        "C3 lacks explicit support for immediate labs and empiric antibiotics based on progressive tachypnea/hypoxia; E1 and E3 discuss reduced use but not this escalation.",
+        "C4 not supported; evidence discusses reduced lab use and antibiotics overall, not initiation of workup and empiric therapy.",
+        "C5 contradicts evidence interval; E2 specifies 4-6h, not 2-4h.",
+        "C6 not supported; evidence does not describe discontinuation after resolution or documentation for quality improvement."
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C2: evidence does not state that rising RR and falling SpO2 warrants prompt evaluation.",
+        "C3: evidence does not specify immediate lab testing or empiric antibiotics for progressive tachypnea/hypoxia.",
+        "C4: evidence does not mandate initiating sepsis work\u2011up and empiric antibiotics per protocol.",
+        "C5: evidence does not prescribe 2\u20114h monitoring intervals; only 4\u20116h is mentioned.",
+        "C6: evidence does not explicitly state discontinuation after negative cultures or documentation for quality improvement."
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "C2 not directly supported by evidence; E1 mentions signs of illness but not specific RR/SpO2 rise and fall as risk factor.",
+      "C3 lacks explicit support for immediate labs and empiric antibiotics based on progressive tachypnea/hypoxia; E1 and E3 discuss reduced use but not this escalation.",
+      "C4 not supported; evidence discusses reduced lab use and antibiotics overall, not initiation of workup and empiric therapy.",
+      "C5 contradicts evidence interval; E2 specifies 4-6h, not 2-4h.",
+      "C6 not supported; evidence does not describe discontinuation after resolution or documentation for quality improvement.",
+      "C2: evidence does not state that rising RR and falling SpO2 warrants prompt evaluation.",
+      "C3: evidence does not specify immediate lab testing or empiric antibiotics for progressive tachypnea/hypoxia.",
+      "C4: evidence does not mandate initiating sepsis work\u2011up and empiric antibiotics per protocol.",
+      "C5: evidence does not prescribe 2\u20114h monitoring intervals; only 4\u20116h is mentioned.",
+      "C6: evidence does not explicitly state discontinuation after negative cultures or documentation for quality improvement."
+    ],
+    "resolution_log": [],
+    "packet_sha256": "7f40c7731f906a8eee545b61ac157f81649c08ed25c4a80b0180efd0a087ff1b"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

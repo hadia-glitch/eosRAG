@@ -106,6 +106,9 @@ def main(source=SOURCE,output=OUTPUT,*,copy_alias=True,include_architecture=True
                 rows.append([Paragraph(markup(c),styles['table']) for c in cells])
             count=len(rows[0]);width=A4[0]-108
             weights=[1.6]+[1]*(count-1) if count>2 else [1,1.5]
+            headings=[c.strip() for c in block.splitlines()[0].strip().strip('|').split('|')]
+            if headings==['Guideline','Arm','Judged / quality N','Grounding','Fidelity','Completeness','Actionability','Uncertainty','Unsafe claims']:
+                weights=[.85,1.3,.95,.95,.85,1.25,1.15,1.05,.9]
             widths=[width*w/sum(weights) for w in weights]
             t=Table(rows,colWidths=widths,repeatRows=1,hAlign='LEFT')
             t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#E7EFF7')),('VALIGN',(0,0),(-1,-1),'TOP'),
@@ -115,8 +118,8 @@ def main(source=SOURCE,output=OUTPUT,*,copy_alias=True,include_architecture=True
                                    ('TOPPADDING',(0,0),(-1,-1),6),('BOTTOMPADDING',(0,0),(-1,-1),6)]))
             if len(rows)<=10:
                 prefix=[]
-                if story and isinstance(story[-1],Paragraph) and story[-1].style.name in {'h2','h3','caption'}:
-                    prefix=[story.pop()]
+                while story and isinstance(story[-1],Paragraph) and story[-1].style.name in {'h2','h3','caption'}:
+                    prefix.insert(0,story.pop())
                 story.append(KeepTogether([*prefix,t,Spacer(1,8)]))
             else:
                 story.extend([t,Spacer(1,8)])

@@ -8,3 +8,25 @@ backend/ml/deployed/** -text -whitespace
 test/fixtures/** -text -whitespace
 data/** -text -whitespace
 output/** -text -whitespace
+
+backend/scripts/evaluate_generation.py -text -whitespace
+
+backend/rag/verification_graph.py -text -whitespace
+
+backend/rag/knowledge_graph.py -text -whitespace
+
+backend/services/groq_client.py -text -whitespace
+
+backend/scripts/evaluation_transport.py -text -whitespace
+
+backend/scripts/evaluate_expanded.py -text -whitespace
+
+backend/scripts/summarize_expanded.py -text -whitespace
+
+backend/scripts/prepare_three_guideline_benchmark.py -text -whitespace
+
+backend/scripts/check_expanded_integrity.py -text -whitespace
+
+scripts/update_expanded_paper.py -text -whitespace
+
+scripts/render_paper.py -text -whitespace

@@ -1,0 +1,19 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 5,
+    "patient_fidelity": 4,
+    "completeness": 4,
+    "actionability": 5,
+    "uncertainty": 5,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Candidate accurately reflects guideline statements on 36\u201148\u202fh discontinuation and empirical therapy justification.",
+      "Matches patient data (sterile culture at 36\u202fh, age 48\u202fh, persistent illness) though does not repeat exact vitals.",
+      "Includes key actions: consider stopping antibiotics, monitor, reassess if new signs, no lumbar puncture needed, parent communication.",
+      "Provides clear, actionable recommendations without overreaching or contradictory advice."
+    ]
+  },
+  "reason": null
+}

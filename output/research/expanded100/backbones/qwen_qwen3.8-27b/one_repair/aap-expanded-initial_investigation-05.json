@@ -1,0 +1,420 @@
+{
+  "id": "aap-expanded-initial_investigation-05",
+  "family": "initial_investigation",
+  "model": "qwen/qwen3.8-27b",
+  "verifier_model": "qwen/qwen3.8-27b",
+  "seconds": 0.1825167999995756,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "401cc0d38a30a3f7e1aa2e4f1149af7e5e2a97dfd9599672cfbd55720eeed263",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 6, \"gestational_age_weeks\": 39, \"care_setting\": \"neonatal_unit\", \"respiratory_rate\": 46, \"spo2\": null, \"crp\": 3, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 2.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 18}, {\"age_hours\": 4.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 39 weeks; age 6 hours; setting neonatal unit.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"AAP2018-35PLUS-P1-B3\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 1, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"The incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"However, EOS remains a serious and potentially fatal illness.\"}, {\"quote_id\": \"E1Q3\", \"text\": \"Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions.\"}, {\"quote_id\": \"E1Q4\", \"text\": \"Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy.\"}, {\"quote_id\": \"E1Q5\", \"text\": \"The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth.\"}, {\"quote_id\": \"E1Q6\", \"text\": \"Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis\"}]}, {\"id\": \"E2\", \"chunk_id\": \"AAP2018-35PLUS-SP2\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 7, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Infants born at \\u226535 0/7 weeks\\u2019 gestation can be stratified by the level of risk for EOS.\"}, {\"quote_id\": \"E2Q2\", \"text\": \"Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used;\"}, {\"quote_id\": \"E2Q3\", \"text\": \"o multivariate risk assessment based on both intrapartum risk factors and infant examinations.\"}, {\"quote_id\": \"E2Q4\", \"text\": \"The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach;\"}, {\"quote_id\": \"E2Q5\", \"text\": \"and o serial physical examination to detect the presence of clinical signs of illness after birth.\"}, {\"quote_id\": \"E2Q6\", \"text\": \"This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"AAP2018-35PLUS-P3-B10\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 3, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"newborn infant who is ill appearing;\"}, {\"quote_id\": \"E3Q2\", \"text\": \"(2) a mother with a clinical diagnosis of chorioamnionitis;\"}, {\"quote_id\": \"E3Q3\", \"text\": \"(3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\\u2019 gestation;\"}, {\"quote_id\": \"E3Q4\", \"text\": \"or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors.\"}, {\"quote_id\": \"E3Q5\", \"text\": \"Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \\u226548 hours for category 4.\"}]}, {\"id\": \"E4\", \"chunk_id\": \"AAP2018-35PLUS-P4-B7\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 4, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"and serial examinations of at-risk newborn infants.\"}, {\"quote_id\": \"E4Q2\", \"text\": \"Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age.\"}, {\"quote_id\": \"E4Q3\", \"text\": \"Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort.\"}, {\"quote_id\": \"E4Q4\", \"text\": \"Two infants who developed EOS in the second cohort were identified as they developed signs of illness.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "investigations",
+            "text": "For a 39-week infant at 6 hours of age, laboratory tests alone are insufficient to guide management decisions for suspected early-onset sepsis due to limited sensitivity and specificity. Diagnostic evaluation must therefore integrate maternal and infant clinical characteristics to identify risk and guide the administration of empirical antibiotic therapy.",
+            "support": [
+              {
+                "quote_id": "E1Q3"
+              },
+              {
+                "quote_id": "E1Q4"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "Risk stratification for infants born at \u226535 0/7 weeks' gestation can be achieved through categorical algorithms using intrapartum risk factor thresholds, multivariate risk assessment incorporating infant examinations, or serial physical examination to detect clinical signs of illness. The predictive value of laboratory tests and the risk/benefit balance of antibiotic exposure vary significantly with gestational age.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              },
+              {
+                "quote_id": "E2Q2"
+              },
+              {
+                "quote_id": "E2Q3"
+              },
+              {
+                "quote_id": "E1Q5"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "recommended_actions",
+            "text": "In categorical risk algorithms, laboratory testing and empirical antibiotic therapy are recommended for infants who are ill-appearing or whose mothers have a clinical diagnosis of chorioamnionitis. For mothers colonized with GBS who received inadequate intrapartum antimicrobial therapy (IAP) with additional risk factors (ROM >18 hours or birth <37 weeks), laboratory testing is recommended, while those without additional risk factors require observation for \u226548 hours.",
+            "support": [
+              {
+                "quote_id": "E3Q1"
+              },
+              {
+                "quote_id": "E3Q2"
+              },
+              {
+                "quote_id": "E3Q3"
+              },
+              {
+                "quote_id": "E3Q5"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "monitoring_plan",
+            "text": "Serial physical examinations are a key component of monitoring at-risk newborn infants. Evidence from a cohort of term infants managed with serial physical examinations every 4 to 6 hours through 48 hours of age demonstrated significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotics compared to categorical approaches, while infants who developed EOS were identified as they developed signs of illness.",
+            "support": [
+              {
+                "quote_id": "E4Q1"
+              },
+              {
+                "quote_id": "E4Q2"
+              },
+              {
+                "quote_id": "E4Q3"
+              },
+              {
+                "quote_id": "E4Q4"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "risk_analysis",
+            "text": "Although the incidence of early-onset sepsis has declined substantially over the last two decades due to evidence-based intrapartum antimicrobial therapy, EOS remains a serious and potentially fatal illness. This underscores the importance of appropriate initial diagnostic investigations and risk assessment in the neonatal unit setting.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              },
+              {
+                "quote_id": "E1Q2"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 85.27461369999946,
+      "replayed": true
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "52a71fe809ff4d9e3e4c7170e570682030339d1c5d5557240635d3fb4653ef6d",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 6, \"gestational_age_weeks\": 39, \"care_setting\": \"neonatal_unit\", \"respiratory_rate\": 46, \"spo2\": null, \"crp\": 3, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 2.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 18}, {\"age_hours\": 4.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"The incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy. However, EOS remains a serious and potentially fatal illness. Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions. Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy. The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth. Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis\"}, {\"id\": \"E2\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"Infants born at \\u226535 0/7 weeks\\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.\"}, {\"id\": \"E3\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"newborn infant who is ill appearing; (2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\\u2019 gestation; or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \\u226548 hours for category 4.\"}, {\"id\": \"E4\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"investigations\", \"text\": \"For a 39-week infant at 6 hours of age, laboratory tests alone are insufficient to guide management decisions for suspected early-onset sepsis due to limited sensitivity and specificity. Diagnostic evaluation must therefore integrate maternal and infant clinical characteristics to identify risk and guide the administration of empirical antibiotic therapy.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"Risk stratification for infants born at \\u226535 0/7 weeks' gestation can be achieved through categorical algorithms using intrapartum risk factor thresholds, multivariate risk assessment incorporating infant examinations, or serial physical examination to detect clinical signs of illness. The predictive value of laboratory tests and the risk/benefit balance of antibiotic exposure vary significantly with gestational age.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"In categorical risk algorithms, laboratory testing and empirical antibiotic therapy are recommended for infants who are ill-appearing or whose mothers have a clinical diagnosis of chorioamnionitis. For mothers colonized with GBS who received inadequate intrapartum antimicrobial therapy (IAP) with additional risk factors (ROM >18 hours or birth <37 weeks), laboratory testing is recommended, while those without additional risk factors require observation for \\u226548 hours.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C4\", \"section\": \"monitoring_plan\", \"text\": \"Serial physical examinations are a key component of monitoring at-risk newborn infants. Evidence from a cohort of term infants managed with serial physical examinations every 4 to 6 hours through 48 hours of age demonstrated significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotics compared to categorical approaches, while infants who developed EOS were identified as they developed signs of illness.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C5\", \"section\": \"risk_analysis\", \"text\": \"Although the incidence of early-onset sepsis has declined substantially over the last two decades due to evidence-based intrapartum antimicrobial therapy, EOS remains a serious and potentially fatal illness. This underscores the importance of appropriate initial diagnostic investigations and risk assessment in the neonatal unit setting.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 74.90140070000052,
+      "replayed": true
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "52a71fe809ff4d9e3e4c7170e570682030339d1c5d5557240635d3fb4653ef6d",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 6, \"gestational_age_weeks\": 39, \"care_setting\": \"neonatal_unit\", \"respiratory_rate\": 46, \"spo2\": null, \"crp\": 3, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 2.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 18}, {\"age_hours\": 4.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"The incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy. However, EOS remains a serious and potentially fatal illness. Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions. Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy. The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth. Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis\"}, {\"id\": \"E2\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"Infants born at \\u226535 0/7 weeks\\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.\"}, {\"id\": \"E3\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"newborn infant who is ill appearing; (2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\\u2019 gestation; or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \\u226548 hours for category 4.\"}, {\"id\": \"E4\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"investigations\", \"text\": \"For a 39-week infant at 6 hours of age, laboratory tests alone are insufficient to guide management decisions for suspected early-onset sepsis due to limited sensitivity and specificity. Diagnostic evaluation must therefore integrate maternal and infant clinical characteristics to identify risk and guide the administration of empirical antibiotic therapy.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"Risk stratification for infants born at \\u226535 0/7 weeks' gestation can be achieved through categorical algorithms using intrapartum risk factor thresholds, multivariate risk assessment incorporating infant examinations, or serial physical examination to detect clinical signs of illness. The predictive value of laboratory tests and the risk/benefit balance of antibiotic exposure vary significantly with gestational age.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"In categorical risk algorithms, laboratory testing and empirical antibiotic therapy are recommended for infants who are ill-appearing or whose mothers have a clinical diagnosis of chorioamnionitis. For mothers colonized with GBS who received inadequate intrapartum antimicrobial therapy (IAP) with additional risk factors (ROM >18 hours or birth <37 weeks), laboratory testing is recommended, while those without additional risk factors require observation for \\u226548 hours.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C4\", \"section\": \"monitoring_plan\", \"text\": \"Serial physical examinations are a key component of monitoring at-risk newborn infants. Evidence from a cohort of term infants managed with serial physical examinations every 4 to 6 hours through 48 hours of age demonstrated significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotics compared to categorical approaches, while infants who developed EOS were identified as they developed signs of illness.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C5\", \"section\": \"risk_analysis\", \"text\": \"Although the incidence of early-onset sepsis has declined substantially over the last two decades due to evidence-based intrapartum antimicrobial therapy, EOS remains a serious and potentially fatal illness. This underscores the importance of appropriate initial diagnostic investigations and risk assessment in the neonatal unit setting.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 53.201369099995645,
+      "replayed": true
+    }
+  ],
+  "packet": {
+    "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 39,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 39 weeks; age 6 hours; setting neonatal unit.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "AAP2018-35PLUS-P1-B3",
+        "text": "The incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy. However, EOS remains a serious and potentially fatal illness. Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions. Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy. The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth. Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 1
+      },
+      {
+        "id": "E2",
+        "chunk_id": "AAP2018-35PLUS-SP2",
+        "text": "Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 7
+      },
+      {
+        "id": "E3",
+        "chunk_id": "AAP2018-35PLUS-P3-B10",
+        "text": "newborn infant who is ill appearing; (2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation; or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 3
+      },
+      {
+        "id": "E4",
+        "chunk_id": "AAP2018-35PLUS-P4-B7",
+        "text": "and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 4
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+      "patient": {
+        "age_hours": 6,
+        "gestational_age_weeks": 39,
+        "care_setting": "neonatal_unit",
+        "respiratory_rate": 46,
+        "spo2": null,
+        "crp": 3,
+        "culture_status": "unknown",
+        "maternal_gbs": "unknown",
+        "red_flags": "not fully documented"
+      },
+      "history": [
+        {
+          "age_hours": 2.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 18
+        },
+        {
+          "age_hours": 4.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 39 weeks; age 6 hours; setting neonatal unit.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "AAP2018-35PLUS-P1-B3",
+          "text": "The incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy. However, EOS remains a serious and potentially fatal illness. Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions. Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy. The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth. Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 1
+        },
+        {
+          "id": "E2",
+          "chunk_id": "AAP2018-35PLUS-SP2",
+          "text": "Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 7
+        },
+        {
+          "id": "E3",
+          "chunk_id": "AAP2018-35PLUS-P3-B10",
+          "text": "newborn infant who is ill appearing; (2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation; or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 3
+        },
+        {
+          "id": "E4",
+          "chunk_id": "AAP2018-35PLUS-P4-B7",
+          "text": "and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 4
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "investigations",
+          "text": "For a 39-week infant at 6 hours of age, laboratory tests alone are insufficient to guide management decisions for suspected early-onset sepsis due to limited sensitivity and specificity. Diagnostic evaluation must therefore integrate maternal and infant clinical characteristics to identify risk and guide the administration of empirical antibiotic therapy.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "Risk stratification for infants born at \u226535 0/7 weeks' gestation can be achieved through categorical algorithms using intrapartum risk factor thresholds, multivariate risk assessment incorporating infant examinations, or serial physical examination to detect clinical signs of illness. The predictive value of laboratory tests and the risk/benefit balance of antibiotic exposure vary significantly with gestational age.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS."
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used;"
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "o multivariate risk assessment based on both intrapartum risk factors and infant examinations."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "recommended_actions",
+          "text": "In categorical risk algorithms, laboratory testing and empirical antibiotic therapy are recommended for infants who are ill-appearing or whose mothers have a clinical diagnosis of chorioamnionitis. For mothers colonized with GBS who received inadequate intrapartum antimicrobial therapy (IAP) with additional risk factors (ROM >18 hours or birth <37 weeks), laboratory testing is recommended, while those without additional risk factors require observation for \u226548 hours.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "newborn infant who is ill appearing;"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "(2) a mother with a clinical diagnosis of chorioamnionitis;"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "(3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation;"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "monitoring_plan",
+          "text": "Serial physical examinations are a key component of monitoring at-risk newborn infants. Evidence from a cohort of term infants managed with serial physical examinations every 4 to 6 hours through 48 hours of age demonstrated significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotics compared to categorical approaches, while infants who developed EOS were identified as they developed signs of illness.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "and serial examinations of at-risk newborn infants."
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age."
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort."
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "Two infants who developed EOS in the second cohort were identified as they developed signs of illness."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "risk_analysis",
+          "text": "Although the incidence of early-onset sepsis has declined substantially over the last two decades due to evidence-based intrapartum antimicrobial therapy, EOS remains a serious and potentially fatal illness. This underscores the importance of appropriate initial diagnostic investigations and risk assessment in the neonatal unit setting.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "The incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "However, EOS remains a serious and potentially fatal illness."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "reasons": []
+    },
+    "safety_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "reasons": []
+    },
+    "status": "supported_for_review",
+    "errors": [],
+    "resolution_log": [],
+    "packet_sha256": "7a1e15d1ed70810160e3fbc7f1a8bf58525fb7a809342e89b783f4f7e438f008"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 1,
+    "budget_seconds": 0.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

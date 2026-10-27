@@ -1,0 +1,194 @@
+{
+  "n": 100,
+  "generated": 94,
+  "released": 8,
+  "planned_n": 100,
+  "quality_population": "Completed provider transport only; model schema and semantic failures retained",
+  "metrics_config": {
+    "bleu": "sacreBLEU corpus BLEU-4 /100, 13a, exp smoothing",
+    "meteor": "NLTK WordPunct lowercased, Porter+WordNet",
+    "rouge": "rouge-score stemmed F1",
+    "bert": "distilbert-base-uncased layer5 no IDF no baseline rescaling"
+  },
+  "latency_seconds": {
+    "mean_full_pipeline": 41.41683957700001,
+    "mean_generation_only": 14.003750785000175
+  },
+  "bert_truncated_case_pairs": 0,
+  "bert_hash": "distilbert-base-uncased_L5_no-idf_version=0.3.12(hug_trans=5.12.1)",
+  "secondary_bert_hash": "roberta-large_L17_no-idf_version=0.3.12(hug_trans=5.12.1)",
+  "package_versions": {
+    "torch": "2.12.1",
+    "transformers": "5.12.1",
+    "bert-score": "0.3.13",
+    "nltk": "3.9.4",
+    "sacrebleu": "2.6.0",
+    "rouge-score": "0.1.2"
+  },
+  "arms": {
+    "without_verification": {
+      "denominator": 100,
+      "coverage": 0.94,
+      "metrics": {
+        "rouge1": 0.27073710804529627,
+        "rouge2": 0.05610257697369983,
+        "rougeL": 0.1482642917295999,
+        "meteor": 0.24778124625477305,
+        "sentence_bleu4": 0.018536115615172714,
+        "bert_precision": 0.7180308085680008,
+        "bert_recall": 0.7774593728780747,
+        "bert_f1": 0.7462548059225083,
+        "roberta_f1": 0.794806809425354,
+        "corpus_bleu4": 0.01829274597040857
+      },
+      "judge_n": 94,
+      "judge_means": {
+        "grounding": 4.212765957446808,
+        "patient_fidelity": 4.202127659574468,
+        "completeness": 3.9468085106382977,
+        "actionability": 4.212765957446808,
+        "uncertainty": 4.180851063829787
+      },
+      "judge_unsafe_claims": 23,
+      "emitted": 94,
+      "coverage_denominator": 100
+    },
+    "with_verification_all_cases": {
+      "denominator": 100,
+      "coverage": 0.08,
+      "metrics": {
+        "rouge1": 0.029319748599968935,
+        "rouge2": 0.008695133634682887,
+        "rougeL": 0.017829306868067732,
+        "meteor": 0.01853110003790925,
+        "sentence_bleu4": 0.0024148713569816303,
+        "bert_precision": 0.06561330199241638,
+        "bert_recall": 0.06489086031913757,
+        "bert_f1": 0.06522101044654846,
+        "roberta_f1": 0.06933130085468292,
+        "corpus_bleu4": 4.222645716646137e-08
+      },
+      "judge_n": 8,
+      "judge_means": {
+        "grounding": 4.875,
+        "patient_fidelity": 4.25,
+        "completeness": 3.875,
+        "actionability": 3.625,
+        "uncertainty": 4.5
+      },
+      "judge_unsafe_claims": 0,
+      "emitted": 8,
+      "coverage_denominator": 100
+    },
+    "with_verification_released_only": {
+      "denominator": 8,
+      "coverage": 0.08,
+      "metrics": {
+        "rouge1": 0.3664968574996117,
+        "rouge2": 0.10868917043353608,
+        "rougeL": 0.2228663358508467,
+        "meteor": 0.23163875047386562,
+        "sentence_bleu4": 0.030185891962270384,
+        "bert_precision": 0.8201662749052048,
+        "bert_recall": 0.8111357539892197,
+        "bert_f1": 0.8152626305818558,
+        "roberta_f1": 0.8666412606835365,
+        "corpus_bleu4": 0.03635913592580571
+      },
+      "judge_n": 8,
+      "judge_means": {
+        "grounding": 4.875,
+        "patient_fidelity": 4.25,
+        "completeness": 3.875,
+        "actionability": 3.625,
+        "uncertainty": 4.5
+      },
+      "judge_unsafe_claims": 0,
+      "emitted": 8,
+      "coverage_denominator": 100
+    },
+    "without_verification_generated_only": {
+      "denominator": 94,
+      "coverage": 0.94,
+      "metrics": {
+        "rouge1": 0.28801820004818757,
+        "rouge2": 0.059683592525212575,
+        "rougeL": 0.1577279699251063,
+        "meteor": 0.26359707048380104,
+        "sentence_bleu4": 0.0197192719310348,
+        "bert_precision": 0.7638625623063838,
+        "bert_recall": 0.8270844392319943,
+        "bert_f1": 0.7938880914069236,
+        "roberta_f1": 0.8455391589631426,
+        "corpus_bleu4": 0.01829274597040857
+      },
+      "judge_n": 94,
+      "judge_means": {
+        "grounding": 4.212765957446808,
+        "patient_fidelity": 4.202127659574468,
+        "completeness": 3.9468085106382977,
+        "actionability": 4.212765957446808,
+        "uncertainty": 4.180851063829787
+      },
+      "judge_unsafe_claims": 23,
+      "emitted": 94,
+      "coverage_denominator": 100
+    }
+  },
+  "paired_all_case_bert_f1_delta": {
+    "mean": -0.6810337954759598,
+    "bootstrap_95ci": [
+      -0.7343408283889293,
+      -0.6240063235014679
+    ],
+    "resamples": 2000,
+    "family_cluster_bootstrap_95ci": [
+      -0.7457886659631542,
+      -0.6179351812849442
+    ]
+  },
+  "fault_injection": {
+    "n": 36,
+    "unverified_released": 36,
+    "verified_released": 0,
+    "by_family": {
+      "false_normal": {
+        "n": 9,
+        "withheld": 9,
+        "structural_rejection": 0,
+        "semantic_rejection": 8,
+        "unavailable_or_invalid": 1,
+        "emitted": 0
+      },
+      "invented_dose": {
+        "n": 9,
+        "withheld": 9,
+        "structural_rejection": 9,
+        "semantic_rejection": 0,
+        "unavailable_or_invalid": 0,
+        "emitted": 0
+      },
+      "missing_conditions": {
+        "n": 9,
+        "withheld": 9,
+        "structural_rejection": 0,
+        "semantic_rejection": 9,
+        "unavailable_or_invalid": 0,
+        "emitted": 0
+      },
+      "negation": {
+        "n": 9,
+        "withheld": 9,
+        "structural_rejection": 0,
+        "semantic_rejection": 9,
+        "unavailable_or_invalid": 0,
+        "emitted": 0
+      }
+    }
+  },
+  "completed_snapshot_n": 100,
+  "pending_n": 0,
+  "analysis_status": "complete_primary",
+  "publication_tables_file": "tables_summary.json",
+  "note": "Pooled legacy diagnostics are preserved for replay only. Source-stratified CSV tables are authoritative; conditional coverage is relative to the quality population."
+}

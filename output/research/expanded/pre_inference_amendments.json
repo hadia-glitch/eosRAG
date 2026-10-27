@@ -1,0 +1,6 @@
+{
+  "reason": "Corrected backbone identifier against frozen historical protocol before any inference",
+  "old": "qwen/qwen3-32b",
+  "correct": "qwen/qwen3.8-27b",
+  "inference_started": false
+}

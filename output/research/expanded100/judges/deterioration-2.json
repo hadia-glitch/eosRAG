@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 3,
+    "patient_fidelity": 4,
+    "completeness": 4,
+    "actionability": 3,
+    "uncertainty": 3,
+    "unsafe_claim_count": 1,
+    "unsafe_claim_reasons": [
+      "Hypoxia is listed as a non\u2011red\u2011flag clinical indicator in the guideline, but the candidate treats it as a red\u2011flag and recommends urgent antibiotics based on that misclassification."
+    ]
+  },
+  "reason": null
+}

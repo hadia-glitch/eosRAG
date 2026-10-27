@@ -1,0 +1,352 @@
+{
+  "id": "aap-expanded-crp_alone-04",
+  "family": "crp_alone",
+  "model": "openai/gpt-oss-120b",
+  "verifier_model": "openai/gpt-oss-120b",
+  "seconds": 6.369970599998851,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "89ad3c78d32c878068bf13daae162de7d7c046df1f8ecad7f4c49d9e4e2e2d35",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 41, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": null, \"spo2\": 97, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 41 weeks; age 36 hours; setting hospital birth.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"AAP2018-35PLUS-P6-B2\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 6, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Researchers in multiple studies address other markers of inflammation, including C-reactive protein (CRP), procalcitonin, interleukins (ILs) (soluble IL-2 receptor, IL-6, and IL-8), tumor necrosis factor \\u03b1, and CD64.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"Both CRP and procalcitonin concentrations increase in newborn infants in response to a variety of inflammatory stimuli, including infection, asphyxia, and pneumothorax.\"}, {\"quote_id\": \"E1Q3\", \"text\": \"Procalcitonin concentrations also increase naturally over the first 24 to 36 hours after birth.\"}, {\"quote_id\": \"E1Q4\", \"text\": \"Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions.\"}, {\"quote_id\": \"E1Q5\", \"text\": \"Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection.\"}, {\"quote_id\": \"E1Q6\", \"text\": \"Additionally, at this time, a serial evaluation of inflammatory markers should not be used to assess well-appearing term newborn infants for risk of EOS.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"AAP2018-35PLUS-P1-B3\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 1, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"The incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy.\"}, {\"quote_id\": \"E2Q2\", \"text\": \"However, EOS remains a serious and potentially fatal illness.\"}, {\"quote_id\": \"E2Q3\", \"text\": \"Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions.\"}, {\"quote_id\": \"E2Q4\", \"text\": \"Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy.\"}, {\"quote_id\": \"E2Q5\", \"text\": \"The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth.\"}, {\"quote_id\": \"E2Q6\", \"text\": \"Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis\"}]}, {\"id\": \"E3\", \"chunk_id\": \"AAP2018-35PLUS-P1-B5\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 1, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"Early-onset sepsis (EOS) is a serious and potentially fatal complication of birth.\"}, {\"quote_id\": \"E3Q2\", \"text\": \"Assessing term and late-preterm newborn infants for risk of EOS is one of the most common clinical tasks conducted by pediatric providers.1 As the use of preventive intrapartum antibiotic therapies has increased and the incidence of EOS has decreased, physicians are challenged to identify those newborn infants who are at the highest risk of infection.\"}, {\"quote_id\": \"E3Q3\", \"text\": \"Pediatric providers are particularly concerned about initially well- appearing infants with identified risk factors for EOS for fear of missing the opportunity to intervene before infants become critically ill.\"}, {\"quote_id\": \"E3Q4\", \"text\": \"The need to (1) assess a newborn infant\\u2019s risk of EOS, (2) determine which steps should be taken at particular levels of risk (including the administration of empirical, broad-spectrum antibiotic therapies), and (3) decide when to discontinue empirical antibiotic therapies are critically important decisions that are made daily by physicians caring for neonates.\"}]}, {\"id\": \"E4\", \"chunk_id\": \"AAP2018-35PLUS-P2-B2\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 2, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"EOS is defined as a blood or cerebrospinal fluid (CSF) culture obtained within 72 hours after birth growing a pathogenic bacterial species.\"}, {\"quote_id\": \"E4Q2\", \"text\": \"This microbiologic definition stands in contrast to the functional definitions of sepsis that are used in pediatric and adult patients, for whom the definition is used to specify a series of time-sensitive interventions.\"}, {\"quote_id\": \"E4Q3\", \"text\": \"Before the first national guidelines were published in which researchers recommended intrapartum antibiotic prophylaxis (IAP) to prevent perinatal group B Streptococcus (GBS) disease, the overall incidence of EOS in the United States was 3 to 4 cases per 1000 live births.\"}, {\"quote_id\": \"E4Q4\", \"text\": \"Currently, the incidence of EOS among infants who are born at term has declined to approximately 0.5 in 1000 live births.\"}, {\"quote_id\": \"E4Q5\", \"text\": \"The EOS incidence is higher (approximately 1 in 1000 live births) among late- preterm infants but still an order of magnitude lower than the incidence among preterm, very low birth weight infants.\"}, {\"quote_id\": \"E4Q6\", \"text\": \"Culture-confirmed meningitis among term infants is even more rare, with an incidence of 0.01 to 0.02 cases per 1000 live births.Morbidity and mortality from EOS remain substantial;\"}, {\"quote_id\": \"E4Q7\", \"text\": \"approximately 60% of term infants with EOS require neonatal intensive care for respiratory distress and/or blood pressure support.\"}, {\"quote_id\": \"E4Q8\", \"text\": \"Mortality is approximately 2% to 3% among infants with EOS born at \\u226535 weeks\\u2019 gestation.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "A single CRP value or a decreasing CRP trend cannot be used to rule out early\u2011onset sepsis (EOS) nor to decide to stop antibiotics in a term infant; inflammatory markers lack sufficient sensitivity and specificity when used alone.",
+            "support": [
+              {
+                "quote_id": "E1Q4"
+              },
+              {
+                "quote_id": "E1Q6"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "Consistently normal CRP (and procalcitonin) values over the first 48\u202fhours are associated with a low likelihood of EOS, but they must be interpreted together with clinical assessment and culture results before any change in therapy.",
+            "support": [
+              {
+                "quote_id": "E1Q5"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "recommended_actions",
+            "text": "Management should continue to rely on maternal and infant clinical risk factors, not on laboratory tests alone, to determine the need for empirical antibiotics in well\u2011appearing term newborns.",
+            "support": [
+              {
+                "quote_id": "E2Q3"
+              },
+              {
+                "quote_id": "E2Q4"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "monitoring_plan",
+            "text": "For this 36\u2011hour\u2011old, 41\u2011week infant with an initial CRP of 6\u202fmg/L and subsequent values of 21\u202fmg/L (12\u202fh) and 9\u202fmg/L (24\u202fh), continue clinical monitoring (vital signs, perfusion) and obtain repeat cultures; consider a second CRP at 48\u202fh if the infant remains well\u2011appearing.",
+            "support": [
+              {
+                "quote_id": "E1Q2"
+              },
+              {
+                "quote_id": "E4Q1"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "escalation_criteria",
+            "text": "Escalate to full sepsis work\u2011up and maintain antibiotics if the infant develops any new clinical signs (e.g., respiratory distress, temperature instability, hypotension) or if cultures become positive, regardless of CRP trends.",
+            "support": [
+              {
+                "quote_id": "E3Q4"
+              },
+              {
+                "quote_id": "E4Q7"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "parent_communication_notes",
+            "text": "Explain to parents that CRP is only one piece of the assessment; a falling CRP is reassuring but does not alone guarantee the absence of infection, so continued observation and possibly antibiotics are guided by the overall clinical picture.",
+            "support": [
+              {
+                "quote_id": "E1Q4"
+              },
+              {
+                "quote_id": "E1Q5"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 6.287157500000831
+    }
+  ],
+  "packet": {
+    "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 41 weeks; age 36 hours; setting hospital birth.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "AAP2018-35PLUS-P6-B2",
+        "text": "Researchers in multiple studies address other markers of inflammation, including C-reactive protein (CRP), procalcitonin, interleukins (ILs) (soluble IL-2 receptor, IL-6, and IL-8), tumor necrosis factor \u03b1, and CD64. Both CRP and procalcitonin concentrations increase in newborn infants in response to a variety of inflammatory stimuli, including infection, asphyxia, and pneumothorax. Procalcitonin concentrations also increase naturally over the first 24 to 36 hours after birth. Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions. Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection. Additionally, at this time, a serial evaluation of inflammatory markers should not be used to assess well-appearing term newborn infants for risk of EOS.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 6
+      },
+      {
+        "id": "E2",
+        "chunk_id": "AAP2018-35PLUS-P1-B3",
+        "text": "The incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy. However, EOS remains a serious and potentially fatal illness. Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions. Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy. The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth. Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 1
+      },
+      {
+        "id": "E3",
+        "chunk_id": "AAP2018-35PLUS-P1-B5",
+        "text": "Early-onset sepsis (EOS) is a serious and potentially fatal complication of birth. Assessing term and late-preterm newborn infants for risk of EOS is one of the most common clinical tasks conducted by pediatric providers.1 As the use of preventive intrapartum antibiotic therapies has increased and the incidence of EOS has decreased, physicians are challenged to identify those newborn infants who are at the highest risk of infection. Pediatric providers are particularly concerned about initially well- appearing infants with identified risk factors for EOS for fear of missing the opportunity to intervene before infants become critically ill. The need to (1) assess a newborn infant\u2019s risk of EOS, (2) determine which steps should be taken at particular levels of risk (including the administration of empirical, broad-spectrum antibiotic therapies), and (3) decide when to discontinue empirical antibiotic therapies are critically important decisions that are made daily by physicians caring for neonates.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 1
+      },
+      {
+        "id": "E4",
+        "chunk_id": "AAP2018-35PLUS-P2-B2",
+        "text": "EOS is defined as a blood or cerebrospinal fluid (CSF) culture obtained within 72 hours after birth growing a pathogenic bacterial species. This microbiologic definition stands in contrast to the functional definitions of sepsis that are used in pediatric and adult patients, for whom the definition is used to specify a series of time-sensitive interventions. Before the first national guidelines were published in which researchers recommended intrapartum antibiotic prophylaxis (IAP) to prevent perinatal group B Streptococcus (GBS) disease, the overall incidence of EOS in the United States was 3 to 4 cases per 1000 live births. Currently, the incidence of EOS among infants who are born at term has declined to approximately 0.5 in 1000 live births. The EOS incidence is higher (approximately 1 in 1000 live births) among late- preterm infants but still an order of magnitude lower than the incidence among preterm, very low birth weight infants. Culture-confirmed meningitis among term infants is even more rare, with an incidence of 0.01 to 0.02 cases per 1000 live births.Morbidity and mortality from EOS remain substantial; approximately 60% of term infants with EOS require neonatal intensive care for respiratory distress and/or blood pressure support. Mortality is approximately 2% to 3% among infants with EOS born at \u226535 weeks\u2019 gestation.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 2
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+      "patient": {
+        "age_hours": 36,
+        "gestational_age_weeks": 41,
+        "care_setting": "hospital_birth",
+        "respiratory_rate": null,
+        "spo2": 97,
+        "crp": 6,
+        "culture_status": "unknown",
+        "maternal_gbs": "unknown",
+        "red_flags": "not fully documented"
+      },
+      "history": [
+        {
+          "age_hours": 12.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 21
+        },
+        {
+          "age_hours": 24.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 41 weeks; age 36 hours; setting hospital birth.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "AAP2018-35PLUS-P6-B2",
+          "text": "Researchers in multiple studies address other markers of inflammation, including C-reactive protein (CRP), procalcitonin, interleukins (ILs) (soluble IL-2 receptor, IL-6, and IL-8), tumor necrosis factor \u03b1, and CD64. Both CRP and procalcitonin concentrations increase in newborn infants in response to a variety of inflammatory stimuli, including infection, asphyxia, and pneumothorax. Procalcitonin concentrations also increase naturally over the first 24 to 36 hours after birth. Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions. Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection. Additionally, at this time, a serial evaluation of inflammatory markers should not be used to assess well-appearing term newborn infants for risk of EOS.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 6
+        },
+        {
+          "id": "E2",
+          "chunk_id": "AAP2018-35PLUS-P1-B3",
+          "text": "The incidence of neonatal early-onset sepsis (EOS) has declined substantially over the last 2 decades, primarily because of the implementation of evidence-based intrapartum antimicrobial therapy. However, EOS remains a serious and potentially fatal illness. Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions. Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy. The incidence of EOS, the prevalence and implications of established risk factors, the predictive value of commonly used laboratory tests, and the uncertainties in the risk/benefit balance of antibiotic exposures all vary significantly with gestational age at birth. Our purpose in this clinical report is to provide a summary of the current epidemiology of neonatal sepsis",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 1
+        },
+        {
+          "id": "E3",
+          "chunk_id": "AAP2018-35PLUS-P1-B5",
+          "text": "Early-onset sepsis (EOS) is a serious and potentially fatal complication of birth. Assessing term and late-preterm newborn infants for risk of EOS is one of the most common clinical tasks conducted by pediatric providers.1 As the use of preventive intrapartum antibiotic therapies has increased and the incidence of EOS has decreased, physicians are challenged to identify those newborn infants who are at the highest risk of infection. Pediatric providers are particularly concerned about initially well- appearing infants with identified risk factors for EOS for fear of missing the opportunity to intervene before infants become critically ill. The need to (1) assess a newborn infant\u2019s risk of EOS, (2) determine which steps should be taken at particular levels of risk (including the administration of empirical, broad-spectrum antibiotic therapies), and (3) decide when to discontinue empirical antibiotic therapies are critically important decisions that are made daily by physicians caring for neonates.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 1
+        },
+        {
+          "id": "E4",
+          "chunk_id": "AAP2018-35PLUS-P2-B2",
+          "text": "EOS is defined as a blood or cerebrospinal fluid (CSF) culture obtained within 72 hours after birth growing a pathogenic bacterial species. This microbiologic definition stands in contrast to the functional definitions of sepsis that are used in pediatric and adult patients, for whom the definition is used to specify a series of time-sensitive interventions. Before the first national guidelines were published in which researchers recommended intrapartum antibiotic prophylaxis (IAP) to prevent perinatal group B Streptococcus (GBS) disease, the overall incidence of EOS in the United States was 3 to 4 cases per 1000 live births. Currently, the incidence of EOS among infants who are born at term has declined to approximately 0.5 in 1000 live births. The EOS incidence is higher (approximately 1 in 1000 live births) among late- preterm infants but still an order of magnitude lower than the incidence among preterm, very low birth weight infants. Culture-confirmed meningitis among term infants is even more rare, with an incidence of 0.01 to 0.02 cases per 1000 live births.Morbidity and mortality from EOS remain substantial; approximately 60% of term infants with EOS require neonatal intensive care for respiratory distress and/or blood pressure support. Mortality is approximately 2% to 3% among infants with EOS born at \u226535 weeks\u2019 gestation.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 2
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "A single CRP value or a decreasing CRP trend cannot be used to rule out early\u2011onset sepsis (EOS) nor to decide to stop antibiotics in a term infant; inflammatory markers lack sufficient sensitivity and specificity when used alone.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "Additionally, at this time, a serial evaluation of inflammatory markers should not be used to assess well-appearing term newborn infants for risk of EOS."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "Consistently normal CRP (and procalcitonin) values over the first 48\u202fhours are associated with a low likelihood of EOS, but they must be interpreted together with clinical assessment and culture results before any change in therapy.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "recommended_actions",
+          "text": "Management should continue to rely on maternal and infant clinical risk factors, not on laboratory tests alone, to determine the need for empirical antibiotics in well\u2011appearing term newborns.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Laboratory tests alone are neither sensitive nor specific enough to guide EOS management decisions."
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "Maternal and infant clinical characteristics can help identify newborn infants who are at risk and guide the administration of empirical antibiotic therapy."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "monitoring_plan",
+          "text": "For this 36\u2011hour\u2011old, 41\u2011week infant with an initial CRP of 6\u202fmg/L and subsequent values of 21\u202fmg/L (12\u202fh) and 9\u202fmg/L (24\u202fh), continue clinical monitoring (vital signs, perfusion) and obtain repeat cultures; consider a second CRP at 48\u202fh if the infant remains well\u2011appearing.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Both CRP and procalcitonin concentrations increase in newborn infants in response to a variety of inflammatory stimuli, including infection, asphyxia, and pneumothorax."
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "EOS is defined as a blood or cerebrospinal fluid (CSF) culture obtained within 72 hours after birth growing a pathogenic bacterial species."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "escalation_criteria",
+          "text": "Escalate to full sepsis work\u2011up and maintain antibiotics if the infant develops any new clinical signs (e.g., respiratory distress, temperature instability, hypotension) or if cultures become positive, regardless of CRP trends.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "The need to (1) assess a newborn infant\u2019s risk of EOS, (2) determine which steps should be taken at particular levels of risk (including the administration of empirical, broad-spectrum antibiotic therapies), and (3) decide when to discontinue empirical antibiotic therapies are critically important decisions that are made daily by physicians caring for neonates."
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "approximately 60% of term infants with EOS require neonatal intensive care for respiratory distress and/or blood pressure support."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "parent_communication_notes",
+          "text": "Explain to parents that CRP is only one piece of the assessment; a falling CRP is reassuring but does not alone guarantee the absence of infection, so continued observation and possibly antibiotics are guided by the overall clinical picture.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [
+      "C4: numerical medication/fluid dosing is not supported"
+    ],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Draft failed structural/source checks"
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Draft failed structural/source checks"
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "C4: numerical medication/fluid dosing is not supported",
+      "Draft failed structural/source checks",
+      "Draft failed structural/source checks"
+    ],
+    "resolution_log": [],
+    "packet_sha256": "6f83dfdf7c0da99c509a6bf21dcbe61feb62f5df1382f4cd85e7b099ad2a8d46"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 0
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

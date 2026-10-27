@@ -1,0 +1,6 @@
+{
+  "reason": "Plain ValueError in complete_json denotes decoded non-object model content, not provider unavailability. Retain this completed malformed reply as a quality outcome; do not resample it.",
+  "first_observed_case": "who-expanded-initial_investigation-05",
+  "model_reply_retried": false,
+  "retrieval_and_generation_code_changed": false
+}

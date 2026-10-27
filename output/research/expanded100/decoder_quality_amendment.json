@@ -1,0 +1,9 @@
+{
+  "case": "who-expanded-crp_alone-03",
+  "model": "qwen/qwen3.8-27b",
+  "reason": "Completed provider-rejected JSON output retained as a model contract failure.",
+  "model_reply_retried": false,
+  "original_error_envelope": "http_400",
+  "quality_code": "model_json_contract_failure",
+  "legacy_raw_failed_content_available": false
+}

@@ -1,0 +1,4 @@
+guideline,planned_n,quality_n,unverified_released,verified_released,structural_rejection,semantic_rejection,invalid_review,mean,case_low,case_high,family_low,family_high,family_n,resamples,seed
+NICE,12,12,12,0,3,9,0,-1.0,-1.0,-1.0,-1.0,-1.0,4,2000,31
+AAP,12,12,12,0,3,8,1,-1.0,-1.0,-1.0,-1.0,-1.0,4,2000,31
+WHO,12,12,12,0,3,9,0,-1.0,-1.0,-1.0,-1.0,-1.0,4,2000,31

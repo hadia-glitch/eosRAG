@@ -1,0 +1,17 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 3,
+    "patient_fidelity": 3,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 3,
+    "unsafe_claim_count": 2,
+    "unsafe_claim_reasons": [
+      "Classifies tachypnoea as a red\u2011flag indicator, which the guideline lists only as a non\u2011red\u2011flag clinical indicator.",
+      "Recommends performing a lumbar puncture before starting antibiotics, which could delay urgent treatment contrary to the guideline\u2019s emphasis on not waiting for investigations."
+    ]
+  },
+  "reason": null
+}

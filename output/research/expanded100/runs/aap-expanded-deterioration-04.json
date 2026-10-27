@@ -1,0 +1,419 @@
+{
+  "id": "aap-expanded-deterioration-04",
+  "family": "deterioration",
+  "model": "openai/gpt-oss-120b",
+  "verifier_model": "openai/gpt-oss-120b",
+  "seconds": 44.91630079999959,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "a8c260020a22ac6c7c61e8735a86ad2412441464f52561f75bad06164a6d2b76",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 36, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 76, \"spo2\": 89, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 62, \"spo2\": 94, \"crp\": 9}], \"evaluation_question\": \"Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 36 hours; setting hospital birth.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"AAP2018-35PLUS-P4-B7\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 4, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"and serial examinations of at-risk newborn infants.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age.\"}, {\"quote_id\": \"E1Q3\", \"text\": \"Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort.\"}, {\"quote_id\": \"E1Q4\", \"text\": \"Two infants who developed EOS in the second cohort were identified as they developed signs of illness.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"AAP2018-35PLUS-SP2\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 7, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Infants born at \\u226535 0/7 weeks\\u2019 gestation can be stratified by the level of risk for EOS.\"}, {\"quote_id\": \"E2Q2\", \"text\": \"Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used;\"}, {\"quote_id\": \"E2Q3\", \"text\": \"o multivariate risk assessment based on both intrapartum risk factors and infant examinations.\"}, {\"quote_id\": \"E2Q4\", \"text\": \"The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach;\"}, {\"quote_id\": \"E2Q5\", \"text\": \"and o serial physical examination to detect the presence of clinical signs of illness after birth.\"}, {\"quote_id\": \"E2Q6\", \"text\": \"This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"AAP2018-35PLUS-P4-B9\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 4, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"The primary advantage of this approach is a significant reduction in the rate of antibiotic use.\"}, {\"quote_id\": \"E3Q2\", \"text\": \"Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk.\"}, {\"quote_id\": \"E3Q3\", \"text\": \"Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS.\"}, {\"quote_id\": \"E3Q4\", \"text\": \"The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition.\"}, {\"quote_id\": \"E3Q5\", \"text\": \"Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration.\"}, {\"quote_id\": \"E3Q6\", \"text\": \"Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care.\"}, {\"quote_id\": \"E3Q7\", \"text\": \"Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop\"}]}, {\"id\": \"E4\", \"chunk_id\": \"AAP2018-35PLUS-P6-B2\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 6, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"Researchers in multiple studies address other markers of inflammation, including C-reactive protein (CRP), procalcitonin, interleukins (ILs) (soluble IL-2 receptor, IL-6, and IL-8), tumor necrosis factor \\u03b1, and CD64.\"}, {\"quote_id\": \"E4Q2\", \"text\": \"Both CRP and procalcitonin concentrations increase in newborn infants in response to a variety of inflammatory stimuli, including infection, asphyxia, and pneumothorax.\"}, {\"quote_id\": \"E4Q3\", \"text\": \"Procalcitonin concentrations also increase naturally over the first 24 to 36 hours after birth.\"}, {\"quote_id\": \"E4Q4\", \"text\": \"Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions.\"}, {\"quote_id\": \"E4Q5\", \"text\": \"Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection.\"}, {\"quote_id\": \"E4Q6\", \"text\": \"Additionally, at this time, a serial evaluation of inflammatory markers should not be used to assess well-appearing term newborn infants for risk of EOS.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "monitoring_plan",
+            "text": "Continue serial physical examinations every 4\u20116\u202fhours, documenting respiratory rate and oxygen saturation trends, because the guideline recommends serial exams to detect evolving signs of early\u2011onset sepsis.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              },
+              {
+                "quote_id": "E2Q5"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "An increasing respiratory rate (from 46\u202fbpm at 12\u202fh to 76\u202fbpm at 36\u202fh) combined with falling SpO\u2082 (from 98\u202f% to 89\u202f%) constitutes a new clinical sign of illness that warrants escalation of evaluation per the serial\u2011exam approach.",
+            "support": [
+              {
+                "quote_id": "E3Q4"
+              },
+              {
+                "quote_id": "E3Q5"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "investigations",
+            "text": "Obtain a blood culture and a repeat complete blood count with differential now; the guideline advises that infants who develop signs of illness should receive prompt laboratory evaluation.",
+            "support": [
+              {
+                "quote_id": "E1Q4"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "recommended_actions",
+            "text": "Start empiric broad\u2011spectrum antibiotics after cultures are drawn, because the presence of evolving respiratory distress in a term infant is an indication for treatment while awaiting results.",
+            "support": [
+              {
+                "quote_id": "E1Q4"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "monitoring_plan",
+            "text": "Do not rely on a single CRP value to make treatment decisions; serial CRP alone is not sensitive or specific for EOS and should be interpreted only in the clinical context.",
+            "support": [
+              {
+                "quote_id": "E4Q4"
+              },
+              {
+                "quote_id": "E4Q5"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "escalation_criteria",
+            "text": "If respiratory rate exceeds 80\u202fbpm, SpO\u2082 remains <\u202f90\u202f% despite supplemental oxygen, or the infant shows additional signs (e.g., temperature instability, lethargy), escalate to higher\u2011level care (NICU) for advanced respiratory support and further sepsis work\u2011up.",
+            "support": [
+              {
+                "quote_id": "E3Q4"
+              },
+              {
+                "quote_id": "E3Q5"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 9.733667500000593
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "3375a461ad6be938eaef97c28c6fd917d898ea2940dd370fb904184f88efb87c",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 36, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 76, \"spo2\": 89, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 62, \"spo2\": 94, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.\"}, {\"id\": \"E2\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"Infants born at \\u226535 0/7 weeks\\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.\"}, {\"id\": \"E3\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"The primary advantage of this approach is a significant reduction in the rate of antibiotic use. Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk. Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS. The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition. Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration. Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care. Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop\"}, {\"id\": \"E4\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"Researchers in multiple studies address other markers of inflammation, including C-reactive protein (CRP), procalcitonin, interleukins (ILs) (soluble IL-2 receptor, IL-6, and IL-8), tumor necrosis factor \\u03b1, and CD64. Both CRP and procalcitonin concentrations increase in newborn infants in response to a variety of inflammatory stimuli, including infection, asphyxia, and pneumothorax. Procalcitonin concentrations also increase naturally over the first 24 to 36 hours after birth. Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions. Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection. Additionally, at this time, a serial evaluation of inflammatory markers should not be used to assess well-appearing term newborn infants for risk of EOS.\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"monitoring_plan\", \"text\": \"Continue serial physical examinations every 4\\u20116\\u202fhours, documenting respiratory rate and oxygen saturation trends, because the guideline recommends serial exams to detect evolving signs of early\\u2011onset sepsis.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"An increasing respiratory rate (from 46\\u202fbpm at 12\\u202fh to 76\\u202fbpm at 36\\u202fh) combined with falling SpO\\u2082 (from 98\\u202f% to 89\\u202f%) constitutes a new clinical sign of illness that warrants escalation of evaluation per the serial\\u2011exam approach.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C3\", \"section\": \"investigations\", \"text\": \"Obtain a blood culture and a repeat complete blood count with differential now; the guideline advises that infants who develop signs of illness should receive prompt laboratory evaluation.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C4\", \"section\": \"recommended_actions\", \"text\": \"Start empiric broad\\u2011spectrum antibiotics after cultures are drawn, because the presence of evolving respiratory distress in a term infant is an indication for treatment while awaiting results.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C5\", \"section\": \"monitoring_plan\", \"text\": \"Do not rely on a single CRP value to make treatment decisions; serial CRP alone is not sensitive or specific for EOS and should be interpreted only in the clinical context.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"escalation_criteria\", \"text\": \"If respiratory rate exceeds 80\\u202fbpm, SpO\\u2082 remains <\\u202f90\\u202f% despite supplemental oxygen, or the infant shows additional signs (e.g., temperature instability, lethargy), escalate to higher\\u2011level care (NICU) for advanced respiratory support and further sepsis work\\u2011up.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [
+          "C2",
+          "C3",
+          "C4",
+          "C6"
+        ],
+        "reasons": {
+          "C2": "Evidence does not explicitly link the observed respiratory rate and SpO2 changes to a required escalation of evaluation.",
+          "C3": "Guideline passages do not state that new signs mandate immediate blood culture and CBC.",
+          "C4": "Guideline does not provide a direct recommendation to start empiric broad\u2011spectrum antibiotics based solely on evolving respiratory distress.",
+          "C6": "Guideline does not specify the numeric thresholds (RR >80, SpO2 <90) or the exact escalation actions described."
+        }
+      },
+      "seconds": 14.643689599999561
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "3375a461ad6be938eaef97c28c6fd917d898ea2940dd370fb904184f88efb87c",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 36, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 76, \"spo2\": 89, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 62, \"spo2\": 94, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.\"}, {\"id\": \"E2\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"Infants born at \\u226535 0/7 weeks\\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.\"}, {\"id\": \"E3\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"The primary advantage of this approach is a significant reduction in the rate of antibiotic use. Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk. Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS. The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition. Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration. Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care. Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop\"}, {\"id\": \"E4\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"Researchers in multiple studies address other markers of inflammation, including C-reactive protein (CRP), procalcitonin, interleukins (ILs) (soluble IL-2 receptor, IL-6, and IL-8), tumor necrosis factor \\u03b1, and CD64. Both CRP and procalcitonin concentrations increase in newborn infants in response to a variety of inflammatory stimuli, including infection, asphyxia, and pneumothorax. Procalcitonin concentrations also increase naturally over the first 24 to 36 hours after birth. Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions. Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection. Additionally, at this time, a serial evaluation of inflammatory markers should not be used to assess well-appearing term newborn infants for risk of EOS.\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"monitoring_plan\", \"text\": \"Continue serial physical examinations every 4\\u20116\\u202fhours, documenting respiratory rate and oxygen saturation trends, because the guideline recommends serial exams to detect evolving signs of early\\u2011onset sepsis.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"An increasing respiratory rate (from 46\\u202fbpm at 12\\u202fh to 76\\u202fbpm at 36\\u202fh) combined with falling SpO\\u2082 (from 98\\u202f% to 89\\u202f%) constitutes a new clinical sign of illness that warrants escalation of evaluation per the serial\\u2011exam approach.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C3\", \"section\": \"investigations\", \"text\": \"Obtain a blood culture and a repeat complete blood count with differential now; the guideline advises that infants who develop signs of illness should receive prompt laboratory evaluation.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C4\", \"section\": \"recommended_actions\", \"text\": \"Start empiric broad\\u2011spectrum antibiotics after cultures are drawn, because the presence of evolving respiratory distress in a term infant is an indication for treatment while awaiting results.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C5\", \"section\": \"monitoring_plan\", \"text\": \"Do not rely on a single CRP value to make treatment decisions; serial CRP alone is not sensitive or specific for EOS and should be interpreted only in the clinical context.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"escalation_criteria\", \"text\": \"If respiratory rate exceeds 80\\u202fbpm, SpO\\u2082 remains <\\u202f90\\u202f% despite supplemental oxygen, or the infant shows additional signs (e.g., temperature instability, lethargy), escalate to higher\\u2011level care (NICU) for advanced respiratory support and further sepsis work\\u2011up.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [
+          "C3",
+          "C4",
+          "C6"
+        ],
+        "reasons": [
+          "C3: guideline evidence does not state that new signs mandate immediate blood culture and CBC; no citation supporting this specific investigation recommendation.",
+          "C4: guideline evidence does not endorse empiric broad\u2011spectrum antibiotics for evolving respiratory distress; no citation provided for treatment indication.",
+          "C6: guideline evidence does not specify the numeric thresholds (RR>80, SpO2<90%) or detailed escalation criteria; claim adds unsupported specifics."
+        ]
+      },
+      "seconds": 35.11449580000044
+    }
+  ],
+  "packet": {
+    "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 36 hours; setting hospital birth.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "AAP2018-35PLUS-P4-B7",
+        "text": "and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 4
+      },
+      {
+        "id": "E2",
+        "chunk_id": "AAP2018-35PLUS-SP2",
+        "text": "Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 7
+      },
+      {
+        "id": "E3",
+        "chunk_id": "AAP2018-35PLUS-P4-B9",
+        "text": "The primary advantage of this approach is a significant reduction in the rate of antibiotic use. Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk. Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS. The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition. Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration. Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care. Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 4
+      },
+      {
+        "id": "E4",
+        "chunk_id": "AAP2018-35PLUS-P6-B2",
+        "text": "Researchers in multiple studies address other markers of inflammation, including C-reactive protein (CRP), procalcitonin, interleukins (ILs) (soluble IL-2 receptor, IL-6, and IL-8), tumor necrosis factor \u03b1, and CD64. Both CRP and procalcitonin concentrations increase in newborn infants in response to a variety of inflammatory stimuli, including infection, asphyxia, and pneumothorax. Procalcitonin concentrations also increase naturally over the first 24 to 36 hours after birth. Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions. Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection. Additionally, at this time, a serial evaluation of inflammatory markers should not be used to assess well-appearing term newborn infants for risk of EOS.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 6
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+      "patient": {
+        "age_hours": 36,
+        "gestational_age_weeks": 36,
+        "care_setting": "hospital_birth",
+        "respiratory_rate": 76,
+        "spo2": 89,
+        "crp": 6,
+        "culture_status": "unknown",
+        "maternal_gbs": "unknown",
+        "red_flags": "not fully documented"
+      },
+      "history": [
+        {
+          "age_hours": 12.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 21
+        },
+        {
+          "age_hours": 24.0,
+          "respiratory_rate": 62,
+          "spo2": 94,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 36 hours; setting hospital birth.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "AAP2018-35PLUS-P4-B7",
+          "text": "and serial examinations of at-risk newborn infants. Researchers at 1 center in Italy reported a cohort of 7628 term infants who were managed with a categorical approach to risk identification and compared the outcomes with a cohort of 7611 infants who were managed with serial physical examinations every 4 to 6 hours through 48 hours of age. Significant decreases in the use of laboratory tests, blood cultures, and empirical antibiotic agents were observed in the second cohort. Two infants who developed EOS in the second cohort were identified as they developed signs of illness.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 4
+        },
+        {
+          "id": "E2",
+          "chunk_id": "AAP2018-35PLUS-SP2",
+          "text": "Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 7
+        },
+        {
+          "id": "E3",
+          "chunk_id": "AAP2018-35PLUS-P4-B9",
+          "text": "The primary advantage of this approach is a significant reduction in the rate of antibiotic use. Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk. Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS. The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition. Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration. Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care. Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 4
+        },
+        {
+          "id": "E4",
+          "chunk_id": "AAP2018-35PLUS-P6-B2",
+          "text": "Researchers in multiple studies address other markers of inflammation, including C-reactive protein (CRP), procalcitonin, interleukins (ILs) (soluble IL-2 receptor, IL-6, and IL-8), tumor necrosis factor \u03b1, and CD64. Both CRP and procalcitonin concentrations increase in newborn infants in response to a variety of inflammatory stimuli, including infection, asphyxia, and pneumothorax. Procalcitonin concentrations also increase naturally over the first 24 to 36 hours after birth. Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions. Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection. Additionally, at this time, a serial evaluation of inflammatory markers should not be used to assess well-appearing term newborn infants for risk of EOS.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 6
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "monitoring_plan",
+          "text": "Continue serial physical examinations every 4\u20116\u202fhours, documenting respiratory rate and oxygen saturation trends, because the guideline recommends serial exams to detect evolving signs of early\u2011onset sepsis.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "and serial examinations of at-risk newborn infants."
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "and o serial physical examination to detect the presence of clinical signs of illness after birth."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "An increasing respiratory rate (from 46\u202fbpm at 12\u202fh to 76\u202fbpm at 36\u202fh) combined with falling SpO\u2082 (from 98\u202f% to 89\u202f%) constitutes a new clinical sign of illness that warrants escalation of evaluation per the serial\u2011exam approach.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition."
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "investigations",
+          "text": "Obtain a blood culture and a repeat complete blood count with differential now; the guideline advises that infants who develop signs of illness should receive prompt laboratory evaluation.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Two infants who developed EOS in the second cohort were identified as they developed signs of illness."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "recommended_actions",
+          "text": "Start empiric broad\u2011spectrum antibiotics after cultures are drawn, because the presence of evolving respiratory distress in a term infant is an indication for treatment while awaiting results.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Two infants who developed EOS in the second cohort were identified as they developed signs of illness."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "monitoring_plan",
+          "text": "Do not rely on a single CRP value to make treatment decisions; serial CRP alone is not sensitive or specific for EOS and should be interpreted only in the clinical context.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "Single values of CRP or procalcitonin obtained after birth to assess the risk of EOS are neither sensitive nor specific to guide EOS care decisions."
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "Consistently normal values of CRP and procalcitonin over the first 48 hours of age are associated with the absence of EOS, but serial abnormal values alone should not be used to decide whether to administer antibiotics in the absence of culture-confirmed infection."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "escalation_criteria",
+          "text": "If respiratory rate exceeds 80\u202fbpm, SpO\u2082 remains <\u202f90\u202f% despite supplemental oxygen, or the infant shows additional signs (e.g., temperature instability, lethargy), escalate to higher\u2011level care (NICU) for advanced respiratory support and further sepsis work\u2011up.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition."
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Verifier unavailable, incomplete, or invalid"
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C3",
+        "C4",
+        "C6"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C3: guideline evidence does not state that new signs mandate immediate blood culture and CBC; no citation supporting this specific investigation recommendation.",
+        "C4: guideline evidence does not endorse empiric broad\u2011spectrum antibiotics for evolving respiratory distress; no citation provided for treatment indication.",
+        "C6: guideline evidence does not specify the numeric thresholds (RR>80, SpO2<90%) or detailed escalation criteria; claim adds unsupported specifics."
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "Verifier unavailable, incomplete, or invalid",
+      "C3: guideline evidence does not state that new signs mandate immediate blood culture and CBC; no citation supporting this specific investigation recommendation.",
+      "C4: guideline evidence does not endorse empiric broad\u2011spectrum antibiotics for evolving respiratory distress; no citation provided for treatment indication.",
+      "C6: guideline evidence does not specify the numeric thresholds (RR>80, SpO2<90%) or detailed escalation criteria; claim adds unsupported specifics."
+    ],
+    "resolution_log": [],
+    "packet_sha256": "946a7b7584da2d27c29246603850aa5455dc14a38e5a9ad2a94367cf342c0bd1"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 0
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

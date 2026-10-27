@@ -1,0 +1,5 @@
+{
+  "previous_orchestration_sha256": "123d8f304c0e8fc11e54e13908ff438d440be21252e1d12ea9aeffd337b6cf09",
+  "new_orchestration_sha256": "67d6fbec59a8d6aaec6f14953571534d891245c61a07964279f6163de10e3ddf",
+  "reason": "Restore the original three bounded retries for minute-rate/server errors; stop immediately on daily quota. Preserve every completed role and all semantic outcomes. No model/prompt/retrieval change."
+}

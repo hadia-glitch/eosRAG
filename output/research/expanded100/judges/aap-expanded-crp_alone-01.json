@@ -1,0 +1,20 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 5,
+    "patient_fidelity": 4,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 5,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "The answer correctly reflects guideline statements that a single or falling CRP is not sufficient to rule out EOS or to stop antibiotics.",
+      "It aligns with the patient data by noting that the current CRP (3\u202fmg/L) is low but earlier values were higher, and therefore a decreasing trend alone should not dictate discontinuation.",
+      "Key recommendations (obtain cultures, consider clinical status, continue antibiotics until cultures negative) are included, matching the reference.",
+      "The response does not introduce unsupported facts or dosage information.",
+      "Minor omission: it does not explicitly reference the earlier high CRP values, but overall fidelity to the patient trend is acceptable."
+    ]
+  },
+  "reason": null
+}

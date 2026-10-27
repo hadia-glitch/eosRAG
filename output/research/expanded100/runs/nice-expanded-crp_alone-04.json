@@ -1,0 +1,443 @@
+{
+  "id": "nice-expanded-crp_alone-04",
+  "family": "crp_alone",
+  "model": "openai/gpt-oss-120b",
+  "verifier_model": "openai/gpt-oss-120b",
+  "seconds": 46.23215489999893,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "613d61cbd088fc58190d3033d0173620af2f8797c3ccb689dab9296d28146db8",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 32, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": null, \"spo2\": 97, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 32 weeks; age 36 hours; setting hospital birth.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"NICE-1.22.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 31, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if:\"}, {\"quote_id\": \"E1Q2\", \"text\": \"the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and\"}, {\"quote_id\": \"E1Q3\", \"text\": \"the levels and trends of C-reactive protein concentration are reassuring and\"}, {\"quote_id\": \"E1Q4\", \"text\": \"the baby is tolerating oral feeds.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"NICE-1.25.3\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 35, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"If continuing antibiotics for longer than 48 hours for suspected late\\u2011onset neonatal infection despite negative blood culture, review the baby at least once every 24 hours.\"}, {\"quote_id\": \"E2Q2\", \"text\": \"At each review, decide whether to stop antibiotics, taking account of:\"}, {\"quote_id\": \"E2Q3\", \"text\": \"the level of initial clinical suspicion of infection and\"}, {\"quote_id\": \"E2Q4\", \"text\": \"the baby's clinical progress and current condition and\"}, {\"quote_id\": \"E2Q5\", \"text\": \"the levels and trends of C-reactive protein.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"NICE-1.21.3\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 30, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if:\"}, {\"quote_id\": \"E3Q2\", \"text\": \"the blood culture is negative and\"}, {\"quote_id\": \"E3Q3\", \"text\": \"the initial clinical suspicion of infection was not strong and\"}, {\"quote_id\": \"E3Q4\", \"text\": \"the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and\"}, {\"quote_id\": \"E3Q5\", \"text\": \"the levels and trends of C-reactive protein concentration are reassuring.\"}, {\"quote_id\": \"E3Q6\", \"text\": \"[2012, amended 2026]\"}]}, {\"id\": \"E4\", \"chunk_id\": \"NICE-1.21.4\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 31, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of:\"}, {\"quote_id\": \"E4Q2\", \"text\": \"the level of initial clinical suspicion of infection and\"}, {\"quote_id\": \"E4Q3\", \"text\": \"the baby's clinical progress and current condition and\"}, {\"quote_id\": \"E4Q4\", \"text\": \"the levels and trends of C-reactive protein concentration.\"}, {\"quote_id\": \"E4Q5\", \"text\": \"[2012] 1.22 Switching to oral antibiotics\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "A single CRP value, even if low, cannot rule out early\u2011onset sepsis; clinicians must consider the overall clinical picture and initial suspicion.",
+            "support": [
+              {
+                "quote_id": "E3Q5"
+              },
+              {
+                "quote_id": "E2Q5"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "monitoring_plan",
+            "text": "Serial CRP measurements should be interpreted in trend, not in isolation; a falling CRP after an initial rise may support de\u2011escalation when other indicators are reassuring.",
+            "support": [
+              {
+                "quote_id": "E3Q5"
+              },
+              {
+                "quote_id": "E2Q5"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "recommended_actions",
+            "text": "If the blood culture remains negative at 36\u202fh, clinical condition is stable, and CRP trends are reassuring, consider stopping intravenous antibiotics for this pre\u2011term infant.",
+            "support": [
+              {
+                "quote_id": "E3Q1"
+              },
+              {
+                "quote_id": "E3Q2"
+              },
+              {
+                "quote_id": "E3Q4"
+              },
+              {
+                "quote_id": "E3Q5"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "escalation_criteria",
+            "text": "Escalate or continue antibiotics if any new clinical indicators of infection appear (e.g., worsening respiratory rate, falling SpO\u2082) or if CRP rises or fails to decline despite prior elevation.",
+            "support": [
+              {
+                "quote_id": "E4Q2"
+              },
+              {
+                "quote_id": "E4Q3"
+              },
+              {
+                "quote_id": "E4Q4"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "investigations",
+            "text": "Repeat blood cultures and full sepsis work\u2011up if the infant\u2019s condition deteriorates or CRP trends become non\u2011reassuring after the initial 36\u202fh assessment.",
+            "support": [
+              {
+                "quote_id": "E4Q1"
+              },
+              {
+                "quote_id": "E4Q4"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "parent_communication_notes",
+            "text": "Explain to parents that CRP is one component of assessment; a low or falling result does not guarantee absence of infection, and decisions will be based on combined clinical and laboratory data.",
+            "support": [
+              {
+                "quote_id": "E3Q5"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 15.393757499999992
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "38494f6ca3492afa519fe1f6629a6881c67ef8f01059953ccbe9b99a91b7ccd8",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 32, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": null, \"spo2\": 97, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \\u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring and \\u2022 the baby is tolerating oral feeds. [2026]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"If continuing antibiotics for longer than 48 hours for suspected late\\u2011onset neonatal infection despite negative blood culture, review the baby at least once every 24 hours. At each review, decide whether to stop antibiotics, taking account of: \\u2022 the level of initial clinical suspicion of infection and \\u2022 the baby's clinical progress and current condition and \\u2022 the levels and trends of C-reactive protein. [2021]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \\u2022 the blood culture is negative and \\u2022 the initial clinical suspicion of infection was not strong and \\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \\u2022 the level of initial clinical suspicion of infection and \\u2022 the baby's clinical progress and current condition and \\u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"A single CRP value, even if low, cannot rule out early\\u2011onset sepsis; clinicians must consider the overall clinical picture and initial suspicion.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C2\", \"section\": \"monitoring_plan\", \"text\": \"Serial CRP measurements should be interpreted in trend, not in isolation; a falling CRP after an initial rise may support de\\u2011escalation when other indicators are reassuring.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"If the blood culture remains negative at 36\\u202fh, clinical condition is stable, and CRP trends are reassuring, consider stopping intravenous antibiotics for this pre\\u2011term infant.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C4\", \"section\": \"escalation_criteria\", \"text\": \"Escalate or continue antibiotics if any new clinical indicators of infection appear (e.g., worsening respiratory rate, falling SpO\\u2082) or if CRP rises or fails to decline despite prior elevation.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C5\", \"section\": \"investigations\", \"text\": \"Repeat blood cultures and full sepsis work\\u2011up if the infant\\u2019s condition deteriorates or CRP trends become non\\u2011reassuring after the initial 36\\u202fh assessment.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"parent_communication_notes\", \"text\": \"Explain to parents that CRP is one component of assessment; a low or falling result does not guarantee absence of infection, and decisions will be based on combined clinical and laboratory data.\", \"support\": [{\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "rejected_claim_ids": [
+          "C5",
+          "C6"
+        ],
+        "reasons": {
+          "C5": "Evidence E4 discusses reviewing antibiotics based on clinical progress and CRP trends but does not explicitly state that repeat blood cultures and a full sepsis work\u2011up should be performed if the infant deteriorates or CRP becomes non\u2011reassuring after 36\u202fh.",
+          "C6": "Evidence E3 mentions CRP trends in decision\u2011making but does not provide guidance on parent communication about CRP's role or its limitations."
+        },
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ]
+      },
+      "seconds": 14.473839799999041
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "38494f6ca3492afa519fe1f6629a6881c67ef8f01059953ccbe9b99a91b7ccd8",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 32, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": null, \"spo2\": 97, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \\u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring and \\u2022 the baby is tolerating oral feeds. [2026]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"If continuing antibiotics for longer than 48 hours for suspected late\\u2011onset neonatal infection despite negative blood culture, review the baby at least once every 24 hours. At each review, decide whether to stop antibiotics, taking account of: \\u2022 the level of initial clinical suspicion of infection and \\u2022 the baby's clinical progress and current condition and \\u2022 the levels and trends of C-reactive protein. [2021]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \\u2022 the blood culture is negative and \\u2022 the initial clinical suspicion of infection was not strong and \\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \\u2022 the level of initial clinical suspicion of infection and \\u2022 the baby's clinical progress and current condition and \\u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"A single CRP value, even if low, cannot rule out early\\u2011onset sepsis; clinicians must consider the overall clinical picture and initial suspicion.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C2\", \"section\": \"monitoring_plan\", \"text\": \"Serial CRP measurements should be interpreted in trend, not in isolation; a falling CRP after an initial rise may support de\\u2011escalation when other indicators are reassuring.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"If the blood culture remains negative at 36\\u202fh, clinical condition is stable, and CRP trends are reassuring, consider stopping intravenous antibiotics for this pre\\u2011term infant.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C4\", \"section\": \"escalation_criteria\", \"text\": \"Escalate or continue antibiotics if any new clinical indicators of infection appear (e.g., worsening respiratory rate, falling SpO\\u2082) or if CRP rises or fails to decline despite prior elevation.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C5\", \"section\": \"investigations\", \"text\": \"Repeat blood cultures and full sepsis work\\u2011up if the infant\\u2019s condition deteriorates or CRP trends become non\\u2011reassuring after the initial 36\\u202fh assessment.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"parent_communication_notes\", \"text\": \"Explain to parents that CRP is one component of assessment; a low or falling result does not guarantee absence of infection, and decisions will be based on combined clinical and laboratory data.\", \"support\": [{\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "rejected_claim_ids": [
+          "C3",
+          "C5",
+          "C6"
+        ],
+        "reasons": [
+          "C3 assumes blood culture is negative at 36\u202fh, but culture status is unknown, so the claim is not supported by the evidence which requires a confirmed negative culture.",
+          "C5 states that repeat blood cultures and full sepsis work\u2011up should be done if CRP trends become non\u2011reassuring after 36\u202fh, but the cited evidence (E4) only addresses review of antibiotic need and does not specifically mandate repeat cultures or a full work\u2011up.",
+          "C6 claims that parents should be told CRP is only one component of assessment; the cited evidence (E3) does not include guidance on parent communication, so the claim is unsupported."
+        ],
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ]
+      },
+      "seconds": 30.721906800001307
+    }
+  ],
+  "packet": {
+    "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 32 weeks; age 36 hours; setting hospital birth.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.22.1",
+        "text": "For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring and \u2022 the baby is tolerating oral feeds. [2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 31
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.25.3",
+        "text": "If continuing antibiotics for longer than 48 hours for suspected late\u2011onset neonatal infection despite negative blood culture, review the baby at least once every 24 hours. At each review, decide whether to stop antibiotics, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 35
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-1.21.3",
+        "text": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 30
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.21.4",
+        "text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 31
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 36,
+        "gestational_age_weeks": 32,
+        "care_setting": "hospital_birth",
+        "respiratory_rate": null,
+        "spo2": 97,
+        "crp": 6,
+        "culture_status": "unknown",
+        "maternal_gbs": "unknown",
+        "red_flags": "not fully documented"
+      },
+      "history": [
+        {
+          "age_hours": 12.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 21
+        },
+        {
+          "age_hours": 24.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 32 weeks; age 36 hours; setting hospital birth.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.22.1",
+          "text": "For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring and \u2022 the baby is tolerating oral feeds. [2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 31
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.25.3",
+          "text": "If continuing antibiotics for longer than 48 hours for suspected late\u2011onset neonatal infection despite negative blood culture, review the baby at least once every 24 hours. At each review, decide whether to stop antibiotics, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 35
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-1.21.3",
+          "text": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 30
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.21.4",
+          "text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 31
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "A single CRP value, even if low, cannot rule out early\u2011onset sepsis; clinicians must consider the overall clinical picture and initial suspicion.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "the levels and trends of C-reactive protein concentration are reassuring."
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "the levels and trends of C-reactive protein."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "monitoring_plan",
+          "text": "Serial CRP measurements should be interpreted in trend, not in isolation; a falling CRP after an initial rise may support de\u2011escalation when other indicators are reassuring.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "the levels and trends of C-reactive protein concentration are reassuring."
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "the levels and trends of C-reactive protein."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "recommended_actions",
+          "text": "If the blood culture remains negative at 36\u202fh, clinical condition is stable, and CRP trends are reassuring, consider stopping intravenous antibiotics for this pre\u2011term infant.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if:"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "the blood culture is negative and"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "the levels and trends of C-reactive protein concentration are reassuring."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "escalation_criteria",
+          "text": "Escalate or continue antibiotics if any new clinical indicators of infection appear (e.g., worsening respiratory rate, falling SpO\u2082) or if CRP rises or fails to decline despite prior elevation.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "the level of initial clinical suspicion of infection and"
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "the baby's clinical progress and current condition and"
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "the levels and trends of C-reactive protein concentration."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "investigations",
+          "text": "Repeat blood cultures and full sepsis work\u2011up if the infant\u2019s condition deteriorates or CRP trends become non\u2011reassuring after the initial 36\u202fh assessment.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of:"
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "the levels and trends of C-reactive protein concentration."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "parent_communication_notes",
+          "text": "Explain to parents that CRP is one component of assessment; a low or falling result does not guarantee absence of infection, and decisions will be based on combined clinical and laboratory data.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "the levels and trends of C-reactive protein concentration are reassuring."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Verifier unavailable, incomplete, or invalid"
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C3",
+        "C5",
+        "C6"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C3 assumes blood culture is negative at 36\u202fh, but culture status is unknown, so the claim is not supported by the evidence which requires a confirmed negative culture.",
+        "C5 states that repeat blood cultures and full sepsis work\u2011up should be done if CRP trends become non\u2011reassuring after 36\u202fh, but the cited evidence (E4) only addresses review of antibiotic need and does not specifically mandate repeat cultures or a full work\u2011up.",
+        "C6 claims that parents should be told CRP is only one component of assessment; the cited evidence (E3) does not include guidance on parent communication, so the claim is unsupported."
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "Verifier unavailable, incomplete, or invalid",
+      "C3 assumes blood culture is negative at 36\u202fh, but culture status is unknown, so the claim is not supported by the evidence which requires a confirmed negative culture.",
+      "C5 states that repeat blood cultures and full sepsis work\u2011up should be done if CRP trends become non\u2011reassuring after 36\u202fh, but the cited evidence (E4) only addresses review of antibiotic need and does not specifically mandate repeat cultures or a full work\u2011up.",
+      "C6 claims that parents should be told CRP is only one component of assessment; the cited evidence (E3) does not include guidance on parent communication, so the claim is unsupported."
+    ],
+    "resolution_log": [],
+    "packet_sha256": "0f1f989ae171fb07b940e5bd1b0813ef722b1c9aa6572503768467008520deb4"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 0
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

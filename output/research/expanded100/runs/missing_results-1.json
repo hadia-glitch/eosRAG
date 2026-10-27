@@ -1,0 +1,438 @@
+{
+  "id": "missing_results-1",
+  "family": "missing_results",
+  "model": "openai/gpt-oss-120b",
+  "verifier_model": "openai/gpt-oss-120b",
+  "seconds": 43.791315500000564,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "fa506465bed04e084c823d5c3bd8cd51abf76e57680406c08f01a35356188460",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"NICE-1.10.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 13, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection):\"}, {\"quote_id\": \"E1Q2\", \"text\": \"perform an immediate clinical assessment\"}, {\"quote_id\": \"E1Q3\", \"text\": \"review the maternal and neonatal history\"}, {\"quote_id\": \"E1Q4\", \"text\": \"carry out a physical examination of the baby, including an assessment of vital signs.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"NICE-1.14.10\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 24, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Interpret cerebrospinal fluid results in babies alongside the clinical presentation and maternal history.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"NICE-1.10.4\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 15, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward.\"}, {\"quote_id\": \"E3Q2\", \"text\": \"It should only be used if it is part of a prospective audit, which should record:\"}, {\"quote_id\": \"E3Q3\", \"text\": \"total number of babies assessed using the calculator\"}, {\"quote_id\": \"E3Q4\", \"text\": \"number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection\"}, {\"quote_id\": \"E3Q5\", \"text\": \"number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection\"}, {\"quote_id\": \"E3Q6\", \"text\": \"number of babies missed by the calculator who develop a culture-confirmed neonatal infection.\"}]}, {\"id\": \"E4\", \"chunk_id\": \"NICE-1.6.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 8, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"Offer antibiotics during labour to women, trans men and non-binary people who:\"}, {\"quote_id\": \"E4Q2\", \"text\": \"are in pre-term labour or\"}, {\"quote_id\": \"E4Q3\", \"text\": \"have group B streptococcal colonisation, bacteriuria or infection during the current pregnancy or\"}, {\"quote_id\": \"E4Q4\", \"text\": \"have had group B streptococcal colonisation, bacteriuria or infection in a previous pregnancy, and have not had a negative test for group B streptococcus by enrichment culture or polymerase chain reaction (PCR) on a rectovaginal swab samples collected between 35 and 37 weeks' gestation or 3 to 5 weeks before the anticipated delivery date in the current pregnancy or\"}, {\"quote_id\": \"E4Q5\", \"text\": \"have had a previous baby with an invasive group B streptococcal infection or\"}, {\"quote_id\": \"E4Q6\", \"text\": \"have a clinical diagnosis of chorioamnionitis.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "When maternal history, culture results, and later clinical assessment are unavailable, the presence of any known risk factors or clinical indicators for early\u2011onset neonatal infection cannot be confirmed, creating uncertainty about the infant\u2019s infection risk.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              },
+              {
+                "quote_id": "E1Q3"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "recommended_actions",
+            "text": "In the face of missing maternal and culture information, an immediate clinical assessment of the newborn should be performed to identify any observable signs of infection.",
+            "support": [
+              {
+                "quote_id": "E1Q2"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "monitoring_plan",
+            "text": "A thorough physical examination, including vital\u2011sign monitoring (respiratory rate, SpO\u2082, temperature), should be undertaken repeatedly until maternal and microbiology data become available.",
+            "support": [
+              {
+                "quote_id": "E1Q4"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "escalation_criteria",
+            "text": "If any clinical indicators of possible early\u2011onset infection emerge during monitoring (e.g., persistent tachypnoea, desaturation, rising CRP), escalation to full sepsis work\u2011up and empiric antibiotics is warranted despite absent maternal data.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              },
+              {
+                "quote_id": "E1Q2"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "investigations",
+            "text": "Interpretation of cerebrospinal fluid results, when obtained, must be integrated with the limited clinical picture and the unknown maternal history to avoid over\u2011 or under\u2011treatment.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "parent_communication_notes",
+            "text": "Explain to parents that the lack of maternal infection history and pending culture results introduces uncertainty, and that decisions will be guided by the newborn\u2019s observed clinical status and ongoing monitoring.",
+            "support": [
+              {
+                "quote_id": "E1Q3"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 9.721839799998634
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "a17b9d71d6c1fbd6963912ebe82a792c2823e1712a34ab3965362dd1d48cd50b",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \\u2022 perform an immediate clinical assessment \\u2022 review the maternal and neonatal history \\u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Interpret cerebrospinal fluid results in babies alongside the clinical presentation and maternal history. [2024]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \\u2022 total number of babies assessed using the calculator \\u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \\u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \\u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Offer antibiotics during labour to women, trans men and non-binary people who: \\u2022 are in pre-term labour or \\u2022 have group B streptococcal colonisation, bacteriuria or infection during the current pregnancy or \\u2022 have had group B streptococcal colonisation, bacteriuria or infection in a previous pregnancy, and have not had a negative test for group B streptococcus by enrichment culture or polymerase chain reaction (PCR) on a rectovaginal swab samples collected between 35 and 37 weeks' gestation or 3 to 5 weeks before the anticipated delivery date in the current pregnancy or \\u2022 have had a previous baby with an invasive group B streptococcal infection or \\u2022 have a clinical diagnosis of chorioamnionitis. [2021]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"When maternal history, culture results, and later clinical assessment are unavailable, the presence of any known risk factors or clinical indicators for early\\u2011onset neonatal infection cannot be confirmed, creating uncertainty about the infant\\u2019s infection risk.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"recommended_actions\", \"text\": \"In the face of missing maternal and culture information, an immediate clinical assessment of the newborn should be performed to identify any observable signs of infection.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"monitoring_plan\", \"text\": \"A thorough physical examination, including vital\\u2011sign monitoring (respiratory rate, SpO\\u2082, temperature), should be undertaken repeatedly until maternal and microbiology data become available.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C4\", \"section\": \"escalation_criteria\", \"text\": \"If any clinical indicators of possible early\\u2011onset infection emerge during monitoring (e.g., persistent tachypnoea, desaturation, rising CRP), escalation to full sepsis work\\u2011up and empiric antibiotics is warranted despite absent maternal data.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C5\", \"section\": \"investigations\", \"text\": \"Interpretation of cerebrospinal fluid results, when obtained, must be integrated with the limited clinical picture and the unknown maternal history to avoid over\\u2011 or under\\u2011treatment.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C6\", \"section\": \"parent_communication_notes\", \"text\": \"Explain to parents that the lack of maternal infection history and pending culture results introduces uncertainty, and that decisions will be guided by the newborn\\u2019s observed clinical status and ongoing monitoring.\", \"support\": [{\"evidence_id\": \"E1\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C6"
+        ],
+        "reasons": [
+          "C1 not directly supported by evidence; E1 does not state uncertainty when data unavailable",
+          "C2 evidence E1 ties assessment to presence of risk factors/indicators, not to missing information",
+          "C3 E1 mentions physical exam and vital signs but not repeated monitoring until data become available",
+          "C4 E1 does not specify escalation to full sepsis work\u2011up based solely on emerging indicators without maternal data",
+          "C6 E1 does not address parent communication about uncertainty"
+        ]
+      },
+      "seconds": 15.156710500001282
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "a17b9d71d6c1fbd6963912ebe82a792c2823e1712a34ab3965362dd1d48cd50b",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \\u2022 perform an immediate clinical assessment \\u2022 review the maternal and neonatal history \\u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Interpret cerebrospinal fluid results in babies alongside the clinical presentation and maternal history. [2024]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \\u2022 total number of babies assessed using the calculator \\u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \\u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \\u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Offer antibiotics during labour to women, trans men and non-binary people who: \\u2022 are in pre-term labour or \\u2022 have group B streptococcal colonisation, bacteriuria or infection during the current pregnancy or \\u2022 have had group B streptococcal colonisation, bacteriuria or infection in a previous pregnancy, and have not had a negative test for group B streptococcus by enrichment culture or polymerase chain reaction (PCR) on a rectovaginal swab samples collected between 35 and 37 weeks' gestation or 3 to 5 weeks before the anticipated delivery date in the current pregnancy or \\u2022 have had a previous baby with an invasive group B streptococcal infection or \\u2022 have a clinical diagnosis of chorioamnionitis. [2021]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"When maternal history, culture results, and later clinical assessment are unavailable, the presence of any known risk factors or clinical indicators for early\\u2011onset neonatal infection cannot be confirmed, creating uncertainty about the infant\\u2019s infection risk.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"recommended_actions\", \"text\": \"In the face of missing maternal and culture information, an immediate clinical assessment of the newborn should be performed to identify any observable signs of infection.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"monitoring_plan\", \"text\": \"A thorough physical examination, including vital\\u2011sign monitoring (respiratory rate, SpO\\u2082, temperature), should be undertaken repeatedly until maternal and microbiology data become available.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C4\", \"section\": \"escalation_criteria\", \"text\": \"If any clinical indicators of possible early\\u2011onset infection emerge during monitoring (e.g., persistent tachypnoea, desaturation, rising CRP), escalation to full sepsis work\\u2011up and empiric antibiotics is warranted despite absent maternal data.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C5\", \"section\": \"investigations\", \"text\": \"Interpretation of cerebrospinal fluid results, when obtained, must be integrated with the limited clinical picture and the unknown maternal history to avoid over\\u2011 or under\\u2011treatment.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C6\", \"section\": \"parent_communication_notes\", \"text\": \"Explain to parents that the lack of maternal infection history and pending culture results introduces uncertainty, and that decisions will be guided by the newborn\\u2019s observed clinical status and ongoing monitoring.\", \"support\": [{\"evidence_id\": \"E1\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C6"
+        ],
+        "reasons": [
+          "C1 not directly supported by E1; guideline does not state uncertainty when data unavailable.",
+          "C2 guideline E1 ties assessment to presence of risk factors/indicators, not to missing maternal/culture info.",
+          "C3 E1 mentions physical exam and vital signs but not repeated monitoring until data become available.",
+          "C4 E1 does not prescribe escalation to full sepsis work\u2011up based solely on emerging indicators without maternal data.",
+          "C6 communication with parents is not addressed in E1."
+        ]
+      },
+      "seconds": 33.967838999999
+    }
+  ],
+  "packet": {
+    "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.10.1",
+        "text": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \u2022 perform an immediate clinical assessment \u2022 review the maternal and neonatal history \u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 13
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.14.10",
+        "text": "Interpret cerebrospinal fluid results in babies alongside the clinical presentation and maternal history. [2024]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 24
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-1.10.4",
+        "text": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \u2022 total number of babies assessed using the calculator \u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 15
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.6.1",
+        "text": "Offer antibiotics during labour to women, trans men and non-binary people who: \u2022 are in pre-term labour or \u2022 have group B streptococcal colonisation, bacteriuria or infection during the current pregnancy or \u2022 have had group B streptococcal colonisation, bacteriuria or infection in a previous pregnancy, and have not had a negative test for group B streptococcus by enrichment culture or polymerase chain reaction (PCR) on a rectovaginal swab samples collected between 35 and 37 weeks' gestation or 3 to 5 weeks before the anticipated delivery date in the current pregnancy or \u2022 have had a previous baby with an invasive group B streptococcal infection or \u2022 have a clinical diagnosis of chorioamnionitis. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 8
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 12,
+        "gestational_age_weeks": 35,
+        "care_setting": "hospital",
+        "respiratory_rate": 48,
+        "spo2": 97,
+        "crp": 4,
+        "culture_status": "unknown",
+        "red_flags": "not fully documented",
+        "maternal_gbs": "unknown"
+      },
+      "history": [
+        {
+          "age_hours": 3,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 14
+        },
+        {
+          "age_hours": 6,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.10.1",
+          "text": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \u2022 perform an immediate clinical assessment \u2022 review the maternal and neonatal history \u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 13
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.14.10",
+          "text": "Interpret cerebrospinal fluid results in babies alongside the clinical presentation and maternal history. [2024]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 24
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-1.10.4",
+          "text": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \u2022 total number of babies assessed using the calculator \u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 15
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.6.1",
+          "text": "Offer antibiotics during labour to women, trans men and non-binary people who: \u2022 are in pre-term labour or \u2022 have group B streptococcal colonisation, bacteriuria or infection during the current pregnancy or \u2022 have had group B streptococcal colonisation, bacteriuria or infection in a previous pregnancy, and have not had a negative test for group B streptococcus by enrichment culture or polymerase chain reaction (PCR) on a rectovaginal swab samples collected between 35 and 37 weeks' gestation or 3 to 5 weeks before the anticipated delivery date in the current pregnancy or \u2022 have had a previous baby with an invasive group B streptococcal infection or \u2022 have a clinical diagnosis of chorioamnionitis. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 8
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "When maternal history, culture results, and later clinical assessment are unavailable, the presence of any known risk factors or clinical indicators for early\u2011onset neonatal infection cannot be confirmed, creating uncertainty about the infant\u2019s infection risk.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection):"
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "review the maternal and neonatal history"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "recommended_actions",
+          "text": "In the face of missing maternal and culture information, an immediate clinical assessment of the newborn should be performed to identify any observable signs of infection.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "perform an immediate clinical assessment"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "monitoring_plan",
+          "text": "A thorough physical examination, including vital\u2011sign monitoring (respiratory rate, SpO\u2082, temperature), should be undertaken repeatedly until maternal and microbiology data become available.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "carry out a physical examination of the baby, including an assessment of vital signs."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "escalation_criteria",
+          "text": "If any clinical indicators of possible early\u2011onset infection emerge during monitoring (e.g., persistent tachypnoea, desaturation, rising CRP), escalation to full sepsis work\u2011up and empiric antibiotics is warranted despite absent maternal data.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection):"
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "perform an immediate clinical assessment"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "investigations",
+          "text": "Interpretation of cerebrospinal fluid results, when obtained, must be integrated with the limited clinical picture and the unknown maternal history to avoid over\u2011 or under\u2011treatment.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Interpret cerebrospinal fluid results in babies alongside the clinical presentation and maternal history."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "parent_communication_notes",
+          "text": "Explain to parents that the lack of maternal infection history and pending culture results introduces uncertainty, and that decisions will be guided by the newborn\u2019s observed clinical status and ongoing monitoring.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "review the maternal and neonatal history"
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C6"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C1 not directly supported by E1; guideline does not state uncertainty when data unavailable.",
+        "C2 guideline E1 ties assessment to presence of risk factors/indicators, not to missing maternal/culture info.",
+        "C3 E1 mentions physical exam and vital signs but not repeated monitoring until data become available.",
+        "C4 E1 does not prescribe escalation to full sepsis work\u2011up based solely on emerging indicators without maternal data.",
+        "C6 communication with parents is not addressed in E1."
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C6"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C1 not directly supported by evidence; E1 does not state uncertainty when data unavailable",
+        "C2 evidence E1 ties assessment to presence of risk factors/indicators, not to missing information",
+        "C3 E1 mentions physical exam and vital signs but not repeated monitoring until data become available",
+        "C4 E1 does not specify escalation to full sepsis work\u2011up based solely on emerging indicators without maternal data",
+        "C6 E1 does not address parent communication about uncertainty"
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "C1 not directly supported by E1; guideline does not state uncertainty when data unavailable.",
+      "C2 guideline E1 ties assessment to presence of risk factors/indicators, not to missing maternal/culture info.",
+      "C3 E1 mentions physical exam and vital signs but not repeated monitoring until data become available.",
+      "C4 E1 does not prescribe escalation to full sepsis work\u2011up based solely on emerging indicators without maternal data.",
+      "C6 communication with parents is not addressed in E1.",
+      "C1 not directly supported by evidence; E1 does not state uncertainty when data unavailable",
+      "C2 evidence E1 ties assessment to presence of risk factors/indicators, not to missing information",
+      "C3 E1 mentions physical exam and vital signs but not repeated monitoring until data become available",
+      "C4 E1 does not specify escalation to full sepsis work\u2011up based solely on emerging indicators without maternal data",
+      "C6 E1 does not address parent communication about uncertainty"
+    ],
+    "resolution_log": [],
+    "packet_sha256": "2b39ea16539a67c02a9a2748ee00b53f0bce12118e9a8367fa394bb1fd5b1564"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 0
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

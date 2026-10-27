@@ -4,7 +4,7 @@ from scripts.evaluation_transport import quality_eligible,cached_role_response
 def test_provider_errors_are_not_model_quality_outcomes():
     for code in ['http_429','http_401','http_503','ReadTimeout','ConnectError','unavailable']:
         assert not quality_eligible({'calls':[{'error_code':code}]})
-    for code in ['JSONDecodeError','finish_reason_length','incomplete_generation']:
+    for code in ['JSONDecodeError','ValueError','model_json_contract_failure','finish_reason_length','incomplete_generation']:
         assert quality_eligible({'calls':[{'error_code':code}]})
     assert quality_eligible({'calls':[{'response':{'supported':False}}]})
     assert not quality_eligible({'calls':[{'ok':False}]})

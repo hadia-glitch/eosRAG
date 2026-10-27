@@ -1,0 +1,372 @@
+{
+  "id": "who-expanded-single_risk-05",
+  "family": "single_risk",
+  "model": "qwen/qwen3.8-27b",
+  "verifier_model": "qwen/qwen3.8-27b",
+  "seconds": 0.14360709999891696,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "5a4a0dcc28b2d7192b5df2f0bfef2124b060288e9b4f05e23eca8159cbc39a93",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 60, \"gestational_age_weeks\": 35, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"positive\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": null, \"culture_status\": \"unknown\", \"temperature_c\": 36.8, \"feeding\": \"feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\", \"clinical_condition\": \"well appearing\", \"seven_IMCI_signs\": \"assessed absent\"}, \"history\": [], \"evaluation_question\": \"A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 35 weeks; age 60 hours; setting primary_health_clinic.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"WHO2024-C-RISK\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 44, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Risk groups \\u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"\\u25a0The GDG was also unable to recommend further risk stratification (e.g.\"}, {\"quote_id\": \"E1Q3\", \"text\": \"by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"WHO2024-P3-B17\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 3, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"specifically examined the 7-sign IMCI algorithm, including a total of 9284 infants who attended PHC clinics and other outpatient settings in Bangladesh, Bolivia (Plurinational State of), Ghana, India, Pakistan and South Africa (17, 60).\"}, {\"quote_id\": \"E2Q2\", \"text\": \"Both studies used physician judgement of possible sepsis and the need for antibiotics as the reference standard.\"}, {\"quote_id\": \"E2Q3\", \"text\": \"One study included laboratory testing (17).\"}, {\"quote_id\": \"E2Q4\", \"text\": \"Both studies assessed diagnoses by CHWs and health workers as the index test;\"}, {\"quote_id\": \"E2Q5\", \"text\": \"the diagnoses were made using the 7-sign IMCI algorithm (17, 60).\"}]}, {\"id\": \"E3\", \"chunk_id\": \"WHO2024-P4-B5\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 4, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17).\"}, {\"quote_id\": \"E3Q2\", \"text\": \"(Full details are provided in GRADE Table A.1.1 in the Web Annex).\"}]}, {\"id\": \"E4\", \"chunk_id\": \"WHO2024-A.1\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 2, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"In young infants aged 0\\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment.\"}, {\"quote_id\": \"E4Q2\", \"text\": \"(Strong recommendation, moderate-certainty evidence)\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "The WHO 2024 guideline does not provide a validated maternal-risk or gestation-based score for this infant. The Group of Experts (GDG) was unable to recommend further risk stratification by gestational age, birthweight, or maternal risk factors due to a lack of evidence.",
+            "support": [
+              {
+                "quote_id": "E1Q2"
+              },
+              {
+                "quote_id": "E1Q3"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "Specific recommendations for preterm infants or other pre-specified high-risk subgroups were not made by the GDG due to insufficient evidence, meaning the maternal GBS status and 35-week gestation do not trigger a distinct guideline-based risk score.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "recommended_actions",
+            "text": "For infants aged 0\u201359 days, the WHO 7-sign IMCI algorithm is the recommended method for identifying infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment.",
+            "support": [
+              {
+                "quote_id": "E4Q1"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "monitoring_plan",
+            "text": "The 7-sign IMCI algorithm is supported by a strong recommendation with moderate-certainty evidence for use in young infants to guide clinical decision-making in primary health settings.",
+            "support": [
+              {
+                "quote_id": "E4Q2"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "investigations",
+            "text": "The accuracy of the 7-sign IMCI algorithm for diagnosing sepsis in infants aged 0\u201359 days has been assessed in studies involving health workers in primary health clinic and outpatient settings, including Bangladesh, Bolivia, Ghana, India, Pakistan, and South Africa.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              },
+              {
+                "quote_id": "E2Q5"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "antibiotic_review",
+            "text": "In the evaluation of the 7-sign IMCI algorithm, physician judgement of possible sepsis and the need for antibiotics was used as the reference standard, highlighting the algorithm's role in identifying infants who may require antibiotic therapy.",
+            "support": [
+              {
+                "quote_id": "E2Q2"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 22.586983399996825,
+      "replayed": true
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "ebe22fe878dfe325fe215f928c3c4b33c5887bf62bbb2b8beec44e289979c0aa",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 60, \"gestational_age_weeks\": 35, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"positive\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": null, \"culture_status\": \"unknown\", \"temperature_c\": 36.8, \"feeding\": \"feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\", \"clinical_condition\": \"well appearing\", \"seven_IMCI_signs\": \"assessed absent\"}, \"history\": [], \"evidence\": [{\"id\": \"E1\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Risk groups \\u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence. \\u25a0The GDG was also unable to recommend further risk stratification (e.g. by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.\"}, {\"id\": \"E2\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"specifically examined the 7-sign IMCI algorithm, including a total of 9284 infants who attended PHC clinics and other outpatient settings in Bangladesh, Bolivia (Plurinational State of), Ghana, India, Pakistan and South Africa (17, 60). Both studies used physician judgement of possible sepsis and the need for antibiotics as the reference standard. One study included laboratory testing (17). Both studies assessed diagnoses by CHWs and health workers as the index test; the diagnoses were made using the 7-sign IMCI algorithm (17, 60).\"}, {\"id\": \"E3\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17). (Full details are provided in GRADE Table A.1.1 in the Web Annex).\"}, {\"id\": \"E4\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"In young infants aged 0\\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment. (Strong recommendation, moderate-certainty evidence)\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The WHO 2024 guideline does not provide a validated maternal-risk or gestation-based score for this infant. The Group of Experts (GDG) was unable to recommend further risk stratification by gestational age, birthweight, or maternal risk factors due to a lack of evidence.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"Specific recommendations for preterm infants or other pre-specified high-risk subgroups were not made by the GDG due to insufficient evidence, meaning the maternal GBS status and 35-week gestation do not trigger a distinct guideline-based risk score.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"For infants aged 0\\u201359 days, the WHO 7-sign IMCI algorithm is the recommended method for identifying infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C4\", \"section\": \"monitoring_plan\", \"text\": \"The 7-sign IMCI algorithm is supported by a strong recommendation with moderate-certainty evidence for use in young infants to guide clinical decision-making in primary health settings.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C5\", \"section\": \"investigations\", \"text\": \"The accuracy of the 7-sign IMCI algorithm for diagnosing sepsis in infants aged 0\\u201359 days has been assessed in studies involving health workers in primary health clinic and outpatient settings, including Bangladesh, Bolivia, Ghana, India, Pakistan, and South Africa.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C6\", \"section\": \"antibiotic_review\", \"text\": \"In the evaluation of the 7-sign IMCI algorithm, physician judgement of possible sepsis and the need for antibiotics was used as the reference standard, highlighting the algorithm's role in identifying infants who may require antibiotic therapy.\", \"support\": [{\"evidence_id\": \"E2\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 21.611757200000284,
+      "replayed": true
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "ebe22fe878dfe325fe215f928c3c4b33c5887bf62bbb2b8beec44e289979c0aa",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 60, \"gestational_age_weeks\": 35, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"positive\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": null, \"culture_status\": \"unknown\", \"temperature_c\": 36.8, \"feeding\": \"feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\", \"clinical_condition\": \"well appearing\", \"seven_IMCI_signs\": \"assessed absent\"}, \"history\": [], \"evidence\": [{\"id\": \"E1\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Risk groups \\u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence. \\u25a0The GDG was also unable to recommend further risk stratification (e.g. by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.\"}, {\"id\": \"E2\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"specifically examined the 7-sign IMCI algorithm, including a total of 9284 infants who attended PHC clinics and other outpatient settings in Bangladesh, Bolivia (Plurinational State of), Ghana, India, Pakistan and South Africa (17, 60). Both studies used physician judgement of possible sepsis and the need for antibiotics as the reference standard. One study included laboratory testing (17). Both studies assessed diagnoses by CHWs and health workers as the index test; the diagnoses were made using the 7-sign IMCI algorithm (17, 60).\"}, {\"id\": \"E3\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17). (Full details are provided in GRADE Table A.1.1 in the Web Annex).\"}, {\"id\": \"E4\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"In young infants aged 0\\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment. (Strong recommendation, moderate-certainty evidence)\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The WHO 2024 guideline does not provide a validated maternal-risk or gestation-based score for this infant. The Group of Experts (GDG) was unable to recommend further risk stratification by gestational age, birthweight, or maternal risk factors due to a lack of evidence.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"Specific recommendations for preterm infants or other pre-specified high-risk subgroups were not made by the GDG due to insufficient evidence, meaning the maternal GBS status and 35-week gestation do not trigger a distinct guideline-based risk score.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"For infants aged 0\\u201359 days, the WHO 7-sign IMCI algorithm is the recommended method for identifying infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C4\", \"section\": \"monitoring_plan\", \"text\": \"The 7-sign IMCI algorithm is supported by a strong recommendation with moderate-certainty evidence for use in young infants to guide clinical decision-making in primary health settings.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C5\", \"section\": \"investigations\", \"text\": \"The accuracy of the 7-sign IMCI algorithm for diagnosing sepsis in infants aged 0\\u201359 days has been assessed in studies involving health workers in primary health clinic and outpatient settings, including Bangladesh, Bolivia, Ghana, India, Pakistan, and South Africa.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C6\", \"section\": \"antibiotic_review\", \"text\": \"In the evaluation of the 7-sign IMCI algorithm, physician judgement of possible sepsis and the need for antibiotics was used as the reference standard, highlighting the algorithm's role in identifying infants who may require antibiotic therapy.\", \"support\": [{\"evidence_id\": \"E2\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 43.315973699995084,
+      "replayed": true
+    }
+  ],
+  "packet": {
+    "guideline": "WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 35,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "positive",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "well appearing",
+      "seven_IMCI_signs": "assessed absent"
+    },
+    "history": [],
+    "evaluation_question": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 35 weeks; age 60 hours; setting primary_health_clinic.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "WHO2024-C-RISK",
+        "text": "Risk groups \u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence. \u25a0The GDG was also unable to recommend further risk stratification (e.g. by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 44
+      },
+      {
+        "id": "E2",
+        "chunk_id": "WHO2024-P3-B17",
+        "text": "specifically examined the 7-sign IMCI algorithm, including a total of 9284 infants who attended PHC clinics and other outpatient settings in Bangladesh, Bolivia (Plurinational State of), Ghana, India, Pakistan and South Africa (17, 60). Both studies used physician judgement of possible sepsis and the need for antibiotics as the reference standard. One study included laboratory testing (17). Both studies assessed diagnoses by CHWs and health workers as the index test; the diagnoses were made using the 7-sign IMCI algorithm (17, 60).",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 3
+      },
+      {
+        "id": "E3",
+        "chunk_id": "WHO2024-P4-B5",
+        "text": "Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17). (Full details are provided in GRADE Table A.1.1 in the Web Annex).",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 4
+      },
+      {
+        "id": "E4",
+        "chunk_id": "WHO2024-A.1",
+        "text": "In young infants aged 0\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment. (Strong recommendation, moderate-certainty evidence)",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 2
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 60,
+        "gestational_age_weeks": 35,
+        "care_setting": "primary_health_clinic",
+        "maternal_gbs": "positive",
+        "respiratory_rate": 48,
+        "spo2": 97,
+        "crp": null,
+        "culture_status": "unknown",
+        "temperature_c": 36.8,
+        "feeding": "feeding well",
+        "movement": "spontaneous",
+        "convulsions": false,
+        "severe_chest_indrawing": false,
+        "referral_possible": true,
+        "red_flags": "not fully documented",
+        "clinical_condition": "well appearing",
+        "seven_IMCI_signs": "assessed absent"
+      },
+      "history": [],
+      "evaluation_question": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 35 weeks; age 60 hours; setting primary_health_clinic.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "WHO2024-C-RISK",
+          "text": "Risk groups \u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence. \u25a0The GDG was also unable to recommend further risk stratification (e.g. by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 44
+        },
+        {
+          "id": "E2",
+          "chunk_id": "WHO2024-P3-B17",
+          "text": "specifically examined the 7-sign IMCI algorithm, including a total of 9284 infants who attended PHC clinics and other outpatient settings in Bangladesh, Bolivia (Plurinational State of), Ghana, India, Pakistan and South Africa (17, 60). Both studies used physician judgement of possible sepsis and the need for antibiotics as the reference standard. One study included laboratory testing (17). Both studies assessed diagnoses by CHWs and health workers as the index test; the diagnoses were made using the 7-sign IMCI algorithm (17, 60).",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 3
+        },
+        {
+          "id": "E3",
+          "chunk_id": "WHO2024-P4-B5",
+          "text": "Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17). (Full details are provided in GRADE Table A.1.1 in the Web Annex).",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 4
+        },
+        {
+          "id": "E4",
+          "chunk_id": "WHO2024-A.1",
+          "text": "In young infants aged 0\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment. (Strong recommendation, moderate-certainty evidence)",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 2
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "The WHO 2024 guideline does not provide a validated maternal-risk or gestation-based score for this infant. The Group of Experts (GDG) was unable to recommend further risk stratification by gestational age, birthweight, or maternal risk factors due to a lack of evidence.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "\u25a0The GDG was also unable to recommend further risk stratification (e.g."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "Specific recommendations for preterm infants or other pre-specified high-risk subgroups were not made by the GDG due to insufficient evidence, meaning the maternal GBS status and 35-week gestation do not trigger a distinct guideline-based risk score.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Risk groups \u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "recommended_actions",
+          "text": "For infants aged 0\u201359 days, the WHO 7-sign IMCI algorithm is the recommended method for identifying infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "In young infants aged 0\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "monitoring_plan",
+          "text": "The 7-sign IMCI algorithm is supported by a strong recommendation with moderate-certainty evidence for use in young infants to guide clinical decision-making in primary health settings.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "(Strong recommendation, moderate-certainty evidence)"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "investigations",
+          "text": "The accuracy of the 7-sign IMCI algorithm for diagnosing sepsis in infants aged 0\u201359 days has been assessed in studies involving health workers in primary health clinic and outpatient settings, including Bangladesh, Bolivia, Ghana, India, Pakistan, and South Africa.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "specifically examined the 7-sign IMCI algorithm, including a total of 9284 infants who attended PHC clinics and other outpatient settings in Bangladesh, Bolivia (Plurinational State of), Ghana, India, Pakistan and South Africa (17, 60)."
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "the diagnoses were made using the 7-sign IMCI algorithm (17, 60)."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "antibiotic_review",
+          "text": "In the evaluation of the 7-sign IMCI algorithm, physician judgement of possible sepsis and the need for antibiotics was used as the reference standard, highlighting the algorithm's role in identifying infants who may require antibiotic therapy.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Both studies used physician judgement of possible sepsis and the need for antibiotics as the reference standard."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "safety_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "status": "supported_for_review",
+    "errors": [],
+    "resolution_log": [],
+    "packet_sha256": "9f77aa9b2d038bdec901a8b966d3ec195d2386fc79853ff46bbb3510965df2e8"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 1,
+    "budget_seconds": 54.039638499998546,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

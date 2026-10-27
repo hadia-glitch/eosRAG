@@ -1,0 +1,894 @@
+{
+  "cases": [
+    {
+      "id": "who-expanded-deterioration-01",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P20-B18",
+          "WHO2024-P1-B2",
+          "WHO2024-P20-B17"
+        ],
+        "dense": [
+          "WHO2024-P15-B20",
+          "WHO2024-P19-B18",
+          "WHO2024-P20-B17",
+          "WHO2024-P31-B14"
+        ],
+        "hybrid": [
+          "WHO2024-P20-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P24-B18",
+          "WHO2024-P20-B18"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P20-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P24-B18",
+          "WHO2024-P20-B18"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-deterioration-02",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P20-B18",
+          "WHO2024-P1-B2",
+          "WHO2024-P20-B17"
+        ],
+        "dense": [
+          "WHO2024-P15-B20",
+          "WHO2024-P19-B18",
+          "WHO2024-P20-B17",
+          "WHO2024-P24-B18"
+        ],
+        "hybrid": [
+          "WHO2024-P20-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P24-B18",
+          "WHO2024-P20-B18"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P20-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P24-B18",
+          "WHO2024-P20-B18"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-deterioration-03",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P20-B18",
+          "WHO2024-P1-B2",
+          "WHO2024-P20-B17"
+        ],
+        "dense": [
+          "WHO2024-P15-B20",
+          "WHO2024-P19-B18",
+          "WHO2024-P20-B17",
+          "WHO2024-C-CLINICAL"
+        ],
+        "hybrid": [
+          "WHO2024-P20-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P24-B18",
+          "WHO2024-P20-B18"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P20-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P24-B18",
+          "WHO2024-P20-B18"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-deterioration-04",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P20-B18",
+          "WHO2024-P1-B2",
+          "WHO2024-P20-B17"
+        ],
+        "dense": [
+          "WHO2024-P15-B20",
+          "WHO2024-P19-B18",
+          "WHO2024-P20-B17",
+          "WHO2024-C-CLINICAL"
+        ],
+        "hybrid": [
+          "WHO2024-P20-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P20-B18",
+          "WHO2024-P24-B18"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P20-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P20-B18",
+          "WHO2024-P24-B18"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-deterioration-05",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P20-B18",
+          "WHO2024-P1-B2",
+          "WHO2024-P20-B17"
+        ],
+        "dense": [
+          "WHO2024-P15-B20",
+          "WHO2024-P19-B18",
+          "WHO2024-P20-B17",
+          "WHO2024-P31-B14"
+        ],
+        "hybrid": [
+          "WHO2024-P20-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P20-B18",
+          "WHO2024-P24-B18"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P20-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P20-B18",
+          "WHO2024-P24-B18"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-crp_alone-01",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P24-B18",
+          "WHO2024-P10-B5",
+          "WHO2024-P2-B17",
+          "WHO2024-P27-B22"
+        ],
+        "dense": [
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22",
+          "WHO2024-P10-B5",
+          "WHO2024-A.1-DEFINITION"
+        ],
+        "hybrid": [
+          "WHO2024-P24-B18",
+          "WHO2024-P10-B5",
+          "WHO2024-P27-B22",
+          "WHO2024-A.1-DEFINITION"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B3",
+          "WHO2024-P26-B5",
+          "WHO2024-P24-B19",
+          "WHO2024-P26-B4"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-crp_alone-02",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P24-B18",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P34-B22",
+          "WHO2024-P10-B5"
+        ],
+        "dense": [
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22",
+          "WHO2024-P10-B5",
+          "WHO2024-A.1-DEFINITION"
+        ],
+        "hybrid": [
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P10-B5"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B5",
+          "WHO2024-P26-B3",
+          "WHO2024-P24-B19",
+          "WHO2024-P26-B4"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-crp_alone-03",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P24-B18",
+          "WHO2024-P10-B5",
+          "WHO2024-P27-B22",
+          "WHO2024-P31-B13"
+        ],
+        "dense": [
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22",
+          "WHO2024-P10-B5",
+          "WHO2024-C-REFERRAL"
+        ],
+        "hybrid": [
+          "WHO2024-P24-B18",
+          "WHO2024-P10-B5",
+          "WHO2024-P27-B22",
+          "WHO2024-C-REFERRAL"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B5",
+          "WHO2024-P26-B3",
+          "WHO2024-P24-B19",
+          "WHO2024-P26-B4"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-crp_alone-04",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P24-B18",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P10-B5",
+          "WHO2024-P27-B22"
+        ],
+        "dense": [
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22",
+          "WHO2024-P10-B5",
+          "WHO2024-C-REFERRAL"
+        ],
+        "hybrid": [
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P10-B5"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B3",
+          "WHO2024-P26-B5",
+          "WHO2024-P24-B19",
+          "WHO2024-P26-B4"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-crp_alone-05",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P24-B18",
+          "WHO2024-P10-B5",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P2-B17"
+        ],
+        "dense": [
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22",
+          "WHO2024-P10-B5",
+          "WHO2024-A.1-DEFINITION"
+        ],
+        "hybrid": [
+          "WHO2024-P24-B18",
+          "WHO2024-P10-B5",
+          "WHO2024-P27-B22",
+          "WHO2024-C-REFERRAL"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B3",
+          "WHO2024-P26-B5",
+          "WHO2024-P26-B4",
+          "WHO2024-P24-B19"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-incomplete_stop-01",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P34-B22",
+          "WHO2024-P35-B2",
+          "WHO2024-P31-B10",
+          "WHO2024-P37-B10"
+        ],
+        "dense": [
+          "WHO2024-P5-B7",
+          "WHO2024-P5-B6",
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22"
+        ],
+        "hybrid": [
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22",
+          "WHO2024-B.2",
+          "WHO2024-P31-B13"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P5-B7",
+          "WHO2024-P5-B6",
+          "WHO2024-P26-B3",
+          "WHO2024-P3-B5"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-incomplete_stop-02",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P34-B22",
+          "WHO2024-P35-B2",
+          "WHO2024-P31-B10",
+          "WHO2024-P37-B10"
+        ],
+        "dense": [
+          "WHO2024-P5-B7",
+          "WHO2024-P5-B6",
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22"
+        ],
+        "hybrid": [
+          "WHO2024-P27-B22",
+          "WHO2024-P24-B18",
+          "WHO2024-B.2",
+          "WHO2024-P25-B4"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P5-B7",
+          "WHO2024-P5-B6",
+          "WHO2024-P26-B3",
+          "WHO2024-P3-B5"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-incomplete_stop-03",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P34-B22",
+          "WHO2024-P35-B2",
+          "WHO2024-P31-B10",
+          "WHO2024-P37-B10"
+        ],
+        "dense": [
+          "WHO2024-P5-B7",
+          "WHO2024-P5-B6",
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B24"
+        ],
+        "hybrid": [
+          "WHO2024-P27-B22",
+          "WHO2024-P24-B18",
+          "WHO2024-P32-B15",
+          "WHO2024-B.2"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B3",
+          "WHO2024-P5-B7",
+          "WHO2024-P5-B6",
+          "WHO2024-P3-B5"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-incomplete_stop-04",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P34-B22",
+          "WHO2024-P35-B2",
+          "WHO2024-P31-B10",
+          "WHO2024-P37-B10"
+        ],
+        "dense": [
+          "WHO2024-P5-B7",
+          "WHO2024-P5-B6",
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22"
+        ],
+        "hybrid": [
+          "WHO2024-P27-B22",
+          "WHO2024-P24-B18",
+          "WHO2024-P32-B15",
+          "WHO2024-P31-B13"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P5-B7",
+          "WHO2024-P5-B6",
+          "WHO2024-P26-B3",
+          "WHO2024-P3-B5"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-incomplete_stop-05",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P34-B22",
+          "WHO2024-P32-B15",
+          "WHO2024-P35-B2",
+          "WHO2024-P31-B10"
+        ],
+        "dense": [
+          "WHO2024-P5-B7",
+          "WHO2024-P5-B6",
+          "WHO2024-P24-B18",
+          "WHO2024-P27-B22"
+        ],
+        "hybrid": [
+          "WHO2024-P32-B15",
+          "WHO2024-P27-B22",
+          "WHO2024-P24-B18",
+          "WHO2024-B.2"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P5-B7",
+          "WHO2024-P5-B6",
+          "WHO2024-P26-B3",
+          "WHO2024-P3-B5"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-initial_investigation-01",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P26-B3",
+          "WHO2024-P34-B22",
+          "WHO2024-B.1",
+          "WHO2024-P13-B5"
+        ],
+        "dense": [
+          "WHO2024-P26-B2",
+          "WHO2024-P25-B4",
+          "WHO2024-P24-B19",
+          "WHO2024-P3-B16"
+        ],
+        "hybrid": [
+          "WHO2024-P26-B2",
+          "WHO2024-P26-B3",
+          "WHO2024-B.1",
+          "WHO2024-P25-B4"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B3",
+          "WHO2024-P24-B19",
+          "WHO2024-P26-B5",
+          "WHO2024-P26-B4"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-initial_investigation-02",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P26-B3",
+          "WHO2024-P34-B22",
+          "WHO2024-B.1",
+          "WHO2024-P13-B5"
+        ],
+        "dense": [
+          "WHO2024-P26-B2",
+          "WHO2024-P25-B4",
+          "WHO2024-P24-B19",
+          "WHO2024-P3-B16"
+        ],
+        "hybrid": [
+          "WHO2024-P26-B2",
+          "WHO2024-P26-B3",
+          "WHO2024-B.1",
+          "WHO2024-P4-B5"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B3",
+          "WHO2024-P24-B19",
+          "WHO2024-P26-B5",
+          "WHO2024-P26-B4"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-initial_investigation-03",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P26-B3",
+          "WHO2024-P34-B22",
+          "WHO2024-P26-B5",
+          "WHO2024-B.1"
+        ],
+        "dense": [
+          "WHO2024-P26-B2",
+          "WHO2024-P25-B4",
+          "WHO2024-P24-B19",
+          "WHO2024-P3-B16"
+        ],
+        "hybrid": [
+          "WHO2024-P26-B2",
+          "WHO2024-P26-B3",
+          "WHO2024-B.1",
+          "WHO2024-P25-B4"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B3",
+          "WHO2024-P26-B5",
+          "WHO2024-P24-B19",
+          "WHO2024-P26-B4"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-initial_investigation-04",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P26-B3",
+          "WHO2024-P34-B22",
+          "WHO2024-B.1",
+          "WHO2024-P13-B5"
+        ],
+        "dense": [
+          "WHO2024-P26-B2",
+          "WHO2024-P25-B4",
+          "WHO2024-P24-B19",
+          "WHO2024-P3-B16"
+        ],
+        "hybrid": [
+          "WHO2024-P26-B2",
+          "WHO2024-P26-B3",
+          "WHO2024-B.1",
+          "WHO2024-P25-B4"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B3",
+          "WHO2024-P24-B19",
+          "WHO2024-P26-B5",
+          "WHO2024-P26-B4"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-initial_investigation-05",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P26-B3",
+          "WHO2024-P34-B22",
+          "WHO2024-P3-B17",
+          "WHO2024-B.1"
+        ],
+        "dense": [
+          "WHO2024-P26-B2",
+          "WHO2024-P25-B4",
+          "WHO2024-P24-B19",
+          "WHO2024-P3-B16"
+        ],
+        "hybrid": [
+          "WHO2024-P26-B2",
+          "WHO2024-P26-B3",
+          "WHO2024-B.1",
+          "WHO2024-P25-B4"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P26-B3",
+          "WHO2024-P24-B19",
+          "WHO2024-P26-B5",
+          "WHO2024-P26-B4"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-single_risk-01",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-RISK",
+          "WHO2024-P34-B24",
+          "WHO2024-P34-B22",
+          "WHO2024-P27-B21"
+        ],
+        "dense": [
+          "WHO2024-A.1",
+          "WHO2024-P4-B5",
+          "WHO2024-P3-B17",
+          "WHO2024-P3-B5"
+        ],
+        "hybrid": [
+          "WHO2024-C-RISK",
+          "WHO2024-P4-B5",
+          "WHO2024-A.1",
+          "WHO2024-P34-B24"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-C-RISK",
+          "WHO2024-P4-B5",
+          "WHO2024-A.1",
+          "WHO2024-P34-B24"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-single_risk-02",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-RISK",
+          "WHO2024-P34-B22",
+          "WHO2024-P34-B24",
+          "WHO2024-P27-B21"
+        ],
+        "dense": [
+          "WHO2024-A.1",
+          "WHO2024-P4-B5",
+          "WHO2024-P3-B17",
+          "WHO2024-P3-B5"
+        ],
+        "hybrid": [
+          "WHO2024-C-RISK",
+          "WHO2024-P4-B5",
+          "WHO2024-P34-B24",
+          "WHO2024-A.1"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-C-RISK",
+          "WHO2024-P4-B5",
+          "WHO2024-P34-B24",
+          "WHO2024-A.1"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-single_risk-03",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-RISK",
+          "WHO2024-P34-B24",
+          "WHO2024-P27-B21",
+          "WHO2024-P1-B2"
+        ],
+        "dense": [
+          "WHO2024-A.1",
+          "WHO2024-P4-B5",
+          "WHO2024-P3-B17",
+          "WHO2024-P3-B5"
+        ],
+        "hybrid": [
+          "WHO2024-C-RISK",
+          "WHO2024-P4-B5",
+          "WHO2024-A.1",
+          "WHO2024-P34-B24"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-C-RISK",
+          "WHO2024-P4-B5",
+          "WHO2024-A.1",
+          "WHO2024-P34-B24"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-single_risk-04",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-RISK",
+          "WHO2024-P34-B24",
+          "WHO2024-P27-B21",
+          "WHO2024-P1-B2"
+        ],
+        "dense": [
+          "WHO2024-A.1",
+          "WHO2024-P4-B5",
+          "WHO2024-P3-B17",
+          "WHO2024-P3-B5"
+        ],
+        "hybrid": [
+          "WHO2024-C-RISK",
+          "WHO2024-P4-B5",
+          "WHO2024-A.1",
+          "WHO2024-P34-B24"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-C-RISK",
+          "WHO2024-P4-B5",
+          "WHO2024-A.1",
+          "WHO2024-P34-B24"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-single_risk-05",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-RISK",
+          "WHO2024-P34-B24",
+          "WHO2024-P27-B21",
+          "WHO2024-P1-B2"
+        ],
+        "dense": [
+          "WHO2024-A.1",
+          "WHO2024-P4-B5",
+          "WHO2024-P3-B17",
+          "WHO2024-P3-B5"
+        ],
+        "hybrid": [
+          "WHO2024-C-RISK",
+          "WHO2024-P3-B17",
+          "WHO2024-P4-B5",
+          "WHO2024-A.1"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-C-RISK",
+          "WHO2024-P3-B17",
+          "WHO2024-P4-B5",
+          "WHO2024-A.1"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-missing_results-01",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P10-B5",
+          "WHO2024-P2-B17",
+          "WHO2024-P24-B18"
+        ],
+        "dense": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-A.1",
+          "WHO2024-P25-B4",
+          "WHO2024-C-CLINICAL"
+        ],
+        "hybrid": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P3-B5",
+          "WHO2024-P24-B18",
+          "WHO2024-P4-B25"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P3-B5",
+          "WHO2024-P26-B3",
+          "WHO2024-P5-B7",
+          "WHO2024-P36-B8"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-missing_results-02",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P24-B18",
+          "WHO2024-P10-B5",
+          "WHO2024-P2-B17"
+        ],
+        "dense": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P44-B4",
+          "WHO2024-P25-B4",
+          "WHO2024-C-CLINICAL"
+        ],
+        "hybrid": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P3-B5",
+          "WHO2024-P24-B18",
+          "WHO2024-P4-B25"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P3-B5",
+          "WHO2024-P26-B3",
+          "WHO2024-P36-B8",
+          "WHO2024-C-REFERRAL"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-missing_results-03",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P1-B2",
+          "WHO2024-P10-B5",
+          "WHO2024-P2-B17"
+        ],
+        "dense": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P25-B4",
+          "WHO2024-C-CLINICAL",
+          "WHO2024-P44-B4"
+        ],
+        "hybrid": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P3-B5",
+          "WHO2024-P4-B25",
+          "WHO2024-P24-B18"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P3-B5",
+          "WHO2024-P26-B3",
+          "WHO2024-P36-B8",
+          "WHO2024-C-REFERRAL"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-missing_results-04",
+      "rankings": {
+        "lexical": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P1-B2",
+          "WHO2024-P10-B5",
+          "WHO2024-P2-B17"
+        ],
+        "dense": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P44-B4",
+          "WHO2024-C-CLINICAL",
+          "WHO2024-P25-B4"
+        ],
+        "hybrid": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P3-B5",
+          "WHO2024-P4-B25",
+          "WHO2024-P24-B18"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P3-B5",
+          "WHO2024-P26-B3",
+          "WHO2024-P36-B8",
+          "WHO2024-C-REFERRAL"
+        ]
+      }
+    },
+    {
+      "id": "who-expanded-missing_results-05",
+      "rankings": {
+        "lexical": [
+          "WHO2024-P10-B5",
+          "WHO2024-P2-B17",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-A.1-DEFINITION"
+        ],
+        "dense": [
+          "WHO2024-P44-B4",
+          "WHO2024-C-REFERRAL",
+          "WHO2024-A.1",
+          "WHO2024-P25-B4"
+        ],
+        "hybrid": [
+          "WHO2024-C-REFERRAL",
+          "WHO2024-P3-B5",
+          "WHO2024-P4-B25",
+          "WHO2024-P24-B18"
+        ],
+        "hybrid_concepts": [
+          "WHO2024-P3-B5",
+          "WHO2024-P26-B3",
+          "WHO2024-P36-B8",
+          "WHO2024-P5-B6"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "lexical": {
+      "recall_at_4": 0.16666666666666666,
+      "mrr_at_4": 0.21666666666666667
+    },
+    "dense": {
+      "recall_at_4": 0.23333333333333334,
+      "mrr_at_4": 0.24999999999999997
+    },
+    "hybrid": {
+      "recall_at_4": 0.3333333333333333,
+      "mrr_at_4": 0.26944444444444443
+    },
+    "hybrid_concepts": {
+      "recall_at_4": 0.16666666666666666,
+      "mrr_at_4": 0.16666666666666666
+    }
+  },
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "note": "Offline exact dense similarity and concept expansion; not a measurement of live pgvector/Neo4j performance."
+}

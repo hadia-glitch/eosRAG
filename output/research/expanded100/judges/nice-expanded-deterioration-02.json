@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 3,
+    "patient_fidelity": 3,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 2,
+    "unsafe_claim_count": 1,
+    "unsafe_reasons": [
+      "Tachypnea (respiratory rate \u226560) is listed as a non\u2011red\u2011flag clinical indicator, not a red\u2011flag; labeling it as a red\u2011flag could lead to inappropriate urgency."
+    ]
+  },
+  "reason": null
+}

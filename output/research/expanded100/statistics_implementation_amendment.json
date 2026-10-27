@@ -1,0 +1,5 @@
+{
+  "old_sha256": "fcb0e74c4c4e676a8fe3d4106aeb7f1a4082700b3faa857d5d3e64f9662299ea",
+  "new_sha256": "d18d88e531bd60ed4ced8f2d3dddca82fdbd2eb5dd21401695ebe4179a97558c",
+  "notes": "Added original-18 control and explicit partial-score snapshots; unchanged metric/model/seed/bootstrap configurations. Partial snapshots cannot update the manuscript."
+}

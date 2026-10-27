@@ -1,0 +1,20 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 4,
+    "patient_fidelity": 5,
+    "completeness": 3,
+    "actionability": 4,
+    "uncertainty": 4,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "The candidate correctly cites the AAP recommendation to stop antibiotics by 36\u201148\u202fh of sterile culture, matching the guideline passages.",
+      "It reflects the patient data (71\u202fh old, term, negative culture at 48\u202fh, persistent critical cardiorespiratory illness, CRP 6) without adding unsupported facts.",
+      "It omits discussion of the nuance that unexplained critical illness may still justify continuation, and does not mention CSF evaluation or other work\u2011up, reducing completeness.",
+      "Provides clear actionable steps (stop antibiotics, monitor vitals, repeat CRP only if worsens, criteria for escalation).",
+      "Shows low uncertainty, staying within guideline bounds and patient facts."
+    ]
+  },
+  "reason": null
+}

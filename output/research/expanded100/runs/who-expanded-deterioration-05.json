@@ -1,0 +1,393 @@
+{
+  "id": "who-expanded-deterioration-05",
+  "family": "deterioration",
+  "model": "openai/gpt-oss-120b",
+  "verifier_model": "openai/gpt-oss-120b",
+  "seconds": 45.13306300000113,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "881d1225248c07e2fcd1d36d40e791959652818d6c2b9c6e5c0b050b2af13289",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 60, \"gestational_age_weeks\": 37, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"unknown\", \"respiratory_rate\": 74, \"spo2\": 91, \"crp\": null, \"culture_status\": \"unknown\", \"temperature_c\": 36.8, \"feeding\": \"feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\", \"other_IMCI_signs\": \"absent on examination\"}, \"history\": [{\"age_hours\": 30.0, \"respiratory_rate\": 48, \"spo2\": 98, \"feeding\": \"feeding well\"}], \"evaluation_question\": \"Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs. Gestation 37 weeks; age 60 hours; setting primary_health_clinic.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"WHO2024-P20-B17\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 20, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Among these, seven of the studies examined hospital-based regimens and three trials of 4307 infants aged 7\\u201359 days examined fast breathing as an isolated clinical sign in eight countries, and these are the three trials that the recommendation is based on.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"One was a trial in Pakistan of 544 infants with isolated fast breathing where referral was not possible and it compared oral amoxicillin for 7 days\"}]}, {\"id\": \"E2\", \"chunk_id\": \"WHO2024-C-REFERRAL\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 44, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Referral to hospital and what to do when referral is not possible \\u25a0The GDG emphasized the importance of referring all infants aged 0\\u201359 days with signs of PSBI to hospital and noted that the recommendations for non-hospital settings are only for situations where referral is not possible.\"}, {\"quote_id\": \"E2Q2\", \"text\": \"If referral to hospital is not possible, the GDG emphasized that the health worker must: \\u2015 seek the highest possible level of medical advice, consultation and care for the infant;\"}, {\"quote_id\": \"E2Q3\", \"text\": \"\\u2015 explain to the caregiver that the infant is very sick and reinforce the importance of hospital care;\"}, {\"quote_id\": \"E2Q4\", \"text\": \"\\u2015 manage the infant in the clinic wherever possible;\"}, {\"quote_id\": \"E2Q5\", \"text\": \"\\u2015 monitor the infant continuously on cardiac, respiratory and pulse oximetry monitors wherever possible until the infant is considered stable and no longer critical (if continuous monitoring is not possible then frequent vital signs and observations must be taken, ideally every hour);\"}, {\"quote_id\": \"E2Q6\", \"text\": \"\\u2015 review the infant\\u2019s condition in the clinic if possible (if this is not possible then the clinic team should perform home visits wherever feasible);\"}, {\"quote_id\": \"E2Q7\", \"text\": \"\\u2015 review all infants on the day after stopping treatment;\"}, {\"quote_id\": \"E2Q8\", \"text\": \"and \\u2015 ensure that all infants have careful long- term follow-up care to assess and manage complications and sequelae.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"WHO2024-P20-B18\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 20, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"with placebo (72).\"}, {\"quote_id\": \"E3Q2\", \"text\": \"Another of these three trials was a larger multi-country trial of 2312 infants with isolated fast breathing in Bangladesh, Ethiopia, India and Malawi that compared oral amoxicillin for 7 days plus enhanced CHW community case management (assess hypoxaemia with a pulse oximeter and refer hypoxaemic infants to a referral facility/hospital) with standard community case management (assess fast breathing and danger signs and refer) (74).\"}, {\"quote_id\": \"E3Q3\", \"text\": \"The third trial included 1451 infants with isolated fast breathing in the Democratic Republic of the Congo, Kenya and Nigeria, and it compared oral amoxicillin for 7 days with procaine penicillin IM plus gentamicin IM for 7 days (71).\"}]}, {\"id\": \"E4\", \"chunk_id\": \"WHO2024-P24-B18\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 24, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"Background and definitions For hospitalized infants, the WHO Pocket book of hospital care for children defined suspected sepsis in 2013 as one or more of the following clinical signs: not feeding well, movement only when stimulated, high body temperature (\\u2265 38 \\u00b0C), low body temperature (< 35.5 \\u00b0C), severe chest indrawing, not able to feed at all, no movement on stimulation, convulsions, drowsiness or unconsciousness, grunting, central cyanosis, severe jaundice and severe abdominal distention in infants aged 0\\u201359 days, or fast breathing (\\u2265 60 breaths per minute) in infants aged under 0\\u20136 days (\"}, {\"quote_id\": \"E4Q2\", \"text\": \"infants aged 0\\u201359 days, or fast breathing (\\u2265 60 breaths per minute) in infants aged under 0\\u20136 days (12, 13).\"}, {\"quote_id\": \"E4Q3\", \"text\": \"In 2013, this definition did not\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "The infant is 60\u202fhours old with a respiratory rate of 74\u202fbpm (\u226560\u202fbpm) which meets the WHO definition of fast breathing as a sign of possible serious bacterial infection in neonates under 6\u202fdays old.",
+            "support": [
+              {
+                "quote_id": "E4Q2"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "recommended_actions",
+            "text": "Referral to a hospital is required because the infant shows an isolated fast\u2011breathing sign and referral is emphasized for all infants 0\u201159\u202fdays with PSBI signs.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "recommended_actions",
+            "text": "If referral cannot be achieved, the health worker must seek higher\u2011level medical advice and manage the infant locally, including providing oral amoxicillin for 7\u202fdays as studied in trials of isolated fast breathing.",
+            "support": [
+              {
+                "quote_id": "E1Q2"
+              },
+              {
+                "quote_id": "E2Q2"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "monitoring_plan",
+            "text": "Continuous monitoring of cardiac, respiratory and pulse\u2011oximetry is advised; if unavailable, vital signs should be checked at least hourly until the infant stabilises.",
+            "support": [
+              {
+                "quote_id": "E2Q5"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "escalation_criteria",
+            "text": "Any deterioration such as SpO\u2082 falling below 90\u202f%, worsening respiratory distress, or inability to feed should trigger immediate escalation to emergency care.",
+            "support": [
+              {
+                "quote_id": "E2Q4"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "parent_communication_notes",
+            "text": "Explain to the caregiver that the baby is very sick, stress the importance of hospital care, and arrange follow\u2011up review the next day or home visit if the infant remains in the clinic.",
+            "support": [
+              {
+                "quote_id": "E2Q3"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 12.018711000000621
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "1b083554f02f59a37ebda0af583c54ec03c04b82b87ba18c54827bd638c61211",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 60, \"gestational_age_weeks\": 37, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"unknown\", \"respiratory_rate\": 74, \"spo2\": 91, \"crp\": null, \"culture_status\": \"unknown\", \"temperature_c\": 36.8, \"feeding\": \"feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\", \"other_IMCI_signs\": \"absent on examination\"}, \"history\": [{\"age_hours\": 30.0, \"respiratory_rate\": 48, \"spo2\": 98, \"feeding\": \"feeding well\"}], \"evidence\": [{\"id\": \"E1\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Among these, seven of the studies examined hospital-based regimens and three trials of 4307 infants aged 7\\u201359 days examined fast breathing as an isolated clinical sign in eight countries, and these are the three trials that the recommendation is based on. One was a trial in Pakistan of 544 infants with isolated fast breathing where referral was not possible and it compared oral amoxicillin for 7 days\"}, {\"id\": \"E2\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Referral to hospital and what to do when referral is not possible \\u25a0The GDG emphasized the importance of referring all infants aged 0\\u201359 days with signs of PSBI to hospital and noted that the recommendations for non-hospital settings are only for situations where referral is not possible. If referral to hospital is not possible, the GDG emphasized that the health worker must: \\u2015 seek the highest possible level of medical advice, consultation and care for the infant; \\u2015 explain to the caregiver that the infant is very sick and reinforce the importance of hospital care; \\u2015 manage the infant in the clinic wherever possible; \\u2015 monitor the infant continuously on cardiac, respiratory and pulse oximetry monitors wherever possible until the infant is considered stable and no longer critical (if continuous monitoring is not possible then frequent vital signs and observations must be taken, ideally every hour); \\u2015 review the infant\\u2019s condition in the clinic if possible (if this is not possible then the clinic team should perform home visits wherever feasible); \\u2015 review all infants on the day after stopping treatment; and \\u2015 ensure that all infants have careful long- term follow-up care to assess and manage complications and sequelae.\"}, {\"id\": \"E3\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"with placebo (72). Another of these three trials was a larger multi-country trial of 2312 infants with isolated fast breathing in Bangladesh, Ethiopia, India and Malawi that compared oral amoxicillin for 7 days plus enhanced CHW community case management (assess hypoxaemia with a pulse oximeter and refer hypoxaemic infants to a referral facility/hospital) with standard community case management (assess fast breathing and danger signs and refer) (74). The third trial included 1451 infants with isolated fast breathing in the Democratic Republic of the Congo, Kenya and Nigeria, and it compared oral amoxicillin for 7 days with procaine penicillin IM plus gentamicin IM for 7 days (71).\"}, {\"id\": \"E4\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Background and definitions For hospitalized infants, the WHO Pocket book of hospital care for children defined suspected sepsis in 2013 as one or more of the following clinical signs: not feeding well, movement only when stimulated, high body temperature (\\u2265 38 \\u00b0C), low body temperature (< 35.5 \\u00b0C), severe chest indrawing, not able to feed at all, no movement on stimulation, convulsions, drowsiness or unconsciousness, grunting, central cyanosis, severe jaundice and severe abdominal distention in infants aged 0\\u201359 days, or fast breathing (\\u2265 60 breaths per minute) in infants aged under 0\\u20136 days (12, 13). In 2013, this definition did not\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The infant is 60\\u202fhours old with a respiratory rate of 74\\u202fbpm (\\u226560\\u202fbpm) which meets the WHO definition of fast breathing as a sign of possible serious bacterial infection in neonates under 6\\u202fdays old.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C2\", \"section\": \"recommended_actions\", \"text\": \"Referral to a hospital is required because the infant shows an isolated fast\\u2011breathing sign and referral is emphasized for all infants 0\\u201159\\u202fdays with PSBI signs.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"If referral cannot be achieved, the health worker must seek higher\\u2011level medical advice and manage the infant locally, including providing oral amoxicillin for 7\\u202fdays as studied in trials of isolated fast breathing.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C4\", \"section\": \"monitoring_plan\", \"text\": \"Continuous monitoring of cardiac, respiratory and pulse\\u2011oximetry is advised; if unavailable, vital signs should be checked at least hourly until the infant stabilises.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C5\", \"section\": \"escalation_criteria\", \"text\": \"Any deterioration such as SpO\\u2082 falling below 90\\u202f%, worsening respiratory distress, or inability to feed should trigger immediate escalation to emergency care.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C6\", \"section\": \"parent_communication_notes\", \"text\": \"Explain to the caregiver that the baby is very sick, stress the importance of hospital care, and arrange follow\\u2011up review the next day or home visit if the infant remains in the clinic.\", \"support\": [{\"evidence_id\": \"E2\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "rejected_claim_ids": [
+          "C5"
+        ],
+        "reasons": [
+          "C5: Evidence E2 does not explicitly state that SpO\u2082 <90% or feeding inability are escalation triggers; such specific criteria are not documented in the cited guideline."
+        ],
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ]
+      },
+      "seconds": 14.42004960000122
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "1b083554f02f59a37ebda0af583c54ec03c04b82b87ba18c54827bd638c61211",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 60, \"gestational_age_weeks\": 37, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"unknown\", \"respiratory_rate\": 74, \"spo2\": 91, \"crp\": null, \"culture_status\": \"unknown\", \"temperature_c\": 36.8, \"feeding\": \"feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\", \"other_IMCI_signs\": \"absent on examination\"}, \"history\": [{\"age_hours\": 30.0, \"respiratory_rate\": 48, \"spo2\": 98, \"feeding\": \"feeding well\"}], \"evidence\": [{\"id\": \"E1\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Among these, seven of the studies examined hospital-based regimens and three trials of 4307 infants aged 7\\u201359 days examined fast breathing as an isolated clinical sign in eight countries, and these are the three trials that the recommendation is based on. One was a trial in Pakistan of 544 infants with isolated fast breathing where referral was not possible and it compared oral amoxicillin for 7 days\"}, {\"id\": \"E2\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Referral to hospital and what to do when referral is not possible \\u25a0The GDG emphasized the importance of referring all infants aged 0\\u201359 days with signs of PSBI to hospital and noted that the recommendations for non-hospital settings are only for situations where referral is not possible. If referral to hospital is not possible, the GDG emphasized that the health worker must: \\u2015 seek the highest possible level of medical advice, consultation and care for the infant; \\u2015 explain to the caregiver that the infant is very sick and reinforce the importance of hospital care; \\u2015 manage the infant in the clinic wherever possible; \\u2015 monitor the infant continuously on cardiac, respiratory and pulse oximetry monitors wherever possible until the infant is considered stable and no longer critical (if continuous monitoring is not possible then frequent vital signs and observations must be taken, ideally every hour); \\u2015 review the infant\\u2019s condition in the clinic if possible (if this is not possible then the clinic team should perform home visits wherever feasible); \\u2015 review all infants on the day after stopping treatment; and \\u2015 ensure that all infants have careful long- term follow-up care to assess and manage complications and sequelae.\"}, {\"id\": \"E3\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"with placebo (72). Another of these three trials was a larger multi-country trial of 2312 infants with isolated fast breathing in Bangladesh, Ethiopia, India and Malawi that compared oral amoxicillin for 7 days plus enhanced CHW community case management (assess hypoxaemia with a pulse oximeter and refer hypoxaemic infants to a referral facility/hospital) with standard community case management (assess fast breathing and danger signs and refer) (74). The third trial included 1451 infants with isolated fast breathing in the Democratic Republic of the Congo, Kenya and Nigeria, and it compared oral amoxicillin for 7 days with procaine penicillin IM plus gentamicin IM for 7 days (71).\"}, {\"id\": \"E4\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Background and definitions For hospitalized infants, the WHO Pocket book of hospital care for children defined suspected sepsis in 2013 as one or more of the following clinical signs: not feeding well, movement only when stimulated, high body temperature (\\u2265 38 \\u00b0C), low body temperature (< 35.5 \\u00b0C), severe chest indrawing, not able to feed at all, no movement on stimulation, convulsions, drowsiness or unconsciousness, grunting, central cyanosis, severe jaundice and severe abdominal distention in infants aged 0\\u201359 days, or fast breathing (\\u2265 60 breaths per minute) in infants aged under 0\\u20136 days (12, 13). In 2013, this definition did not\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The infant is 60\\u202fhours old with a respiratory rate of 74\\u202fbpm (\\u226560\\u202fbpm) which meets the WHO definition of fast breathing as a sign of possible serious bacterial infection in neonates under 6\\u202fdays old.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C2\", \"section\": \"recommended_actions\", \"text\": \"Referral to a hospital is required because the infant shows an isolated fast\\u2011breathing sign and referral is emphasized for all infants 0\\u201159\\u202fdays with PSBI signs.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"If referral cannot be achieved, the health worker must seek higher\\u2011level medical advice and manage the infant locally, including providing oral amoxicillin for 7\\u202fdays as studied in trials of isolated fast breathing.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C4\", \"section\": \"monitoring_plan\", \"text\": \"Continuous monitoring of cardiac, respiratory and pulse\\u2011oximetry is advised; if unavailable, vital signs should be checked at least hourly until the infant stabilises.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C5\", \"section\": \"escalation_criteria\", \"text\": \"Any deterioration such as SpO\\u2082 falling below 90\\u202f%, worsening respiratory distress, or inability to feed should trigger immediate escalation to emergency care.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C6\", \"section\": \"parent_communication_notes\", \"text\": \"Explain to the caregiver that the baby is very sick, stress the importance of hospital care, and arrange follow\\u2011up review the next day or home visit if the infant remains in the clinic.\", \"support\": [{\"evidence_id\": \"E2\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "rejected_claim_ids": [
+          "C5"
+        ],
+        "reasons": [
+          "C5: evidence does not explicitly state SpO\u2082 <90% or specific escalation triggers; claim not directly supported"
+        ],
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ]
+      },
+      "seconds": 32.592745099998865
+    }
+  ],
+  "packet": {
+    "guideline": "WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 37,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 74,
+      "spo2": 91,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "other_IMCI_signs": "absent on examination"
+    },
+    "history": [
+      {
+        "age_hours": 30.0,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "feeding": "feeding well"
+      }
+    ],
+    "evaluation_question": "Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs. Gestation 37 weeks; age 60 hours; setting primary_health_clinic.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "WHO2024-P20-B17",
+        "text": "Among these, seven of the studies examined hospital-based regimens and three trials of 4307 infants aged 7\u201359 days examined fast breathing as an isolated clinical sign in eight countries, and these are the three trials that the recommendation is based on. One was a trial in Pakistan of 544 infants with isolated fast breathing where referral was not possible and it compared oral amoxicillin for 7 days",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 20
+      },
+      {
+        "id": "E2",
+        "chunk_id": "WHO2024-C-REFERRAL",
+        "text": "Referral to hospital and what to do when referral is not possible \u25a0The GDG emphasized the importance of referring all infants aged 0\u201359 days with signs of PSBI to hospital and noted that the recommendations for non-hospital settings are only for situations where referral is not possible. If referral to hospital is not possible, the GDG emphasized that the health worker must: \u2015 seek the highest possible level of medical advice, consultation and care for the infant; \u2015 explain to the caregiver that the infant is very sick and reinforce the importance of hospital care; \u2015 manage the infant in the clinic wherever possible; \u2015 monitor the infant continuously on cardiac, respiratory and pulse oximetry monitors wherever possible until the infant is considered stable and no longer critical (if continuous monitoring is not possible then frequent vital signs and observations must be taken, ideally every hour); \u2015 review the infant\u2019s condition in the clinic if possible (if this is not possible then the clinic team should perform home visits wherever feasible); \u2015 review all infants on the day after stopping treatment; and \u2015 ensure that all infants have careful long- term follow-up care to assess and manage complications and sequelae.",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 44
+      },
+      {
+        "id": "E3",
+        "chunk_id": "WHO2024-P20-B18",
+        "text": "with placebo (72). Another of these three trials was a larger multi-country trial of 2312 infants with isolated fast breathing in Bangladesh, Ethiopia, India and Malawi that compared oral amoxicillin for 7 days plus enhanced CHW community case management (assess hypoxaemia with a pulse oximeter and refer hypoxaemic infants to a referral facility/hospital) with standard community case management (assess fast breathing and danger signs and refer) (74). The third trial included 1451 infants with isolated fast breathing in the Democratic Republic of the Congo, Kenya and Nigeria, and it compared oral amoxicillin for 7 days with procaine penicillin IM plus gentamicin IM for 7 days (71).",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 20
+      },
+      {
+        "id": "E4",
+        "chunk_id": "WHO2024-P24-B18",
+        "text": "Background and definitions For hospitalized infants, the WHO Pocket book of hospital care for children defined suspected sepsis in 2013 as one or more of the following clinical signs: not feeding well, movement only when stimulated, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), severe chest indrawing, not able to feed at all, no movement on stimulation, convulsions, drowsiness or unconsciousness, grunting, central cyanosis, severe jaundice and severe abdominal distention in infants aged 0\u201359 days, or fast breathing (\u2265 60 breaths per minute) in infants aged under 0\u20136 days (12, 13). In 2013, this definition did not",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 24
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 60,
+        "gestational_age_weeks": 37,
+        "care_setting": "primary_health_clinic",
+        "maternal_gbs": "unknown",
+        "respiratory_rate": 74,
+        "spo2": 91,
+        "crp": null,
+        "culture_status": "unknown",
+        "temperature_c": 36.8,
+        "feeding": "feeding well",
+        "movement": "spontaneous",
+        "convulsions": false,
+        "severe_chest_indrawing": false,
+        "referral_possible": true,
+        "red_flags": "not fully documented",
+        "other_IMCI_signs": "absent on examination"
+      },
+      "history": [
+        {
+          "age_hours": 30.0,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "feeding": "feeding well"
+        }
+      ],
+      "evaluation_question": "Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs. Gestation 37 weeks; age 60 hours; setting primary_health_clinic.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "WHO2024-P20-B17",
+          "text": "Among these, seven of the studies examined hospital-based regimens and three trials of 4307 infants aged 7\u201359 days examined fast breathing as an isolated clinical sign in eight countries, and these are the three trials that the recommendation is based on. One was a trial in Pakistan of 544 infants with isolated fast breathing where referral was not possible and it compared oral amoxicillin for 7 days",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 20
+        },
+        {
+          "id": "E2",
+          "chunk_id": "WHO2024-C-REFERRAL",
+          "text": "Referral to hospital and what to do when referral is not possible \u25a0The GDG emphasized the importance of referring all infants aged 0\u201359 days with signs of PSBI to hospital and noted that the recommendations for non-hospital settings are only for situations where referral is not possible. If referral to hospital is not possible, the GDG emphasized that the health worker must: \u2015 seek the highest possible level of medical advice, consultation and care for the infant; \u2015 explain to the caregiver that the infant is very sick and reinforce the importance of hospital care; \u2015 manage the infant in the clinic wherever possible; \u2015 monitor the infant continuously on cardiac, respiratory and pulse oximetry monitors wherever possible until the infant is considered stable and no longer critical (if continuous monitoring is not possible then frequent vital signs and observations must be taken, ideally every hour); \u2015 review the infant\u2019s condition in the clinic if possible (if this is not possible then the clinic team should perform home visits wherever feasible); \u2015 review all infants on the day after stopping treatment; and \u2015 ensure that all infants have careful long- term follow-up care to assess and manage complications and sequelae.",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 44
+        },
+        {
+          "id": "E3",
+          "chunk_id": "WHO2024-P20-B18",
+          "text": "with placebo (72). Another of these three trials was a larger multi-country trial of 2312 infants with isolated fast breathing in Bangladesh, Ethiopia, India and Malawi that compared oral amoxicillin for 7 days plus enhanced CHW community case management (assess hypoxaemia with a pulse oximeter and refer hypoxaemic infants to a referral facility/hospital) with standard community case management (assess fast breathing and danger signs and refer) (74). The third trial included 1451 infants with isolated fast breathing in the Democratic Republic of the Congo, Kenya and Nigeria, and it compared oral amoxicillin for 7 days with procaine penicillin IM plus gentamicin IM for 7 days (71).",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 20
+        },
+        {
+          "id": "E4",
+          "chunk_id": "WHO2024-P24-B18",
+          "text": "Background and definitions For hospitalized infants, the WHO Pocket book of hospital care for children defined suspected sepsis in 2013 as one or more of the following clinical signs: not feeding well, movement only when stimulated, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), severe chest indrawing, not able to feed at all, no movement on stimulation, convulsions, drowsiness or unconsciousness, grunting, central cyanosis, severe jaundice and severe abdominal distention in infants aged 0\u201359 days, or fast breathing (\u2265 60 breaths per minute) in infants aged under 0\u20136 days (12, 13). In 2013, this definition did not",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 24
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "The infant is 60\u202fhours old with a respiratory rate of 74\u202fbpm (\u226560\u202fbpm) which meets the WHO definition of fast breathing as a sign of possible serious bacterial infection in neonates under 6\u202fdays old.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "infants aged 0\u201359 days, or fast breathing (\u2265 60 breaths per minute) in infants aged under 0\u20136 days (12, 13)."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "recommended_actions",
+          "text": "Referral to a hospital is required because the infant shows an isolated fast\u2011breathing sign and referral is emphasized for all infants 0\u201159\u202fdays with PSBI signs.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Referral to hospital and what to do when referral is not possible \u25a0The GDG emphasized the importance of referring all infants aged 0\u201359 days with signs of PSBI to hospital and noted that the recommendations for non-hospital settings are only for situations where referral is not possible."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "recommended_actions",
+          "text": "If referral cannot be achieved, the health worker must seek higher\u2011level medical advice and manage the infant locally, including providing oral amoxicillin for 7\u202fdays as studied in trials of isolated fast breathing.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "One was a trial in Pakistan of 544 infants with isolated fast breathing where referral was not possible and it compared oral amoxicillin for 7 days"
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "If referral to hospital is not possible, the GDG emphasized that the health worker must: \u2015 seek the highest possible level of medical advice, consultation and care for the infant;"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "monitoring_plan",
+          "text": "Continuous monitoring of cardiac, respiratory and pulse\u2011oximetry is advised; if unavailable, vital signs should be checked at least hourly until the infant stabilises.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "\u2015 monitor the infant continuously on cardiac, respiratory and pulse oximetry monitors wherever possible until the infant is considered stable and no longer critical (if continuous monitoring is not possible then frequent vital signs and observations must be taken, ideally every hour);"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "escalation_criteria",
+          "text": "Any deterioration such as SpO\u2082 falling below 90\u202f%, worsening respiratory distress, or inability to feed should trigger immediate escalation to emergency care.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "\u2015 manage the infant in the clinic wherever possible;"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "parent_communication_notes",
+          "text": "Explain to the caregiver that the baby is very sick, stress the importance of hospital care, and arrange follow\u2011up review the next day or home visit if the infant remains in the clinic.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "\u2015 explain to the caregiver that the infant is very sick and reinforce the importance of hospital care;"
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C5"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C5: Evidence E2 does not explicitly state that SpO\u2082 <90% or feeding inability are escalation triggers; such specific criteria are not documented in the cited guideline."
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [
+        "C5"
+      ],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": [
+        "C5: evidence does not explicitly state SpO\u2082 <90% or specific escalation triggers; claim not directly supported"
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "C5: Evidence E2 does not explicitly state that SpO\u2082 <90% or feeding inability are escalation triggers; such specific criteria are not documented in the cited guideline.",
+      "C5: evidence does not explicitly state SpO\u2082 <90% or specific escalation triggers; claim not directly supported"
+    ],
+    "resolution_log": [],
+    "packet_sha256": "7fcc7cd9c91040422875e2d6dbe5e8bd6311cc03b03290cb5dad3ee608bb7d4a"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 0
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

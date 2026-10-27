@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 4,
+    "patient_fidelity": 3,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 3,
+    "unsafe_claim_count": 1,
+    "unsafe_reasons": [
+      "Candidate assumes blood culture is negative at 36\u202fh despite the case data indicating culture status is unknown, which could lead to premature discontinuation of antibiotics"
+    ]
+  },
+  "reason": null
+}

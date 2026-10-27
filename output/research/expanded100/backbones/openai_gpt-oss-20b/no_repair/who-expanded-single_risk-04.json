@@ -1,0 +1,373 @@
+{
+  "id": "who-expanded-single_risk-04",
+  "family": "single_risk",
+  "model": "openai/gpt-oss-20b",
+  "verifier_model": "openai/gpt-oss-20b",
+  "seconds": 67.11941949999891,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "9e4873c356e31f49c75244e941f0db19fcde73cfcca363ed2860f4ecd3af9429",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 48, \"gestational_age_weeks\": 35, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"positive\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": null, \"culture_status\": \"unknown\", \"temperature_c\": 36.8, \"feeding\": \"feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\", \"clinical_condition\": \"well appearing\", \"seven_IMCI_signs\": \"assessed absent\"}, \"history\": [], \"evaluation_question\": \"A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 35 weeks; age 48 hours; setting primary_health_clinic.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"WHO2024-C-RISK\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 44, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Risk groups \\u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"\\u25a0The GDG was also unable to recommend further risk stratification (e.g.\"}, {\"quote_id\": \"E1Q3\", \"text\": \"by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"WHO2024-P4-B5\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 4, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17).\"}, {\"quote_id\": \"E2Q2\", \"text\": \"(Full details are provided in GRADE Table A.1.1 in the Web Annex).\"}]}, {\"id\": \"E3\", \"chunk_id\": \"WHO2024-A.1\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 2, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"In young infants aged 0\\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment.\"}, {\"quote_id\": \"E3Q2\", \"text\": \"(Strong recommendation, moderate-certainty evidence)\"}]}, {\"id\": \"E4\", \"chunk_id\": \"WHO2024-P34-B24\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 34, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"infant is not improving.\"}, {\"quote_id\": \"E4Q2\", \"text\": \"The GDG emphasized the importance of adjusting empiric antibiotic therapy during the course of the illness, as is routinely done in many hospitals.\"}, {\"quote_id\": \"E4Q3\", \"text\": \"This includes targeting individual antibiotic therapy regimens based on microbiological test results and stopping antibiotic therapy based on validated, clinical and laboratory risk stratification algorithms.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "The WHO guideline does not provide a validated maternal\u2011risk or gestation\u2011based score for early\u2011onset sepsis in infants with a positive maternal GBS status.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              },
+              {
+                "quote_id": "E1Q2"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "Because of insufficient evidence, the guideline explicitly states that no further risk stratification by gestational age, birthweight or maternal risk factors is recommended.",
+            "support": [
+              {
+                "quote_id": "E1Q3"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "recommended_actions",
+            "text": "For infants aged 0\u201359 days, the WHO 7\u2011sign IMCI algorithm is recommended to identify possible serious bacterial infection requiring further evaluation or treatment.",
+            "support": [
+              {
+                "quote_id": "E3Q1"
+              },
+              {
+                "quote_id": "E3Q2"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "monitoring_plan",
+            "text": "In a well\u2011appearing infant with no IMCI signs, routine observation and reassessment are advised, with escalation if any sign of deterioration such as worsening respiratory rate or temperature appears.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "escalation_criteria",
+            "text": "Escalation to higher\u2011level care is indicated if the infant is not improving, for example persistent tachypnea or other clinical deterioration.",
+            "support": [
+              {
+                "quote_id": "E4Q1"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "antibiotic_review",
+            "text": "Empiric antibiotic therapy should be adjusted during the illness based on clinical course and microbiological results, and may be stopped when validated risk stratification algorithms indicate low risk.",
+            "support": [
+              {
+                "quote_id": "E4Q2"
+              },
+              {
+                "quote_id": "E4Q3"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 22.23000950000278
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "2850376785b11cbe655e3ee4c0e7f456522372619aea19eecc907e69fcf32006",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 48, \"gestational_age_weeks\": 35, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"positive\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": null, \"culture_status\": \"unknown\", \"temperature_c\": 36.8, \"feeding\": \"feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\", \"clinical_condition\": \"well appearing\", \"seven_IMCI_signs\": \"assessed absent\"}, \"history\": [], \"evidence\": [{\"id\": \"E1\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Risk groups \\u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence. \\u25a0The GDG was also unable to recommend further risk stratification (e.g. by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.\"}, {\"id\": \"E2\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17). (Full details are provided in GRADE Table A.1.1 in the Web Annex).\"}, {\"id\": \"E3\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"In young infants aged 0\\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment. (Strong recommendation, moderate-certainty evidence)\"}, {\"id\": \"E4\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"infant is not improving. The GDG emphasized the importance of adjusting empiric antibiotic therapy during the course of the illness, as is routinely done in many hospitals. This includes targeting individual antibiotic therapy regimens based on microbiological test results and stopping antibiotic therapy based on validated, clinical and laboratory risk stratification algorithms.\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The WHO guideline does not provide a validated maternal\\u2011risk or gestation\\u2011based score for early\\u2011onset sepsis in infants with a positive maternal GBS status.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"Because of insufficient evidence, the guideline explicitly states that no further risk stratification by gestational age, birthweight or maternal risk factors is recommended.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"For infants aged 0\\u201359 days, the WHO 7\\u2011sign IMCI algorithm is recommended to identify possible serious bacterial infection requiring further evaluation or treatment.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C4\", \"section\": \"monitoring_plan\", \"text\": \"In a well\\u2011appearing infant with no IMCI signs, routine observation and reassessment are advised, with escalation if any sign of deterioration such as worsening respiratory rate or temperature appears.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C5\", \"section\": \"escalation_criteria\", \"text\": \"Escalation to higher\\u2011level care is indicated if the infant is not improving, for example persistent tachypnea or other clinical deterioration.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"antibiotic_review\", \"text\": \"Empiric antibiotic therapy should be adjusted during the illness based on clinical course and microbiological results, and may be stopped when validated risk stratification algorithms indicate low risk.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "rejected_claim_ids": [
+          "C4",
+          "C5"
+        ],
+        "rejected_reasons": [
+          "C4: Evidence E2 discusses diagnostic accuracy of the 7\u2011sign IMCI algorithm, not routine observation or escalation criteria for a well\u2011appearing infant. No cited passage supports the claim that routine observation and reassessment are advised with escalation if deterioration occurs.",
+          "C5: Evidence E4 addresses adjustment of empiric antibiotic therapy and stopping antibiotics based on risk stratification, but does not provide evidence that escalation to higher\u2011level care is indicated for persistent tachypnea or other clinical deterioration. The claim is not supported by the cited passage."
+        ],
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ]
+      },
+      "seconds": 22.597409699999844
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "2850376785b11cbe655e3ee4c0e7f456522372619aea19eecc907e69fcf32006",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 48, \"gestational_age_weeks\": 35, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"positive\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": null, \"culture_status\": \"unknown\", \"temperature_c\": 36.8, \"feeding\": \"feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\", \"clinical_condition\": \"well appearing\", \"seven_IMCI_signs\": \"assessed absent\"}, \"history\": [], \"evidence\": [{\"id\": \"E1\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Risk groups \\u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence. \\u25a0The GDG was also unable to recommend further risk stratification (e.g. by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.\"}, {\"id\": \"E2\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17). (Full details are provided in GRADE Table A.1.1 in the Web Annex).\"}, {\"id\": \"E3\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"In young infants aged 0\\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment. (Strong recommendation, moderate-certainty evidence)\"}, {\"id\": \"E4\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"infant is not improving. The GDG emphasized the importance of adjusting empiric antibiotic therapy during the course of the illness, as is routinely done in many hospitals. This includes targeting individual antibiotic therapy regimens based on microbiological test results and stopping antibiotic therapy based on validated, clinical and laboratory risk stratification algorithms.\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The WHO guideline does not provide a validated maternal\\u2011risk or gestation\\u2011based score for early\\u2011onset sepsis in infants with a positive maternal GBS status.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"Because of insufficient evidence, the guideline explicitly states that no further risk stratification by gestational age, birthweight or maternal risk factors is recommended.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"For infants aged 0\\u201359 days, the WHO 7\\u2011sign IMCI algorithm is recommended to identify possible serious bacterial infection requiring further evaluation or treatment.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C4\", \"section\": \"monitoring_plan\", \"text\": \"In a well\\u2011appearing infant with no IMCI signs, routine observation and reassessment are advised, with escalation if any sign of deterioration such as worsening respiratory rate or temperature appears.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C5\", \"section\": \"escalation_criteria\", \"text\": \"Escalation to higher\\u2011level care is indicated if the infant is not improving, for example persistent tachypnea or other clinical deterioration.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"antibiotic_review\", \"text\": \"Empiric antibiotic therapy should be adjusted during the illness based on clinical course and microbiological results, and may be stopped when validated risk stratification algorithms indicate low risk.\", \"support\": [{\"evidence_id\": \"E4\"}, {\"evidence_id\": \"E4\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": false,
+        "rejected_claim_ids": [
+          "C4",
+          "C5"
+        ],
+        "rejected_reasons": [
+          "C4: Claim cites E2 which reports sensitivity/specificity of the 7\u2011sign IMCI algorithm, not a recommendation for routine observation or escalation based on deterioration. No evidence in the provided passages supports the stated monitoring plan.",
+          "C5: Claim cites E4 which discusses adjusting empiric antibiotic therapy and stopping antibiotics based on risk stratification, but does not provide evidence that escalation to higher\u2011level care is indicated for persistent tachypnea or other deterioration. No supporting passage for this escalation criterion."
+        ]
+      },
+      "seconds": 44.834443500003545
+    }
+  ],
+  "packet": {
+    "guideline": "WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 35,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "positive",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "well appearing",
+      "seven_IMCI_signs": "assessed absent"
+    },
+    "history": [],
+    "evaluation_question": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 35 weeks; age 48 hours; setting primary_health_clinic.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "WHO2024-C-RISK",
+        "text": "Risk groups \u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence. \u25a0The GDG was also unable to recommend further risk stratification (e.g. by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 44
+      },
+      {
+        "id": "E2",
+        "chunk_id": "WHO2024-P4-B5",
+        "text": "Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17). (Full details are provided in GRADE Table A.1.1 in the Web Annex).",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 4
+      },
+      {
+        "id": "E3",
+        "chunk_id": "WHO2024-A.1",
+        "text": "In young infants aged 0\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment. (Strong recommendation, moderate-certainty evidence)",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 2
+      },
+      {
+        "id": "E4",
+        "chunk_id": "WHO2024-P34-B24",
+        "text": "infant is not improving. The GDG emphasized the importance of adjusting empiric antibiotic therapy during the course of the illness, as is routinely done in many hospitals. This includes targeting individual antibiotic therapy regimens based on microbiological test results and stopping antibiotic therapy based on validated, clinical and laboratory risk stratification algorithms.",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 34
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 48,
+        "gestational_age_weeks": 35,
+        "care_setting": "primary_health_clinic",
+        "maternal_gbs": "positive",
+        "respiratory_rate": 48,
+        "spo2": 97,
+        "crp": null,
+        "culture_status": "unknown",
+        "temperature_c": 36.8,
+        "feeding": "feeding well",
+        "movement": "spontaneous",
+        "convulsions": false,
+        "severe_chest_indrawing": false,
+        "referral_possible": true,
+        "red_flags": "not fully documented",
+        "clinical_condition": "well appearing",
+        "seven_IMCI_signs": "assessed absent"
+      },
+      "history": [],
+      "evaluation_question": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 35 weeks; age 48 hours; setting primary_health_clinic.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "WHO2024-C-RISK",
+          "text": "Risk groups \u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence. \u25a0The GDG was also unable to recommend further risk stratification (e.g. by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research.",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 44
+        },
+        {
+          "id": "E2",
+          "chunk_id": "WHO2024-P4-B5",
+          "text": "Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17). (Full details are provided in GRADE Table A.1.1 in the Web Annex).",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 4
+        },
+        {
+          "id": "E3",
+          "chunk_id": "WHO2024-A.1",
+          "text": "In young infants aged 0\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment. (Strong recommendation, moderate-certainty evidence)",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 2
+        },
+        {
+          "id": "E4",
+          "chunk_id": "WHO2024-P34-B24",
+          "text": "infant is not improving. The GDG emphasized the importance of adjusting empiric antibiotic therapy during the course of the illness, as is routinely done in many hospitals. This includes targeting individual antibiotic therapy regimens based on microbiological test results and stopping antibiotic therapy based on validated, clinical and laboratory risk stratification algorithms.",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 34
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "The WHO guideline does not provide a validated maternal\u2011risk or gestation\u2011based score for early\u2011onset sepsis in infants with a positive maternal GBS status.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Risk groups \u25a0The GDG was unable to make specific recommendations for infants in any of the pre-specified high-risk subgroups, including preterm infants, due to insufficient evidence."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "\u25a0The GDG was also unable to recommend further risk stratification (e.g."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "Because of insufficient evidence, the guideline explicitly states that no further risk stratification by gestational age, birthweight or maternal risk factors is recommended.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "by gestational age, birthweight or maternal risk factors) due to lack of evidence, and emphasized the need for further research."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "recommended_actions",
+          "text": "For infants aged 0\u201359 days, the WHO 7\u2011sign IMCI algorithm is recommended to identify possible serious bacterial infection requiring further evaluation or treatment.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "In young infants aged 0\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment."
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "(Strong recommendation, moderate-certainty evidence)"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "monitoring_plan",
+          "text": "In a well\u2011appearing infant with no IMCI signs, routine observation and reassessment are advised, with escalation if any sign of deterioration such as worsening respiratory rate or temperature appears.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Critical outcomes For this comparison, which assesses the accuracy of the 7-sign IMCI algorithm (by any cadre of health worker) to diagnose sepsis in infants aged 0\u201359 days, one study with 8889 participants assessed sensitivity and specificity (17)."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "escalation_criteria",
+          "text": "Escalation to higher\u2011level care is indicated if the infant is not improving, for example persistent tachypnea or other clinical deterioration.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "infant is not improving."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "antibiotic_review",
+          "text": "Empiric antibiotic therapy should be adjusted during the illness based on clinical course and microbiological results, and may be stopped when validated risk stratification algorithms indicate low risk.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "The GDG emphasized the importance of adjusting empiric antibiotic therapy during the course of the illness, as is routinely done in many hospitals."
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "This includes targeting individual antibiotic therapy regimens based on microbiological test results and stopping antibiotic therapy based on validated, clinical and laboratory risk stratification algorithms."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Verifier unavailable, incomplete, or invalid"
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Verifier unavailable, incomplete, or invalid"
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "Verifier unavailable, incomplete, or invalid",
+      "Verifier unavailable, incomplete, or invalid"
+    ],
+    "resolution_log": [],
+    "packet_sha256": "013cdb67b34069b07c9ada39f727564db1c90f301b8e7d4e73a7c2e0a9af30e0"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

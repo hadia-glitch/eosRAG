@@ -1,0 +1,386 @@
+{
+  "id": "incomplete_stop-1",
+  "family": "incomplete_stop",
+  "model": "qwen/qwen3.8-27b",
+  "verifier_model": "qwen/qwen3.8-27b",
+  "seconds": 68.84982839999975,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "423c6cdd5d753d4686baef5b66369eb1898c68269431bcf1122a24c2349b2ba8",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 74, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"negative\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"NICE-1.24.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 34, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"For babies given antibiotics because of suspected late-onset infection, consider stopping the antibiotics at 48 hours if:\"}, {\"quote_id\": \"E1Q2\", \"text\": \"the blood culture is negative and\"}, {\"quote_id\": \"E1Q3\", \"text\": \"the initial clinical suspicion of infection was not strong and\"}, {\"quote_id\": \"E1Q4\", \"text\": \"the baby's clinical condition is reassuring, with no clinical indicators of possible infection and\"}, {\"quote_id\": \"E1Q5\", \"text\": \"the levels and trends of C\\u2011reactive protein concentration are reassuring.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"NICE-1.16.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 26, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"NICE-1.21.4\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 31, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of:\"}, {\"quote_id\": \"E3Q2\", \"text\": \"the level of initial clinical suspicion of infection and\"}, {\"quote_id\": \"E3Q3\", \"text\": \"the baby's clinical progress and current condition and\"}, {\"quote_id\": \"E3Q4\", \"text\": \"the levels and trends of C-reactive protein concentration.\"}, {\"quote_id\": \"E3Q5\", \"text\": \"[2012] 1.22 Switching to oral antibiotics\"}]}, {\"id\": \"E4\", \"chunk_id\": \"NICE-1.22.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 31, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if:\"}, {\"quote_id\": \"E4Q2\", \"text\": \"the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and\"}, {\"quote_id\": \"E4Q3\", \"text\": \"the levels and trends of C-reactive protein concentration are reassuring and\"}, {\"quote_id\": \"E4Q4\", \"text\": \"the baby is tolerating oral feeds.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "antibiotic_review",
+            "text": "The patient is at 36 hours of age with a negative blood culture, which aligns with the guideline recommendation to have culture results available at this time to facilitate timely treatment decisions.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "antibiotic_review",
+            "text": "Because the baby is 35 weeks gestation and has a negative culture but requires antibiotics beyond 36 hours due to strong initial clinical suspicion, the guideline suggests considering a switch from intravenous to oral antibiotics to complete the course, provided specific clinical criteria are met.",
+            "support": [
+              {
+                "quote_id": "E4Q1"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "antibiotic_review",
+            "text": "A key criterion for switching to oral antibiotics is that the baby's clinical condition must be reassuring, with no current clinical indicators of ongoing infection. The patient's respiratory rate of 74 and unknown red flags status mean this criterion is not currently confirmed as met.",
+            "support": [
+              {
+                "quote_id": "E4Q2"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "antibiotic_review",
+            "text": "Another required criterion for switching to oral antibiotics is that the levels and trends of C-reactive protein (CRP) concentration are reassuring. The patient's CRP has decreased from 14 to 4, but the trend must be formally assessed as reassuring by the clinician to meet this criterion.",
+            "support": [
+              {
+                "quote_id": "E4Q3"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "antibiotic_review",
+            "text": "The final criterion for switching to oral antibiotics is that the baby is tolerating oral feeds. This patient data point is not provided in the current record, so this criterion remains unverified.",
+            "support": [
+              {
+                "quote_id": "E4Q4"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "monitoring_plan",
+            "text": "If intravenous antibiotics are continued for longer than 36 hours despite negative cultures, the need for ongoing antibiotics must be reviewed at least once every 24 hours, taking into account the initial clinical suspicion, the baby's clinical progress, and CRP trends.",
+            "support": [
+              {
+                "quote_id": "E3Q1"
+              },
+              {
+                "quote_id": "E3Q2"
+              },
+              {
+                "quote_id": "E3Q3"
+              },
+              {
+                "quote_id": "E3Q4"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 23.74754220000068
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "1ead0419bc5bfe9b96f5de982310ba0bedc58a3147591e73423cc20ae78bb6b9",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 74, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"negative\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies given antibiotics because of suspected late-onset infection, consider stopping the antibiotics at 48 hours if: \\u2022 the blood culture is negative and \\u2022 the initial clinical suspicion of infection was not strong and \\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection and \\u2022 the levels and trends of C\\u2011reactive protein concentration are reassuring. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \\u2022 the level of initial clinical suspicion of infection and \\u2022 the baby's clinical progress and current condition and \\u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \\u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring and \\u2022 the baby is tolerating oral feeds. [2026]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"antibiotic_review\", \"text\": \"The patient is at 36 hours of age with a negative blood culture, which aligns with the guideline recommendation to have culture results available at this time to facilitate timely treatment decisions.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C2\", \"section\": \"antibiotic_review\", \"text\": \"Because the baby is 35 weeks gestation and has a negative culture but requires antibiotics beyond 36 hours due to strong initial clinical suspicion, the guideline suggests considering a switch from intravenous to oral antibiotics to complete the course, provided specific clinical criteria are met.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C3\", \"section\": \"antibiotic_review\", \"text\": \"A key criterion for switching to oral antibiotics is that the baby's clinical condition must be reassuring, with no current clinical indicators of ongoing infection. The patient's respiratory rate of 74 and unknown red flags status mean this criterion is not currently confirmed as met.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C4\", \"section\": \"antibiotic_review\", \"text\": \"Another required criterion for switching to oral antibiotics is that the levels and trends of C-reactive protein (CRP) concentration are reassuring. The patient's CRP has decreased from 14 to 4, but the trend must be formally assessed as reassuring by the clinician to meet this criterion.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C5\", \"section\": \"antibiotic_review\", \"text\": \"The final criterion for switching to oral antibiotics is that the baby is tolerating oral feeds. This patient data point is not provided in the current record, so this criterion remains unverified.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"monitoring_plan\", \"text\": \"If intravenous antibiotics are continued for longer than 36 hours despite negative cultures, the need for ongoing antibiotics must be reviewed at least once every 24 hours, taking into account the initial clinical suspicion, the baby's clinical progress, and CRP trends.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 22.21255139999994
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "1ead0419bc5bfe9b96f5de982310ba0bedc58a3147591e73423cc20ae78bb6b9",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 35, \"care_setting\": \"hospital\", \"respiratory_rate\": 74, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"negative\", \"red_flags\": \"not fully documented\", \"maternal_gbs\": \"unknown\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 14}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies given antibiotics because of suspected late-onset infection, consider stopping the antibiotics at 48 hours if: \\u2022 the blood culture is negative and \\u2022 the initial clinical suspicion of infection was not strong and \\u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection and \\u2022 the levels and trends of C\\u2011reactive protein concentration are reassuring. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \\u2022 the level of initial clinical suspicion of infection and \\u2022 the baby's clinical progress and current condition and \\u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \\u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \\u2022 the levels and trends of C-reactive protein concentration are reassuring and \\u2022 the baby is tolerating oral feeds. [2026]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"antibiotic_review\", \"text\": \"The patient is at 36 hours of age with a negative blood culture, which aligns with the guideline recommendation to have culture results available at this time to facilitate timely treatment decisions.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C2\", \"section\": \"antibiotic_review\", \"text\": \"Because the baby is 35 weeks gestation and has a negative culture but requires antibiotics beyond 36 hours due to strong initial clinical suspicion, the guideline suggests considering a switch from intravenous to oral antibiotics to complete the course, provided specific clinical criteria are met.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C3\", \"section\": \"antibiotic_review\", \"text\": \"A key criterion for switching to oral antibiotics is that the baby's clinical condition must be reassuring, with no current clinical indicators of ongoing infection. The patient's respiratory rate of 74 and unknown red flags status mean this criterion is not currently confirmed as met.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C4\", \"section\": \"antibiotic_review\", \"text\": \"Another required criterion for switching to oral antibiotics is that the levels and trends of C-reactive protein (CRP) concentration are reassuring. The patient's CRP has decreased from 14 to 4, but the trend must be formally assessed as reassuring by the clinician to meet this criterion.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C5\", \"section\": \"antibiotic_review\", \"text\": \"The final criterion for switching to oral antibiotics is that the baby is tolerating oral feeds. This patient data point is not provided in the current record, so this criterion remains unverified.\", \"support\": [{\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"monitoring_plan\", \"text\": \"If intravenous antibiotics are continued for longer than 36 hours despite negative cultures, the need for ongoing antibiotics must be reviewed at least once every 24 hours, taking into account the initial clinical suspicion, the baby's clinical progress, and CRP trends.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 45.009623800000554
+    }
+  ],
+  "packet": {
+    "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "negative",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.24.1",
+        "text": "For babies given antibiotics because of suspected late-onset infection, consider stopping the antibiotics at 48 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection and \u2022 the levels and trends of C\u2011reactive protein concentration are reassuring. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 34
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.16.1",
+        "text": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 26
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-1.21.4",
+        "text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 31
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.22.1",
+        "text": "For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring and \u2022 the baby is tolerating oral feeds. [2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 31
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 36,
+        "gestational_age_weeks": 35,
+        "care_setting": "hospital",
+        "respiratory_rate": 74,
+        "spo2": 97,
+        "crp": 4,
+        "culture_status": "negative",
+        "red_flags": "not fully documented",
+        "maternal_gbs": "unknown"
+      },
+      "history": [
+        {
+          "age_hours": 3,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 14
+        },
+        {
+          "age_hours": 6,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.24.1",
+          "text": "For babies given antibiotics because of suspected late-onset infection, consider stopping the antibiotics at 48 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection and \u2022 the levels and trends of C\u2011reactive protein concentration are reassuring. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 34
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.16.1",
+          "text": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 26
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-1.21.4",
+          "text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 31
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.22.1",
+          "text": "For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring and \u2022 the baby is tolerating oral feeds. [2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 31
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "antibiotic_review",
+          "text": "The patient is at 36 hours of age with a negative blood culture, which aligns with the guideline recommendation to have culture results available at this time to facilitate timely treatment decisions.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "antibiotic_review",
+          "text": "Because the baby is 35 weeks gestation and has a negative culture but requires antibiotics beyond 36 hours due to strong initial clinical suspicion, the guideline suggests considering a switch from intravenous to oral antibiotics to complete the course, provided specific clinical criteria are met.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if:"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "antibiotic_review",
+          "text": "A key criterion for switching to oral antibiotics is that the baby's clinical condition must be reassuring, with no current clinical indicators of ongoing infection. The patient's respiratory rate of 74 and unknown red flags status mean this criterion is not currently confirmed as met.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "antibiotic_review",
+          "text": "Another required criterion for switching to oral antibiotics is that the levels and trends of C-reactive protein (CRP) concentration are reassuring. The patient's CRP has decreased from 14 to 4, but the trend must be formally assessed as reassuring by the clinician to meet this criterion.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "the levels and trends of C-reactive protein concentration are reassuring and"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "antibiotic_review",
+          "text": "The final criterion for switching to oral antibiotics is that the baby is tolerating oral feeds. This patient data point is not provided in the current record, so this criterion remains unverified.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "the baby is tolerating oral feeds."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "monitoring_plan",
+          "text": "If intravenous antibiotics are continued for longer than 36 hours despite negative cultures, the need for ongoing antibiotics must be reviewed at least once every 24 hours, taking into account the initial clinical suspicion, the baby's clinical progress, and CRP trends.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of:"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "the level of initial clinical suspicion of infection and"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "the baby's clinical progress and current condition and"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "the levels and trends of C-reactive protein concentration."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "safety_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "status": "supported_for_review",
+    "errors": [],
+    "resolution_log": [],
+    "packet_sha256": "ae721e39d5d82cf9f255aeeaceeb7ae4262d4a53dc209f3964d604cff4d7da6f"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

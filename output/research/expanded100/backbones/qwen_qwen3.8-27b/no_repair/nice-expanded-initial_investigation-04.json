@@ -1,0 +1,365 @@
+{
+  "id": "nice-expanded-initial_investigation-04",
+  "family": "initial_investigation",
+  "model": "qwen/qwen3.8-27b",
+  "verifier_model": "qwen/qwen3.8-27b",
+  "seconds": 72.7941361000012,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "311855de1aadcec5639e8926ae3917b0007f36e5d17fe81a7626c10a7f2297e6",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 32, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": null, \"spo2\": 97, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 32 weeks; age 36 hours; setting hospital birth.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"NICE-1.9.2\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 12, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"[2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor:\"}, {\"quote_id\": \"E1Q3\", \"text\": \"suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors:\"}, {\"quote_id\": \"E1Q4\", \"text\": \"invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy\"}, {\"quote_id\": \"E1Q5\", \"text\": \"pre-term birth following spontaneous labour before 37 weeks' gestation\"}, {\"quote_id\": \"E1Q6\", \"text\": \"confirmed rupture of membranes for more than 18 hours before a pre-term birth\"}, {\"quote_id\": \"E1Q7\", \"text\": \"confirmed rupture of membranes for more than 24 hours before a term birth [2026]\"}, {\"quote_id\": \"E1Q8\", \"text\": \"suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026]\"}, {\"quote_id\": \"E1Q9\", \"text\": \"suspected or confirmed chorioamnionitis [2021, amended 2026]\"}]}, {\"id\": \"E2\", \"chunk_id\": \"NICE-box1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 12, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection).\"}, {\"quote_id\": \"E2Q2\", \"text\": \"Throughout labour, monitor for any new risk factors.\"}, {\"quote_id\": \"E2Q3\", \"text\": \"[2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care.\"}, {\"quote_id\": \"E2Q4\", \"text\": \"[2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor:\"}, {\"quote_id\": \"E2Q5\", \"text\": \"suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors:\"}, {\"quote_id\": \"E2Q6\", \"text\": \"invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy\"}, {\"quote_id\": \"E2Q7\", \"text\": \"pre-term birth following spontaneous labour before 37 weeks' gestation\"}, {\"quote_id\": \"E2Q8\", \"text\": \"confirmed rupture of membranes for more than 18 hours before a pre-term birth\"}, {\"quote_id\": \"E2Q9\", \"text\": \"confirmed rupture of membranes for more than 24 hours before a term birth [2026]\"}, {\"quote_id\": \"E2Q10\", \"text\": \"suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026]\"}, {\"quote_id\": \"E2Q11\", \"text\": \"suspected or confirmed chorioamnionitis [2021, amended 2026]\"}]}, {\"id\": \"E3\", \"chunk_id\": \"NICE-1.16.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 26, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital.\"}]}, {\"id\": \"E4\", \"chunk_id\": \"NICE-1.7.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 10, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"Offer an immediate birth (by induction of labour or caesarean birth) to women, trans men and non-binary people who are between 34 and 37 weeks' gestation who:\"}, {\"quote_id\": \"E4Q2\", \"text\": \"have prolonged prelabour rupture of membranes and\"}, {\"quote_id\": \"E4Q3\", \"text\": \"have group B streptococcal colonisation, bacteriuria or infection at any time in their current pregnancy.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "The patient's pre-term birth at 32 weeks' gestation is a recognized risk factor for early-onset neonatal infection, as defined by the guideline's list of risk factors.",
+            "support": [
+              {
+                "quote_id": "E1Q5"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "The patient's maternal GBS status is currently unknown; maternal GBS colonisation, bacteriuria, or infection in the current pregnancy is a documented risk factor for early-onset neonatal infection.",
+            "support": [
+              {
+                "quote_id": "E1Q4"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "risk_analysis",
+            "text": "The patient's red flags are not fully documented; the guideline identifies specific red flag risk factors for early-onset neonatal infection that should be assessed.",
+            "support": [
+              {
+                "quote_id": "E1Q2"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "investigations",
+            "text": "The patient's culture status is unknown; the guideline recommends establishing hospital systems to provide blood culture results 36 hours after starting antibiotics to allow timely stopping of treatment.",
+            "support": [
+              {
+                "quote_id": "E3Q1"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "monitoring_plan",
+            "text": "The patient's CRP has decreased from 21 at 12 hours to 9 at 24 hours and 6 at 36 hours; the guideline does not specify CRP monitoring intervals, so this trend is an observed patient measurement without direct guideline support for interpretation.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "antibiotic_review",
+            "text": "The patient's culture status is unknown; the guideline recommends establishing hospital systems to provide blood culture results 36 hours after starting antibiotics to allow timely stopping of treatment and discharge from hospital.",
+            "support": [
+              {
+                "quote_id": "E3Q1"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 22.457073499997932
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "4b69f6967c19ccbbb36695c48a2f1250411976259d3ae3429b9b7580d919239d",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 32, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": null, \"spo2\": 97, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \\u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \\u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \\u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \\u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \\u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \\u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \\u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \\u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \\u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \\u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \\u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \\u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Offer an immediate birth (by induction of labour or caesarean birth) to women, trans men and non-binary people who are between 34 and 37 weeks' gestation who: \\u2022 have prolonged prelabour rupture of membranes and \\u2022 have group B streptococcal colonisation, bacteriuria or infection at any time in their current pregnancy. [2021]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The patient's pre-term birth at 32 weeks' gestation is a recognized risk factor for early-onset neonatal infection, as defined by the guideline's list of risk factors.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"The patient's maternal GBS status is currently unknown; maternal GBS colonisation, bacteriuria, or infection in the current pregnancy is a documented risk factor for early-onset neonatal infection.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"risk_analysis\", \"text\": \"The patient's red flags are not fully documented; the guideline identifies specific red flag risk factors for early-onset neonatal infection that should be assessed.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C4\", \"section\": \"investigations\", \"text\": \"The patient's culture status is unknown; the guideline recommends establishing hospital systems to provide blood culture results 36 hours after starting antibiotics to allow timely stopping of treatment.\", \"support\": [{\"evidence_id\": \"E3\"}]}, {\"id\": \"C5\", \"section\": \"monitoring_plan\", \"text\": \"The patient's CRP has decreased from 21 at 12 hours to 9 at 24 hours and 6 at 36 hours; the guideline does not specify CRP monitoring intervals, so this trend is an observed patient measurement without direct guideline support for interpretation.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C6\", \"section\": \"antibiotic_review\", \"text\": \"The patient's culture status is unknown; the guideline recommends establishing hospital systems to provide blood culture results 36 hours after starting antibiotics to allow timely stopping of treatment and discharge from hospital.\", \"support\": [{\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 28.644329499999003
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "4b69f6967c19ccbbb36695c48a2f1250411976259d3ae3429b9b7580d919239d",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 32, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": null, \"spo2\": 97, \"crp\": 6, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}, {\"age_hours\": 24.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \\u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \\u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \\u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \\u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \\u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \\u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \\u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \\u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \\u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \\u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \\u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \\u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Offer an immediate birth (by induction of labour or caesarean birth) to women, trans men and non-binary people who are between 34 and 37 weeks' gestation who: \\u2022 have prolonged prelabour rupture of membranes and \\u2022 have group B streptococcal colonisation, bacteriuria or infection at any time in their current pregnancy. [2021]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The patient's pre-term birth at 32 weeks' gestation is a recognized risk factor for early-onset neonatal infection, as defined by the guideline's list of risk factors.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"The patient's maternal GBS status is currently unknown; maternal GBS colonisation, bacteriuria, or infection in the current pregnancy is a documented risk factor for early-onset neonatal infection.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"risk_analysis\", \"text\": \"The patient's red flags are not fully documented; the guideline identifies specific red flag risk factors for early-onset neonatal infection that should be assessed.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C4\", \"section\": \"investigations\", \"text\": \"The patient's culture status is unknown; the guideline recommends establishing hospital systems to provide blood culture results 36 hours after starting antibiotics to allow timely stopping of treatment.\", \"support\": [{\"evidence_id\": \"E3\"}]}, {\"id\": \"C5\", \"section\": \"monitoring_plan\", \"text\": \"The patient's CRP has decreased from 21 at 12 hours to 9 at 24 hours and 6 at 36 hours; the guideline does not specify CRP monitoring intervals, so this trend is an observed patient measurement without direct guideline support for interpretation.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C6\", \"section\": \"antibiotic_review\", \"text\": \"The patient's culture status is unknown; the guideline recommends establishing hospital systems to provide blood culture results 36 hours after starting antibiotics to allow timely stopping of treatment and discharge from hospital.\", \"support\": [{\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 50.22685549999733
+    }
+  ],
+  "packet": {
+    "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 32 weeks; age 36 hours; setting hospital birth.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.9.2",
+        "text": "For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 12
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-box1",
+        "text": "Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 12
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-1.16.1",
+        "text": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 26
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.7.1",
+        "text": "Offer an immediate birth (by induction of labour or caesarean birth) to women, trans men and non-binary people who are between 34 and 37 weeks' gestation who: \u2022 have prolonged prelabour rupture of membranes and \u2022 have group B streptococcal colonisation, bacteriuria or infection at any time in their current pregnancy. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 10
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 36,
+        "gestational_age_weeks": 32,
+        "care_setting": "hospital_birth",
+        "respiratory_rate": null,
+        "spo2": 97,
+        "crp": 6,
+        "culture_status": "unknown",
+        "maternal_gbs": "unknown",
+        "red_flags": "not fully documented"
+      },
+      "history": [
+        {
+          "age_hours": 12.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 21
+        },
+        {
+          "age_hours": 24.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 32 weeks; age 36 hours; setting hospital birth.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.9.2",
+          "text": "For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 12
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-box1",
+          "text": "Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 12
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-1.16.1",
+          "text": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 26
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.7.1",
+          "text": "Offer an immediate birth (by induction of labour or caesarean birth) to women, trans men and non-binary people who are between 34 and 37 weeks' gestation who: \u2022 have prolonged prelabour rupture of membranes and \u2022 have group B streptococcal colonisation, bacteriuria or infection at any time in their current pregnancy. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 10
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "The patient's pre-term birth at 32 weeks' gestation is a recognized risk factor for early-onset neonatal infection, as defined by the guideline's list of risk factors.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "pre-term birth following spontaneous labour before 37 weeks' gestation"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "The patient's maternal GBS status is currently unknown; maternal GBS colonisation, bacteriuria, or infection in the current pregnancy is a documented risk factor for early-onset neonatal infection.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "risk_analysis",
+          "text": "The patient's red flags are not fully documented; the guideline identifies specific red flag risk factors for early-onset neonatal infection that should be assessed.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "[2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor:"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "investigations",
+          "text": "The patient's culture status is unknown; the guideline recommends establishing hospital systems to provide blood culture results 36 hours after starting antibiotics to allow timely stopping of treatment.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "monitoring_plan",
+          "text": "The patient's CRP has decreased from 21 at 12 hours to 9 at 24 hours and 6 at 36 hours; the guideline does not specify CRP monitoring intervals, so this trend is an observed patient measurement without direct guideline support for interpretation.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection)."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "antibiotic_review",
+          "text": "The patient's culture status is unknown; the guideline recommends establishing hospital systems to provide blood culture results 36 hours after starting antibiotics to allow timely stopping of treatment and discharge from hospital.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "safety_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "status": "supported_for_review",
+    "errors": [],
+    "resolution_log": [],
+    "packet_sha256": "3fd976864ce2965c13cd617202bf964ce4692ff1b777e5298573972814342a07"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

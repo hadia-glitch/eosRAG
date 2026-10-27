@@ -1,0 +1,410 @@
+{
+  "id": "who-expanded-crp_alone-01",
+  "family": "crp_alone",
+  "model": "qwen/qwen3.8-27b",
+  "verifier_model": "qwen/qwen3.8-27b",
+  "seconds": 0.13031709999631857,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "c4b4b6a6b58936ffb18bf24fe0825a96356ab10b3b539d4a6cafa8c8c59c34ba",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 6, \"gestational_age_weeks\": 35, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"unknown\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"temperature_c\": 38.2, \"feeding\": \"not feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 3.0, \"crp\": 18, \"feeding\": \"feeding well\", \"temperature_c\": 36.8}], \"evaluation_question\": \"CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance? Gestation 35 weeks; age 6 hours; setting primary_health_clinic.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"WHO2024-P26-B3\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 26, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\\u201359 days at the time of presentation to health facilities.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"Brown et al.\"}, {\"quote_id\": \"E1Q3\", \"text\": \"(2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88).\"}, {\"quote_id\": \"E1Q4\", \"text\": \"(2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference\"}]}, {\"id\": \"E2\", \"chunk_id\": \"WHO2024-P26-B5\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 26, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"One further systematic review of seven studies and a total of 505 infants examined the use of CRP in decision-making for stopping antibiotic treatment in newborns diagnosed with sepsis (90).\"}, {\"quote_id\": \"E2Q2\", \"text\": \"Petel et al.\"}, {\"quote_id\": \"E2Q3\", \"text\": \"(2018) reported that CRP-based algorithms shortened antibiotic treatment duration by 1.45 days (95% CI: \\u22122.61 to \\u20130.28) in two RCTs, and by 1.15 days (95% CI: \\u22122.06 to \\u20130.24) in two cohort studies, with no differences in mortality or infection relapse in neonates (90).\"}]}, {\"id\": \"E3\", \"chunk_id\": \"WHO2024-P24-B19\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 24, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"include laboratory tests due to the lack of availability of simple tests in district hospitals, such as full blood count and C-reactive protein (CRP).\"}, {\"quote_id\": \"E3Q2\", \"text\": \"However, these tests have become more widely available and POC rapid \\u201cbedside\\u201d laboratory tests are becoming much more common (10, 75).\"}, {\"quote_id\": \"E3Q3\", \"text\": \"There has also been much interest in how to integrate laboratory tests with IMCI and other clinical algorithms, and ongoing work to develop more sophisticated predictive algorithms and machine-learning tools to improve sepsis diagnosis, assist clinicians in determining when to stop antibiotics and rationalizing antibiotic therapy (75).\"}]}, {\"id\": \"E4\", \"chunk_id\": \"WHO2024-P26-B4\", \"source\": \"WHO serious bacterial infections 2024\", \"version\": \"2024-12-08\", \"page_number\": 26, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"(CRP of \\u2265 60 mg/L, AUC: 0.87, 95% CI: 0.76 to 0.91, n=1339 neonates;\"}, {\"quote_id\": \"E4Q2\", \"text\": \"and PCT of \\u2265 0.5 ng/ml, AUC: 0.87, 95% CI: 0.70 to 0.92, n=617 neonates), while ESR and WCC had poor discriminatory ability (89).\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "The patient's clinical deterioration, characterized by rising temperature and worsening feeding despite a falling CRP, suggests that clinical signs are critical for assessment. WHO guidance notes that laboratory tests like CRP are often integrated with clinical algorithms to improve sepsis diagnosis, implying that a single biomarker trend should not override clinical worsening.",
+            "support": [
+              {
+                "quote_id": "E3Q3"
+              },
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "investigations",
+            "text": "CRP has demonstrated good discriminatory ability for diagnosing sepsis in neonates, with a median sensitivity of 0.62 and specificity of 0.74. However, given the patient's age (6 hours) and the limitations of biomarkers in the very early onset period, clinical evaluation remains paramount.",
+            "support": [
+              {
+                "quote_id": "E1Q3"
+              },
+              {
+                "quote_id": "E1Q4"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "monitoring_plan",
+            "text": "In a primary health clinic setting, the availability of point-of-care rapid bedside laboratory tests is becoming more common. These tools can assist in monitoring trends, but their integration with clinical algorithms is an area of ongoing development to assist clinicians in determining the need for further action.",
+            "support": [
+              {
+                "quote_id": "E3Q2"
+              },
+              {
+                "quote_id": "E3Q3"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "escalation_criteria",
+            "text": "While CRP-based algorithms have been shown to shorten antibiotic treatment duration in confirmed sepsis cases, this evidence applies to stopping treatment, not initiating or escalating care in a deteriorating patient. The worsening clinical status (temperature 38.2\u00b0C, poor feeding) in a 35-week gestation neonate warrants careful reassessment against clinical criteria rather than reliance on the falling CRP alone.",
+            "support": [
+              {
+                "quote_id": "E2Q3"
+              },
+              {
+                "quote_id": "E2Q1"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "antibiotic_review",
+            "text": "Evidence indicates that CRP and Procalcitonin (PCT) have good discriminatory ability for sepsis diagnosis, whereas ESR and WCC have poor discriminatory ability. This supports the use of CRP as a supportive tool but does not replace the need for clinical judgment in the face of deteriorating signs such as poor feeding and fever.",
+            "support": [
+              {
+                "quote_id": "E1Q4"
+              },
+              {
+                "quote_id": "E4Q2"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "parent_communication_notes",
+            "text": "Parents should be informed that while laboratory tests like CRP are useful, they are part of a broader clinical assessment. The baby's worsening feeding and temperature rise are significant clinical signs that require close monitoring and potentially further evaluation, as clinical algorithms are designed to integrate these factors for better diagnosis.",
+            "support": [
+              {
+                "quote_id": "E3Q3"
+              },
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 22.88228739999613,
+      "replayed": true
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "59a92fadf3896ad7d5ac5e2c839db7d9a214af2c1f1b556d9aac611cd23b94d8",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 6, \"gestational_age_weeks\": 35, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"unknown\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"temperature_c\": 38.2, \"feeding\": \"not feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 3.0, \"crp\": 18, \"feeding\": \"feeding well\", \"temperature_c\": 36.8}], \"evidence\": [{\"id\": \"E1\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\\u201359 days at the time of presentation to health facilities. Brown et al. (2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88). Rees et al. (2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference\"}, {\"id\": \"E2\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"One further systematic review of seven studies and a total of 505 infants examined the use of CRP in decision-making for stopping antibiotic treatment in newborns diagnosed with sepsis (90). Petel et al. (2018) reported that CRP-based algorithms shortened antibiotic treatment duration by 1.45 days (95% CI: \\u22122.61 to \\u20130.28) in two RCTs, and by 1.15 days (95% CI: \\u22122.06 to \\u20130.24) in two cohort studies, with no differences in mortality or infection relapse in neonates (90).\"}, {\"id\": \"E3\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"include laboratory tests due to the lack of availability of simple tests in district hospitals, such as full blood count and C-reactive protein (CRP). However, these tests have become more widely available and POC rapid \\u201cbedside\\u201d laboratory tests are becoming much more common (10, 75). There has also been much interest in how to integrate laboratory tests with IMCI and other clinical algorithms, and ongoing work to develop more sophisticated predictive algorithms and machine-learning tools to improve sepsis diagnosis, assist clinicians in determining when to stop antibiotics and rationalizing antibiotic therapy (75).\"}, {\"id\": \"E4\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"(CRP of \\u2265 60 mg/L, AUC: 0.87, 95% CI: 0.76 to 0.91, n=1339 neonates; and PCT of \\u2265 0.5 ng/ml, AUC: 0.87, 95% CI: 0.70 to 0.92, n=617 neonates), while ESR and WCC had poor discriminatory ability (89).\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The patient's clinical deterioration, characterized by rising temperature and worsening feeding despite a falling CRP, suggests that clinical signs are critical for assessment. WHO guidance notes that laboratory tests like CRP are often integrated with clinical algorithms to improve sepsis diagnosis, implying that a single biomarker trend should not override clinical worsening.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"investigations\", \"text\": \"CRP has demonstrated good discriminatory ability for diagnosing sepsis in neonates, with a median sensitivity of 0.62 and specificity of 0.74. However, given the patient's age (6 hours) and the limitations of biomarkers in the very early onset period, clinical evaluation remains paramount.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"monitoring_plan\", \"text\": \"In a primary health clinic setting, the availability of point-of-care rapid bedside laboratory tests is becoming more common. These tools can assist in monitoring trends, but their integration with clinical algorithms is an area of ongoing development to assist clinicians in determining the need for further action.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C4\", \"section\": \"escalation_criteria\", \"text\": \"While CRP-based algorithms have been shown to shorten antibiotic treatment duration in confirmed sepsis cases, this evidence applies to stopping treatment, not initiating or escalating care in a deteriorating patient. The worsening clinical status (temperature 38.2\\u00b0C, poor feeding) in a 35-week gestation neonate warrants careful reassessment against clinical criteria rather than reliance on the falling CRP alone.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C5\", \"section\": \"antibiotic_review\", \"text\": \"Evidence indicates that CRP and Procalcitonin (PCT) have good discriminatory ability for sepsis diagnosis, whereas ESR and WCC have poor discriminatory ability. This supports the use of CRP as a supportive tool but does not replace the need for clinical judgment in the face of deteriorating signs such as poor feeding and fever.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"parent_communication_notes\", \"text\": \"Parents should be informed that while laboratory tests like CRP are useful, they are part of a broader clinical assessment. The baby's worsening feeding and temperature rise are significant clinical signs that require close monitoring and potentially further evaluation, as clinical algorithms are designed to integrate these factors for better diagnosis.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E1\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "rejected_claim_ids": [],
+        "reasons": [],
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ]
+      },
+      "seconds": 45.64610640000319,
+      "replayed": true
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "59a92fadf3896ad7d5ac5e2c839db7d9a214af2c1f1b556d9aac611cd23b94d8",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY\", \"patient\": {\"age_hours\": 6, \"gestational_age_weeks\": 35, \"care_setting\": \"primary_health_clinic\", \"maternal_gbs\": \"unknown\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 4, \"culture_status\": \"unknown\", \"temperature_c\": 38.2, \"feeding\": \"not feeding well\", \"movement\": \"spontaneous\", \"convulsions\": false, \"severe_chest_indrawing\": false, \"referral_possible\": true, \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 3.0, \"crp\": 18, \"feeding\": \"feeding well\", \"temperature_c\": 36.8}], \"evidence\": [{\"id\": \"E1\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\\u201359 days at the time of presentation to health facilities. Brown et al. (2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88). Rees et al. (2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference\"}, {\"id\": \"E2\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"One further systematic review of seven studies and a total of 505 infants examined the use of CRP in decision-making for stopping antibiotic treatment in newborns diagnosed with sepsis (90). Petel et al. (2018) reported that CRP-based algorithms shortened antibiotic treatment duration by 1.45 days (95% CI: \\u22122.61 to \\u20130.28) in two RCTs, and by 1.15 days (95% CI: \\u22122.06 to \\u20130.24) in two cohort studies, with no differences in mortality or infection relapse in neonates (90).\"}, {\"id\": \"E3\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"include laboratory tests due to the lack of availability of simple tests in district hospitals, such as full blood count and C-reactive protein (CRP). However, these tests have become more widely available and POC rapid \\u201cbedside\\u201d laboratory tests are becoming much more common (10, 75). There has also been much interest in how to integrate laboratory tests with IMCI and other clinical algorithms, and ongoing work to develop more sophisticated predictive algorithms and machine-learning tools to improve sepsis diagnosis, assist clinicians in determining when to stop antibiotics and rationalizing antibiotic therapy (75).\"}, {\"id\": \"E4\", \"source\": \"WHO serious bacterial infections 2024\", \"section\": null, \"version\": \"2024-12-08\", \"text\": \"(CRP of \\u2265 60 mg/L, AUC: 0.87, 95% CI: 0.76 to 0.91, n=1339 neonates; and PCT of \\u2265 0.5 ng/ml, AUC: 0.87, 95% CI: 0.70 to 0.92, n=617 neonates), while ESR and WCC had poor discriminatory ability (89).\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The patient's clinical deterioration, characterized by rising temperature and worsening feeding despite a falling CRP, suggests that clinical signs are critical for assessment. WHO guidance notes that laboratory tests like CRP are often integrated with clinical algorithms to improve sepsis diagnosis, implying that a single biomarker trend should not override clinical worsening.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"investigations\", \"text\": \"CRP has demonstrated good discriminatory ability for diagnosing sepsis in neonates, with a median sensitivity of 0.62 and specificity of 0.74. However, given the patient's age (6 hours) and the limitations of biomarkers in the very early onset period, clinical evaluation remains paramount.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"monitoring_plan\", \"text\": \"In a primary health clinic setting, the availability of point-of-care rapid bedside laboratory tests is becoming more common. These tools can assist in monitoring trends, but their integration with clinical algorithms is an area of ongoing development to assist clinicians in determining the need for further action.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C4\", \"section\": \"escalation_criteria\", \"text\": \"While CRP-based algorithms have been shown to shorten antibiotic treatment duration in confirmed sepsis cases, this evidence applies to stopping treatment, not initiating or escalating care in a deteriorating patient. The worsening clinical status (temperature 38.2\\u00b0C, poor feeding) in a 35-week gestation neonate warrants careful reassessment against clinical criteria rather than reliance on the falling CRP alone.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C5\", \"section\": \"antibiotic_review\", \"text\": \"Evidence indicates that CRP and Procalcitonin (PCT) have good discriminatory ability for sepsis diagnosis, whereas ESR and WCC have poor discriminatory ability. This supports the use of CRP as a supportive tool but does not replace the need for clinical judgment in the face of deteriorating signs such as poor feeding and fever.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C6\", \"section\": \"parent_communication_notes\", \"text\": \"Parents should be informed that while laboratory tests like CRP are useful, they are part of a broader clinical assessment. The baby's worsening feeding and temperature rise are significant clinical signs that require close monitoring and potentially further evaluation, as clinical algorithms are designed to integrate these factors for better diagnosis.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E1\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "rejected_claim_ids": [],
+        "reasons": [],
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ]
+      },
+      "seconds": 67.20326509999722,
+      "replayed": true
+    }
+  ],
+  "packet": {
+    "guideline": "WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 35,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 3.0,
+        "crp": 18,
+        "feeding": "feeding well",
+        "temperature_c": 36.8
+      }
+    ],
+    "evaluation_question": "CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance? Gestation 35 weeks; age 6 hours; setting primary_health_clinic.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "WHO2024-P26-B3",
+        "text": "Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\u201359 days at the time of presentation to health facilities. Brown et al. (2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88). Rees et al. (2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 26
+      },
+      {
+        "id": "E2",
+        "chunk_id": "WHO2024-P26-B5",
+        "text": "One further systematic review of seven studies and a total of 505 infants examined the use of CRP in decision-making for stopping antibiotic treatment in newborns diagnosed with sepsis (90). Petel et al. (2018) reported that CRP-based algorithms shortened antibiotic treatment duration by 1.45 days (95% CI: \u22122.61 to \u20130.28) in two RCTs, and by 1.15 days (95% CI: \u22122.06 to \u20130.24) in two cohort studies, with no differences in mortality or infection relapse in neonates (90).",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 26
+      },
+      {
+        "id": "E3",
+        "chunk_id": "WHO2024-P24-B19",
+        "text": "include laboratory tests due to the lack of availability of simple tests in district hospitals, such as full blood count and C-reactive protein (CRP). However, these tests have become more widely available and POC rapid \u201cbedside\u201d laboratory tests are becoming much more common (10, 75). There has also been much interest in how to integrate laboratory tests with IMCI and other clinical algorithms, and ongoing work to develop more sophisticated predictive algorithms and machine-learning tools to improve sepsis diagnosis, assist clinicians in determining when to stop antibiotics and rationalizing antibiotic therapy (75).",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 24
+      },
+      {
+        "id": "E4",
+        "chunk_id": "WHO2024-P26-B4",
+        "text": "(CRP of \u2265 60 mg/L, AUC: 0.87, 95% CI: 0.76 to 0.91, n=1339 neonates; and PCT of \u2265 0.5 ng/ml, AUC: 0.87, 95% CI: 0.70 to 0.92, n=617 neonates), while ESR and WCC had poor discriminatory ability (89).",
+        "source": "WHO serious bacterial infections 2024",
+        "version": "2024-12-08",
+        "page_number": 26
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "WHO serious bacterial infections 2024 (EOS subset), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 6,
+        "gestational_age_weeks": 35,
+        "care_setting": "primary_health_clinic",
+        "maternal_gbs": "unknown",
+        "respiratory_rate": 48,
+        "spo2": 97,
+        "crp": 4,
+        "culture_status": "unknown",
+        "temperature_c": 38.2,
+        "feeding": "not feeding well",
+        "movement": "spontaneous",
+        "convulsions": false,
+        "severe_chest_indrawing": false,
+        "referral_possible": true,
+        "red_flags": "not fully documented"
+      },
+      "history": [
+        {
+          "age_hours": 3.0,
+          "crp": 18,
+          "feeding": "feeding well",
+          "temperature_c": 36.8
+        }
+      ],
+      "evaluation_question": "CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance? Gestation 35 weeks; age 6 hours; setting primary_health_clinic.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "WHO2024-P26-B3",
+          "text": "Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\u201359 days at the time of presentation to health facilities. Brown et al. (2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88). Rees et al. (2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 26
+        },
+        {
+          "id": "E2",
+          "chunk_id": "WHO2024-P26-B5",
+          "text": "One further systematic review of seven studies and a total of 505 infants examined the use of CRP in decision-making for stopping antibiotic treatment in newborns diagnosed with sepsis (90). Petel et al. (2018) reported that CRP-based algorithms shortened antibiotic treatment duration by 1.45 days (95% CI: \u22122.61 to \u20130.28) in two RCTs, and by 1.15 days (95% CI: \u22122.06 to \u20130.24) in two cohort studies, with no differences in mortality or infection relapse in neonates (90).",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 26
+        },
+        {
+          "id": "E3",
+          "chunk_id": "WHO2024-P24-B19",
+          "text": "include laboratory tests due to the lack of availability of simple tests in district hospitals, such as full blood count and C-reactive protein (CRP). However, these tests have become more widely available and POC rapid \u201cbedside\u201d laboratory tests are becoming much more common (10, 75). There has also been much interest in how to integrate laboratory tests with IMCI and other clinical algorithms, and ongoing work to develop more sophisticated predictive algorithms and machine-learning tools to improve sepsis diagnosis, assist clinicians in determining when to stop antibiotics and rationalizing antibiotic therapy (75).",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 24
+        },
+        {
+          "id": "E4",
+          "chunk_id": "WHO2024-P26-B4",
+          "text": "(CRP of \u2265 60 mg/L, AUC: 0.87, 95% CI: 0.76 to 0.91, n=1339 neonates; and PCT of \u2265 0.5 ng/ml, AUC: 0.87, 95% CI: 0.70 to 0.92, n=617 neonates), while ESR and WCC had poor discriminatory ability (89).",
+          "source": "WHO serious bacterial infections 2024",
+          "version": "2024-12-08",
+          "page_number": 26
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "The patient's clinical deterioration, characterized by rising temperature and worsening feeding despite a falling CRP, suggests that clinical signs are critical for assessment. WHO guidance notes that laboratory tests like CRP are often integrated with clinical algorithms to improve sepsis diagnosis, implying that a single biomarker trend should not override clinical worsening.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "There has also been much interest in how to integrate laboratory tests with IMCI and other clinical algorithms, and ongoing work to develop more sophisticated predictive algorithms and machine-learning tools to improve sepsis diagnosis, assist clinicians in determining when to stop antibiotics and rationalizing antibiotic therapy (75)."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\u201359 days at the time of presentation to health facilities."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "investigations",
+          "text": "CRP has demonstrated good discriminatory ability for diagnosing sepsis in neonates, with a median sensitivity of 0.62 and specificity of 0.74. However, given the patient's age (6 hours) and the limitations of biomarkers in the very early onset period, clinical evaluation remains paramount.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "(2019) identified 20 studies of 1615 infants reporting upon diagnostic accuracy of CRP in neonates and reported that at median specificity (0.74), sensitivity was 0.62 (95% CI: 0.50 to 0.73) (88)."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "(2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "monitoring_plan",
+          "text": "In a primary health clinic setting, the availability of point-of-care rapid bedside laboratory tests is becoming more common. These tools can assist in monitoring trends, but their integration with clinical algorithms is an area of ongoing development to assist clinicians in determining the need for further action.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "However, these tests have become more widely available and POC rapid \u201cbedside\u201d laboratory tests are becoming much more common (10, 75)."
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "There has also been much interest in how to integrate laboratory tests with IMCI and other clinical algorithms, and ongoing work to develop more sophisticated predictive algorithms and machine-learning tools to improve sepsis diagnosis, assist clinicians in determining when to stop antibiotics and rationalizing antibiotic therapy (75)."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "escalation_criteria",
+          "text": "While CRP-based algorithms have been shown to shorten antibiotic treatment duration in confirmed sepsis cases, this evidence applies to stopping treatment, not initiating or escalating care in a deteriorating patient. The worsening clinical status (temperature 38.2\u00b0C, poor feeding) in a 35-week gestation neonate warrants careful reassessment against clinical criteria rather than reliance on the falling CRP alone.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "(2018) reported that CRP-based algorithms shortened antibiotic treatment duration by 1.45 days (95% CI: \u22122.61 to \u20130.28) in two RCTs, and by 1.15 days (95% CI: \u22122.06 to \u20130.24) in two cohort studies, with no differences in mortality or infection relapse in neonates (90)."
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "One further systematic review of seven studies and a total of 505 infants examined the use of CRP in decision-making for stopping antibiotic treatment in newborns diagnosed with sepsis (90)."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "antibiotic_review",
+          "text": "Evidence indicates that CRP and Procalcitonin (PCT) have good discriminatory ability for sepsis diagnosis, whereas ESR and WCC have poor discriminatory ability. This supports the use of CRP as a supportive tool but does not replace the need for clinical judgment in the face of deteriorating signs such as poor feeding and fever.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "(2023) examined CRP, procalcitonin (PCT), erythrocyte sedimentation rate (ESR) and white cell count (WCC) in 134 studies, and concluded that CRP and PCT demonstrated good discriminatory ability to diagnose sepsis with blood culture as the reference"
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "and PCT of \u2265 0.5 ng/ml, AUC: 0.87, 95% CI: 0.70 to 0.92, n=617 neonates), while ESR and WCC had poor discriminatory ability (89)."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "parent_communication_notes",
+          "text": "Parents should be informed that while laboratory tests like CRP are useful, they are part of a broader clinical assessment. The baby's worsening feeding and temperature rise are significant clinical signs that require close monitoring and potentially further evaluation, as clinical algorithms are designed to integrate these factors for better diagnosis.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "There has also been much interest in how to integrate laboratory tests with IMCI and other clinical algorithms, and ongoing work to develop more sophisticated predictive algorithms and machine-learning tools to improve sepsis diagnosis, assist clinicians in determining when to stop antibiotics and rationalizing antibiotic therapy (75)."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "Two additional systematic reviews examined the diagnostic accuracy of laboratory biomarkers to diagnose culture-confirmed sepsis (88) or clinical or culture-confirmed sepsis (89) in infants aged 0\u201359 days at the time of presentation to health facilities."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "safety_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "status": "supported_for_review",
+    "errors": [],
+    "resolution_log": [],
+    "packet_sha256": "d8b2f5df9948e39526e7efed5198dce37c87b4f305a3d8515ee065fe5220c63e"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 1,
+    "budget_seconds": 29.862696999996842,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

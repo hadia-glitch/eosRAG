@@ -1,0 +1,27 @@
+{
+  "removed_exact_text_duplicates": {
+    "WHO2024-P2-B8": "WHO2024-A.1",
+    "WHO2024-P6-B7": "WHO2024-A.2",
+    "WHO2024-P9-B9": "WHO2024-A.3b",
+    "WHO2024-P10-B14": "WHO2024-P7-B10",
+    "WHO2024-P15-B7": "WHO2024-A.4",
+    "WHO2024-P16-B10": "WHO2024-P7-B10",
+    "WHO2024-P19-B7": "WHO2024-A.5",
+    "WHO2024-P20-B10": "WHO2024-P7-B10",
+    "WHO2024-P27-B6": "WHO2024-B.2",
+    "WHO2024-P28-B9": "WHO2024-P7-B10",
+    "WHO2024-P28-B15": "WHO2024-P16-B16",
+    "WHO2024-P31-B6": "WHO2024-B.3",
+    "WHO2024-P32-B9": "WHO2024-P7-B10",
+    "WHO2024-P34-B6": "WHO2024-B.4",
+    "WHO2024-P35-B12": "WHO2024-P7-B10",
+    "WHO2024-P37-B6": "WHO2024-B.5",
+    "WHO2024-P38-B9": "WHO2024-P7-B10",
+    "WHO2024-P40-B6": "WHO2024-B.6",
+    "WHO2024-P40-B12": "WHO2024-P37-B12",
+    "WHO2024-P40-B14": "WHO2024-P37-B14",
+    "WHO2024-P41-B9": "WHO2024-P7-B10"
+  },
+  "case_file_unchanged": true,
+  "hyperparameters_changed": false
+}

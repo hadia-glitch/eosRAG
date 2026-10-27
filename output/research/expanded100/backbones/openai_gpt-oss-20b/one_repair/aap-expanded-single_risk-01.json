@@ -1,0 +1,338 @@
+{
+  "id": "aap-expanded-single_risk-01",
+  "family": "single_risk",
+  "model": "openai/gpt-oss-20b",
+  "verifier_model": "openai/gpt-oss-20b",
+  "seconds": 0.11687700000038603,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-20b",
+      "prompt_sha256": "059caff0a3228efc3f3221f4092273e7256d73264625c00ed7d0ae73a6f03d8f",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 6, \"gestational_age_weeks\": 41, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 46, \"spo2\": 97, \"crp\": 3, \"culture_status\": \"unknown\", \"maternal_gbs\": \"positive\", \"red_flags\": \"explicitly absent\", \"other_risk_factors\": \"assessed absent\", \"clinical_condition\": \"well appearing\", \"other_clinical_indicators\": \"assessed absent\"}, \"history\": [{\"age_hours\": 2.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 18}, {\"age_hours\": 4.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evaluation_question\": \"A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 41 weeks; age 6 hours; setting hospital birth.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"AAP2018-35PLUS-P3-B9\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 3, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"A categorical risk factor assessment includes risk factor threshold values to identify infants who are at increased risk for EOS.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"Algorithms for the management of GBS-specific EOS have been used as a general framework for the prevention of all EOS.\"}, {\"quote_id\": \"E1Q3\", \"text\": \"Risk factors used in such algorithms included (1) any\"}]}, {\"id\": \"E2\", \"chunk_id\": \"AAP2018-35PLUS-P3-B10\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 3, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"newborn infant who is ill appearing;\"}, {\"quote_id\": \"E2Q2\", \"text\": \"(2) a mother with a clinical diagnosis of chorioamnionitis;\"}, {\"quote_id\": \"E2Q3\", \"text\": \"(3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\\u2019 gestation;\"}, {\"quote_id\": \"E2Q4\", \"text\": \"or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors.\"}, {\"quote_id\": \"E2Q5\", \"text\": \"Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \\u226548 hours for category 4.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"AAP2018-35PLUS-P2-B9\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 2, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"The occurrence, severity, and duration of specific clinical risk factors can be used to assess the risk of EOS among term and late-preterm infants.\"}, {\"quote_id\": \"E3Q2\", \"text\": \"Evidence has supported the predictive value of gestational age, maternal intraamniotic infection (represented either by intrapartum fever or the obstetric clinical diagnosis of chorioamnionitis), the duration of rupture of membranes (ROM), maternal GBS colonization, the administration of appropriate intrapartum antibiotic therapy, and the newborn clinical condition.\"}]}, {\"id\": \"E4\", \"chunk_id\": \"AAP2018-35PLUS-P3-B13\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 3, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\\u2019s risk of EOS.\"}, {\"quote_id\": \"E4Q2\", \"text\": \"A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth.\"}, {\"quote_id\": \"E4Q3\", \"text\": \"The objective data include gestational age, the highest maternal intrapartum temperature, the\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "The infant falls into a low\u2011risk category for early\u2011onset sepsis because the only identified risk factor is maternal GBS colonization, and the infant is well\u2011appearing with no additional risk factors.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              },
+              {
+                "quote_id": "E3Q1"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "investigations",
+            "text": "No immediate laboratory testing is required; observation in the hospital for 48\u201372 hours is sufficient per the algorithm for infants with a single GBS risk factor and no clinical signs of illness.",
+            "support": [
+              {
+                "quote_id": "E2Q5"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "monitoring_plan",
+            "text": "Monitor vital signs, feeding, and behavior twice daily for the first 48 hours, with particular attention to temperature, respiratory rate, and oxygen saturation.",
+            "support": [
+              {
+                "quote_id": "E4Q1"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "escalation_criteria",
+            "text": "Escalate to laboratory testing and empirical antibiotics if the infant develops any of the following: fever >38.0\u00b0C, apnea, poor feeding, lethargy, or a rising CRP beyond 10 mg/L.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              },
+              {
+                "quote_id": "E3Q2"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "recommended_actions",
+            "text": "Maintain routine newborn care, including skin\u2011to\u2011skin contact and breastfeeding support, while ensuring the infant remains in the hospital for observation.",
+            "support": [
+              {
+                "quote_id": "E1Q2"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "parent_communication_notes",
+            "text": "Explain to parents that the infant is at low risk for EOS, will be observed for 48\u201372 hours, and that any concerning changes will prompt immediate evaluation and treatment.",
+            "support": [
+              {
+                "quote_id": "E1Q3"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 21.80461849999847,
+      "replayed": true
+    }
+  ],
+  "packet": {
+    "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evaluation_question": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 41 weeks; age 6 hours; setting hospital birth.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "AAP2018-35PLUS-P3-B9",
+        "text": "A categorical risk factor assessment includes risk factor threshold values to identify infants who are at increased risk for EOS. Algorithms for the management of GBS-specific EOS have been used as a general framework for the prevention of all EOS. Risk factors used in such algorithms included (1) any",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 3
+      },
+      {
+        "id": "E2",
+        "chunk_id": "AAP2018-35PLUS-P3-B10",
+        "text": "newborn infant who is ill appearing; (2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation; or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 3
+      },
+      {
+        "id": "E3",
+        "chunk_id": "AAP2018-35PLUS-P2-B9",
+        "text": "The occurrence, severity, and duration of specific clinical risk factors can be used to assess the risk of EOS among term and late-preterm infants. Evidence has supported the predictive value of gestational age, maternal intraamniotic infection (represented either by intrapartum fever or the obstetric clinical diagnosis of chorioamnionitis), the duration of rupture of membranes (ROM), maternal GBS colonization, the administration of appropriate intrapartum antibiotic therapy, and the newborn clinical condition.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 2
+      },
+      {
+        "id": "E4",
+        "chunk_id": "AAP2018-35PLUS-P3-B13",
+        "text": "A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\u2019s risk of EOS. A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth. The objective data include gestational age, the highest maternal intrapartum temperature, the",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 3
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+      "patient": {
+        "age_hours": 6,
+        "gestational_age_weeks": 41,
+        "care_setting": "hospital_birth",
+        "respiratory_rate": 46,
+        "spo2": 97,
+        "crp": 3,
+        "culture_status": "unknown",
+        "maternal_gbs": "positive",
+        "red_flags": "explicitly absent",
+        "other_risk_factors": "assessed absent",
+        "clinical_condition": "well appearing",
+        "other_clinical_indicators": "assessed absent"
+      },
+      "history": [
+        {
+          "age_hours": 2.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 18
+        },
+        {
+          "age_hours": 4.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evaluation_question": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 41 weeks; age 6 hours; setting hospital birth.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "AAP2018-35PLUS-P3-B9",
+          "text": "A categorical risk factor assessment includes risk factor threshold values to identify infants who are at increased risk for EOS. Algorithms for the management of GBS-specific EOS have been used as a general framework for the prevention of all EOS. Risk factors used in such algorithms included (1) any",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 3
+        },
+        {
+          "id": "E2",
+          "chunk_id": "AAP2018-35PLUS-P3-B10",
+          "text": "newborn infant who is ill appearing; (2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation; or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 3
+        },
+        {
+          "id": "E3",
+          "chunk_id": "AAP2018-35PLUS-P2-B9",
+          "text": "The occurrence, severity, and duration of specific clinical risk factors can be used to assess the risk of EOS among term and late-preterm infants. Evidence has supported the predictive value of gestational age, maternal intraamniotic infection (represented either by intrapartum fever or the obstetric clinical diagnosis of chorioamnionitis), the duration of rupture of membranes (ROM), maternal GBS colonization, the administration of appropriate intrapartum antibiotic therapy, and the newborn clinical condition.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 2
+        },
+        {
+          "id": "E4",
+          "chunk_id": "AAP2018-35PLUS-P3-B13",
+          "text": "A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\u2019s risk of EOS. A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth. The objective data include gestational age, the highest maternal intrapartum temperature, the",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 3
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "The infant falls into a low\u2011risk category for early\u2011onset sepsis because the only identified risk factor is maternal GBS colonization, and the infant is well\u2011appearing with no additional risk factors.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "A categorical risk factor assessment includes risk factor threshold values to identify infants who are at increased risk for EOS."
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "The occurrence, severity, and duration of specific clinical risk factors can be used to assess the risk of EOS among term and late-preterm infants."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "investigations",
+          "text": "No immediate laboratory testing is required; observation in the hospital for 48\u201372 hours is sufficient per the algorithm for infants with a single GBS risk factor and no clinical signs of illness.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "monitoring_plan",
+          "text": "Monitor vital signs, feeding, and behavior twice daily for the first 48 hours, with particular attention to temperature, respiratory rate, and oxygen saturation.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\u2019s risk of EOS."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "escalation_criteria",
+          "text": "Escalate to laboratory testing and empirical antibiotics if the infant develops any of the following: fever >38.0\u00b0C, apnea, poor feeding, lethargy, or a rising CRP beyond 10 mg/L.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "newborn infant who is ill appearing;"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "Evidence has supported the predictive value of gestational age, maternal intraamniotic infection (represented either by intrapartum fever or the obstetric clinical diagnosis of chorioamnionitis), the duration of rupture of membranes (ROM), maternal GBS colonization, the administration of appropriate intrapartum antibiotic therapy, and the newborn clinical condition."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "recommended_actions",
+          "text": "Maintain routine newborn care, including skin\u2011to\u2011skin contact and breastfeeding support, while ensuring the infant remains in the hospital for observation.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Algorithms for the management of GBS-specific EOS have been used as a general framework for the prevention of all EOS."
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "parent_communication_notes",
+          "text": "Explain to parents that the infant is at low risk for EOS, will be observed for 48\u201372 hours, and that any concerning changes will prompt immediate evaluation and treatment.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "Risk factors used in such algorithms included (1) any"
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [
+      "C4: numerical medication/fluid dosing is not supported"
+    ],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Draft failed structural/source checks"
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Draft failed structural/source checks"
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "C4: numerical medication/fluid dosing is not supported",
+      "Draft failed structural/source checks",
+      "Draft failed structural/source checks"
+    ],
+    "resolution_log": [],
+    "packet_sha256": "85086590824a5cd925b6573b561de91f6519c91bf006690ba0287cf0e2559dfa"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 1,
+    "budget_seconds": 98.07683130000078,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

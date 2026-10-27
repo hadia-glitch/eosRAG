@@ -1,0 +1,4142 @@
+[
+  {
+    "id": "deterioration-1",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Review respiratory deterioration, hypoxia and abnormal vital signs over serial observations.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 90,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 60,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "deterioration-2",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Review respiratory deterioration, hypoxia and abnormal vital signs over serial observations.",
+    "patient": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 90,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 60,
+        "spo2": 94,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "deterioration-3",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Review respiratory deterioration, hypoxia and abnormal vital signs over serial observations.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 90,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 60,
+        "spo2": 94,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "crp_alone-1",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "crp_alone-2",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+    "patient": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "crp_alone-3",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "incomplete_stop-1",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "negative",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at 36 hours. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "incomplete_stop-2",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "negative",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at 36 hours. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "incomplete_stop-3",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "negative",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at 36 hours. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "initial_investigation-1",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "initial_investigation-2",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+    "patient": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "initial_investigation-3",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "single_risk-1",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "Review one known risk factor in a currently well baby without inventing absent findings.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "explicitly absent",
+      "maternal_gbs": "positive"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "single_risk-2",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "Review one known risk factor in a currently well baby without inventing absent findings.",
+    "patient": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "explicitly absent",
+      "maternal_gbs": "positive"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "single_risk-3",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "Review one known risk factor in a currently well baby without inventing absent findings.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "explicitly absent",
+      "maternal_gbs": "positive"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "missing_results-1",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "missing_results-2",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+    "patient": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "missing_results-3",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 28 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 28,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 36,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 28 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 28,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 41 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-05",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 6 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 36,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-06",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 32 weeks; age 12 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 32,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-07",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 40 weeks; age 24 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-08",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 28 weeks; age 36 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 28,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-09",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 32 weeks; age 6 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 32,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-10",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 28 weeks; age 12 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 28,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-11",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 37 weeks; age 24 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-deterioration-12",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 32 weeks; age 36 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 32,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-box2",
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "The recorded respiratory rate increased and oxygen saturation fell over serial observations. Respiratory distress and hypoxia are clinical indicators of possible infection. Arrange immediate clinical assessment, review maternal and neonatal history, examine vital signs, and apply the guideline framework for multiple clinical indicators. Do not wait for test results when treatment is indicated; treatment decisions require the responsible clinician."
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 40 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 41 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 41,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "Earlier C-reactive protein readings fell, but the current result is unavailable. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 32 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 32,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 32 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-05",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 40 weeks; age 6 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 40,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-06",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 28 weeks; age 12 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 28,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "Earlier C-reactive protein readings fell, but the current result is unavailable. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-07",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 40 weeks; age 24 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-08",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 28 weeks; age 36 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 28,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-09",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 32 weeks; age 6 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 32,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-10",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 32 weeks; age 12 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "Earlier C-reactive protein readings fell, but the current result is unavailable. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-11",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 37 weeks; age 24 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-crp_alone-12",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 40 weeks; age 36 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 40,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.15.3",
+      "NICE-1.13.2",
+      "NICE-1.15.4"
+    ],
+    "reference": "The C-reactive protein concentration fell in the supplied history. A falling result alone cannot determine whether to start, continue or stop antibiotics. Interpret serial C-reactive protein together with clinical condition and investigation results. Reassess the baby and review microbiology before a clinician makes treatment decisions."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 41 weeks; age 48 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 32.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 38 weeks; age 54 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 54,
+      "gestational_age_weeks": 38,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 18.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 36.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 37 weeks; age 60 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 37,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 20.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 40.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 37 weeks; age 71 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 71,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 23.666666666666668,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 47.333333333333336,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-05",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 40 weeks; age 48 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 40,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      },
+      {
+        "age_hours": 32.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-06",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 38 weeks; age 54 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 54,
+      "gestational_age_weeks": 38,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 18.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 36.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-07",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 39 weeks; age 60 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 39,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 20.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 40.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-08",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 39 weeks; age 71 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 71,
+      "gestational_age_weeks": 39,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 23.666666666666668,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 47.333333333333336,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-09",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 38 weeks; age 48 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 38,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 32.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-10",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 38 weeks; age 54 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 54,
+      "gestational_age_weeks": 38,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 18.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      },
+      {
+        "age_hours": 36.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-11",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 41 weeks; age 60 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 41,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 20.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 40.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-12",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 41 weeks; age 71 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 71,
+      "gestational_age_weeks": 41,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 23.666666666666668,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 47.333333333333336,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.21.3",
+      "NICE-1.21.4"
+    ],
+    "reference": "A negative blood culture alone does not satisfy the stopping criteria at the 36-hour review. Initial suspicion must not have been strong, clinical condition must be reassuring with no indicators of possible infection, and C-reactive protein levels and trends must be reassuring. Persistent respiratory concerns mean these conditions are not all established. If antibiotics continue despite negative cultures, review their need at least every 24 hours with clinical progress and serial results."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 28 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 28,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 28 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 28,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 41 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 41,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 32 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-05",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 35 weeks; age 6 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 35,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-06",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 32 weeks; age 12 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 32,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-07",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 32 weeks; age 24 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-08",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 32 weeks; age 36 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 32,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-09",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 41 weeks; age 6 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 41,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-10",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 41 weeks; age 12 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-11",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 36 weeks; age 24 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 36,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-initial_investigation-12",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 28 weeks; age 36 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 28,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.13.1",
+      "NICE-1.13.2",
+      "NICE-1.15.3"
+    ],
+    "reference": "When starting treatment for suspected neonatal infection, obtain a blood culture before the first antibiotic dose and measure baseline C-reactive protein. Use subsequent readings with the baseline to assess infection likelihood and response. C-reactive protein alone must not determine antibiotic decisions. The supplied case has no available culture result, so infection status remains unresolved."
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 41 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 40 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 40,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 38 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 38,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-04",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 40 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-05",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 39 weeks; age 6 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 39,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-06",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 39 weeks; age 12 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 39,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-07",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 38 weeks; age 24 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 38,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-08",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 37 weeks; age 36 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 37,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-09",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 39 weeks; age 6 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 39,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-10",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 39 weeks; age 12 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 39,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-11",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 40 weeks; age 24 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 40,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-single_risk-12",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 39 weeks; age 36 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 39,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.10.3"
+    ],
+    "reference": "Review the maternal and neonatal history and perform a clinical examination with vital signs because a risk factor is present. For a baby with one risk factor and no red flags, clinical judgement determines whether antibiotics can safely be withheld and whether monitoring is required. If monitoring is needed, continue for at least 12 hours using a newborn early warning system. Unrecorded findings remain unknown."
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 32 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 40 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 40,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 28 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 28,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-04",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 41 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-05",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 41 weeks; age 6 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 41,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-06",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 35 weeks; age 12 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-07",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 32 weeks; age 24 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-08",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 37 weeks; age 36 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 37,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-09",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 37 weeks; age 6 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 37,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-10",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 37 weeks; age 12 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 22
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-11",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 41 weeks; age 24 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 41,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "nice-expanded-missing_results-12",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 40 weeks; age 36 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 40,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      }
+    ],
+    "gold_chunk_ids": [
+      "NICE-1.10.1",
+      "NICE-1.15.4",
+      "NICE-1.13.2"
+    ],
+    "reference": "Maternal history, culture results and a later clinical examination are unavailable in this case. Missing information cannot be treated as normal findings or evidence against infection. Review the history, examine the baby and reassess vital signs and investigation results. Integrate serial laboratory measurements with clinical progress rather than making an automatic diagnosis or antibiotic decision."
+  },
+  {
+    "id": "aap-expanded-deterioration-01",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 37 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P4-B5",
+      "AAP2018-35PLUS-SP2"
+    ],
+    "reference": "Serial observations show rising respiratory rate and falling oxygen saturation. Infants developing signs of illness require clinical evaluation; the AAP clinical-condition approach includes empirical treatment or further laboratory evaluation. Risk assessment must incorporate the infant examination and the local documented pathway. A reassuring birth examination does not establish that a currently ill infant is well."
+  },
+  {
+    "id": "aap-expanded-deterioration-02",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 35 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P4-B5",
+      "AAP2018-35PLUS-SP2"
+    ],
+    "reference": "Serial observations show rising respiratory rate and falling oxygen saturation. Infants developing signs of illness require clinical evaluation; the AAP clinical-condition approach includes empirical treatment or further laboratory evaluation. Risk assessment must incorporate the infant examination and the local documented pathway. A reassuring birth examination does not establish that a currently ill infant is well."
+  },
+  {
+    "id": "aap-expanded-deterioration-03",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 36,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P4-B5",
+      "AAP2018-35PLUS-SP2"
+    ],
+    "reference": "Serial observations show rising respiratory rate and falling oxygen saturation. Infants developing signs of illness require clinical evaluation; the AAP clinical-condition approach includes empirical treatment or further laboratory evaluation. Risk assessment must incorporate the infant examination and the local documented pathway. A reassuring birth examination does not establish that a currently ill infant is well."
+  },
+  {
+    "id": "aap-expanded-deterioration-04",
+    "family": "deterioration",
+    "synthetic": true,
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P4-B5",
+      "AAP2018-35PLUS-SP2"
+    ],
+    "reference": "Serial observations show rising respiratory rate and falling oxygen saturation. Infants developing signs of illness require clinical evaluation; the AAP clinical-condition approach includes empirical treatment or further laboratory evaluation. Risk assessment must incorporate the infant examination and the local documented pathway. A reassuring birth examination does not establish that a currently ill infant is well."
+  },
+  {
+    "id": "aap-expanded-crp_alone-01",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 35 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P6-B2",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "A single CRP or procalcitonin value is neither sufficiently sensitive nor specific to guide EOS care. Inflammatory markers alone do not diagnose EOS; diagnosis uses blood or CSF culture. Serial abnormal markers alone should not determine antibiotic administration without culture-confirmed infection. Do not infer that a falling marker alone permits stopping treatment."
+  },
+  {
+    "id": "aap-expanded-crp_alone-02",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 40 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 40,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P6-B2",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "A single CRP or procalcitonin value is neither sufficiently sensitive nor specific to guide EOS care. Inflammatory markers alone do not diagnose EOS; diagnosis uses blood or CSF culture. Serial abnormal markers alone should not determine antibiotic administration without culture-confirmed infection. Do not infer that a falling marker alone permits stopping treatment."
+  },
+  {
+    "id": "aap-expanded-crp_alone-03",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 37 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P6-B2",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "A single CRP or procalcitonin value is neither sufficiently sensitive nor specific to guide EOS care. Inflammatory markers alone do not diagnose EOS; diagnosis uses blood or CSF culture. Serial abnormal markers alone should not determine antibiotic administration without culture-confirmed infection. Do not infer that a falling marker alone permits stopping treatment."
+  },
+  {
+    "id": "aap-expanded-crp_alone-04",
+    "family": "crp_alone",
+    "synthetic": true,
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 41 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P6-B2",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "A single CRP or procalcitonin value is neither sufficiently sensitive nor specific to guide EOS care. Inflammatory markers alone do not diagnose EOS; diagnosis uses blood or CSF culture. Serial abnormal markers alone should not determine antibiotic administration without culture-confirmed infection. Do not infer that a falling marker alone permits stopping treatment."
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-01",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 40 weeks; age 48 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent unexplained critical cardiorespiratory illness",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 32.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP6",
+      "AAP2018-35PLUS-P6-STOP"
+    ],
+    "reference": "AAP guidance recommends discontinuation by 36 to 48 hours of sterile blood-culture incubation unless clear site-specific infection exists. The article also allows that unexplained critical cardiorespiratory illness in a term infant may justify an empirical course without culture-confirmed infection. Persistent critical illness requires clinician reassessment; a negative culture alone cannot be interpreted as automatic permission to stop. Laboratory abnormalities alone rarely justify continued empirical treatment in a well term infant."
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-02",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 39 weeks; age 54 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 54,
+      "gestational_age_weeks": 39,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent unexplained critical cardiorespiratory illness",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 18.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 36.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP6",
+      "AAP2018-35PLUS-P6-STOP"
+    ],
+    "reference": "AAP guidance recommends discontinuation by 36 to 48 hours of sterile blood-culture incubation unless clear site-specific infection exists. The article also allows that unexplained critical cardiorespiratory illness in a term infant may justify an empirical course without culture-confirmed infection. Persistent critical illness requires clinician reassessment; a negative culture alone cannot be interpreted as automatic permission to stop. Laboratory abnormalities alone rarely justify continued empirical treatment in a well term infant."
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-03",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 38 weeks; age 60 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 38,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent unexplained critical cardiorespiratory illness",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 20.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 40.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP6",
+      "AAP2018-35PLUS-P6-STOP"
+    ],
+    "reference": "AAP guidance recommends discontinuation by 36 to 48 hours of sterile blood-culture incubation unless clear site-specific infection exists. The article also allows that unexplained critical cardiorespiratory illness in a term infant may justify an empirical course without culture-confirmed infection. Persistent critical illness requires clinician reassessment; a negative culture alone cannot be interpreted as automatic permission to stop. Laboratory abnormalities alone rarely justify continued empirical treatment in a well term infant."
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-04",
+    "family": "incomplete_stop",
+    "synthetic": true,
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 40 weeks; age 71 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 71,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent unexplained critical cardiorespiratory illness",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 23.666666666666668,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 47.333333333333336,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP6",
+      "AAP2018-35PLUS-P6-STOP"
+    ],
+    "reference": "AAP guidance recommends discontinuation by 36 to 48 hours of sterile blood-culture incubation unless clear site-specific infection exists. The article also allows that unexplained critical cardiorespiratory illness in a term infant may justify an empirical course without culture-confirmed infection. Persistent critical illness requires clinician reassessment; a negative culture alone cannot be interpreted as automatic permission to stop. Laboratory abnormalities alone rarely justify continued empirical treatment in a well term infant."
+  },
+  {
+    "id": "aap-expanded-initial_investigation-01",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 36 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P5-B3",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "Blood culture remains the diagnostic standard for EOS. Blood or CSF cultures establish the diagnosis; CBC and CRP alone cannot diagnose EOS. Surface cultures and gastric aspirates do not diagnose EOS, and urine culture is not indicated in EOS evaluations before 72 hours. Obtain and interpret diagnostic specimens within the responsible clinician assessment and local pathway; no available culture result is established here."
+  },
+  {
+    "id": "aap-expanded-initial_investigation-02",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 37 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 37,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P5-B3",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "Blood culture remains the diagnostic standard for EOS. Blood or CSF cultures establish the diagnosis; CBC and CRP alone cannot diagnose EOS. Surface cultures and gastric aspirates do not diagnose EOS, and urine culture is not indicated in EOS evaluations before 72 hours. Obtain and interpret diagnostic specimens within the responsible clinician assessment and local pathway; no available culture result is established here."
+  },
+  {
+    "id": "aap-expanded-initial_investigation-03",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 38 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 38,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P5-B3",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "Blood culture remains the diagnostic standard for EOS. Blood or CSF cultures establish the diagnosis; CBC and CRP alone cannot diagnose EOS. Surface cultures and gastric aspirates do not diagnose EOS, and urine culture is not indicated in EOS evaluations before 72 hours. Obtain and interpret diagnostic specimens within the responsible clinician assessment and local pathway; no available culture result is established here."
+  },
+  {
+    "id": "aap-expanded-initial_investigation-04",
+    "family": "initial_investigation",
+    "synthetic": true,
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 38 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 38,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-P5-B3",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "Blood culture remains the diagnostic standard for EOS. Blood or CSF cultures establish the diagnosis; CBC and CRP alone cannot diagnose EOS. Surface cultures and gastric aspirates do not diagnose EOS, and urine culture is not indicated in EOS evaluations before 72 hours. Obtain and interpret diagnostic specimens within the responsible clinician assessment and local pathway; no available culture result is established here."
+  },
+  {
+    "id": "aap-expanded-single_risk-01",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 41 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-SP3"
+    ],
+    "reference": "For infants born at 35 weeks or later, acceptable AAP risk-assessment approaches include categorical risk algorithms, multivariate assessment incorporating intrapartum factors and infant examination, and serial physical examinations. Use a locally documented birth-center pathway with ongoing surveillance. A single known maternal risk does not establish EOS or justify an invented individual probability."
+  },
+  {
+    "id": "aap-expanded-single_risk-02",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 37 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 37,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-SP3"
+    ],
+    "reference": "For infants born at 35 weeks or later, acceptable AAP risk-assessment approaches include categorical risk algorithms, multivariate assessment incorporating intrapartum factors and infant examination, and serial physical examinations. Use a locally documented birth-center pathway with ongoing surveillance. A single known maternal risk does not establish EOS or justify an invented individual probability."
+  },
+  {
+    "id": "aap-expanded-single_risk-03",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 37 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-SP3"
+    ],
+    "reference": "For infants born at 35 weeks or later, acceptable AAP risk-assessment approaches include categorical risk algorithms, multivariate assessment incorporating intrapartum factors and infant examination, and serial physical examinations. Use a locally documented birth-center pathway with ongoing surveillance. A single known maternal risk does not establish EOS or justify an invented individual probability."
+  },
+  {
+    "id": "aap-expanded-single_risk-04",
+    "family": "single_risk",
+    "synthetic": true,
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 37 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-SP3"
+    ],
+    "reference": "For infants born at 35 weeks or later, acceptable AAP risk-assessment approaches include categorical risk algorithms, multivariate assessment incorporating intrapartum factors and infant examination, and serial physical examinations. Use a locally documented birth-center pathway with ongoing surveillance. A single known maternal risk does not establish EOS or justify an invented individual probability."
+  },
+  {
+    "id": "aap-expanded-missing_results-01",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 36 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "Unavailable maternal history, culture results and current observations remain unknown. AAP risk stratification includes risk factors and infant examinations or serial physical examinations. Obtain the missing clinical assessment and use the local pathway. Blood or CSF cultures establish EOS diagnosis; laboratory markers alone and missing results cannot establish absence of infection."
+  },
+  {
+    "id": "aap-expanded-missing_results-02",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 36 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 36,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "Unavailable maternal history, culture results and current observations remain unknown. AAP risk stratification includes risk factors and infant examinations or serial physical examinations. Obtain the missing clinical assessment and use the local pathway. Blood or CSF cultures establish EOS diagnosis; laboratory markers alone and missing results cannot establish absence of infection."
+  },
+  {
+    "id": "aap-expanded-missing_results-03",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 37 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "Unavailable maternal history, culture results and current observations remain unknown. AAP risk stratification includes risk factors and infant examinations or serial physical examinations. Obtain the missing clinical assessment and use the local pathway. Blood or CSF cultures establish EOS diagnosis; laboratory markers alone and missing results cannot establish absence of infection."
+  },
+  {
+    "id": "aap-expanded-missing_results-04",
+    "family": "missing_results",
+    "synthetic": true,
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 36 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      }
+    ],
+    "gold_chunk_ids": [
+      "AAP2018-35PLUS-SP2",
+      "AAP2018-35PLUS-SP4"
+    ],
+    "reference": "Unavailable maternal history, culture results and current observations remain unknown. AAP risk stratification includes risk factors and infant examinations or serial physical examinations. Obtain the missing clinical assessment and use the local pathway. Blood or CSF cultures establish EOS diagnosis; laboratory markers alone and missing results cannot establish absence of infection."
+  }
+]

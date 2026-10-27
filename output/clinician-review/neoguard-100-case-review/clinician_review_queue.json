@@ -1,0 +1,502 @@
+[
+  {
+    "case_id": "deterioration-1",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "deterioration-2",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "deterioration-3",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "crp_alone-1",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "crp_alone-2",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "crp_alone-3",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "incomplete_stop-1",
+    "priority": "high",
+    "reason": "Original preserved case: postnatal age is not documented culture-incubation or antibiotic duration."
+  },
+  {
+    "case_id": "incomplete_stop-2",
+    "priority": "high",
+    "reason": "Original preserved case: postnatal age is not documented culture-incubation or antibiotic duration."
+  },
+  {
+    "case_id": "incomplete_stop-3",
+    "priority": "high",
+    "reason": "Original preserved case: postnatal age is not documented culture-incubation or antibiotic duration."
+  },
+  {
+    "case_id": "initial_investigation-1",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "initial_investigation-2",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "initial_investigation-3",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "single_risk-1",
+    "priority": "high",
+    "reason": "Original preserved case: gestation 35 weeks may add a prematurity risk; the single-risk description needs adjudication."
+  },
+  {
+    "case_id": "single_risk-2",
+    "priority": "high",
+    "reason": "Original preserved case: gestation 36 weeks may add a prematurity risk; assess delivery context before calling this one isolated factor."
+  },
+  {
+    "case_id": "single_risk-3",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "missing_results-1",
+    "priority": "high",
+    "reason": "Original preserved case contains current vital signs while the question describes a missing later examination; clarify timing."
+  },
+  {
+    "case_id": "missing_results-2",
+    "priority": "high",
+    "reason": "Original preserved case contains current vital signs while the question describes a missing later examination; clarify timing."
+  },
+  {
+    "case_id": "missing_results-3",
+    "priority": "high",
+    "reason": "Original preserved case contains current vital signs while the question describes a missing later examination; clarify timing."
+  },
+  {
+    "case_id": "nice-expanded-deterioration-01",
+    "priority": "high",
+    "reason": "Very preterm infant: check source applicability, care setting and clinical plausibility before accepting this synthetic case."
+  },
+  {
+    "case_id": "nice-expanded-deterioration-02",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-deterioration-03",
+    "priority": "high",
+    "reason": "Very preterm infant: check source applicability, care setting and clinical plausibility before accepting this synthetic case."
+  },
+  {
+    "case_id": "nice-expanded-deterioration-04",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-deterioration-01",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-deterioration-02",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-deterioration-03",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-deterioration-04",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-deterioration-05",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-crp_alone-01",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-crp_alone-02",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-crp_alone-03",
+    "priority": "high",
+    "reason": "Very preterm infant: check source applicability, care setting and clinical plausibility before accepting this synthetic case."
+  },
+  {
+    "case_id": "nice-expanded-crp_alone-04",
+    "priority": "high",
+    "reason": "Very preterm infant: check source applicability, care setting and clinical plausibility before accepting this synthetic case."
+  },
+  {
+    "case_id": "aap-expanded-crp_alone-01",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-crp_alone-02",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-crp_alone-03",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-crp_alone-04",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-crp_alone-05",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-incomplete_stop-01",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-incomplete_stop-02",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-incomplete_stop-03",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-incomplete_stop-04",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-incomplete_stop-01",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-incomplete_stop-02",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-incomplete_stop-03",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-incomplete_stop-04",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-incomplete_stop-05",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-initial_investigation-01",
+    "priority": "high",
+    "reason": "Very preterm infant: check source applicability, care setting and clinical plausibility before accepting this synthetic case."
+  },
+  {
+    "case_id": "nice-expanded-initial_investigation-02",
+    "priority": "high",
+    "reason": "Very preterm infant: check source applicability, care setting and clinical plausibility before accepting this synthetic case."
+  },
+  {
+    "case_id": "nice-expanded-initial_investigation-03",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-initial_investigation-04",
+    "priority": "high",
+    "reason": "Very preterm infant: check source applicability, care setting and clinical plausibility before accepting this synthetic case."
+  },
+  {
+    "case_id": "aap-expanded-initial_investigation-01",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-initial_investigation-02",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-initial_investigation-03",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-initial_investigation-04",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-initial_investigation-05",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-single_risk-01",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-single_risk-02",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-single_risk-03",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-single_risk-01",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-single_risk-02",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-single_risk-03",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-single_risk-04",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-single_risk-05",
+    "priority": "standard",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-missing_results-01",
+    "priority": "high",
+    "reason": "Very preterm infant: check source applicability, care setting and clinical plausibility before accepting this synthetic case."
+  },
+  {
+    "case_id": "nice-expanded-missing_results-02",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "nice-expanded-missing_results-03",
+    "priority": "high",
+    "reason": "Very preterm infant: check source applicability, care setting and clinical plausibility before accepting this synthetic case."
+  },
+  {
+    "case_id": "aap-expanded-missing_results-01",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-missing_results-02",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-missing_results-03",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-missing_results-04",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "aap-expanded-missing_results-05",
+    "priority": "high",
+    "reason": "Gold relevance and reference correctness not clinician adjudicated"
+  },
+  {
+    "case_id": "who-expanded-deterioration-01",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-deterioration-02",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-deterioration-03",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-deterioration-04",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-deterioration-05",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-crp_alone-01",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-crp_alone-02",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-crp_alone-03",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-crp_alone-04",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-crp_alone-05",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-incomplete_stop-01",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-incomplete_stop-02",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-incomplete_stop-03",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-incomplete_stop-04",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-incomplete_stop-05",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-initial_investigation-01",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-initial_investigation-02",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-initial_investigation-03",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-initial_investigation-04",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-initial_investigation-05",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-single_risk-01",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-single_risk-02",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-single_risk-03",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-single_risk-04",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-single_risk-05",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-missing_results-01",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-missing_results-02",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-missing_results-03",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-missing_results-04",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  },
+  {
+    "case_id": "who-expanded-missing_results-05",
+    "priority": "high",
+    "reason": "WHO setting/referral constraints, absent subgroup evidence, evidence gaps and duration differences"
+  }
+]

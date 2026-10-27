@@ -1,0 +1,179 @@
+{
+  "n": 18,
+  "generated": 15,
+  "released": 4,
+  "metrics_config": {
+    "bleu": "sacreBLEU corpus BLEU-4 /100, 13a, exp smoothing",
+    "meteor": "NLTK WordPunct lowercased, Porter+WordNet",
+    "rouge": "rouge-score stemmed F1",
+    "bert": "distilbert-base-uncased layer5 no IDF no baseline rescaling"
+  },
+  "latency_seconds": {
+    "mean_full_pipeline": 32.41274876666608,
+    "mean_generation_only": 3.5401492277778743
+  },
+  "bert_truncated_case_pairs": 0,
+  "bert_hash": "distilbert-base-uncased_L5_no-idf_version=0.3.12(hug_trans=5.12.1)",
+  "secondary_bert_hash": "roberta-large_L17_no-idf_version=0.3.12(hug_trans=5.12.1)",
+  "package_versions": {
+    "torch": "2.12.1",
+    "transformers": "5.12.1",
+    "bert-score": "0.3.13",
+    "nltk": "3.9.4",
+    "sacrebleu": "2.6.0",
+    "rouge-score": "0.1.2"
+  },
+  "arms": {
+    "without_verification": {
+      "denominator": 18,
+      "coverage": 0.8333333333333334,
+      "metrics": {
+        "rouge1": 0.24068455362664684,
+        "rouge2": 0.05643872350434462,
+        "rougeL": 0.14158986091271264,
+        "meteor": 0.2109650408457955,
+        "sentence_bleu4": 0.017779756246500047,
+        "bert_precision": 0.644927806324429,
+        "bert_recall": 0.6844791140821245,
+        "bert_f1": 0.6635361380047269,
+        "roberta_f1": 0.7108600470754836,
+        "corpus_bleu4": 0.022029871130434704
+      },
+      "judge_n": 15,
+      "judge_means": {
+        "grounding": 4.133333333333334,
+        "patient_fidelity": 4.133333333333334,
+        "completeness": 3.933333333333333,
+        "actionability": 3.6,
+        "uncertainty": 4.266666666666667
+      },
+      "judge_unsafe_claims": 4
+    },
+    "with_verification_all_cases": {
+      "denominator": 18,
+      "coverage": 0.2222222222222222,
+      "metrics": {
+        "rouge1": 0.06077245321431368,
+        "rouge2": 0.0131012952878213,
+        "rougeL": 0.04151658705922271,
+        "meteor": 0.03301571474387079,
+        "sentence_bleu4": 0.004144528334089612,
+        "bert_precision": 0.17547474304835,
+        "bert_recall": 0.16916124688254464,
+        "bert_f1": 0.1722295648521847,
+        "roberta_f1": 0.1877723236878713,
+        "corpus_bleu4": 4.892840898206139e-06
+      },
+      "judge_n": 4,
+      "judge_means": {
+        "grounding": 5.0,
+        "patient_fidelity": 4.75,
+        "completeness": 4.25,
+        "actionability": 3.25,
+        "uncertainty": 5.0
+      },
+      "judge_unsafe_claims": 0
+    },
+    "with_verification_released_only": {
+      "denominator": 4,
+      "coverage": 1.0,
+      "metrics": {
+        "rouge1": 0.27347603946441157,
+        "rouge2": 0.058955828795195855,
+        "rougeL": 0.1868246417665022,
+        "meteor": 0.14857071634741856,
+        "sentence_bleu4": 0.018650377503403252,
+        "bert_precision": 0.7896363437175751,
+        "bert_recall": 0.7612256109714508,
+        "bert_f1": 0.7750330418348312,
+        "roberta_f1": 0.8449754565954208,
+        "corpus_bleu4": 0.011610938653526564
+      },
+      "judge_n": 4,
+      "judge_means": {
+        "grounding": 5.0,
+        "patient_fidelity": 4.75,
+        "completeness": 4.25,
+        "actionability": 3.25,
+        "uncertainty": 5.0
+      },
+      "judge_unsafe_claims": 0
+    },
+    "without_verification_generated_only": {
+      "denominator": 15,
+      "coverage": 1.0,
+      "metrics": {
+        "rouge1": 0.2888214643519762,
+        "rouge2": 0.06772646820521357,
+        "rougeL": 0.16990783309525517,
+        "meteor": 0.25315804901495464,
+        "sentence_bleu4": 0.02133570749580006,
+        "bert_precision": 0.7739133675893147,
+        "bert_recall": 0.8213749368985493,
+        "bert_f1": 0.7962433656056722,
+        "roberta_f1": 0.8530320564905802,
+        "corpus_bleu4": 0.022029871130434704
+      },
+      "judge_n": 15,
+      "judge_means": {
+        "grounding": 4.133333333333334,
+        "patient_fidelity": 4.133333333333334,
+        "completeness": 3.933333333333333,
+        "actionability": 3.6,
+        "uncertainty": 4.266666666666667
+      },
+      "judge_unsafe_claims": 4
+    }
+  },
+  "paired_all_case_bert_f1_delta": {
+    "mean": -0.4913065731525421,
+    "bootstrap_95ci": [
+      -0.6700825513237053,
+      -0.3110113316112095
+    ],
+    "resamples": 2000,
+    "family_cluster_bootstrap_95ci": [
+      -0.7130578458309172,
+      -0.26672083470556474
+    ]
+  },
+  "fault_injection": {
+    "n": 12,
+    "unverified_released": 12,
+    "verified_released": 0,
+    "by_family": {
+      "false_normal": {
+        "n": 3,
+        "withheld": 3,
+        "structural_rejection": 0,
+        "semantic_rejection": 3,
+        "unavailable_or_invalid": 0,
+        "emitted": 0
+      },
+      "invented_dose": {
+        "n": 3,
+        "withheld": 3,
+        "structural_rejection": 3,
+        "semantic_rejection": 0,
+        "unavailable_or_invalid": 0,
+        "emitted": 0
+      },
+      "missing_conditions": {
+        "n": 3,
+        "withheld": 3,
+        "structural_rejection": 0,
+        "semantic_rejection": 3,
+        "unavailable_or_invalid": 0,
+        "emitted": 0
+      },
+      "negation": {
+        "n": 3,
+        "withheld": 3,
+        "structural_rejection": 0,
+        "semantic_rejection": 3,
+        "unavailable_or_invalid": 0,
+        "emitted": 0
+      }
+    }
+  }
+}

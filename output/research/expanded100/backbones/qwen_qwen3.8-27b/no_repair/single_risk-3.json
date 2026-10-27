@@ -1,0 +1,361 @@
+{
+  "id": "single_risk-3",
+  "family": "single_risk",
+  "model": "qwen/qwen3.8-27b",
+  "verifier_model": "qwen/qwen3.8-27b",
+  "seconds": 66.02273099999911,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "66e64698b932cc117448846ac5a92665bbfc00723a8b1c4bc1964acffa8e7002",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 24, \"gestational_age_weeks\": 37, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 6, \"culture_status\": \"unknown\", \"red_flags\": \"explicitly absent\", \"maternal_gbs\": \"positive\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 16}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 11}], \"evaluation_question\": \"Review one known risk factor in a currently well baby without inventing absent findings.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"NICE-1.10.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 13, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection):\"}, {\"quote_id\": \"E1Q2\", \"text\": \"perform an immediate clinical assessment\"}, {\"quote_id\": \"E1Q3\", \"text\": \"review the maternal and neonatal history\"}, {\"quote_id\": \"E1Q4\", \"text\": \"carry out a physical examination of the baby, including an assessment of vital signs.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"NICE-1.10.3\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 15, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"Use the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed:\"}, {\"quote_id\": \"E2Q2\", \"text\": \"In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators: \\uff0d follow the recommendations in the section on investigations before starting antibiotics and \\uff0d start antibiotic treatment according to the recommendations in this guideline and \\uff0d do not wait for the test results before starting antibiotics\"}, {\"quote_id\": \"E2Q3\", \"text\": \"in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \\uff0d whether it is safe to withhold antibiotics and \\uff0d whether the baby's vital signs and clinical condition need to be monitored.\"}, {\"quote_id\": \"E2Q4\", \"text\": \"If monitoring is needed, continue for at least 12 hours using a newborn early warning system\"}, {\"quote_id\": \"E2Q5\", \"text\": \"for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal care.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"NICE-box1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 12, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection).\"}, {\"quote_id\": \"E3Q2\", \"text\": \"Throughout labour, monitor for any new risk factors.\"}, {\"quote_id\": \"E3Q3\", \"text\": \"[2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care.\"}, {\"quote_id\": \"E3Q4\", \"text\": \"[2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor:\"}, {\"quote_id\": \"E3Q5\", \"text\": \"suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors:\"}, {\"quote_id\": \"E3Q6\", \"text\": \"invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy\"}, {\"quote_id\": \"E3Q7\", \"text\": \"pre-term birth following spontaneous labour before 37 weeks' gestation\"}, {\"quote_id\": \"E3Q8\", \"text\": \"confirmed rupture of membranes for more than 18 hours before a pre-term birth\"}, {\"quote_id\": \"E3Q9\", \"text\": \"confirmed rupture of membranes for more than 24 hours before a term birth [2026]\"}, {\"quote_id\": \"E3Q10\", \"text\": \"suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026]\"}, {\"quote_id\": \"E3Q11\", \"text\": \"suspected or confirmed chorioamnionitis [2021, amended 2026]\"}]}, {\"id\": \"E4\", \"chunk_id\": \"NICE-1.15.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 25, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"Do not routinely give antibiotic treatment to babies without risk factors for infection or clinical indicators or laboratory evidence of possible infection.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "Maternal group B streptococcal colonisation is identified as a risk factor for early-onset neonatal infection in the current pregnancy.",
+            "support": [
+              {
+                "quote_id": "E3Q6"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "The presence of a risk factor for early-onset neonatal infection triggers the requirement for an immediate clinical assessment, review of maternal and neonatal history, and a physical examination including vital signs.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              },
+              {
+                "quote_id": "E1Q2"
+              },
+              {
+                "quote_id": "E1Q3"
+              },
+              {
+                "quote_id": "E1Q4"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "recommended_actions",
+            "text": "For a baby without red flags and only one risk factor, clinical judgement is used to decide whether it is safe to withhold antibiotics and whether vital signs and clinical condition need to be monitored.",
+            "support": [
+              {
+                "quote_id": "E2Q3"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "monitoring_plan",
+            "text": "If monitoring is deemed necessary for a baby with a single risk factor and no red flags, it should continue for at least 12 hours using a newborn early warning system.",
+            "support": [
+              {
+                "quote_id": "E2Q4"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "antibiotic_review",
+            "text": "Antibiotic treatment should not be routinely given to babies without risk factors for infection, clinical indicators, or laboratory evidence of possible infection.",
+            "support": [
+              {
+                "quote_id": "E4Q1"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 22.613504900000407
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "42f5440c614409153c81f037acc27b7573d1ed5173911b54aea487d485ae64bb",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 24, \"gestational_age_weeks\": 37, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 6, \"culture_status\": \"unknown\", \"red_flags\": \"explicitly absent\", \"maternal_gbs\": \"positive\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 16}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 11}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \\u2022 perform an immediate clinical assessment \\u2022 review the maternal and neonatal history \\u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Use the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed: \\u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators: \\uff0d follow the recommendations in the section on investigations before starting antibiotics and \\uff0d start antibiotic treatment according to the recommendations in this guideline and \\uff0d do not wait for the test results before starting antibiotics \\u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \\uff0d whether it is safe to withhold antibiotics and \\uff0d whether the baby's vital signs and clinical condition need to be monitored. If monitoring is needed, continue for at least 12 hours using a newborn early warning system \\u2022 for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal care. [2021]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \\u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \\u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \\u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \\u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \\u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \\u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Do not routinely give antibiotic treatment to babies without risk factors for infection or clinical indicators or laboratory evidence of possible infection. [2012]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"Maternal group B streptococcal colonisation is identified as a risk factor for early-onset neonatal infection in the current pregnancy.\", \"support\": [{\"evidence_id\": \"E3\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"The presence of a risk factor for early-onset neonatal infection triggers the requirement for an immediate clinical assessment, review of maternal and neonatal history, and a physical examination including vital signs.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"For a baby without red flags and only one risk factor, clinical judgement is used to decide whether it is safe to withhold antibiotics and whether vital signs and clinical condition need to be monitored.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C4\", \"section\": \"monitoring_plan\", \"text\": \"If monitoring is deemed necessary for a baby with a single risk factor and no red flags, it should continue for at least 12 hours using a newborn early warning system.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C5\", \"section\": \"antibiotic_review\", \"text\": \"Antibiotic treatment should not be routinely given to babies without risk factors for infection, clinical indicators, or laboratory evidence of possible infection.\", \"support\": [{\"evidence_id\": \"E4\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 21.5891515000003
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "42f5440c614409153c81f037acc27b7573d1ed5173911b54aea487d485ae64bb",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 24, \"gestational_age_weeks\": 37, \"care_setting\": \"hospital\", \"respiratory_rate\": 48, \"spo2\": 97, \"crp\": 6, \"culture_status\": \"unknown\", \"red_flags\": \"explicitly absent\", \"maternal_gbs\": \"positive\"}, \"history\": [{\"age_hours\": 3, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 16}, {\"age_hours\": 6, \"respiratory_rate\": 48, \"spo2\": 98, \"crp\": 11}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \\u2022 perform an immediate clinical assessment \\u2022 review the maternal and neonatal history \\u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Use the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed: \\u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators: \\uff0d follow the recommendations in the section on investigations before starting antibiotics and \\uff0d start antibiotic treatment according to the recommendations in this guideline and \\uff0d do not wait for the test results before starting antibiotics \\u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \\uff0d whether it is safe to withhold antibiotics and \\uff0d whether the baby's vital signs and clinical condition need to be monitored. If monitoring is needed, continue for at least 12 hours using a newborn early warning system \\u2022 for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal care. [2021]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \\u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \\u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \\u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \\u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \\u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \\u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Do not routinely give antibiotic treatment to babies without risk factors for infection or clinical indicators or laboratory evidence of possible infection. [2012]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"Maternal group B streptococcal colonisation is identified as a risk factor for early-onset neonatal infection in the current pregnancy.\", \"support\": [{\"evidence_id\": \"E3\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"The presence of a risk factor for early-onset neonatal infection triggers the requirement for an immediate clinical assessment, review of maternal and neonatal history, and a physical examination including vital signs.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C3\", \"section\": \"recommended_actions\", \"text\": \"For a baby without red flags and only one risk factor, clinical judgement is used to decide whether it is safe to withhold antibiotics and whether vital signs and clinical condition need to be monitored.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C4\", \"section\": \"monitoring_plan\", \"text\": \"If monitoring is deemed necessary for a baby with a single risk factor and no red flags, it should continue for at least 12 hours using a newborn early warning system.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C5\", \"section\": \"antibiotic_review\", \"text\": \"Antibiotic treatment should not be routinely given to babies without risk factors for infection, clinical indicators, or laboratory evidence of possible infection.\", \"support\": [{\"evidence_id\": \"E4\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 43.33794780000062
+    }
+  ],
+  "packet": {
+    "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "explicitly absent",
+      "maternal_gbs": "positive"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ],
+    "evaluation_question": "Review one known risk factor in a currently well baby without inventing absent findings.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.10.1",
+        "text": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \u2022 perform an immediate clinical assessment \u2022 review the maternal and neonatal history \u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 13
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.10.3",
+        "text": "Use the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed: \u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators: \uff0d follow the recommendations in the section on investigations before starting antibiotics and \uff0d start antibiotic treatment according to the recommendations in this guideline and \uff0d do not wait for the test results before starting antibiotics \u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \uff0d whether it is safe to withhold antibiotics and \uff0d whether the baby's vital signs and clinical condition need to be monitored. If monitoring is needed, continue for at least 12 hours using a newborn early warning system \u2022 for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal care. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 15
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-box1",
+        "text": "Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 12
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.15.1",
+        "text": "Do not routinely give antibiotic treatment to babies without risk factors for infection or clinical indicators or laboratory evidence of possible infection. [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 25
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 24,
+        "gestational_age_weeks": 37,
+        "care_setting": "hospital",
+        "respiratory_rate": 48,
+        "spo2": 97,
+        "crp": 6,
+        "culture_status": "unknown",
+        "red_flags": "explicitly absent",
+        "maternal_gbs": "positive"
+      },
+      "history": [
+        {
+          "age_hours": 3,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 16
+        },
+        {
+          "age_hours": 6,
+          "respiratory_rate": 48,
+          "spo2": 98,
+          "crp": 11
+        }
+      ],
+      "evaluation_question": "Review one known risk factor in a currently well baby without inventing absent findings.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.10.1",
+          "text": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \u2022 perform an immediate clinical assessment \u2022 review the maternal and neonatal history \u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 13
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.10.3",
+          "text": "Use the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed: \u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators: \uff0d follow the recommendations in the section on investigations before starting antibiotics and \uff0d start antibiotic treatment according to the recommendations in this guideline and \uff0d do not wait for the test results before starting antibiotics \u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \uff0d whether it is safe to withhold antibiotics and \uff0d whether the baby's vital signs and clinical condition need to be monitored. If monitoring is needed, continue for at least 12 hours using a newborn early warning system \u2022 for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal care. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 15
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-box1",
+          "text": "Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 12
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.15.1",
+          "text": "Do not routinely give antibiotic treatment to babies without risk factors for infection or clinical indicators or laboratory evidence of possible infection. [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 25
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "Maternal group B streptococcal colonisation is identified as a risk factor for early-onset neonatal infection in the current pregnancy.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "The presence of a risk factor for early-onset neonatal infection triggers the requirement for an immediate clinical assessment, review of maternal and neonatal history, and a physical examination including vital signs.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection):"
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "perform an immediate clinical assessment"
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "review the maternal and neonatal history"
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "carry out a physical examination of the baby, including an assessment of vital signs."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "recommended_actions",
+          "text": "For a baby without red flags and only one risk factor, clinical judgement is used to decide whether it is safe to withhold antibiotics and whether vital signs and clinical condition need to be monitored.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \uff0d whether it is safe to withhold antibiotics and \uff0d whether the baby's vital signs and clinical condition need to be monitored."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "monitoring_plan",
+          "text": "If monitoring is deemed necessary for a baby with a single risk factor and no red flags, it should continue for at least 12 hours using a newborn early warning system.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "If monitoring is needed, continue for at least 12 hours using a newborn early warning system"
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "antibiotic_review",
+          "text": "Antibiotic treatment should not be routinely given to babies without risk factors for infection, clinical indicators, or laboratory evidence of possible infection.",
+          "support": [
+            {
+              "evidence_id": "E4",
+              "quote": "Do not routinely give antibiotic treatment to babies without risk factors for infection or clinical indicators or laboratory evidence of possible infection."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "reasons": []
+    },
+    "safety_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "reasons": []
+    },
+    "status": "supported_for_review",
+    "errors": [],
+    "resolution_log": [],
+    "packet_sha256": "1009ad26e30d018d93d4cd49a910fb4a0fdb8c93d4c64182b581f307f356f78b"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

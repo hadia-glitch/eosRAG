@@ -1,0 +1,19 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 5,
+    "patient_fidelity": 5,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 4,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Candidate accurately reflects WHO 2024 guidance that no 36\u2011hour stopping rule exists and that clinical judgement is required.",
+      "All patient\u2011specific data (age, temperature, feeding difficulty, culture negative at 36\u202fh) are correctly incorporated.",
+      "Provides appropriate clinical actions (continue antibiotics, monitor signs) without over\u2011reaching beyond the source.",
+      "Does not introduce unsupported dosing or timing recommendations."
+    ]
+  },
+  "reason": null
+}

@@ -1,0 +1,12 @@
+{
+  "frozen_before_inference": true,
+  "cases": 18,
+  "families": 6,
+  "seed": 31,
+  "top_k": 4,
+  "reference_author": "engineering-authored source-based references, not clinician references",
+  "paired_ablation": "The identical draft is the unverified output; the production graph either releases that draft or withholds it. No repair or new draft.",
+  "judge": "same Groq model, blind to arm names; dependent model-based proxy, not clinical assessment",
+  "metrics": "All-case scores assign empty withheld responses zero; released-only scores and coverage are separate.",
+  "provenance": "All cases are synthetic and independent of CSV patient rows."
+}

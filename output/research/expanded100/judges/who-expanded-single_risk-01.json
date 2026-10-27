@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 5,
+    "patient_fidelity": 5,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 5,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Candidate accurately reflects WHO guidance that no validated maternal\u2011risk or gestational\u2011age score exists and correctly cites the 7\u2011sign IMCI algorithm. It does not mention the caution that absence of IMCI signs does not rule out infection, so completeness is slightly limited. No unsafe claims are present."
+    ]
+  },
+  "reason": null
+}

@@ -1,0 +1,34 @@
+{
+  "seed": 31,
+  "bootstrap_resamples": 2000,
+  "top_k": 4,
+  "rrf_k": 60,
+  "primary_model": "openai/gpt-oss-120b",
+  "verifier_model": "openai/gpt-oss-120b",
+  "temperature": 0,
+  "api_sampling_seed": null,
+  "schema_enforcement": false,
+  "primary_max_repairs": 0,
+  "backbone_models": [
+    "openai/gpt-oss-20b",
+    "qwen/qwen3.8-27b"
+  ],
+  "bounded_resolution": {
+    "max_repairs": 1,
+    "budget_seconds": 120,
+    "design": "paired initial draft and audits; cached initial wall time deducted from remaining budget; fresh post-revision audits"
+  },
+  "guideline_gating": "Each guideline is evaluated against its complete source-only index. No pooled headline metrics.",
+  "references": "Engineering-authored before inference; not clinician adjudicated.",
+  "review_status": "AAP technical identity verified; all gold judgments and clinical applicability pending clinician review.",
+  "historical_runtime_drift": "Historical verifier SHA differs; original 18 are rerun using current frozen verifier. Historical numbers are not a bit-identical runtime comparison.",
+  "transport": "Provider failures excluded from quality and logged separately; semantic failures retained; checkpoint every completed role.",
+  "faults": "12 original NICE faults and 12 AAP faults: negation, missing conditions, invented dose, false normal; three parameter variants each",
+  "code_sha256": {
+    "backend/scripts/evaluate_generation.py": "9327c9e52bbc16d436a23fc2f3bff3deb37d82670893f3009c6276693ac7844b",
+    "backend/rag/verification_graph.py": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c",
+    "backend/rag/knowledge_graph.py": "f4d4a65639b910f63117934459cdfbaccbb81fdc80d6cf6105319a4c966a35e0",
+    "backend/services/groq_client.py": "78a397f38e122160481c1360000f84c17b62a1a6b89123000ef11502ba2283fc"
+  },
+  "orchestration_sha256": "e6058b954feb9c185d3fdff9cd684f6d9d48a00a23882438bae1789fbf649f9a"
+}

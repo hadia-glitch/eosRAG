@@ -1,0 +1,19 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 4,
+    "patient_fidelity": 4,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 4,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Candidate correctly reflects guideline statements that a single or falling CRP cannot alone determine antibiotic decisions.",
+      "It aligns with patient history (CRP fell from 19 to 10) and acknowledges the missing current CRP value.",
+      "It includes key actions (review at 24\u2011h intervals, consider stopping at 36\u202fh if criteria met) but does not list all specific criteria, limiting completeness.",
+      "No unsafe or unsupported clinical claims are present."
+    ]
+  },
+  "reason": null
+}

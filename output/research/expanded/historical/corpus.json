@@ -1,0 +1,931 @@
+{
+  "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1",
+  "source_url": "https://www.nice.org.uk/guidance/ng195",
+  "purpose": "evaluation_only_not_clinically_approved",
+  "chunks": [
+    {
+      "chunk_id": "NICE-1.1.1",
+      "text": "If clinical concerns about possible neonatal infection arise at any point: \u2022 talk to the baby's parents and carers, explaining the reason for concern, and explain what neonatal infection is \u2022 discuss the options for management that may be best for their baby (for example, observation, investigations or antibiotic treatment) \u2022 do not delay treatment, but, when possible, give the baby's parents and carers time to think about the information they have been given and ask any questions they may have before making treatment decisions. [2021]",
+      "pdf_page": 2,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.1.2",
+      "text": "If giving antibiotics because of clinical concerns about possible early-onset neonatal infection or late-onset neonatal infection, discuss with parents and carers: \u2022 the reason for the treatment \u2022 the risks and benefits in relation to their baby's circumstances \u2022 the observations and investigations that might be needed to guide treatment (for example, to help decide when to stop treatment) \u2022 the preferred antibiotic regimen (including how it will be delivered) and likely duration of treatment \u2022 the impact, if any, on where the woman, trans man or non-binary person or their baby will be cared for. [2021]",
+      "pdf_page": 2,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.1.3",
+      "text": "To maintain communication with a woman, trans man or non-binary person in labour whose baby is at increased risk of early-onset neonatal infection: \u2022 involve the woman, trans man or non-binary person in any handover of care, either when additional expertise is brought in because of the risk of infection or during planned changes in staff \u2022 include an update in the handover about the presence of any infection. For more guidance, see the section on communication in NICE's guideline on intrapartum care. [2012]",
+      "pdf_page": 2,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.1.4",
+      "text": "For babies who are considered to be at increased risk of early-onset infection, inform their parents and GP about this verbally and in writing: \u2022 when the baby is discharged from the hospital or midwifery-led unit or \u2022 in the immediate postnatal period, if the baby was born at home. [2012]",
+      "pdf_page": 3,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.1.5",
+      "text": "Reassure parents and carers that babies who have or are at increased risk of neonatal infection can usually continue to breastfeed, and that every effort will be made to help with this. If a baby is temporarily unable to breastfeed, provide support with expressing breast milk if needed. [2012]",
+      "pdf_page": 3,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.1.6",
+      "text": "When a woman, trans man or non-binary person is identified as having group B streptococcal colonisation, bacteriuria or infection during their current pregnancy: \u2022 advise them that if they become pregnant again: \uff0d that their new baby will be at increased risk of early-onset group B streptococcal infection \uff0d they should inform their maternity care team that they have had a positive group B streptococcal infection test in a previous pregnancy \uff0d their maternity care team will offer them antibiotics in labour \u2022 inform the person's GP in writing that there is a risk of group B streptococcal infection in babies in future pregnancies. [2012, amended 2021]",
+      "pdf_page": 3,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.2.1",
+      "text": "Reassure parents and carers that they will be able to continue caring for and holding their baby according to their wishes, unless the baby is too ill to allow this. If the severity of the baby's illness means they need to change the way they care for the baby, discuss this with them. [2012]",
+      "pdf_page": 4,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.2.2",
+      "text": "Offer parents and carers contact details of organisations that provide parent support, befriending, counselling, information and advocacy. [2012]",
+      "pdf_page": 4,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.2.3",
+      "text": "If a baby has been treated for suspected or confirmed neonatal infection: \u2022 advise the parents and carers about potential long-term effects of the baby's illness and likely patterns of recovery, and reassure them if no problems are anticipated \u2022 take account of parents' and carers' concerns when providing information and planning follow-up. [2021]",
+      "pdf_page": 4,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.2.4",
+      "text": "When a baby who has had a group B streptococcal infection is discharged from hospital: \u2022 advise the woman, trans man or non-binary person that if they become pregnant again: \uff0d that their new baby will be at increased risk of early-onset group B streptococcal infection \uff0d they should inform their maternity care team that they have had a previous baby with a group B streptococcal infection \uff0d their maternity care team will offer them antibiotics in labour \u2022 inform the person's GP in writing that there is a risk of: \uff0d group B streptococcal infection recurrence in the baby and \uff0d group B streptococcal infection in babies in future pregnancies. [2012]",
+      "pdf_page": 4,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.3.1",
+      "text": "Early in the management of confirmed bacterial meningitis, discuss the following with parents and carers: \u2022 what might happen during the course of the disease \u2022 the uncertainty about the initial prognosis, and when they can expect to know more \u2022 the risk of passing on the infection \u2022 whether close contacts need to take any preventative measures (for example, for meningococcal meningitis or Haemophilus influenzae type b). [2024]",
+      "pdf_page": 5,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.3.2",
+      "text": "Repeat information over time and check the parents and carers understand, as they may be distressed and unable to ask questions when their baby is first diagnosed. [2024]",
+      "pdf_page": 5,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.3.3",
+      "text": "Provide emotional and pastoral support for family members and carers during hospitalisation. [2024]",
+      "pdf_page": 6,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.4.1",
+      "text": "Before any baby is transferred home from the hospital or midwifery-led unit (or in the immediate postnatal period in the case of babies born at home), advise parents and carers to seek urgent medical help (for example, from NHS 111, their GP, or an accident and emergency department) if they are concerned that their baby: \u2022 is showing abnormal behaviour (for example, inconsolable crying or listlessness) or \u2022 is unusually floppy or \u2022 has an abnormal temperature unexplained by environmental factors (lower than 36\u00b0C or higher than 38\u00b0C) or \u2022 has abnormal breathing (rapid breathing, difficulty in breathing or grunting) or \u2022 has a change in skin colour (for example, where the baby becomes very pale, blue/grey or dark yellow) or \u2022 has developed new difficulties with feeding. Give the advice both in person, and as written information and advice for them to take away. [2021]",
+      "pdf_page": 6,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.5.1",
+      "text": "When there has been a clinical concern about neonatal infection in a baby, make a post-discharge management plan, taking into account factors such as: \u2022 the level of the initial clinical concern \u2022 the presence of risk factors \u2022 parents' and carers' concerns. [2012] Prevention and risk reduction 1.6 When to offer antibiotics during labour to prevent early-onset neonatal infection",
+      "pdf_page": 7,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.6.1",
+      "text": "Offer antibiotics during labour to women, trans men and non-binary people who: \u2022 are in pre-term labour or \u2022 have group B streptococcal colonisation, bacteriuria or infection during the current pregnancy or \u2022 have had group B streptococcal colonisation, bacteriuria or infection in a previous pregnancy, and have not had a negative test for group B streptococcus by enrichment culture or polymerase chain reaction (PCR) on a rectovaginal swab samples collected between 35 and 37 weeks' gestation or 3 to 5 weeks before the anticipated delivery date in the current pregnancy or \u2022 have had a previous baby with an invasive group B streptococcal infection or \u2022 have a clinical diagnosis of chorioamnionitis. [2021]",
+      "pdf_page": 8,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.6.2",
+      "text": "Use table 1 on intrapartum antibiotics to decide which antibiotic to use when giving intrapartum antibiotics for neonatal infection. [2021] Table 1: Intrapartum antibiotics Allergies Women, trans men and non-binary people without chorioamnionitis Women, trans men and non-binary people with chorioamnionitis No penicillin allergy Use benzylpenicillin sodium. Use benzylpenicillin sodium plus gentamicin plus metronidazole. Allergies Women, trans men and non-binary people without chorioamnionitis Women, trans men and non-binary people with chorioamnionitis Penicillin allergy that is not severe Use cephalosporin with activity against group B streptococcus (for example, cefotaxime). Use with caution. In April 2021 this was an off-label use of cephalosporins. See NICE's information on prescribing medicines. Use cephalosporin with activity against group B streptococcus (for example, cefotaxime) plus metronidazole. Use with caution. In April 2021 this was an off-label use of cephalosporins. See NICE's information on prescribing medicines. Severe penicillin allergy Consider: Vancomycin or An alternative antibiotic that would be expected to be active against group B streptococcus based on either sensitivity testing performed on the woman's, trans man's or non-binary person's isolate or on local antibiotic susceptibility surveillance data. In April 2021 this was an off-label use of vancomycin. See NICE's information on prescribing medicines. Consider: Vancomycin plus gentamicin plus metronidazole or An alternative antibiotic to vancomycin that would be expected to be active against group B streptococcus based on either sensitivity testing performed on the woman's, trans man's or non-binary person's isolate or on local antibiotic susceptibility surveillance data plus gentamicin plus metronidazole. In April 2021 this was an off-label use of vancomycin. See NICE's information on prescribing medicines.",
+      "pdf_page": 8,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.6.3",
+      "text": "If using intravenous gentamicin during labour, use once-daily dosing. [2021]",
+      "pdf_page": 9,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.6.4",
+      "text": "Give the first dose of antibiotics as soon as possible after labour starts (or as soon as infection is suspected, in the case of chorioamnionitis), and continue until the birth of the baby. [2021]",
+      "pdf_page": 9,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.6.5",
+      "text": "Be aware that therapeutic drug monitoring may be needed when using gentamicin or vancomycin during labour. [2021]",
+      "pdf_page": 9,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.7.1",
+      "text": "Offer an immediate birth (by induction of labour or caesarean birth) to women, trans men and non-binary people who are between 34 and 37 weeks' gestation who: \u2022 have prolonged prelabour rupture of membranes and \u2022 have group B streptococcal colonisation, bacteriuria or infection at any time in their current pregnancy. [2021]",
+      "pdf_page": 10,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.8.1",
+      "text": "Do not use rifampicin-miconazole-impregnated catheters for newborn babies. [2021]",
+      "pdf_page": 10,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.9.1",
+      "text": "For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021]",
+      "pdf_page": 12,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.9.2",
+      "text": "For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+      "pdf_page": 12,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.10.1",
+      "text": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \u2022 perform an immediate clinical assessment \u2022 review the maternal and neonatal history \u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]",
+      "pdf_page": 13,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.10.2",
+      "text": "If group B streptococcus infection is identified in the woman, trans man or non- binary person within 72 hours after the baby's birth: \u2022 ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2 and \u2022 identify any other risk factors present and \u2022 look for clinical indicators of infection. Use this assessment to decide on clinical management (see recommendation 1.10.3 for the framework for making antibiotic decisions). [2021] Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \u2022 apnoea (temporary stopping of breathing) \u2022 seizures \u2022 need for cardiopulmonary resuscitation \u2022 need for mechanical ventilation \u2022 signs of shock Other clinical indicators: \u2022 altered behaviour or responsiveness \u2022 altered muscle tone (for example, floppiness) \u2022 feeding difficulties (for example, feed refusal) \u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \u2022 abnormal heart rate (bradycardia or tachycardia) \u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \u2022 persistent pulmonary hypertension of newborns \u2022 jaundice within 24 hours of birth \u2022 signs of neonatal encephalopathy \u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors \u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation \u2022 altered glucose homeostasis (hypoglycaemia or hyperglycaemia) \u2022 metabolic acidosis (base deficit of 10 mmol/litre or greater)",
+      "pdf_page": 13,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.10.3",
+      "text": "Use the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed: \u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators: \uff0d follow the recommendations in the section on investigations before starting antibiotics and \uff0d start antibiotic treatment according to the recommendations in this guideline and \uff0d do not wait for the test results before starting antibiotics \u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \uff0d whether it is safe to withhold antibiotics and \uff0d whether the baby's vital signs and clinical condition need to be monitored. If monitoring is needed, continue for at least 12 hours using a newborn early warning system \u2022 for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal care. [2021]",
+      "pdf_page": 15,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.10.4",
+      "text": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \u2022 total number of babies assessed using the calculator \u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]",
+      "pdf_page": 15,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.10.5",
+      "text": "If using the Kaiser Permanente neonatal sepsis calculator to assess the risk of early-onset neonatal infection, use the classification given by the calculator to direct management decisions. [2021]",
+      "pdf_page": 16,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.11.1",
+      "text": "In babies being monitored for possible early-onset neonatal infection: \u2022 Consider starting antibiotic treatment (see the section on investigations before starting antibiotics for next steps). \u2022 If no further concerns arise during observation reassure the family and, if the baby is to be discharged, give information and advice to the parents and carers (see the sections on information and support for parents and carers before transferring babies home and post discharge planning for babies who have not been given antibiotics). [2021]",
+      "pdf_page": 16,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.12.1",
+      "text": "When assessing or reviewing a baby: \u2022 check for possible clinical indicators of late-onset neonatal infection as shown in table 2 on clinical indicators of possible late-onset neonatal infection \u2022 take into account that prematurity, mechanical ventilation, history of surgery and presence of a central catheter are associated with greater risk of late- onset neonatal infection \u2022 think about infection in the other babies when 1 baby from a multiple birth has infection. [2021]",
+      "pdf_page": 18,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.12.2",
+      "text": "Seek early advice from a paediatrician when late-onset infection is suspected in non-inpatient settings. [2021]",
+      "pdf_page": 18,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.12.3",
+      "text": "Refer to NICE's guidelines on fever in under 5s and suspected sepsis in under 16s when assessing babies for late-onset neonatal infection who have been admitted to the hospital from home. [2021] Be aware that some pulse oximeters can underestimate or overestimate oxygen saturation levels, especially if the saturation level is borderline. Overestimation has been reported in people with dark skin. See also the NHS England Patient Safety Alert on the risk of harm from inappropriate placement of pulse oximeter probes. Table 2: Clinical indicators of possible late-onset neonatal infection (observations and events in the baby) Category Indicators Behaviour Parent or care-giver concern for change in behaviour Appears ill to a healthcare professional Does not wake, or if roused does not stay awake Weak high-pitched or continuous cry Respiratory Raised respiratory rate: 60 breaths per minute or more Grunting Apnoea Oxygen saturation of less than 90% in air or increased oxygen requirement over baseline Circulation and hydration Persistent tachycardia: heart rate 160 beats per minute or more Persistent bradycardia: heart rate less than 100 beats per minute Skin Mottled or ashen appearance Cyanosis of skin, lips or tongue Non-blanching rash of skin Other Temperature 38\u00b0C or more unexplained by environmental factors Temperature less than 36\u00b0C unexplained by environmental factors Alterations in feeding pattern Abdominal distension Seizures Bulging fontanelle This table has been adapted from the high-risk criteria in table 1 of NICE's guideline on suspected sepsis in under 16s.",
+      "pdf_page": 18,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.13.1",
+      "text": "When starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose. [2021]",
+      "pdf_page": 21,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.13.2",
+      "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+      "pdf_page": 21,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.13.3",
+      "text": "Do not routinely perform urine microscopy or culture as part of the investigations for early-onset neonatal infection, or late-onset neonatal infection for babies in neonatal units. [2021]",
+      "pdf_page": 21,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.13.4",
+      "text": "Perform urine microscopy and culture for babies with suspected late-onset neonatal infection outside of neonatal units in line with NICE's guideline on urinary tract infection in under 16s. [2021]",
+      "pdf_page": 21,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.13.5",
+      "text": "Do not perform skin swab microscopy or culture as part of the investigations for neonatal infection if there are no clinical signs of a localised infection. [2021]",
+      "pdf_page": 21,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.1",
+      "text": "If it is safe to do so, perform a lumbar puncture to obtain a cerebrospinal fluid sample when: \u2022 there is a strong clinical suspicion of neonatal infection or \u2022 there are clinical symptoms or signs suggesting meningitis. [2021]",
+      "pdf_page": 22,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.2",
+      "text": "Treat and stabilise any of the following before performing a lumbar puncture: \u2022 unprotected airway \u2022 respiratory compromise \u2022 shock \u2022 uncontrolled seizures \u2022 bleeding risk. [2024]",
+      "pdf_page": 22,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.3",
+      "text": "Do not perform lumbar puncture if there is: \u2022 extensive or rapidly spreading purpura \u2022 infection at the lumbar puncture site \u2022 risk factors for an evolving space-occupying lesion \u2022 any of these symptoms or signs, which might indicate raised intracranial pressure: \uff0d new focal neurological features (including seizures or posturing) \uff0d abnormal pupillary reactions \uff0d a progressive and sustained or rapid fall in level of consciousness. [2024]",
+      "pdf_page": 22,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.4",
+      "text": "Measure blood glucose in babies immediately before lumbar puncture, so that the cerebrospinal fluid to blood glucose ratio can be calculated. [2024]",
+      "pdf_page": 23,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.5",
+      "text": "Perform the following cerebrospinal fluid investigations in babies with suspected bacterial meningitis: \u2022 red and white cell count and cell type (including differential white cell count) \u2022 total protein \u2022 glucose concentration (to calculate cerebrospinal fluid to blood glucose ratio) \u2022 microscopy for bacteria (using gram stain) \u2022 microbiological culture and sensitivities \u2022 polymerase chain reaction (PCR) for relevant pathogens. [2024]",
+      "pdf_page": 23,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.6",
+      "text": "Store the remaining cerebrospinal fluid in case more tests are needed. [2024]",
+      "pdf_page": 23,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.7",
+      "text": "Ensure that cerebrospinal fluid, cell counts, total protein and glucose concentrations are available within 4 hours of lumbar puncture. [2024]",
+      "pdf_page": 24,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.8",
+      "text": "When interpreting the results of cerebrospinal fluid investigations, take into account: \u2022 red cells in the sample, which may suggest blood contamination or a different diagnosis \u2022 whether earlier antibiotics may have reduced the diagnostic reliability of these investigations. [2024]",
+      "pdf_page": 24,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.9",
+      "text": "Interpret cerebrospinal fluid results using standard age-appropriate threshold values (taking into account factors such as gestational age, chronological age, birth weight, and earlier antibiotic use or suspected immunodeficiency). [2024]",
+      "pdf_page": 24,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.10",
+      "text": "Interpret cerebrospinal fluid results in babies alongside the clinical presentation and maternal history. [2024]",
+      "pdf_page": 24,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.14.11",
+      "text": "If cerebrospinal fluid results are abnormal, consider alternative viral, mycobacterial, fungal or non-infectious causes as well as bacterial meningitis. [2024]",
+      "pdf_page": 24,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.15.1",
+      "text": "Do not routinely give antibiotic treatment to babies without risk factors for infection or clinical indicators or laboratory evidence of possible infection. [2012]",
+      "pdf_page": 25,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.15.2",
+      "text": "If a baby needs antibiotic treatment, give this as soon as possible and always within 1 hour of the decision to treat. [2021]",
+      "pdf_page": 25,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.15.3",
+      "text": "Do not use C-reactive protein results alone to make decisions about starting, continuing or stopping antibiotics. [2026]",
+      "pdf_page": 25,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.15.4",
+      "text": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics. Consider whether to change the antibiotic regimen, taking account of: \u2022 the baby's clinical condition (for example, if there is no improvement) \u2022 the results of microbiological investigations \u2022 expert microbiological advice, including local surveillance data. [2012]",
+      "pdf_page": 25,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.16.1",
+      "text": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]",
+      "pdf_page": 26,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.16.2",
+      "text": "Healthcare professionals with specific experience in neonatal infection should be available every day to give clinical microbiology or paediatric infectious disease advice. [2021]",
+      "pdf_page": 26,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.17.1",
+      "text": "In babies given antibiotics because of risk factors for infection or clinical indicators of possible late-onset neonatal infection, measure the C reactive protein concentration 18 to 24 hours after starting antibiotics. [2021]",
+      "pdf_page": 27,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.17.2",
+      "text": "Consider performing a lumbar puncture to obtain a cerebrospinal fluid sample in a baby who did not have a lumbar puncture at presentation who is receiving antibiotics, if it is thought safe to do so and if: \u2022 the baby has a positive blood culture (other than coagulase negative staphylococcus) or \u2022 the baby does not respond satisfactorily to antibiotic treatment, or \u2022 there is a strong clinical suspicion of infection or \u2022 there are clinical symptoms or signs suggesting meningitis. [2021] Investigations and treatments for site- specific infections 1.18 Eye infections",
+      "pdf_page": 27,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.18.1",
+      "text": "Be aware that, although minor conjunctivitis with encrusted eyelids is common and often benign, a purulent discharge may indicate a serious infection (for example, with chlamydia or gonococcus). [2012]",
+      "pdf_page": 28,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.18.2",
+      "text": "In babies with a purulent eye discharge take swab samples urgently for microbiological investigation, using methods that can detect chlamydia and gonococcus. Start systemic antibiotic treatment for possible gonococcal infection while waiting for the swab microbiology results. [2012] 1.19 Umbilical infections",
+      "pdf_page": 28,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.19.1",
+      "text": "In babies with clinical signs of umbilical infection, such as a purulent discharge or signs of periumbilical cellulitis (for example, redness, increased skin warmth or swelling): \u2022 perform a blood culture and \u2022 take a swab sample for microscopy and culture and \u2022 start antibiotic treatment with intravenous flucloxacillin and gentamicin (for starting dose of gentamicin, see recommendation 1.20.3 in the section on choice and dosage of intravenous antibiotics for suspected early-onset neonatal infection). If the microbiology results show that the infection is not caused by a Gram- negative bacterium, stop the gentamicin. [2012] Antibiotics for early-onset neonatal infection 1.20 Choice and dosage of intravenous antibiotics",
+      "pdf_page": 28,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.20.1",
+      "text": "Use intravenous benzylpenicillin sodium with gentamicin as the first-choice antibiotic regimen for empirical treatment of suspected early-onset infection, unless microbiological surveillance data show local bacterial resistance patterns that indicate the need for a different antibiotic. [2012]",
+      "pdf_page": 29,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.20.2",
+      "text": "Give benzylpenicillin sodium in a dosage of 25 mg/kg every 12 hours. Consider shortening the dose interval to every 8 hours, based on clinical judgement (for example, if the baby appears very ill). [2012]",
+      "pdf_page": 29,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.20.3",
+      "text": "Give gentamicin in a starting dose of 5 mg/kg (see also recommendation 1.20.4). [2012]",
+      "pdf_page": 29,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.20.4",
+      "text": "When prescribing gentamicin, be aware that: \u2022 the summary of product characteristics recommends a dosage of 4 to 7 mg/ kg/day administered in a single dose \u2022 the evidence reviewed for the guideline supports a starting dosage of 5 mg/ kg every 36 hours administered in a single dose. In 2021, a dosage of 5 mg/kg every 36 hours is an off-label use of gentamicin. See NICE's information on prescribing medicines. [2012]",
+      "pdf_page": 29,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.20.5",
+      "text": "If a second dose of gentamicin is given this should usually be 36 hours after the first dose (for criteria for stopping antibiotics at 36 hours, see recommendation 1.21.3 in the section on treatment duration for intravenous antibiotics for early- onset neonatal infection). Use a shorter interval if clinical judgement suggests this is needed, for example, if: \u2022 the baby appears very ill \u2022 the blood culture shows a Gram-negative infection. [2012]",
+      "pdf_page": 29,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.20.6",
+      "text": "Take account of blood gentamicin concentrations when deciding on subsequent gentamicin dosing regimen (see the section on therapeutic drug monitoring for babies receiving gentamicin). [2012] 1.20.7 Record the times of: \u2022 gentamicin administration \u2022 sampling for therapeutic monitoring. [2012]",
+      "pdf_page": 30,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.20.8",
+      "text": "If there is microbiological evidence of Gram-negative bacterial sepsis, add another antibiotic to the benzylpenicillin sodium and gentamicin regimen that is active against Gram-negative bacteria (for example, cefotaxime). If Gram- negative infection is confirmed, stop benzylpenicillin sodium. [2012] 1.21 Treatment duration for intravenous antibiotics",
+      "pdf_page": 30,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.21.1",
+      "text": "Give intravenous antibiotic treatment for a total of 7 days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected. [2012]",
+      "pdf_page": 30,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.21.2",
+      "text": "Consider continuing intravenous antibiotic treatment for more than 7 days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if: \u2022 the baby has not yet fully recovered or \u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary). [2012]",
+      "pdf_page": 30,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.21.3",
+      "text": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]",
+      "pdf_page": 30,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.21.4",
+      "text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics",
+      "pdf_page": 31,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.22.1",
+      "text": "For babies born from 35+0 weeks' gestation with negative blood culture who need antibiotics for more than 36 hours because the initial clinical suspicion of infection was strong, consider switching treatment from intravenous to oral antibiotics at 36 hours or thereafter to complete the course (up to 7 days of antibiotics in total) if: \u2022 the baby's clinical condition is reassuring, with no current clinical indicators of ongoing infection (see box 2 for clinical indicators of possible early-onset neonatal infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring and \u2022 the baby is tolerating oral feeds. [2026]",
+      "pdf_page": 31,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.22.2",
+      "text": "Use amoxicillin as the oral antibiotic, unless local bacterial resistance data indicates the need for a different antibiotic. May 2026: Amoxicillin is licensed for neonates but not specifically for the indication of early-onset neonatal infection. BNF for Children is reviewing the recommended dosage for neonates. [2026]",
+      "pdf_page": 31,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.22.3",
+      "text": "Consider enabling parents or carers to treat babies on oral antibiotics at home with support from the neonatal team. [2026]",
+      "pdf_page": 32,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.22.4",
+      "text": "Ensure that any decisions on switching to oral antibiotics or enabling a baby to go home is agreed by a senior neonatologist or paediatrician (consultant or similar level). [2026]",
+      "pdf_page": 32,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.22.5",
+      "text": "Before parents or carers take a baby on oral antibiotics home, ensure that: \u2022 they have been trained to give the baby oral antibiotics, and have given them their first dose under supervision while in hospital \u2022 they know when and how to seek medical help from the neonatal team (for signs in babies that require medical attention, see the section on information and support for parents and carers before transferring babies home) \u2022 any concerns they have raised are addressed \u2022 there are no other reasons for the baby to stay in hospital. [2026]",
+      "pdf_page": 32,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.22.6",
+      "text": "For parents and carers of babies on oral antibiotics, provide at least 2 follow-up consultations to assess the baby's wellbeing and the need for ongoing antibiotics, including 1 consultation at the end of treatment. [2026]",
+      "pdf_page": 32,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.23.1",
+      "text": "For babies with suspected late-onset neonatal infection who are already in a neonatal unit: \u2022 give a combination of narrow-spectrum antibiotics (such as intravenous flucloxacillin plus gentamicin) as first-line treatment \u2022 use local antibiotic susceptibility and resistance data (or national data if local data are inadequate) when deciding which antibiotics to use \u2022 give antibiotics that are effective against both Gram-negative and Gram- positive bacteria \u2022 if necrotising enterocolitis is suspected, also include an antibiotic that is active against anaerobic bacteria (such as metronidazole). [2021]",
+      "pdf_page": 33,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.23.2",
+      "text": "For babies with suspected late-onset neonatal infection or meningitis who have been admitted from home, treat according to recommendations 1.8.6 and 1.8.7 in NICE's guideline on suspected sepsis in under 16s. [2021]",
+      "pdf_page": 33,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.23.3",
+      "text": "When using gentamicin, see the section on therapeutic drug monitoring for babies receiving gentamicin. [2021]",
+      "pdf_page": 33,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.24.1",
+      "text": "For babies given antibiotics because of suspected late-onset infection, consider stopping the antibiotics at 48 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection and \u2022 the levels and trends of C\u2011reactive protein concentration are reassuring. [2021]",
+      "pdf_page": 34,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.25.1",
+      "text": "Give antibiotic treatment for 7 days for babies with a positive blood culture. Consider continuing antibiotic treatment for more than 7 days if: \u2022 the baby has not yet fully recovered or \u2022 longer treatment is needed because of the pathogen identified on blood culture (for example, Gram-negative bacteria or Staphylococcus aureus; seek expert microbiological advice if necessary) or \u2022 longer treatment is needed because of the site of the infection (such as intra- abdominal co-pathology, necrotising enterocolitis, osteomyelitis or infection of a central venous catheter). [2021]",
+      "pdf_page": 34,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.25.2",
+      "text": "Use a shorter treatment duration than 7 days when the baby makes a prompt recovery, and either no pathogen is identified or the pathogen identified is a common commensal (for example, coagulase negative staphylococcus). [2021]",
+      "pdf_page": 35,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.25.3",
+      "text": "If continuing antibiotics for longer than 48 hours for suspected late\u2011onset neonatal infection despite negative blood culture, review the baby at least once every 24 hours. At each review, decide whether to stop antibiotics, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein. [2021]",
+      "pdf_page": 35,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.25.4",
+      "text": "For guidance on treatment duration for suspected or confirmed meningitis, refer to the section on meningitis (babies in neonatal units). [2021]",
+      "pdf_page": 35,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.26.1",
+      "text": "Give prophylactic oral nystatin to babies treated with antibiotics for suspected late-onset neonatal bacterial infection if they: \u2022 have a birthweight of up to 1,500 g or \u2022 were born at less than 30 weeks' gestation. If oral administration of nystatin is not possible, give intravenous fluconazole. In April 2021, this was an off-label use of fluconazole. See NICE's information on prescribing medicines and use clinical judgement to determine the dosage. [2021]",
+      "pdf_page": 36,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.27.1",
+      "text": "If a baby is in a neonatal unit and meningitis is suspected but the causative pathogen is unknown (for example, because the cerebrospinal fluid Gram stain is uninformative), treat with intravenous amoxicillin and cefotaxime. [2012, amended 2021]",
+      "pdf_page": 37,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.27.2",
+      "text": "If a baby is in a neonatal unit and meningitis is shown (by either cerebrospinal fluid Gram stain or culture) to be caused by Gram-negative infection, stop amoxicillin and treat with cefotaxime alone. [2012, amended 2021]",
+      "pdf_page": 37,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.27.3",
+      "text": "If a baby is in a neonatal unit and meningitis is shown (by cerebrospinal fluid Gram stain) to be caused by a Gram-positive bacterium: \u2022 continue treatment with intravenous amoxicillin and cefotaxime while waiting for the cerebrospinal fluid culture result and \u2022 seek expert microbiological advice. [2012, amended 2021]",
+      "pdf_page": 37,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.27.4",
+      "text": "If the cerebrospinal fluid culture is positive for group B streptococcus, consider changing the antibiotic treatment to: \u2022 benzylpenicillin sodium 50 mg/kg every 12 hours, normally for at least 14 days and \u2022 gentamicin, with: \uff0d a starting dosage of 5 mg/kg every 36 hours \uff0d subsequent doses and intervals adjusted, if necessary, based on clinical judgement (for timing of the second dose, see recommendation 1.20.5 in the section on choice and dosage of intravenous antibiotics for suspected early-onset neonatal infection) and blood gentamicin concentrations (see recommendations 1.35.1 to 1.35.3 in the section on trough concentrations for babies receiving gentamicin) \uff0d treatment lasting for 5 days. [2012, amended 2021]",
+      "pdf_page": 37,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.27.5",
+      "text": "If the blood culture or cerebrospinal fluid culture is positive for listeria, consider stopping cefotaxime and treating with amoxicillin and gentamicin. [2012, amended 2021]",
+      "pdf_page": 38,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.27.6",
+      "text": "If the cerebrospinal fluid culture identifies a Gram-positive bacterium other than group B streptococcus or listeria, seek expert microbiological advice on management. [2012, amended 2021]",
+      "pdf_page": 38,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.28.1",
+      "text": "Do not routinely restrict fluid intake to below routine maintenance needs in babies with bacterial meningitis. [2024]",
+      "pdf_page": 38,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.28.2",
+      "text": "Give maintenance fluids orally or by enteral tube, if tolerated. [2024] For more guidance on fluid therapy, see NICE's guideline on intravenous fluid therapy in children and young people.",
+      "pdf_page": 38,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.29.1",
+      "text": "Refer babies with pneumococcal meningitis to a paediatric immunology and infectious disease specialist to assess for primary immunodeficiency. [2024]",
+      "pdf_page": 39,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.29.2",
+      "text": "For babies with bacterial meningitis, examine their back and scalp for signs of a sinus tract. [2024]",
+      "pdf_page": 39,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.29.3",
+      "text": "For babies with bacterial meningitis, take a history of: \u2022 head trauma, surgery or cerebrospinal fluid leak \u2022 immunisations \u2022 medicines, including drugs that suppress the immune system (such as complement inhibitors). [2024]",
+      "pdf_page": 39,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.30.1",
+      "text": "After antibiotic treatment, consider prompt discharge of the baby from hospital, with support for the parents and carers and a point of contact for advice. [2012] 1.31 Preparing for hospital discharge See also the section on planning for care after discharge for all babies who have had an infection.",
+      "pdf_page": 39,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.31.1",
+      "text": "Identify follow-up needs for babies who have had bacterial meningitis, taking into account potential cognitive, neurological, developmental, hearing, psychosocial, education, and renal complications. [2024]",
+      "pdf_page": 40,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.31.2",
+      "text": "Refer babies for community neurodevelopmental follow-up. [2024]",
+      "pdf_page": 40,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.31.3",
+      "text": "For babies who are taking anti-epileptic drugs, refer for a medicines review 3 months after hospital discharge, with a clinician with an interest in epilepsy, an epilepsy specialist nurse, or a neurologist. [2024]",
+      "pdf_page": 40,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.31.4",
+      "text": "Offer an audiological assessment within 4 weeks of the baby being well enough for testing (and preferably before discharge). [2024]",
+      "pdf_page": 40,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.32.1",
+      "text": "Consider referral to psychosocial support for family members and carers of babies who have had bacterial meningitis. [2024]",
+      "pdf_page": 40,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.33.1",
+      "text": "For babies who have had bacterial meningitis, arrange for a review with a neonatologist or paediatrician at 4 to 6 weeks after discharge from hospital. As part of this review, cover: \u2022 the results of their audiological assessment, and whether cochlear implants are needed \u2022 damage to bones and joints \u2022 skin complications (including scarring from necrosis) \u2022 psychosocial problems (if relevant, see NICE's guideline on post-traumatic stress disorder) \u2022 neurological and developmental problems, in liaison with community child development services. [2024]",
+      "pdf_page": 40,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.33.2",
+      "text": "Arrange a review with a neonatologist or paediatrician for 1 year after discharge. At this review, assess for possible late-onset neurodevelopmental, sensory and psychosocial complications. [2024]",
+      "pdf_page": 41,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.33.3",
+      "text": "Healthcare professionals (such as school nurses, health visitors and GPs) with responsibility for monitoring the health and wellbeing of babies should be alert for late-onset complications of bacterial meningitis. [2024]",
+      "pdf_page": 41,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.33.4",
+      "text": "Be aware that late-onset complications may not be apparent until transition points (such as starting nursery or school). [2024]",
+      "pdf_page": 41,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.33.5",
+      "text": "Community child development services should follow up and assess the risk of long-term neurodevelopmental complications for at least 2 years after discharge. [2024]",
+      "pdf_page": 41,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.33.6",
+      "text": "If a neurodevelopmental deficit is identified, refer to the appropriate services (for example, neurodisability services) and agree with them who will be responsible for follow-up, to ensure that nobody misses out on care. [2024]",
+      "pdf_page": 41,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.33.7",
+      "text": "Advise parents and carers to get advice from their GP if their child develops possible neurodevelopmental complications more than 2 years after discharge. [2024]",
+      "pdf_page": 41,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.34.1",
+      "text": "Risk factors for recurrent bacterial meningitis are: \u2022 primary or secondary immunodeficiency, including: \uff0d HIV \uff0d congenital complement deficiency or acquired inhibition \uff0d reduced or absent spleen function \uff0d hypogammaglobulinaemia \u2022 communication between the cerebrospinal fluid and external surface, for example, caused by: \uff0d prior trauma or surgery \uff0d a congenital anomaly. [2024]",
+      "pdf_page": 42,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.34.2",
+      "text": "For babies who have had a recurrent episode of bacterial meningitis: \u2022 review with a paediatric immunology and infectious disease specialist and \u2022 agree which tests, investigations, vaccines and other interventions are needed to prevent re-occurrence. [2024]",
+      "pdf_page": 43,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.34.3",
+      "text": "Examine the baby's back and scalp for signs of a sinus tract. [2024]",
+      "pdf_page": 43,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.34.4",
+      "text": "Get specialist radiological advice on investigations for a cerebrospinal fluid leak. [2024]",
+      "pdf_page": 43,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.34.5",
+      "text": "Take an immunisation and medicine history, including for drugs that suppress the immune system (such as complement inhibitors). [2024]",
+      "pdf_page": 43,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.34.6",
+      "text": "In babies with recurrent meningitis with unconfirmed bacterial cause, consider other causes and get advice from an infection specialist. [2024]",
+      "pdf_page": 43,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.35.1",
+      "text": "If giving a second dose of gentamicin, measure the trough blood gentamicin concentration immediately before giving the second dose. Take the trough concentrations into account before giving the third dose of gentamicin. [2012]",
+      "pdf_page": 44,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.35.2",
+      "text": "Repeat the measurement of trough concentrations immediately before every subsequent third dose of gentamicin, or more frequently if necessary (for example, if there has been concern about previous trough concentrations or renal function). [2012]",
+      "pdf_page": 44,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.35.3",
+      "text": "Hospital services should make blood gentamicin concentrations available to healthcare professionals in time to inform the next dosage decision. [2012]",
+      "pdf_page": 44,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.35.4",
+      "text": "Adjust the gentamicin dose interval, aiming to achieve trough concentrations of less than 2 mg/litre. If the course of gentamicin lasts for more than 3 doses, aim for a trough concentration of less than 1 mg/litre. [2012]",
+      "pdf_page": 44,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.35.5",
+      "text": "Do not withhold a dose of gentamicin because of delays in getting a trough concentration measurement, unless there is evidence of impaired renal function (for example, an elevated serum urea or creatinine concentration, or anuria). [2012] 1.36 Peak concentrations",
+      "pdf_page": 44,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.36.1",
+      "text": "Consider measuring peak blood gentamicin concentrations in selected babies, such as in those with: \u2022 oedema \u2022 macrosomia (birthweight more than 4.5 kg) \u2022 an unsatisfactory response to treatment \u2022 proven Gram-negative infection. [2012]",
+      "pdf_page": 44,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.36.2",
+      "text": "When measuring peak blood gentamicin concentrations, take the measurement 1 hour after starting gentamicin. [2012]",
+      "pdf_page": 45,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.36.3",
+      "text": "If a baby has a Gram-negative or staphylococcal infection, consider increasing the dose of gentamicin if the peak concentration is less than 8 mg/litre. [2012] Care setting and care after discharge 1.37 Care setting",
+      "pdf_page": 45,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.37.1",
+      "text": "Using clinical judgement, consider completing a course of intravenous antibiotics outside of hospital (for example, at home or through visits to a midwifery-led unit) in babies who are well and for whom there are no ongoing concerns if there is adequate local support. See also the section on switching to oral antibiotics for babies with early-onset neonatal infection. [2012, amended 2026]",
+      "pdf_page": 46,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.37.2",
+      "text": "When deciding on the appropriate care setting for a baby, take into account the baby's clinical needs and the competencies needed to ensure safe and effective care (for example, the insertion and care of intravenous cannulas). [2012] 1.38 Planning for care after discharge",
+      "pdf_page": 46,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.38.1",
+      "text": "For babies who have had an infection, tell their GP (and health visitor if relevant), and explain any follow-up plans. [2024]",
+      "pdf_page": 46,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.38.2",
+      "text": "Tell the parents and carers who their main point of contact will be after discharge. [2024]",
+      "pdf_page": 46,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.38.3",
+      "text": "Document the follow-up plan for managing complications in the discharge summary. [2024]",
+      "pdf_page": 46,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-1.38.4",
+      "text": "The hospital team should coordinate with the following professionals for care after discharge: \u2022 tertiary and primary care and other specialists \u2022 allied professionals and community teams that will be involved in follow-up (for example, audiology and speech and language therapy departments). [2024]",
+      "pdf_page": 46,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-box1",
+      "text": "Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+      "pdf_page": 12,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    },
+    {
+      "chunk_id": "NICE-box2",
+      "text": "Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \u2022 apnoea (temporary stopping of breathing) \u2022 seizures \u2022 need for cardiopulmonary resuscitation \u2022 need for mechanical ventilation \u2022 signs of shock Other clinical indicators: \u2022 altered behaviour or responsiveness \u2022 altered muscle tone (for example, floppiness) \u2022 feeding difficulties (for example, feed refusal) \u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \u2022 abnormal heart rate (bradycardia or tachycardia) \u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \u2022 persistent pulmonary hypertension of newborns \u2022 jaundice within 24 hours of birth \u2022 signs of neonatal encephalopathy \u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors \u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation",
+      "pdf_page": 14,
+      "source": "NICE NG195",
+      "version": "2026-05-13"
+    }
+  ]
+}

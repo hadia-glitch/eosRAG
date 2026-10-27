@@ -1,0 +1,21 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 4,
+    "patient_fidelity": 5,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 4,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Grounding: candidate aligns with AAP risk stratification that missing maternal/history data prevents low\u2011risk classification and recommends labs and observation.",
+      "Patient fidelity: correctly treats missing vital signs, CRP, culture, and maternal GBS status as unknown rather than assuming normal.",
+      "Completeness: includes recommended sepsis work\u2011up, continuous monitoring, serial examinations, escalation criteria, and parental communication; covers key points from guidelines.",
+      "Actionability: provides specific, implementable steps (obtain cultures, CBC, CRP, monitor vitals, observe 48\u201172\u202fh, escalate if ill\u2011appearing).",
+      "Uncertainty: explicitly acknowledges unknown maternal and exam data and the resulting risk uncertainty.",
+      "No unsafe claims were identified."
+    ]
+  },
+  "reason": null
+}

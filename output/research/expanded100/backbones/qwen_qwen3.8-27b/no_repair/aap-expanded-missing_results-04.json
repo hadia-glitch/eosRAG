@@ -1,0 +1,389 @@
+{
+  "id": "aap-expanded-missing_results-04",
+  "family": "missing_results",
+  "model": "qwen/qwen3.8-27b",
+  "verifier_model": "qwen/qwen3.8-27b",
+  "seconds": 27.247946400006185,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "eabf5ccb8d2b6d2d5d601a186d4616ae35be8fa38e0e396bce81f46f637c84a8",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 36, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": null, \"spo2\": null, \"crp\": null, \"culture_status\": \"unavailable\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}], \"evaluation_question\": \"Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 36 weeks; age 36 hours; setting hospital birth.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"AAP2018-35PLUS-P3-B10\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 3, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"newborn infant who is ill appearing;\"}, {\"quote_id\": \"E1Q2\", \"text\": \"(2) a mother with a clinical diagnosis of chorioamnionitis;\"}, {\"quote_id\": \"E1Q3\", \"text\": \"(3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\\u2019 gestation;\"}, {\"quote_id\": \"E1Q4\", \"text\": \"or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors.\"}, {\"quote_id\": \"E1Q5\", \"text\": \"Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \\u226548 hours for category 4.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"AAP2018-35PLUS-P4-B0\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 4, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"maternal GBS colonization status, the duration of ROM, and the type and duration of intrapartum antibiotic therapies.\"}, {\"quote_id\": \"E2Q2\", \"text\": \"The predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate.\"}, {\"quote_id\": \"E2Q3\", \"text\": \"Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \\u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \\u22653 per 1000 live births.\"}, {\"quote_id\": \"E2Q4\", \"text\": \"A prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC).\"}, {\"quote_id\": \"E2Q5\", \"text\": \"No adverse effects of the multivariate risk approach were noted during birth hospitalization.\"}, {\"quote_id\": \"E2Q6\", \"text\": \"Readmissions for culture-confirmed infection during the week after discharge from the birth hospital were rare (approximately 5 in 100 000 births) and did not differ by the approach (sepsis risk calculator versus CDC risk algorithm) used at birth.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"AAP2018-35PLUS-P2-B11\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 2, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"The clinical diagnosis of chorioamnionitis has been used as a primary risk factor for identifying infants who are at risk for EOS, presenting multiple difficulties for obstetric and neonatal providers.\"}, {\"quote_id\": \"E3Q2\", \"text\": \"Although most infants with EOS are born to women with this clinical diagnosis, specificity is poor;\"}, {\"quote_id\": \"E3Q3\", \"text\": \"only a small proportion of infants who are born in the setting of chorioamnionitis develop EOS.\"}, {\"quote_id\": \"E3Q4\", \"text\": \"In a review of nearly 400 000 newborn infants, researchers confirmed the high rate of chorioamnionitis diagnosis among the mothers of infants with EOS but estimated that approximately 450 term infants who were exposed to chorioamnionitis would have to be treated per case of confirmed EOS.\"}, {\"quote_id\": \"E3Q5\", \"text\": \"These data are used to provide a strong argument against using the clinical diagnosis of chorioamnionitis as a sole indicator of risk for EOS in term infants.\"}, {\"quote_id\": \"E3Q6\", \"text\": \"The identification of chorioamnionitis itself is challenging, particularly among women who are laboring at or near term.\"}, {\"quote_id\": \"E3Q7\", \"text\": \"The American College of Obstetricians and Gynecologists (ACOG) has recently opted to transition away from the use of the term chorioamnionitis to the use of intraamniotic infection and has published guidance for its diagnosis and management.The ACOG aligned with the recommendations of a multispecialty workshop sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development in defining a confirmed diagnosis of intraamniotic infection as 1 made by using positive amniotic fluid Gram- stain and/or culture results or by using placental histopathology.Suspected intra\"}, {\"quote_id\": \"E3Q8\", \"text\": \"niotic fluid Gram- stain and/or culture results or by using placental histopathology.Suspected intraamniotic infection is defined as maternal intrapartum fever (either a single maternal intrapartum temperature \\u226539.0\\u00b0C or a temperature of 38.0\\u00b0C\\u201338.9\\u00b0C that persists for >30 minutes) and 1 or more of the following: maternal leukocytosis, purulent cervical drainage, and fetal tachycardia.\"}]}, {\"id\": \"E4\", \"chunk_id\": \"AAP2018-35PLUS-P3-B13\", \"source\": \"AAP 2018 >=35 weeks\", \"version\": \"2018-12\", \"page_number\": 3, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\\u2019s risk of EOS.\"}, {\"quote_id\": \"E4Q2\", \"text\": \"A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth.\"}, {\"quote_id\": \"E4Q3\", \"text\": \"The objective data include gestational age, the highest maternal intrapartum temperature, the\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "The infant's EOS risk cannot be accurately stratified because maternal GBS status, intrapartum antibiotic therapy, and rupture of membranes duration are unknown. These specific maternal factors are required to determine if the infant falls into a category requiring laboratory testing or empirical antibiotics.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              },
+              {
+                "quote_id": "E1Q5"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "investigations",
+            "text": "A blood culture is recommended for infants with an estimated EOS risk of at least 1 per 1000 live births. Given the missing maternal data, the risk estimate is currently indeterminate, but the absence of a documented low-risk profile necessitates consideration of this threshold for testing.",
+            "support": [
+              {
+                "quote_id": "E2Q3"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "monitoring_plan",
+            "text": "Enhanced clinical observation is recommended for infants with an EOS risk estimated at 1 per 1000 live births. Since the latest examination is missing and red flags are not fully documented, the infant's current clinical condition cannot be used to refine the risk estimate or determine the need for observation.",
+            "support": [
+              {
+                "quote_id": "E2Q3"
+              },
+              {
+                "quote_id": "E4Q1"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "risk_analysis",
+            "text": "The clinical diagnosis of chorioamnionitis is a primary risk factor for EOS but has poor specificity. Without documentation of maternal intrapartum fever or other signs of intraamniotic infection, the presence or absence of this risk factor remains unknown and cannot be assumed.",
+            "support": [
+              {
+                "quote_id": "E3Q2"
+              },
+              {
+                "quote_id": "E3Q8"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "recommended_actions",
+            "text": "Empirical antibiotic therapy is recommended for infants with an EOS risk estimated at 3 per 1000 live births or for those in specific high-risk categories such as those with a mother with a clinical diagnosis of chorioamnionitis. The current lack of data prevents confirmation of whether this threshold is met.",
+            "support": [
+              {
+                "quote_id": "E2Q3"
+              },
+              {
+                "quote_id": "E1Q2"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "parent_communication_notes",
+            "text": "The assessment is limited by the unavailability of maternal history and culture results. The clinical diagnosis of chorioamnionitis presents difficulties for providers due to its poor specificity, meaning that even if present, it does not guarantee the infant has EOS, but its absence cannot be confirmed without data.",
+            "support": [
+              {
+                "quote_id": "E3Q1"
+              },
+              {
+                "quote_id": "E3Q3"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 22.331651899999997,
+      "replayed": true
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "c1d8bf49362a400d8f0fd654b6a2d114be580074ea9b220b6b9b8c3e672e447a",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 36, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": null, \"spo2\": null, \"crp\": null, \"culture_status\": \"unavailable\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}], \"evidence\": [{\"id\": \"E1\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"newborn infant who is ill appearing; (2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\\u2019 gestation; or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \\u226548 hours for category 4.\"}, {\"id\": \"E2\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"maternal GBS colonization status, the duration of ROM, and the type and duration of intrapartum antibiotic therapies. The predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate. Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \\u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \\u22653 per 1000 live births. A prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC). No adverse effects of the multivariate risk approach were noted during birth hospitalization. Readmissions for culture-confirmed infection during the week after discharge from the birth hospital were rare (approximately 5 in 100 000 births) and did not differ by the approach (sepsis risk calculator versus CDC risk algorithm) used at birth.\"}, {\"id\": \"E3\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"The clinical diagnosis of chorioamnionitis has been used as a primary risk factor for identifying infants who are at risk for EOS, presenting multiple difficulties for obstetric and neonatal providers. Although most infants with EOS are born to women with this clinical diagnosis, specificity is poor; only a small proportion of infants who are born in the setting of chorioamnionitis develop EOS. In a review of nearly 400 000 newborn infants, researchers confirmed the high rate of chorioamnionitis diagnosis among the mothers of infants with EOS but estimated that approximately 450 term infants who were exposed to chorioamnionitis would have to be treated per case of confirmed EOS. These data are used to provide a strong argument against using the clinical diagnosis of chorioamnionitis as a sole indicator of risk for EOS in term infants. The identification of chorioamnionitis itself is challenging, particularly among women who are laboring at or near term. The American College of Obstetricians and Gynecologists (ACOG) has recently opted to transition away from the use of the term chorioamnionitis to the use of intraamniotic infection and has published guidance for its diagnosis and management.The ACOG aligned with the recommendations of a multispecialty workshop sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development in defining a confirmed diagnosis of intraamniotic infection as 1 made by using positive amniotic fluid Gram- stain and/or culture results or by using placental histopathology.Suspected intraamniotic infection is defined as maternal intrapartum fever (either a single maternal intrapartum temperature \\u226539.0\\u00b0C or a temperature of 38.0\\u00b0C\\u201338.9\\u00b0C that persists for >30 minutes) and 1 or more of the following: maternal leukocytosis, purulent cervical drainage, and fetal tachycardia. The\"}, {\"id\": \"E4\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\\u2019s risk of EOS. A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth. The objective data include gestational age, the highest maternal intrapartum temperature, the\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The infant's EOS risk cannot be accurately stratified because maternal GBS status, intrapartum antibiotic therapy, and rupture of membranes duration are unknown. These specific maternal factors are required to determine if the infant falls into a category requiring laboratory testing or empirical antibiotics.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"investigations\", \"text\": \"A blood culture is recommended for infants with an estimated EOS risk of at least 1 per 1000 live births. Given the missing maternal data, the risk estimate is currently indeterminate, but the absence of a documented low-risk profile necessitates consideration of this threshold for testing.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C3\", \"section\": \"monitoring_plan\", \"text\": \"Enhanced clinical observation is recommended for infants with an EOS risk estimated at 1 per 1000 live births. Since the latest examination is missing and red flags are not fully documented, the infant's current clinical condition cannot be used to refine the risk estimate or determine the need for observation.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C4\", \"section\": \"risk_analysis\", \"text\": \"The clinical diagnosis of chorioamnionitis is a primary risk factor for EOS but has poor specificity. Without documentation of maternal intrapartum fever or other signs of intraamniotic infection, the presence or absence of this risk factor remains unknown and cannot be assumed.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C5\", \"section\": \"recommended_actions\", \"text\": \"Empirical antibiotic therapy is recommended for infants with an EOS risk estimated at 3 per 1000 live births or for those in specific high-risk categories such as those with a mother with a clinical diagnosis of chorioamnionitis. The current lack of data prevents confirmation of whether this threshold is met.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C6\", \"section\": \"parent_communication_notes\", \"text\": \"The assessment is limited by the unavailability of maternal history and culture results. The clinical diagnosis of chorioamnionitis presents difficulties for providers due to its poor specificity, meaning that even if present, it does not guarantee the infant has EOS, but its absence cannot be confirmed without data.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 5.194379900000058
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "c1d8bf49362a400d8f0fd654b6a2d114be580074ea9b220b6b9b8c3e672e447a",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"AAP 2018 >=35 weeks, EVALUATION ONLY\", \"patient\": {\"age_hours\": 36, \"gestational_age_weeks\": 36, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": null, \"spo2\": null, \"crp\": null, \"culture_status\": \"unavailable\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 12.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 21}], \"evidence\": [{\"id\": \"E1\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"newborn infant who is ill appearing; (2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\\u2019 gestation; or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \\u226548 hours for category 4.\"}, {\"id\": \"E2\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"maternal GBS colonization status, the duration of ROM, and the type and duration of intrapartum antibiotic therapies. The predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate. Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \\u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \\u22653 per 1000 live births. A prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC). No adverse effects of the multivariate risk approach were noted during birth hospitalization. Readmissions for culture-confirmed infection during the week after discharge from the birth hospital were rare (approximately 5 in 100 000 births) and did not differ by the approach (sepsis risk calculator versus CDC risk algorithm) used at birth.\"}, {\"id\": \"E3\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"The clinical diagnosis of chorioamnionitis has been used as a primary risk factor for identifying infants who are at risk for EOS, presenting multiple difficulties for obstetric and neonatal providers. Although most infants with EOS are born to women with this clinical diagnosis, specificity is poor; only a small proportion of infants who are born in the setting of chorioamnionitis develop EOS. In a review of nearly 400 000 newborn infants, researchers confirmed the high rate of chorioamnionitis diagnosis among the mothers of infants with EOS but estimated that approximately 450 term infants who were exposed to chorioamnionitis would have to be treated per case of confirmed EOS. These data are used to provide a strong argument against using the clinical diagnosis of chorioamnionitis as a sole indicator of risk for EOS in term infants. The identification of chorioamnionitis itself is challenging, particularly among women who are laboring at or near term. The American College of Obstetricians and Gynecologists (ACOG) has recently opted to transition away from the use of the term chorioamnionitis to the use of intraamniotic infection and has published guidance for its diagnosis and management.The ACOG aligned with the recommendations of a multispecialty workshop sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development in defining a confirmed diagnosis of intraamniotic infection as 1 made by using positive amniotic fluid Gram- stain and/or culture results or by using placental histopathology.Suspected intraamniotic infection is defined as maternal intrapartum fever (either a single maternal intrapartum temperature \\u226539.0\\u00b0C or a temperature of 38.0\\u00b0C\\u201338.9\\u00b0C that persists for >30 minutes) and 1 or more of the following: maternal leukocytosis, purulent cervical drainage, and fetal tachycardia. The\"}, {\"id\": \"E4\", \"source\": \"AAP 2018 >=35 weeks\", \"section\": null, \"version\": \"2018-12\", \"text\": \"A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\\u2019s risk of EOS. A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth. The objective data include gestational age, the highest maternal intrapartum temperature, the\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The infant's EOS risk cannot be accurately stratified because maternal GBS status, intrapartum antibiotic therapy, and rupture of membranes duration are unknown. These specific maternal factors are required to determine if the infant falls into a category requiring laboratory testing or empirical antibiotics.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C2\", \"section\": \"investigations\", \"text\": \"A blood culture is recommended for infants with an estimated EOS risk of at least 1 per 1000 live births. Given the missing maternal data, the risk estimate is currently indeterminate, but the absence of a documented low-risk profile necessitates consideration of this threshold for testing.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C3\", \"section\": \"monitoring_plan\", \"text\": \"Enhanced clinical observation is recommended for infants with an EOS risk estimated at 1 per 1000 live births. Since the latest examination is missing and red flags are not fully documented, the infant's current clinical condition cannot be used to refine the risk estimate or determine the need for observation.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E4\"}]}, {\"id\": \"C4\", \"section\": \"risk_analysis\", \"text\": \"The clinical diagnosis of chorioamnionitis is a primary risk factor for EOS but has poor specificity. Without documentation of maternal intrapartum fever or other signs of intraamniotic infection, the presence or absence of this risk factor remains unknown and cannot be assumed.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}, {\"id\": \"C5\", \"section\": \"recommended_actions\", \"text\": \"Empirical antibiotic therapy is recommended for infants with an EOS risk estimated at 3 per 1000 live births or for those in specific high-risk categories such as those with a mother with a clinical diagnosis of chorioamnionitis. The current lack of data prevents confirmation of whether this threshold is met.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C6\", \"section\": \"parent_communication_notes\", \"text\": \"The assessment is limited by the unavailability of maternal history and culture results. The clinical diagnosis of chorioamnionitis presents difficulties for providers due to its poor specificity, meaning that even if present, it does not guarantee the infant has EOS, but its absence cannot be confirmed without data.\", \"support\": [{\"evidence_id\": \"E3\"}, {\"evidence_id\": \"E3\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 27.131774000001315
+    }
+  ],
+  "packet": {
+    "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      }
+    ],
+    "evaluation_question": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 36 weeks; age 36 hours; setting hospital birth.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "AAP2018-35PLUS-P3-B10",
+        "text": "newborn infant who is ill appearing; (2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation; or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 3
+      },
+      {
+        "id": "E2",
+        "chunk_id": "AAP2018-35PLUS-P4-B0",
+        "text": "maternal GBS colonization status, the duration of ROM, and the type and duration of intrapartum antibiotic therapies. The predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate. Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \u22653 per 1000 live births. A prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC). No adverse effects of the multivariate risk approach were noted during birth hospitalization. Readmissions for culture-confirmed infection during the week after discharge from the birth hospital were rare (approximately 5 in 100 000 births) and did not differ by the approach (sepsis risk calculator versus CDC risk algorithm) used at birth.",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 4
+      },
+      {
+        "id": "E3",
+        "chunk_id": "AAP2018-35PLUS-P2-B11",
+        "text": "The clinical diagnosis of chorioamnionitis has been used as a primary risk factor for identifying infants who are at risk for EOS, presenting multiple difficulties for obstetric and neonatal providers. Although most infants with EOS are born to women with this clinical diagnosis, specificity is poor; only a small proportion of infants who are born in the setting of chorioamnionitis develop EOS. In a review of nearly 400 000 newborn infants, researchers confirmed the high rate of chorioamnionitis diagnosis among the mothers of infants with EOS but estimated that approximately 450 term infants who were exposed to chorioamnionitis would have to be treated per case of confirmed EOS. These data are used to provide a strong argument against using the clinical diagnosis of chorioamnionitis as a sole indicator of risk for EOS in term infants. The identification of chorioamnionitis itself is challenging, particularly among women who are laboring at or near term. The American College of Obstetricians and Gynecologists (ACOG) has recently opted to transition away from the use of the term chorioamnionitis to the use of intraamniotic infection and has published guidance for its diagnosis and management.The ACOG aligned with the recommendations of a multispecialty workshop sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development in defining a confirmed diagnosis of intraamniotic infection as 1 made by using positive amniotic fluid Gram- stain and/or culture results or by using placental histopathology.Suspected intraamniotic infection is defined as maternal intrapartum fever (either a single maternal intrapartum temperature \u226539.0\u00b0C or a temperature of 38.0\u00b0C\u201338.9\u00b0C that persists for >30 minutes) and 1 or more of the following: maternal leukocytosis, purulent cervical drainage, and fetal tachycardia. The",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 2
+      },
+      {
+        "id": "E4",
+        "chunk_id": "AAP2018-35PLUS-P3-B13",
+        "text": "A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\u2019s risk of EOS. A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth. The objective data include gestational age, the highest maternal intrapartum temperature, the",
+        "source": "AAP 2018 >=35 weeks",
+        "version": "2018-12",
+        "page_number": 3
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "AAP 2018 >=35 weeks, EVALUATION ONLY",
+      "patient": {
+        "age_hours": 36,
+        "gestational_age_weeks": 36,
+        "care_setting": "hospital_birth",
+        "respiratory_rate": null,
+        "spo2": null,
+        "crp": null,
+        "culture_status": "unavailable",
+        "maternal_gbs": "unknown",
+        "red_flags": "not fully documented"
+      },
+      "history": [
+        {
+          "age_hours": 12.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 21
+        }
+      ],
+      "evaluation_question": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 36 weeks; age 36 hours; setting hospital birth.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "AAP2018-35PLUS-P3-B10",
+          "text": "newborn infant who is ill appearing; (2) a mother with a clinical diagnosis of chorioamnionitis; (3) a mother who is colonized with GBS and who received inadequate IAP, with a duration of ROM being >18 hours or birth before 37 weeks\u2019 gestation; or (4) a mother who is colonized with GBS who received inadequate IAP but with no additional risk factors. Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 3
+        },
+        {
+          "id": "E2",
+          "chunk_id": "AAP2018-35PLUS-P4-B0",
+          "text": "maternal GBS colonization status, the duration of ROM, and the type and duration of intrapartum antibiotic therapies. The predictive models were used to develop a Web-based Neonatal Early-Onset Sepsis Risk Calculator with recommended clinical algorithms that are based on the final risk estimate. Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \u22653 per 1000 live births. A prospective validation in 204 685 infants revealed that blood culture testing declined by 66%, and empirical antibiotic administration declined by 48% with this approach compared with the previous use of a categorical risk algorithm based on recommendations by the Centers for Disease Control and Prevention (CDC). No adverse effects of the multivariate risk approach were noted during birth hospitalization. Readmissions for culture-confirmed infection during the week after discharge from the birth hospital were rare (approximately 5 in 100 000 births) and did not differ by the approach (sepsis risk calculator versus CDC risk algorithm) used at birth.",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 4
+        },
+        {
+          "id": "E3",
+          "chunk_id": "AAP2018-35PLUS-P2-B11",
+          "text": "The clinical diagnosis of chorioamnionitis has been used as a primary risk factor for identifying infants who are at risk for EOS, presenting multiple difficulties for obstetric and neonatal providers. Although most infants with EOS are born to women with this clinical diagnosis, specificity is poor; only a small proportion of infants who are born in the setting of chorioamnionitis develop EOS. In a review of nearly 400 000 newborn infants, researchers confirmed the high rate of chorioamnionitis diagnosis among the mothers of infants with EOS but estimated that approximately 450 term infants who were exposed to chorioamnionitis would have to be treated per case of confirmed EOS. These data are used to provide a strong argument against using the clinical diagnosis of chorioamnionitis as a sole indicator of risk for EOS in term infants. The identification of chorioamnionitis itself is challenging, particularly among women who are laboring at or near term. The American College of Obstetricians and Gynecologists (ACOG) has recently opted to transition away from the use of the term chorioamnionitis to the use of intraamniotic infection and has published guidance for its diagnosis and management.The ACOG aligned with the recommendations of a multispecialty workshop sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development in defining a confirmed diagnosis of intraamniotic infection as 1 made by using positive amniotic fluid Gram- stain and/or culture results or by using placental histopathology.Suspected intraamniotic infection is defined as maternal intrapartum fever (either a single maternal intrapartum temperature \u226539.0\u00b0C or a temperature of 38.0\u00b0C\u201338.9\u00b0C that persists for >30 minutes) and 1 or more of the following: maternal leukocytosis, purulent cervical drainage, and fetal tachycardia. The",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 2
+        },
+        {
+          "id": "E4",
+          "chunk_id": "AAP2018-35PLUS-P3-B13",
+          "text": "A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\u2019s risk of EOS. A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth. The objective data include gestational age, the highest maternal intrapartum temperature, the",
+          "source": "AAP 2018 >=35 weeks",
+          "version": "2018-12",
+          "page_number": 3
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "The infant's EOS risk cannot be accurately stratified because maternal GBS status, intrapartum antibiotic therapy, and rupture of membranes duration are unknown. These specific maternal factors are required to determine if the infant falls into a category requiring laboratory testing or empirical antibiotics.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "maternal GBS colonization status, the duration of ROM, and the type and duration of intrapartum antibiotic therapies."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "Recommendations in these algorithms include the following: laboratory testing and empirical antibiotic therapy for infants in categories 1 and 2, laboratory testing for category 3, and observation in the hospital for \u226548 hours for category 4."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "investigations",
+          "text": "A blood culture is recommended for infants with an estimated EOS risk of at least 1 per 1000 live births. Given the missing maternal data, the risk estimate is currently indeterminate, but the absence of a documented low-risk profile necessitates consideration of this threshold for testing.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \u22653 per 1000 live births."
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "monitoring_plan",
+          "text": "Enhanced clinical observation is recommended for infants with an EOS risk estimated at 1 per 1000 live births. Since the latest examination is missing and red flags are not fully documented, the infant's current clinical condition cannot be used to refine the risk estimate or determine the need for observation.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \u22653 per 1000 live births."
+            },
+            {
+              "evidence_id": "E4",
+              "quote": "A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\u2019s risk of EOS."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "risk_analysis",
+          "text": "The clinical diagnosis of chorioamnionitis is a primary risk factor for EOS but has poor specificity. Without documentation of maternal intrapartum fever or other signs of intraamniotic infection, the presence or absence of this risk factor remains unknown and cannot be assumed.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "Although most infants with EOS are born to women with this clinical diagnosis, specificity is poor;"
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "niotic fluid Gram- stain and/or culture results or by using placental histopathology.Suspected intraamniotic infection is defined as maternal intrapartum fever (either a single maternal intrapartum temperature \u226539.0\u00b0C or a temperature of 38.0\u00b0C\u201338.9\u00b0C that persists for >30 minutes) and 1 or more of the following: maternal leukocytosis, purulent cervical drainage, and fetal tachycardia."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "recommended_actions",
+          "text": "Empirical antibiotic therapy is recommended for infants with an EOS risk estimated at 3 per 1000 live births or for those in specific high-risk categories such as those with a mother with a clinical diagnosis of chorioamnionitis. The current lack of data prevents confirmation of whether this threshold is met.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "Blood culture and enhanced clinical observation are recommended for infants with an EOS risk estimated at \u22651 per 1000 live births, and blood culture and empirical antibiotic therapy are recommended for infants with an EOS risk estimated at \u22653 per 1000 live births."
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "(2) a mother with a clinical diagnosis of chorioamnionitis;"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "parent_communication_notes",
+          "text": "The assessment is limited by the unavailability of maternal history and culture results. The clinical diagnosis of chorioamnionitis presents difficulties for providers due to its poor specificity, meaning that even if present, it does not guarantee the infant has EOS, but its absence cannot be confirmed without data.",
+          "support": [
+            {
+              "evidence_id": "E3",
+              "quote": "The clinical diagnosis of chorioamnionitis has been used as a primary risk factor for identifying infants who are at risk for EOS, presenting multiple difficulties for obstetric and neonatal providers."
+            },
+            {
+              "evidence_id": "E3",
+              "quote": "only a small proportion of infants who are born in the setting of chorioamnionitis develop EOS."
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "safety_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "status": "supported_for_review",
+    "errors": [],
+    "resolution_log": [],
+    "packet_sha256": "805fc61d6bd290f4327bbff4aaf5992f3cfb691a6b84e9acb16ad35d8f6d07f4"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 0,
+    "budget_seconds": 120.0,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

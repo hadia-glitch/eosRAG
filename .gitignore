@@ -75,3 +75,15 @@ app.*.map.json
 *.zip
 !/data/synthetic_eos_v2/
 !/data/synthetic_eos_v2/*.json
+
+output/research/expanded100/**/role_cache/
+
+output/research/expanded100/judge_cache/
+
+output/research/expanded100/qa/
+
+output/research/expanded100/pending_transport.json
+
+!output/research/neoguard-expanded100-results.zip
+
+!output/clinician-review/neoguard-100-case-clinician-review.zip

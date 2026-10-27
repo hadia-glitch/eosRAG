@@ -1,0 +1,2247 @@
+{
+  "seed": 31,
+  "original_cases_file_sha256": "84e3fe39e281d74119c5ff0a250b7f41d5a178ac3491165287560d1eb55f9981",
+  "cases_file_sha256": "f32d59a84abe09bc70c40d0956b8b04f547ddc22aa7bc2dbdfce48f31b220a75",
+  "corpus_file_sha256": "617038a2efaf0ac678e5fd76786bf9340262a90d8388ef1aa54669f81df69daa",
+  "protocol_sha256": "c5ec206a5defd66be76c804ee7b47c1d57c706ce684f32215cb814b2dd11c769",
+  "cases": [
+    {
+      "id": "deterioration-1",
+      "sha256": "6cd736df8a352dbbf4215bc53b4d40792fe0f6e142ecf7b3c8ff884f90546927",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "deterioration-2",
+      "sha256": "c257c0438bf880d8b85b089772571e0ddfbb4d3617863ccffe6dee54e33af924",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "deterioration-3",
+      "sha256": "30c29f38bf82177f0bde675ed5555d57741c340e666401ee9abfcb2c276bda02",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "crp_alone-1",
+      "sha256": "8b89f881a28d8e3d8d8a7c6d11a525a7c23aa04ae0e2cbee1b835b0cafeaeccc",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "crp_alone-2",
+      "sha256": "5c246b72e6f83b47ff39f3423513660e7c9461c43ff4b61d5e52a60b2f407c30",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "crp_alone-3",
+      "sha256": "edd5d098ff1826af64d9aa17a3f6c83f189c74a8470f3d621568b2b4b077072d",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "incomplete_stop-1",
+      "sha256": "f87e60ff0b04e67007476a34e68b2ef505cdbb04ccd5c4bca63877672241d07e",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "incomplete_stop-2",
+      "sha256": "8613668bfc85e781b7d56da720c8f8bef0e21a7a81b0bfc28d39b992ec0829c9",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "incomplete_stop-3",
+      "sha256": "ef0735600f18b8b9dbd4447b91f90011529e6be9decb281b9ee15405eaf0cc95",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "initial_investigation-1",
+      "sha256": "2a985791d1d122860a4d75bbe9952d178c6990a9586400e90092404ee8a7c3b6",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "initial_investigation-2",
+      "sha256": "8e7bc924c9db1e4ae000935106b8d3e147c010eb397cabf1b5cf4a8a31eef2f9",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "initial_investigation-3",
+      "sha256": "578c3e69f957ddc6fbbf6be7fa03c0fd5e5f2caf20461423a7de348aa1bfc65a",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "single_risk-1",
+      "sha256": "9f9865c0b48e9eeb4706e93ede5c27664d9f1ad5308c736190b3594796c519a1",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "single_risk-2",
+      "sha256": "6c58aa4f620dcd17eb556b2d5021b442e5166102e49b226a5b926b56ab88a978",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "single_risk-3",
+      "sha256": "f2dd9ab68eac739999d1efd10bbf055d9440763b7f607500ce65c907440d97f5",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "missing_results-1",
+      "sha256": "190b3a73a0175998e1b5e6c83c6a201df4865018cff8039becb50d98c13f708f",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "missing_results-2",
+      "sha256": "655b6844c9eb974e0586055f502976c1182ed7294772268491011389264e6c01",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "missing_results-3",
+      "sha256": "369b56340c10b9980a769ac251396272b4c9197c7b5cbd3ee858a3e331287343",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-01",
+      "sha256": "9d49d88dc48cc6158f3ec9cccda5bda6ba9809df6b6b53818ab6799dc66b5326",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-02",
+      "sha256": "02458cd4b3113f990a62f1c4ff00e1a08cc368ec743cb20214388078675cf331",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-03",
+      "sha256": "76bcad788597fadf56833b512b3755d12a468eeed8ce4c99c39dab813452710b",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-04",
+      "sha256": "b8ff926efd43f9f259d309554f9f0a21ceabb8ccb70c09aca1039c22e2332db1",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-05",
+      "sha256": "8dbc96683a7e794585ed0f5fba7f4a9208815fc985e19f2f569072d4251b2c9d",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-06",
+      "sha256": "00014a9b515885e686549730aa731bce2c707665fd466e4cb208ba2bdb81096f",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-07",
+      "sha256": "a12240a44180d7602d03be0829894f5b075def1c512d75d023f0c85c6e1b7682",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-08",
+      "sha256": "9a45556e5a15ee193037505647ac65dff4d35a502021b79e7e2452a78ce9352f",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-09",
+      "sha256": "3a634b956626dbd7a00d995f54641616dd7d55f1188bb0ba81831e1a600e515a",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-10",
+      "sha256": "305f5415a191aca776680d3e8615529dd4df5cfabaa862889c343d75361f922c",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-11",
+      "sha256": "d20dc227b07fe4407472d96d281f4268d3f4766643a29c4f23cd8c9ad4039810",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-12",
+      "sha256": "613d2286d7cea15febcc1e45668a9d9143deba7a21e4ed31951336ec363b4a5e",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-01",
+      "sha256": "798652487da66953d1cc38ec96674ae36ce260c6155b6a779d78733e0d6167a1",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-02",
+      "sha256": "b8226d2154b63f65959b7caa74f43184d06bdd329f61ff0d914b7349f60f13f8",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-03",
+      "sha256": "c84fa8e49d35708853889e2f972de08dd9591fac7e75266bac7beb829c220628",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-04",
+      "sha256": "c9b51d3bdccee02dba96940d52efa1d29a592d90911f0adbc2a8894c965bf8f9",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-05",
+      "sha256": "48b60e82a35cbd667cd69938be227ae10ea4ea74a50e83920aecc94b9667be7f",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-06",
+      "sha256": "900a2d5de34eae1ab0aad1f02c132737c8076c41c7893756a2d8bd4a0e5417e3",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-07",
+      "sha256": "bd9ae1edcea071c520085a4ca6fdb185391eac235dcf2daa604d7cdfa0fca432",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-08",
+      "sha256": "a581fb947cc8f8c71d77e4e827af8da71eabc6c35bc7fa4019396aa65dd1bf36",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-09",
+      "sha256": "691b90542e9c66db4590e3a6413347b53e8fa73cc25d507fafbc70ee46b1fea2",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-10",
+      "sha256": "5e17f3852e6bf60ebcf8b86952454a04f60efffb598dcd12383cb9136d2456ac",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-11",
+      "sha256": "913799ceace84148e198a7bf30bbc74318ab00f1c12808dfc1cb58c259cc0dd1",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-12",
+      "sha256": "b93472e20c8816e4f3b4a35ef6bc1dbc5304d9f795dcb57f3af64b6f5e3af45b",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-01",
+      "sha256": "7cf7fdfd11ec4dde9a53c38b8e8a55de37c07b0dcfd54d5a9dc73a7f04dbd3eb",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-02",
+      "sha256": "1086d9b74f80cab8ad6a94660433222d6e3568c9aca39b543698c3b1e8697671",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-03",
+      "sha256": "50a9cda28c595c7897b4759a26c55f00a41bd5e90c98bb58e356e75bbf00cc79",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-04",
+      "sha256": "a10456dbb694c5638708ea1bbfc0ea61d4d7485a850fb667780d1cab59dc27e8",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-05",
+      "sha256": "2c9431e2d3aaa66fd720a0c5ff37f4e3c3543e07ed28d4230a01ea4f1e5c3e6d",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-06",
+      "sha256": "e40a282742f75cc919655a3eeff6de16ff2496f5ebdcc5343aa54d500d28ae9a",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-07",
+      "sha256": "e8ac097fd3e29575ad0f35192fc15ec3073214b2ecb14f52389de60b86ad1be5",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-08",
+      "sha256": "ed092131028dba9e9f9d35a668b61cf0f1d5549d0e4ceaf157b5ba45174fcc19",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-09",
+      "sha256": "a6d2db6fc8a004162bb1cb2ef320a3a1d3b27a6e99e5bdb880a3153f461c4e55",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-10",
+      "sha256": "8fc6e562797ea6e965388e5c6ebf60f8d9c526b79a2b339707fef4f762ff49d2",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-11",
+      "sha256": "3c44a9b6f8015973672a42a2813e60e75712582081ca40c142a121498fd91db8",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-12",
+      "sha256": "1f5c65dc73f6982e2ce70aa7097f7e23bba953d03aed134a3201247526c8f26d",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-01",
+      "sha256": "4dd6e366dc90e5ea99f9d173f26690c15f870997b69efb3298c850326b5436f8",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-02",
+      "sha256": "0383404344a6e380eed26c2da0f159aadada321518a3d11184a7d5b9efa17aeb",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-03",
+      "sha256": "47e33dad45fdb4267b369dd68faec460d1ebe342c46f43f5761a4d6b1a9b8c8d",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-04",
+      "sha256": "f10a7fa26f91c356e0f9ec9d9556392f0a696982522e50ebbc01bac183e860b7",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-05",
+      "sha256": "ca35d4a63f428291d80aac46887d7b017bc00e3df5ff45d8df780006e60cd6ac",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-06",
+      "sha256": "a5ba51126c611ad0d98eb2bf28dcb35651e3391cf35e5e5dd57cdd850bcb618a",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-07",
+      "sha256": "21311476d7e8fa03b3d661547c906aab1c1b4bad8d5c414ff3a843bf376cf6ab",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-08",
+      "sha256": "95eaa82fb4ebb4c181942a8c925e1505a83c0698267548cb2ac3ebaa02b14ac6",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-09",
+      "sha256": "1e8257b86521765a0b2eb7ef2b7cc7f30a3f639738a4ce3eddd1cba71df790bf",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-10",
+      "sha256": "0f80d7ba0ae3f5989a77c097a9c05c03b55443844433bfdd054fd662bccddc68",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-11",
+      "sha256": "0c61ec1ad4a1536a5d38af9991e176163d0dc35e05e56acd3db6664513225327",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-12",
+      "sha256": "ad1a25e7d278bd133c8af7671a66dee63664c3825b39a1950f7dc083a34c384b",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-01",
+      "sha256": "aca8d663dc0ffd86a37e7aeafd2cbe7670155edcd5705cb34101b25347f0aa83",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-02",
+      "sha256": "17da4e1f3958e96d8002ca1ab6f4e1aa6a4a937da037f19b4a6e5c48e672d8b4",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-03",
+      "sha256": "f6da68cdf3e65b2b6e9bbc64a1e58ee03416b771fa686e8498c20bba3603a5c2",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-04",
+      "sha256": "e9fb4097cd33eb49a87f2c097643a039d50b6ad7d6afa2579136bf8f91bb7000",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-05",
+      "sha256": "cd5beca4c0f1a24ad24c9aecdb009630474ab00f499f0d6c2e498d89873080dc",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-06",
+      "sha256": "9910a65372c5016b83f39fbf5cb8e17f972e1ee1ccf4961d1106a6ed551ae93c",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-07",
+      "sha256": "8a428eddfa51cc54753c916aaa5964724ff72f2307d2f86ab6110c13f53f5a84",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-08",
+      "sha256": "e3c86eb47db80f3e4a9752b58647b7239d33de3a8f7ee9e1f1da6d926f922965",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-09",
+      "sha256": "d5f18c074ecaccdc6c57b3881a19badec687a447792a7b6348f74451505ad158",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-10",
+      "sha256": "3413165e439baed4062ce13ec51dc18bbc19942f6bd212a2f92bddbb831061e3",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-11",
+      "sha256": "0bff012163eb48f024c6b3e4fb407aadc0845f31d0eeab414b4851a788d7ba1b",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-12",
+      "sha256": "3d649d33024564d57f622e86d10d06989d6f7c60f21fa9f8f985200614de370b",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-01",
+      "sha256": "bcf87700ab18049bd0a4068ca7efae2e7cc4c2361c6bd872d7fbc8e21f6739e7",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-02",
+      "sha256": "09c51a8e439a8beefd49448820e28f993fc7ef622259b79fa5c03bb4650ba3dc",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-03",
+      "sha256": "46d029b98013d650c0539fb02a92b96ff8628b5717ac8583f24ecd2919edf475",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-04",
+      "sha256": "16e53cc3924de231586eeab5f544517b3f17aff4f85b7aa56a0d377b333a4f6f",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-05",
+      "sha256": "b83f10a707e78c7a85083738a3cba3858b10ec5482f87d2f34032d3d8de0352c",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-06",
+      "sha256": "c7c4fc15df2316a8ba81b9c24c3f6e1f5fead712549551d834a04c7c61d274a8",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-07",
+      "sha256": "a52d9520440a080d48518c31599df0b7c55f00a79dd3c557f3a6f8af9c09018e",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-08",
+      "sha256": "6f9ff9774d025cf1c34c290765d853b259b6b2a043c67f8ddf2010cb0be1ef79",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-09",
+      "sha256": "f3e0f97519dfc08acf1f989ea585fb92cc28a354f5a26b8ce38099e2cddb6cb4",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-10",
+      "sha256": "92d9e3dfd087655e82302e563c493062040f1b4232b9b20c93efe2bd2a2b3860",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-11",
+      "sha256": "285b01f1de263da21b955ed4e2135c684494bf2e130f817c11f66ff687f146c3",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-12",
+      "sha256": "b64e9e3e048917050452dd640f25b4c9290ddbb3a1ce24a38b780dda78281d06",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-deterioration-01",
+      "sha256": "81aeb8d2bf89b21f737cb8b76dde5679aa7cb6dcd0ee59d93be06c4a8adcbecd",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P4-B5",
+          "text_sha256": "73d5f7d43eacd1ad56023c8854d080b5d6c5c6412ec0aa9a9b535f5dc1b3b620",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-deterioration-02",
+      "sha256": "3201f79335fa008e388f9e14402c8c69286fa72be1a2193ded4a46f5126f67bf",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P4-B5",
+          "text_sha256": "73d5f7d43eacd1ad56023c8854d080b5d6c5c6412ec0aa9a9b535f5dc1b3b620",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-deterioration-03",
+      "sha256": "c128217ed5bd3482f0fe4a0c954aa95beafe01959dcea7f72a82fd422d04470a",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P4-B5",
+          "text_sha256": "73d5f7d43eacd1ad56023c8854d080b5d6c5c6412ec0aa9a9b535f5dc1b3b620",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-deterioration-04",
+      "sha256": "07bfa688fe1448f40c33f3d6da9459ac1e22325a5cd51255c7f4e40684668171",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P4-B5",
+          "text_sha256": "73d5f7d43eacd1ad56023c8854d080b5d6c5c6412ec0aa9a9b535f5dc1b3b620",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-crp_alone-01",
+      "sha256": "dcf6c7cef372c92a765e192138468cab613653bcc3c75575d01e609e7fffd1bf",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P6-B2",
+          "text_sha256": "c6da30da7916a74342d65f3e832d2e39126ffb4757e6df5263e6a2f425da6c2f",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-crp_alone-02",
+      "sha256": "dec4a3510ed955a72f7ce47ecc522edd001ec8ea1e89cf9ee08d7936b29e95df",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P6-B2",
+          "text_sha256": "c6da30da7916a74342d65f3e832d2e39126ffb4757e6df5263e6a2f425da6c2f",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-crp_alone-03",
+      "sha256": "4545bb79e7d9f2b600462676c2c89decb1570b52fa4b9014d17e026618d14fe4",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P6-B2",
+          "text_sha256": "c6da30da7916a74342d65f3e832d2e39126ffb4757e6df5263e6a2f425da6c2f",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-crp_alone-04",
+      "sha256": "ef03d4d06e8dace51f1b6c0caa12a4e062cc6c2cdcce524b2042fd9a0c505555",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P6-B2",
+          "text_sha256": "c6da30da7916a74342d65f3e832d2e39126ffb4757e6df5263e6a2f425da6c2f",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-01",
+      "sha256": "046dd02c32026af7e444abee8b9ada52b5c3092b2fb592f46cc39b599e04148e",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP6",
+          "text_sha256": "bcbd9cfc26abe84cf79044a3347abf925105be4f7096d71952d63f5b267411b2",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-P6-STOP",
+          "text_sha256": "84a0d002da5a511ba87ab165c305ad82cf943fd827496704a02429ced01b6988",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-02",
+      "sha256": "c49700f5d7f74bd871123a2a51175110fea4579ab85b1c60a5a0b157a7aa89e8",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP6",
+          "text_sha256": "bcbd9cfc26abe84cf79044a3347abf925105be4f7096d71952d63f5b267411b2",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-P6-STOP",
+          "text_sha256": "84a0d002da5a511ba87ab165c305ad82cf943fd827496704a02429ced01b6988",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-03",
+      "sha256": "552ec204c933e8ac427f2e1778a1be5e0b25129dc42dcc5b4e8e8d893fae5f91",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP6",
+          "text_sha256": "bcbd9cfc26abe84cf79044a3347abf925105be4f7096d71952d63f5b267411b2",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-P6-STOP",
+          "text_sha256": "84a0d002da5a511ba87ab165c305ad82cf943fd827496704a02429ced01b6988",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-04",
+      "sha256": "cd4d9ff93c6a5fddae441f56a3cff832050e45a55cfe72ba4417d2ffe5e4eaf2",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP6",
+          "text_sha256": "bcbd9cfc26abe84cf79044a3347abf925105be4f7096d71952d63f5b267411b2",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-P6-STOP",
+          "text_sha256": "84a0d002da5a511ba87ab165c305ad82cf943fd827496704a02429ced01b6988",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-initial_investigation-01",
+      "sha256": "8e156dd4343a104cbd7c8b060766615a966c3009e298e11d3149d8ebfaaffdbf",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P5-B3",
+          "text_sha256": "61d392efa321050e95546c97e0c54d0001d3b90e84384816bcb50e72d75f5185",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-initial_investigation-02",
+      "sha256": "2637553e65ca8359a3f065c12f0d61cdc7405d593e214fef04580757f6d38705",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P5-B3",
+          "text_sha256": "61d392efa321050e95546c97e0c54d0001d3b90e84384816bcb50e72d75f5185",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-initial_investigation-03",
+      "sha256": "26f96c7fd7ec20365a41499f175781b37f63a197c63315153d615a1bcf81b8b3",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P5-B3",
+          "text_sha256": "61d392efa321050e95546c97e0c54d0001d3b90e84384816bcb50e72d75f5185",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-initial_investigation-04",
+      "sha256": "6717b9c50307b0e54474e8376d8930795472311bf7a03e7c71b67f0774090dad",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P5-B3",
+          "text_sha256": "61d392efa321050e95546c97e0c54d0001d3b90e84384816bcb50e72d75f5185",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-single_risk-01",
+      "sha256": "59de4ba4b3f6c779dca3c32a429645892379b563e9771c4fb8bdf8b2d9e9cc2c",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP3",
+          "text_sha256": "f7d294737f5046e08944e22c915d6bb697e14276c592030d289c29b21ade8cd3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-single_risk-02",
+      "sha256": "796f31974bdd4e6b7d78ab88403a02fcacc559e3666b8d5223df884f2ca6bb83",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP3",
+          "text_sha256": "f7d294737f5046e08944e22c915d6bb697e14276c592030d289c29b21ade8cd3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-single_risk-03",
+      "sha256": "816715b1d4fbcaebd81b0db77dedc941145eccb2b84f08a5719e889edbc9df50",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP3",
+          "text_sha256": "f7d294737f5046e08944e22c915d6bb697e14276c592030d289c29b21ade8cd3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-single_risk-04",
+      "sha256": "62952c6746f8c859c16c92b30e29bc727414213872f159d21ecf92ef3c5f239d",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP3",
+          "text_sha256": "f7d294737f5046e08944e22c915d6bb697e14276c592030d289c29b21ade8cd3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-missing_results-01",
+      "sha256": "7f1eeb5d9668bd51a7abf8517a2ce0fec80dc230d2c83422ae9aeeb3c5700263",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-missing_results-02",
+      "sha256": "4ecd82bdc010af3c7f14106ad132a801fa0b3dfcbbfa5c2eda0a27738a88d074",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-missing_results-03",
+      "sha256": "4f0fc585a3c9263bc7d08055591f7aa22aeb0ee6734290deb3fac72629a3a64a",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-missing_results-04",
+      "sha256": "0f9613f9f303e647dd56a9c6e931ab632cb57028b706de35ee52dcfeb99910a9",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    }
+  ]
+}

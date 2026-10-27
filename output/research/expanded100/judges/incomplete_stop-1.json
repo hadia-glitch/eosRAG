@@ -1,0 +1,20 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 3,
+    "patient_fidelity": 4,
+    "completeness": 3,
+    "actionability": 4,
+    "uncertainty": 4,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Grounding: candidate mixes 48\u2011hour stopping rule with 36\u2011hour context; partially aligns with guideline but not exact.",
+      "Patient fidelity: correctly notes negative culture at 36\u202fh and missing documentation of other criteria.",
+      "Completeness: includes main stopping criteria and system timing, but adds extra details (oral switch) not asked.",
+      "Actionability: provides clear next step to review criteria before stopping antibiotics.",
+      "Uncertainty: no speculative statements; low uncertainty."
+    ]
+  },
+  "reason": null
+}

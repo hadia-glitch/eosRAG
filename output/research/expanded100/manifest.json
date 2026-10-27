@@ -1,0 +1,1844 @@
+{
+  "seed": 31,
+  "original_cases_file_sha256": "84e3fe39e281d74119c5ff0a250b7f41d5a178ac3491165287560d1eb55f9981",
+  "cases_file_sha256": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45",
+  "corpus_file_sha256": "884734ef2c07b228482481123ed06d03f00f36d1bafb8f4999a5102b55fac6e2",
+  "protocol_sha256": "bf418590ffe2ee57a49aaa15ff8930f02bf23cf25d9ba46294e77075380b864f",
+  "cases": [
+    {
+      "id": "deterioration-1",
+      "sha256": "6cd736df8a352dbbf4215bc53b4d40792fe0f6e142ecf7b3c8ff884f90546927",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "deterioration-2",
+      "sha256": "c257c0438bf880d8b85b089772571e0ddfbb4d3617863ccffe6dee54e33af924",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "deterioration-3",
+      "sha256": "30c29f38bf82177f0bde675ed5555d57741c340e666401ee9abfcb2c276bda02",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "crp_alone-1",
+      "sha256": "8b89f881a28d8e3d8d8a7c6d11a525a7c23aa04ae0e2cbee1b835b0cafeaeccc",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "crp_alone-2",
+      "sha256": "5c246b72e6f83b47ff39f3423513660e7c9461c43ff4b61d5e52a60b2f407c30",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "crp_alone-3",
+      "sha256": "edd5d098ff1826af64d9aa17a3f6c83f189c74a8470f3d621568b2b4b077072d",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "incomplete_stop-1",
+      "sha256": "f87e60ff0b04e67007476a34e68b2ef505cdbb04ccd5c4bca63877672241d07e",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "incomplete_stop-2",
+      "sha256": "8613668bfc85e781b7d56da720c8f8bef0e21a7a81b0bfc28d39b992ec0829c9",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "incomplete_stop-3",
+      "sha256": "ef0735600f18b8b9dbd4447b91f90011529e6be9decb281b9ee15405eaf0cc95",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "initial_investigation-1",
+      "sha256": "2a985791d1d122860a4d75bbe9952d178c6990a9586400e90092404ee8a7c3b6",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "initial_investigation-2",
+      "sha256": "8e7bc924c9db1e4ae000935106b8d3e147c010eb397cabf1b5cf4a8a31eef2f9",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "initial_investigation-3",
+      "sha256": "578c3e69f957ddc6fbbf6be7fa03c0fd5e5f2caf20461423a7de348aa1bfc65a",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "single_risk-1",
+      "sha256": "9f9865c0b48e9eeb4706e93ede5c27664d9f1ad5308c736190b3594796c519a1",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "single_risk-2",
+      "sha256": "6c58aa4f620dcd17eb556b2d5021b442e5166102e49b226a5b926b56ab88a978",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "single_risk-3",
+      "sha256": "f2dd9ab68eac739999d1efd10bbf055d9440763b7f607500ce65c907440d97f5",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "missing_results-1",
+      "sha256": "190b3a73a0175998e1b5e6c83c6a201df4865018cff8039becb50d98c13f708f",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "missing_results-2",
+      "sha256": "655b6844c9eb974e0586055f502976c1182ed7294772268491011389264e6c01",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "missing_results-3",
+      "sha256": "369b56340c10b9980a769ac251396272b4c9197c7b5cbd3ee858a3e331287343",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-01",
+      "sha256": "9d49d88dc48cc6158f3ec9cccda5bda6ba9809df6b6b53818ab6799dc66b5326",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-02",
+      "sha256": "02458cd4b3113f990a62f1c4ff00e1a08cc368ec743cb20214388078675cf331",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-03",
+      "sha256": "76bcad788597fadf56833b512b3755d12a468eeed8ce4c99c39dab813452710b",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-deterioration-04",
+      "sha256": "b8ff926efd43f9f259d309554f9f0a21ceabb8ccb70c09aca1039c22e2332db1",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-box2",
+          "text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-deterioration-01",
+      "sha256": "81aeb8d2bf89b21f737cb8b76dde5679aa7cb6dcd0ee59d93be06c4a8adcbecd",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P4-B5",
+          "text_sha256": "73d5f7d43eacd1ad56023c8854d080b5d6c5c6412ec0aa9a9b535f5dc1b3b620",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-deterioration-02",
+      "sha256": "3201f79335fa008e388f9e14402c8c69286fa72be1a2193ded4a46f5126f67bf",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P4-B5",
+          "text_sha256": "73d5f7d43eacd1ad56023c8854d080b5d6c5c6412ec0aa9a9b535f5dc1b3b620",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-deterioration-03",
+      "sha256": "c128217ed5bd3482f0fe4a0c954aa95beafe01959dcea7f72a82fd422d04470a",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P4-B5",
+          "text_sha256": "73d5f7d43eacd1ad56023c8854d080b5d6c5c6412ec0aa9a9b535f5dc1b3b620",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-deterioration-04",
+      "sha256": "07bfa688fe1448f40c33f3d6da9459ac1e22325a5cd51255c7f4e40684668171",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P4-B5",
+          "text_sha256": "73d5f7d43eacd1ad56023c8854d080b5d6c5c6412ec0aa9a9b535f5dc1b3b620",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-deterioration-05",
+      "sha256": "b54ef23c7ae7bd9669df8aa40493d26059a3b1b1298524b561d47cb38b42e21c",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P4-B5",
+          "text_sha256": "73d5f7d43eacd1ad56023c8854d080b5d6c5c6412ec0aa9a9b535f5dc1b3b620",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-01",
+      "sha256": "798652487da66953d1cc38ec96674ae36ce260c6155b6a779d78733e0d6167a1",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-02",
+      "sha256": "b8226d2154b63f65959b7caa74f43184d06bdd329f61ff0d914b7349f60f13f8",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-03",
+      "sha256": "c84fa8e49d35708853889e2f972de08dd9591fac7e75266bac7beb829c220628",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-crp_alone-04",
+      "sha256": "c9b51d3bdccee02dba96940d52efa1d29a592d90911f0adbc2a8894c965bf8f9",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-crp_alone-01",
+      "sha256": "dcf6c7cef372c92a765e192138468cab613653bcc3c75575d01e609e7fffd1bf",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P6-B2",
+          "text_sha256": "c6da30da7916a74342d65f3e832d2e39126ffb4757e6df5263e6a2f425da6c2f",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-crp_alone-02",
+      "sha256": "dec4a3510ed955a72f7ce47ecc522edd001ec8ea1e89cf9ee08d7936b29e95df",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P6-B2",
+          "text_sha256": "c6da30da7916a74342d65f3e832d2e39126ffb4757e6df5263e6a2f425da6c2f",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-crp_alone-03",
+      "sha256": "4545bb79e7d9f2b600462676c2c89decb1570b52fa4b9014d17e026618d14fe4",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P6-B2",
+          "text_sha256": "c6da30da7916a74342d65f3e832d2e39126ffb4757e6df5263e6a2f425da6c2f",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-crp_alone-04",
+      "sha256": "ef03d4d06e8dace51f1b6c0caa12a4e062cc6c2cdcce524b2042fd9a0c505555",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P6-B2",
+          "text_sha256": "c6da30da7916a74342d65f3e832d2e39126ffb4757e6df5263e6a2f425da6c2f",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-crp_alone-05",
+      "sha256": "109f91905e372573811ba5986d33f2927a7b74c8684a3953b93a204ce72e3cc1",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P6-B2",
+          "text_sha256": "c6da30da7916a74342d65f3e832d2e39126ffb4757e6df5263e6a2f425da6c2f",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-01",
+      "sha256": "7cf7fdfd11ec4dde9a53c38b8e8a55de37c07b0dcfd54d5a9dc73a7f04dbd3eb",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-02",
+      "sha256": "1086d9b74f80cab8ad6a94660433222d6e3568c9aca39b543698c3b1e8697671",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-03",
+      "sha256": "50a9cda28c595c7897b4759a26c55f00a41bd5e90c98bb58e356e75bbf00cc79",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-incomplete_stop-04",
+      "sha256": "a10456dbb694c5638708ea1bbfc0ea61d4d7485a850fb667780d1cab59dc27e8",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.21.3",
+          "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.21.4",
+          "text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-01",
+      "sha256": "046dd02c32026af7e444abee8b9ada52b5c3092b2fb592f46cc39b599e04148e",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP6",
+          "text_sha256": "bcbd9cfc26abe84cf79044a3347abf925105be4f7096d71952d63f5b267411b2",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-P6-STOP",
+          "text_sha256": "84a0d002da5a511ba87ab165c305ad82cf943fd827496704a02429ced01b6988",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-02",
+      "sha256": "c49700f5d7f74bd871123a2a51175110fea4579ab85b1c60a5a0b157a7aa89e8",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP6",
+          "text_sha256": "bcbd9cfc26abe84cf79044a3347abf925105be4f7096d71952d63f5b267411b2",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-P6-STOP",
+          "text_sha256": "84a0d002da5a511ba87ab165c305ad82cf943fd827496704a02429ced01b6988",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-03",
+      "sha256": "552ec204c933e8ac427f2e1778a1be5e0b25129dc42dcc5b4e8e8d893fae5f91",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP6",
+          "text_sha256": "bcbd9cfc26abe84cf79044a3347abf925105be4f7096d71952d63f5b267411b2",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-P6-STOP",
+          "text_sha256": "84a0d002da5a511ba87ab165c305ad82cf943fd827496704a02429ced01b6988",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-04",
+      "sha256": "cd4d9ff93c6a5fddae441f56a3cff832050e45a55cfe72ba4417d2ffe5e4eaf2",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP6",
+          "text_sha256": "bcbd9cfc26abe84cf79044a3347abf925105be4f7096d71952d63f5b267411b2",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-P6-STOP",
+          "text_sha256": "84a0d002da5a511ba87ab165c305ad82cf943fd827496704a02429ced01b6988",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-incomplete_stop-05",
+      "sha256": "fea15737ef0bbd0951404489e8e6e0edbf7518648d38dda72d35e04c6125802e",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP6",
+          "text_sha256": "bcbd9cfc26abe84cf79044a3347abf925105be4f7096d71952d63f5b267411b2",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-P6-STOP",
+          "text_sha256": "84a0d002da5a511ba87ab165c305ad82cf943fd827496704a02429ced01b6988",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-01",
+      "sha256": "4dd6e366dc90e5ea99f9d173f26690c15f870997b69efb3298c850326b5436f8",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-02",
+      "sha256": "0383404344a6e380eed26c2da0f159aadada321518a3d11184a7d5b9efa17aeb",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-03",
+      "sha256": "47e33dad45fdb4267b369dd68faec460d1ebe342c46f43f5761a4d6b1a9b8c8d",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-initial_investigation-04",
+      "sha256": "f10a7fa26f91c356e0f9ec9d9556392f0a696982522e50ebbc01bac183e860b7",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.13.1",
+          "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.3",
+          "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-initial_investigation-01",
+      "sha256": "8e156dd4343a104cbd7c8b060766615a966c3009e298e11d3149d8ebfaaffdbf",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P5-B3",
+          "text_sha256": "61d392efa321050e95546c97e0c54d0001d3b90e84384816bcb50e72d75f5185",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-initial_investigation-02",
+      "sha256": "2637553e65ca8359a3f065c12f0d61cdc7405d593e214fef04580757f6d38705",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P5-B3",
+          "text_sha256": "61d392efa321050e95546c97e0c54d0001d3b90e84384816bcb50e72d75f5185",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-initial_investigation-03",
+      "sha256": "26f96c7fd7ec20365a41499f175781b37f63a197c63315153d615a1bcf81b8b3",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P5-B3",
+          "text_sha256": "61d392efa321050e95546c97e0c54d0001d3b90e84384816bcb50e72d75f5185",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-initial_investigation-04",
+      "sha256": "6717b9c50307b0e54474e8376d8930795472311bf7a03e7c71b67f0774090dad",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P5-B3",
+          "text_sha256": "61d392efa321050e95546c97e0c54d0001d3b90e84384816bcb50e72d75f5185",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-initial_investigation-05",
+      "sha256": "7c74c2284309c3243de6e6ec448ee8d6c248ef20eb2fb0d220cbf9e6ab3f0b9f",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-P5-B3",
+          "text_sha256": "61d392efa321050e95546c97e0c54d0001d3b90e84384816bcb50e72d75f5185",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-01",
+      "sha256": "aca8d663dc0ffd86a37e7aeafd2cbe7670155edcd5705cb34101b25347f0aa83",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-02",
+      "sha256": "17da4e1f3958e96d8002ca1ab6f4e1aa6a4a937da037f19b4a6e5c48e672d8b4",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-single_risk-03",
+      "sha256": "f6da68cdf3e65b2b6e9bbc64a1e58ee03416b771fa686e8498c20bba3603a5c2",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.10.3",
+          "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-single_risk-01",
+      "sha256": "59de4ba4b3f6c779dca3c32a429645892379b563e9771c4fb8bdf8b2d9e9cc2c",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP3",
+          "text_sha256": "f7d294737f5046e08944e22c915d6bb697e14276c592030d289c29b21ade8cd3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-single_risk-02",
+      "sha256": "796f31974bdd4e6b7d78ab88403a02fcacc559e3666b8d5223df884f2ca6bb83",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP3",
+          "text_sha256": "f7d294737f5046e08944e22c915d6bb697e14276c592030d289c29b21ade8cd3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-single_risk-03",
+      "sha256": "816715b1d4fbcaebd81b0db77dedc941145eccb2b84f08a5719e889edbc9df50",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP3",
+          "text_sha256": "f7d294737f5046e08944e22c915d6bb697e14276c592030d289c29b21ade8cd3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-single_risk-04",
+      "sha256": "62952c6746f8c859c16c92b30e29bc727414213872f159d21ecf92ef3c5f239d",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP3",
+          "text_sha256": "f7d294737f5046e08944e22c915d6bb697e14276c592030d289c29b21ade8cd3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-single_risk-05",
+      "sha256": "10b3ce2a5d187a1a9d3d46c0c1b6c402b1af6bcff11be39a79e8244154d014ff",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP3",
+          "text_sha256": "f7d294737f5046e08944e22c915d6bb697e14276c592030d289c29b21ade8cd3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-01",
+      "sha256": "bcf87700ab18049bd0a4068ca7efae2e7cc4c2361c6bd872d7fbc8e21f6739e7",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-02",
+      "sha256": "09c51a8e439a8beefd49448820e28f993fc7ef622259b79fa5c03bb4650ba3dc",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "nice-expanded-missing_results-03",
+      "sha256": "46d029b98013d650c0539fb02a92b96ff8628b5717ac8583f24ecd2919edf475",
+      "guideline": "NICE",
+      "gold": [
+        {
+          "id": "NICE-1.10.1",
+          "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.15.4",
+          "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        },
+        {
+          "id": "NICE-1.13.2",
+          "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+          "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-missing_results-01",
+      "sha256": "7f1eeb5d9668bd51a7abf8517a2ce0fec80dc230d2c83422ae9aeeb3c5700263",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-missing_results-02",
+      "sha256": "4ecd82bdc010af3c7f14106ad132a801fa0b3dfcbbfa5c2eda0a27738a88d074",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-missing_results-03",
+      "sha256": "4f0fc585a3c9263bc7d08055591f7aa22aeb0ee6734290deb3fac72629a3a64a",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-missing_results-04",
+      "sha256": "0f9613f9f303e647dd56a9c6e931ab632cb57028b706de35ee52dcfeb99910a9",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "aap-expanded-missing_results-05",
+      "sha256": "aa1fd02b79b2d1f5e91224775e61fcfc3047dcfff63df07da1baea19e3474907",
+      "guideline": "AAP",
+      "gold": [
+        {
+          "id": "AAP2018-35PLUS-SP2",
+          "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        },
+        {
+          "id": "AAP2018-35PLUS-SP4",
+          "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+          "pdf_sha256": "baf72de2305cd46a27ef4fdc4176b2748e54f3eb219615c83be35bc14be951f8"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-deterioration-01",
+      "sha256": "e3ab8fd2363ff05e676c267fe4eb224a13be96c30bd52098de74dc71389cbbaf",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-A.2",
+          "text_sha256": "733aa1f7c456436d093bde8a1e19104f2778ea8a8fcc52d4070219db602f37a1",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-deterioration-02",
+      "sha256": "ea96ec50fb2f7f77f9c6f7f29bd27787a3742dc4d3b51c554dbdb812b5004b6f",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-A.2",
+          "text_sha256": "733aa1f7c456436d093bde8a1e19104f2778ea8a8fcc52d4070219db602f37a1",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-deterioration-03",
+      "sha256": "3ea295d25c1edcb7b8cf55f0d716eb2388ec23e9329e64f79d48e107f21a9480",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-A.4",
+          "text_sha256": "2b2ef6f809e2bdb9880be5b019d86e0a09f428515904e51e901d64ba761cd233",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-deterioration-04",
+      "sha256": "244beeed4091306ebbd803431d67efdc4cbd395eb5089ecb3cbdc50eb203301a",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-A.4",
+          "text_sha256": "2b2ef6f809e2bdb9880be5b019d86e0a09f428515904e51e901d64ba761cd233",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-deterioration-05",
+      "sha256": "f7b392dc971c8f5c703a8f91f381c5f155ebd3eb549a8429bac8807de7e0df10",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-A.4",
+          "text_sha256": "2b2ef6f809e2bdb9880be5b019d86e0a09f428515904e51e901d64ba761cd233",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-crp_alone-01",
+      "sha256": "879157797ce8076badc385bb6afc25f65667094b03ee2d0a54bda23577f49a0e",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-A.1-DEFINITION",
+          "text_sha256": "3da96225be16a364cb247d8f9b4e25a71eacfc4cea2cef90828073b0bd1f6469",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-crp_alone-02",
+      "sha256": "7a4b876844c2d49fc2e7e21b31c8871419bc065b5327b470f0f542f583bb905d",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-A.1-DEFINITION",
+          "text_sha256": "3da96225be16a364cb247d8f9b4e25a71eacfc4cea2cef90828073b0bd1f6469",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-crp_alone-03",
+      "sha256": "8acb952eff59229ad612bd7feeb44ba96a5c31c05cb4435d325ce41b2c12824d",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-A.1-DEFINITION",
+          "text_sha256": "3da96225be16a364cb247d8f9b4e25a71eacfc4cea2cef90828073b0bd1f6469",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-crp_alone-04",
+      "sha256": "940860b43b0a7d83371ca889e62d547ec5ac99354f56b2d218f3880e62c2d5e7",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-A.1-DEFINITION",
+          "text_sha256": "3da96225be16a364cb247d8f9b4e25a71eacfc4cea2cef90828073b0bd1f6469",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-crp_alone-05",
+      "sha256": "3a8880c3b12bfd64b42f01a51a8d668d00c92819e1e67e5600d6ef786acfb617",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-A.1-DEFINITION",
+          "text_sha256": "3da96225be16a364cb247d8f9b4e25a71eacfc4cea2cef90828073b0bd1f6469",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-incomplete_stop-01",
+      "sha256": "a2a81ef36b8ed2126d86c0474a8683ad73e41ff051a34cc773a4bd4fb8f7ccef",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-B.2",
+          "text_sha256": "f356a48c0952286f3e6d69fac15e8407d61ff482a81a8a73d5fe9d0ac2ea24a3",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-incomplete_stop-02",
+      "sha256": "cf7cb56c504552d2142ccd4d4104df44d584de2d07c2bf400ed6ecf9f509d061",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-B.2",
+          "text_sha256": "f356a48c0952286f3e6d69fac15e8407d61ff482a81a8a73d5fe9d0ac2ea24a3",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-incomplete_stop-03",
+      "sha256": "02d9ead8c0b2b29ef3abb17ef6570429c59ecbf2cbd8e4bbe97612262c8d7d9c",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-B.2",
+          "text_sha256": "f356a48c0952286f3e6d69fac15e8407d61ff482a81a8a73d5fe9d0ac2ea24a3",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-incomplete_stop-04",
+      "sha256": "86b9a697c921d76e0179809ff0d9936ef61b0629e1f89d7cbb58f0439c21d659",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-B.2",
+          "text_sha256": "f356a48c0952286f3e6d69fac15e8407d61ff482a81a8a73d5fe9d0ac2ea24a3",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-incomplete_stop-05",
+      "sha256": "d3aca042884299265e1cea4d9763a4e60f3ee9c09c8db2f6341eb80e07855f53",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-B.2",
+          "text_sha256": "f356a48c0952286f3e6d69fac15e8407d61ff482a81a8a73d5fe9d0ac2ea24a3",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-initial_investigation-01",
+      "sha256": "f8fcdac0e92eeda1884ed36000d993995dfd8527f87233bd2f3fcfd061d1b5dc",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-B.1",
+          "text_sha256": "6a8b2abb5749ee1243c771d2919e367887fb943de9def7827479a34f30d16a29",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-initial_investigation-02",
+      "sha256": "0ce7fe426d3c28da1e132d54e248625c1ff07bd9e017ca9b9ccd5570b2195692",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-B.1",
+          "text_sha256": "6a8b2abb5749ee1243c771d2919e367887fb943de9def7827479a34f30d16a29",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-initial_investigation-03",
+      "sha256": "79d576a0816bf36c4318869ac74f6549682e81517efffd5a99206ea1c623694f",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-B.1",
+          "text_sha256": "6a8b2abb5749ee1243c771d2919e367887fb943de9def7827479a34f30d16a29",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-initial_investigation-04",
+      "sha256": "26acb02ba58ef336ba6e5a140cfaf6722bbfd72374452ef6128e277e26282b9a",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-B.1",
+          "text_sha256": "6a8b2abb5749ee1243c771d2919e367887fb943de9def7827479a34f30d16a29",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-initial_investigation-05",
+      "sha256": "60f9e38c348ba9a0eab13c6ea4cb00d282b62ffeb3785c1bc2a2f0dcddac7be0",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-B.1",
+          "text_sha256": "6a8b2abb5749ee1243c771d2919e367887fb943de9def7827479a34f30d16a29",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-single_risk-01",
+      "sha256": "857ab3332b8547ee325155195e20a89ad5991c8af43a994116d0d95ef275bded",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-RISK",
+          "text_sha256": "ab664c0014f1934e34501f954a0546d610012c95e7828e0914c8cd0da70cbe8a",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-single_risk-02",
+      "sha256": "be2b0eea721f62b67b5ed17a40c89b20dea9c6d04c053c5005db8ac5496641fa",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-RISK",
+          "text_sha256": "ab664c0014f1934e34501f954a0546d610012c95e7828e0914c8cd0da70cbe8a",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-single_risk-03",
+      "sha256": "92fd9db3ad1ac8835ff7fc5906a7c2083584d89b7724c777c5d2ed4fdaf63754",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-RISK",
+          "text_sha256": "ab664c0014f1934e34501f954a0546d610012c95e7828e0914c8cd0da70cbe8a",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-single_risk-04",
+      "sha256": "86d6110e89e6eab06665b9af112b1ff974a415b17abb49304aa877e65735e5e2",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-RISK",
+          "text_sha256": "ab664c0014f1934e34501f954a0546d610012c95e7828e0914c8cd0da70cbe8a",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-single_risk-05",
+      "sha256": "dd3310a750c7919624b70892ae413e97b05531f0209b249be2e183e03b260ba4",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-RISK",
+          "text_sha256": "ab664c0014f1934e34501f954a0546d610012c95e7828e0914c8cd0da70cbe8a",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-missing_results-01",
+      "sha256": "38780812cefd911dcc671af9d2d2b1637ed28a1741bc7120ce5bbbc8df88aa53",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-missing_results-02",
+      "sha256": "a1e38f0609a0d7088d394e3038b73ba7b898891c5469edbff84ef9ea56c87e64",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-missing_results-03",
+      "sha256": "43232ef8523476e44866631dd1fc51b02c0039fa78cf101435d08abcfbf4af4c",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-missing_results-04",
+      "sha256": "8b9dc1ab0521e3e2234b3a0e5917c4df41d14da594f842a373508514c835c0ad",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    },
+    {
+      "id": "who-expanded-missing_results-05",
+      "sha256": "2129ae5da30b7c245c0fabaf7a04666d52d13c6f1df479b1bc5e6635e3d6fbf5",
+      "guideline": "WHO",
+      "gold": [
+        {
+          "id": "WHO2024-A.1",
+          "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        },
+        {
+          "id": "WHO2024-C-CLINICAL",
+          "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+          "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3"
+        }
+      ]
+    }
+  ]
+}

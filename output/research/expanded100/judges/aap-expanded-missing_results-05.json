@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 2,
+    "patient_fidelity": 2,
+    "completeness": 3,
+    "actionability": 4,
+    "uncertainty": 4,
+    "unsafe_claim_count": 1,
+    "unsafe_claim_reasons": [
+      "Assumes the infant is ill\u2011appearing without documented examination, leading to empirical antibiotics that may not be indicated for a well\u2011appearing term infant with unknown risk factors."
+    ]
+  },
+  "reason": null
+}

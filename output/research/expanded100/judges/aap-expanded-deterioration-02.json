@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 5,
+    "patient_fidelity": 5,
+    "completeness": 4,
+    "actionability": 5,
+    "uncertainty": 4,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Candidate accurately reflects guideline emphasis on serial examinations every 4\u20116\u202fh and escalation when vital signs deteriorate, matching the patient\u2019s rising respiratory rate and falling SpO\u2082. It correctly recommends prompt cultures and empiric antibiotics per institutional protocol. It does not introduce unsupported facts. Minor omission of specific laboratory thresholds or exact timing of interventions limits completeness slightly. No unsafe claims are present."
+    ]
+  },
+  "reason": null
+}

@@ -1,0 +1,16 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 2,
+    "patient_fidelity": 3,
+    "completeness": 3,
+    "actionability": 2,
+    "uncertainty": 2,
+    "unsafe_claim_count": 1,
+    "unsafe_claim_reasons": [
+      "Claims stopping antibiotics at 48\u202fh is appropriate despite persistent respiratory distress, which contradicts the reference stating that persistent respiratory concerns mean stopping criteria are not met."
+    ]
+  },
+  "reason": null
+}

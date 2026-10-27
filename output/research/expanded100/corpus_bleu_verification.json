@@ -1,0 +1,66 @@
+{
+  "checks": [
+    [
+      "NICE",
+      "without_verification",
+      0.028712975017852825
+    ],
+    [
+      "NICE",
+      "verified_all_cases",
+      2.3663771741691333e-06
+    ],
+    [
+      "NICE",
+      "released_only",
+      0.02169563014014251
+    ],
+    [
+      "NICE",
+      "generated_only",
+      0.028712975017852825
+    ],
+    [
+      "AAP",
+      "without_verification",
+      0.013814680458050904
+    ],
+    [
+      "AAP",
+      "verified_all_cases",
+      1.5654698399252207e-09
+    ],
+    [
+      "AAP",
+      "released_only",
+      0.04284870565527678
+    ],
+    [
+      "AAP",
+      "generated_only",
+      0.013814680458050904
+    ],
+    [
+      "WHO",
+      "without_verification",
+      0.01089273162781591
+    ],
+    [
+      "WHO",
+      "verified_all_cases",
+      7.308310642113842e-12
+    ],
+    [
+      "WHO",
+      "released_only",
+      0.043450773809104344
+    ],
+    [
+      "WHO",
+      "generated_only",
+      0.01089273162781591
+    ]
+  ],
+  "public_aggregation_match": true,
+  "tolerance": 1e-12
+}

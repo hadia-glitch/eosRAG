@@ -1,0 +1,17 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 2,
+    "patient_fidelity": 2,
+    "completeness": 3,
+    "actionability": 2,
+    "uncertainty": 3,
+    "unsafe_claim_count": 2,
+    "unsafe_reasons": [
+      "Introduces specific CRP thresholds (\u226560\u202fmg/L) for escalation that are not present in WHO guidance.",
+      "Specifies tachypnea cutoff (>60 breaths/min) and temperature rise (\u226538\u202f\u00b0C) as criteria despite patient data showing RR 48 and temperature 38.2\u202f\u00b0C, creating misleading clinical thresholds."
+    ]
+  },
+  "reason": null
+}

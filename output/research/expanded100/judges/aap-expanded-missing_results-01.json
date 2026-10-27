@@ -1,0 +1,20 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 4,
+    "patient_fidelity": 4,
+    "completeness": 4,
+    "actionability": 4,
+    "uncertainty": 4,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Candidate aligns with AAP guideline recommendations for observation and lab testing when risk cannot be excluded.",
+      "It accurately reflects missing maternal and infant data without assuming normal values.",
+      "Provides a complete set of next steps (baseline labs, enhanced observation, criteria for antibiotics).",
+      "Action steps are specific and feasible for clinicians.",
+      "Explicitly states uncertainty due to unavailable information."
+    ]
+  },
+  "reason": null
+}

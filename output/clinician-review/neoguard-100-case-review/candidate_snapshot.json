@@ -1,0 +1,1094 @@
+{
+  "deterioration-1": {
+    "case_id": "deterioration-1",
+    "candidate": [
+      "The infant shows red\u2011flag clinical indicators of possible early\u2011onset infection: tachypnoea (RR 74), hypoxia (SpO2 90%) and signs of respiratory distress.",
+      "Because red\u2011flag indicators are present, NICE recommends initiating antibiotic therapy without awaiting investigation results.",
+      "If antibiotics are started, continue newborn early warning system monitoring for at least 12\u202fhours, recording respiratory rate, oxygen saturation and temperature serially.",
+      "Escalate to intensive care if any of the following develop: need for mechanical ventilation, worsening hypoxia (SpO2\u202f<\u202f90% despite supplemental O\u2082), or signs of shock.",
+      "Obtain blood cultures and a full sepsis work\u2011up (CBC, CRP, blood gas) promptly, as recommended for babies with red\u2011flag indicators.",
+      "Discuss with parents the concern for early\u2011onset sepsis, the need for antibiotics, and the plan for close monitoring and possible escalation."
+    ],
+    "status": "completed"
+  },
+  "deterioration-2": {
+    "case_id": "deterioration-2",
+    "candidate": [
+      "The infant shows tachypnoea (RR 74) and hypoxia (SpO2 90%) which are listed as clinical indicators of possible early\u2011onset neonatal infection.",
+      "Apnoea, need for mechanical ventilation, and signs of shock are red\u2011flag indicators; while not yet present, the current respiratory deterioration warrants treating any red flag as a trigger for urgent antibiotic initiation.",
+      "Because the baby has at least one red\u2011flag clinical indicator (hypoxia) and multiple non\u2011red\u2011flag indicators (tachypnoea, altered behaviour not documented), antibiotics should be started without awaiting culture results.",
+      "If antibiotics are started, continue newborn early warning system monitoring for a minimum of 12\u202fhours, recording respiratory rate, SpO2, heart rate and temperature at least hourly.",
+      "Escalate to senior neonatal team or intensive care if any red\u2011flag develops (e.g., apnoea, need for CPAP/mechanical ventilation, worsening hypoxia <90% despite supplemental O\u2082).",
+      "Obtain blood cultures, full blood count and CRP promptly; repeat CRP after 12\u202fhours to assess trend, recognizing that an initial CRP of 5\u202fmg/L is low but may rise with infection."
+    ],
+    "status": "completed"
+  },
+  "deterioration-3": {
+    "case_id": "deterioration-3",
+    "candidate": [
+      "The infant shows red\u2011flag clinical indicators of possible early\u2011onset infection: tachypnoea (RR 74\u202fbpm), hypoxia (SpO\u2082 90\u202f%) and signs of respiratory distress.",
+      "Because a red\u2011flag is present, the guideline advises that antibiotics should be started without waiting for investigation results.",
+      "If antibiotics are initiated, continue newborn early warning system monitoring for at least 12\u202fhours, recording respiratory rate, oxygen saturation and heart rate serially.",
+      "Escalate to senior neonatal team or intensive care if any of the following occur: need for mechanical ventilation, worsening hypoxia (SpO\u2082\u202f<\u202f90\u202f% despite supplemental O\u2082), or development of shock.",
+      "Obtain blood cultures, full blood count and CRP promptly, and consider a lumbar puncture if clinically feasible, as part of the recommended investigations before antibiotics.",
+      "Ask parents or caregivers about any concerns regarding the baby\u2019s behaviour, feeding or appearance, as recommended when assessing for early\u2011onset infection."
+    ],
+    "status": "completed"
+  },
+  "crp_alone-1": {
+    "case_id": "crp_alone-1",
+    "candidate": [
+      "A decreasing C\u2011reactive protein (CRP) value by itself does not rule out neonatal infection and should not be used as the sole basis to stop antibiotics.",
+      "Baseline CRP should be measured when antibiotics are started and serial CRP results interpreted together with clinical signs to gauge infection likelihood and treatment response.",
+      "If antibiotics are continued beyond 36\u201348\u202fhours, review the need daily, considering initial suspicion, clinical progress, and CRP trends before deciding to stop therapy.",
+      "When reviewing after 36\u201348\u202fhours, incorporate the baby's current condition, any change in CRP, and overall clinical trajectory to determine whether antibiotics can be safely discontinued."
+    ],
+    "status": "completed"
+  },
+  "crp_alone-2": {
+    "case_id": "crp_alone-2",
+    "candidate": [],
+    "status": "completed"
+  },
+  "crp_alone-3": {
+    "case_id": "crp_alone-3",
+    "candidate": [
+      "A falling C\u2011reactive protein level by itself is insufficient to rule out infection or to justify stopping antibiotics in a neonate with possible early\u2011onset sepsis.",
+      "Serial CRP measurements should be interpreted together with the infant's clinical progress and the initial suspicion of infection when reviewing antibiotic therapy.",
+      "If antibiotics have been continued beyond 36\u201348\u202fhours with negative cultures, conduct a formal review at least every 24\u202fhours, incorporating CRP trends, clinical status, and initial risk assessment.",
+      "Decision\u2011making should weigh the level of initial clinical suspicion, the baby's current condition, and CRP trajectory rather than relying on a single decreasing CRP value."
+    ],
+    "status": "completed"
+  },
+  "incomplete_stop-1": {
+    "case_id": "incomplete_stop-1",
+    "candidate": [
+      "Stopping antibiotics at 48\u202fh requires four criteria: negative blood culture, low initial suspicion of infection, a reassuring clinical condition with no infection indicators, and reassuring CRP levels/trends. At 36\u202fh the culture is negative, but the remaining three criteria have not been documented, so antibiotics cannot be stopped yet.",
+      "Hospital systems should deliver blood\u2011culture results within 36\u202fhours of starting antibiotics for early\u2011onset sepsis to enable timely discontinuation and discharge.",
+      "If intravenous antibiotics are continued beyond 36\u202fhours despite a negative culture, the team must review the need for ongoing therapy at least every 24\u202fhours, considering the initial suspicion level, the baby\u2019s clinical progress, and CRP trends.",
+      "For infants \u226535\u202fweeks gestation who have received >36\u202fhours of IV antibiotics because the initial suspicion was strong, consider switching to oral antibiotics once the clinical condition is reassuring, CRP is reassuring, and the baby tolerates oral feeds."
+    ],
+    "status": "completed"
+  },
+  "incomplete_stop-2": {
+    "case_id": "incomplete_stop-2",
+    "candidate": [],
+    "status": "completed"
+  },
+  "incomplete_stop-3": {
+    "case_id": "incomplete_stop-3",
+    "candidate": [],
+    "status": "completed"
+  },
+  "initial_investigation-1": {
+    "case_id": "initial_investigation-1",
+    "candidate": [
+      "Measure a baseline C\u2011reactive protein concentration when starting antibiotics and use subsequent CRP readings to assess the likelihood of infection and response to treatment."
+    ],
+    "status": "completed"
+  },
+  "initial_investigation-2": {
+    "case_id": "initial_investigation-2",
+    "candidate": [
+      "Obtain a baseline C\u2011reactive protein (CRP) level at the time antibiotics are started for any neonate with suspected early\u2011onset sepsis.",
+      "Repeat CRP measurements and interpret the trajectory together with the baseline to gauge infection likelihood and treatment response.",
+      "If the initial CRP is low but clinical concern remains, continue serial CRP testing rather than stopping antibiotics solely on the first result.",
+      "Document the timing of each CRP draw relative to antibiotic initiation to allow accurate trend interpretation.",
+      "Recognize that CRP alone is not definitive; combine serial CRP trends with clinical signs and other investigations when assessing sepsis risk.",
+      "Consider additional baseline investigations (e.g., blood cultures, full blood count) alongside CRP, acknowledging that prior antibiotic exposure may affect their diagnostic yield."
+    ],
+    "status": "completed"
+  },
+  "initial_investigation-3": {
+    "case_id": "initial_investigation-3",
+    "candidate": [
+      "Obtain a baseline C\u2011reactive protein (CRP) concentration at the start of antibiotic therapy for any neonate being evaluated for early\u2011onset sepsis.",
+      "Serial CRP measurements should be interpreted together with the initial value to gauge infection likelihood and response to treatment."
+    ],
+    "status": "completed"
+  },
+  "single_risk-1": {
+    "case_id": "single_risk-1",
+    "candidate": [
+      "Maternal group B streptococcal colonisation is a recognized risk factor for early\u2011onset neonatal infection.",
+      "Because a risk factor is present, an immediate clinical assessment and review of maternal and neonatal history should be performed.",
+      "If antibiotics are not started immediately, the baby should be monitored for at least 12\u202fhours using a newborn early warning system.",
+      "In the presence of a risk factor, investigations (e.g., blood cultures, CRP) should be undertaken before antibiotics are given, but treatment should not be delayed awaiting results.",
+      "Any emergence of red\u2011flag signs or a second risk factor requires prompt escalation to full antibiotic therapy per guideline recommendations.",
+      "Explain to parents that maternal GBS colonisation places the baby at increased risk and that close monitoring and possible investigations are being undertaken."
+    ],
+    "status": "completed"
+  },
+  "single_risk-2": {
+    "case_id": "single_risk-2",
+    "candidate": [
+      "Maternal group B streptococcal (GBS) colonisation is a recognized risk factor for early\u2011onset neonatal infection."
+    ],
+    "status": "completed"
+  },
+  "single_risk-3": {
+    "case_id": "single_risk-3",
+    "candidate": [
+      "Maternal group B streptococcal colonisation is a recognized risk factor for early\u2011onset neonatal infection, even when the newborn appears well."
+    ],
+    "status": "completed"
+  },
+  "missing_results-1": {
+    "case_id": "missing_results-1",
+    "candidate": [
+      "When maternal history, culture results, and later clinical assessment are unavailable, the presence of any known risk factors or clinical indicators for early\u2011onset neonatal infection cannot be confirmed, creating uncertainty about the infant\u2019s infection risk.",
+      "In the face of missing maternal and culture information, an immediate clinical assessment of the newborn should be performed to identify any observable signs of infection.",
+      "A thorough physical examination, including vital\u2011sign monitoring (respiratory rate, SpO\u2082, temperature), should be undertaken repeatedly until maternal and microbiology data become available.",
+      "If any clinical indicators of possible early\u2011onset infection emerge during monitoring (e.g., persistent tachypnoea, desaturation, rising CRP), escalation to full sepsis work\u2011up and empiric antibiotics is warranted despite absent maternal data.",
+      "Interpretation of cerebrospinal fluid results, when obtained, must be integrated with the limited clinical picture and the unknown maternal history to avoid over\u2011 or under\u2011treatment.",
+      "Explain to parents that the lack of maternal infection history and pending culture results introduces uncertainty, and that decisions will be guided by the newborn\u2019s observed clinical status and ongoing monitoring."
+    ],
+    "status": "completed"
+  },
+  "missing_results-2": {
+    "case_id": "missing_results-2",
+    "candidate": [
+      "When maternal history, culture results, and later clinical assessment are unavailable, the level of certainty about early\u2011onset sepsis is reduced, requiring clinicians to rely more on observable risk factors and immediate neonatal signs.",
+      "Perform an immediate clinical assessment of the newborn, including vital signs and physical examination, to identify any clinical indicators of possible infection.",
+      "Institute close monitoring of respiratory rate, oxygen saturation, and inflammatory markers (e.g., CRP) while awaiting further information, recognizing that trends may be the only early signals of sepsis in the absence of maternal data.",
+      "Escalate to full sepsis work\u2011up (including blood cultures and, if indicated, lumbar puncture) if any clinical indicator emerges or if the infant\u2019s condition deteriorates, because interpretation of CSF and other results must be integrated with the missing maternal history.",
+      "Document the uncertainty explicitly in the medical record and consider using the Kaiser\u202fPermanent neonatal sepsis calculator as an adjunct, ensuring its use is part of a prospective audit to track outcomes when maternal data are incomplete.",
+      "Communicate to parents that, due to missing maternal and culture information, the care team is adopting a cautious approach with heightened observation and may initiate antibiotics pending further results."
+    ],
+    "status": "completed"
+  },
+  "missing_results-3": {
+    "case_id": "missing_results-3",
+    "candidate": [
+      "When maternal history, culture results, and later clinical assessment are missing, the presence of any known risk factors or clinical indicators for early\u2011onset neonatal infection cannot be confirmed, increasing uncertainty about the infant\u2019s infection risk.",
+      "Perform an immediate clinical assessment and review all available maternal and neonatal history, even if incomplete, to identify any possible risk factors or early clinical signs.",
+      "Initiate close monitoring of vital signs (respiratory rate, SpO\u2082) and repeat inflammatory markers (e.g., CRP) at regular intervals while awaiting culture results or further maternal information.",
+      "Escalate to full sepsis work\u2011up (including lumbar puncture) if clinical deterioration occurs or if later assessment reveals new risk factors, because interpretation of CSF must consider maternal history which may become available later."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-deterioration-01": {
+    "case_id": "nice-expanded-deterioration-01",
+    "candidate": [
+      "The infant shows a rising respiratory rate (62\u202fbpm at 4\u202fh) and falling SpO\u2082 (94\u202f% to 89\u202f%) which meet NICE criteria for possible early\u2011onset infection (RR\u202f\u2265\u202f60\u202fbpm, SpO\u2082\u202f<\u202f90\u202f%).",
+      "Continue continuous cardiorespiratory monitoring, record respiratory rate and SpO\u2082 at least hourly, and repeat CRP and blood cultures as soon as possible.",
+      "Escalate care if respiratory rate exceeds 80\u202fbpm, SpO\u2082 remains <\u202f90\u202f% despite supplemental oxygen, or any red\u2011flag signs appear (apnoea, need for ventilation, shock).",
+      "Given the clinical indicators, initiate empirical antibiotics for early\u2011onset sepsis while investigations are pending.",
+      "Inform parents of the observed changes, the need for close monitoring and antibiotics, and provide reassurance that the team will reassess frequently.",
+      "Be aware that pulse\u2011oximeter readings can be inaccurate at borderline saturations; verify probe placement and consider arterial blood gas if uncertainty persists."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-deterioration-02": {
+    "case_id": "nice-expanded-deterioration-02",
+    "candidate": [
+      "The infant shows a rising respiratory rate (62\u219276 breaths/min) and oxygen saturation falling below 90% (94%\u219289%), both listed as clinical indicators of possible early\u2011onset neonatal infection and red\u2011flag signs.",
+      "Continue close monitoring using a newborn early warning system for at least the next 12\u202fhours, recording respiratory rate, SpO\u2082, heart rate and temperature at regular intervals.",
+      "Given the presence of red\u2011flag respiratory distress, initiate empiric antibiotic therapy without waiting for culture results, as recommended for babies with any red flag or multiple clinical indicators.",
+      "Escalate to senior neonatal team or consider transfer to a higher\u2011dependency area if the infant develops apnoea, requires increased oxygen support, or shows signs of shock.",
+      "Obtain blood cultures, full blood count and CRP, and start sepsis work\u2011up while antibiotics are commenced, following the guideline\u2019s investigation framework.",
+      "Inform parents of the observed changes, the need for urgent antibiotics, and the monitoring plan, and invite any concerns they may have about the baby\u2019s behaviour or feeding."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-deterioration-03": {
+    "case_id": "nice-expanded-deterioration-03",
+    "candidate": [
+      "The infant shows a progressive rise in respiratory rate (46 \u2192 62 \u2192 76 breaths/min) and a falling oxygen saturation (98% \u2192 94% \u2192 89%); both meet NICE criteria for possible early\u2011onset neonatal infection (RR \u226560, SpO\u2082 <90%).",
+      "Continue continuous cardiorespiratory monitoring, recording respiratory rate and SpO\u2082 at least hourly, and reassess clinical indicators (behaviour, tone, feeding) every 2\u202fhours while the infant remains under observation.",
+      "Escalate to senior neonatal team and consider urgent review if respiratory rate exceeds 80\u202fbreaths/min, SpO\u2082 remains <90% despite supplemental oxygen, or any red\u2011flag signs appear (apnoea, need for ventilation, shock).",
+      "Given the clinical indicators, initiate empiric antibiotic therapy for early\u2011onset sepsis while awaiting culture results, as recommended for babies under observation for possible infection.",
+      "Inform parents of the observed changes, the need for close monitoring, and the rationale for starting antibiotics; provide reassurance that escalation pathways are in place."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-deterioration-04": {
+    "case_id": "nice-expanded-deterioration-04",
+    "candidate": [
+      "Serial observations show a rising respiratory rate (46\u219262\u219276 breaths/min) and decreasing SpO\u2082 (98\u219294\u219289%); continue hourly monitoring of respiratory rate, SpO\u2082, heart rate, temperature, and clinical appearance as recommended for early\u2011onset neonatal infection.",
+      "A respiratory rate \u226560 breaths/min and SpO\u2082\u202f<\u202f90% are clinical indicators of possible early\u2011onset neonatal infection and constitute red\u2011flag signs that warrant urgent review.",
+      "If the infant\u2019s SpO\u2082 remains below 90% on room air or the respiratory rate exceeds 60 breaths/min despite supportive measures, escalate to senior neonatal clinician and consider transfer to a higher\u2011dependency area.",
+      "Place a correctly positioned pulse\u2011oximeter probe and verify readings, acknowledging that pulse\u2011oximeters can mis\u2011read borderline saturations.",
+      "Initiate empiric antibiotics promptly while investigations are underway, as per guidance for babies under observation for possible early\u2011onset infection.",
+      "Obtain blood cultures, full blood count, CRP, and consider lumbar puncture; repeat CRP at 12\u2011hour intervals to track inflammatory response."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-deterioration-01": {
+    "case_id": "aap-expanded-deterioration-01",
+    "candidate": [
+      "Increasing respiratory rate and decreasing SpO\u2082 in a 6\u2011hour\u2011old term infant signal evolving clinical illness and warrant heightened concern for early\u2011onset sepsis.",
+      "Continue structured serial physical examinations every 4\u20136\u202fhours, documenting vital signs, work of breathing, and perfusion, as recommended for at\u2011risk newborns.",
+      "Escalate to full sepsis evaluation if respiratory rate exceeds 80\u202fbreaths/min, SpO\u2082 remains <\u202f90\u202f% on room air, or any new sign of instability appears.",
+      "Obtain blood culture, CBC with differential, and repeat CRP while initiating empiric antibiotics per institutional protocol pending results.",
+      "Because laboratory testing was reduced in serial\u2011exam programs, limit labs to cultures and inflammatory markers when clinical deterioration is observed."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-deterioration-02": {
+    "case_id": "aap-expanded-deterioration-02",
+    "candidate": [
+      "Serial physical examinations every 4\u20136\u202fhours should continue, as the guideline emphasizes the importance of ongoing assessments to detect evolving signs of illness in at\u2011risk newborns.",
+      "The infant\u2019s rising respiratory rate and decreasing SpO\u2082 represent clinical signs that warrant escalation, consistent with the approach of identifying infants who develop EOS despite initially low risk estimates.",
+      "If abnormal vital signs persist or worsen, the infant should be evaluated for possible EOS, including obtaining cultures and considering empiric antibiotics per institutional protocol.",
+      "Implement a structured, documented examination protocol for all newborns, which can be applied universally regardless of initial risk stratification.",
+      "When clinical deterioration is noted, obtain blood cultures and relevant laboratory studies promptly, as the guideline notes that serial examinations reduce unnecessary testing but still allow targeted investigations when signs emerge."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-deterioration-03": {
+    "case_id": "aap-expanded-deterioration-03",
+    "candidate": [
+      "Perform serial physical examinations every 4\u20136\u202fhours through 48\u202fhours of age for infants at risk of early\u2011onset sepsis.",
+      "A rising respiratory rate combined with decreasing oxygen saturation signals the development of clinical illness and should trigger immediate reassessment and consideration of empirical antibiotics.",
+      "Single CRP values obtained after birth are not sufficiently sensitive or specific to guide EOS decisions; however, consistently normal CRP over the first 48\u202fhours is associated with the absence of EOS.",
+      "Risk stratification may use categorical algorithms, multivariate calculators, or universal serial examinations; institutions may apply any of these methods to identify infants for closer monitoring.",
+      "Implementing a serial\u2011examination strategy reduces unnecessary laboratory testing, blood cultures, and empirical antibiotic exposure while still identifying the few infants who develop EOS."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-deterioration-04": {
+    "case_id": "aap-expanded-deterioration-04",
+    "candidate": [
+      "Continue serial physical examinations every 4\u20116\u202fhours, documenting respiratory rate and oxygen saturation trends, because the guideline recommends serial exams to detect evolving signs of early\u2011onset sepsis.",
+      "An increasing respiratory rate (from 46\u202fbpm at 12\u202fh to 76\u202fbpm at 36\u202fh) combined with falling SpO\u2082 (from 98\u202f% to 89\u202f%) constitutes a new clinical sign of illness that warrants escalation of evaluation per the serial\u2011exam approach.",
+      "Obtain a blood culture and a repeat complete blood count with differential now; the guideline advises that infants who develop signs of illness should receive prompt laboratory evaluation.",
+      "Start empiric broad\u2011spectrum antibiotics after cultures are drawn, because the presence of evolving respiratory distress in a term infant is an indication for treatment while awaiting results.",
+      "Do not rely on a single CRP value to make treatment decisions; serial CRP alone is not sensitive or specific for EOS and should be interpreted only in the clinical context.",
+      "If respiratory rate exceeds 80\u202fbpm, SpO\u2082 remains <\u202f90\u202f% despite supplemental oxygen, or the infant shows additional signs (e.g., temperature instability, lethargy), escalate to higher\u2011level care (NICU) for advanced respiratory support and further sepsis work\u2011up."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-deterioration-05": {
+    "case_id": "aap-expanded-deterioration-05",
+    "candidate": [
+      "Perform structured physical examinations every 4\u20116\u202fhours through 48\u202fhours of age to detect evolving signs of early\u2011onset sepsis.",
+      "Term infants (\u226535\u202fweeks) can be stratified by categorical or multivariate risk algorithms, but serial examinations remain essential for all risk groups.",
+      "If respiratory rate rises and SpO\u2082 falls on serial exams, initiate sepsis evaluation (blood culture, CBC, CRP) and consider empiric antibiotics per institutional protocol.",
+      "Escalate care when an infant develops any new clinical sign (e.g., tachypnea, desaturation) despite a low initial risk estimate, as these cases can occur even in low\u2011risk populations.",
+      "Serial CRP trends should be interpreted in context; a rising CRP alongside clinical deterioration supports continued evaluation for EOS.",
+      "Explain to parents that serial examinations are designed to identify early signs of infection promptly and that any change in vital signs will trigger further assessment."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-crp_alone-01": {
+    "case_id": "nice-expanded-crp_alone-01",
+    "candidate": [],
+    "status": "completed"
+  },
+  "nice-expanded-crp_alone-02": {
+    "case_id": "nice-expanded-crp_alone-02",
+    "candidate": [
+      "A single CRP value, even if low, cannot exclude early\u2011onset sepsis; clinicians must consider the initial clinical suspicion and other indicators.",
+      "CRP trends are required for decision\u2011making; a falling CRP is reassuring but must be interpreted alongside the baby's clinical progress.",
+      "If antibiotics are continued beyond 36\u202fh, review the infant at least every 24\u202fh, documenting clinical status, CRP trend, and any new signs.",
+      "Escalate to full sepsis work\u2011up or maintain intravenous therapy if the baby develops a red flag, new clinical indicators, or CRP rises again.",
+      "When blood culture is negative, clinical suspicion is moderate, and CRP is low and falling, consider stopping antibiotics at 36\u202fh, provided the infant remains clinically stable.",
+      "Explain to parents that CRP is only one piece of the assessment; a low or decreasing result is encouraging but does not alone guarantee the absence of infection."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-crp_alone-03": {
+    "case_id": "nice-expanded-crp_alone-03",
+    "candidate": [
+      "A single CRP value, even if low, cannot rule out early\u2011onset sepsis; clinicians must consider the overall clinical suspicion and other indicators.",
+      "Both the absolute CRP level and its trend over time are required to assess infection risk; a falling CRP is reassuring but not definitive for stopping antibiotics.",
+      "Measure CRP 18\u201324\u202fh after antibiotic start and repeat at 36\u202fh to evaluate trend alongside clinical status before deciding on discontinuation.",
+      "If the blood culture remains negative at 36\u202fh, clinical condition is reassuring, and CRP trend is falling, consider stopping IV antibiotics, documenting the decision.",
+      "Escalate or continue antibiotics if any new clinical indicators of infection appear (e.g., worsening respiratory rate, desaturation) regardless of CRP trend.",
+      "Explain to parents that CRP is one piece of the assessment; decisions to stop antibiotics are based on overall clinical picture, not a single lab result."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-crp_alone-04": {
+    "case_id": "nice-expanded-crp_alone-04",
+    "candidate": [
+      "A single CRP value, even if low, cannot rule out early\u2011onset sepsis; clinicians must consider the overall clinical picture and initial suspicion.",
+      "Serial CRP measurements should be interpreted in trend, not in isolation; a falling CRP after an initial rise may support de\u2011escalation when other indicators are reassuring.",
+      "If the blood culture remains negative at 36\u202fh, clinical condition is stable, and CRP trends are reassuring, consider stopping intravenous antibiotics for this pre\u2011term infant.",
+      "Escalate or continue antibiotics if any new clinical indicators of infection appear (e.g., worsening respiratory rate, falling SpO\u2082) or if CRP rises or fails to decline despite prior elevation.",
+      "Repeat blood cultures and full sepsis work\u2011up if the infant\u2019s condition deteriorates or CRP trends become non\u2011reassuring after the initial 36\u202fh assessment.",
+      "Explain to parents that CRP is one component of assessment; a low or falling result does not guarantee absence of infection, and decisions will be based on combined clinical and laboratory data."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-crp_alone-01": {
+    "case_id": "aap-expanded-crp_alone-01",
+    "candidate": [
+      "A single CRP value obtained within the first hours of life is not sensitive or specific enough to rule out early\u2011onset sepsis (EOS) or to decide on stopping antibiotics.",
+      "Consistently normal CRP (and procalcitonin) values over the first 48\u202fhours are associated with the absence of EOS, but isolated or falling CRP alone cannot be used to exclude infection without culture data.",
+      "Serial inflammatory markers (CRP, procalcitonin) should not be used as the sole assessment tool in well\u2011appearing term or late\u2011preterm infants; clinical status and risk factors remain primary drivers of monitoring.",
+      "Continue empirical antibiotics until cultures are negative and the infant remains clinically stable, regardless of a single decreasing CRP, because laboratory tests alone cannot dictate discontinuation.",
+      "Obtain blood (and, if indicated, CSF) cultures promptly; interpret CRP trends only in the context of culture results and the infant\u2019s clinical trajectory.",
+      "Escalate care (e.g., broaden antibiotics, respiratory support) if the infant shows worsening vital signs, rising inflammatory markers, or positive cultures, even when earlier CRP values were low or falling."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-crp_alone-02": {
+    "case_id": "aap-expanded-crp_alone-02",
+    "candidate": [
+      "A single CRP value obtained after birth is not sensitive or specific enough to rule out early\u2011onset sepsis (EOS) in term infants; therefore it cannot be used alone to decide whether antibiotics should be stopped.",
+      "Serially normal CRP (and procalcitonin) results over the first 48\u202fhours are associated with the absence of EOS, but abnormal trends alone do not justify withholding or discontinuing antibiotics without culture confirmation.",
+      "For well\u2011appearing term newborns with uncertain risk, repeat inflammatory markers (CRP, procalcitonin) should not be used as the sole assessment tool; clinical observation and maternal/infant risk factors remain primary.",
+      "Blood culture remains the definitive test for EOS; until culture results are available, decisions about initiating or continuing antibiotics must rely on a combination of clinical assessment and risk factors rather than CRP alone.",
+      "If an infant shows clinical deterioration (e.g., increasing respiratory rate, falling oxygen saturation, hemodynamic instability) regardless of CRP trend, escalation to full sepsis work\u2011up and empiric antibiotics is warranted.",
+      "Explain to parents that inflammatory markers such as CRP can be elevated by non\u2011infectious conditions and that a normal or decreasing CRP does not guarantee the absence of infection; ongoing clinical monitoring guides therapy decisions."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-crp_alone-03": {
+    "case_id": "aap-expanded-crp_alone-03",
+    "candidate": [
+      "A single CRP value\u2014or a decreasing CRP\u2014obtained after birth does not have sufficient sensitivity or specificity to rule out early\u2011onset sepsis (EOS) or to decide that antibiotics can be stopped in isolation.",
+      "Consistently normal CRP values over the first 48\u202fhours are linked to a low likelihood of EOS, but they must not be used alone to discontinue empirical antibiotics when cultures are still pending or negative.",
+      "Laboratory tests, including CRP and procalcitonin, are neither sensitive nor specific enough to guide EOS management decisions without integrating maternal and infant clinical characteristics.",
+      "Continue close clinical monitoring (vital signs, perfusion, feeding tolerance) and repeat inflammatory markers while awaiting culture results; any new or worsening signs should prompt escalation of care.",
+      "Escalate to full sepsis work\u2011up and maintain empiric antibiotics if the infant develops respiratory distress, hemodynamic instability, or if serial CRP/procalcitonin become persistently elevated.",
+      "Do not rely on a falling CRP to stop antibiotics; base discontinuation on a combination of stable clinical status, negative cultures, and serial normal inflammatory markers over 48\u202fhours."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-crp_alone-04": {
+    "case_id": "aap-expanded-crp_alone-04",
+    "candidate": [
+      "A single CRP value or a decreasing CRP trend cannot be used to rule out early\u2011onset sepsis (EOS) nor to decide to stop antibiotics in a term infant; inflammatory markers lack sufficient sensitivity and specificity when used alone.",
+      "Consistently normal CRP (and procalcitonin) values over the first 48\u202fhours are associated with a low likelihood of EOS, but they must be interpreted together with clinical assessment and culture results before any change in therapy.",
+      "Management should continue to rely on maternal and infant clinical risk factors, not on laboratory tests alone, to determine the need for empirical antibiotics in well\u2011appearing term newborns.",
+      "For this 36\u2011hour\u2011old, 41\u2011week infant with an initial CRP of 6\u202fmg/L and subsequent values of 21\u202fmg/L (12\u202fh) and 9\u202fmg/L (24\u202fh), continue clinical monitoring (vital signs, perfusion) and obtain repeat cultures; consider a second CRP at 48\u202fh if the infant remains well\u2011appearing.",
+      "Escalate to full sepsis work\u2011up and maintain antibiotics if the infant develops any new clinical signs (e.g., respiratory distress, temperature instability, hypotension) or if cultures become positive, regardless of CRP trends.",
+      "Explain to parents that CRP is only one piece of the assessment; a falling CRP is reassuring but does not alone guarantee the absence of infection, so continued observation and possibly antibiotics are guided by the overall clinical picture."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-crp_alone-05": {
+    "case_id": "aap-expanded-crp_alone-05",
+    "candidate": [
+      "A single CRP value obtained within the first hours of life is not sensitive or specific enough to rule out early\u2011onset sepsis (EOS) in term infants.",
+      "Consistently normal CRP values over the first 48\u202fhours are associated with the absence of EOS, but a falling or low CRP alone cannot be used to discontinue antibiotics without culture confirmation.",
+      "Serial inflammatory markers (CRP, procalcitonin) should not be relied upon to assess well\u2011appearing term newborns for EOS risk; clinical assessment and maternal/infant risk factors remain primary.",
+      "Continue empirical antibiotics until cultures are negative and clinical status remains stable; do not stop antibiotics based solely on a single low or decreasing CRP.",
+      "Obtain blood cultures promptly; inflammatory marker trends (CRP, procalcitonin) can be adjunctive but are insufficient to guide therapy decisions in isolation.",
+      "If the infant shows any clinical deterioration (e.g., increasing respiratory rate, worsening oxygenation, hemodynamic instability) despite normal or falling CRP, escalate care and reassess antibiotic need."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-incomplete_stop-01": {
+    "case_id": "nice-expanded-incomplete_stop-01",
+    "candidate": [
+      "Because the blood culture remains sterile after 36\u202fhours of incubation and the infant\u2019s CRP has fallen from 18\u202fmg/L at 16\u202fh to 3\u202fmg/L at 48\u202fh, the guideline supports reviewing antibiotics and considering cessation.",
+      "If the initial suspicion of infection was not strong and the baby\u2019s clinical condition is reassuring (persistent respiratory distress but stable SpO\u2082\u202f97% and no worsening vitals), stopping antibiotics at 48\u202fhours is appropriate.",
+      "Continue to monitor respiratory rate, oxygen saturation, and CRP at least daily; if any clinical deterioration or rising CRP occurs, reassess the need for ongoing antibiotics.",
+      "Escalate care (e.g., restart or extend antibiotics) if the baby develops new signs of infection, a rise in CRP, or if blood cultures become positive after extended incubation.",
+      "Obtain repeat CRP and consider a chest radiograph if respiratory distress persists despite stable vitals, to rule out non\u2011infectious causes.",
+      "Ensure the infant tolerates oral feeds before any switch to oral antibiotics, as recommended for term infants with reassuring condition."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-incomplete_stop-02": {
+    "case_id": "nice-expanded-incomplete_stop-02",
+    "candidate": [],
+    "status": "completed"
+  },
+  "nice-expanded-incomplete_stop-03": {
+    "case_id": "nice-expanded-incomplete_stop-03",
+    "candidate": [
+      "Because the blood culture is negative after 36\u202fhours and the initial clinical suspicion of infection was not documented (likely not strong), NICE recommends considering stopping antibiotics at 48\u202fhours.",
+      "During the review period (24\u2011hour intervals after 48\u202fhours), monitor respiratory rate, SpO\u2082, CRP trend, and overall clinical condition to ensure no new signs of infection emerge.",
+      "If the baby\u2019s respiratory distress worsens, SpO\u2082 falls below 94\u202f%, or CRP rises again, escalation to continued antibiotics and further investigation is warranted.",
+      "Arrange a formal antibiotic review at 48\u202fhours, documenting the negative culture, CRP trend (20\u202f\u2192\u202f11\u202f\u2192\u202f5\u202fmg/L), and the reassuring clinical picture before deciding to stop therapy.",
+      "Explain to parents that the negative culture and improving CRP support stopping antibiotics, but that the baby will be closely observed for any change in respiratory status.",
+      "If antibiotics are stopped, consider repeat CRP in 12\u201124\u202fhours and a chest radiograph if respiratory distress persists, to rule out non\u2011infectious causes."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-incomplete_stop-04": {
+    "case_id": "nice-expanded-incomplete_stop-04",
+    "candidate": [],
+    "status": "completed"
+  },
+  "aap-expanded-incomplete_stop-01": {
+    "case_id": "aap-expanded-incomplete_stop-01",
+    "candidate": [
+      "Because blood cultures remain sterile after 36\u202fhours of incubation, antibiotic therapy should be discontinued at 36\u201348\u202fhours unless there is clear evidence of a site\u2011specific infection.",
+      "In term infants with unexplained critical cardiorespiratory illness, an empirical antibiotic course may be justified initially, but continuation solely on the basis of laboratory abnormalities without clinical evidence of infection is rarely warranted.",
+      "If the infant is at high risk for EOS and a lumbar puncture can be performed without compromising stability, a CSF culture should be obtained alongside the blood culture; otherwise, CSF sampling may be deferred."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-incomplete_stop-02": {
+    "case_id": "aap-expanded-incomplete_stop-02",
+    "candidate": [
+      "Blood cultures are sterile after 48\u202fhours of incubation; per guideline, antibiotic therapy should be discontinued at 36\u201148\u202fhours unless there is clear evidence of a site\u2011specific infection.",
+      "In term infants with unexplained critical cardiorespiratory illness, initiating an empirical antibiotic course is justified even when cultures are negative.",
+      "When no site\u2011specific infection is identified, continuation of antibiotics based solely on laboratory abnormalities (e.g., modest CRP elevations) is rarely justified for well\u2011appearing term infants.",
+      "For term infants at highest risk (critical illness), a lumbar puncture for CSF culture should be considered before starting antibiotics, but it must be deferred if the procedure would compromise the infant\u2019s clinical stability."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-incomplete_stop-03": {
+    "case_id": "aap-expanded-incomplete_stop-03",
+    "candidate": [
+      "Because blood cultures remain sterile after 36\u202fhours of incubation and no site\u2011specific infection has been identified, the guideline recommends discontinuing empirical antibiotics for this term infant.",
+      "The infant meets the definition of early\u2011onset sepsis (EOS) only by timing; there is no microbiologic confirmation, and the incidence of EOS in term infants is low (~0.5/1000 live births).",
+      "If antibiotics are stopped, continue close clinical observation for at least 24\u202fhours, monitoring respiratory rate, oxygen saturation, and hemodynamic stability.",
+      "Document trends in respiratory rate, SpO\u2082, and inflammatory markers (e.g., CRP) every 4\u20136\u202fhours; any worsening should prompt reassessment.",
+      "Escalate to repeat cultures and consider lumbar puncture if the infant develops new fever, increasing respiratory distress, or hemodynamic instability after antibiotic discontinuation.",
+      "A CSF culture is not required now because the infant is clinically stable and lumbar puncture could compromise care; it should be reserved for clear evidence of meningitis or deteriorating condition."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-incomplete_stop-04": {
+    "case_id": "aap-expanded-incomplete_stop-04",
+    "candidate": [
+      "When blood cultures remain sterile after 48\u202fhours of incubation, the guideline recommends discontinuing empirical antibiotics by 36\u201348\u202fhours unless there is clear evidence of a site\u2011specific infection.",
+      "In term infants with unexplained critical cardiorespiratory illness, continuing antibiotics solely because of laboratory abnormalities (e.g., mildly elevated CRP) is rarely justified.",
+      "If no site\u2011specific infection is identified (e.g., negative cultures, no focal signs), the clinician should consider stopping antibiotics now, while continuing close clinical observation.",
+      "Maintain hourly assessment of respiratory rate, oxygen saturation, and hemodynamic stability for the next 24\u202fhours; repeat CRP only if clinical status worsens.",
+      "Escalate to continued antibiotics or further work\u2011up if any of the following occur: new fever, worsening respiratory distress, hypotension, or emergence of a focal infection source.",
+      "Explain to parents that the infant\u2019s blood cultures are negative, the risk of EOS is low at term gestation, and antibiotics can be stopped safely while the baby is closely monitored."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-incomplete_stop-05": {
+    "case_id": "aap-expanded-incomplete_stop-05",
+    "candidate": [
+      "Blood cultures have been sterile after 36\u202fhours of incubation; guideline recommends discontinuing antibiotics by 36\u201148\u202fhours unless there is clear evidence of a site\u2011specific infection.",
+      "In term infants with unexplained critical cardiorespiratory illness, an empirical antibiotic course may be justified initially, but continuation beyond 48\u202fhours without culture confirmation is rarely warranted.",
+      "Continue close monitoring of respiratory rate, oxygen saturation, and clinical status while antibiotics are being considered for discontinuation, as persistent instability may indicate an occult infection.",
+      "If the infant develops new signs of infection (e.g., worsening tachypnea, hemodynamic instability, or a rising CRP after 48\u202fhours), reassess and consider re\u2011initiating antibiotics and obtaining further cultures.",
+      "A lumbar puncture is not required in the absence of a positive blood culture or clear meningitis signs, especially if the procedure would compromise the infant\u2019s condition.",
+      "Explain to parents that the blood culture is negative, the infant\u2019s illness remains unexplained, and that current evidence supports stopping antibiotics unless new evidence of infection emerges."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-initial_investigation-01": {
+    "case_id": "nice-expanded-initial_investigation-01",
+    "candidate": [
+      "Obtain blood cultures promptly and aim to have results available within 36\u202fhours to guide early\u2011onset sepsis management and enable timely discontinuation of antibiotics if cultures remain negative."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-initial_investigation-02": {
+    "case_id": "nice-expanded-initial_investigation-02",
+    "candidate": [
+      "For a 28\u2011week gestation infant at 12\u202fh of age with possible early\u2011onset sepsis, obtain blood cultures, a complete blood count with differential, and C\u2011reactive protein as initial laboratory investigations; consider lumbar puncture if meningitis is suspected.",
+      "Serial CRP measurements should be performed (e.g., at 4\u202fh and 12\u202fh) because a single early CRP may be normal despite infection.",
+      "Pre\u2011term birth before 37\u202fweeks and prolonged rupture of membranes (>18\u202fh) are red\u2011flag risk factors that increase the pre\u2011test probability of early\u2011onset neonatal infection.",
+      "If repeat CRP rises or the infant develops clinical deterioration (e.g., increasing respiratory rate, falling SpO\u2082), escalate to neonatal intensive care for broader antimicrobial coverage and possible invasive monitoring.",
+      "Empiric antibiotics should be started promptly after cultures are drawn, guided by local protocols for pre\u2011term infants, while awaiting laboratory results.",
+      "Explain to parents that laboratory tests for infection have limited early sensitivity; results may be normal initially, and treatment decisions rely on clinical risk factors and ongoing observation."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-initial_investigation-03": {
+    "case_id": "nice-expanded-initial_investigation-03",
+    "candidate": [
+      "For term infants (\u226534\u202fweeks) in a neonatal unit, the Kaiser\u202fPermanent\u202fNeonatal\u202fSepsis\u202fCalculator may be used to assess early\u2011onset sepsis risk and guide initial management decisions.",
+      "When the calculator is employed, its risk classification should directly inform the choice of investigations and empiric antibiotic initiation."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-initial_investigation-04": {
+    "case_id": "nice-expanded-initial_investigation-04",
+    "candidate": [
+      "Obtain a full blood culture before starting antibiotics; results may not be available for up to 36\u202fhours, so early treatment decisions must rely on clinical assessment.",
+      "Measure C\u2011reactive protein (CRP) and a complete blood count, recognizing that early CRP can be normal and trends over time are more informative than a single value.",
+      "Identify red\u2011flag risk factors such as pre\u2011term birth (<37\u202fweeks), prolonged rupture of membranes (>18\u202fh pre\u2011term), maternal GBS colonisation, or chorioamnionitis, which increase the pre\u2011test probability of early\u2011onset sepsis.",
+      "Continuously monitor vital signs (respiratory rate, SpO\u2082) and repeat CRP at 12\u2011hour intervals, as rising values may prompt escalation even if initial labs were equivocal.",
+      "Escalate to full sepsis treatment if the infant shows clinical deterioration (e.g., increasing respiratory rate, falling SpO\u2082) or if serial CRP rises, acknowledging that laboratory tests alone cannot rule out infection.",
+      "Start empirical antibiotics promptly after cultures are drawn, because laboratory confirmation is delayed and early therapy improves outcomes in high\u2011risk pre\u2011term neonates."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-initial_investigation-01": {
+    "case_id": "aap-expanded-initial_investigation-01",
+    "candidate": [
+      "Obtain a blood culture and basic laboratory panel (CBC, CRP) as initial diagnostic investigations for suspected early\u2011onset sepsis; blood culture is recommended when the estimated EOS risk is \u22651 per 1000 live births.",
+      "Use maternal and infant clinical characteristics\u2014including maternal GBS colonization, duration of rupture of membranes, and presence of chorioamnionitis\u2014to stratify EOS risk and guide the decision to start empirical antibiotics.",
+      "Implement serial physical examinations during the first 48\u201172\u202fhours to detect evolving signs of illness, recognizing that laboratory tests alone lack sufficient sensitivity and specificity.",
+      "Escalate to full sepsis work\u2011up and empirical antibiotics if the infant becomes ill\u2011appearing, develops abnormal vital signs, or if repeat labs (e.g., rising CRP) suggest infection, because laboratory tests are not definitive.",
+      "When risk assessment places the infant in a higher risk category (\u22653 per 1000 live births), initiate empirical antibiotic therapy promptly while awaiting culture results.",
+      "Explain to parents that early\u2011onset sepsis evaluation includes blood cultures and limited laboratory testing, but these tests may not detect infection early; close clinical observation is essential."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-initial_investigation-02": {
+    "case_id": "aap-expanded-initial_investigation-02",
+    "candidate": [
+      "Obtain a baseline complete blood count with differential, C\u2011reactive protein, and blood culture promptly; these tests are recommended for infants with any clinical concern for EOS.",
+      "Maternal intrapartum risk factors (e.g., chorioamnionitis, GBS colonization with inadequate prophylaxis) and infant clinical appearance should guide the decision to start empirical antibiotics.",
+      "Perform serial physical examinations at least every 4\u202fhours during the first 48\u202fhours to detect evolving signs of illness, as laboratory tests alone are insufficient.",
+      "Escalate to full sepsis work\u2011up and start empiric antibiotics if the infant becomes ill\u2011appearing, develops respiratory distress, or shows worsening vital signs.",
+      "If initial labs are normal but risk factors are present, continue observation and repeat CRP at 12\u2011hour intervals, recognizing that CRP may lag behind infection onset.",
+      "Explain to parents that early laboratory results may be nondiagnostic and that close monitoring is essential to ensure timely treatment if infection develops."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-initial_investigation-03": {
+    "case_id": "aap-expanded-initial_investigation-03",
+    "candidate": [
+      "Initial diagnostic work\u2011up for suspected early\u2011onset sepsis should include blood culture and basic laboratory tests such as a complete blood count and C\u2011reactive protein, recognizing that these tests alone lack sufficient sensitivity and specificity to dictate management.",
+      "Maternal and infant clinical characteristics\u2014e.g., maternal GBS status, duration of rupture of membranes, and infant appearance\u2014are used to stratify EOS risk and determine whether laboratory testing and empirical antibiotics are warranted.",
+      "Blood culture remains the definitive test for confirming infection, but results are typically unavailable for 24\u201348\u202fhours; a negative culture does not exclude early\u2011onset sepsis, so clinical judgment must continue while awaiting results.",
+      "Because laboratory tests are limited, serial physical examinations and close monitoring of vital signs (respiratory rate, oxygen saturation, temperature) are essential during the first 48\u201372\u202fhours to detect evolving signs of illness.",
+      "When the estimated EOS risk is \u22651 per 1000 live births, obtain a blood culture and initiate enhanced clinical observation; if the risk is \u22653 per 1000, add empirical antibiotic therapy while awaiting culture results.",
+      "Escalate to full sepsis management (including broad\u2011spectrum antibiotics and possible lumbar puncture) if the infant develops any concerning clinical signs such as persistent tachypnea, desaturation, or hemodynamic instability during serial exams."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-initial_investigation-04": {
+    "case_id": "aap-expanded-initial_investigation-04",
+    "candidate": [
+      "Initial diagnostic work\u2011up for suspected EOS should include a blood culture and basic laboratory tests (CBC, CRP) while recognizing that these tests alone cannot rule in or out infection.",
+      "Laboratory tests lack sufficient sensitivity and specificity to guide EOS management decisions on their own.",
+      "Use maternal and infant clinical characteristics\u2014including GBS colonization, duration of ROM, and intrapartum antibiotics\u2014to stratify EOS risk and determine need for the Neonatal Early\u2011Onset Sepsis Risk Calculator or categorical algorithms.",
+      "Implement serial physical examinations and continuous clinical observation for at least 48\u202fhours in infants classified as low\u2011risk but still under observation, to detect evolving signs of illness.",
+      "Escalate to full sepsis work\u2011up and empirical antibiotics if the infant appears ill, if maternal chorioamnionitis is present, or if risk estimates exceed the threshold for treatment (\u22653 per 1000 live births)."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-initial_investigation-05": {
+    "case_id": "aap-expanded-initial_investigation-05",
+    "candidate": [
+      "Obtain a complete blood count with differential and C\u2011reactive protein as initial laboratory screens, recognizing that these tests lack sufficient sensitivity and specificity to rule in or out early\u2011onset sepsis.",
+      "Collect blood cultures before starting empirical antibiotics to identify causative organisms, while acknowledging that culture results may be delayed and can be falsely negative.",
+      "Integrate maternal risk factors (e.g., chorioamnionitis, GBS colonization, prolonged rupture of membranes) with infant clinical appearance to decide whether to initiate empiric therapy, because laboratory data alone are insufficient.",
+      "Implement serial physical examinations every 4\u20136\u202fhours for the first 48\u202fhours to detect evolving signs of illness, supplementing limited laboratory information.",
+      "Escalate to full sepsis work\u2011up and start empiric antibiotics if the infant becomes ill\u2011appearing, develops respiratory distress, or shows worsening vital signs during serial exams.",
+      "Document the limitations of each laboratory test in the chart and communicate to the care team that decisions will rely heavily on clinical assessment and risk stratification rather than test results alone."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-single_risk-01": {
+    "case_id": "nice-expanded-single_risk-01",
+    "candidate": [
+      "The infant has one confirmed risk factor \u2013 maternal group B streptococcal colonisation \u2013 which places the newborn in the moderate\u2011risk category for early\u2011onset sepsis; no red\u2011flag risk factors are present.",
+      "Because a risk factor is present, NICE recommends an immediate clinical assessment, review of maternal and neonatal history, and a full physical examination with vital\u2011sign monitoring.",
+      "Continue hourly monitoring of respiratory rate, oxygen saturation, temperature and perfusion for the first 24\u202fhours, noting any deterioration such as tachypnoea >\u202f60\u202fbreaths/min or SpO\u2082\u202f<\u202f94\u202f%.",
+      "If risk factors are present but the baby remains well\u2011appearing, local protocols may advise observation with optional empiric antibiotics pending culture results; escalation to full sepsis treatment is required if clinical indicators develop.",
+      "Escalate to urgent sepsis management if any red\u2011flag clinical indicator appears (e.g., temperature\u202f<\u202f36\u202f\u00b0C or\u202f>\u202f38\u202f\u00b0C, lethargy, poor feeding, or abnormal laboratory markers).",
+      "Inform parents that maternal GBS colonisation confers a modest infection risk, explain the monitoring plan, and discuss that antibiotics may be started if the baby shows any sign of illness."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-single_risk-02": {
+    "case_id": "nice-expanded-single_risk-02",
+    "candidate": [
+      "Maternal group B streptococcal colonisation is a recognized risk factor for early\u2011onset neonatal infection, placing this term infant in a higher\u2011risk category despite being well\u2011appearing.",
+      "During labour and the immediate postnatal period, staff should continue to monitor for any new risk factors or red\u2011flag indicators.",
+      "If any risk factors or clinical indicators are present, an immediate clinical assessment, including review of maternal and neonatal history, should be performed.",
+      "A full physical examination of the baby, with assessment of vital signs, is required to identify early clinical signs of infection.",
+      "Should the infant develop any red\u2011flag clinical signs (e.g., temperature instability, respiratory distress, abnormal vital signs), escalation to senior neonatal staff and initiation of empirical antibiotics per local protocol is indicated."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-single_risk-03": {
+    "case_id": "nice-expanded-single_risk-03",
+    "candidate": [
+      "The infant has a single confirmed maternal GBS colonisation, which is a recognised risk factor for early\u2011onset neonatal infection, but no red\u2011flag risk factors are present.",
+      "Guideline recommends an immediate clinical assessment, review of maternal/neonatal history and a full physical examination with vital\u2011sign monitoring when any risk factor is present.",
+      "For a well\u2011appearing 24\u2011hour\u2011old with isolated GBS risk, continue hourly observation of respiratory rate, SpO\u2082, temperature and repeat CRP at 24\u2011hour intervals while awaiting culture results.",
+      "If the infant remains clinically stable and no red\u2011flag indicators develop, local protocols may allow observation without empirical antibiotics, with a plan to start treatment promptly if clinical deterioration or positive culture occurs.",
+      "Escalate to full sepsis work\u2011up and start empirical antibiotics if any of the following appear: respiratory rate\u202f>\u202f60\u202fbreaths/min, SpO\u2082\u202f<\u202f94\u202f% on room air, temperature\u202f>\u202f38\u202f\u00b0C or\u202f<\u202f36\u202f\u00b0C, rising CRP, or new clinical signs such as lethargy or poor feeding.",
+      "Explain to parents that maternal GBS colonisation confers a modest infection risk, outline the monitoring schedule, and reassure that antibiotics will be started immediately if the baby shows any concerning change."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-single_risk-01": {
+    "case_id": "aap-expanded-single_risk-01",
+    "candidate": [
+      "The infant has one categorical risk factor \u2013 maternal GBS colonization with adequate intrapartum antibiotics and no additional risk factors, placing him in category 4 of the AAP EOS algorithm.",
+      "For category\u20114 infants, the guideline recommends obtaining laboratory testing (e.g., CBC, CRP) while continuing observation.",
+      "Observe the well\u2011appearing newborn in\u2011hospital for at least 48\u202fhours, with serial assessments of temperature, respiratory status, and repeat CRP as clinically indicated.",
+      "Escalate to empirical antibiotics if the infant becomes ill\u2011appearing, develops fever, respiratory distress, or if repeat labs show rising CRP or abnormal CBC.",
+      "Document the risk assessment, the plan for observation, and the parental counseling regarding signs that should prompt immediate evaluation.",
+      "Inform parents that the infant is currently well\u2011appearing, explain the single GBS risk factor, the observation period, and the specific symptoms (e.g., fever, lethargy, poor feeding) that would require urgent reassessment."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-single_risk-02": {
+    "case_id": "aap-expanded-single_risk-02",
+    "candidate": [
+      "With a single confirmed maternal GBS colonization and no other risk factors, the infant falls into category 4 of the AAP EOS algorithm, which is defined by a GBS\u2011positive mother who received inadequate intrapartum antibiotics but has no additional risk factors.",
+      "For category 4 infants, the guideline recommends laboratory testing (e.g., CBC, CRP) without immediate empirical antibiotics.",
+      "Observation in the hospital for at least 48\u202fhours is advised, with frequent assessment of vital signs, feeding tolerance, and repeat CRP if clinically indicated.",
+      "Escalate to empirical antibiotics if the infant becomes ill\u2011appearing, develops fever, respiratory distress, or if repeat labs show rising inflammatory markers.",
+      "A structured physical examination focusing on respiratory effort, temperature, perfusion, and neurologic status should be performed at least every 4\u202fhours during the observation period.",
+      "The multivariate risk assessment model integrates gestational age, maternal GBS status, adequacy of intrapartum antibiotics, and the newborn\u2019s clinical condition to estimate EOS risk."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-single_risk-03": {
+    "case_id": "aap-expanded-single_risk-03",
+    "candidate": [
+      "Infants \u226535\u202fweeks gestation are stratified using categorical algorithms that apply threshold values for intrapartum risk factors such as maternal GBS colonization with inadequate intrapartum antibiotics and prolonged rupture of membranes.",
+      "When a single categorical risk factor (maternal GBS colonization with inadequate IAP and no other risk factors) is present, the infant falls into category\u202f4, which recommends observation without routine antibiotics.",
+      "Serial physical examinations for at least 48\u202fhours, focusing on temperature, respiratory effort, perfusion, and activity, are advised to detect early clinical signs of EOS in well\u2011appearing infants.",
+      "Laboratory testing (e.g., CBC, CRP) may be obtained for infants in category\u202f3; for category\u202f4 infants with only maternal GBS risk, testing is optional and should be guided by the infant\u2019s clinical exam.",
+      "If the infant remains well\u2011appearing during observation, no empirical antibiotics are required; continue routine care and discharge after \u226548\u202fhours of stable observation per local policy.",
+      "Escalate to empirical antibiotic therapy and full sepsis work\u2011up if the infant develops any clinical signs of illness (e.g., tachypnea, desaturation, temperature instability) or if repeat labs become abnormal."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-single_risk-04": {
+    "case_id": "aap-expanded-single_risk-04",
+    "candidate": [
+      "A well\u2011appearing 37\u2011week infant with a single confirmed maternal GBS colonisation and no other intrapartum risk factors falls into the lowest categorical risk group for early\u2011onset sepsis.",
+      "Guidelines recommend laboratory testing (e.g., CBC, CRP) for infants in the lowest GBS\u2011only risk category, even when clinically well.",
+      "Serial physical examinations should be performed at least every 4\u202fhours for the first 48\u202fhours to detect any emerging signs of illness.",
+      "If the infant develops any abnormal vital signs (e.g., tachypnea, desaturation) or a rising CRP, escalation to full sepsis evaluation and empirical antibiotics is indicated.",
+      "For this risk category, observation in the hospital for at least 48\u202fhours without immediate antibiotics is an acceptable management option, provided serial exams and labs are completed.",
+      "Explain to parents that the infant is being closely monitored because of maternal GBS colonisation, but the current clinical exam is reassuring and antibiotics are not started unless signs develop."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-single_risk-05": {
+    "case_id": "aap-expanded-single_risk-05",
+    "candidate": [
+      "Term infants (\u226535\u202fweeks) are stratified by categorical algorithms that use threshold values for intrapartum risk factors such as maternal GBS colonization, intrapartum fever, chorioamnionitis, and duration of ROM.",
+      "Maternal GBS colonization alone, without adequate intrapartum antibiotics and with ROM\u202f>\u202f18\u202fh, places the newborn in category\u202f4 of the AAP algorithm, which recommends observation only.",
+      "For infants in category\u202f4, serial physical examinations are the primary monitoring tool; laboratory testing (e.g., CBC, CRP) is optional and may be obtained if clinical status changes.",
+      "Perform a structured physical exam at least every 4\u202fhours for the first 48\u202fhours, documenting temperature, respiratory effort, perfusion, and activity level to detect early signs of illness.",
+      "Escalate to empirical antibiotics if the infant becomes ill\u2011appearing (e.g., tachypnea, desaturation, temperature instability) or if repeat labs show rising CRP or abnormal CBC.",
+      "Explain to parents that, despite a confirmed maternal GBS risk factor, the infant is currently well\u2011appearing and will be closely observed with serial exams; reassure that antibiotics are not started unless clinical signs develop."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-missing_results-01": {
+    "case_id": "nice-expanded-missing_results-01",
+    "candidate": [
+      "Maternal GBS colonisation status and culture results are unavailable, creating uncertainty about vertical transmission risk for this 32\u2011week, 6\u2011hour old neonate.",
+      "Because risk factors cannot be excluded, NICE advises offering intrapartum antibiotics to mothers with possible GBS exposure or chorioamnionitis.",
+      "Perform an immediate clinical assessment, review maternal and neonatal history, and obtain a full physical examination with vital signs as soon as possible.",
+      "If any clinical indicators of possible early\u2011onset infection appear (e.g., temperature instability, respiratory distress, abnormal labs), escalate to full sepsis work\u2011up and start empirical antibiotics.",
+      "Interpret cerebrospinal fluid results in the context of the clinical picture and maternal history once obtained.",
+      "Explain to parents that missing maternal culture data and an incomplete exam increase uncertainty, and that close monitoring and possible treatment are being pursued."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-missing_results-02": {
+    "case_id": "nice-expanded-missing_results-02",
+    "candidate": [
+      "Because maternal GBS status and culture results are unavailable and the latest neonatal examination is missing, the presence of risk factors for early\u2011onset sepsis cannot be confirmed, creating uncertainty that requires formal assessment.",
+      "Perform an immediate clinical assessment, including a full physical examination and vital\u2011sign measurement, to identify any clinical indicators of possible early\u2011onset infection.",
+      "Initiate close monitoring of respiratory rate, oxygen saturation, temperature, and laboratory markers (e.g., CRP) at regular intervals until maternal history and culture data become available.",
+      "Escalate to neonatal unit care if any clinical indicator emerges (e.g., tachypnea, desaturation, abnormal temperature) or if later maternal cultures return positive for GBS or other pathogens.",
+      "Obtain blood cultures and baseline inflammatory markers now, recognizing that culture results may be pending, to guide future antibiotic decisions.",
+      "Explain to parents that incomplete maternal data and the absent recent exam increase uncertainty, and that ongoing assessment and possible investigations are being undertaken to ensure safety."
+    ],
+    "status": "completed"
+  },
+  "nice-expanded-missing_results-03": {
+    "case_id": "nice-expanded-missing_results-03",
+    "candidate": [
+      "Because maternal history and culture results are unavailable, the presence of any risk factors for early\u2011onset sepsis cannot be confirmed, creating uncertainty that must be addressed before deciding on empiric therapy.",
+      "Perform an immediate clinical assessment of the neonate, including a full physical examination and vital\u2011signs check, to identify any clinical indicators of possible early\u2011onset infection.",
+      "Review all available maternal and neonatal history (including gestational age, labour details, and any documented infections) even if some elements are missing, to guide risk stratification.",
+      "Institute close monitoring of temperature, heart rate, respiratory rate, and oxygen saturation at least every hour, given the lack of recent examination data.",
+      "Escalate to senior neonatal team and consider starting empiric antibiotics if any new clinical indicator (e.g., abnormal vital signs, poor perfusion, or mottling) emerges during monitoring.",
+      "Inform the parents that key information (maternal cultures, recent exam) is missing, explain the resulting uncertainty, and outline the plan for repeated assessments and possible treatment escalation."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-missing_results-01": {
+    "case_id": "aap-expanded-missing_results-01",
+    "candidate": [
+      "Without maternal GBS status, intrapartum antibiotics, or chorioamnionitis documentation, the infant\u2019s EOS risk cannot be quantified and remains uncertain.",
+      "Obtain a complete set of baseline labs (blood culture, CBC, CRP) because the guideline recommends laboratory testing for infants with any identified risk factor or uncertain clinical status.",
+      "Provide enhanced clinical observation for at least 48\u202fhours, monitoring vital signs, perfusion, and feeding tolerance, as the algorithm advises observation when risk cannot be excluded.",
+      "Escalate to empirical antibiotics if the infant becomes ill\u2011appearing, develops temperature instability, or if laboratory results suggest infection, consistent with the recommendation for infants with an estimated EOS risk \u22653\u202fper\u202f1000 live births.",
+      "Explain to parents that key maternal information and the newborn exam are missing, creating uncertainty; outline the planned observations, labs, and criteria for treatment initiation.",
+      "Document the need for repeat maternal history (GBS colonization, intrapartum antibiotics, fever) and obtain placental pathology if available, to refine risk assessment."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-missing_results-02": {
+    "case_id": "aap-expanded-missing_results-02",
+    "candidate": [
+      "Maternal GBS colonisation and intrapartum antibiotic prophylaxis status are unknown, creating uncertainty about the infant's baseline EOS risk.",
+      "The absence of a documented maternal chorioamnionitis diagnosis limits risk stratification, as clinical chorioamnionitis has poor specificity for EOS.",
+      "Because the infant is \u226535\u202fweeks gestation, 12\u202fhours old, and the latest clinical exam is missing, guideline recommends laboratory testing (e.g., CBC, CRP) and empirical antibiotics for infants in risk categories 1\u20112.",
+      "Continuous monitoring of vital signs (respiratory rate, SpO\u2082) and serial CRP measurements should be instituted for at least 48\u202fhours while awaiting culture results.",
+      "Escalate care (e.g., NICU transfer, broadened antibiotics) if the infant becomes ill\u2011appearing, develops respiratory distress, or if cultures return positive.",
+      "Explain to parents that key maternal data and the infant's current exam are unavailable, creating uncertainty; emphasize the plan for testing, observation, and criteria for escalation."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-missing_results-03": {
+    "case_id": "aap-expanded-missing_results-03",
+    "candidate": [
+      "Maternal history and culture results are unavailable, creating uncertainty about classic EOS risk factors; without this information the infant cannot be placed in a low\u2011risk category and must be evaluated as potentially at risk.",
+      "Obtain a complete sepsis work\u2011up (blood culture, CBC with differential, CRP) because EOS is defined by a positive culture within 72\u202fh and early laboratory testing guides management.",
+      "Implement continuous monitoring of vital signs (heart rate, respiratory rate, oxygen saturation) and serial clinical examinations for at least 48\u202fh, as early clinical deterioration can occur even in well\u2011appearing term infants.",
+      "Escalate to full sepsis treatment if the infant becomes ill\u2011appearing, develops respiratory distress, or shows laboratory evidence of infection (elevated CRP, abnormal CBC).",
+      "Explain to parents that the lack of maternal data and missing exam findings increase uncertainty; reassure that close observation and testing are being performed to detect any early signs of infection promptly."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-missing_results-04": {
+    "case_id": "aap-expanded-missing_results-04",
+    "candidate": [
+      "Maternal GBS colonization and intrapartum antibiotic status are unavailable, and chorioamnionitis is not documented, so the infant\u2019s EOS risk cannot be accurately quantified; clinical diagnosis of chorioamnionitis alone has poor specificity.",
+      "Obtain the missing maternal history (GBS status, duration of rupture of membranes, intrapartum antibiotics) and obtain a blood culture now, because infants with an estimated EOS risk \u22651/1000 should have culture and observation, and \u22653/1000 should receive empirical antibiotics.",
+      "Provide enhanced clinical observation in the hospital for at least 48\u202fhours, as infants in the lowest risk category are recommended to be observed for \u226448\u202fhours when risk factors are uncertain.",
+      "If the infant becomes ill\u2011appearing (e.g., tachypnea, desaturation, lethargy) initiate empirical antibiotic therapy promptly, as ill\u2011appearing newborns warrant immediate treatment.",
+      "Order a blood culture now and consider serial CRP measurements; once maternal data are obtained, apply the Neonatal EOS Risk Calculator to refine management decisions."
+    ],
+    "status": "completed"
+  },
+  "aap-expanded-missing_results-05": {
+    "case_id": "aap-expanded-missing_results-05",
+    "candidate": [
+      "Maternal history and culture results are unavailable, creating uncertainty about key EOS risk factors such as chorioamnionitis or GBS colonization.",
+      "Obtain maternal intrapartum temperature, GBS status, and any intrapartum antibiotic prophylaxis details to clarify exposure risk.",
+      "Because the infant is 6\u202fhours old and appears ill\u2011appearing, continuous vital sign monitoring (heart rate, respiratory rate, SpO\u2082) and serial physical examinations are warranted for the first 48\u202fhours.",
+      "Initiate empirical broad\u2011spectrum antibiotics while awaiting culture results, as per EOS algorithms for infants with ill appearance or unknown risk factors.",
+      "Escalate care (e.g., increase respiratory support, obtain blood cultures, consider lumbar puncture) if the infant develops worsening tachypnea, desaturation, or hemodynamic instability.",
+      "Explain to parents that missing maternal data limits risk stratification, necessitating close observation and treatment until definitive culture information is available."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-deterioration-01": {
+    "case_id": "who-expanded-deterioration-01",
+    "candidate": [
+      "The newborn shows fast breathing (70\u202fbpm) and inability to feed, both listed as key clinical signs of possible serious bacterial infection in infants 0\u201159\u202fdays (fast breathing \u226560\u202fbpm in <6\u202fdays; not feeding at all).",
+      "All infants \u226459\u202fdays with these signs should be referred urgently to a hospital for definitive care, as the WHO guideline emphasizes referral for any infant with PSBI signs.",
+      "If referral cannot be achieved, the health worker must seek the highest possible level of medical advice and explain to the caregiver the severity, reinforcing the need for hospital care.",
+      "While awaiting referral, the infant should be managed in the clinic with continuous cardiac, respiratory and pulse\u2011oximetry monitoring where possible, or at minimum hourly vital\u2011sign checks.",
+      "Assess for hypoxaemia with a pulse oximeter and document any additional danger signs; these assessments guide urgency of referral and potential community\u2011based antibiotic initiation when referral is impossible.",
+      "After any treatment or referral attempt, the infant must be reviewed the next day and ensured long\u2011term follow\u2011up to monitor for complications or sepsis recurrence."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-deterioration-02": {
+    "case_id": "who-expanded-deterioration-02",
+    "candidate": [
+      "In a term newborn aged 12\u202fhours, a respiratory rate of 71\u202fbpm meets the WHO definition of fast breathing (\u2265\u202f60\u202fbpm) for infants under 6\u202fdays, and inability to feed at all is a key danger sign for possible serious bacterial infection.",
+      "All infants aged 0\u201159\u202fdays with signs of possible serious bacterial infection should be referred urgently to a hospital for definitive care.",
+      "If referral is not possible, the health worker must seek the highest level of medical advice, explain the severity to the caregiver, and initiate oral amoxicillin for 7\u202fdays as per trial evidence for isolated fast breathing.",
+      "While awaiting referral or during outpatient treatment, the infant should be monitored continuously if possible, or at least hourly vital signs (respiratory rate, SpO\u2082, temperature) and feeding status.",
+      "Escalate care immediately if SpO\u2082 falls below 90\u202f%, respiratory rate rises above 80\u202fbpm, the infant becomes lethargic, or feeding does not improve despite treatment.",
+      "Arrange a review of the infant\u2019s condition the next day and ensure long\u2011term follow\u2011up to detect complications or treatment failure."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-deterioration-03": {
+    "case_id": "who-expanded-deterioration-03",
+    "candidate": [
+      "The newborn is 24\u202fh old, preterm (35\u202fwks) and now shows fast breathing (RR\u202f72) with borderline oxygen saturation (SpO\u2082\u202f91%), which meets WHO criteria for possible serious bacterial infection in infants under 6\u202fdays.",
+      "Referral to the nearest hospital is indicated because the infant has a sign of possible serious bacterial infection and the setting is a primary\u2011health clinic where referral may be required.",
+      "While arranging referral, the infant should be monitored at least hourly for respiratory rate, SpO\u2082, temperature and feeding status, and any deterioration should prompt urgent escalation.",
+      "If the infant\u2019s SpO\u2082 falls below 90\u202f% or respiratory rate rises above 80\u202fbreaths/min, or feeding becomes poor, the health worker must initiate emergency transfer and seek higher\u2011level medical advice.",
+      "Explain to the caregiver that the baby is very sick, emphasize the need for hospital care, and provide clear instructions on what to do if the infant\u2019s condition worsens during transport.",
+      "If possible, assess for hypoxaemia with a pulse oximeter and document the findings before referral, as recommended for infants with isolated fast breathing."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-deterioration-04": {
+    "case_id": "who-expanded-deterioration-04",
+    "candidate": [
+      "The infant shows fast breathing (73 breaths/min) which meets the WHO definition of a serious bacterial infection sign in neonates under 6 days old.",
+      "All infants 0\u201159 days with signs of possible serious bacterial infection should be referred urgently to a hospital.",
+      "If referral cannot be achieved immediately, the infant must be monitored continuously with cardiac, respiratory and pulse\u2011oximetry, or at minimum vital signs checked hourly.",
+      "Failure to improve or any deterioration (e.g., SpO\u2082 falling below 90%, worsening respiratory rate, feeding inability) requires immediate re\u2011evaluation and escalation of care.",
+      "Explain to the caregiver that the baby is very sick, emphasize the need for hospital care, and provide clear instructions for transport and follow\u2011up.",
+      "Assess for hypoxaemia with a pulse oximeter and, if possible, obtain a blood culture before referral."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-deterioration-05": {
+    "case_id": "who-expanded-deterioration-05",
+    "candidate": [
+      "The infant is 60\u202fhours old with a respiratory rate of 74\u202fbpm (\u226560\u202fbpm) which meets the WHO definition of fast breathing as a sign of possible serious bacterial infection in neonates under 6\u202fdays old.",
+      "Referral to a hospital is required because the infant shows an isolated fast\u2011breathing sign and referral is emphasized for all infants 0\u201159\u202fdays with PSBI signs.",
+      "If referral cannot be achieved, the health worker must seek higher\u2011level medical advice and manage the infant locally, including providing oral amoxicillin for 7\u202fdays as studied in trials of isolated fast breathing.",
+      "Continuous monitoring of cardiac, respiratory and pulse\u2011oximetry is advised; if unavailable, vital signs should be checked at least hourly until the infant stabilises.",
+      "Any deterioration such as SpO\u2082 falling below 90\u202f%, worsening respiratory distress, or inability to feed should trigger immediate escalation to emergency care.",
+      "Explain to the caregiver that the baby is very sick, stress the importance of hospital care, and arrange follow\u2011up review the next day or home visit if the infant remains in the clinic."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-crp_alone-01": {
+    "case_id": "who-expanded-crp_alone-01",
+    "candidate": [
+      "Serial clinical assessment of temperature, feeding adequacy, respiratory rate, and chest indrawing should be performed at least every 4\u202fhours while the infant remains in the primary health clinic.",
+      "A rising temperature (\u226538\u202f\u00b0C) after an initial decline in CRP suggests ongoing infection and warrants escalation despite a falling CRP value.",
+      "If the infant shows worsening feeding, persistent tachypnea (RR\u202f>\u202f60\u202fbreaths/min) or new chest indrawing, arrange immediate referral to a higher\u2011level facility.",
+      "When laboratory biomarkers (CRP\u202f\u2265\u202f60\u202fmg/L) are unavailable or inconclusive, base the decision to continue empiric antibiotics on the presence of clinical danger signs rather than CRP trends alone.",
+      "Explain to caregivers that worsening feeding and fever are red\u2011flag signs; advise them to return immediately if these persist or if new symptoms such as lethargy or seizures develop.",
+      "If point\u2011of\u2011care CRP testing is available, repeat the test after 12\u202fhours; a value remaining \u226560\u202fmg/L supports continued antibiotic therapy."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-crp_alone-02": {
+    "case_id": "who-expanded-crp_alone-02",
+    "candidate": [
+      "In a primary health clinic, ongoing assessment should prioritize temperature trends, feeding adequacy, respiratory rate, and the presence of chest indrawing or abnormal movements, as these are core WHO clinical signs for early\u2011onset sepsis evaluation.",
+      "A single CRP value (e.g., 5\u202fmg/L) has limited sensitivity (\u22480.62) for culture\u2011confirmed sepsis, so a falling CRP does not rule out clinical deterioration and must be interpreted alongside bedside signs.",
+      "Escalate to referral if temperature rises above 38\u202f\u00b0C, feeding worsens, or new respiratory distress (RR\u202f>\u202f60\u202fbreaths/min or chest indrawing) appears, because WHO advises immediate referral for any worsening of these signs in neonates under 72\u202fhours."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-crp_alone-03": {
+    "case_id": "who-expanded-crp_alone-03",
+    "candidate": [
+      "Track temperature, feeding adequacy, respiratory rate, and activity level; any rise in temperature or worsening feeding should trigger reassessment in a 24\u2011hour old, 35\u2011week infant.",
+      "Because CRP has moderate sensitivity (0.62) and specificity (0.74) in neonates, clinical deterioration remains a more reliable indicator of ongoing sepsis than CRP trends alone.",
+      "Escalate to referral if temperature exceeds 38\u202f\u00b0C, feeding becomes poorer, or respiratory rate rises above age\u2011appropriate limits, as these signs suggest persistent infection despite a falling CRP.",
+      "Continue empiric antibiotics until clinical signs improve; WHO guidance cautions against stopping therapy based solely on CRP decline.",
+      "When feasible, repeat CRP and obtain blood culture; a CRP \u226560\u202fmg/L has demonstrated good discriminatory ability for culture\u2011confirmed sepsis.",
+      "Inform caregivers that persistent fever or worsening feeding are key warning signs and that any deterioration warrants immediate return to the clinic even if earlier CRP values fell."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-crp_alone-04": {
+    "case_id": "who-expanded-crp_alone-04",
+    "candidate": [
+      "In settings where point\u2011of\u2011care labs are limited, WHO recommends basing early\u2011onset sepsis assessment on observable clinical signs such as temperature, feeding behavior, respiratory rate and chest indrawing rather than laboratory biomarkers.",
+      "C\u2011reactive protein (CRP) has moderate sensitivity (\u22480.62) and specificity (\u22480.74) for culture\u2011confirmed neonatal sepsis, so a falling CRP alone does not rule out ongoing infection and should be interpreted alongside clinical status.",
+      "When CRP is \u226560\u202fmg/L, WHO evidence shows good discriminatory ability for sepsis (AUC\u202f0.87); values below this threshold should not be used to discontinue antibiotics without confirming clinical improvement."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-crp_alone-05": {
+    "case_id": "who-expanded-crp_alone-05",
+    "candidate": [
+      "Serial clinical assessment should focus on temperature trend, feeding adequacy, respiratory effort, and activity level, as changes in these signs remain the primary basis for decision\u2011making when laboratory tests are limited.",
+      "A rising temperature above 38\u202f\u00b0C together with worsening feeding in a 60\u2011hour\u2011old infant suggests persistent or worsening infection and warrants escalation to higher\u2011level care.",
+      "If point\u2011of\u2011care CRP is available, a value \u226560\u202fmg/L has good discriminatory ability for neonatal sepsis and can support the decision to continue antibiotics.",
+      "Escalate to referral if the infant develops any of: temperature \u226538\u202f\u00b0C persisting >24\u202fh, inability to feed adequately, increased respiratory rate or chest indrawing, or clinical deterioration despite stable SpO\u2082.",
+      "Continue empiric antibiotics while monitoring, and arrange prompt referral to a facility with neonatal care capability if clinical signs do not improve within 12\u202fh.",
+      "Explain to caregivers that worsening feeding and fever are concerning signs, and that close observation at home is only appropriate if the infant remains stable; otherwise urgent transfer is needed."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-incomplete_stop-01": {
+    "case_id": "who-expanded-incomplete_stop-01",
+    "candidate": [
+      "The WHO 2024 serious bacterial infection guideline does not include a specific 36\u2011hour antibiotic discontinuation pathway for early\u2011onset neonatal sepsis.",
+      "When a culture remains negative at 36\u202fhours but clinical signs (e.g., fever, poor feeding) persist, WHO recommends continuing empiric antibiotics pending further clinical assessment.",
+      "Ongoing monitoring should include vital signs (temperature, respiratory rate, SpO\u2082), feeding tolerance, and neurologic status at least every 4\u202fhours while antibiotics are continued.",
+      "Escalate care (e.g., broaden antimicrobial coverage, consider intensive care) if any of the following develop: worsening temperature, increasing respiratory distress, new chest indrawing, or hemodynamic instability.",
+      "Consider repeat laboratory biomarkers (CRP, procalcitonin) and repeat cultures if clinical status does not improve after 48\u202fhours of therapy.",
+      "Inform caregivers that a negative culture at 36\u202fhours does not yet allow safe discontinuation of antibiotics while signs persist, and explain the plan for continued observation and possible further testing."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-incomplete_stop-02": {
+    "case_id": "who-expanded-incomplete_stop-02",
+    "candidate": [
+      "The WHO 2024 guidance does not include a specific 36\u2011hour antibiotic stopping algorithm for early\u2011onset neonatal sepsis; it notes a lack of evidence linking culture\u2011confirmed sepsis to stopping decisions.",
+      "Continue empiric antibiotics while clinical signs persist, reassessing at regular intervals (e.g., every 12\u202fhours) given the WHO recommendation to treat suspected sepsis based on clinical algorithms rather than culture results alone.",
+      "Monitor vital signs (temperature, respiratory rate, SpO\u2082), feeding tolerance, and activity; the WHO 7\u2011sign IMCI algorithm emphasizes these clinical parameters for ongoing assessment.",
+      "Escalate care if fever persists >38\u202f\u00b0C, respiratory distress develops, or feeding remains inadequate, as the WHO algorithm flags these signs for higher\u2011risk PSBI management.",
+      "Laboratory biomarkers such as CRP and procalcitonin have moderate diagnostic performance for culture\u2011confirmed sepsis in neonates, per WHO\u2011cited systematic reviews.",
+      "Inform caregivers that a negative culture at 36\u202fhours does not yet permit stopping antibiotics without clinical improvement, reflecting WHO\u2019s caution due to limited evidence."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-incomplete_stop-03": {
+    "case_id": "who-expanded-incomplete_stop-03",
+    "candidate": [
+      "The WHO 2024 serious bacterial infection guideline does not include a NICE\u2011style protocol for stopping antibiotics at 36\u202fhours based on a negative culture.",
+      "In the absence of a defined 36\u2011hour stopping rule, clinicians should continue empiric antibiotics while closely monitoring clinical signs when a culture remains negative at 36\u202fhours.",
+      "Ongoing assessment of temperature, respiratory status, feeding tolerance, and activity is essential for infants with persistent signs despite negative cultures.",
+      "If clinical deterioration occurs (e.g., rising temperature, worsening respiratory distress, or new organ dysfunction), escalation to higher\u2011level care should be considered even with a negative culture.",
+      "Repeat laboratory biomarkers (e.g., CRP, procalcitonin) may be used to aid decision\u2011making, acknowledging their moderate sensitivity and specificity for neonatal sepsis.",
+      "Explain to parents that a negative culture at 36\u202fhours does not guarantee absence of infection and that treatment will continue until clinical stability is achieved."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-incomplete_stop-04": {
+    "case_id": "who-expanded-incomplete_stop-04",
+    "candidate": [
+      "The WHO 2024 guidance does not include evidence\u2011based criteria for stopping antibiotics at 36\u202fhours after a negative culture in early\u2011onset neonatal sepsis.",
+      "Continue close clinical monitoring (temperature, respiratory rate, feeding tolerance, and activity) while awaiting further culture results or clinical improvement.",
+      "Escalate care if any new or worsening signs appear (e.g., fever >38.5\u202f\u00b0C, respiratory distress, poor perfusion, or lethargy) despite ongoing antibiotics.",
+      "Maintain empiric antibiotic therapy beyond 36\u202fhours in the absence of a validated stopping rule, given the lack of WHO guidance for early discontinuation.",
+      "Consider adjunctive biomarkers (CRP, procalcitonin) to aid decision\u2011making, recognizing moderate diagnostic performance reported by WHO systematic reviews.",
+      "Inform caregivers that antibiotic duration will be guided by clinical response and evolving evidence, not solely by a 36\u2011hour culture result."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-incomplete_stop-05": {
+    "case_id": "who-expanded-incomplete_stop-05",
+    "candidate": [
+      "The WHO 2024 guidance does not include a specific 36\u2011hour culture\u2011negative antibiotic stopping rule for early\u2011onset neonatal sepsis; it notes a lack of evidence linking culture\u2011confirmed sepsis or mortality to algorithm decisions.",
+      "Because the 7\u2011sign IMCI algorithm shows good sensitivity but only fair specificity for sepsis in infants 0\u20116 days, clinicians should consider continuing empiric antibiotics when clinical signs persist despite a negative culture at 36\u202fh.",
+      "Ongoing monitoring of respiratory rate, oxygen saturation, temperature, feeding tolerance, and activity level is essential during the first 72\u202fh, as the WHO highlights the importance of clinical assessment over sole reliance on culture results.",
+      "CRP and procalcitonin have moderate to good discriminatory ability for culture\u2011confirmed sepsis in neonates, but their sensitivity (~0.62) and specificity (~0.74) are insufficient to rule out infection alone.",
+      "If any worsening sign appears (e.g., increasing temperature, respiratory distress, poor feeding, or new chest indrawing), escalation to higher\u2011level care should occur regardless of culture status, as WHO emphasizes clinical deterioration as a trigger for treatment intensification.",
+      "Parents should be informed that a negative culture at 36\u202fh does not guarantee the absence of infection and that treatment may need to continue based on the infant\u2019s ongoing clinical picture."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-initial_investigation-01": {
+    "case_id": "who-expanded-initial_investigation-01",
+    "candidate": [
+      "WHO 2024 does not endorse a specific laboratory test or clinical prediction algorithm as the definitive diagnostic tool for early\u2011onset neonatal sepsis.",
+      "The guideline notes that full blood count and C\u2011reactive protein (CRP) are increasingly available, but their use remains adjunctive rather than diagnostic alone.",
+      "Initial assessment should combine clinical signs (e.g., temperature\u202f\u2265\u202f38\u202f\u00b0C, poor feeding, respiratory rate\u202f\u2248\u202f48\u202fbpm) with available bedside tests, while recognizing that no single threshold is mandated by WHO.",
+      "Continuous monitoring of vital signs, feeding tolerance, and clinical status is recommended during the first 72\u202fhours, with escalation if deterioration occurs.",
+      "Escalate to higher\u2011level care or initiate empiric antibiotics if any red\u2011flag signs develop (e.g., worsening temperature, respiratory distress, or reduced movement).",
+      "Explain to parents that diagnosis relies on a combination of clinical observation and limited laboratory data, and that treatment decisions will be revisited as the infant\u2019s condition evolves."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-initial_investigation-02": {
+    "case_id": "who-expanded-initial_investigation-02",
+    "candidate": [
+      "WHO 2024 notes that laboratory biomarkers such as CRP and procalcitonin have been studied for diagnostic accuracy in neonates, but it does not endorse a specific laboratory test or cut\u2011off for confirming early\u2011onset sepsis.",
+      "The guideline highlights the limited availability of simple tests (e.g., full blood count, CRP) in many district hospitals, indicating that reliance on such labs alone is not recommended for diagnosis.",
+      "WHO recommends integrating clinical assessment with available point\u2011of\u2011care tests where possible, while acknowledging ongoing work on predictive algorithms, but it does not yet endorse any specific algorithm for diagnosing neonatal sepsis.",
+      "For a 12\u2011hour\u2011old term infant with fever (38.1\u202f\u00b0C) and poor feeding, initial assessment should include careful clinical monitoring (temperature, respiratory status, feeding tolerance) and consideration of obtaining cultures and basic labs if accessible, without presuming a diagnostic threshold.",
+      "If the infant shows worsening signs (e.g., increasing respiratory rate, desaturation, lethargy) or if cultures return positive, escalation to full sepsis management is indicated, consistent with WHO\u2019s emphasis on clinical judgment over sole reliance on biomarkers.",
+      "Explain to caregivers that current WHO guidance does not rely on a single lab value to diagnose sepsis; decisions are based on the overall clinical picture and available investigations."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-initial_investigation-03": {
+    "case_id": "who-expanded-initial_investigation-03",
+    "candidate": [
+      "WHO does not endorse a specific hospital laboratory test or clinical prediction algorithm for diagnosing early\u2011onset neonatal sepsis; it highlights the current lack of simple, universally available tests in many district hospitals.",
+      "When laboratory capacity exists, CRP and procalcitonin have shown good discriminatory ability for culture\u2011confirmed sepsis, but WHO provides no definitive threshold values for clinical decision\u2011making.",
+      "Initial assessment should be based on a comprehensive clinical examination (temperature, respiratory rate, feeding tolerance, activity) and, if feasible, point\u2011of\u2011care biomarkers such as CRP or PCT to support the diagnosis.",
+      "Continuous monitoring of vital signs (temperature, respiratory rate, SpO\u2082), feeding adequacy, and neurologic status is essential during the first 72\u202fhours, with reassessment if any parameter deteriorates.",
+      "If clinical signs worsen, red\u2011flag features emerge, or laboratory results become strongly suggestive of sepsis, clinicians should escalate care to a higher\u2011level facility or specialist team, as WHO notes ongoing work to integrate tests with decision\u2011support algorithms for timely escalation.",
+      "WHO 2024 does not recommend a hospital laboratory or a specific clinical prediction algorithm for diagnosing neonatal sepsis; the guideline emphasizes clinical judgment supplemented by available biomarkers rather than a mandated scoring system."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-initial_investigation-04": {
+    "case_id": "who-expanded-initial_investigation-04",
+    "candidate": [
+      "WHO notes that simple laboratory tests such as full blood count and CRP are often unavailable in district hospitals, so diagnosis must rely primarily on clinical assessment.",
+      "The initial assessment of a 48\u2011hour, term neonate should focus on observable signs (temperature, feeding difficulty, respiratory rate, SpO\u2082) without applying specific CRP or CBC cut\u2011offs, as WHO does not prescribe exact biomarker thresholds for early\u2011onset sepsis.",
+      "Where point\u2011of\u2011care laboratory tests are accessible, WHO acknowledges the growing availability of bedside CRP and procalcitonin assays, but these are adjuncts rather than required diagnostics.",
+      "WHO reports ongoing development of predictive algorithms and machine\u2011learning tools for sepsis diagnosis, yet it does not currently endorse any specific algorithm for clinical use.",
+      "WHO 2024 does not endorse a hospital laboratory panel or a clinical prediction algorithm as the definitive diagnostic tool for neonatal sepsis; diagnosis remains based on clinical judgment supplemented by available tests.",
+      "For suspected early\u2011onset sepsis, WHO recommends close monitoring of vital signs, feeding tolerance, and mental status, escalating care if deterioration occurs, independent of any single laboratory value."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-initial_investigation-05": {
+    "case_id": "who-expanded-initial_investigation-05",
+    "candidate": [
+      "WHO notes that laboratory biomarkers such as CRP and procalcitonin have demonstrated good discriminatory ability for culture\u2011confirmed neonatal sepsis, but it does not prescribe a specific diagnostic algorithm for use in hospitals.",
+      "Initial assessment should rely on clinical signs (e.g., temperature, respiratory rate, feeding difficulty) and consider available point\u2011of\u2011care tests, acknowledging that simple tests like full blood count and CRP may be limited in some district hospitals.",
+      "Monitor vital signs (temperature, respiratory rate, SpO\u2082), feeding tolerance, and level of activity frequently (e.g., every 4\u202fhours) during the first 72\u202fhours, escalating care if deterioration occurs.",
+      "Escalate to higher\u2011level care or initiate empiric antibiotics if the infant shows persistent fever, worsening respiratory distress, or inability to feed adequately despite supportive measures.",
+      "WHO highlights ongoing research into integrating laboratory results with clinical algorithms and machine\u2011learning tools, but no specific predictive model is endorsed for routine diagnosis of early\u2011onset sepsis."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-single_risk-01": {
+    "case_id": "who-expanded-single_risk-01",
+    "candidate": [
+      "WHO 2024 guidance does not provide a validated risk score based on maternal GBS status or gestational age for early\u2011onset sepsis risk assessment.",
+      "The WHO 7\u2011sign IMCI algorithm is the recommended tool for identifying possible serious bacterial infection in infants aged 0\u201159 days."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-single_risk-02": {
+    "case_id": "who-expanded-single_risk-02",
+    "candidate": [
+      "The WHO 2024 guidance does not provide a validated risk\u2011score that incorporates maternal GBS colonisation or gestational age for early\u2011onset sepsis risk stratification.",
+      "In the absence of any IMCI danger signs, routine laboratory investigations (e.g., CRP, blood culture) are not recommended for a well\u2011appearing newborn.",
+      "Observe the infant for the emergence of any of the seven IMCI signs (e.g., temperature instability, poor feeding, respiratory distress) during the first 72\u202fhours.",
+      "If any IMCI sign develops, the infant should be re\u2011evaluated promptly and considered for referral and empiric antibiotics per the WHO PSBI protocol.",
+      "Inform parents that, despite maternal GBS positivity, the infant is currently well; advise them to seek care immediately if fever, lethargy, feeding difficulty, or breathing problems arise."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-single_risk-03": {
+    "case_id": "who-expanded-single_risk-03",
+    "candidate": [
+      "The WHO 2024 serious bacterial infection guideline does not provide a validated risk\u2011scoring tool that incorporates maternal GBS colonisation or gestational age for early\u2011onset neonatal sepsis risk assessment.",
+      "For infants aged 0\u201159 days, WHO recommends applying the 7\u2011sign IMCI algorithm to identify possible serious bacterial infection and determine need for further evaluation or treatment.",
+      "When none of the seven IMCI danger signs are present, the infant can be classified as well\u2011appearing and managed with close outpatient monitoring, reassessing vital signs and clinical status at regular intervals.",
+      "If the infant shows any sign of clinical deterioration (e.g., new fever, respiratory distress, poor feeding, or failure to improve), immediate referral to a higher\u2011level facility is warranted.",
+      "Given the lack of a WHO\u2011endorsed risk score, clinicians should base the decision to start empiric antibiotics on the presence of IMCI danger signs rather than maternal GBS status alone.",
+      "Explain to caregivers that, despite maternal GBS colonisation, the current WHO guidance does not assign a specific risk level, and that the infant will be observed closely for any emerging signs of infection."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-single_risk-04": {
+    "case_id": "who-expanded-single_risk-04",
+    "candidate": [
+      "The WHO 2024 guidance does not provide a validated maternal\u2011risk or gestational\u2011age based scoring system for early\u2011onset neonatal sepsis; it explicitly notes insufficient evidence to recommend risk stratification by gestational age, birthweight, or maternal risk factors."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-single_risk-05": {
+    "case_id": "who-expanded-single_risk-05",
+    "candidate": [
+      "WHO does not provide a validated maternal\u2011risk or gestational\u2011age based scoring system for early\u2011onset sepsis; risk stratification by these factors is not recommended due to insufficient evidence.",
+      "In primary\u2011health\u2011clinic settings, the WHO 7\u2011sign IMCI algorithm is the recommended tool to identify possible serious bacterial infection in infants 0\u201159 days old.",
+      "For a well\u2011appearing 60\u2011hour\u2011old infant with no IMCI danger signs, routine monitoring of temperature, respiratory rate, feeding, and activity every 4\u20116\u202fhours is appropriate.",
+      "Escalate care and consider referral if any IMCI danger sign (e.g., fever\u202f\u2265\u202f38\u202f\u00b0C, hypothermia\u202f<\u202f35.5\u202f\u00b0C, fast breathing, chest indrawing, poor feeding, lethargy, or convulsions) develops.",
+      "Maternal GBS colonisation alone, without infant clinical signs, does not trigger empiric antibiotics under WHO guidance; observation and supportive care are advised.",
+      "Explain to caregivers that the infant is currently well, but they should return immediately if fever, breathing difficulty, feeding problems, or lethargy occur."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-missing_results-01": {
+    "case_id": "who-expanded-missing_results-01",
+    "candidate": [
+      "In infants 0\u20116 days, the WHO 7\u2011sign IMCI algorithm shows good sensitivity for detecting possible serious bacterial infection, allowing clinicians to identify high\u2011risk neonates even when laboratory data are unavailable.",
+      "When any of the WHO danger signs (e.g., poor feeding, lethargy, temperature instability, fast breathing, chest indrawing) are present, the guideline recommends starting empiric parenteral antibiotics and arranging referral to a higher\u2011level facility.",
+      "Because laboratory biomarkers such as CRP have only moderate sensitivity (\u22480.62) and specificity (\u22480.74), serial clinical monitoring of feeding, activity, temperature, and respiratory effort remains the primary tool for early detection of deterioration.",
+      "If the infant develops new or worsening danger signs (e.g., increasing respiratory rate, persistent fever or hypothermia, reduced movement, or convulsions), immediate referral to a hospital is indicated, as the primary clinic cannot obtain culture results.",
+      "In the absence of culture availability, the WHO guideline acknowledges that point\u2011of\u2011care biomarkers (CRP, procalcitonin) have limited discriminatory ability and should not replace clinical judgment for initiating treatment.",
+      "Explain to caregivers that, based on WHO clinical criteria, the infant is being evaluated for possible serious infection; emphasize the need for close observation at home and prompt return if any danger signs appear."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-missing_results-02": {
+    "case_id": "who-expanded-missing_results-02",
+    "candidate": [
+      "In the absence of feeding, movement, temperature, breathing and culture data, WHO recommends using a clinical sign\u2011based algorithm to identify infants 0\u201159 days with possible serious bacterial infection (PSBI) who need treatment.",
+      "If any WHO danger signs (e.g., poor feeding, lethargy, fever or hypothermia, fast breathing, severe chest indrawing) are present, the infant should be classified as having PSBI and treatment should be initiated, even when referral is not feasible.",
+      "When referral is impossible, the health worker must monitor the infant continuously with cardiac, respiratory and pulse\u2011oximetry if available, or at minimum obtain vital signs at least hourly until the infant stabilises.",
+      "Any deterioration in clinical status\u2014new or worsening danger signs, inability to maintain oxygen saturation, or worsening lethargy\u2014should trigger urgent re\u2011evaluation and attempt to secure higher\u2011level care.",
+      "Laboratory biomarkers such as CRP or procalcitonin have moderate sensitivity (\u22480.62) and specificity (\u22480.74) for culture\u2011confirmed sepsis and can support decision\u2011making when available, but they are not required for initial classification.",
+      "All infants treated for PSBI should be reviewed the day after treatment completion and enrolled in long\u2011term follow\u2011up to detect complications or sequelae."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-missing_results-03": {
+    "case_id": "who-expanded-missing_results-03",
+    "candidate": [
+      "In a primary\u2011health\u2011clinic setting, WHO recommends using a clinical\u2011sign algorithm to identify infants 0\u201159 days with possible serious bacterial infection (PSBI) when laboratory data are unavailable.",
+      "If point\u2011of\u2011care biomarkers (e.g., CRP or procalcitonin) are accessible, WHO notes they have moderate sensitivity (~0.62) and good specificity (~0.74) for culture\u2011confirmed sepsis, but they are not required for the initial assessment.",
+      "When any WHO danger signs (e.g., abnormal temperature, poor feeding, lethargy, respiratory distress) are present, the health worker must plan referral to a hospital; if referral is impossible, the infant should be managed on\u2011site with the highest possible level of medical advice.",
+      "In the absence of continuous monitors, WHO advises frequent vital\u2011sign checks (ideally hourly) and continuous observation of cardiac, respiratory and oxygenation status until the infant stabilises.",
+      "Any deterioration in feeding, movement, temperature, or breathing during clinic observation should trigger immediate escalation to emergency referral, as these are core clinical signs used by WHO to define PSBI.",
+      "After completing any on\u2011site treatment, WHO recommends reviewing the infant the next day and ensuring long\u2011term follow\u2011up to detect late complications."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-missing_results-04": {
+    "case_id": "who-expanded-missing_results-04",
+    "candidate": [
+      "In the absence of feeding, temperature, and culture data, WHO sign\u2011based algorithms for possible serious bacterial infection (PSBI) can still identify infants who need treatment based on clinical signs alone.",
+      "All infants 0\u201159 days with signs of PSBI should be referred to a hospital; referral is the primary recommendation even when clinical information is incomplete.",
+      "If referral is not possible, the health worker must seek the highest level of medical advice and manage the infant in the clinic while arranging the best possible care.",
+      "Continuous cardiac, respiratory and pulse\u2011oximetry monitoring is ideal; when unavailable, vital signs should be recorded at least hourly to detect deterioration.",
+      "Any worsening of clinical status (e.g., increasing respiratory distress, new fever, or poor perfusion) requires immediate escalation to higher\u2011level care or urgent referral.",
+      "Laboratory biomarkers such as CRP have only moderate sensitivity (\u22480.62) and specificity (\u22480.74) for culture\u2011confirmed sepsis, so they cannot replace clinical assessment when unavailable."
+    ],
+    "status": "completed"
+  },
+  "who-expanded-missing_results-05": {
+    "case_id": "who-expanded-missing_results-05",
+    "candidate": [
+      "In a primary health clinic, WHO recommends using a clinical sign\u2011based algorithm (e.g., the 7\u2011sign IMCI) to identify infants 0\u201159 days with possible serious bacterial infection when laboratory data are unavailable.",
+      "The algorithm has only fair sensitivity and specificity for detecting sepsis compared with physician judgement, so a negative assessment does not rule out infection.",
+      "When feasible, WHO notes that biomarkers such as CRP or procalcitonin provide better discriminatory ability than clinical signs alone, but their diagnostic accuracy remains moderate (sensitivity ~0.62, specificity ~0.74).",
+      "For a 60\u2011hour\u2011old term infant with unknown feeding, movement, temperature, and breathing status, the clinician should treat as possible serious bacterial infection and initiate empiric antibiotics per WHO EOS regimen while arranging referral if referral is possible.",
+      "Serial clinical assessment (temperature, respiratory effort, feeding, activity) every 4\u20116\u202fhours is essential to detect deterioration, because the initial algorithm cannot capture all cases.",
+      "If any danger sign (e.g., poor feeding, lethargy, fast breathing, chest indrawing, or temperature\u202f\u2265\u202f38\u202f\u00b0C or\u202f<\u202f35.5\u202f\u00b0C) emerges, immediate referral to a higher\u2011level facility is indicated."
+    ],
+    "status": "completed"
+  }
+}

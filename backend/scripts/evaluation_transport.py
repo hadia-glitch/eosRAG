@@ -7,7 +7,10 @@ separately and cannot count as either semantic failures or successful safeguards
 
 def provider_failure(code):
     if not code:return False
-    return code not in {'JSONDecodeError','finish_reason_length',
+    # complete_json raises plain ValueError only when successfully decoded model
+    # content is not a JSON object. This is a completed contract failure, not an
+    # unavailable provider, and must never be resampled into a favorable answer.
+    return code not in {'JSONDecodeError','ValueError','model_json_contract_failure','finish_reason_length',
                         'finish_reason_content_filter','finish_reason_tool_calls',
                         'incomplete_generation'}
 

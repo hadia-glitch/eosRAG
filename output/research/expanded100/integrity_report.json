@@ -1,0 +1,11 @@
+{
+  "unique_cases": 100,
+  "primary_quality_complete": 100,
+  "fault_quality_complete": 36,
+  "judge_stages_complete": 100,
+  "paired_initial_outcomes_checked": 200,
+  "planned_pairs": 200,
+  "pending_pairs": [],
+  "completed_pairs_reuse_initial_outcomes": true,
+  "all_declared_work_complete": true
+}

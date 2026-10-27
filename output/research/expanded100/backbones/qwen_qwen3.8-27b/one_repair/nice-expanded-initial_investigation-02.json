@@ -1,0 +1,389 @@
+{
+  "id": "nice-expanded-initial_investigation-02",
+  "family": "initial_investigation",
+  "model": "qwen/qwen3.8-27b",
+  "verifier_model": "qwen/qwen3.8-27b",
+  "seconds": 0.22411379999903147,
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "51ac6e36863318ecdd9214c5b06dc5d8b8876f658826ec52cee099de76d8ef9c",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Create up to six concise evidence-supported EOS discussion points for clinician review. Answer the evaluation_question if present. No risk scores or probabilities. Every claim must select existing quote_id values from available_quotes; never invent an ID or echo/paraphrase quotation text. Quotes are source support, not patient measurements. Include trends, monitoring, escalation, actions and risk discussion only if supported. Do not prescribe doses. No unsupported reassuring or antibiotic-stop statements.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 28, \"care_setting\": \"postnatal_ward\", \"respiratory_rate\": 46, \"spo2\": 97, \"crp\": null, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 4.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 19}, {\"age_hours\": 8.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 10}], \"evaluation_question\": \"Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 28 weeks; age 12 hours; setting postnatal ward.\", \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"NICE-1.10.4\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 15, \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward.\"}, {\"quote_id\": \"E1Q2\", \"text\": \"It should only be used if it is part of a prospective audit, which should record:\"}, {\"quote_id\": \"E1Q3\", \"text\": \"total number of babies assessed using the calculator\"}, {\"quote_id\": \"E1Q4\", \"text\": \"number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection\"}, {\"quote_id\": \"E1Q5\", \"text\": \"number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection\"}, {\"quote_id\": \"E1Q6\", \"text\": \"number of babies missed by the calculator who develop a culture-confirmed neonatal infection.\"}]}, {\"id\": \"E2\", \"chunk_id\": \"NICE-1.9.2\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 12, \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care.\"}, {\"quote_id\": \"E2Q2\", \"text\": \"[2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor:\"}, {\"quote_id\": \"E2Q3\", \"text\": \"suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors:\"}, {\"quote_id\": \"E2Q4\", \"text\": \"invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy\"}, {\"quote_id\": \"E2Q5\", \"text\": \"pre-term birth following spontaneous labour before 37 weeks' gestation\"}, {\"quote_id\": \"E2Q6\", \"text\": \"confirmed rupture of membranes for more than 18 hours before a pre-term birth\"}, {\"quote_id\": \"E2Q7\", \"text\": \"confirmed rupture of membranes for more than 24 hours before a term birth [2026]\"}, {\"quote_id\": \"E2Q8\", \"text\": \"suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026]\"}, {\"quote_id\": \"E2Q9\", \"text\": \"suspected or confirmed chorioamnionitis [2021, amended 2026]\"}]}, {\"id\": \"E3\", \"chunk_id\": \"NICE-box1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 12, \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection).\"}, {\"quote_id\": \"E3Q2\", \"text\": \"Throughout labour, monitor for any new risk factors.\"}, {\"quote_id\": \"E3Q3\", \"text\": \"[2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care.\"}, {\"quote_id\": \"E3Q4\", \"text\": \"[2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor:\"}, {\"quote_id\": \"E3Q5\", \"text\": \"suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors:\"}, {\"quote_id\": \"E3Q6\", \"text\": \"invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy\"}, {\"quote_id\": \"E3Q7\", \"text\": \"pre-term birth following spontaneous labour before 37 weeks' gestation\"}, {\"quote_id\": \"E3Q8\", \"text\": \"confirmed rupture of membranes for more than 18 hours before a pre-term birth\"}, {\"quote_id\": \"E3Q9\", \"text\": \"confirmed rupture of membranes for more than 24 hours before a term birth [2026]\"}, {\"quote_id\": \"E3Q10\", \"text\": \"suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026]\"}, {\"quote_id\": \"E3Q11\", \"text\": \"suspected or confirmed chorioamnionitis [2021, amended 2026]\"}]}, {\"id\": \"E4\", \"chunk_id\": \"NICE-1.23.2\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"page_number\": 33, \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"For babies with suspected late-onset neonatal infection or meningitis who have been admitted from home, treat according to recommendations 1.8.6 and 1.8.7 in NICE's guideline on suspected sepsis in under 16s.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "risk_analysis",
+            "text": "The patient's gestational age of 28 weeks and pre-term birth following spontaneous labour are recognized risk factors for early-onset neonatal infection.",
+            "support": [
+              {
+                "quote_id": "E2Q5"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "Maternal group B streptococcal status is currently unknown, which is a documented risk factor for early-onset neonatal infection.",
+            "support": [
+              {
+                "quote_id": "E2Q4"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "risk_analysis",
+            "text": "The presence of suspected or confirmed maternal sepsis or chorioamnionitis in the intrapartum or early postpartum period constitutes a risk factor for early-onset neonatal infection.",
+            "support": [
+              {
+                "quote_id": "E2Q8"
+              },
+              {
+                "quote_id": "E2Q9"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "investigations",
+            "text": "The Kaiser Permanente neonatal sepsis calculator is an alternative assessment tool specifically for babies born after 34+0 weeks of pregnancy, and therefore does not apply to this 28-week infant.",
+            "support": [
+              {
+                "quote_id": "E1Q1"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "investigations",
+            "text": "If the Kaiser Permanente neonatal sepsis calculator were used in an eligible population, it must be part of a prospective audit that records the total number of babies assessed.",
+            "support": [
+              {
+                "quote_id": "E1Q2"
+              },
+              {
+                "quote_id": "E1Q3"
+              }
+            ]
+          },
+          {
+            "id": "C6",
+            "section": "investigations",
+            "text": "The prospective audit for the neonatal sepsis calculator must record the number of babies correctly identified who develop a culture-confirmed neonatal infection and the number incorrectly identified who do not.",
+            "support": [
+              {
+                "quote_id": "E1Q4"
+              },
+              {
+                "quote_id": "E1Q5"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 22.697031499999866,
+      "replayed": true
+    },
+    {
+      "role": "You are an independent neonatal safety auditor. Check patient age/gestation, trends, renal impairment, allergy, danger signs, missing data, and unsafe reassurance or discontinuation. Guidance is not an automatic treatment order.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "87b6825b0b1dcde196f9352a5ea35aff7931aa0ffd4bb3119a667ff26ac12c6e",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 28, \"care_setting\": \"postnatal_ward\", \"respiratory_rate\": 46, \"spo2\": 97, \"crp\": null, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 4.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 19}, {\"age_hours\": 8.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 10}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \\u2022 total number of babies assessed using the calculator \\u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \\u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \\u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \\u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \\u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \\u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \\u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \\u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \\u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \\u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \\u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \\u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \\u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \\u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \\u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies with suspected late-onset neonatal infection or meningitis who have been admitted from home, treat according to recommendations 1.8.6 and 1.8.7 in NICE's guideline on suspected sepsis in under 16s. [2021]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The patient's gestational age of 28 weeks and pre-term birth following spontaneous labour are recognized risk factors for early-onset neonatal infection.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"Maternal group B streptococcal status is currently unknown, which is a documented risk factor for early-onset neonatal infection.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C3\", \"section\": \"risk_analysis\", \"text\": \"The presence of suspected or confirmed maternal sepsis or chorioamnionitis in the intrapartum or early postpartum period constitutes a risk factor for early-onset neonatal infection.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C4\", \"section\": \"investigations\", \"text\": \"The Kaiser Permanente neonatal sepsis calculator is an alternative assessment tool specifically for babies born after 34+0 weeks of pregnancy, and therefore does not apply to this 28-week infant.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C5\", \"section\": \"investigations\", \"text\": \"If the Kaiser Permanente neonatal sepsis calculator were used in an eligible population, it must be part of a prospective audit that records the total number of babies assessed.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C6\", \"section\": \"investigations\", \"text\": \"The prospective audit for the neonatal sepsis calculator must record the number of babies correctly identified who develop a culture-confirmed neonatal infection and the number incorrectly identified who do not.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 51.19053580000036,
+      "replayed": true
+    },
+    {
+      "role": "You are an independent source-entailment auditor. Check citation scope, exact evidence support, negation, contradictions and source applicability.",
+      "model": "qwen/qwen3.8-27b",
+      "prompt_sha256": "87b6825b0b1dcde196f9352a5ea35aff7931aa0ffd4bb3119a667ff26ac12c6e",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Independently audit EVERY claim against its cited evidence passages AND recorded patient facts. Faithful paraphrases and combinations of multiple cited passages are allowed when every component is supported. Recorded patient facts are checked against patient/history, not required to occur in guideline text. Conditional guideline options are not claims that missing eligibility conditions have been met. Reject unsupported additions, contradiction, wrong population/gestation/setting, or essential missing information assumed normal. A citation alone is not entailment. Do not rewrite claims. checked_claim_ids must list every reviewed claim. If all pass, return supported=true and empty rejected_claim_ids and reasons. reasons lists failures only. Keep reasons concise.\", \"source_packet\": {\"guideline\": \"NICE NG195 (2026), EVALUATION ONLY\", \"patient\": {\"age_hours\": 12, \"gestational_age_weeks\": 28, \"care_setting\": \"postnatal_ward\", \"respiratory_rate\": 46, \"spo2\": 97, \"crp\": null, \"culture_status\": \"unknown\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\"}, \"history\": [{\"age_hours\": 4.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 19}, {\"age_hours\": 8.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 10}], \"evidence\": [{\"id\": \"E1\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \\u2022 total number of babies assessed using the calculator \\u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \\u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \\u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]\"}, {\"id\": \"E2\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \\u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \\u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \\u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \\u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \\u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \\u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]\"}, {\"id\": \"E3\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \\u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \\u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \\u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \\u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \\u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \\u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \\u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]\"}, {\"id\": \"E4\", \"source\": \"NICE NG195\", \"section\": null, \"version\": \"2026-05-13\", \"text\": \"For babies with suspected late-onset neonatal infection or meningitis who have been admitted from home, treat according to recommendations 1.8.6 and 1.8.7 in NICE's guideline on suspected sepsis in under 16s. [2021]\"}]}, \"claims\": [{\"id\": \"C1\", \"section\": \"risk_analysis\", \"text\": \"The patient's gestational age of 28 weeks and pre-term birth following spontaneous labour are recognized risk factors for early-onset neonatal infection.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C2\", \"section\": \"risk_analysis\", \"text\": \"Maternal group B streptococcal status is currently unknown, which is a documented risk factor for early-onset neonatal infection.\", \"support\": [{\"evidence_id\": \"E2\"}]}, {\"id\": \"C3\", \"section\": \"risk_analysis\", \"text\": \"The presence of suspected or confirmed maternal sepsis or chorioamnionitis in the intrapartum or early postpartum period constitutes a risk factor for early-onset neonatal infection.\", \"support\": [{\"evidence_id\": \"E2\"}, {\"evidence_id\": \"E2\"}]}, {\"id\": \"C4\", \"section\": \"investigations\", \"text\": \"The Kaiser Permanente neonatal sepsis calculator is an alternative assessment tool specifically for babies born after 34+0 weeks of pregnancy, and therefore does not apply to this 28-week infant.\", \"support\": [{\"evidence_id\": \"E1\"}]}, {\"id\": \"C5\", \"section\": \"investigations\", \"text\": \"If the Kaiser Permanente neonatal sepsis calculator were used in an eligible population, it must be part of a prospective audit that records the total number of babies assessed.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}, {\"id\": \"C6\", \"section\": \"investigations\", \"text\": \"The prospective audit for the neonatal sepsis calculator must record the number of babies correctly identified who develop a culture-confirmed neonatal infection and the number incorrectly identified who do not.\", \"support\": [{\"evidence_id\": \"E1\"}, {\"evidence_id\": \"E1\"}]}]}",
+      "completion_tokens": 1000,
+      "response": {
+        "supported": true,
+        "checked_claim_ids": [
+          "C1",
+          "C2",
+          "C3",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "rejected_claim_ids": [],
+        "reasons": []
+      },
+      "seconds": 29.585423100001208,
+      "replayed": true
+    }
+  ],
+  "packet": {
+    "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 28,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "evaluation_question": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 28 weeks; age 12 hours; setting postnatal ward.",
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.10.4",
+        "text": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \u2022 total number of babies assessed using the calculator \u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 15
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.9.2",
+        "text": "For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 12
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-box1",
+        "text": "Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 12
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.23.2",
+        "text": "For babies with suspected late-onset neonatal infection or meningitis who have been admitted from home, treat according to recommendations 1.8.6 and 1.8.7 in NICE's guideline on suspected sepsis in under 16s. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "page_number": 33
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "NICE NG195 (2026), EVALUATION ONLY",
+      "patient": {
+        "age_hours": 12,
+        "gestational_age_weeks": 28,
+        "care_setting": "postnatal_ward",
+        "respiratory_rate": 46,
+        "spo2": 97,
+        "crp": null,
+        "culture_status": "unknown",
+        "maternal_gbs": "unknown",
+        "red_flags": "not fully documented"
+      },
+      "history": [
+        {
+          "age_hours": 4.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 19
+        },
+        {
+          "age_hours": 8.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 10
+        }
+      ],
+      "evaluation_question": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 28 weeks; age 12 hours; setting postnatal ward.",
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.10.4",
+          "text": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \u2022 total number of babies assessed using the calculator \u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 15
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.9.2",
+          "text": "For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 12
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-box1",
+          "text": "Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 12
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.23.2",
+          "text": "For babies with suspected late-onset neonatal infection or meningitis who have been admitted from home, treat according to recommendations 1.8.6 and 1.8.7 in NICE's guideline on suspected sepsis in under 16s. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "page_number": 33
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "risk_analysis",
+          "text": "The patient's gestational age of 28 weeks and pre-term birth following spontaneous labour are recognized risk factors for early-onset neonatal infection.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "pre-term birth following spontaneous labour before 37 weeks' gestation"
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "Maternal group B streptococcal status is currently unknown, which is a documented risk factor for early-onset neonatal infection.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "risk_analysis",
+          "text": "The presence of suspected or confirmed maternal sepsis or chorioamnionitis in the intrapartum or early postpartum period constitutes a risk factor for early-onset neonatal infection.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026]"
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "suspected or confirmed chorioamnionitis [2021, amended 2026]"
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "investigations",
+          "text": "The Kaiser Permanente neonatal sepsis calculator is an alternative assessment tool specifically for babies born after 34+0 weeks of pregnancy, and therefore does not apply to this 28-week infant.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "investigations",
+          "text": "If the Kaiser Permanente neonatal sepsis calculator were used in an eligible population, it must be part of a prospective audit that records the total number of babies assessed.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "It should only be used if it is part of a prospective audit, which should record:"
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "total number of babies assessed using the calculator"
+            }
+          ]
+        },
+        {
+          "id": "C6",
+          "section": "investigations",
+          "text": "The prospective audit for the neonatal sepsis calculator must record the number of babies correctly identified who develop a culture-confirmed neonatal infection and the number incorrectly identified who do not.",
+          "support": [
+            {
+              "evidence_id": "E1",
+              "quote": "number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection"
+            },
+            {
+              "evidence_id": "E1",
+              "quote": "number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection"
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [],
+    "evidence_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "safety_verdict": {
+      "supported": true,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6"
+      ],
+      "reasons": []
+    },
+    "status": "supported_for_review",
+    "errors": [],
+    "resolution_log": [],
+    "packet_sha256": "15da1a1c4e205d99ce42f1e50189d919d76d389d2e30fcf3c6484fd6c70c014b"
+  },
+  "settings": {
+    "temperature": 0,
+    "sampling_seed": null,
+    "repairs": 1,
+    "budget_seconds": 45.86047350000081,
+    "schema_enforcement": false,
+    "timeout_seconds": 25.0,
+    "call_gap_seconds": 20
+  },
+  "verification_source_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

@@ -1,0 +1,20 @@
+{
+  "available": true,
+  "model": "openai/gpt-oss-120b",
+  "scores": {
+    "grounding": 5,
+    "patient_fidelity": 5,
+    "completeness": 5,
+    "actionability": 2,
+    "uncertainty": 5,
+    "unsafe_claim_count": 0,
+    "reasons": [
+      "Grounding: directly supported by NICE box 1 risk factor list.",
+      "Patient fidelity: matches the known positive maternal GBS status; no invented data.",
+      "Completeness: addresses the single requested risk factor without adding extraneous info.",
+      "Actionability: does not provide management guidance (e.g., monitoring or antibiotics).",
+      "Uncertainty: statement is definitive with no speculative language."
+    ]
+  },
+  "reason": null
+}

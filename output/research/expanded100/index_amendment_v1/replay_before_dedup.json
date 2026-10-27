@@ -1,0 +1,5 @@
+{
+  "original_cases": 18,
+  "changed_rankings": [],
+  "interpretation": "No retrieval tuning. Drift is disclosed if encoder/package/runtime changes affect rankings."
+}
