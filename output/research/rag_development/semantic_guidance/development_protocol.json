@@ -1,0 +1,31 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "cases_sha256": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45",
+  "corpus_sha256": "e0fa0e3ba8a911b1da419a4681c24567c59ffedcac631b3426d5c3b17e312d96",
+  "definition_graph_sha256": "e547fed92bb640c1ba6e000da0a1df6b3ffd0d5aba886f94a107615bc1370791",
+  "parent_protocol_sha256": "8f07750bbe7de5085e4a95c537596ea4b3e17f5e1915aa50e7bbe7da68a2a966",
+  "methods": [
+    "ce_full_pool",
+    "ce_guidance_genre",
+    "ce_definition_graph"
+  ],
+  "depths": [
+    4,
+    8
+  ],
+  "rrf_k": 60,
+  "mmr_diversity": 0.15,
+  "new_groq_calls": 0,
+  "candidate_policy": "All source/age/setting/topic-admitted guidance passages in the small reviewed-structure lane; no preliminary top-60 loss.",
+  "fusion": "Equal RRF60 of original-question and existing-facet CE rankings for both frozen cross encoders. Lexical/dense ranks do not override CE relevance.",
+  "graph": "Exact publisher definitions enrich scoring text only. Original passages stay immutable. Additional released definition context is counted separately.",
+  "clinical_review_status": "pending; engineering scope/genre extraction is not clinical approval",
+  "code_sha256": {
+    "backend/scripts/develop_semantic_guidance.py": "041721388a207f1f98ce34373276c87ef9c3190e4f9603eb1110efabee79d8be",
+    "backend/rag/source_retrieval_views.py": "f48a3839d4df0434a8b1c98ff30f5ffe7080befc27c7a39828e944ed035528fd",
+    "backend/rag/relevance.py": "69f1222b58b1f583598f74d34b2e1ce394f2ba173545cf2121d922a6f126a754",
+    "backend/rag/faceted_selection.py": "6cf26eca5e9682879e74874529210a88e53b38434d9c8673043ed32f5ccb4d27",
+    "backend/rag/bounded_facets.py": "35279e8830fa33da32c5860607e08afb558880dc9588bf118bd9fb7394eff161"
+  }
+}

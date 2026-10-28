@@ -1,0 +1,3 @@
+method,seed,positive_infant_omissions,min_auprc_after_omission,max_auprc_after_omission,min_auroc_after_omission,max_auroc_after_omission,interpretation
+nested_selected,31,7,0.009695835451824137,0.01766618287254068,0.3505860454671089,0.4971198694029849,Sensitivity of fixed OOF predictions; not retrained leave-one-out validation.
+compact_lr_knn_C01,31,7,0.014627612978894216,0.10699387064606657,0.3129007739082367,0.4492174543946929,Sensitivity of fixed OOF predictions; not retrained leave-one-out validation.

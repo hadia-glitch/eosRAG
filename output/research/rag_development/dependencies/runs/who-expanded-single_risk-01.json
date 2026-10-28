@@ -1,0 +1,34 @@
+{
+  "id": "who-expanded-single_risk-01",
+  "guideline": "WHO",
+  "family": "single_risk",
+  "stage": "development_only",
+  "candidate_ids": [
+    "WHO2024-A.1",
+    "WHO2024-C-RISK",
+    "WHO2024-C-CLINICAL",
+    "WHO2024-A.1-DEFINITION",
+    "WHO2024-A.2",
+    "WHO2024-A.4",
+    "WHO2024-C-REFERRAL",
+    "WHO2024-A.3a",
+    "WHO2024-A.3b"
+  ],
+  "dependency_additions": [],
+  "available": true,
+  "selected_ids": [
+    "WHO2024-C-RISK"
+  ],
+  "consensus_ids": [
+    "WHO2024-C-RISK",
+    "WHO2024-A.1",
+    "WHO2024-C-CLINICAL",
+    "WHO2024-A.1-DEFINITION",
+    "WHO2024-A.2",
+    "WHO2024-A.4",
+    "WHO2024-C-REFERRAL",
+    "WHO2024-A.3a"
+  ],
+  "calls": [],
+  "exact_request_replay": true
+}

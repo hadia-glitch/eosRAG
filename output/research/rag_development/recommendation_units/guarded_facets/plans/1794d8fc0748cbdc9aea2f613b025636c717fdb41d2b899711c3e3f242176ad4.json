@@ -1,0 +1,12 @@
+{
+  "source": "WHO",
+  "query": "CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance?",
+  "available": true,
+  "questions": [
+    "What WHO-recommended clinical signs indicate the need for referral or inpatient care in neonates with worsening feeding and fever despite decreasing CRP?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": true,
+  "original_record_sha256": "86ea955da997ad98b1b3d5a930115d3b2a370eed8acef207de74b19ac10aacb0",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

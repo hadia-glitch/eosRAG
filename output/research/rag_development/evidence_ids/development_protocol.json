@@ -1,0 +1,43 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "pilot_case_ids": [
+    "deterioration-1",
+    "crp_alone-1",
+    "incomplete_stop-1",
+    "initial_investigation-1",
+    "single_risk-1",
+    "missing_results-1",
+    "aap-expanded-deterioration-01",
+    "aap-expanded-crp_alone-01",
+    "aap-expanded-incomplete_stop-01",
+    "aap-expanded-initial_investigation-01",
+    "aap-expanded-single_risk-01",
+    "aap-expanded-missing_results-01",
+    "who-expanded-deterioration-01",
+    "who-expanded-crp_alone-01",
+    "who-expanded-incomplete_stop-01",
+    "who-expanded-initial_investigation-01",
+    "who-expanded-single_risk-01",
+    "who-expanded-missing_results-01"
+  ],
+  "total_existing_cases": 100,
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0,
+  "sampling_seed": null,
+  "rrf_k": 60,
+  "candidate_budget": 24,
+  "selected_budget": 8,
+  "completion_tokens": 4000,
+  "corpus_sha256": "953ce6746d5ef37bb64070d17bc6286dd183c358b5af8443908b244536e8ca20",
+  "dependency_graph_sha256": "75fabab89c86d17c4cdadfc946987c0519a348438ca4ce4028a467f6e154e417",
+  "upstream_protocol_sha256": "bd81d7180052865d21b0f2591bf05facb151ba77c528e88eeb1b310c18325f7b",
+  "code_sha256": {
+    "backend/rag/evidence_set_ids.py": "278de67bdcad3890e3819bdd01d8efb47877f842ca04771cc2a688ffed80e92d",
+    "backend/rag/evidence_dependency_graph.py": "d74595a0714ca6079a5c8a49a2558115981678fa464203b555d5c57315ca89e3",
+    "backend/scripts/develop_evidence_id_retrieval.py": "6cf2108bb41cfefb5036563017af837b09fd1f80d76df221a533928828142ffe"
+  },
+  "change": "Essential/supporting relevance rationale; complete source text is materialized by immutable ID, never generated. Same dependency candidate construction. No labels or engineering answers in prompts.",
+  "expansion": "Review balanced 18-case pilot before explicitly continuing the remaining exposed development cases.",
+  "clinical_review_status": "pending; source identity is not an independent semantic audit"
+}

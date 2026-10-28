@@ -5,6 +5,7 @@ import 'screens/first_login_setup_screen.dart';
 import 'home_dashboard.dart';
 import 'screens/new_patient_screen.dart';
 import 'screens/admin_screens.dart';
+import 'screens/longitudinal_inputs_screen.dart';
 
 final appRouter = GoRouter(
   initialLocation: '/',
@@ -14,6 +15,10 @@ final appRouter = GoRouter(
     GoRoute(path: '/setup', builder: (_, _) => const FirstLoginSetupScreen()),
     GoRoute(path: '/home', builder: (_, _) => const HomeDashboard()),
     GoRoute(path: '/new-patient', builder: (_, _) => const NewPatientScreen()),
+    GoRoute(
+      path: '/research/longitudinal',
+      builder: (_, _) => const LongitudinalInputsScreen(),
+    ),
 
     // User management is intentionally parked for now.
     // GoRoute(path: '/admin/users', builder: (_, __) => const UserManagementScreen()),

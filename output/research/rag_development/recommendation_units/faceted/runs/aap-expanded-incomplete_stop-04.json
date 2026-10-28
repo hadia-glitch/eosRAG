@@ -1,0 +1,252 @@
+{
+  "id": "aap-expanded-incomplete_stop-04",
+  "family": "incomplete_stop",
+  "guideline": "AAP",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "AAP2018-35PLUS-SP6"
+      ],
+      "2": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP"
+      ],
+      "4": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P5-B8"
+      ],
+      "6": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B3"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "12": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP5",
+        "AAP2018-35PLUS-P6-B2"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "AAP2018-35PLUS-SP6"
+      ],
+      "2": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "4": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3"
+      ],
+      "6": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P6-B10"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P6-B14"
+      ],
+      "12": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P6-B14",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-SP5",
+        "AAP2018-35PLUS-SP2"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "AAP2018-35PLUS-SP6"
+      ],
+      "2": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP"
+      ],
+      "4": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B5"
+      ],
+      "6": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P5-B9"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-SP5"
+      ],
+      "12": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-SP5",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B0"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "AAP2018-35PLUS-SP6"
+      ],
+      "2": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP"
+      ],
+      "4": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "6": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P5-B8"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-SP5"
+      ],
+      "12": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-SP5",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "AAP2018-35PLUS-SP6"
+      ],
+      "2": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P5-B3"
+      ],
+      "4": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "6": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-SP2"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-SP5"
+      ],
+      "12": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-SP5",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P4-B5"
+      ]
+    }
+  },
+  "questions": [
+    "In neonates 0-72 hours with sterile blood cultures after incubation, what criteria allow discontinuation of empiric antibiotics despite persistent respiratory illness?",
+    "What antibiotic stewardship recommendations guide review and possible cessation of therapy for early\u2011onset neonatal sepsis when blood cultures are negative but clinical signs remain?",
+    "When are stopping conditions for antibiotics established in early\u2011onset sepsis if the blood culture is sterile and the infant continues to have respiratory symptoms?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 30,
+  "replayed_unchanged_source": true,
+  "parent_record_sha256": "51b523cf10f9a3e07cb8a51bce88704319308d6cdfca7359ee4e566dd15f5b6b"
+}

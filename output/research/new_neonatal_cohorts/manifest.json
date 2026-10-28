@@ -1,0 +1,22 @@
+{
+  "clinical_ready": false,
+  "app_model_changed": false,
+  "patient_rows_included": false,
+  "real_patient_weights_included": false,
+  "files_sha256": {
+    "output/research/new_neonatal_cohorts/cohort_counts.csv": "323018a21cbf835c9bf900ecac70b06b83433cc1355bbeb486375359abe5f108",
+    "output/research/new_neonatal_cohorts/intervals.csv": "3f224dd6f94398de3010a63cc19c7143dc71bf43cb50b9f9711e59594f54a69f",
+    "output/research/new_neonatal_cohorts/metrics.csv": "6f547cdb9f827a016b71d0bfb58ed71b305b1426e1313d8a6dcc16c92cd2cec0",
+    "output/research/new_neonatal_cohorts/paired_auroc.csv": "8fcad774ef086833d048b2d52a34fd2e5545880a3f7daf3dae3b760f217fce26",
+    "output/research/new_neonatal_cohorts/progress.json": "c64533697ff40313cc4c54f5abaec223b484d0a49ecbd025bf432cf6400e545b",
+    "output/research/new_neonatal_cohorts/protocol.json": "d568b1888cd342bbdfc0b77e1f9d13c511b0e68f4144432ef39e37ebea16ff5d",
+    "output/research/new_neonatal_cohorts/report.md": "e759ccae24e505abbcbcd2c0bc68ce1e0bcd6db27c10540b92890d0b90577f61",
+    "output/research/new_neonatal_cohorts/results.json": "94c591465710a8003d799cf4e99c544e6af78ba0e4b631f0412ce227be611d1e",
+    "output/research/new_neonatal_cohorts/selections.csv": "50c96bbb0e0af84ffbcb9b99ea4e7208bd0808e1fb4a193b592bf063b92a5b83",
+    "backend/ml/evaluate_new_cohorts.py": "416109b98549c2fcf05808f94a6942d7d27ae31070e65d1cc05ca449606fcc2d",
+    "backend/tests/test_new_cohort_preparation.py": "40ed24b8c6ecaa9920c5426f33666de1ec99f70aa404b10baa2988b13c63e206",
+    "scripts/report_new_cohort_models.py": "56645e6be576b59905027ca66b50fb2a3d62123043bed91073c4206a7a79f97f",
+    "docs/research/manuscript.md": "7e15c920d44b154475ca78cab90597090d0c503c3df7d3e9b73eef00b6427a3d",
+    "output/pdf/neoguard-eos-research-paper.pdf": "af1273b5acc2faa5667db74ec8dc26b64ea9fe364d242914aaa1f56d4984dc54"
+  }
+}

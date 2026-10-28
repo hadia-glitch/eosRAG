@@ -1,0 +1,15 @@
+{
+  "base_cases": 100,
+  "completed": 100,
+  "view": "complete indexed passages and unchanged recorded facts",
+  "source_fidelity_checks": "exact text/hash match against corpus; unchanged patient/history; chronological history",
+  "fidelity_is_clinical_validity": false,
+  "clinical_eligibility_assertions": 0,
+  "new_llm_calls": 0,
+  "clinical_ready": false,
+  "limitation": "A constrained research fallback. It does not answer all clinical reasoning questions or prove retrieval relevance, guideline approval, or clinical utility.",
+  "code_sha256": {
+    "backend/rag/clinical_evidence_brief.py": "9549c5a380682af7497bc8c94aeea27c19ab2a81318b640941c742c1fd656686",
+    "backend/scripts/build_patient_evidence_briefs.py": "f6d65f64baa27a94ce78f0c82d3f5880a9a555ee25581e1b1597d5934bfa1a7d"
+  }
+}

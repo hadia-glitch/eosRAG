@@ -1,0 +1,31 @@
+{
+  "stage": "exploratory_diagnostic_development",
+  "seeds": [
+    31,
+    47,
+    83
+  ],
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "candidate_selection": "maximum inner patient-weighted AUROC; insertion order tie break",
+  "candidates": [
+    "lr_C01",
+    "lr_C1",
+    "forest",
+    "extra_trees",
+    "boost"
+  ],
+  "threshold_selection": "inner-OOF maximum balanced accuracy over fixed grid 0.05:0.01:0.95; largest threshold breaks ties",
+  "bootstrap": "2000 resamples of independent infants, seed31; all episodes of resampled infant retained",
+  "training": "median imputation and scaling fitted within training fold; equal total weight per infant",
+  "clinical_ready": false,
+  "code_sha256": "416109b98549c2fcf05808f94a6942d7d27ae31070e65d1cc05ca449606fcc2d",
+  "prepared_cohort_sha256": {
+    "workbook": "332811c1717a4691f1c0503560de8f53df6f85c37bbd1ad539dc0010261dfa70",
+    "chop": "ed85feeac3ba79a7561c2752591b4a1ae57be2fa5c9ad8198ec4fa2f4fe8372a"
+  },
+  "packages": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.7.0"
+  }
+}

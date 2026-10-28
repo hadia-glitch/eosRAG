@@ -64,6 +64,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
       unawaited(OfflinePdfCache.syncAllPdfs());
     }
 
+
     // Not configured or not signed in → go to login
     if (!SupabaseConfig.isConfigured || !AuthService.instance.isSignedIn) {
       if (!mounted) return;
@@ -243,14 +244,14 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
             style: TextStyle(color: Colors.grey.shade400, fontSize: 14),
           ),
           const SizedBox(height: 32),
-          SizedBox(
-            width: 28,
-            height: 28,
-            child: CircularProgressIndicator(
-              strokeWidth: 2.5,
-              color: WhoTheme.secondaryTeal.withValues(alpha: 0.8),
+            SizedBox(
+              width: 28,
+              height: 28,
+              child: CircularProgressIndicator(
+                strokeWidth: 2.5,
+                color: WhoTheme.secondaryTeal.withValues(alpha: 0.8),
+              ),
             ),
-          ),
         ],
       ),
     );

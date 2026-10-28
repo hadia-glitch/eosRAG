@@ -1,0 +1,237 @@
+{
+  "id": "who-expanded-deterioration-02",
+  "family": "deterioration",
+  "guideline": "WHO",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "WHO2024-A.4"
+      ],
+      "2": [
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL"
+      ],
+      "4": [
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL"
+      ],
+      "6": [
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1",
+        "WHO2024-A.2"
+      ],
+      "8": [
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1",
+        "WHO2024-A.2",
+        "WHO2024-C-RISK",
+        "WHO2024-A.3a"
+      ],
+      "12": [
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1",
+        "WHO2024-A.2",
+        "WHO2024-C-RISK",
+        "WHO2024-A.3a",
+        "WHO2024-A.3b"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "2": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.4"
+      ],
+      "4": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "6": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-A.1"
+      ],
+      "8": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-A.1",
+        "WHO2024-A.3a",
+        "WHO2024-C-RISK"
+      ],
+      "12": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-A.1",
+        "WHO2024-A.3a",
+        "WHO2024-C-RISK",
+        "WHO2024-A.3b"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "WHO2024-A.4"
+      ],
+      "2": [
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL"
+      ],
+      "4": [
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL"
+      ],
+      "6": [
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1",
+        "WHO2024-A.2"
+      ],
+      "8": [
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1",
+        "WHO2024-A.2",
+        "WHO2024-C-RISK",
+        "WHO2024-A.3a"
+      ],
+      "12": [
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1",
+        "WHO2024-A.2",
+        "WHO2024-C-RISK",
+        "WHO2024-A.3a",
+        "WHO2024-A.3b"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "WHO2024-C-REFERRAL"
+      ],
+      "2": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4"
+      ],
+      "4": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "6": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-C-RISK"
+      ],
+      "8": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-C-RISK",
+        "WHO2024-A.1",
+        "WHO2024-A.3a"
+      ],
+      "12": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-C-RISK",
+        "WHO2024-A.1",
+        "WHO2024-A.3a",
+        "WHO2024-A.3b"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "WHO2024-C-REFERRAL"
+      ],
+      "2": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4"
+      ],
+      "4": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "6": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-A.1"
+      ],
+      "8": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.3a"
+      ],
+      "12": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.3a",
+        "WHO2024-A.3b"
+      ]
+    }
+  },
+  "questions": [
+    "What clinical assessment and referral criteria should be used in primary care for a newborn presenting with new inability to feed?",
+    "How should isolated fast breathing (tachypnea) in a newborn be evaluated and when is referral indicated in primary care settings?",
+    "What are the recommended signs and symptoms that trigger referral of a newborn with feeding difficulty or isolated tachypnea according to WHO guidelines?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 9,
+  "replayed_unchanged_source": true,
+  "parent_record_sha256": "2d989ea9c30c03b1d4bd5355680dad5f67febf6c67417484baae66ba900e6916"
+}

@@ -1,0 +1,65 @@
+{
+  "stage": "development_only",
+  "clinical_eos_eligible": false,
+  "feature_version": "pic-longitudinal-v1",
+  "seed": 31,
+  "cohort_sha256": "1fce5559ba1726524510a075eae5397c585dd5a5fa577f45705ed808e39e7640",
+  "cohort_protocol_sha256": "e68388aa6b887e6b82aa076c41defebf77d65caef0df6b506bcf5f08ab342b9c",
+  "models": {
+    "snapshot_logistic": [
+      "snapshot",
+      "logistic"
+    ],
+    "trend_logistic": [
+      "trend",
+      "logistic"
+    ],
+    "binned_logistic": [
+      "binned",
+      "logistic"
+    ],
+    "trend_forest": [
+      "trend",
+      "forest"
+    ]
+  },
+  "folds": 3,
+  "split": "Patient-stratified random folds; dates are shifted, not calendar-temporal validation",
+  "preprocessing": "Training-fold-only variable column selection, median imputation, standard scaling, explicit missingness indicators. No outcome or synthetic donor imputation.",
+  "logistic_C": 0.03,
+  "forest": {
+    "n_estimators": 160,
+    "max_depth": 3,
+    "min_samples_leaf": 20,
+    "max_features": 0.6
+  },
+  "weights": "Equal total weight per patient despite repeated landmarks",
+  "thresholds": [
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "threshold_use": "Descriptive research operating points only; no clinical action threshold",
+  "selection": "Highest patient-weighted cross-validated AUPRC among longitudinal candidates for the dynamic research artifact; the snapshot baseline is retained and may be higher. Selection on these folds is development, not independent validation.",
+  "neural_minimum_positive_patients": 100,
+  "neural_policy": "Do not fit an underdetermined recurrent network below this engineering floor; not a clinical sample-size justification.",
+  "calibration": "No separate calibration cohort is available. Probabilities are research model scores, not validated absolute EOS risks.",
+  "bootstrap": {
+    "unit": "patient",
+    "repeats": 2000,
+    "seed": 31
+  },
+  "code_sha256": {
+    "backend\\ml\\train_pic_longitudinal.py": "8031e5f77597862fec49b4453a21c6265f28c7110e08c1e1cc5bdad639076b1f",
+    "backend\\ml\\dynamic_features.py": "0d43010c3cbc11da0246439a1989e019d144b9b1f1aa4cc677fc4575ec140e6e",
+    "backend\\ml\\dynamic_contract.py": "391b0c9da83ab180069d282ebf6e18c53ecdc01237bbf9c594ff053067564789",
+    "backend\\ml\\pic_dataset.py": "11874875fad9a115de4fd1f162b48c96c3ae73de5504955d26f5beebc4495b09"
+  },
+  "packages": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.7.0",
+    "pandas": "2.3.1",
+    "pydantic": "2.11.7"
+  }
+}

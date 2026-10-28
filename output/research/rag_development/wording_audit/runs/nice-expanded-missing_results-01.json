@@ -1,0 +1,228 @@
+{
+  "id": "nice-expanded-missing_results-01",
+  "guideline": "NICE",
+  "family": "missing_results",
+  "rankings": {
+    "fixed_facet_plan:original": {
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.21.2",
+        "NICE-1.13.2"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.21.2",
+        "NICE-1.13.2",
+        "NICE-1.15.4",
+        "NICE-1.13.3",
+        "NICE-1.10.5",
+        "NICE-1.11.1"
+      ]
+    },
+    "question_only:original": {
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.13.2",
+        "NICE-1.13.5"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.13.2",
+        "NICE-1.13.5",
+        "NICE-1.13.1",
+        "NICE-1.21.2",
+        "NICE-1.17.2",
+        "NICE-1.14.6"
+      ]
+    },
+    "fixed_facet_plan:clinical_shorthand": {
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.21.2",
+        "NICE-1.10.5"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.21.2",
+        "NICE-1.10.5",
+        "NICE-1.15.4",
+        "NICE-1.13.3",
+        "NICE-1.11.1",
+        "NICE-1.13.2"
+      ]
+    },
+    "question_only:clinical_shorthand": {
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.13.2",
+        "NICE-1.21.2"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.13.2",
+        "NICE-1.21.2",
+        "NICE-1.13.1",
+        "NICE-1.13.5",
+        "NICE-1.14.6",
+        "NICE-1.31.4"
+      ]
+    },
+    "fixed_facet_plan:plain_language": {
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.13.3",
+        "NICE-1.10.3",
+        "NICE-1.21.2"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.13.3",
+        "NICE-1.10.3",
+        "NICE-1.21.2",
+        "NICE-1.11.1",
+        "NICE-1.10.5",
+        "NICE-1.13.5",
+        "NICE-1.13.2"
+      ]
+    },
+    "question_only:plain_language": {
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.13.2",
+        "NICE-1.13.5"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.13.2",
+        "NICE-1.13.5",
+        "NICE-1.13.3",
+        "NICE-1.13.1",
+        "NICE-1.21.2",
+        "NICE-1.16.1"
+      ]
+    }
+  },
+  "queries": {
+    "original": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings.",
+    "clinical_shorthand": "Maternal history and culture results are unavailable and the latest bedside evaluations is missing. Explain uncertainty and the assessment needed without assuming normal findings.",
+    "plain_language": "the recorded maternal background and culture results are unavailable and the latest bedside findings is missing. Describe incomplete information and the assessment needed without assuming normal findings."
+  },
+  "definition_context_ids": {
+    "NICE-1.1.1": [],
+    "NICE-1.1.2": [],
+    "NICE-1.1.3": [],
+    "NICE-1.1.4": [],
+    "NICE-1.1.5": [],
+    "NICE-1.2.1": [],
+    "NICE-1.2.2": [],
+    "NICE-1.2.3": [],
+    "NICE-1.3.1": [],
+    "NICE-1.3.2": [],
+    "NICE-1.3.3": [],
+    "NICE-1.4.1": [],
+    "NICE-1.5.1": [],
+    "NICE-1.6.2": [],
+    "NICE-1.6.3": [],
+    "NICE-1.6.4": [],
+    "NICE-1.6.5": [],
+    "NICE-1.7.1": [],
+    "NICE-1.8.1": [],
+    "NICE-1.10.1": [],
+    "NICE-1.10.2": [],
+    "NICE-1.10.3": [],
+    "NICE-1.10.5": [],
+    "NICE-1.11.1": [],
+    "NICE-1.13.1": [],
+    "NICE-1.13.2": [],
+    "NICE-1.13.3": [],
+    "NICE-1.13.5": [],
+    "NICE-1.14.1": [],
+    "NICE-1.14.2": [],
+    "NICE-1.14.3": [],
+    "NICE-1.14.4": [],
+    "NICE-1.14.5": [],
+    "NICE-1.14.6": [],
+    "NICE-1.14.7": [],
+    "NICE-1.14.11": [],
+    "NICE-1.15.1": [],
+    "NICE-1.15.2": [],
+    "NICE-1.15.3": [],
+    "NICE-1.15.4": [],
+    "NICE-1.16.1": [],
+    "NICE-1.16.2": [],
+    "NICE-1.17.2": [],
+    "NICE-1.18.1": [],
+    "NICE-1.18.2": [],
+    "NICE-1.19.1": [],
+    "NICE-1.20.1": [],
+    "NICE-1.20.2": [],
+    "NICE-1.20.3": [],
+    "NICE-1.20.4": [],
+    "NICE-1.20.5": [],
+    "NICE-1.20.6": [],
+    "NICE-1.20.8": [],
+    "NICE-1.21.1": [],
+    "NICE-1.21.2": [],
+    "NICE-1.21.3": [],
+    "NICE-1.21.4": [],
+    "NICE-1.22.2": [],
+    "NICE-1.22.3": [],
+    "NICE-1.22.4": [],
+    "NICE-1.22.5": [],
+    "NICE-1.22.6": [],
+    "NICE-1.27.1": [],
+    "NICE-1.27.2": [],
+    "NICE-1.27.3": [],
+    "NICE-1.27.4": [],
+    "NICE-1.27.5": [],
+    "NICE-1.27.6": [],
+    "NICE-1.28.1": [],
+    "NICE-1.28.2": [],
+    "NICE-1.29.1": [],
+    "NICE-1.29.2": [],
+    "NICE-1.29.3": [],
+    "NICE-1.30.1": [],
+    "NICE-1.31.1": [],
+    "NICE-1.31.2": [],
+    "NICE-1.31.3": [],
+    "NICE-1.31.4": [],
+    "NICE-1.32.1": [],
+    "NICE-1.33.1": [],
+    "NICE-1.33.5": [],
+    "NICE-1.33.6": [],
+    "NICE-1.33.7": [],
+    "NICE-1.34.1": [],
+    "NICE-1.34.2": [],
+    "NICE-1.34.3": [],
+    "NICE-1.34.4": [],
+    "NICE-1.34.5": [],
+    "NICE-1.34.6": [],
+    "NICE-1.35.1": [],
+    "NICE-1.35.2": [],
+    "NICE-1.35.3": [],
+    "NICE-1.35.4": [],
+    "NICE-1.35.5": [],
+    "NICE-1.36.1": [],
+    "NICE-1.36.2": [],
+    "NICE-1.36.3": [],
+    "NICE-1.37.1": [],
+    "NICE-1.37.2": [],
+    "NICE-1.38.1": [],
+    "NICE-1.38.2": [],
+    "NICE-1.38.3": [],
+    "NICE-1.38.4": [],
+    "NICE-box1": [],
+    "NICE-box2": []
+  },
+  "original_pipeline_replay_equal": true
+}

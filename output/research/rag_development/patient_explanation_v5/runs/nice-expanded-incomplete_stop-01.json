@@ -1,0 +1,502 @@
+{
+  "id": "nice-expanded-incomplete_stop-01",
+  "guideline": "NICE",
+  "family": "incomplete_stop",
+  "stage": "development_only",
+  "packet": {
+    "guideline": "NICE; SYNTHETIC RESEARCH ONLY",
+    "task_mode": "clinical_explanation",
+    "evaluation_question": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 41 weeks; age 48 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 32.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "evidence": [
+      {
+        "id": "E1",
+        "chunk_id": "NICE-1.21.2",
+        "text": "Consider continuing intravenous antibiotic treatment for more than 7 days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if: \u2022 the baby has not yet fully recovered or \u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary). [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "section": "Publisher context",
+        "page_number": 30,
+        "kind": "recommendation"
+      },
+      {
+        "id": "E2",
+        "chunk_id": "NICE-1.21.4",
+        "text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "section": "Publisher context",
+        "page_number": 31,
+        "kind": "recommendation"
+      },
+      {
+        "id": "E3",
+        "chunk_id": "NICE-1.16.1",
+        "text": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "section": "Publisher context",
+        "page_number": 26,
+        "kind": "recommendation"
+      },
+      {
+        "id": "E4",
+        "chunk_id": "NICE-1.20.5",
+        "text": "If a second dose of gentamicin is given this should usually be 36 hours after the first dose (for criteria for stopping antibiotics at 36 hours, see recommendation 1.21.3 in the section on treatment duration for intravenous antibiotics for early- onset neonatal infection). Use a shorter interval if clinical judgement suggests this is needed, for example, if: \u2022 the baby appears very ill \u2022 the blood culture shows a Gram-negative infection. [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "section": "Publisher context",
+        "page_number": 29,
+        "kind": "recommendation"
+      },
+      {
+        "id": "E5",
+        "chunk_id": "NICE-1.15.4",
+        "text": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics. Consider whether to change the antibiotic regimen, taking account of: \u2022 the baby's clinical condition (for example, if there is no improvement) \u2022 the results of microbiological investigations \u2022 expert microbiological advice, including local surveillance data. [2012]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "section": "Publisher context",
+        "page_number": 25,
+        "kind": "recommendation"
+      },
+      {
+        "id": "E6",
+        "chunk_id": "NICE-1.19.1",
+        "text": "In babies with clinical signs of umbilical infection, such as a purulent discharge or signs of periumbilical cellulitis (for example, redness, increased skin warmth or swelling): \u2022 perform a blood culture and \u2022 take a swab sample for microscopy and culture and \u2022 start antibiotic treatment with intravenous flucloxacillin and gentamicin (for starting dose of gentamicin, see recommendation 1.20.3 in the section on choice and dosage of intravenous antibiotics for suspected early-onset neonatal infection). If the microbiology results show that the infection is not caused by a Gram- negative bacterium, stop the gentamicin. [2012] Antibiotics for early-onset neonatal infection",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "section": "Publisher context",
+        "page_number": 28,
+        "kind": "recommendation"
+      },
+      {
+        "id": "E7",
+        "chunk_id": "NICE-1.21.3",
+        "text": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "section": "Publisher context",
+        "page_number": 30,
+        "kind": "recommendation"
+      },
+      {
+        "id": "E8",
+        "chunk_id": "NICE-1.13.1",
+        "text": "When starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose. [2021]",
+        "source": "NICE NG195",
+        "version": "2026-05-13",
+        "section": "Publisher context",
+        "page_number": 21,
+        "kind": "recommendation"
+      }
+    ]
+  },
+  "result": {
+    "packet": {
+      "guideline": "NICE; SYNTHETIC RESEARCH ONLY",
+      "task_mode": "clinical_explanation",
+      "evaluation_question": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 41 weeks; age 48 hours; setting hospital birth.",
+      "patient": {
+        "age_hours": 48,
+        "gestational_age_weeks": 41,
+        "care_setting": "hospital_birth",
+        "respiratory_rate": 76,
+        "spo2": 97,
+        "crp": 3,
+        "culture_status": "negative",
+        "maternal_gbs": "unknown",
+        "red_flags": "not fully documented",
+        "culture_incubation_hours": 36,
+        "antibiotic_duration_hours": 36,
+        "clinical_condition": "persistent respiratory distress",
+        "initial_suspicion": "not documented",
+        "site_specific_infection": "not established"
+      },
+      "history": [
+        {
+          "age_hours": 16.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 18
+        },
+        {
+          "age_hours": 32.0,
+          "respiratory_rate": 46,
+          "spo2": 98,
+          "crp": 9
+        }
+      ],
+      "evidence": [
+        {
+          "id": "E1",
+          "chunk_id": "NICE-1.21.2",
+          "text": "Consider continuing intravenous antibiotic treatment for more than 7 days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if: \u2022 the baby has not yet fully recovered or \u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary). [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "section": "Publisher context",
+          "page_number": 30,
+          "kind": "recommendation"
+        },
+        {
+          "id": "E2",
+          "chunk_id": "NICE-1.21.4",
+          "text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "section": "Publisher context",
+          "page_number": 31,
+          "kind": "recommendation"
+        },
+        {
+          "id": "E3",
+          "chunk_id": "NICE-1.16.1",
+          "text": "Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital. [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "section": "Publisher context",
+          "page_number": 26,
+          "kind": "recommendation"
+        },
+        {
+          "id": "E4",
+          "chunk_id": "NICE-1.20.5",
+          "text": "If a second dose of gentamicin is given this should usually be 36 hours after the first dose (for criteria for stopping antibiotics at 36 hours, see recommendation 1.21.3 in the section on treatment duration for intravenous antibiotics for early- onset neonatal infection). Use a shorter interval if clinical judgement suggests this is needed, for example, if: \u2022 the baby appears very ill \u2022 the blood culture shows a Gram-negative infection. [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "section": "Publisher context",
+          "page_number": 29,
+          "kind": "recommendation"
+        },
+        {
+          "id": "E5",
+          "chunk_id": "NICE-1.15.4",
+          "text": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics. Consider whether to change the antibiotic regimen, taking account of: \u2022 the baby's clinical condition (for example, if there is no improvement) \u2022 the results of microbiological investigations \u2022 expert microbiological advice, including local surveillance data. [2012]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "section": "Publisher context",
+          "page_number": 25,
+          "kind": "recommendation"
+        },
+        {
+          "id": "E6",
+          "chunk_id": "NICE-1.19.1",
+          "text": "In babies with clinical signs of umbilical infection, such as a purulent discharge or signs of periumbilical cellulitis (for example, redness, increased skin warmth or swelling): \u2022 perform a blood culture and \u2022 take a swab sample for microscopy and culture and \u2022 start antibiotic treatment with intravenous flucloxacillin and gentamicin (for starting dose of gentamicin, see recommendation 1.20.3 in the section on choice and dosage of intravenous antibiotics for suspected early-onset neonatal infection). If the microbiology results show that the infection is not caused by a Gram- negative bacterium, stop the gentamicin. [2012] Antibiotics for early-onset neonatal infection",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "section": "Publisher context",
+          "page_number": 28,
+          "kind": "recommendation"
+        },
+        {
+          "id": "E7",
+          "chunk_id": "NICE-1.21.3",
+          "text": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "section": "Publisher context",
+          "page_number": 30,
+          "kind": "recommendation"
+        },
+        {
+          "id": "E8",
+          "chunk_id": "NICE-1.13.1",
+          "text": "When starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose. [2021]",
+          "source": "NICE NG195",
+          "version": "2026-05-13",
+          "section": "Publisher context",
+          "page_number": 21,
+          "kind": "recommendation"
+        }
+      ]
+    },
+    "draft": {
+      "claims": [
+        {
+          "id": "C1",
+          "section": "antibiotic_review",
+          "text": "Because the blood culture remains sterile after 36\u202fhours of incubation and the infant shows persistent respiratory distress without improvement, the guideline requires a daily review of the need for ongoing antibiotics, considering the initial suspicion, clinical progress, and CRP trends.",
+          "support": [
+            {
+              "evidence_id": "E2",
+              "quote": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of:"
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "the level of initial clinical suspicion of infection and"
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "the baby's clinical progress and current condition and"
+            },
+            {
+              "evidence_id": "E2",
+              "quote": "the levels and trends of C-reactive protein concentration."
+            }
+          ]
+        },
+        {
+          "id": "C2",
+          "section": "risk_analysis",
+          "text": "The infant\u2019s initial clinical suspicion of infection is unclear and red\u2011flag documentation is incomplete, which aligns with the \u201cnot strong\u201d suspicion criterion for stopping antibiotics at 36\u202fhours.",
+          "support": [
+            {
+              "evidence_id": "E7",
+              "quote": "the initial clinical suspicion of infection was not strong and"
+            }
+          ]
+        },
+        {
+          "id": "C3",
+          "section": "recommended_actions",
+          "text": "Stopping criteria at 36\u202fhours are met only if the blood culture is negative, the clinical condition is reassuring, and CRP levels are reassuring; the current CRP (3\u202fmg/L) is low but the infant\u2019s respiratory rate remains markedly elevated (76\u202fbreaths/min) and oxygenation is borderline, indicating the clinical condition is not yet reassuring.",
+          "support": [
+            {
+              "evidence_id": "E7",
+              "quote": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if:"
+            },
+            {
+              "evidence_id": "E7",
+              "quote": "the blood culture is negative and"
+            },
+            {
+              "evidence_id": "E7",
+              "quote": "the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and"
+            },
+            {
+              "evidence_id": "E7",
+              "quote": "the levels and trends of C-reactive protein concentration are reassuring."
+            }
+          ]
+        },
+        {
+          "id": "C4",
+          "section": "monitoring_plan",
+          "text": "Continue intravenous antibiotics while reassessing the infant at least every 24\u202fhours, documenting respiratory status, CRP trend, and any new signs of infection, and seek expert microbiology input if the clinical picture changes.",
+          "support": [
+            {
+              "evidence_id": "E5",
+              "quote": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics."
+            },
+            {
+              "evidence_id": "E5",
+              "quote": "Consider whether to change the antibiotic regimen, taking account of:"
+            },
+            {
+              "evidence_id": "E5",
+              "quote": "the baby's clinical condition (for example, if there is no improvement)"
+            },
+            {
+              "evidence_id": "E5",
+              "quote": "expert microbiological advice, including local surveillance data."
+            }
+          ]
+        },
+        {
+          "id": "C5",
+          "section": "escalation_criteria",
+          "text": "If the infant\u2019s respiratory distress worsens, CRP rises, or new infection signs appear, escalation to broader-spectrum therapy or specialist review is indicated, as the guideline advises adjusting the regimen based on clinical condition and microbiology results.",
+          "support": [
+            {
+              "evidence_id": "E5",
+              "quote": "the baby's clinical condition (for example, if there is no improvement)"
+            },
+            {
+              "evidence_id": "E5",
+              "quote": "the results of microbiological investigations"
+            }
+          ]
+        }
+      ]
+    },
+    "citation_errors": [
+      "C3: numerical medication/fluid dosing is not supported"
+    ],
+    "evidence_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Draft failed structural/source checks"
+      ]
+    },
+    "safety_verdict": {
+      "supported": false,
+      "rejected_claim_ids": [],
+      "checked_claim_ids": [],
+      "reasons": [
+        "Draft failed structural/source checks"
+      ]
+    },
+    "status": "abstained",
+    "errors": [
+      "C3: numerical medication/fluid dosing is not supported",
+      "Draft failed structural/source checks",
+      "Draft failed structural/source checks"
+    ],
+    "resolution_log": [],
+    "packet_sha256": "5cc6ebd09cd4876b1b5eb1fc29d1b1e9390c865257981c1eea0bc671f04fa897",
+    "verification_version": "patient-specific-specimen-aware-v5-research"
+  },
+  "calls": [
+    {
+      "role": "You are the evidence synthesis agent.",
+      "model": "openai/gpt-oss-120b",
+      "prompt_sha256": "5bf1227603929eecb7ad92820acdab5ee059e150a79707fd8a20e666f91c00e4",
+      "occurrence": 0,
+      "prompt": "{\"task\": \"Answer evaluation_question for THIS recorded infant in three to five atomic, source-supported discussion claims, or fewer if evidence is insufficient. Connect recorded findings, genuine serial changes or explicit unknowns to the applicable source conditions and limitations. A generic quotation alone may fail to explain the case. Every factual patient statement must be supported by patient/history, and every guideline component by immutable quote IDs. Do not invent diagnosis, normal observations, treatment exposure or satisfied stopping criteria. Keep medication and discharge options conditional; no treatment orders or numeric doses. Do not invent laboratory units or diagnostic cutoffs; observed measurements are rendered separately. Return the required claim schema; do not generate a full unrelated care plan.\", \"output_schema\": {\"$defs\": {\"IndexedClaim\": {\"additionalProperties\": false, \"properties\": {\"id\": {\"pattern\": \"^C[1-9][0-9]*$\", \"title\": \"Id\", \"type\": \"string\"}, \"section\": {\"enum\": [\"risk_analysis\", \"recommended_actions\", \"monitoring_plan\", \"escalation_criteria\", \"parent_communication_notes\", \"investigations\", \"antibiotic_review\", \"nutrition_fluids\", \"follow_up\"], \"title\": \"Section\", \"type\": \"string\"}, \"text\": {\"maxLength\": 1500, \"minLength\": 12, \"title\": \"Text\", \"type\": \"string\"}, \"support\": {\"items\": {\"$ref\": \"#/$defs/QuoteReference\"}, \"maxItems\": 4, \"minItems\": 1, \"title\": \"Support\", \"type\": \"array\"}}, \"required\": [\"id\", \"section\", \"text\", \"support\"], \"title\": \"IndexedClaim\", \"type\": \"object\"}, \"QuoteReference\": {\"additionalProperties\": false, \"properties\": {\"quote_id\": {\"pattern\": \"^E[1-9][0-9]*Q[1-9][0-9]*$\", \"title\": \"Quote Id\", \"type\": \"string\"}}, \"required\": [\"quote_id\"], \"title\": \"QuoteReference\", \"type\": \"object\"}}, \"additionalProperties\": false, \"properties\": {\"claims\": {\"items\": {\"$ref\": \"#/$defs/IndexedClaim\"}, \"maxItems\": 16, \"minItems\": 1, \"title\": \"Claims\", \"type\": \"array\"}}, \"required\": [\"claims\"], \"title\": \"IndexedDraft\", \"type\": \"object\"}, \"data\": {\"guideline\": \"NICE; SYNTHETIC RESEARCH ONLY\", \"task_mode\": \"clinical_explanation\", \"evaluation_question\": \"Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 41 weeks; age 48 hours; setting hospital birth.\", \"patient\": {\"age_hours\": 48, \"gestational_age_weeks\": 41, \"care_setting\": \"hospital_birth\", \"respiratory_rate\": 76, \"spo2\": 97, \"crp\": 3, \"culture_status\": \"negative\", \"maternal_gbs\": \"unknown\", \"red_flags\": \"not fully documented\", \"culture_incubation_hours\": 36, \"antibiotic_duration_hours\": 36, \"clinical_condition\": \"persistent respiratory distress\", \"initial_suspicion\": \"not documented\", \"site_specific_infection\": \"not established\"}, \"history\": [{\"age_hours\": 16.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 18}, {\"age_hours\": 32.0, \"respiratory_rate\": 46, \"spo2\": 98, \"crp\": 9}], \"evidence\": [{\"id\": \"E1\", \"chunk_id\": \"NICE-1.21.2\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"section\": \"Publisher context\", \"page_number\": 30, \"kind\": \"recommendation\", \"available_quotes\": [{\"quote_id\": \"E1Q1\", \"text\": \"Consider continuing intravenous antibiotic treatment for more than 7 days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if:\"}, {\"quote_id\": \"E1Q2\", \"text\": \"the baby has not yet fully recovered or\"}, {\"quote_id\": \"E1Q3\", \"text\": \"this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary).\"}]}, {\"id\": \"E2\", \"chunk_id\": \"NICE-1.21.4\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"section\": \"Publisher context\", \"page_number\": 31, \"kind\": \"recommendation\", \"available_quotes\": [{\"quote_id\": \"E2Q1\", \"text\": \"When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of:\"}, {\"quote_id\": \"E2Q2\", \"text\": \"the level of initial clinical suspicion of infection and\"}, {\"quote_id\": \"E2Q3\", \"text\": \"the baby's clinical progress and current condition and\"}, {\"quote_id\": \"E2Q4\", \"text\": \"the levels and trends of C-reactive protein concentration.\"}]}, {\"id\": \"E3\", \"chunk_id\": \"NICE-1.16.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"section\": \"Publisher context\", \"page_number\": 26, \"kind\": \"recommendation\", \"available_quotes\": [{\"quote_id\": \"E3Q1\", \"text\": \"Consider establishing hospital systems to provide blood culture results 36 hours after starting antibiotics for early-onset neonatal infection, to allow timely stopping of treatment and discharge from hospital.\"}]}, {\"id\": \"E4\", \"chunk_id\": \"NICE-1.20.5\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"section\": \"Publisher context\", \"page_number\": 29, \"kind\": \"recommendation\", \"available_quotes\": [{\"quote_id\": \"E4Q1\", \"text\": \"If a second dose of gentamicin is given this should usually be 36 hours after the first dose (for criteria for stopping antibiotics at 36 hours, see recommendation 1.21.3 in the section on treatment duration for intravenous antibiotics for early- onset neonatal infection).\"}, {\"quote_id\": \"E4Q2\", \"text\": \"Use a shorter interval if clinical judgement suggests this is needed, for example, if:\"}, {\"quote_id\": \"E4Q3\", \"text\": \"the baby appears very ill\"}, {\"quote_id\": \"E4Q4\", \"text\": \"the blood culture shows a Gram-negative infection.\"}]}, {\"id\": \"E5\", \"chunk_id\": \"NICE-1.15.4\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"section\": \"Publisher context\", \"page_number\": 25, \"kind\": \"recommendation\", \"available_quotes\": [{\"quote_id\": \"E5Q1\", \"text\": \"Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics.\"}, {\"quote_id\": \"E5Q2\", \"text\": \"Consider whether to change the antibiotic regimen, taking account of:\"}, {\"quote_id\": \"E5Q3\", \"text\": \"the baby's clinical condition (for example, if there is no improvement)\"}, {\"quote_id\": \"E5Q4\", \"text\": \"the results of microbiological investigations\"}, {\"quote_id\": \"E5Q5\", \"text\": \"expert microbiological advice, including local surveillance data.\"}]}, {\"id\": \"E6\", \"chunk_id\": \"NICE-1.19.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"section\": \"Publisher context\", \"page_number\": 28, \"kind\": \"recommendation\", \"available_quotes\": [{\"quote_id\": \"E6Q1\", \"text\": \"In babies with clinical signs of umbilical infection, such as a purulent discharge or signs of periumbilical cellulitis (for example, redness, increased skin warmth or swelling):\"}, {\"quote_id\": \"E6Q2\", \"text\": \"perform a blood culture and\"}, {\"quote_id\": \"E6Q3\", \"text\": \"take a swab sample for microscopy and culture and\"}, {\"quote_id\": \"E6Q4\", \"text\": \"start antibiotic treatment with intravenous flucloxacillin and gentamicin (for starting dose of gentamicin, see recommendation 1.20.3 in the section on choice and dosage of intravenous antibiotics for suspected early-onset neonatal infection).\"}, {\"quote_id\": \"E6Q5\", \"text\": \"If the microbiology results show that the infection is not caused by a Gram- negative bacterium, stop the gentamicin.\"}, {\"quote_id\": \"E6Q6\", \"text\": \"[2012] Antibiotics for early-onset neonatal infection\"}]}, {\"id\": \"E7\", \"chunk_id\": \"NICE-1.21.3\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"section\": \"Publisher context\", \"page_number\": 30, \"kind\": \"recommendation\", \"available_quotes\": [{\"quote_id\": \"E7Q1\", \"text\": \"For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if:\"}, {\"quote_id\": \"E7Q2\", \"text\": \"the blood culture is negative and\"}, {\"quote_id\": \"E7Q3\", \"text\": \"the initial clinical suspicion of infection was not strong and\"}, {\"quote_id\": \"E7Q4\", \"text\": \"the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and\"}, {\"quote_id\": \"E7Q5\", \"text\": \"the levels and trends of C-reactive protein concentration are reassuring.\"}, {\"quote_id\": \"E7Q6\", \"text\": \"[2012, amended 2026]\"}]}, {\"id\": \"E8\", \"chunk_id\": \"NICE-1.13.1\", \"source\": \"NICE NG195\", \"version\": \"2026-05-13\", \"section\": \"Publisher context\", \"page_number\": 21, \"kind\": \"recommendation\", \"available_quotes\": [{\"quote_id\": \"E8Q1\", \"text\": \"When starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose.\"}]}]}}",
+      "completion_tokens": 3000,
+      "response": {
+        "claims": [
+          {
+            "id": "C1",
+            "section": "antibiotic_review",
+            "text": "Because the blood culture remains sterile after 36\u202fhours of incubation and the infant shows persistent respiratory distress without improvement, the guideline requires a daily review of the need for ongoing antibiotics, considering the initial suspicion, clinical progress, and CRP trends.",
+            "support": [
+              {
+                "quote_id": "E2Q1"
+              },
+              {
+                "quote_id": "E2Q2"
+              },
+              {
+                "quote_id": "E2Q3"
+              },
+              {
+                "quote_id": "E2Q4"
+              }
+            ]
+          },
+          {
+            "id": "C2",
+            "section": "risk_analysis",
+            "text": "The infant\u2019s initial clinical suspicion of infection is unclear and red\u2011flag documentation is incomplete, which aligns with the \u201cnot strong\u201d suspicion criterion for stopping antibiotics at 36\u202fhours.",
+            "support": [
+              {
+                "quote_id": "E7Q3"
+              }
+            ]
+          },
+          {
+            "id": "C3",
+            "section": "recommended_actions",
+            "text": "Stopping criteria at 36\u202fhours are met only if the blood culture is negative, the clinical condition is reassuring, and CRP levels are reassuring; the current CRP (3\u202fmg/L) is low but the infant\u2019s respiratory rate remains markedly elevated (76\u202fbreaths/min) and oxygenation is borderline, indicating the clinical condition is not yet reassuring.",
+            "support": [
+              {
+                "quote_id": "E7Q1"
+              },
+              {
+                "quote_id": "E7Q2"
+              },
+              {
+                "quote_id": "E7Q4"
+              },
+              {
+                "quote_id": "E7Q5"
+              }
+            ]
+          },
+          {
+            "id": "C4",
+            "section": "monitoring_plan",
+            "text": "Continue intravenous antibiotics while reassessing the infant at least every 24\u202fhours, documenting respiratory status, CRP trend, and any new signs of infection, and seek expert microbiology input if the clinical picture changes.",
+            "support": [
+              {
+                "quote_id": "E5Q1"
+              },
+              {
+                "quote_id": "E5Q2"
+              },
+              {
+                "quote_id": "E5Q3"
+              },
+              {
+                "quote_id": "E5Q5"
+              }
+            ]
+          },
+          {
+            "id": "C5",
+            "section": "escalation_criteria",
+            "text": "If the infant\u2019s respiratory distress worsens, CRP rises, or new infection signs appear, escalation to broader-spectrum therapy or specialist review is indicated, as the guideline advises adjusting the regimen based on clinical condition and microbiology results.",
+            "support": [
+              {
+                "quote_id": "E5Q3"
+              },
+              {
+                "quote_id": "E5Q4"
+              }
+            ]
+          }
+        ]
+      },
+      "seconds": 5.863666900000226
+    }
+  ],
+  "seconds": 5.960791500000141,
+  "original_recommendation_count": 8,
+  "supplemental_definition_count": 0,
+  "selection_trace": [
+    {
+      "chunk_id": "NICE-1.21.2",
+      "reason": "question_relevance_head"
+    },
+    {
+      "chunk_id": "NICE-1.21.4",
+      "reason": "question_relevance_head"
+    },
+    {
+      "chunk_id": "NICE-1.16.1",
+      "reason": "question_relevance_head"
+    },
+    {
+      "chunk_id": "NICE-1.20.5",
+      "reason": "remaining_relevant_context"
+    },
+    {
+      "chunk_id": "NICE-1.15.4",
+      "reason": "remaining_relevant_context"
+    },
+    {
+      "chunk_id": "NICE-1.19.1",
+      "reason": "remaining_relevant_context"
+    },
+    {
+      "chunk_id": "NICE-1.21.3",
+      "reason": "remaining_relevant_context"
+    },
+    {
+      "chunk_id": "NICE-1.13.1",
+      "reason": "remaining_relevant_context"
+    }
+  ],
+  "clinical_validation": false
+}

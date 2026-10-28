@@ -1,0 +1,42 @@
+{
+  "id": "single_risk-1",
+  "guideline": "NICE",
+  "family": "single_risk",
+  "stage": "development_only",
+  "candidate_ids": [
+    "NICE-1.10.3",
+    "NICE-1.10.1",
+    "NICE-box1",
+    "NICE-1.9.2",
+    "NICE-1.10.2",
+    "NICE-1.34.1",
+    "NICE-1.15.1",
+    "NICE-1.9.1",
+    "NICE-1.11.1",
+    "NICE-1.10.4",
+    "NICE-1.1.4",
+    "NICE-1.34.2",
+    "NICE-1.1.6",
+    "NICE-1.10.5"
+  ],
+  "dependency_additions": [],
+  "available": true,
+  "selected_ids": [
+    "NICE-box1",
+    "NICE-1.10.2",
+    "NICE-1.1.6",
+    "NICE-1.10.1"
+  ],
+  "consensus_ids": [
+    "NICE-box1",
+    "NICE-1.10.1",
+    "NICE-1.10.2",
+    "NICE-1.1.6",
+    "NICE-1.10.3",
+    "NICE-1.9.2",
+    "NICE-1.34.1",
+    "NICE-1.15.1"
+  ],
+  "calls": [],
+  "exact_request_replay": true
+}

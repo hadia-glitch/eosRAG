@@ -1,0 +1,125 @@
+{
+  "id": "initial_investigation-1",
+  "guideline": "NICE",
+  "synthetic": true,
+  "brief": {
+    "version": "lossless-evidence-brief-v1-research",
+    "status": "source_comparison_only",
+    "question": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+    "recorded_current": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "recorded_history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "explicit_unknown_fields": [
+      "culture_status",
+      "red_flags",
+      "maternal_gbs"
+    ],
+    "complete_source_passages": [
+      {
+        "chunk_id": "NICE-1.13.2",
+        "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+        "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.14.7",
+        "text": "Ensure that cerebrospinal fluid, cell counts, total protein and glucose concentrations are available within 4 hours of lumbar puncture. [2024]",
+        "text_sha256": "ed7dc5ddcff68d63dbb9a6fe5b172c36f136f3313a51634f242b752953083435",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 24,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.3",
+        "text": "Do not use C-reactive protein results alone to make decisions about starting, continuing or stopping antibiotics. [2026]",
+        "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.1",
+        "text": "When starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose. [2021]",
+        "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.4",
+        "text": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics. Consider whether to change the antibiotic regimen, taking account of: \u2022 the baby's clinical condition (for example, if there is no improvement) \u2022 the results of microbiological investigations \u2022 expert microbiological advice, including local surveillance data. [2012]",
+        "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.10.3",
+        "text": "Use the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed: \u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators: \uff0d follow the recommendations in the section on investigations before starting antibiotics and \uff0d start antibiotic treatment according to the recommendations in this guideline and \uff0d do not wait for the test results before starting antibiotics \u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \uff0d whether it is safe to withhold antibiotics and \uff0d whether the baby's vital signs and clinical condition need to be monitored. If monitoring is needed, continue for at least 12 hours using a newborn early warning system \u2022 for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal care. [2021]",
+        "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 15,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.3",
+        "text": "Do not routinely perform urine microscopy or culture as part of the investigations for early-onset neonatal infection, or late-onset neonatal infection for babies in neonatal units. [2021]",
+        "text_sha256": "5423a91e561532d4fe866bcd405428ad63baa091597c84977595aeb878d00d5e",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.5",
+        "text": "Do not perform skin swab microscopy or culture as part of the investigations for neonatal infection if there are no clinical signs of a localised infection. [2021]",
+        "text_sha256": "4761eceeba9251ace688b3e5c7fee549e1b2c37f8de0a125f8c6859c3b7e4579",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      }
+    ],
+    "clinical_eligibility_established": false,
+    "clinical_validation": false,
+    "interpretation_boundary": "Recorded findings and complete source passages are displayed separately. Unknown does not mean normal, absent, reassuring, or a satisfied condition. No stopping, discharge, treatment, diagnosis or illness-category eligibility is established by this view. All source conditions and exceptions require clinical review; retrieval alone does not establish applicability."
+  }
+}

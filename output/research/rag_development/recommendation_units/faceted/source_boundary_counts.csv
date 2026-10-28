@@ -1,0 +1,4 @@
+guideline,corpus_passages,changed_source_texts,missing_gold_identifiers,clinical_review_status
+NICE,115,14,0,pending
+AAP,43,0,0,pending
+WHO,141,0,0,pending

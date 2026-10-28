@@ -1,0 +1,35 @@
+{
+  "id": "who-expanded-initial_investigation-01",
+  "guideline": "WHO",
+  "family": "initial_investigation",
+  "stage": "development_only",
+  "candidate_ids": [
+    "WHO2024-B.1",
+    "WHO2024-B.2",
+    "WHO2024-C-REFERRAL",
+    "WHO2024-C-RISK",
+    "WHO2024-B.3",
+    "WHO2024-C-CLINICAL",
+    "WHO2024-B.4",
+    "WHO2024-B.5",
+    "WHO2024-B.6"
+  ],
+  "dependency_additions": [],
+  "available": true,
+  "selected_ids": [
+    "WHO2024-B.1",
+    "WHO2024-C-CLINICAL"
+  ],
+  "consensus_ids": [
+    "WHO2024-B.1",
+    "WHO2024-C-CLINICAL",
+    "WHO2024-B.2",
+    "WHO2024-C-REFERRAL",
+    "WHO2024-C-RISK",
+    "WHO2024-B.3",
+    "WHO2024-B.4",
+    "WHO2024-B.5"
+  ],
+  "calls": [],
+  "exact_request_replay": true
+}

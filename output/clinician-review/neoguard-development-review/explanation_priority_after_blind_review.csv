@@ -1,0 +1,4 @@
+id,claim,engineering_concern
+nice-expanded-incomplete_stop-01,C2; C4; C5,"Unknown suspicion treated as reassuring; direct antibiotic continuation; unsupported broader-spectrum escalation. Draft withheld structurally, not semantically adjudicated."
+aap-expanded-crp_alone-01,C2,Action prose omits site-specific-infection exception from cited stopping rule despite both model auditors accepting.
+who-expanded-missing_results-01,C2; C3; C5,PSBI versus clinical-severe-infection conflation; overstated diagnostic completeness; counselling assertion without established illness. Evidence auditor rejects C3; safety auditor accepts.

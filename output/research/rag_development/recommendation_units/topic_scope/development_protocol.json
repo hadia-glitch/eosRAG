@@ -1,0 +1,17 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "cases": 100,
+  "new_model_calls": 0,
+  "corpus_sha256": "e0fa0e3ba8a911b1da419a4681c24567c59ffedcac631b3426d5c3b17e312d96",
+  "parent_protocols": {
+    "faceted": "4a42ff266cd7857ccf4ff4cb255ae6fe1606f585800e4416a66673d70be1170b",
+    "guarded_facets": "8f07750bbe7de5085e4a95c537596ea4b3e17f5e1915aa50e7bbe7da68a2a966"
+  },
+  "code_sha256": {
+    "backend/rag/topic_scope.py": "377316d72a2398aea83439aad3aae3e78101be0af4c5a0991e04594841c97e68",
+    "backend/scripts/develop_topic_scope.py": "a7809aedfe7f51e3a47e943b3e731325077c63efe42a13c8c0930f2182540184"
+  },
+  "design": "Keep each saved top-k order, remove task-mismatched source topics, refill from that method's saved depth-12 order; preserve all cases and golds. Both preceding selectors retained.",
+  "clinical_review_status": "pending; topic exclusions are engineering proposals, not clinical severity judgments"
+}

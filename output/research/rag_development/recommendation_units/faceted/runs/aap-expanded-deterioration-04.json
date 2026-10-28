@@ -1,0 +1,251 @@
+{
+  "id": "aap-expanded-deterioration-04",
+  "family": "deterioration",
+  "guideline": "AAP",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "AAP2018-35PLUS-P4-B7"
+      ],
+      "2": [
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP2"
+      ],
+      "4": [
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3"
+      ],
+      "6": [
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P6-B2"
+      ],
+      "12": [
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "AAP2018-35PLUS-SP2"
+      ],
+      "2": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "4": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B9"
+      ],
+      "6": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P6-B2"
+      ],
+      "12": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P3-B7",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B1"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "AAP2018-35PLUS-SP2"
+      ],
+      "2": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9"
+      ],
+      "4": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B3"
+      ],
+      "6": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B6"
+      ],
+      "12": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B1"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "AAP2018-35PLUS-P4-B9"
+      ],
+      "2": [
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2"
+      ],
+      "4": [
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B7"
+      ],
+      "6": [
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P6-B2"
+      ],
+      "12": [
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B6",
+        "AAP2018-35PLUS-P3-B7",
+        "AAP2018-35PLUS-P6-STOP"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "AAP2018-35PLUS-P4-B9"
+      ],
+      "2": [
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2"
+      ],
+      "4": [
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B7"
+      ],
+      "6": [
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P3-B7",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "12": [
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P3-B7",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    }
+  },
+  "questions": [
+    "In neonates 0-72 hours old with a rising respiratory rate and falling oxygen saturation during serial examinations, what assessment and monitoring steps are recommended?",
+    "What immediate actions should be taken for an infant developing signs of illness, including tachypnea and desaturation, according to early-onset neonatal sepsis guidelines?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 30,
+  "replayed_unchanged_source": true,
+  "parent_record_sha256": "ada18343facc13b7c8f2882553b5ba196513dfe8322cac276c29419b1dc7eb5a"
+}

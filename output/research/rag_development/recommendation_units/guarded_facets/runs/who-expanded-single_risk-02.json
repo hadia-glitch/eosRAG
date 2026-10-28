@@ -1,0 +1,234 @@
+{
+  "id": "who-expanded-single_risk-02",
+  "family": "single_risk",
+  "guideline": "WHO",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "WHO2024-A.1"
+      ],
+      "2": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK"
+      ],
+      "4": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "6": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-C-REFERRAL"
+      ],
+      "8": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-A.3a"
+      ],
+      "12": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-A.3a",
+        "WHO2024-A.3b"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "WHO2024-A.1"
+      ],
+      "2": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK"
+      ],
+      "4": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL"
+      ],
+      "6": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-C-REFERRAL"
+      ],
+      "8": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.3a",
+        "WHO2024-A.4"
+      ],
+      "12": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.3a",
+        "WHO2024-A.4",
+        "WHO2024-A.3b"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "WHO2024-C-RISK"
+      ],
+      "2": [
+        "WHO2024-C-RISK",
+        "WHO2024-A.1"
+      ],
+      "4": [
+        "WHO2024-C-RISK",
+        "WHO2024-A.1",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2"
+      ],
+      "6": [
+        "WHO2024-C-RISK",
+        "WHO2024-A.1",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.4"
+      ],
+      "8": [
+        "WHO2024-C-RISK",
+        "WHO2024-A.1",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.4",
+        "WHO2024-A.3a",
+        "WHO2024-C-REFERRAL"
+      ],
+      "12": [
+        "WHO2024-C-RISK",
+        "WHO2024-A.1",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.4",
+        "WHO2024-A.3a",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.3b"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "WHO2024-A.1"
+      ],
+      "2": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK"
+      ],
+      "4": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "6": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-A.4"
+      ],
+      "8": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.3a"
+      ],
+      "12": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-A.4",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.3a",
+        "WHO2024-A.3b"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "WHO2024-A.1"
+      ],
+      "2": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK"
+      ],
+      "4": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "6": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-A.3a"
+      ],
+      "8": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-A.3a",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4"
+      ],
+      "12": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.2",
+        "WHO2024-A.3a",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-A.3b"
+      ]
+    }
+  },
+  "questions": [
+    "Does the WHO guideline provide a validated maternal\u2011risk scoring system for early\u2011onset neonatal sepsis in infants with maternal Group B Streptococcus colonisation and no IMCI illness signs?",
+    "Is there a WHO\u2011endorsed gestational\u2011age based risk score for assessing early\u2011onset neonatal sepsis in well newborns with maternal GBS history?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 9
+}

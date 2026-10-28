@@ -60,6 +60,11 @@ class _HomeDashboardState extends ConsumerState<HomeDashboard> {
           ),
         ),
         actions: [
+            IconButton(
+              icon: const Icon(Icons.timeline),
+              tooltip: 'Longitudinal research inputs',
+              onPressed: () => context.push('/research/longitudinal'),
+            ),
           IconButton(
             icon: const Icon(Icons.logout),
             tooltip: 'Sign out',

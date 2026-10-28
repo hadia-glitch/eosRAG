@@ -1,0 +1,15 @@
+{
+  "final_evaluation_allowed": false,
+  "failures": [
+    "NICE: development answer validity/coverage below target or unmeasured",
+    "NICE: fewer than six families checked",
+    "AAP: development answer validity/coverage below target or unmeasured",
+    "AAP: fewer than six families checked",
+    "WHO: development answer validity/coverage below target or unmeasured",
+    "WHO: fewer than six families checked",
+    "Fault suite incomplete or unsafe fault released",
+    "complete_audits is not established",
+    "backend_regressions_passed is not established"
+  ],
+  "clinical_validation": "not established by this engineering gate"
+}

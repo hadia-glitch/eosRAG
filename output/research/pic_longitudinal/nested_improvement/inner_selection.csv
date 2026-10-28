@@ -1,0 +1,10 @@
+seed,outer_fold,selected,inner_auprc,training_infants,test_infants,training_positive_infants,test_positive_infants,patient_overlap
+31,0,compact_native_missing_boost,0.014543522410826121,362,181,5,2,0
+31,1,compact_lr_knn_C01,0.1797344574582303,362,181,5,2,0
+31,2,compact_lr_median_C01,0.13394691174687476,362,181,4,3,0
+47,0,compact_lr_knn_C01,0.30361490820834697,362,181,5,2,0
+47,1,compact_lr_knn_C01,0.04401636020899581,362,181,5,2,0
+47,2,compact_forest,0.020871122872023893,362,181,4,3,0
+83,0,compact_forest,0.016172635649087358,362,181,5,2,0
+83,1,compact_forest,0.017830364082291824,362,181,5,2,0
+83,2,compact_forest,0.040061097306447774,362,181,4,3,0

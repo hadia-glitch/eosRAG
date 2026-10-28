@@ -147,7 +147,9 @@ class _GuidelineConfigScreenState extends State<GuidelineConfigScreen> {
             ),
           ),
           OutlinedButton(
-            onPressed: _rebuilding ? null : _rebuildVectorIndex,
+            onPressed: _rebuilding
+                ? null
+                : _rebuildVectorIndex,
             child: _rebuilding
                 ? const SizedBox(
                     height: 16,

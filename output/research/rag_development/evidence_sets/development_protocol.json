@@ -1,0 +1,39 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "pilot_case_ids": [
+    "deterioration-1",
+    "crp_alone-1",
+    "incomplete_stop-1",
+    "initial_investigation-1",
+    "single_risk-1",
+    "missing_results-1",
+    "aap-expanded-deterioration-01",
+    "aap-expanded-crp_alone-01",
+    "aap-expanded-incomplete_stop-01",
+    "aap-expanded-initial_investigation-01",
+    "aap-expanded-single_risk-01",
+    "aap-expanded-missing_results-01",
+    "who-expanded-deterioration-01",
+    "who-expanded-crp_alone-01",
+    "who-expanded-incomplete_stop-01",
+    "who-expanded-initial_investigation-01",
+    "who-expanded-single_risk-01",
+    "who-expanded-missing_results-01"
+  ],
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0,
+  "sampling_seed": null,
+  "rrf_k": 60,
+  "candidate_budget": 24,
+  "selected_budget": 8,
+  "completion_tokens": 4000,
+  "corpus_sha256": "953ce6746d5ef37bb64070d17bc6286dd183c358b5af8443908b244536e8ca20",
+  "upstream_protocol_sha256": "e854c6f5b48df7a21a93c64cddf7863225d65c81754e9e7a928e960d31828d0c",
+  "code_sha256": {
+    "backend/rag/evidence_set_ranker.py": "909747c41d11bb002c2f1b019324738f156ad26442ea94d88e6b237df969959c",
+    "backend/scripts/develop_evidence_set_retrieval.py": "9d7a5e01e00b23825099b775147a06e85d76341da5c1ca88e539907265904bd5"
+  },
+  "change": "Explicit essential/supporting relevance rationale and exact source quote per choice. Same dependency candidate pools. No golds or reference answers in prompts.",
+  "clinical_review_status": "pending; quoted selection is not an independent semantic audit"
+}

@@ -1,0 +1,4 @@
+guideline,completed,total,cases_with_missing_gold,gold_occurrences_missing,mean_candidate_recall_ceiling_at_4
+NICE,40,40,7,11,0.9083333333333334
+AAP,30,30,0,0,1.0
+WHO,30,30,0,0,1.0

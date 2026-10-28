@@ -1,0 +1,27 @@
+{
+  "candidate": "patient_conditioned_balanced_pilot",
+  "retrieval": {
+    "NICE": {
+      "recall_at_4": 0.6944444444444443,
+      "mrr_at_4": 0.8333333333333334,
+      "complete": true
+    },
+    "AAP": {
+      "recall_at_4": 0.8333333333333334,
+      "mrr_at_4": 0.7916666666666666,
+      "complete": true
+    },
+    "WHO": {
+      "recall_at_4": 0.8333333333333334,
+      "mrr_at_4": 0.7916666666666666,
+      "complete": true
+    }
+  },
+  "generation": {},
+  "safety": {},
+  "config_pinned": true,
+  "complete_audits": false,
+  "scope_regressions_passed": true,
+  "backend_regressions_passed": true,
+  "population": "18 existing synthetic cases, 6 per source; not a completed 100-case candidate study"
+}

@@ -1,0 +1,125 @@
+{
+  "id": "aap-expanded-deterioration-04",
+  "guideline": "AAP",
+  "synthetic": true,
+  "brief": {
+    "version": "lossless-evidence-brief-v1-research",
+    "status": "source_comparison_only",
+    "question": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 36 hours; setting hospital birth.",
+    "recorded_current": {
+      "age_hours": 36,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "recorded_history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ],
+    "explicit_unknown_fields": [
+      "culture_status",
+      "maternal_gbs",
+      "red_flags"
+    ],
+    "complete_source_passages": [
+      {
+        "chunk_id": "AAP2018-35PLUS-SP2",
+        "text": "Infants born at \u226535 0/7 weeks\u2019 gestation can be stratified by the level of risk for EOS. Acceptable approaches to risk stratification include the following: o categorical algorithms in which threshold values for intrapartum risk factors are used; o multivariate risk assessment based on both intrapartum risk factors and infant examinations. The Neonatal Early-Onset Sepsis Risk Calculator47 is an example of this approach; and o serial physical examination to detect the presence of clinical signs of illness after birth. This approach may begin with a categorical or multivariate assessment to identify newborn infants who are at risk and will be subjected to serial monitoring, or this may be applied to all newborn infants.",
+        "text_sha256": "950841afc18cad52bd3bac0723af7a8d9ca42078e93ddd5f4a9a1cc3f67d3ac3",
+        "source": "AAP 2018 >=35 weeks",
+        "section": null,
+        "version": "2018-12",
+        "pdf_page": 7,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-SP3",
+        "text": "Birth centers should consider the development of locally tailored, documented guidelines for EOS risk assessment and clinical management. Ongoing surveillance once guidelines are implemented is recommended.",
+        "text_sha256": "f7d294737f5046e08944e22c915d6bb697e14276c592030d289c29b21ade8cd3",
+        "source": "AAP 2018 >=35 weeks",
+        "section": null,
+        "version": "2018-12",
+        "pdf_page": 7,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B9",
+        "text": "The primary advantage of this approach is a significant reduction in the rate of antibiotic use. Those at institutions adopting such an approach will need to decide whether to adopt a categorical or multivariate approach for the identification of infants who are at risk. Alternatively, providers can decide to conduct serial clinical evaluations on all newborn infants without regard to risk of EOS. The latter approach would provide a means of identifying infants who develop EOS despite a low estimate of risk and initially reassuring clinical condition. Such cases occur at rate of approximately 1 in 10 000 live births among term and late-preterm infants.Potential disadvantages of this approach are that it can require significant changes to newborn care at birth hospitals, including the establishment of processes to ensure universal serial, structured, documented examinations and the development of clear criteria for additional evaluation and empirical antibiotic administration. Frequent medical examinations of all newborn infants may be variably acceptable to families and may add significantly to the cost of well nursery care. Importantly, physicians and families must understand that the identification of initially well- appearing infants who develop",
+        "text_sha256": "27640f48df802fed5e5df8f1eed7c77bbf5782e7dae8f1a348c9737f231184d4",
+        "source": "AAP 2018 >=35 weeks",
+        "section": null,
+        "version": "2018-12",
+        "pdf_page": 4,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B5",
+        "text": "A third strategy consists of the reliance on clinical signs of illness to identify infants with EOS. Under this approach, regardless of any estimation of neonatal or maternal risk factors for EOS, infants who appear ill at birth and those who develop signs of illness over the first 48 hours after birth are either treated empirically with antibiotic agents or further evaluated by laboratory screening. Among term and late- preterm infants, good clinical condition at birth is associated with a reduction in risk for EOS of approximately 60% to 70%. A multidisciplinary panel sponsored by the Eunice Kennedy Shriver National Institute of Child Health and Human Development advocated that infants be flagged for risk of EOS on the basis of the obstetric diagnosis of suspected intraamniotic infection but that those conducting newborn evaluation primarily rely on clinical observation alone for well-appearing term and late-preterm infants.",
+        "text_sha256": "73d5f7d43eacd1ad56023c8854d080b5d6c5c6412ec0aa9a9b535f5dc1b3b620",
+        "source": "AAP 2018 >=35 weeks",
+        "section": null,
+        "version": "2018-12",
+        "pdf_page": 4,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B3",
+        "text": "infants in the well nursery and/ or postpartum care unit. The classification of infants as clinically ill, equivocal, or well appearing requires ongoing clinical assessment over the first 12 hours after birth. Workflow changes could be needed to accommodate changes in the frequency of vital signs and other clinical assessments for infants who are identified as being at moderate risk of EOS. Those at institutions opting for this approach may set different risk thresholds for specific actions other than those that are validated but should also consider quantifying the effect of the chosen risk thresholds to affirm safety and efficacy.",
+        "text_sha256": "a10f955f042b8ae7dd0ba928d398c1fdb1cc9d50ce74f34fa2ee7c1079458539",
+        "source": "AAP 2018 >=35 weeks",
+        "section": null,
+        "version": "2018-12",
+        "pdf_page": 4,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B6",
+        "text": "Those at several centers have reported experience with strategies based on the identification of at-risk newborn infants using categorical or multivariate approaches to risk accompanied by laboratory tests",
+        "text_sha256": "cd81105a9d79e8a29d701439fe16eb319c1cac352ffe59b23c588605f939239e",
+        "source": "AAP 2018 >=35 weeks",
+        "section": null,
+        "version": "2018-12",
+        "pdf_page": 4,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P3-B13",
+        "text": "A multivariate risk assessment includes an individualized synthesis of established risk factors and the newborn clinical condition to estimate each infant\u2019s risk of EOS. A cohort of 608 000 newborn infants was used to develop predictive models for culture-confirmed EOS based on objective data that are known at the moment of birth7 and the evolving newborn condition during the first 6 to 12 hours after birth. The objective data include gestational age, the highest maternal intrapartum temperature, the",
+        "text_sha256": "096ab3c40e783997c11805ebc11420081bfda0d75f11be9734d48259cae81752",
+        "source": "AAP 2018 >=35 weeks",
+        "section": null,
+        "version": "2018-12",
+        "pdf_page": 3,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P3-B7",
+        "text": "Three approaches currently exist for the use of risk factors to identify infants who are at increased risk of EOS, as detailed in the following sections. Each approach has merits and limitations, and each is a reasonable approach to risk assessment among infants who are born at \u226535 weeks\u2019 gestation. No strategy can be used to immediately identify all infants who will develop EOS or avoid the treatment of a substantial number of infants who are uninfected. Therefore, each strategy must include measures to monitor infants who are not initially identified and to minimize the duration of antibiotic administration to infants who are uninfected. Those at birth centers should develop institutional approaches that are best suited to their local resources and structures. Optimally, the effect of the chosen approach should be measured to identify low-frequency adverse events and to affirm efficacy.",
+        "text_sha256": "c0717321e1359214c470ca267b9a3d7bc8f8df2ccb66f2cce746cabf3be3a5e5",
+        "source": "AAP 2018 >=35 weeks",
+        "section": null,
+        "version": "2018-12",
+        "pdf_page": 3,
+        "kind": "recommendation"
+      }
+    ],
+    "clinical_eligibility_established": false,
+    "clinical_validation": false,
+    "interpretation_boundary": "Recorded findings and complete source passages are displayed separately. Unknown does not mean normal, absent, reassuring, or a satisfied condition. No stopping, discharge, treatment, diagnosis or illness-category eligibility is established by this view. All source conditions and exceptions require clinical review; retrieval alone does not establish applicability."
+  }
+}

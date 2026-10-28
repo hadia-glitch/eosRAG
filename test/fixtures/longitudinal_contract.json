@@ -1,0 +1,230 @@
+{
+  "input_contract_version": "pic-longitudinal-v1",
+  "purpose": "research",
+  "clinical_ready": false,
+  "sequence_fields": [
+    {
+      "key": "neonatal_temperature",
+      "label": "Temperature",
+      "unit": "\u00b0C",
+      "min": 30.0,
+      "max": 43.0
+    },
+    {
+      "key": "heart_rate",
+      "label": "Heart rate",
+      "unit": "beats/min",
+      "min": 30.0,
+      "max": 300.0
+    },
+    {
+      "key": "respiratory_rate",
+      "label": "Respiratory rate",
+      "unit": "breaths/min",
+      "min": 0.0,
+      "max": 150.0
+    },
+    {
+      "key": "spo2",
+      "label": "SpO\u2082",
+      "unit": "%",
+      "min": 20.0,
+      "max": 100.0
+    },
+    {
+      "key": "pulse_rate",
+      "label": "Pulse rate",
+      "unit": "beats/min",
+      "min": 30.0,
+      "max": 300.0
+    },
+    {
+      "key": "diastolic_pressure",
+      "label": "Diastolic pressure",
+      "unit": "mmHg",
+      "min": 5.0,
+      "max": 150.0
+    },
+    {
+      "key": "systolic_pressure",
+      "label": "Systolic pressure",
+      "unit": "mmHg",
+      "min": 10.0,
+      "max": 200.0
+    },
+    {
+      "key": "measured_weight_kg",
+      "label": "Measured weight",
+      "unit": "kg",
+      "min": 0.2,
+      "max": 6.5
+    }
+  ],
+  "context_fields": [
+    {
+      "key": "gestational_age_weeks",
+      "label": "Gestational age",
+      "unit": "weeks",
+      "min": 22,
+      "max": 44,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "birth_weight_kg",
+      "label": "Birth weight",
+      "unit": "kg",
+      "min": 0.2,
+      "max": 6.5,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "maternal_age",
+      "label": "Maternal age",
+      "unit": "years",
+      "min": 10,
+      "max": 60,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "maternal_temperature",
+      "label": "Highest intrapartum maternal temperature",
+      "unit": "\u00b0C",
+      "min": 30,
+      "max": 43,
+      "use": "Recorded guideline context; no trained maternal coefficient available"
+    },
+    {
+      "key": "rom_hours",
+      "label": "Duration of membrane rupture",
+      "unit": "hours",
+      "min": 0,
+      "max": 336,
+      "use": "Recorded guideline context; no trained maternal coefficient available"
+    },
+    {
+      "key": "prom",
+      "label": "Prolonged rupture of membranes recorded",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "gbs_positive",
+      "label": "Maternal GBS positive",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Recorded guideline context; no trained maternal coefficient available"
+    },
+    {
+      "key": "adequate_intrapartum_antibiotics",
+      "label": "Adequate intrapartum antibiotics recorded",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Recorded guideline context; no trained maternal coefficient available"
+    },
+    {
+      "key": "clinical_chorioamnionitis",
+      "label": "Clinical chorioamnionitis recorded",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Recorded guideline context; no trained maternal coefficient available"
+    },
+    {
+      "key": "maternal_infection",
+      "label": "Maternal infection recorded",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "cesarean",
+      "label": "Cesarean birth",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "apgar_1min",
+      "label": "Apgar at 1 minute",
+      "unit": "score",
+      "min": 0,
+      "max": 10,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "apgar_5min",
+      "label": "Apgar at 5 minutes",
+      "unit": "score",
+      "min": 0,
+      "max": 10,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "resuscitation_needed",
+      "label": "Resuscitation needed",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "fever",
+      "label": "Fever recorded",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "hypothermia",
+      "label": "Hypothermia recorded",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "respiratory_distress",
+      "label": "Respiratory distress recorded",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "poor_feeding",
+      "label": "Poor feeding recorded",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "lethargy",
+      "label": "Lethargy recorded",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Synthetic model input; recorded guideline context"
+    },
+    {
+      "key": "jaundice",
+      "label": "Jaundice recorded",
+      "unit": "boolean",
+      "min": null,
+      "max": null,
+      "use": "Synthetic model input; recorded guideline context"
+    }
+  ],
+  "prediction_status": "withheld_quality_gate",
+  "scope": "Research in hospital neonates below 72 hours",
+  "reason": "PIC candidate has too few independent infections and inadequate cross-validated discrimination.",
+  "unknowns": "Null is unknown. Missing maternal values are never replaced with false or normal.",
+  "fusion": "No joint EOS probability: real PIC observations and synthetic maternal records are not linked patients."
+}

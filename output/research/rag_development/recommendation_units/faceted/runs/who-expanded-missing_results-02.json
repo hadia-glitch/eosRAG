@@ -1,0 +1,237 @@
+{
+  "id": "who-expanded-missing_results-02",
+  "family": "missing_results",
+  "guideline": "WHO",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "2": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-REFERRAL"
+      ],
+      "4": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1",
+        "WHO2024-C-CLINICAL"
+      ],
+      "6": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.4",
+        "WHO2024-C-RISK"
+      ],
+      "8": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.4",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-A.3b"
+      ],
+      "12": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.1",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.4",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-A.3b",
+        "WHO2024-A.3a"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "2": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1"
+      ],
+      "4": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "6": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK",
+        "WHO2024-A.4"
+      ],
+      "8": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK",
+        "WHO2024-A.4",
+        "WHO2024-A.2",
+        "WHO2024-A.3a"
+      ],
+      "12": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK",
+        "WHO2024-A.4",
+        "WHO2024-A.2",
+        "WHO2024-A.3a",
+        "WHO2024-A.3b"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "2": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-REFERRAL"
+      ],
+      "4": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL"
+      ],
+      "6": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1",
+        "WHO2024-C-RISK"
+      ],
+      "8": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-A.3b"
+      ],
+      "12": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-A.3b",
+        "WHO2024-A.3a"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "2": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1"
+      ],
+      "4": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "6": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.4",
+        "WHO2024-C-RISK"
+      ],
+      "8": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.4",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-A.3b"
+      ],
+      "12": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.4",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-A.3b",
+        "WHO2024-A.3a"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "WHO2024-A.1-DEFINITION"
+      ],
+      "2": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1"
+      ],
+      "4": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-RISK"
+      ],
+      "6": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.4"
+      ],
+      "8": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.4",
+        "WHO2024-A.2",
+        "WHO2024-A.3b"
+      ],
+      "12": [
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.4",
+        "WHO2024-A.2",
+        "WHO2024-A.3b",
+        "WHO2024-A.3a"
+      ]
+    }
+  },
+  "questions": [
+    "What clinical criteria does the WHO early-onset neonatal sepsis assessment use to identify sepsis when feeding, movement, temperature, breathing, and culture results are unavailable?",
+    "How does the WHO algorithm classify risk of neonatal sepsis in the clinic without laboratory culture data?",
+    "Which WHO-recommended bedside signs can establish a diagnosis of early-onset neonatal sepsis in the absence of feeding, activity, temperature, respiratory, and culture information?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 9,
+  "replayed_unchanged_source": true,
+  "parent_record_sha256": "b05b1887e898da45d12fc88b7ce5a94847da8298a731ba4d4df50c0d5c18a347"
+}

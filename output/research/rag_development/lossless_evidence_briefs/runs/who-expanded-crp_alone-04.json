@@ -1,0 +1,155 @@
+{
+  "id": "who-expanded-crp_alone-04",
+  "guideline": "WHO",
+  "synthetic": true,
+  "brief": {
+    "version": "lossless-evidence-brief-v1-research",
+    "status": "source_comparison_only",
+    "question": "CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance? Gestation 41 weeks; age 48 hours; setting primary_health_clinic.",
+    "recorded_current": {
+      "age_hours": 48,
+      "gestational_age_weeks": 41,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 7,
+      "culture_status": "unknown",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "recorded_history": [
+      {
+        "age_hours": 24.0,
+        "crp": 21,
+        "feeding": "feeding well",
+        "temperature_c": 36.8
+      }
+    ],
+    "explicit_unknown_fields": [
+      "maternal_gbs",
+      "culture_status",
+      "red_flags"
+    ],
+    "complete_source_passages": [
+      {
+        "chunk_id": "WHO2024-A.3a",
+        "text": "Young infants aged 0\u201359 days with the IMCI signs of clinical severe infection should be referred to hospital. If referral is not possible then oral amoxicillin for at least 7 days plus gentamicin IM/IV for at least 7 days is recommended. (Strong recommendation, low-certainty evidence) Recommendation A.3b (UPDATED) If 7 days of gentamicin IM is not feasible, oral amoxicillin for at least 7 days plus gentamicin IM/IV for 2 days may be considered. (Conditional recommendation, low-certainty evidence)",
+        "text_sha256": "1ad2ffb4ff9037e56015a82bd9a49dbf3dbcbdd49a0d5f873ddd6ad7ba424595",
+        "source": "WHO serious bacterial infections 2024",
+        "section": "A.3a",
+        "version": "2024-12-08",
+        "pdf_page": 9,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "WHO2024-A.1",
+        "text": "In young infants aged 0\u201359 days, the WHO 7-sign integrated management of childhood illness (IMCI) algorithm is recommended for the identification of infants with possible serious bacterial infection (PSBI) who require further evaluation or treatment. (Strong recommendation, moderate-certainty evidence)",
+        "text_sha256": "1c4cbd94cea526ed1907cca34a9d22c42f178b6980e7e0bcc5bc6303639a0258",
+        "source": "WHO serious bacterial infections 2024",
+        "section": "A.1",
+        "version": "2024-12-08",
+        "pdf_page": 2,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "WHO2024-A.1-DEFINITION",
+        "text": "Possible serious bacterial infection (PSBI) is defined by WHO as an illness with one or more of the following seven clinical signs: not feeding well or not able to feed at all, movement only when stimulated or no movement at all, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), severe chest indrawing, convulsions in infants aged 0\u201359 days or fast breathing (\u2265 60 breaths per minute) in infants aged 0\u20136 days (see Table 1.1).",
+        "text_sha256": "3da96225be16a364cb247d8f9b4e25a71eacfc4cea2cef90828073b0bd1f6469",
+        "source": "WHO serious bacterial infections 2024",
+        "section": "DEFINITION",
+        "version": "2024-12-08",
+        "pdf_page": 2,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "WHO2024-C-CLINICAL",
+        "text": "Clinical management \u25a0The GDG emphasized that clinical signs can be difficult to ascertain in young infants and that clinical management of unwell infants aged 0\u201359 days requires careful clinical judgement. \u25a0The GDG emphasized the importance of carefully managing coinfections and comorbidities in the young infant, including malnutrition, according to WHO guidelines and guidance (12, 13, 27, 28). \u25a0The GDG emphasized the importance of counselling families about the standard WHO newborn care practices for small and sick newborns (111), including keeping the infant warm and supporting the mother to provide exclusive breastfeeding. \u25a0The GDG emphasized that health workers who care for unwell young infants must receive ongoing in-service training and supportive supervision specific to the care of infants aged 0\u201359 days. \u25a0",
+        "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+        "source": "WHO serious bacterial infections 2024",
+        "section": "CLINICAL",
+        "version": "2024-12-08",
+        "pdf_page": 43,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "WHO2024-A.2",
+        "text": "Young infants aged 0\u201359 days with the IMCI signs of critical illness should be referred to hospital. If referral is not possible, ampicillin IM/IV plus gentamicin IM/IV for at least 10 days is recommended. (Strong recommendation, very low-certainty evidence)",
+        "text_sha256": "733aa1f7c456436d093bde8a1e19104f2778ea8a8fcc52d4070219db602f37a1",
+        "source": "WHO serious bacterial infections 2024",
+        "section": "A.2",
+        "version": "2024-12-08",
+        "pdf_page": 6,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "WHO2024-A.3b",
+        "text": "If 7 days of gentamicin IM is not feasible, oral amoxicillin for at least 7 days plus gentamicin IM/IV for 2 days may be considered. (Conditional recommendation, low-certainty evidence)",
+        "text_sha256": "fb8c1c622044d30a474bba172e922a8c30d89e4d8ce858ef2dd69c388df53f68",
+        "source": "WHO serious bacterial infections 2024",
+        "section": "A.3b",
+        "version": "2024-12-08",
+        "pdf_page": 9,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "WHO2024-C-REFERRAL",
+        "text": "Referral to hospital and what to do when referral is not possible \u25a0The GDG emphasized the importance of referring all infants aged 0\u201359 days with signs of PSBI to hospital and noted that the recommendations for non-hospital settings are only for situations where referral is not possible. If referral to hospital is not possible, the GDG emphasized that the health worker must: \u2015 seek the highest possible level of medical advice, consultation and care for the infant; \u2015 explain to the caregiver that the infant is very sick and reinforce the importance of hospital care; \u2015 manage the infant in the clinic wherever possible; \u2015 monitor the infant continuously on cardiac, respiratory and pulse oximetry monitors wherever possible until the infant is considered stable and no longer critical (if continuous monitoring is not possible then frequent vital signs and observations must be taken, ideally every hour); \u2015 review the infant\u2019s condition in the clinic if possible (if this is not possible then the clinic team should perform home visits wherever feasible); \u2015 review all infants on the day after stopping treatment; and \u2015 ensure that all infants have careful long- term follow-up care to assess and manage complications and sequelae.",
+        "text_sha256": "cd0bcacf5d8108a33186f131953aa716a67ba45f41a93c606b0ba858301a94d4",
+        "source": "WHO serious bacterial infections 2024",
+        "section": "REFERRAL",
+        "version": "2024-12-08",
+        "pdf_page": 44,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "WHO2024-A.4",
+        "text": "Young infants aged 0\u20136 days with fast breathing as the only IMCI sign of illness should be referred to hospital. If referral is not possible, oral amoxicillin for at least 7 days is recommended. (Strong recommendation, low-certainty evidence)",
+        "text_sha256": "2b2ef6f809e2bdb9880be5b019d86e0a09f428515904e51e901d64ba761cd233",
+        "source": "WHO serious bacterial infections 2024",
+        "section": "A.4",
+        "version": "2024-12-08",
+        "pdf_page": 15,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "WHO2024-P10-B5::definition:a697590a9f62",
+        "text": "Clinical severe infection is defined by WHO as one or more of the following clinical signs in infants aged 0\u201359 days: not feeding well, movement only when stimulated, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), and/or severe chest indrawing.",
+        "text_sha256": "a697590a9f6241e94b0cb1f537d21467ed66e47a49361646dbea2b1e42a159a1",
+        "source": "WHO serious bacterial infections 2024",
+        "section": null,
+        "version": "2024-12-08",
+        "pdf_page": 10,
+        "kind": "supplemental_publisher_definition"
+      },
+      {
+        "chunk_id": "WHO2024-P2-B17::definition:3da96225be16",
+        "text": "Possible serious bacterial infection (PSBI) is defined by WHO as an illness with one or more of the following seven clinical signs: not feeding well or not able to feed at all, movement only when stimulated or no movement at all, high body temperature (\u2265 38 \u00b0C), low body temperature (< 35.5 \u00b0C), severe chest indrawing, convulsions in infants aged 0\u201359 days or fast breathing (\u2265 60 breaths per minute) in infants aged 0\u20136 days (see Table 1.1).",
+        "text_sha256": "3da96225be16a364cb247d8f9b4e25a71eacfc4cea2cef90828073b0bd1f6469",
+        "source": "WHO serious bacterial infections 2024",
+        "section": null,
+        "version": "2024-12-08",
+        "pdf_page": 2,
+        "kind": "supplemental_publisher_definition"
+      },
+      {
+        "chunk_id": "WHO2024-P6-B14::definition:7b1629a3457c",
+        "text": "Critical illness is defined as one or more of the following clinical signs: not able to feed at all, no movement on stimulation, convulsions in an infant aged 0\u201359 days (27, 28).",
+        "text_sha256": "7b1629a3457c894be3cf8bad66605600c8728d61f62bd49a7e50aaf2b85a36d3",
+        "source": "WHO serious bacterial infections 2024",
+        "section": null,
+        "version": "2024-12-08",
+        "pdf_page": 6,
+        "kind": "supplemental_publisher_definition"
+      }
+    ],
+    "clinical_eligibility_established": false,
+    "clinical_validation": false,
+    "interpretation_boundary": "Recorded findings and complete source passages are displayed separately. Unknown does not mean normal, absent, reassuring, or a satisfied condition. No stopping, discharge, treatment, diagnosis or illness-category eligibility is established by this view. All source conditions and exceptions require clinical review; retrieval alone does not establish applicability."
+  }
+}

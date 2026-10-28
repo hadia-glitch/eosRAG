@@ -1,0 +1,125 @@
+{
+  "id": "nice-expanded-deterioration-03",
+  "guideline": "NICE",
+  "synthetic": true,
+  "brief": {
+    "version": "lossless-evidence-brief-v1-research",
+    "status": "source_comparison_only",
+    "question": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 28 weeks; age 24 hours; setting neonatal unit.",
+    "recorded_current": {
+      "age_hours": 24,
+      "gestational_age_weeks": 28,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "recorded_history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 11
+      }
+    ],
+    "explicit_unknown_fields": [
+      "culture_status",
+      "maternal_gbs",
+      "red_flags"
+    ],
+    "complete_source_passages": [
+      {
+        "chunk_id": "NICE-1.10.3",
+        "text": "Use the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed: \u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators: \uff0d follow the recommendations in the section on investigations before starting antibiotics and \uff0d start antibiotic treatment according to the recommendations in this guideline and \uff0d do not wait for the test results before starting antibiotics \u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \uff0d whether it is safe to withhold antibiotics and \uff0d whether the baby's vital signs and clinical condition need to be monitored. If monitoring is needed, continue for at least 12 hours using a newborn early warning system \u2022 for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal care. [2021]",
+        "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 15,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-box2",
+        "text": "Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \u2022 apnoea (temporary stopping of breathing) \u2022 seizures \u2022 need for cardiopulmonary resuscitation \u2022 need for mechanical ventilation \u2022 signs of shock Other clinical indicators: \u2022 altered behaviour or responsiveness \u2022 altered muscle tone (for example, floppiness) \u2022 feeding difficulties (for example, feed refusal) \u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \u2022 abnormal heart rate (bradycardia or tachycardia) \u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \u2022 persistent pulmonary hypertension of newborns \u2022 jaundice within 24 hours of birth \u2022 signs of neonatal encephalopathy \u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors \u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation \u2022 altered glucose homeostasis (hypoglycaemia or hyperglycaemia) \u2022 metabolic acidosis (base deficit of 10 mmol/litre or greater)",
+        "text_sha256": "acb3d630c6270726300c2b01d5d915d5726c10a8c7d579970cde5cb5f9e4d5c7",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 14,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.10.1",
+        "text": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \u2022 perform an immediate clinical assessment \u2022 review the maternal and neonatal history \u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]",
+        "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 13,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.4",
+        "text": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics. Consider whether to change the antibiotic regimen, taking account of: \u2022 the baby's clinical condition (for example, if there is no improvement) \u2022 the results of microbiological investigations \u2022 expert microbiological advice, including local surveillance data. [2012]",
+        "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.2",
+        "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+        "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.2",
+        "text": "If a baby needs antibiotic treatment, give this as soon as possible and always within 1 hour of the decision to treat. [2021]",
+        "text_sha256": "146f8e7295e6e2e68f1272e575b34afe7ccc6ff9d2a202b3db1069f1126925b1",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.14.2",
+        "text": "Treat and stabilise any of the following before performing a lumbar puncture: \u2022 unprotected airway \u2022 respiratory compromise \u2022 shock \u2022 uncontrolled seizures \u2022 bleeding risk. [2024]",
+        "text_sha256": "bb7c3a7f774d267400de0fe856f0b2906ee0ab9c815b33390c68bb37b1a5d5cb",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 22,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.11.1",
+        "text": "In babies being monitored for possible early-onset neonatal infection: \u2022 Consider starting antibiotic treatment (see the section on investigations before starting antibiotics for next steps). \u2022 If no further concerns arise during observation reassure the family and, if the baby is to be discharged, give information and advice to the parents and carers (see the sections on information and support for parents and carers before transferring babies home and post discharge planning for babies who have not been given antibiotics). [2021]",
+        "text_sha256": "e94211686b926bf3a8176420403b396e8d2b698c1e53f151b3d1f12b3595fcd5",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 16,
+        "kind": "recommendation"
+      }
+    ],
+    "clinical_eligibility_established": false,
+    "clinical_validation": false,
+    "interpretation_boundary": "Recorded findings and complete source passages are displayed separately. Unknown does not mean normal, absent, reassuring, or a satisfied condition. No stopping, discharge, treatment, diagnosis or illness-category eligibility is established by this view. All source conditions and exceptions require clinical review; retrieval alone does not establish applicability."
+  }
+}

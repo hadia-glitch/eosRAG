@@ -1,0 +1,249 @@
+{
+  "id": "nice-expanded-initial_investigation-02",
+  "family": "initial_investigation",
+  "guideline": "NICE",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "NICE-1.14.8"
+      ],
+      "2": [
+        "NICE-1.14.8",
+        "NICE-1.21.2"
+      ],
+      "4": [
+        "NICE-1.14.8",
+        "NICE-1.21.2",
+        "NICE-1.14.9",
+        "NICE-box1"
+      ],
+      "6": [
+        "NICE-1.14.8",
+        "NICE-1.21.2",
+        "NICE-1.14.9",
+        "NICE-box1",
+        "NICE-1.14.5",
+        "NICE-1.10.5"
+      ],
+      "8": [
+        "NICE-1.14.8",
+        "NICE-1.21.2",
+        "NICE-1.14.9",
+        "NICE-box1",
+        "NICE-1.14.5",
+        "NICE-1.10.5",
+        "NICE-1.13.3",
+        "NICE-1.14.6"
+      ],
+      "12": [
+        "NICE-1.14.8",
+        "NICE-1.21.2",
+        "NICE-box1",
+        "NICE-1.14.9",
+        "NICE-1.14.5",
+        "NICE-1.10.5",
+        "NICE-1.13.3",
+        "NICE-1.14.6",
+        "NICE-1.20.8",
+        "NICE-1.13.5",
+        "NICE-1.10.4",
+        "NICE-1.13.2"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "NICE-1.14.7"
+      ],
+      "2": [
+        "NICE-1.14.7",
+        "NICE-1.10.4"
+      ],
+      "4": [
+        "NICE-1.14.7",
+        "NICE-1.10.4",
+        "NICE-1.14.8",
+        "NICE-box1"
+      ],
+      "6": [
+        "NICE-1.14.7",
+        "NICE-1.10.4",
+        "NICE-1.14.8",
+        "NICE-box1",
+        "NICE-1.21.2",
+        "NICE-1.13.3"
+      ],
+      "8": [
+        "NICE-1.14.7",
+        "NICE-1.10.4",
+        "NICE-1.14.8",
+        "NICE-box1",
+        "NICE-1.21.2",
+        "NICE-1.13.3",
+        "NICE-1.10.5",
+        "NICE-1.13.5"
+      ],
+      "12": [
+        "NICE-1.14.7",
+        "NICE-1.10.4",
+        "NICE-1.14.8",
+        "NICE-box1",
+        "NICE-1.21.2",
+        "NICE-1.13.3",
+        "NICE-1.10.5",
+        "NICE-1.13.5",
+        "NICE-1.14.6",
+        "NICE-1.13.2",
+        "NICE-1.31.4",
+        "NICE-1.20.8"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "NICE-1.14.8"
+      ],
+      "2": [
+        "NICE-1.14.8",
+        "NICE-1.15.1"
+      ],
+      "4": [
+        "NICE-1.14.8",
+        "NICE-1.15.1",
+        "NICE-1.15.4",
+        "NICE-1.21.2"
+      ],
+      "6": [
+        "NICE-1.14.8",
+        "NICE-1.15.1",
+        "NICE-1.15.4",
+        "NICE-1.21.2",
+        "NICE-1.14.6",
+        "NICE-1.14.9"
+      ],
+      "8": [
+        "NICE-1.14.8",
+        "NICE-1.15.1",
+        "NICE-1.15.4",
+        "NICE-1.21.2",
+        "NICE-1.14.6",
+        "NICE-1.14.9",
+        "NICE-1.14.5",
+        "NICE-1.13.3"
+      ],
+      "12": [
+        "NICE-1.14.8",
+        "NICE-1.15.1",
+        "NICE-1.15.4",
+        "NICE-1.21.2",
+        "NICE-1.14.6",
+        "NICE-1.14.9",
+        "NICE-1.14.5",
+        "NICE-1.13.3",
+        "NICE-1.21.4",
+        "NICE-1.13.5",
+        "NICE-1.21.3",
+        "NICE-1.21.1"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "NICE-1.15.4"
+      ],
+      "2": [
+        "NICE-1.15.4",
+        "NICE-1.15.1"
+      ],
+      "4": [
+        "NICE-1.15.4",
+        "NICE-1.15.1",
+        "NICE-1.14.8",
+        "NICE-1.21.2"
+      ],
+      "6": [
+        "NICE-1.15.4",
+        "NICE-1.15.1",
+        "NICE-1.14.8",
+        "NICE-1.21.2",
+        "NICE-1.13.5",
+        "NICE-1.13.3"
+      ],
+      "8": [
+        "NICE-1.15.4",
+        "NICE-1.15.1",
+        "NICE-1.14.8",
+        "NICE-1.21.2",
+        "NICE-1.13.5",
+        "NICE-1.13.3",
+        "NICE-1.21.3",
+        "NICE-1.21.4"
+      ],
+      "12": [
+        "NICE-1.15.4",
+        "NICE-1.15.1",
+        "NICE-1.14.8",
+        "NICE-1.21.2",
+        "NICE-1.13.5",
+        "NICE-1.13.3",
+        "NICE-1.21.3",
+        "NICE-1.21.4",
+        "NICE-1.10.4",
+        "NICE-1.21.1",
+        "NICE-1.14.6",
+        "NICE-1.10.5"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "NICE-1.15.4"
+      ],
+      "2": [
+        "NICE-1.15.4",
+        "NICE-1.15.1"
+      ],
+      "4": [
+        "NICE-1.15.4",
+        "NICE-1.15.1",
+        "NICE-1.10.4",
+        "NICE-1.10.5"
+      ],
+      "6": [
+        "NICE-1.15.4",
+        "NICE-1.15.1",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.14.8",
+        "NICE-1.13.5"
+      ],
+      "8": [
+        "NICE-1.15.4",
+        "NICE-1.15.1",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.14.8",
+        "NICE-1.13.5",
+        "NICE-1.10.1",
+        "NICE-1.21.2"
+      ],
+      "12": [
+        "NICE-1.15.4",
+        "NICE-1.15.1",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.14.8",
+        "NICE-1.13.5",
+        "NICE-1.10.1",
+        "NICE-1.21.2",
+        "NICE-1.13.3",
+        "NICE-1.21.3",
+        "NICE-1.13.2",
+        "NICE-1.21.4"
+      ]
+    }
+  },
+  "questions": [
+    "What are the recommended initial diagnostic investigations for suspected early\u2011onset neonatal sepsis (0\u201172\u202fhours)?",
+    "What are the known limitations and diagnostic accuracy issues of laboratory tests used in early\u2011onset neonatal sepsis evaluation?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 115
+}

@@ -1,6 +1,7 @@
 from functools import lru_cache
 from pathlib import Path
 from pydantic import Field
+from typing import Literal
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -104,6 +105,8 @@ class Settings(BaseSettings):
     model_artifact_path: str = str(Path(__file__).parent / "ml/artifacts/model.json")
     model_artifact_sha256: str = ""
     supplied_model_dir: str = str(Path(__file__).parent / 'ml/deployed/supplied_neonatal')
+    research_ml_model: Literal['kaggle','pic'] = 'kaggle'
+    pic_model_dir: str = str(Path(__file__).resolve().parents[1] / 'data/picdb_private')
     research_prediction_requires_audit: bool = False
     clinical_use_enabled: bool = False
     evidence_manifest_path: str = str(Path(__file__).parent / "guidelines/manifest.json")

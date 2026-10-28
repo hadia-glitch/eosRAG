@@ -1,0 +1,13 @@
+{
+  "source": "WHO",
+  "query": "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold.",
+  "available": true,
+  "questions": [
+    "Does the WHO 2024 guideline endorse the use of a hospital laboratory test or a clinical prediction algorithm for diagnosing early\u2011onset neonatal sepsis?",
+    "What initial clinical assessment steps does the WHO 2024 guideline recommend for suspected neonatal sepsis without specifying laboratory thresholds?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": true,
+  "original_record_sha256": "6085798186bcd666e928ec732282b69d652fddc8c9a75d12bfeae70a2db2bdee",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

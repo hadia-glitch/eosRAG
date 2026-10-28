@@ -1,0 +1,245 @@
+[
+  {
+    "chunk_id": "NICE-1.5.1",
+    "old_text": "When there has been a clinical concern about neonatal infection in a baby, make a post-discharge management plan, taking into account factors such as: \u2022 the level of the initial clinical concern \u2022 the presence of risk factors \u2022 parents' and carers' concerns. [2012] Prevention and risk reduction 1.6 When to offer antibiotics during labour to prevent early-onset neonatal infection",
+    "new_text": "When there has been a clinical concern about neonatal infection in a baby, make a post-discharge management plan, taking into account factors such as: \u2022 the level of the initial clinical concern \u2022 the presence of risk factors \u2022 parents' and carers' concerns. [2012] Prevention and risk reduction",
+    "old_text_sha256": "99aa053a0148e9e0fe2d925cfdcf16aacf6d8fc50d29eb42c5b110996107d6ce",
+    "new_text_sha256": "f6c1f14ccb5e10da5f0fbdf49df68c48b99787ba33111f02729c2de3dd737517",
+    "pdf_pages": [
+      7,
+      8
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 9428,
+      "end": 9729,
+      "extracted_span_sha256": "3b33196f3b51caf3084ff9e3b9aad3e010ab93a3f1f748ccf130fae39365334e"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.9.2",
+    "old_text": "For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+    "new_text": "For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021]",
+    "old_text_sha256": "359c524077ff5273befe732351b58fabc0d0e78d20de960ae764619873a4467f",
+    "new_text_sha256": "c229543983db73fd612b104f999e8d9e50e47ed37318a9670e270353330c7498",
+    "pdf_pages": [
+      12
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 15162,
+      "end": 15276,
+      "extracted_span_sha256": "5ac58ec14c4384951c9c33ce026417e98a0504edaed8b64b72c9905d57ea33ed"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.10.2",
+    "old_text": "If group B streptococcus infection is identified in the woman, trans man or non- binary person within 72 hours after the baby's birth: \u2022 ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2 and \u2022 identify any other risk factors present and \u2022 look for clinical indicators of infection. Use this assessment to decide on clinical management (see recommendation 1.10.3 for the framework for making antibiotic decisions). [2021] Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \u2022 apnoea (temporary stopping of breathing) \u2022 seizures \u2022 need for cardiopulmonary resuscitation \u2022 need for mechanical ventilation \u2022 signs of shock Other clinical indicators: \u2022 altered behaviour or responsiveness \u2022 altered muscle tone (for example, floppiness) \u2022 feeding difficulties (for example, feed refusal) \u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \u2022 abnormal heart rate (bradycardia or tachycardia) \u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \u2022 persistent pulmonary hypertension of newborns \u2022 jaundice within 24 hours of birth \u2022 signs of neonatal encephalopathy \u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors \u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation \u2022 altered glucose homeostasis (hypoglycaemia or hyperglycaemia) \u2022 metabolic acidosis (base deficit of 10 mmol/litre or greater)",
+    "new_text": "If group B streptococcus infection is identified in the woman, trans man or non- binary person within 72 hours after the baby's birth: \u2022 ask those directly involved in the baby's care (for example, a parent, carer, or healthcare professional) whether they have any concerns in relation to the clinical indicators listed in box 2 and \u2022 identify any other risk factors present and \u2022 look for clinical indicators of infection. Use this assessment to decide on clinical management (see recommendation 1.10.3 for the framework for making antibiotic decisions). [2021]",
+    "old_text_sha256": "fd4e4a4b2d6cd1f240228cc61a15821aa0deff3104f60eee18f2d8e300b9b424",
+    "new_text_sha256": "bb3e05663f641ccc96e61928fd0b3893ecc6515a6ea227e3b424a31a592f6732",
+    "pdf_pages": [
+      13
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 17013,
+      "end": 17582,
+      "extracted_span_sha256": "4308df180e7c6201229b6305d50e1a2d2c975882ea342f94902243249c764bf8"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.17.2",
+    "old_text": "Consider performing a lumbar puncture to obtain a cerebrospinal fluid sample in a baby who did not have a lumbar puncture at presentation who is receiving antibiotics, if it is thought safe to do so and if: \u2022 the baby has a positive blood culture (other than coagulase negative staphylococcus) or \u2022 the baby does not respond satisfactorily to antibiotic treatment, or \u2022 there is a strong clinical suspicion of infection or \u2022 there are clinical symptoms or signs suggesting meningitis. [2021] Investigations and treatments for site- specific infections 1.18 Eye infections",
+    "new_text": "Consider performing a lumbar puncture to obtain a cerebrospinal fluid sample in a baby who did not have a lumbar puncture at presentation who is receiving antibiotics, if it is thought safe to do so and if: \u2022 the baby has a positive blood culture (other than coagulase negative staphylococcus) or \u2022 the baby does not respond satisfactorily to antibiotic treatment, or \u2022 there is a strong clinical suspicion of infection or \u2022 there are clinical symptoms or signs suggesting meningitis. [2021] Investigations and treatments for site- specific infections",
+    "old_text_sha256": "151ae3165c5ef1df815ac49d2e4e1959f0a6ec27cf906cd7825fde289a1483d9",
+    "new_text_sha256": "145890d19ba4024c925256ad4059811cd4dc91d7f0ba8c779dda8855fecff353",
+    "pdf_pages": [
+      27,
+      28
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 33078,
+      "end": 33638,
+      "extracted_span_sha256": "8b48b0d569a2d7162e709e6da72cca539e3e9c109c21047d2c1fe4a21b912191"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.18.2",
+    "old_text": "In babies with a purulent eye discharge take swab samples urgently for microbiological investigation, using methods that can detect chlamydia and gonococcus. Start systemic antibiotic treatment for possible gonococcal infection while waiting for the swab microbiology results. [2012] 1.19 Umbilical infections",
+    "new_text": "In babies with a purulent eye discharge take swab samples urgently for microbiological investigation, using methods that can detect chlamydia and gonococcus. Start systemic antibiotic treatment for possible gonococcal infection while waiting for the swab microbiology results. [2012]",
+    "old_text_sha256": "302b0f24a23ee1d3329c3440f26141359a3e8960f18062c48dc735ec57e0151f",
+    "new_text_sha256": "d55241aa73efa44baa3ada82612b586e550a6ccb693ee982e273f292b8566227",
+    "pdf_pages": [
+      28
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 33882,
+      "end": 34168,
+      "extracted_span_sha256": "5a1d820decc8159b06c54a816ad9f55cb4913bdc3e8d794017f14ca64742e5cf"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.19.1",
+    "old_text": "In babies with clinical signs of umbilical infection, such as a purulent discharge or signs of periumbilical cellulitis (for example, redness, increased skin warmth or swelling): \u2022 perform a blood culture and \u2022 take a swab sample for microscopy and culture and \u2022 start antibiotic treatment with intravenous flucloxacillin and gentamicin (for starting dose of gentamicin, see recommendation 1.20.3 in the section on choice and dosage of intravenous antibiotics for suspected early-onset neonatal infection). If the microbiology results show that the infection is not caused by a Gram- negative bacterium, stop the gentamicin. [2012] Antibiotics for early-onset neonatal infection 1.20 Choice and dosage of intravenous antibiotics",
+    "new_text": "In babies with clinical signs of umbilical infection, such as a purulent discharge or signs of periumbilical cellulitis (for example, redness, increased skin warmth or swelling): \u2022 perform a blood culture and \u2022 take a swab sample for microscopy and culture and \u2022 start antibiotic treatment with intravenous flucloxacillin and gentamicin (for starting dose of gentamicin, see recommendation 1.20.3 in the section on choice and dosage of intravenous antibiotics for suspected early-onset neonatal infection). If the microbiology results show that the infection is not caused by a Gram- negative bacterium, stop the gentamicin. [2012] Antibiotics for early-onset neonatal infection",
+    "old_text_sha256": "e3ff4827d5e1b4fb8ec22744695904075dd96b4dcf83663f08505bd834df66a1",
+    "new_text_sha256": "0d007d4f5e076cb2f3f2321cff4f24abaec1b5514ab3805556a7305f9bc8ec6a",
+    "pdf_pages": [
+      28,
+      29
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 34205,
+      "end": 34895,
+      "extracted_span_sha256": "d2eac92d574588d96c3e78a9e8ed8e6e29a361055993f34aaefa638dfd2ad827"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.20.8",
+    "old_text": "If there is microbiological evidence of Gram-negative bacterial sepsis, add another antibiotic to the benzylpenicillin sodium and gentamicin regimen that is active against Gram-negative bacteria (for example, cefotaxime). If Gram- negative infection is confirmed, stop benzylpenicillin sodium. [2012] 1.21 Treatment duration for intravenous antibiotics",
+    "new_text": "If there is microbiological evidence of Gram-negative bacterial sepsis, add another antibiotic to the benzylpenicillin sodium and gentamicin regimen that is active against Gram-negative bacteria (for example, cefotaxime). If Gram- negative infection is confirmed, stop benzylpenicillin sodium. [2012]",
+    "old_text_sha256": "97feddda13fbee06640e076bacce8aafe3226dea850f434041fb63cdc458f9a9",
+    "new_text_sha256": "cf87c7b6404a10332beb70b9c4ebfb6d2b316c21420aedcf0059f12f5da9c956",
+    "pdf_pages": [
+      30
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 36778,
+      "end": 37080,
+      "extracted_span_sha256": "7f1c678152eed5233b098eab7c50bafe4e268d51b1fb64c2a52c9cf0548d0ad3"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.21.4",
+    "old_text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012] 1.22 Switching to oral antibiotics",
+    "new_text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012]",
+    "old_text_sha256": "c8284c8f978e574a7648c23dd2df2bdc20c612f468a813241b766872914908aa",
+    "new_text_sha256": "40d6c3a55a964ff51666187317dfc5bd7ba68b904ab477f9351ee3da307c426e",
+    "pdf_pages": [
+      31
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 38276,
+      "end": 38651,
+      "extracted_span_sha256": "96f0b91840376e09b1a64137ebfd260abe95813be51e030f3c7980f5547292f0"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.30.1",
+    "old_text": "After antibiotic treatment, consider prompt discharge of the baby from hospital, with support for the parents and carers and a point of contact for advice. [2012] 1.31 Preparing for hospital discharge See also the section on planning for care after discharge for all babies who have had an infection.",
+    "new_text": "After antibiotic treatment, consider prompt discharge of the baby from hospital, with support for the parents and carers and a point of contact for advice. [2012]",
+    "old_text_sha256": "12f4fe33b3e0198a0ee01d1462c89c25533120941c9e58a1d04eafc31edc2250",
+    "new_text_sha256": "6d24e10369093597cb1fff89c77d2236ebeba9bdf41faa63b6785f773e4ce25e",
+    "pdf_pages": [
+      39
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 50317,
+      "end": 50480,
+      "extracted_span_sha256": "e512e249de10bc55d3540238f600fc866c620375a0dbdc520cbd68ca9b5059b5"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.35.5",
+    "old_text": "Do not withhold a dose of gentamicin because of delays in getting a trough concentration measurement, unless there is evidence of impaired renal function (for example, an elevated serum urea or creatinine concentration, or anuria). [2012] 1.36 Peak concentrations",
+    "new_text": "Do not withhold a dose of gentamicin because of delays in getting a trough concentration measurement, unless there is evidence of impaired renal function (for example, an elevated serum urea or creatinine concentration, or anuria). [2012]",
+    "old_text_sha256": "47bf96d915136a77e9e078018e2e4827b8f12449a771334bbb23d8d15e7e4fed",
+    "new_text_sha256": "b7607ec17166ebf6627358680ea6da12f3d0ed58891ed8da08cbdd47ee7b1523",
+    "pdf_pages": [
+      44
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 57129,
+      "end": 57370,
+      "extracted_span_sha256": "3a506f12d22775de667144262d36a0adc868756c41981ec18c732dc954e48b30"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.36.3",
+    "old_text": "If a baby has a Gram-negative or staphylococcal infection, consider increasing the dose of gentamicin if the peak concentration is less than 8 mg/litre. [2012] Care setting and care after discharge 1.37 Care setting",
+    "new_text": "If a baby has a Gram-negative or staphylococcal infection, consider increasing the dose of gentamicin if the peak concentration is less than 8 mg/litre. [2012] Care setting and care after discharge",
+    "old_text_sha256": "7531ee8856ef8780cb7611eaed3039fc2ea283e68e521ca435e05d85e800bd74",
+    "new_text_sha256": "d93a8d19057b695647f1e0acafe83033a6c1323adcf48c6fe47f0259f73d95bc",
+    "pdf_pages": [
+      45,
+      46
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 57781,
+      "end": 57981,
+      "extracted_span_sha256": "d9bbb13ee37a8886a4ac25d7431ff2957b40d6383f690caa076e0bb3b26e881b"
+    }
+  },
+  {
+    "chunk_id": "NICE-1.37.2",
+    "old_text": "When deciding on the appropriate care setting for a baby, take into account the baby's clinical needs and the competencies needed to ensure safe and effective care (for example, the insertion and care of intravenous cannulas). [2012] 1.38 Planning for care after discharge",
+    "new_text": "When deciding on the appropriate care setting for a baby, take into account the baby's clinical needs and the competencies needed to ensure safe and effective care (for example, the insertion and care of intravenous cannulas). [2012]",
+    "old_text_sha256": "02cdab156c53f16c3f19570938de534a2c56f061ba4448419447292b29e4d4fb",
+    "new_text_sha256": "b7b2a7f46d3e70c93fc632cae63d497f48c8a0e25c3f9b4864c2555b1bd29535",
+    "pdf_pages": [
+      46
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 58415,
+      "end": 58650,
+      "extracted_span_sha256": "1ba0f70df25dfcaf32ac4ee7401f09df0fb91cb9d2c2b870b6801c38019ac6ea"
+    }
+  },
+  {
+    "chunk_id": "NICE-box1",
+    "old_text": "Risk factors and clinical indicators: early- onset neonatal infection 1.9 Identification and assessment before birth 1.9.1 For women, trans men and non-binary people in labour, identify and assess any risk factors for early-onset neonatal infection (see box 1 on risks factors for early- onset neonatal infection). Throughout labour, monitor for any new risk factors. [2021] 1.9.2 For guidance on managing prelabour rupture of membranes at term, see NICE's guideline on intrapartum care. [2021] Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+    "new_text": "Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+    "old_text_sha256": "58f1c67f33d2e8b4d08da94963bd82744d08690792722845b36325b74985d5c1",
+    "new_text_sha256": "de69f334396198e421eaf27bb7b9856497e19bb9861da878f7b43d27c94bf0e7",
+    "pdf_pages": [
+      12
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 15278,
+      "end": 16064,
+      "extracted_span_sha256": "044358c76109edca2425b4032e8a3b8475921e80d5370699f11505c7fbbe8423"
+    }
+  },
+  {
+    "chunk_id": "NICE-box2",
+    "old_text": "Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \u2022 apnoea (temporary stopping of breathing) \u2022 seizures \u2022 need for cardiopulmonary resuscitation \u2022 need for mechanical ventilation \u2022 signs of shock Other clinical indicators: \u2022 altered behaviour or responsiveness \u2022 altered muscle tone (for example, floppiness) \u2022 feeding difficulties (for example, feed refusal) \u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \u2022 abnormal heart rate (bradycardia or tachycardia) \u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \u2022 persistent pulmonary hypertension of newborns \u2022 jaundice within 24 hours of birth \u2022 signs of neonatal encephalopathy \u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors \u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation",
+    "new_text": "Box 2: Clinical indicators of possible early-onset neonatal infection (observations and events in the baby), including 'red flags' Red flag clinical indicators: \u2022 apnoea (temporary stopping of breathing) \u2022 seizures \u2022 need for cardiopulmonary resuscitation \u2022 need for mechanical ventilation \u2022 signs of shock Other clinical indicators: \u2022 altered behaviour or responsiveness \u2022 altered muscle tone (for example, floppiness) \u2022 feeding difficulties (for example, feed refusal) \u2022 feed intolerance, including vomiting, excessive gastric aspirates and abdominal distension \u2022 abnormal heart rate (bradycardia or tachycardia) \u2022 signs of respiratory distress (including grunting, recession, tachypnoea) \u2022 hypoxia (for example, central cyanosis or reduced oxygen saturation level) \u2022 persistent pulmonary hypertension of newborns \u2022 jaundice within 24 hours of birth \u2022 signs of neonatal encephalopathy \u2022 temperature abnormality (lower than 36\u00b0C or higher than 38\u00b0C) unexplained by environmental factors \u2022 unexplained excessive bleeding, thrombocytopenia, or abnormal coagulation \u2022 altered glucose homeostasis (hypoglycaemia or hyperglycaemia) \u2022 metabolic acidosis (base deficit of 10 mmol/litre or greater)",
+    "old_text_sha256": "6e0637bd9a5b39440c57545a9d2f876470ef1f132548b52290e1e6fb843c4063",
+    "new_text_sha256": "acb3d630c6270726300c2b01d5d915d5726c10a8c7d579970cde5cb5f9e4d5c7",
+    "pdf_pages": [
+      14,
+      15
+    ],
+    "source_span": {
+      "coordinate_system": "joined_footer_stripped_PyMuPDF_text",
+      "stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+      "start": 17585,
+      "end": 18801,
+      "extracted_span_sha256": "d7b290d251deec792fbe1e6874a8c7f097746b5f7e5e7c74cb9498c1a756ed47"
+    }
+  }
+]

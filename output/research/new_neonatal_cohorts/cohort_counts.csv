@@ -1,0 +1,3 @@
+dataset,rows,infants,positive_rows,positive_infants,scope
+workbook,138,138,69,69,Preterm case-control culture-positive diagnosis; individual EOS timing unavailable.
+chop,580,472,53,52,"Age <28 days; bacteremia versus manually classified culture-negative rule-out episodes; conditional on sepsis evaluation, not EOS forecasting."

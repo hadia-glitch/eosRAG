@@ -1,0 +1,26 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "case_ids": [
+    "single_risk-1",
+    "aap-expanded-missing_results-01",
+    "who-expanded-incomplete_stop-01"
+  ],
+  "maximum_unique_model_requests": 3,
+  "case_selection": "Previously observed difficult risk-factor, missing-result and source-limitation cases; one per guideline, not an unbiased performance population.",
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0,
+  "sampling_seed": null,
+  "rrf_k": 60,
+  "completion_tokens": 2000,
+  "candidate_budget": 24,
+  "selected_budget": 8,
+  "corpus_sha256": "e0fa0e3ba8a911b1da419a4681c24567c59ffedcac631b3426d5c3b17e312d96",
+  "code_sha256": {
+    "backend/scripts/develop_scoped_primary_smoke.py": "3f3a228730745c66b8f9e90602e87965db8b66edd9f54e263b169526ce4fd13f",
+    "backend/rag/topic_scope.py": "377316d72a2398aea83439aad3aae3e78101be0af4c5a0991e04594841c97e68",
+    "backend/rag/patient_passage_ranker.py": "af9581e803cabe9703b79adb05752732f66b3bce6d91605b2ad176795c071cf9",
+    "backend/rag/listwise_rerank.py": "fdee2c20f86ad11efe584712f8f2ef9e71f81b6888ed0adfc082d9f5a28e99d7"
+  },
+  "policy": "No generation/evidence-auditor/safety-auditor/judge calls. Preserve all completed responses, including model errors. No clinical readiness claim from three cases."
+}

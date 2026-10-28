@@ -1,0 +1,10 @@
+id,guideline,panel,directly_relevant_passages_0_to_4,essential_evidence_omitted_yes_no_uncertain,wrong_population_or_timing_yes_no_uncertain,conditions_preserved_yes_no_uncertain,useful_for_this_question_1_to_5,reviewer_code,review_date,notes
+single_risk-1,NICE,A,,,,,,,,
+single_risk-1,NICE,B,,,,,,,,
+single_risk-1,NICE,C,,,,,,,,
+aap-expanded-missing_results-01,AAP,A,,,,,,,,
+aap-expanded-missing_results-01,AAP,B,,,,,,,,
+aap-expanded-missing_results-01,AAP,C,,,,,,,,
+who-expanded-incomplete_stop-01,WHO,A,,,,,,,,
+who-expanded-incomplete_stop-01,WHO,B,,,,,,,,
+who-expanded-incomplete_stop-01,WHO,C,,,,,,,,

@@ -1,0 +1,125 @@
+{
+  "id": "crp_alone-2",
+  "guideline": "NICE",
+  "synthetic": true,
+  "brief": {
+    "version": "lossless-evidence-brief-v1-research",
+    "status": "source_comparison_only",
+    "question": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+    "recorded_current": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "recorded_history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "explicit_unknown_fields": [
+      "culture_status",
+      "red_flags",
+      "maternal_gbs"
+    ],
+    "complete_source_passages": [
+      {
+        "chunk_id": "NICE-1.13.2",
+        "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+        "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.3",
+        "text": "Do not use C-reactive protein results alone to make decisions about starting, continuing or stopping antibiotics. [2026]",
+        "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.21.3",
+        "text": "For babies who are being treated with intravenous antibiotics because of risk factors for early-onset infection or clinical indicators of possible infection, stop antibiotics at 36 hours if: \u2022 the blood culture is negative and \u2022 the initial clinical suspicion of infection was not strong and \u2022 the baby's clinical condition is reassuring, with no clinical indicators of possible infection (see box 2 for clinical indicators of possible early-onset infection) and \u2022 the levels and trends of C-reactive protein concentration are reassuring. [2012, amended 2026]",
+        "text_sha256": "34fdaa8bc356906c84c3291386941435c2de0005cacbd2120164108a6f3eeabb",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 30,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.4",
+        "text": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics. Consider whether to change the antibiotic regimen, taking account of: \u2022 the baby's clinical condition (for example, if there is no improvement) \u2022 the results of microbiological investigations \u2022 expert microbiological advice, including local surveillance data. [2012]",
+        "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.5",
+        "text": "Do not perform skin swab microscopy or culture as part of the investigations for neonatal infection if there are no clinical signs of a localised infection. [2021]",
+        "text_sha256": "4761eceeba9251ace688b3e5c7fee549e1b2c37f8de0a125f8c6859c3b7e4579",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.21.4",
+        "text": "When continuing intravenous antibiotics for longer than 36 hours despite negative blood cultures, review the need for ongoing antibiotics at least once every 24 hours, taking account of: \u2022 the level of initial clinical suspicion of infection and \u2022 the baby's clinical progress and current condition and \u2022 the levels and trends of C-reactive protein concentration. [2012]",
+        "text_sha256": "40d6c3a55a964ff51666187317dfc5bd7ba68b904ab477f9351ee3da307c426e",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 31,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.1",
+        "text": "When starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose. [2021]",
+        "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.3",
+        "text": "Do not routinely perform urine microscopy or culture as part of the investigations for early-onset neonatal infection, or late-onset neonatal infection for babies in neonatal units. [2021]",
+        "text_sha256": "5423a91e561532d4fe866bcd405428ad63baa091597c84977595aeb878d00d5e",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      }
+    ],
+    "clinical_eligibility_established": false,
+    "clinical_validation": false,
+    "interpretation_boundary": "Recorded findings and complete source passages are displayed separately. Unknown does not mean normal, absent, reassuring, or a satisfied condition. No stopping, discharge, treatment, diagnosis or illness-category eligibility is established by this view. All source conditions and exceptions require clinical review; retrieval alone does not establish applicability."
+  }
+}

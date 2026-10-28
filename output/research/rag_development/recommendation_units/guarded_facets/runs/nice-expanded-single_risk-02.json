@@ -1,0 +1,250 @@
+{
+  "id": "nice-expanded-single_risk-02",
+  "family": "single_risk",
+  "guideline": "NICE",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "NICE-box1"
+      ],
+      "2": [
+        "NICE-box1",
+        "NICE-1.10.1"
+      ],
+      "4": [
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-1.10.4"
+      ],
+      "6": [
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.9.1"
+      ],
+      "8": [
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.9.1",
+        "NICE-1.10.3",
+        "NICE-1.1.1"
+      ],
+      "12": [
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.9.1",
+        "NICE-1.10.3",
+        "NICE-1.1.1",
+        "NICE-1.5.1",
+        "NICE-1.2.4",
+        "NICE-1.1.4",
+        "NICE-1.1.6"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "NICE-box1"
+      ],
+      "2": [
+        "NICE-box1",
+        "NICE-1.10.4"
+      ],
+      "4": [
+        "NICE-box1",
+        "NICE-1.10.4",
+        "NICE-1.10.3",
+        "NICE-1.10.1"
+      ],
+      "6": [
+        "NICE-box1",
+        "NICE-1.10.4",
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-1.10.5"
+      ],
+      "8": [
+        "NICE-box1",
+        "NICE-1.10.4",
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-1.10.5",
+        "NICE-1.11.1",
+        "NICE-1.9.1"
+      ],
+      "12": [
+        "NICE-box1",
+        "NICE-1.10.4",
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-1.10.5",
+        "NICE-1.11.1",
+        "NICE-1.9.1",
+        "NICE-1.9.2",
+        "NICE-1.1.4",
+        "NICE-1.1.1",
+        "NICE-1.14.10"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "NICE-1.10.1"
+      ],
+      "2": [
+        "NICE-1.10.1",
+        "NICE-1.10.2"
+      ],
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.5"
+      ],
+      "6": [
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.9.1"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.9.1",
+        "NICE-1.9.2",
+        "NICE-1.10.3"
+      ],
+      "12": [
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.9.1",
+        "NICE-1.9.2",
+        "NICE-1.10.3",
+        "NICE-1.14.10",
+        "NICE-1.1.1",
+        "NICE-1.5.1",
+        "NICE-1.11.1"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "NICE-1.10.1"
+      ],
+      "2": [
+        "NICE-1.10.1",
+        "NICE-1.10.2"
+      ],
+      "4": [
+        "NICE-1.9.2",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1"
+      ],
+      "6": [
+        "NICE-1.9.2",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.3",
+        "NICE-1.10.5"
+      ],
+      "8": [
+        "NICE-1.9.2",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.3",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.11.1"
+      ],
+      "12": [
+        "NICE-1.9.2",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.3",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.14.10",
+        "NICE-1.9.1",
+        "NICE-1.14.2",
+        "NICE-1.1.3"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "NICE-1.10.1"
+      ],
+      "2": [
+        "NICE-1.10.1",
+        "NICE-1.10.2"
+      ],
+      "4": [
+        "NICE-1.9.2",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1"
+      ],
+      "6": [
+        "NICE-1.9.2",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.3",
+        "NICE-1.10.5"
+      ],
+      "8": [
+        "NICE-1.9.2",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.3",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.11.1"
+      ],
+      "12": [
+        "NICE-1.9.2",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.3",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.14.10",
+        "NICE-1.9.1",
+        "NICE-1.15.1",
+        "NICE-1.15.4"
+      ]
+    }
+  },
+  "questions": [
+    "What are the risk stratification criteria for early\u2011onset neonatal sepsis in a well\u2011appearing infant with one confirmed maternal GBS risk factor according to NICE guidance?",
+    "How should the clinical examination be performed and interpreted in a well\u2011appearing newborn with a single maternal GBS risk factor when assessing for early\u2011onset sepsis?",
+    "What locally documented management options (e.g., observation, antibiotics, investigations) are recommended for a well\u2011appearing infant with one maternal GBS risk factor under NICE recommendations?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 115
+}

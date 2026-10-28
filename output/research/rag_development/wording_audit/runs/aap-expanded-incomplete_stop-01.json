@@ -1,0 +1,153 @@
+{
+  "id": "aap-expanded-incomplete_stop-01",
+  "guideline": "AAP",
+  "family": "incomplete_stop",
+  "rankings": {
+    "fixed_facet_plan:original": {
+      "4": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-SP5",
+        "AAP2018-35PLUS-P6-B10"
+      ]
+    },
+    "question_only:original": {
+      "4": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P6-B10"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P5-B3"
+      ]
+    },
+    "fixed_facet_plan:clinical_shorthand": {
+      "4": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-SP5",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B9"
+      ]
+    },
+    "question_only:clinical_shorthand": {
+      "4": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P6-B10"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B5"
+      ]
+    },
+    "fixed_facet_plan:plain_language": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-SP5",
+        "AAP2018-35PLUS-P6-B10"
+      ]
+    },
+    "question_only:plain_language": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P6-B10"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-SP6",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P6-B10",
+        "AAP2018-35PLUS-P5-B9",
+        "AAP2018-35PLUS-P5-B8",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P5-B5"
+      ]
+    }
+  },
+  "queries": {
+    "original": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established.",
+    "clinical_shorthand": "BCx is sterile after the recorded incubation, but respiratory illness persists. Explain ABx review and whether stopping conditions are established.",
+    "plain_language": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Describe antibiotic Discuss and whether stopping conditions are established."
+  },
+  "definition_context_ids": {
+    "AAP2018-35PLUS-P3-B7": [],
+    "AAP2018-35PLUS-P3-B9": [],
+    "AAP2018-35PLUS-P3-B10": [],
+    "AAP2018-35PLUS-P3-B11": [],
+    "AAP2018-35PLUS-P3-B13": [],
+    "AAP2018-35PLUS-P4-B0": [],
+    "AAP2018-35PLUS-P4-B1": [],
+    "AAP2018-35PLUS-P4-B3": [],
+    "AAP2018-35PLUS-P4-B5": [],
+    "AAP2018-35PLUS-P4-B6": [],
+    "AAP2018-35PLUS-P4-B7": [],
+    "AAP2018-35PLUS-P4-B9": [],
+    "AAP2018-35PLUS-P5-B3": [],
+    "AAP2018-35PLUS-P5-B5": [],
+    "AAP2018-35PLUS-P5-B8": [],
+    "AAP2018-35PLUS-P5-B9": [],
+    "AAP2018-35PLUS-P5-B13": [],
+    "AAP2018-35PLUS-P6-B2": [],
+    "AAP2018-35PLUS-P6-B4": [],
+    "AAP2018-35PLUS-P6-B7": [],
+    "AAP2018-35PLUS-P6-B8": [],
+    "AAP2018-35PLUS-P6-B9": [],
+    "AAP2018-35PLUS-P6-B10": [],
+    "AAP2018-35PLUS-P6-B14": [],
+    "AAP2018-35PLUS-SP2": [],
+    "AAP2018-35PLUS-SP3": [],
+    "AAP2018-35PLUS-SP4": [],
+    "AAP2018-35PLUS-SP5": [],
+    "AAP2018-35PLUS-SP6": [],
+    "AAP2018-35PLUS-P6-STOP": []
+  },
+  "original_pipeline_replay_equal": true
+}

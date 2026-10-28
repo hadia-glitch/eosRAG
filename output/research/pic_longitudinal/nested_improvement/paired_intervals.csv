@@ -1,0 +1,13 @@
+method,seed,metric,comparison,low_95,high_95,resamples
+nested_selected,31,auroc,minus fold-training prevalence,-0.319302062074682,0.31635374969358837,2000
+nested_selected,31,auprc,minus fold-training prevalence,-0.004477849956692433,0.04952629967510068,2000
+nested_selected,31,brier,minus fold-training prevalence,-3.8702881166129344e-05,0.0055396473609524485,2000
+compact_lr_median_C001,31,auroc,minus fold-training prevalence,-0.24854762202901245,0.2831581631700452,2000
+compact_lr_median_C001,31,auprc,minus fold-training prevalence,-0.0021993719292046324,0.11183877792930358,2000
+compact_lr_median_C001,31,brier,minus fold-training prevalence,-6.35946603919095e-05,0.0021786912302513336,2000
+compact_lr_knn_C01,31,auroc,minus fold-training prevalence,-0.34543928128872264,0.2693791233420099,2000
+compact_lr_knn_C01,31,auprc,minus fold-training prevalence,-0.004196588366719964,0.2467937106584531,2000
+compact_lr_knn_C01,31,brier,minus fold-training prevalence,-0.001313774655504461,0.00039259324483618475,2000
+compact_native_missing_boost,31,auroc,minus fold-training prevalence,-0.1507890245139618,0.07151373572651976,2000
+compact_native_missing_boost,31,auprc,minus fold-training prevalence,-0.002297209610547037,0.005935483651139301,2000
+compact_native_missing_boost,31,brier,minus fold-training prevalence,6.337947782954256e-07,0.00015539715141249218,2000

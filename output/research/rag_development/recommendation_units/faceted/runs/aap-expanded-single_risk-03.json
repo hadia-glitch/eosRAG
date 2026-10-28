@@ -1,0 +1,252 @@
+{
+  "id": "aap-expanded-single_risk-03",
+  "family": "single_risk",
+  "guideline": "AAP",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "2": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9"
+      ],
+      "4": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B13"
+      ],
+      "6": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P4-B9"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "12": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B7"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "2": [
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-SP2"
+      ],
+      "4": [
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B10"
+      ],
+      "6": [
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B9"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B9"
+      ],
+      "12": [
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P6-B14",
+        "AAP2018-35PLUS-P4-B7",
+        "AAP2018-35PLUS-P3-B7"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "2": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9"
+      ],
+      "4": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP3"
+      ],
+      "6": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2"
+      ],
+      "12": [
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P6-B14",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "AAP2018-35PLUS-P3-B10"
+      ],
+      "2": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP2"
+      ],
+      "4": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "6": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B1"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "12": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P6-B14",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P4-B3"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "AAP2018-35PLUS-P3-B10"
+      ],
+      "2": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP2"
+      ],
+      "4": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "6": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B9"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "12": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P4-B1",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P6-B14",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B7"
+      ]
+    }
+  },
+  "questions": [
+    "What risk stratification criteria are used for early\u2011onset neonatal sepsis in a well\u2011appearing infant with one confirmed maternal GBS risk factor?",
+    "What physical examination findings should be assessed to evaluate early\u2011onset neonatal sepsis in this infant?",
+    "What locally documented management options (e.g., observation, empiric antibiotics) are recommended for a well\u2011appearing infant with a single maternal GBS risk factor?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 30,
+  "replayed_unchanged_source": true,
+  "parent_record_sha256": "47583d20f9e274c64e3eea25fb58dca3d63ea87df284cbcfc2b8e1490dc34c49"
+}

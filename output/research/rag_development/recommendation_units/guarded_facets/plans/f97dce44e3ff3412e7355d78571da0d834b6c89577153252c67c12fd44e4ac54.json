@@ -1,0 +1,13 @@
+{
+  "source": "AAP",
+  "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests.",
+  "available": true,
+  "questions": [
+    "What are the recommended initial diagnostic investigations for suspected early\u2011onset neonatal sepsis (0\u201172\u202fhours) and what are their respective limitations?",
+    "How reliable are common laboratory tests (e.g., blood culture, complete blood count, C\u2011reactive protein, procalcitonin) in detecting early\u2011onset neonatal sepsis and what factors affect their sensitivity and specificity?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": false,
+  "original_record_sha256": "795decea76f22fb23ad250d6114c2e2e5376e8ab2a2dae07f021bdd2b5983a8c",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

@@ -29,11 +29,16 @@ def write(name,rows):
         w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
 
 
-def main(partial):
+def main(partial, corrected_corpus=False, guarded_facets=False):
+    global OUT
+    corrected_corpus = corrected_corpus or guarded_facets
+    if corrected_corpus:
+        OUT=ROOT/('output/research/rag_development/recommendation_units/guarded_facets' if guarded_facets else 'output/research/rag_development/recommendation_units/faceted')
     cases={c['id']:c for c in json.loads((ROOT/'output/research/expanded100/cases.json').read_text())}
     records=[json.loads(p.read_text()) for p in (OUT/'runs').glob('*.json')]
     if len(records)!=100 and not partial:raise SystemExit('Development retrieval incomplete; no complete summary emitted')
-    corpus={c['chunk_id']:c for c in json.loads((ROOT/'output/research/rag_development/medcpt/corpus.json').read_text())['chunks']}
+    corpusfile=ROOT/('output/research/rag_development/recommendation_units/corpus.json' if corrected_corpus else 'output/research/rag_development/medcpt/corpus.json')
+    corpus={c['chunk_id']:c for c in json.loads(corpusfile.read_text())['chunks']}
     rows=[]
     for r in records:
         c=cases[r['id']]
@@ -65,8 +70,35 @@ def main(partial):
                                **ci([r[metric]-b[r['id']][metric] for r in a],[r['family'] for r in a])})
     prefix='partial_' if len(records)!=100 else ''
     write(prefix+'per_case.csv',rows);write(prefix+'intervals.csv',summary);write(prefix+'paired_differences.csv',paired)
+    if corrected_corpus:
+        oldcorpus={c['chunk_id']:c for c in json.loads((ROOT/'output/research/rag_development/medcpt/corpus.json').read_text())['chunks']}
+        boundary_counts=[]
+        for g in ['NICE','AAP','WHO']:
+            source_rows=[c for c in corpus.values() if c['guideline_id']==g]
+            boundary_counts.append({'guideline':g,'corpus_passages':len(source_rows),
+                'changed_source_texts':sum(c['raw_text']!=oldcorpus[c['chunk_id']]['raw_text'] for c in source_rows),
+                'missing_gold_identifiers':sum(i not in corpus for c in cases.values() for i in c['gold_chunk_ids'] if i.startswith(g)),
+                'clinical_review_status':'pending'})
+        write('source_boundary_counts.csv',boundary_counts)
+        previous={}
+        baseline=ROOT/('output/research/rag_development/recommendation_units/faceted/per_case.csv' if guarded_facets else 'output/research/rag_development/faceted/per_case.csv')
+        with baseline.open(encoding='utf8') as f:
+            for old in csv.DictReader(f):
+                previous[(old['id'],old['method'],int(old['depth']))]=old
+        changes=[]
+        for g in ['NICE','AAP','WHO']:
+            for method in sorted({r['method'] for r in rows}):
+                for depth in [4,8]:
+                    selected=[r for r in rows if (r['guideline'],r['method'],r['depth'])==(g,method,depth)]
+                    for metric in ['recall','precision','mrr','ndcg','f1','source_words']:
+                        changes.append({'guideline':g,'method':method,'depth':depth,'metric':metric,
+                            'contrast':'guarded anchors minus unguarded anchors' if guarded_facets else 'corrected source boundaries minus prior corpus','paired_n':len(selected),
+                            **ci([r[metric]-float(previous[(r['id'],method,depth)][metric]) for r in selected],[r['family'] for r in selected])})
+        write(prefix+('anchor_guard_paired_differences.csv' if guarded_facets else 'source_boundary_paired_differences.csv'),changes)
     save(OUT/(prefix+'summary.json'),{'stage':'development_only','final_evaluation':False,'complete':len(records)==100,
-          'completed_cases':len(records),'planned_cases':100,'statistics':summary,'paired':paired})
+          'completed_cases':len(records),'planned_cases':100,'statistics':summary,'paired':paired,
+          'corrected_corpus':corrected_corpus,'guarded_facets':guarded_facets,
+          'unchanged_source_replays':sum(r.get('replayed_unchanged_source',False) for r in records)})
     lines=['# Faceted guidance retrieval: development results','',
         'Final evaluation remains on hold. Cases and gold IDs are unchanged. Results reuse a previously examined synthetic benchmark.',
         '', '|Source|Method|Depth|N|Recall|Precision (ceiling)|MRR|nDCG|Mean source words|',
@@ -78,9 +110,13 @@ def main(partial):
     lines+=['','All five methods and all six depths are retained in the CSVs. Case and whole-family intervals use 2,000 resamples and seed 31. Repeated query templates limit independence.',
         '','Larger evidence budgets trade precision and context size for recall. A small WHO recommendation pool makes high-depth recall easier; these results are not directly comparable to a large mixed background index without disclosing that change.',
         '','Source roles come from publisher structure, not gold labels. Background evidence remains indexed separately. Technical scope extraction and engineering references still require clinician adjudication. No clinical usability or safety claim follows from retrieval overlap alone.']
+    if guarded_facets:
+        lines+=['','This selector comparison recomputes all 100 passage orders using exact cached cross-encoder scores and the corrected corpus. Facet anchors must belong to both the original-question and fused top-2k relevance heads. No new Groq or cross-encoder calls are used; query embeddings are recomputed locally. This is exposed development, not independent validation.']
+    elif corrected_corpus:
+        lines+=['','This source-boundary amendment recomputes NICE retrieval. AAP and WHO are exact unchanged-source replays from the preceding development experiment, not independent replication. Cases and proposed gold IDs are unchanged. No Groq calls are used.']
     (OUT/(prefix+'results.md')).write_text('\n'.join(lines)+'\n',encoding='utf8')
     print('\n'.join(lines),flush=True)
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--partial',action='store_true');a=p.parse_args();main(a.partial)
+    p=argparse.ArgumentParser();p.add_argument('--partial',action='store_true');p.add_argument('--corrected-corpus',action='store_true');p.add_argument('--guarded-facets',action='store_true');a=p.parse_args();main(a.partial,a.corrected_corpus,a.guarded_facets)

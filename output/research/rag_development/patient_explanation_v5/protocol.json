@@ -1,0 +1,50 @@
+{
+  "stage": "patient_explanation_development",
+  "final_evaluation": false,
+  "planned_cases": 18,
+  "case_ids": [
+    "nice-expanded-incomplete_stop-01",
+    "aap-expanded-crp_alone-01",
+    "who-expanded-missing_results-01",
+    "deterioration-1",
+    "crp_alone-1",
+    "initial_investigation-1",
+    "single_risk-1",
+    "missing_results-1",
+    "aap-expanded-deterioration-01",
+    "aap-expanded-incomplete_stop-01",
+    "aap-expanded-initial_investigation-01",
+    "aap-expanded-single_risk-01",
+    "aap-expanded-missing_results-01",
+    "who-expanded-deterioration-01",
+    "who-expanded-crp_alone-01",
+    "who-expanded-incomplete_stop-01",
+    "who-expanded-initial_investigation-01",
+    "who-expanded-single_risk-01"
+  ],
+  "smoke_cases": [
+    "nice-expanded-incomplete_stop-01",
+    "aap-expanded-crp_alone-01",
+    "who-expanded-missing_results-01"
+  ],
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0,
+  "sampling_seed": null,
+  "retrieval": "Same source-context retrieval + vocabulary-aware routing, eight original recommendations; definitions explicitly counted.",
+  "max_repairs": 1,
+  "strict_schema": true,
+  "clinical_review": "Not performed; two model auditors do not establish clinical usability.",
+  "source_approval": "Research extracts remain pending clinical source adjudication; no clinical deployment.",
+  "gold_or_reference_in_model_prompt": false,
+  "cohort": "Existing synthetic benchmark only; no PIC records",
+  "code_sha256": {
+    "backend/scripts/pilot_context_explanations.py": "2552a3b86d4bfa04f5d72b7e06d9f274d08c231417c2fc086529207fec942ebd",
+    "backend/rag/verification_v5.py": "4c6278e89d6fb47efb8d6b00601c47d795afd06c76b434b69ba7795770f66731",
+    "backend/rag/verification_core_v5.py": "ee8b01c5cc536752432c9ebd81ceb0a5c4ce12cd353eec7a726f89c7b83096c9",
+    "backend/rag/support_validation_v5.py": "7c3176c81914c0ddddcbb2c94b0679fcc43325dfe0a02cf9233eea42adb75e9a",
+    "backend/rag/workflow_context_graph_v2.py": "775b6296237bb8f7774e4508bc471f01e0c512ede58f8f82d273a43329570757",
+    "backend/rag/canonical_clinical_query.py": "d6cb15d43048e8ed8d1d1d8324ec80dd1ceb92481c1d501f739c761bb6ab6b42"
+  },
+  "corpus_sha256": "e0fa0e3ba8a911b1da419a4681c24567c59ffedcac631b3426d5c3b17e312d96",
+  "cases_sha256": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45"
+}

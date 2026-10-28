@@ -1,0 +1,13 @@
+{
+  "source": "AAP",
+  "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings.",
+  "available": true,
+  "questions": [
+    "In neonates 0-72 hours with suspected early\u2011onset sepsis, how should risk be assessed when maternal history and culture results are unavailable and the latest physical examination is missing?",
+    "What diagnostic investigations are recommended for evaluating early\u2011onset neonatal sepsis in the absence of maternal history, culture data, and recent examination findings?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": false,
+  "original_record_sha256": "2681a183b12802b154a845cc3083ce7768854992d253e22b3388c148a0d32acc",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

@@ -1,0 +1,223 @@
+{
+  "id": "nice-expanded-single_risk-03",
+  "guideline": "NICE",
+  "family": "single_risk",
+  "rankings": {
+    "fixed_facet_plan:legacy:original": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.10.5",
+        "NICE-1.15.1"
+      ]
+    },
+    "fixed_facet_plan:canonical_v2:original": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.10.5",
+        "NICE-1.15.1"
+      ]
+    },
+    "question_only:legacy:original": {
+      "4": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.10.3"
+      ],
+      "8": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.1.1"
+      ]
+    },
+    "question_only:canonical_v2:original": {
+      "4": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.10.3"
+      ],
+      "8": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.1.1"
+      ]
+    },
+    "fixed_facet_plan:legacy:clinical_shorthand": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.10.5",
+        "NICE-1.15.1"
+      ]
+    },
+    "fixed_facet_plan:canonical_v2:clinical_shorthand": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.10.5",
+        "NICE-1.15.1"
+      ]
+    },
+    "question_only:legacy:clinical_shorthand": {
+      "4": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.10.3"
+      ],
+      "8": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.1.1"
+      ]
+    },
+    "question_only:canonical_v2:clinical_shorthand": {
+      "4": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.10.3"
+      ],
+      "8": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.10.3",
+        "NICE-1.10.5",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.1.1"
+      ]
+    },
+    "fixed_facet_plan:legacy:plain_language": {
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.11.1"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.11.1",
+        "NICE-1.10.4",
+        "NICE-1.10.3",
+        "NICE-1.15.1",
+        "NICE-1.10.5"
+      ]
+    },
+    "fixed_facet_plan:canonical_v2:plain_language": {
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.11.1"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.10.2",
+        "NICE-box1",
+        "NICE-1.11.1",
+        "NICE-1.10.4",
+        "NICE-1.10.3",
+        "NICE-1.15.1",
+        "NICE-1.10.5"
+      ]
+    },
+    "question_only:legacy:plain_language": {
+      "4": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.11.1"
+      ],
+      "8": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.11.1",
+        "NICE-1.37.1",
+        "NICE-1.31.4",
+        "NICE-1.30.1",
+        "NICE-1.27.6"
+      ]
+    },
+    "question_only:canonical_v2:plain_language": {
+      "4": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.11.1"
+      ],
+      "8": [
+        "NICE-box1",
+        "NICE-1.10.2",
+        "NICE-1.10.1",
+        "NICE-1.11.1",
+        "NICE-1.37.1",
+        "NICE-1.31.4",
+        "NICE-1.30.1",
+        "NICE-1.27.6"
+      ]
+    }
+  }
+}

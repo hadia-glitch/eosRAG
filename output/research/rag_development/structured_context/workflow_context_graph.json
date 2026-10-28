@@ -1,0 +1,97 @@
+{
+  "nodes": [
+    {
+      "chunk_id": "NICE-1.13.1",
+      "guideline": "NICE",
+      "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1",
+      "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+      "roles": [
+        "sampling_prerequisite"
+      ],
+      "source_heading": {
+        "parent_heading": "Investigations before starting antibiotics for early-onset or late-onset neonatal infection",
+        "section_heading": "Cultures, microscopy and C-reactive protein",
+        "pdf_page": 21
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.13.2",
+      "guideline": "NICE",
+      "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1",
+      "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+      "roles": [
+        "serial_marker"
+      ],
+      "source_heading": {
+        "parent_heading": "Investigations before starting antibiotics for early-onset or late-onset neonatal infection",
+        "section_heading": "Cultures, microscopy and C-reactive protein",
+        "pdf_page": 21
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.15.3",
+      "guideline": "NICE",
+      "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1",
+      "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+      "roles": [
+        "marker_limit"
+      ],
+      "source_heading": {
+        "parent_heading": "Principles around use of antibiotics for early-onset or late-onset neonatal infection",
+        "section_heading": "Principles guiding antibiotic decisions",
+        "pdf_page": 25
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.15.4",
+      "guideline": "NICE",
+      "pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1",
+      "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+      "roles": [
+        "clinical_reassessment"
+      ],
+      "source_heading": {
+        "parent_heading": "Principles around use of antibiotics for early-onset or late-onset neonatal infection",
+        "section_heading": "Principles guiding antibiotic decisions",
+        "pdf_page": 25
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "WHO2024-C-CLINICAL",
+      "guideline": "WHO",
+      "pdf_sha256": "052286d349e2c1b4455b2f721f1363d87b16a6cb65e3c3555c22f32dd6b85bc3",
+      "text_sha256": "cc4533a3f4b3b9324b708b0b0e5b3cac1bb21cb5dd36e198ab9d67e9492514dc",
+      "roles": [
+        "general_clinical_context"
+      ],
+      "source_heading": {},
+      "clinical_review_status": "pending"
+    }
+  ],
+  "edges": [
+    {
+      "from": "NICE-1.13.2",
+      "to": "NICE-1.13.1",
+      "relation": "SHARES_TREATMENT_START_CONTEXT",
+      "clinical_review_status": "pending"
+    },
+    {
+      "from": "NICE-1.13.2",
+      "to": "NICE-1.15.3",
+      "relation": "HAS_INTERPRETATION_LIMIT",
+      "clinical_review_status": "pending"
+    },
+    {
+      "from": "NICE-1.15.3",
+      "to": "NICE-1.15.4",
+      "relation": "HAS_SAME_SECTION_REASSESSMENT_CONTEXT",
+      "clinical_review_status": "pending"
+    }
+  ],
+  "clinical_review_status": "pending",
+  "semantics": "Publisher headings, explicit shared conditions and source roles; engineering context links, not causal or treatment assertions."
+}

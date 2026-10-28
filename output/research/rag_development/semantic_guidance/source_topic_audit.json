@@ -1,0 +1,1892 @@
+[
+  {
+    "id": "deterioration-1",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "deterioration-1",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "deterioration-1",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "deterioration-1",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "deterioration-1",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "deterioration-1",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "deterioration-1",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "deterioration-1",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "deterioration-2",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "deterioration-2",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "deterioration-2",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "deterioration-2",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "deterioration-2",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "deterioration-2",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "deterioration-2",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "deterioration-2",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "deterioration-3",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "deterioration-3",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "deterioration-3",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "deterioration-3",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "deterioration-3",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "deterioration-3",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "deterioration-3",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "deterioration-3",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "crp_alone-1",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "crp_alone-1",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "crp_alone-1",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "crp_alone-1",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "crp_alone-1",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "crp_alone-1",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "crp_alone-1",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "crp_alone-1",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "crp_alone-2",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "crp_alone-2",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "crp_alone-2",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "crp_alone-2",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "crp_alone-2",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "crp_alone-2",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "crp_alone-2",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "crp_alone-2",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "crp_alone-3",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "crp_alone-3",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "crp_alone-3",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "crp_alone-3",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "crp_alone-3",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "crp_alone-3",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "crp_alone-3",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "crp_alone-3",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "incomplete_stop-1",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "incomplete_stop-1",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "incomplete_stop-1",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "incomplete_stop-1",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "incomplete_stop-1",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "incomplete_stop-1",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "incomplete_stop-1",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "incomplete_stop-1",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "incomplete_stop-2",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "incomplete_stop-2",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "incomplete_stop-2",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "incomplete_stop-2",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "incomplete_stop-2",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "incomplete_stop-2",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "incomplete_stop-2",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "incomplete_stop-2",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "incomplete_stop-3",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "incomplete_stop-3",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "incomplete_stop-3",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "incomplete_stop-3",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "incomplete_stop-3",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "incomplete_stop-3",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "incomplete_stop-3",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "incomplete_stop-3",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "initial_investigation-1",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "initial_investigation-1",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "initial_investigation-1",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "initial_investigation-1",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "initial_investigation-1",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "initial_investigation-1",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "initial_investigation-1",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "initial_investigation-1",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "initial_investigation-2",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "initial_investigation-2",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "initial_investigation-2",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "initial_investigation-2",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "initial_investigation-2",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "initial_investigation-2",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "initial_investigation-2",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "initial_investigation-2",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "initial_investigation-3",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "initial_investigation-3",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "initial_investigation-3",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "initial_investigation-3",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "initial_investigation-3",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "initial_investigation-3",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "initial_investigation-3",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "initial_investigation-3",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "single_risk-1",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "single_risk-1",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "single_risk-1",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "single_risk-1",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "single_risk-1",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "single_risk-1",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "single_risk-1",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "single_risk-1",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "single_risk-2",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "single_risk-2",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "single_risk-2",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "single_risk-2",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "single_risk-2",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "single_risk-2",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "single_risk-2",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "single_risk-2",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "single_risk-3",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "single_risk-3",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "single_risk-3",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "single_risk-3",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "single_risk-3",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "single_risk-3",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "single_risk-3",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "single_risk-3",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "missing_results-1",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "missing_results-1",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "missing_results-1",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "missing_results-1",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "missing_results-1",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "missing_results-1",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "missing_results-1",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "missing_results-1",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "missing_results-2",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "missing_results-2",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "missing_results-2",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "missing_results-2",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "missing_results-2",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "missing_results-2",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "missing_results-2",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "missing_results-2",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "missing_results-3",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "missing_results-3",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "missing_results-3",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "missing_results-3",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "missing_results-3",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "missing_results-3",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "missing_results-3",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "missing_results-3",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.10.4",
+    "reason": "calculator_outside_explicit_source_gestational_scope"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.22.1",
+    "reason": "outside_explicit_leading_gestational_population"
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.10.4",
+    "reason": "calculator_outside_explicit_source_gestational_scope"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.22.1",
+    "reason": "outside_explicit_leading_gestational_population"
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.10.4",
+    "reason": "calculator_outside_explicit_source_gestational_scope"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.22.1",
+    "reason": "outside_explicit_leading_gestational_population"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.10.4",
+    "reason": "calculator_outside_explicit_source_gestational_scope"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.22.1",
+    "reason": "outside_explicit_leading_gestational_population"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.10.4",
+    "reason": "calculator_outside_explicit_source_gestational_scope"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.22.1",
+    "reason": "outside_explicit_leading_gestational_population"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.10.4",
+    "reason": "calculator_outside_explicit_source_gestational_scope"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.22.1",
+    "reason": "outside_explicit_leading_gestational_population"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.10.4",
+    "reason": "calculator_outside_explicit_source_gestational_scope"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.22.1",
+    "reason": "outside_explicit_leading_gestational_population"
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.10.4",
+    "reason": "calculator_outside_explicit_source_gestational_scope"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.22.1",
+    "reason": "outside_explicit_leading_gestational_population"
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.1.6",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.2.4",
+    "reason": "future_pregnancy_counselling_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.6.1",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.9.1",
+    "reason": "maternal_labour_assessment_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.9.2",
+    "reason": "maternal_intrapartum_management_not_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.10.4",
+    "reason": "calculator_outside_explicit_source_gestational_scope"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.14.8",
+    "reason": "unrequested_existing_csf_result_interpretation"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.14.9",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.14.10",
+    "reason": "csf_interpretation_without_requested_or_recorded_csf_context"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.22.1",
+    "reason": "outside_explicit_leading_gestational_population"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-01",
+    "chunk_id": "WHO2024-B.3",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-01",
+    "chunk_id": "WHO2024-B.4",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-01",
+    "chunk_id": "WHO2024-B.5",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-01",
+    "chunk_id": "WHO2024-B.6",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-02",
+    "chunk_id": "WHO2024-B.3",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-02",
+    "chunk_id": "WHO2024-B.4",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-02",
+    "chunk_id": "WHO2024-B.5",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-02",
+    "chunk_id": "WHO2024-B.6",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-03",
+    "chunk_id": "WHO2024-B.3",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-03",
+    "chunk_id": "WHO2024-B.4",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-03",
+    "chunk_id": "WHO2024-B.5",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-03",
+    "chunk_id": "WHO2024-B.6",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-04",
+    "chunk_id": "WHO2024-B.3",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-04",
+    "chunk_id": "WHO2024-B.4",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-04",
+    "chunk_id": "WHO2024-B.5",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-04",
+    "chunk_id": "WHO2024-B.6",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-05",
+    "chunk_id": "WHO2024-B.3",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-05",
+    "chunk_id": "WHO2024-B.4",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-05",
+    "chunk_id": "WHO2024-B.5",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-incomplete_stop-05",
+    "chunk_id": "WHO2024-B.6",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-01",
+    "chunk_id": "WHO2024-B.3",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-01",
+    "chunk_id": "WHO2024-B.4",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-01",
+    "chunk_id": "WHO2024-B.5",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-01",
+    "chunk_id": "WHO2024-B.6",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-02",
+    "chunk_id": "WHO2024-B.3",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-02",
+    "chunk_id": "WHO2024-B.4",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-02",
+    "chunk_id": "WHO2024-B.5",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-02",
+    "chunk_id": "WHO2024-B.6",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-03",
+    "chunk_id": "WHO2024-B.3",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-03",
+    "chunk_id": "WHO2024-B.4",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-03",
+    "chunk_id": "WHO2024-B.5",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-03",
+    "chunk_id": "WHO2024-B.6",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-04",
+    "chunk_id": "WHO2024-B.3",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-04",
+    "chunk_id": "WHO2024-B.4",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-04",
+    "chunk_id": "WHO2024-B.5",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-04",
+    "chunk_id": "WHO2024-B.6",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-05",
+    "chunk_id": "WHO2024-B.3",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-05",
+    "chunk_id": "WHO2024-B.4",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-05",
+    "chunk_id": "WHO2024-B.5",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  },
+  {
+    "id": "who-expanded-initial_investigation-05",
+    "chunk_id": "WHO2024-B.6",
+    "reason": "unrequested_specific_diagnostic_pathway"
+  }
+]

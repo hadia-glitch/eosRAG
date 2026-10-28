@@ -25,5 +25,49 @@
     "lib/data/deidentify.dart": "812719f15c6df113614aee7e7a77ab83fef12dc45ef61a39300d08e308c2d92e",
     "lib/presentation/patient_state.dart": "08af455607d9b39578e3418d7a60ef853b23b3f661bc4cc222ff2b9deab5ca6d"
   },
-  "clinical_validation": "not performed"
+  "clinical_validation": "not performed",
+  "development_ranking_followup": {
+    "passed": 10,
+    "failed": 0,
+    "command": "python -X utf8 -m pytest backend/tests/test_evidence_dependency_graph.py backend/tests/test_evidence_set_ranker.py backend/tests/test_patient_passage_ranker.py backend/tests/test_listwise_rerank.py -q --basetemp=tmp/development-ranking-regressions",
+    "tested_source_sha256": {
+      "backend\\rag\\evidence_dependency_graph.py": "d74595a0714ca6079a5c8a49a2558115981678fa464203b555d5c57315ca89e3",
+      "backend\\rag\\evidence_set_ranker.py": "909747c41d11bb002c2f1b019324738f156ad26442ea94d88e6b237df969959c",
+      "backend\\rag\\patient_passage_ranker.py": "af9581e803cabe9703b79adb05752732f66b3bce6d91605b2ad176795c071cf9",
+      "backend\\rag\\listwise_rerank.py": "fdee2c20f86ad11efe584712f8f2ef9e71f81b6888ed0adfc082d9f5a28e99d7"
+    }
+  },
+  "offline_development_followup": {
+    "passed": 21,
+    "failed": 0,
+    "test_directory": "tmp/offline-rag-development-regressions",
+    "scope": "ranking identity, exact source materialization, structural PDF boundaries and narrow specimen-volume validation; no new semantic clinical audit",
+    "tested_source_sha256": {
+      "backend/rag/evidence_dependency_graph.py": "d74595a0714ca6079a5c8a49a2558115981678fa464203b555d5c57315ca89e3",
+      "backend/rag/evidence_set_ranker.py": "909747c41d11bb002c2f1b019324738f156ad26442ea94d88e6b237df969959c",
+      "backend/rag/patient_passage_ranker.py": "af9581e803cabe9703b79adb05752732f66b3bce6d91605b2ad176795c071cf9",
+      "backend/rag/listwise_rerank.py": "fdee2c20f86ad11efe584712f8f2ef9e71f81b6888ed0adfc082d9f5a28e99d7",
+      "backend/rag/evidence_set_ids.py": "278de67bdcad3890e3819bdd01d8efb47877f842ca04771cc2a688ffed80e92d",
+      "backend/rag/recommendation_units.py": "178eb63072932669c408ccce42018ed51d21bc20445b1c859420a370b711466c",
+      "backend/rag/support_validation_v5.py": "7c3176c81914c0ddddcbb2c94b0679fcc43325dfe0a02cf9233eea42adb75e9a"
+    },
+    "production_integration": "not performed; follows final evaluation"
+  },
+  "bounded_facet_followup": {
+    "passed": 3,
+    "failed": 0,
+    "tested_source_sha256": {
+      "backend/rag/bounded_facets.py": "35279e8830fa33da32c5860607e08afb558880dc9588bf118bd9fb7394eff161"
+    },
+    "scope": "Original-question and fused relevance-head anchor guard only; clinical quality not established"
+  },
+  "local_and_topic_followup": {
+    "passed": 6,
+    "failed": 0,
+    "scope": "Three local transport contract tests and three source-topic routing tests; no clinical validation",
+    "tested_source_sha256": {
+      "backend/rag/local_development_transport.py": "ab43d519b9ebf70f1490b9f331a8326486ab72b49f59644b1d7de8e8ef19b08b",
+      "backend/rag/topic_scope.py": "377316d72a2398aea83439aad3aae3e78101be0af4c5a0991e04594841c97e68"
+    }
+  }
 }

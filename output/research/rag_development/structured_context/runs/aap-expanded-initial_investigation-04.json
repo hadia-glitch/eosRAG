@@ -1,0 +1,231 @@
+{
+  "id": "aap-expanded-initial_investigation-04",
+  "guideline": "AAP",
+  "family": "initial_investigation",
+  "stage": "development_only",
+  "rankings": {
+    "publisher_hierarchy": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    },
+    "qualifier_graph": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    },
+    "longitudinal_context_graph": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    }
+  },
+  "selection_trace": {
+    "publisher_hierarchy": [
+      {
+        "chunk_id": "AAP2018-35PLUS-SP4",
+        "reason": "publisher_summary:diagnostics"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B0",
+        "reason": "supporting_source_detail"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P5-B3",
+        "reason": "supporting_source_detail"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P3-B11",
+        "reason": "supporting_source_detail"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-SP2",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P6-B2",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B5",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B6",
+        "reason": "remaining_relevant_context"
+      }
+    ],
+    "qualifier_graph": [
+      {
+        "chunk_id": "AAP2018-35PLUS-SP4",
+        "reason": "publisher_summary:diagnostics"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B0",
+        "reason": "supporting_source_detail"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P5-B3",
+        "reason": "supporting_source_detail"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P3-B11",
+        "reason": "supporting_source_detail"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-SP2",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P6-B2",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B5",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B6",
+        "reason": "remaining_relevant_context"
+      }
+    ],
+    "longitudinal_context_graph": [
+      {
+        "chunk_id": "AAP2018-35PLUS-SP4",
+        "reason": "publisher_summary:diagnostics"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B0",
+        "reason": "supporting_source_detail"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P5-B3",
+        "reason": "supporting_source_detail"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P3-B11",
+        "reason": "supporting_source_detail"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-SP2",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P6-B2",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B5",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "AAP2018-35PLUS-P4-B6",
+        "reason": "remaining_relevant_context"
+      }
+    ]
+  },
+  "eligible_candidates": 30,
+  "definition_context_ids": {
+    "AAP2018-35PLUS-P3-B7": [],
+    "AAP2018-35PLUS-P3-B9": [],
+    "AAP2018-35PLUS-P3-B10": [],
+    "AAP2018-35PLUS-P3-B11": [],
+    "AAP2018-35PLUS-P3-B13": [],
+    "AAP2018-35PLUS-P4-B0": [],
+    "AAP2018-35PLUS-P4-B1": [],
+    "AAP2018-35PLUS-P4-B3": [],
+    "AAP2018-35PLUS-P4-B5": [],
+    "AAP2018-35PLUS-P4-B6": [],
+    "AAP2018-35PLUS-P4-B7": [],
+    "AAP2018-35PLUS-P4-B9": [],
+    "AAP2018-35PLUS-P5-B3": [],
+    "AAP2018-35PLUS-P5-B5": [],
+    "AAP2018-35PLUS-P5-B8": [],
+    "AAP2018-35PLUS-P5-B9": [],
+    "AAP2018-35PLUS-P5-B13": [],
+    "AAP2018-35PLUS-P6-B2": [],
+    "AAP2018-35PLUS-P6-B4": [],
+    "AAP2018-35PLUS-P6-B7": [],
+    "AAP2018-35PLUS-P6-B8": [],
+    "AAP2018-35PLUS-P6-B9": [],
+    "AAP2018-35PLUS-P6-B10": [],
+    "AAP2018-35PLUS-P6-B14": [],
+    "AAP2018-35PLUS-SP2": [],
+    "AAP2018-35PLUS-SP3": [],
+    "AAP2018-35PLUS-SP4": [],
+    "AAP2018-35PLUS-SP5": [],
+    "AAP2018-35PLUS-SP6": [],
+    "AAP2018-35PLUS-P6-STOP": []
+  },
+  "evidence_genres": {
+    "AAP2018-35PLUS-P3-B7": "core_guidance",
+    "AAP2018-35PLUS-P3-B9": "core_guidance",
+    "AAP2018-35PLUS-P3-B10": "core_guidance",
+    "AAP2018-35PLUS-P3-B11": "core_guidance",
+    "AAP2018-35PLUS-P3-B13": "core_guidance",
+    "AAP2018-35PLUS-P4-B0": "core_guidance",
+    "AAP2018-35PLUS-P4-B1": "core_guidance",
+    "AAP2018-35PLUS-P4-B3": "core_guidance",
+    "AAP2018-35PLUS-P4-B5": "core_guidance",
+    "AAP2018-35PLUS-P4-B6": "core_guidance",
+    "AAP2018-35PLUS-P4-B7": "study_background",
+    "AAP2018-35PLUS-P4-B9": "core_guidance",
+    "AAP2018-35PLUS-P5-B3": "core_guidance",
+    "AAP2018-35PLUS-P5-B5": "core_guidance",
+    "AAP2018-35PLUS-P5-B8": "core_guidance",
+    "AAP2018-35PLUS-P5-B9": "core_guidance",
+    "AAP2018-35PLUS-P5-B13": "core_guidance",
+    "AAP2018-35PLUS-P6-B2": "core_guidance",
+    "AAP2018-35PLUS-P6-B4": "study_background",
+    "AAP2018-35PLUS-P6-B7": "core_guidance",
+    "AAP2018-35PLUS-P6-B8": "core_guidance",
+    "AAP2018-35PLUS-P6-B9": "core_guidance",
+    "AAP2018-35PLUS-P6-B10": "core_guidance",
+    "AAP2018-35PLUS-P6-B14": "core_guidance",
+    "AAP2018-35PLUS-SP2": "core_guidance",
+    "AAP2018-35PLUS-SP3": "core_guidance",
+    "AAP2018-35PLUS-SP4": "core_guidance",
+    "AAP2018-35PLUS-SP5": "core_guidance",
+    "AAP2018-35PLUS-SP6": "core_guidance",
+    "AAP2018-35PLUS-P6-STOP": "core_guidance"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "id": "who-expanded-crp_alone-04",
+  "guideline": "WHO",
+  "family": "crp_alone",
+  "stage": "development_only",
+  "rankings": {
+    "publisher_hierarchy": {
+      "4": [
+        "WHO2024-A.3a",
+        "WHO2024-A.1",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-A.3a",
+        "WHO2024-A.1",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-A.3b",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4"
+      ]
+    },
+    "qualifier_graph": {
+      "4": [
+        "WHO2024-A.3a",
+        "WHO2024-A.1",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-A.3a",
+        "WHO2024-A.1",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-A.3b",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4"
+      ]
+    },
+    "longitudinal_context_graph": {
+      "4": [
+        "WHO2024-A.3a",
+        "WHO2024-A.1",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-A.3a",
+        "WHO2024-A.1",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.2",
+        "WHO2024-A.3b",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-A.4"
+      ]
+    }
+  },
+  "selection_trace": {
+    "publisher_hierarchy": [
+      {
+        "chunk_id": "WHO2024-A.3a",
+        "reason": "question_relevance_head"
+      },
+      {
+        "chunk_id": "WHO2024-A.1",
+        "reason": "question_relevance_head"
+      },
+      {
+        "chunk_id": "WHO2024-A.1-DEFINITION",
+        "reason": "question_relevance_head"
+      },
+      {
+        "chunk_id": "WHO2024-C-CLINICAL",
+        "reason": "publisher_general_clinical_context"
+      },
+      {
+        "chunk_id": "WHO2024-A.2",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "WHO2024-A.3b",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "WHO2024-C-REFERRAL",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "WHO2024-A.4",
+        "reason": "remaining_relevant_context"
+      }
+    ],
+    "qualifier_graph": [
+      {
+        "chunk_id": "WHO2024-A.3a",
+        "reason": "question_relevance_head"
+      },
+      {
+        "chunk_id": "WHO2024-A.1",
+        "reason": "question_relevance_head"
+      },
+      {
+        "chunk_id": "WHO2024-A.1-DEFINITION",
+        "reason": "question_relevance_head"
+      },
+      {
+        "chunk_id": "WHO2024-C-CLINICAL",
+        "reason": "publisher_general_clinical_context"
+      },
+      {
+        "chunk_id": "WHO2024-A.2",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "WHO2024-A.3b",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "WHO2024-C-REFERRAL",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "WHO2024-A.4",
+        "reason": "remaining_relevant_context"
+      }
+    ],
+    "longitudinal_context_graph": [
+      {
+        "chunk_id": "WHO2024-A.3a",
+        "reason": "question_relevance_head"
+      },
+      {
+        "chunk_id": "WHO2024-A.1",
+        "reason": "question_relevance_head"
+      },
+      {
+        "chunk_id": "WHO2024-A.1-DEFINITION",
+        "reason": "question_relevance_head"
+      },
+      {
+        "chunk_id": "WHO2024-C-CLINICAL",
+        "reason": "publisher_general_clinical_context"
+      },
+      {
+        "chunk_id": "WHO2024-A.2",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "WHO2024-A.3b",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "WHO2024-C-REFERRAL",
+        "reason": "remaining_relevant_context"
+      },
+      {
+        "chunk_id": "WHO2024-A.4",
+        "reason": "remaining_relevant_context"
+      }
+    ]
+  },
+  "eligible_candidates": 9,
+  "definition_context_ids": {
+    "WHO2024-A.1": [
+      "WHO2024-P2-B17::definition:3da96225be16"
+    ],
+    "WHO2024-A.2": [
+      "WHO2024-P6-B14::definition:7b1629a3457c"
+    ],
+    "WHO2024-A.3a": [
+      "WHO2024-P10-B5::definition:a697590a9f62"
+    ],
+    "WHO2024-A.3b": [
+      "WHO2024-P10-B5::definition:a697590a9f62"
+    ],
+    "WHO2024-A.4": [],
+    "WHO2024-A.1-DEFINITION": [],
+    "WHO2024-C-CLINICAL": [],
+    "WHO2024-C-REFERRAL": [],
+    "WHO2024-C-RISK": []
+  },
+  "evidence_genres": {
+    "WHO2024-A.1": "core_guidance",
+    "WHO2024-A.2": "core_guidance",
+    "WHO2024-A.3a": "core_guidance",
+    "WHO2024-A.3b": "core_guidance",
+    "WHO2024-A.4": "core_guidance",
+    "WHO2024-A.1-DEFINITION": "implementation_context",
+    "WHO2024-C-CLINICAL": "implementation_context",
+    "WHO2024-C-REFERRAL": "implementation_context",
+    "WHO2024-C-RISK": "scope_limitation"
+  }
+}

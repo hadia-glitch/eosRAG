@@ -1,0 +1,26 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "cases": 100,
+  "new_model_calls": 0,
+  "corpus_sha256": "e0fa0e3ba8a911b1da419a4681c24567c59ffedcac631b3426d5c3b17e312d96",
+  "parent_protocol_sha256": "2a2544c7406a3537d18fdc2ba01a8d5cd136d761c0cc1d9e407eaa94be5536a3",
+  "graph_sha256": "3027b1902ac404f58fcbaf7f86226230556ba2862d81be23f878b6d107444f33",
+  "rrf_k": 60,
+  "depths": [
+    4,
+    8
+  ],
+  "methods": [
+    "publisher_hierarchy",
+    "qualifier_graph",
+    "longitudinal_context_graph"
+  ],
+  "design": "Publisher summary coverage plus source-derived condition/qualification companions; separate available-history ablation. Prefix-stable first-four priorities and extension to eight.",
+  "source_budget": "Every selected recommendation consumes a top-k slot. Publisher definition nodes are supplemental, separately counted, identical to the parent definition graph.",
+  "clinical_review_status": "pending; ontology/context routing developed after examining the same exposed benchmark, not external validation",
+  "code_sha256": {
+    "backend/rag/workflow_context_graph.py": "291b3b34c82ecadd12748589eba51909b355cc43327da905e2c8e99a4783b6d3",
+    "backend/scripts/develop_structured_context.py": "c4ecbf35ae0dc86607d7811f40ae163ab4abef09837e28c0f85c951e63df407b"
+  }
+}

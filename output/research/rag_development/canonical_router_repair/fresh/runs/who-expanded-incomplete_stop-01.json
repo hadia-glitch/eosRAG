@@ -1,0 +1,187 @@
+{
+  "id": "who-expanded-incomplete_stop-01",
+  "guideline": "WHO",
+  "family": "incomplete_stop",
+  "rankings": {
+    "fixed_facet_plan:legacy:original": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "fixed_facet_plan:canonical_v2:original": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "question_only:legacy:original": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "question_only:canonical_v2:original": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "fixed_facet_plan:legacy:clinical_shorthand": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "fixed_facet_plan:canonical_v2:clinical_shorthand": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "question_only:legacy:clinical_shorthand": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "question_only:canonical_v2:clinical_shorthand": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "fixed_facet_plan:legacy:plain_language": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "fixed_facet_plan:canonical_v2:plain_language": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "question_only:legacy:plain_language": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "question_only:canonical_v2:plain_language": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    }
+  }
+}

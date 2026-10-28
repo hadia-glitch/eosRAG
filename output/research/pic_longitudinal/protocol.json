@@ -1,0 +1,74 @@
+{
+  "feature_version": "pic-longitudinal-v1",
+  "seed": 31,
+  "dataset": "PIC v1.1.0",
+  "dataset_url": "https://physionet.org/content/picdb/1.1.0/",
+  "archive_sha256": "fbbc2908c3dd0f078227f4ee58f9a910d4037cd9e5d3bc1c4e0273629b216509",
+  "zip_table_prefix": "paediatric-intensive-care-database-1.1.0/V1.1.0/",
+  "target": "Subsequent documented named bacterial pathogen in blood collected before 72 postnatal hours; unadjudicated research phenotype",
+  "clinical_eos_eligible": false,
+  "label_adjudicated": false,
+  "landmark_offsets_after_admission_hours": [
+    1.0,
+    3.0,
+    6.0,
+    12.0,
+    24.0,
+    36.0,
+    48.0
+  ],
+  "lookback_hours": 24,
+  "recent_vital_window_hours": 6,
+  "eligibility": "First admission before 72h, explicit bacterial no-growth or named-pathogen early culture, prediction strictly before first early blood culture, >=2 distinct vitals recorded and available in prior 6h.",
+  "availability": "max(CHARTTIME, STORETIME) <= landmark; missing STORETIME excluded",
+  "unit_context": "ITEMID 1004 is Respiratory Rate in D_ITEMS. Its csv bpm is interpreted as breaths/minute by this item identity, not as heart rate. Pulse (1002) remains a distinct measurement from Heart Rate (1003). Measured weight is not relabelled birth weight.",
+  "outcome_policy": "Named pathogen overrides other reports. Otherwise every report must explicitly exclude bacteria. Unresolved Gram reports, possible contaminants, fungi, missing and fungus-only negatives are excluded.",
+  "positive_organism_allowlist": [
+    "enterobacter cloacae",
+    "enterococcus faecium group d",
+    "escherichia coli",
+    "klebsiella pneumoniae",
+    "listeria monocytogenes",
+    "pseudomonas aeruginosa",
+    "staphylococcus aureus",
+    "streptococcus agalactiae group b",
+    "streptococcus gallolyticus"
+  ],
+  "explicit_bacterial_negatives": [
+    "cultured for 5 days without bacteria, fungus growth",
+    "no bacteria, fungus growth",
+    "no bacterial growth",
+    "no bacterial growth for 5-day culture"
+  ],
+  "inputs": [
+    "neonatal_temperature",
+    "heart_rate",
+    "respiratory_rate",
+    "spo2",
+    "pulse_rate",
+    "diastolic_pressure",
+    "systolic_pressure",
+    "measured_weight_kg"
+  ],
+  "missing_maternal_predictors": [
+    "maternal_temperature",
+    "rom_hours",
+    "gbs_positive",
+    "adequate_intrapartum_antibiotics",
+    "clinical_chorioamnionitis"
+  ],
+  "never_predictors": [
+    "diagnoses",
+    "culture results",
+    "organism",
+    "prescriptions",
+    "death",
+    "discharge",
+    "length of stay",
+    "patient identifiers",
+    "absolute shifted dates"
+  ],
+  "laboratory_policy": "Excluded: no result-availability timestamp in LABEVENTS. CHARTTIME alone cannot establish prospective availability.",
+  "split_policy": "Patient-disjoint; shifted calendar dates are not a real chronological validation split.",
+  "code_sha256": "11874875fad9a115de4fd1f162b48c96c3ae73de5504955d26f5beebc4495b09"
+}

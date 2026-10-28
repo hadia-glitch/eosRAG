@@ -1,0 +1,115 @@
+{
+  "id": "who-expanded-single_risk-02",
+  "guideline": "WHO",
+  "family": "single_risk",
+  "rankings": {
+    "selector_only:legacy:original": {
+      "4": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.3a",
+        "WHO2024-A.4",
+        "WHO2024-A.3b"
+      ]
+    },
+    "selector_only:canonical_v2:original": {
+      "4": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.3a",
+        "WHO2024-A.4",
+        "WHO2024-A.3b"
+      ]
+    },
+    "selector_only:legacy:clinical_shorthand": {
+      "4": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.3a",
+        "WHO2024-A.4",
+        "WHO2024-A.3b"
+      ]
+    },
+    "selector_only:canonical_v2:clinical_shorthand": {
+      "4": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.3a",
+        "WHO2024-A.4",
+        "WHO2024-A.3b"
+      ]
+    },
+    "selector_only:legacy:plain_language": {
+      "4": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.3a",
+        "WHO2024-A.4",
+        "WHO2024-A.3b"
+      ]
+    },
+    "selector_only:canonical_v2:plain_language": {
+      "4": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-A.1",
+        "WHO2024-C-RISK",
+        "WHO2024-A.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-A.1-DEFINITION",
+        "WHO2024-A.3a",
+        "WHO2024-A.4",
+        "WHO2024-A.3b"
+      ]
+    }
+  }
+}

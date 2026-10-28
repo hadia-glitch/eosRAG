@@ -1,0 +1,13 @@
+{
+  "source": "NICE",
+  "query": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+  "available": true,
+  "questions": [
+    "What criteria must be met to discontinue antibiotics in early-onset neonatal sepsis when cultures are negative at 36 hours but clinical symptoms persist?",
+    "Which ongoing clinical signs or laboratory findings indicate the need to continue antibiotics in a neonate with suspected early-onset sepsis despite a negative culture at 36 hours?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": true,
+  "original_record_sha256": "7dd4c79050d0f6fe49b824d4a88dbf0be0c5c0abbf1425c72af9989f3218f0fe",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

@@ -1,0 +1,250 @@
+{
+  "id": "nice-expanded-missing_results-03",
+  "family": "missing_results",
+  "guideline": "NICE",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "NICE-1.10.1"
+      ],
+      "2": [
+        "NICE-1.10.1",
+        "NICE-1.10.4"
+      ],
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.10.4",
+        "NICE-1.14.10",
+        "NICE-1.10.3"
+      ],
+      "6": [
+        "NICE-1.10.1",
+        "NICE-1.10.4",
+        "NICE-1.14.10",
+        "NICE-1.10.3",
+        "NICE-1.1.1",
+        "NICE-1.10.2"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.10.4",
+        "NICE-1.14.10",
+        "NICE-1.10.3",
+        "NICE-1.1.1",
+        "NICE-1.10.2",
+        "NICE-1.3.1",
+        "NICE-1.1.4"
+      ],
+      "12": [
+        "NICE-1.10.1",
+        "NICE-1.10.4",
+        "NICE-1.14.10",
+        "NICE-1.10.3",
+        "NICE-1.1.1",
+        "NICE-1.10.2",
+        "NICE-1.3.1",
+        "NICE-1.1.4",
+        "NICE-1.13.5",
+        "NICE-1.9.1",
+        "NICE-1.4.1",
+        "NICE-1.1.2"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "NICE-1.10.4"
+      ],
+      "2": [
+        "NICE-1.10.4",
+        "NICE-1.10.1"
+      ],
+      "4": [
+        "NICE-1.10.4",
+        "NICE-1.10.1",
+        "NICE-1.10.5",
+        "NICE-1.14.10"
+      ],
+      "6": [
+        "NICE-1.10.4",
+        "NICE-1.10.1",
+        "NICE-1.10.5",
+        "NICE-1.14.10",
+        "NICE-1.10.3",
+        "NICE-1.11.1"
+      ],
+      "8": [
+        "NICE-1.10.4",
+        "NICE-1.13.3",
+        "NICE-1.10.1",
+        "NICE-1.10.5",
+        "NICE-1.14.10",
+        "NICE-1.10.3",
+        "NICE-1.11.1",
+        "NICE-1.13.5"
+      ],
+      "12": [
+        "NICE-1.10.4",
+        "NICE-1.13.3",
+        "NICE-1.10.1",
+        "NICE-1.10.5",
+        "NICE-1.14.10",
+        "NICE-1.10.3",
+        "NICE-1.11.1",
+        "NICE-1.13.5",
+        "NICE-1.1.2",
+        "NICE-1.1.4",
+        "NICE-1.15.4",
+        "NICE-1.19.1"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "NICE-1.10.1"
+      ],
+      "2": [
+        "NICE-1.10.1",
+        "NICE-1.14.10"
+      ],
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.14.10",
+        "NICE-1.10.2",
+        "NICE-1.10.4"
+      ],
+      "6": [
+        "NICE-1.10.1",
+        "NICE-1.14.10",
+        "NICE-1.10.2",
+        "NICE-1.10.4",
+        "NICE-1.1.1",
+        "NICE-1.10.3"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.14.10",
+        "NICE-1.10.2",
+        "NICE-1.10.4",
+        "NICE-1.1.1",
+        "NICE-1.10.3",
+        "NICE-1.1.2",
+        "NICE-1.15.4"
+      ],
+      "12": [
+        "NICE-1.10.1",
+        "NICE-1.14.10",
+        "NICE-1.10.2",
+        "NICE-1.10.4",
+        "NICE-1.1.1",
+        "NICE-1.10.3",
+        "NICE-1.1.2",
+        "NICE-1.15.4",
+        "NICE-1.19.1",
+        "NICE-1.3.1",
+        "NICE-1.9.2",
+        "NICE-1.2.3"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "NICE-1.10.1"
+      ],
+      "2": [
+        "NICE-1.10.1",
+        "NICE-1.14.10"
+      ],
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.14.10",
+        "NICE-1.10.4"
+      ],
+      "6": [
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.14.10",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.10.3"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.14.10",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.10.3",
+        "NICE-1.13.5",
+        "NICE-1.11.1"
+      ],
+      "12": [
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.14.10",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.10.3",
+        "NICE-1.13.5",
+        "NICE-1.11.1",
+        "NICE-1.1.2",
+        "NICE-1.21.3",
+        "NICE-1.19.1",
+        "NICE-1.10.2"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "NICE-1.10.1"
+      ],
+      "2": [
+        "NICE-1.10.1",
+        "NICE-1.10.4"
+      ],
+      "4": [
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.10.4",
+        "NICE-1.10.5"
+      ],
+      "6": [
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.14.10",
+        "NICE-1.13.5"
+      ],
+      "8": [
+        "NICE-1.10.1",
+        "NICE-1.9.2",
+        "NICE-1.15.4",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.14.10",
+        "NICE-1.13.5",
+        "NICE-1.11.1"
+      ],
+      "12": [
+        "NICE-1.10.1",
+        "NICE-1.9.2",
+        "NICE-1.15.4",
+        "NICE-1.10.4",
+        "NICE-1.10.5",
+        "NICE-1.14.10",
+        "NICE-1.13.5",
+        "NICE-1.11.1",
+        "NICE-1.10.3",
+        "NICE-1.21.2",
+        "NICE-1.10.2",
+        "NICE-box1"
+      ]
+    }
+  },
+  "questions": [
+    "What clinical assessment and monitoring are recommended for suspected early\u2011onset neonatal sepsis when maternal history and culture results are unavailable and the most recent infant examination is missing?",
+    "How should uncertainty be managed in the diagnosis of early\u2011onset neonatal sepsis when key maternal and infant examination data are absent?",
+    "What investigations are advised to guide treatment decisions for early\u2011onset neonatal sepsis in the absence of maternal history, culture results, and a recent neonatal examination?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 115
+}

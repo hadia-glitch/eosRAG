@@ -1,0 +1,234 @@
+{
+  "id": "who-expanded-incomplete_stop-04",
+  "family": "incomplete_stop",
+  "guideline": "WHO",
+  "stage": "development_only",
+  "rankings": {
+    "generic_single": {
+      "1": [
+        "WHO2024-B.1"
+      ],
+      "2": [
+        "WHO2024-B.1",
+        "WHO2024-B.2"
+      ],
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-REFERRAL"
+      ],
+      "6": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.6",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.6",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.5",
+        "WHO2024-B.4"
+      ],
+      "12": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.6",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.5",
+        "WHO2024-B.4",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "generic_faceted": {
+      "1": [
+        "WHO2024-B.2"
+      ],
+      "2": [
+        "WHO2024-B.2",
+        "WHO2024-B.3"
+      ],
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL"
+      ],
+      "6": [
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.6",
+        "WHO2024-B.5"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.6",
+        "WHO2024-B.5",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.4"
+      ],
+      "12": [
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.6",
+        "WHO2024-B.5",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.4",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "medical_single": {
+      "1": [
+        "WHO2024-C-REFERRAL"
+      ],
+      "2": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1"
+      ],
+      "4": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3"
+      ],
+      "6": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.5"
+      ],
+      "8": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.5",
+        "WHO2024-B.6",
+        "WHO2024-B.4"
+      ],
+      "12": [
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-B.3",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.5",
+        "WHO2024-B.6",
+        "WHO2024-B.4",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "medical_faceted": {
+      "1": [
+        "WHO2024-C-REFERRAL"
+      ],
+      "2": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL"
+      ],
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.3"
+      ],
+      "6": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.3",
+        "WHO2024-B.5",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.3",
+        "WHO2024-B.5",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK",
+        "WHO2024-B.6"
+      ],
+      "12": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.3",
+        "WHO2024-B.5",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK",
+        "WHO2024-B.6",
+        "WHO2024-B.4"
+      ]
+    },
+    "medical_faceted_graph": {
+      "1": [
+        "WHO2024-C-REFERRAL"
+      ],
+      "2": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL"
+      ],
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.3"
+      ],
+      "6": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.3",
+        "WHO2024-B.5",
+        "WHO2024-C-RISK"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.3",
+        "WHO2024-B.5",
+        "WHO2024-C-RISK",
+        "WHO2024-B.6",
+        "WHO2024-C-CLINICAL"
+      ],
+      "12": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-B.3",
+        "WHO2024-B.5",
+        "WHO2024-C-RISK",
+        "WHO2024-B.6",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-B.4"
+      ]
+    }
+  },
+  "questions": [
+    "Does the WHO guideline include a 36\u2011hour antibiotic stopping pathway for neonates with suspected sepsis and a negative culture?",
+    "What does the WHO recommend for continuation of antibiotics beyond 36\u202fhours when cultures are negative but clinical signs of sepsis persist in neonates?"
+  ],
+  "plan_available": true,
+  "eligible_guidance": 9
+}

@@ -1,0 +1,307 @@
+[
+  {
+    "id": "crp_alone-1",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "crp_alone-2",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "crp_alone-3",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "deterioration-1",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "deterioration-1",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "deterioration-2",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "deterioration-2",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "deterioration-3",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "deterioration-3",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "incomplete_stop-1",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "incomplete_stop-2",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "incomplete_stop-3",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "initial_investigation-1",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "initial_investigation-1",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "initial_investigation-2",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "initial_investigation-2",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "initial_investigation-3",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "initial_investigation-3",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "missing_results-1",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "missing_results-1",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "missing_results-2",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "missing_results-2",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "missing_results-3",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "missing_results-3",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "single_risk-1",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "single_risk-1",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "single_risk-2",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "single_risk-2",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  },
+  {
+    "id": "single_risk-3",
+    "chunk_id": "NICE-1.10.2",
+    "reason": "new_postpartum_maternal_infection_not_documented_or_requested"
+  },
+  {
+    "id": "single_risk-3",
+    "chunk_id": "NICE-1.21.4",
+    "reason": "postnatal_treatment_clock_not_reached_or_requested"
+  }
+]

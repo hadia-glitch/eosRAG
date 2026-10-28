@@ -1,0 +1,35 @@
+{
+  "candidate": "longitudinal_source_context_graph",
+  "stage": "development_only",
+  "retrieval": {
+    "NICE": {
+      "complete": true,
+      "n": 40,
+      "planned": 40,
+      "recall_at_4": 0.9166666666666666,
+      "mrr_at_4": 0.9125
+    },
+    "AAP": {
+      "complete": true,
+      "n": 30,
+      "planned": 30,
+      "recall_at_4": 1.0,
+      "mrr_at_4": 1.0
+    },
+    "WHO": {
+      "complete": true,
+      "n": 30,
+      "planned": 30,
+      "recall_at_4": 1.0,
+      "mrr_at_4": 0.8666666666666667
+    }
+  },
+  "generation": {},
+  "safety": {},
+  "complete_audits": false,
+  "scope_regressions_passed": true,
+  "backend_regressions_passed": false,
+  "config_pinned": true,
+  "clinical_validation": "not performed; source and gold review pending",
+  "evidence": "100-case provenance replay identical after hardening; source/context regression tests pass. No new balanced generation pilot or semantic fault suite."
+}

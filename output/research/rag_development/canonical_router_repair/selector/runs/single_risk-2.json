@@ -1,0 +1,115 @@
+{
+  "id": "single_risk-2",
+  "guideline": "NICE",
+  "family": "single_risk",
+  "rankings": {
+    "selector_only:legacy:original": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.15.1",
+        "NICE-1.34.1",
+        "NICE-1.10.5"
+      ]
+    },
+    "selector_only:canonical_v2:original": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.15.1",
+        "NICE-1.34.1",
+        "NICE-1.10.5"
+      ]
+    },
+    "selector_only:legacy:clinical_shorthand": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.15.1",
+        "NICE-1.34.1",
+        "NICE-1.10.5"
+      ]
+    },
+    "selector_only:canonical_v2:clinical_shorthand": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.15.1",
+        "NICE-1.34.1",
+        "NICE-1.10.5"
+      ]
+    },
+    "selector_only:legacy:plain_language": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.15.1",
+        "NICE-1.34.1",
+        "NICE-1.10.5"
+      ]
+    },
+    "selector_only:canonical_v2:plain_language": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box1",
+        "NICE-1.10.1",
+        "NICE-1.10.4",
+        "NICE-1.11.1",
+        "NICE-1.15.1",
+        "NICE-1.34.1",
+        "NICE-1.10.5"
+      ]
+    }
+  }
+}

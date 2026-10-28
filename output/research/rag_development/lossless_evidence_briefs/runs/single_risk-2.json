@@ -1,0 +1,123 @@
+{
+  "id": "single_risk-2",
+  "guideline": "NICE",
+  "synthetic": true,
+  "brief": {
+    "version": "lossless-evidence-brief-v1-research",
+    "status": "source_comparison_only",
+    "question": "Review one known risk factor in a currently well baby without inventing absent findings.",
+    "recorded_current": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "explicitly absent",
+      "maternal_gbs": "positive"
+    },
+    "recorded_history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ],
+    "explicit_unknown_fields": [
+      "culture_status"
+    ],
+    "complete_source_passages": [
+      {
+        "chunk_id": "NICE-1.10.3",
+        "text": "Use the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed: \u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators: \uff0d follow the recommendations in the section on investigations before starting antibiotics and \uff0d start antibiotic treatment according to the recommendations in this guideline and \uff0d do not wait for the test results before starting antibiotics \u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \uff0d whether it is safe to withhold antibiotics and \uff0d whether the baby's vital signs and clinical condition need to be monitored. If monitoring is needed, continue for at least 12 hours using a newborn early warning system \u2022 for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal care. [2021]",
+        "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 15,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-box1",
+        "text": "Box 1: Risk factors for early-onset neonatal infection, including 'red flags' Red flag risk factor: \u2022 suspected or confirmed infection in another baby in the case of a multiple pregnancy Other risk factors: \u2022 invasive group B streptococcal infection in a previous baby or maternal group B streptococcal colonisation, bacteriuria or infection in the current pregnancy \u2022 pre-term birth following spontaneous labour before 37 weeks' gestation \u2022 confirmed rupture of membranes for more than 18 hours before a pre-term birth \u2022 confirmed rupture of membranes for more than 24 hours before a term birth [2026] \u2022 suspected or confirmed maternal sepsis in the intrapartum or early postpartum period [2021, amended 2026] \u2022 suspected or confirmed chorioamnionitis [2021, amended 2026]",
+        "text_sha256": "de69f334396198e421eaf27bb7b9856497e19bb9861da878f7b43d27c94bf0e7",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 12,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.10.1",
+        "text": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \u2022 perform an immediate clinical assessment \u2022 review the maternal and neonatal history \u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]",
+        "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 13,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.10.4",
+        "text": "The Kaiser Permanente neonatal sepsis calculator can be used as an alternative to the framework outlined in recommendation 1.10.3 for babies born after 34+0 weeks of pregnancy who are being cared for in a neonatal unit, transitional care or postnatal ward. It should only be used if it is part of a prospective audit, which should record: \u2022 total number of babies assessed using the calculator \u2022 number of babies correctly identified by the calculator who develop a culture-confirmed neonatal infection \u2022 number of babies incorrectly identified by the calculator who do not develop a culture-confirmed neonatal infection \u2022 number of babies missed by the calculator who develop a culture-confirmed neonatal infection. [2021]",
+        "text_sha256": "a56bb223d2f1e81629c432344c79e1e11d46190a6731e575545ab6836fe86352",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 15,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.11.1",
+        "text": "In babies being monitored for possible early-onset neonatal infection: \u2022 Consider starting antibiotic treatment (see the section on investigations before starting antibiotics for next steps). \u2022 If no further concerns arise during observation reassure the family and, if the baby is to be discharged, give information and advice to the parents and carers (see the sections on information and support for parents and carers before transferring babies home and post discharge planning for babies who have not been given antibiotics). [2021]",
+        "text_sha256": "e94211686b926bf3a8176420403b396e8d2b698c1e53f151b3d1f12b3595fcd5",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 16,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.1",
+        "text": "Do not routinely give antibiotic treatment to babies without risk factors for infection or clinical indicators or laboratory evidence of possible infection. [2012]",
+        "text_sha256": "1fecb097caf0e58549f8f7f5e0474152cba7a342e6c01551be0f789130824650",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.34.1",
+        "text": "Risk factors for recurrent bacterial meningitis are: \u2022 primary or secondary immunodeficiency, including: \uff0d HIV \uff0d congenital complement deficiency or acquired inhibition \uff0d reduced or absent spleen function \uff0d hypogammaglobulinaemia \u2022 communication between the cerebrospinal fluid and external surface, for example, caused by: \uff0d prior trauma or surgery \uff0d a congenital anomaly. [2024]",
+        "text_sha256": "af50f0ce3ee3a5a6c9f598975a47b6adea0376d84f393b713393b88f0bee21fe",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 42,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.10.5",
+        "text": "If using the Kaiser Permanente neonatal sepsis calculator to assess the risk of early-onset neonatal infection, use the classification given by the calculator to direct management decisions. [2021]",
+        "text_sha256": "171721130acd20b23141d4d74337532e72b084fa3d5bc741670d237e8448fb97",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 16,
+        "kind": "recommendation"
+      }
+    ],
+    "clinical_eligibility_established": false,
+    "clinical_validation": false,
+    "interpretation_boundary": "Recorded findings and complete source passages are displayed separately. Unknown does not mean normal, absent, reassuring, or a satisfied condition. No stopping, discharge, treatment, diagnosis or illness-category eligibility is established by this view. All source conditions and exceptions require clinical review; retrieval alone does not establish applicability."
+  }
+}

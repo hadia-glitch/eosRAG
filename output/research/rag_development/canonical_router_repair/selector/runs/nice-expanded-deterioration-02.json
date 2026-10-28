@@ -1,0 +1,115 @@
+{
+  "id": "nice-expanded-deterioration-02",
+  "guideline": "NICE",
+  "family": "deterioration",
+  "rankings": {
+    "selector_only:legacy:original": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.13.2",
+        "NICE-1.15.2",
+        "NICE-1.14.2",
+        "NICE-1.29.2"
+      ]
+    },
+    "selector_only:canonical_v2:original": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.13.2",
+        "NICE-1.15.2",
+        "NICE-1.14.2",
+        "NICE-1.29.2"
+      ]
+    },
+    "selector_only:legacy:clinical_shorthand": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.13.2",
+        "NICE-1.15.2",
+        "NICE-1.14.2",
+        "NICE-1.29.2"
+      ]
+    },
+    "selector_only:canonical_v2:clinical_shorthand": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.13.2",
+        "NICE-1.15.2",
+        "NICE-1.14.2",
+        "NICE-1.29.2"
+      ]
+    },
+    "selector_only:legacy:plain_language": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.13.2",
+        "NICE-1.15.2",
+        "NICE-1.14.2",
+        "NICE-1.29.2"
+      ]
+    },
+    "selector_only:canonical_v2:plain_language": {
+      "4": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4"
+      ],
+      "8": [
+        "NICE-1.10.3",
+        "NICE-box2",
+        "NICE-1.10.1",
+        "NICE-1.15.4",
+        "NICE-1.13.2",
+        "NICE-1.15.2",
+        "NICE-1.14.2",
+        "NICE-1.29.2"
+      ]
+    }
+  }
+}

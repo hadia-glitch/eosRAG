@@ -1,0 +1,12 @@
+{
+  "stage": "development_only",
+  "stopped": true,
+  "completed_cases": 2,
+  "planned_cases": 18,
+  "completed_case_ids": [
+    "crp_alone-1",
+    "deterioration-1"
+  ],
+  "reason": "First responses altered/abbreviated source quotations and exceeded the declared contract. Stop without resampling completed model failures. Replace generative quote copying with immutable source-ID materialization in a separate versioned pilot.",
+  "final_evaluation": false
+}

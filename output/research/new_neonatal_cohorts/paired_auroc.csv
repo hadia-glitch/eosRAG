@@ -1,0 +1,3 @@
+dataset,contrast,mean,low_95,high_95
+workbook,nested-selected minus demographic baseline AUROC,0.03728208359588314,-0.017666468684967813,0.09102709360269313
+chop,nested-selected minus demographic baseline AUROC,0.052468549675735,0.0021430334279685056,0.10584466619551174

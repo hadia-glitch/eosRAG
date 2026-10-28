@@ -1,0 +1,13 @@
+{
+  "source": "NICE",
+  "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests.",
+  "available": true,
+  "questions": [
+    "What are the recommended initial diagnostic investigations for suspected early\u2011onset neonatal sepsis (0\u201172\u202fhours)?",
+    "What are the known limitations and diagnostic accuracy issues of laboratory tests used in early\u2011onset neonatal sepsis evaluation?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": false,
+  "original_record_sha256": "ca98b17b0c1ccac83bc958ea5f04fee55a7ce5315e8288ff814139d61699f0bd",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

@@ -1,0 +1,9 @@
+id,family,depth,recall,missed_proposed_gold,review_reason,clinical_priority,reviewer_notes
+nice-expanded-incomplete_stop-01,incomplete_stop,4,0.5,NICE-1.21.3,Complete stopping conditions are below the four-passage budget; review their priority and avoid substituting regimen timing or service-organization text.,,
+nice-expanded-incomplete_stop-02,incomplete_stop,4,0.5,NICE-1.21.3,Complete stopping conditions are below the four-passage budget; review their priority and avoid substituting regimen timing or service-organization text.,,
+nice-expanded-incomplete_stop-03,incomplete_stop,4,0.5,NICE-1.21.3,Complete stopping conditions are below the four-passage budget; review their priority and avoid substituting regimen timing or service-organization text.,,
+nice-expanded-incomplete_stop-04,incomplete_stop,4,0.5,NICE-1.21.3,Complete stopping conditions are below the four-passage budget; review their priority and avoid substituting regimen timing or service-organization text.,,
+nice-expanded-missing_results-01,missing_results,4,0.6666666666666666,NICE-1.15.4,Assessment/reassessment and conditional baseline-investigation context is incomplete; missing findings must remain unknown.,,
+nice-expanded-missing_results-02,missing_results,4,0.3333333333333333,NICE-1.13.2|NICE-1.15.4,Assessment/reassessment and conditional baseline-investigation context is incomplete; missing findings must remain unknown.,,
+nice-expanded-missing_results-02,missing_results,8,0.6666666666666666,NICE-1.15.4,Assessment/reassessment and conditional baseline-investigation context is incomplete; missing findings must remain unknown.,,
+nice-expanded-missing_results-03,missing_results,4,0.6666666666666666,NICE-1.15.4,Assessment/reassessment and conditional baseline-investigation context is incomplete; missing findings must remain unknown.,,

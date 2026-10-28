@@ -1,0 +1,18 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "change": "Source boundaries only: separate boxes, carry cross-page box continuations and remove trailing section headings. No gold changes or clinical review asserted.",
+  "cases_sha256": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45",
+  "parent_corpus_sha256": "953ce6746d5ef37bb64070d17bc6286dd183c358b5af8443908b244536e8ca20",
+  "source_pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1",
+  "extractor": "PyMuPDF 1.28.0",
+  "code_sha256": {
+    "backend/rag/recommendation_units.py": "178eb63072932669c408ccce42018ed51d21bc20445b1c859420a370b711466c",
+    "backend/scripts/prepare_recommendation_corpus.py": "f7807cc80b2e91100de97e8c00b777e2c627efbb6a582d553e15d41ac0a238db"
+  },
+  "source_text_stream_sha256": "c7fbe447d1ab2306fb0b567983e2b79630b10025b5de253d21bdf59cea117d7d",
+  "chunks": 299,
+  "changed_chunks": 14,
+  "gold_ids_missing": 0,
+  "clinical_review_status": "pending"
+}

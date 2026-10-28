@@ -1,0 +1,22 @@
+[
+  {
+    "method": "nested_selected",
+    "seed": 31,
+    "positive_infant_omissions": 7,
+    "min_auprc_after_omission": 0.009695835451824137,
+    "max_auprc_after_omission": 0.01766618287254068,
+    "min_auroc_after_omission": 0.3505860454671089,
+    "max_auroc_after_omission": 0.4971198694029849,
+    "interpretation": "Sensitivity of fixed OOF predictions; not retrained leave-one-out validation."
+  },
+  {
+    "method": "compact_lr_knn_C01",
+    "seed": 31,
+    "positive_infant_omissions": 7,
+    "min_auprc_after_omission": 0.014627612978894216,
+    "max_auprc_after_omission": 0.10699387064606657,
+    "min_auroc_after_omission": 0.3129007739082367,
+    "max_auroc_after_omission": 0.4492174543946929,
+    "interpretation": "Sensitivity of fixed OOF predictions; not retrained leave-one-out validation."
+  }
+]

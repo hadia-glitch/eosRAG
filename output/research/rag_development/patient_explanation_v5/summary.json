@@ -1,0 +1,12 @@
+{
+  "stage": "development_only",
+  "planned": 18,
+  "quality_completed": 3,
+  "structurally_valid": 2,
+  "complete_audits": 2,
+  "whole_draft_released": 1,
+  "release_coverage_over_planned": 0.05555555555555555,
+  "provider_or_budget_pending": 0,
+  "clinical_usability_established": false,
+  "note": "Release and model audit completeness do not establish clinical correctness or usefulness; independent answer-level judging and clinical review remain separate."
+}

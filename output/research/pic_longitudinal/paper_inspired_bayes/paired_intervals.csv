@@ -1,0 +1,13 @@
+method,comparison,seed,metric,lower_95,upper_95,resamples,skipped_single_class
+snapshot_nb,minus prior snapshot logistic,31,auroc,-0.1118297081287199,0.30584529234776464,2000,5
+snapshot_nb,minus prior snapshot logistic,31,auprc,-0.007384172034089562,0.026547381849692585,2000,5
+snapshot_nb,minus prior snapshot logistic,31,brier,-0.0001019027412666687,0.0002458381428294907,2000,5
+snapshot_tan,minus prior snapshot logistic,31,auroc,-0.10336769542570769,0.6187631635224464,2000,5
+snapshot_tan,minus prior snapshot logistic,31,auprc,-0.004620945635126976,0.030479138070571534,2000,5
+snapshot_tan,minus prior snapshot logistic,31,brier,0.00024223357165260073,0.0015912980720205194,2000,5
+longitudinal_nb,minus prior snapshot logistic,31,auroc,-0.07846325806464954,0.38112526856115864,2000,5
+longitudinal_nb,minus prior snapshot logistic,31,auprc,-0.0007197777136558165,0.044409696804219904,2000,5
+longitudinal_nb,minus prior snapshot logistic,31,brier,0.0009820269545486194,0.010040096116178978,2000,5
+longitudinal_tan,minus prior snapshot logistic,31,auroc,-0.24144851122668815,0.4733474450421605,2000,5
+longitudinal_tan,minus prior snapshot logistic,31,auprc,-0.00899649357048866,0.011305489429893513,2000,5
+longitudinal_tan,minus prior snapshot logistic,31,brier,-8.96743310338122e-06,0.0015300142880714522,2000,5

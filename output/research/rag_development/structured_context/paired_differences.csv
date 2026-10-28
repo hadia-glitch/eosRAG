@@ -1,0 +1,163 @@
+guideline,method,depth,metric,contrast,paired_n,mean,case_low,case_high,family_low,family_high,family_n,resamples,seed
+NICE,publisher_hierarchy,4,recall,new method minus prior medical-faceted topic scope,40,0.025,-0.008333333333333333,0.05833333333333333,-0.02631578947368421,0.09523809523809523,6,2000,31
+NICE,publisher_hierarchy,4,precision,new method minus prior medical-faceted topic scope,40,0.01875,-0.00625,0.04375,-0.019736842105263157,0.07142857142857142,6,2000,31
+NICE,publisher_hierarchy,4,mrr,new method minus prior medical-faceted topic scope,40,0.07916666666666668,0.025000000000000005,0.15,0.0,0.19918699186991867,6,2000,31
+NICE,publisher_hierarchy,4,ndcg,new method minus prior medical-faceted topic scope,40,0.045917676302394864,0.005474799353699526,0.08771199306651885,-0.014280374874862865,0.11356749431474522,6,2000,31
+NICE,publisher_hierarchy,4,f1,new method minus prior medical-faceted topic scope,40,0.02142857142857143,-0.007142857142857143,0.05,-0.022556390977443608,0.08163265306122448,6,2000,31
+NICE,publisher_hierarchy,8,recall,new method minus prior medical-faceted topic scope,40,0.1,0.05833333333333333,0.15,0.0,0.21666666666666665,6,2000,31
+NICE,publisher_hierarchy,8,precision,new method minus prior medical-faceted topic scope,40,0.0375,0.021875,0.05625,0.0,0.08125,6,2000,31
+NICE,publisher_hierarchy,8,mrr,new method minus prior medical-faceted topic scope,40,0.07916666666666668,0.025000000000000005,0.15,0.0,0.19918699186991867,6,2000,31
+NICE,publisher_hierarchy,8,ndcg,new method minus prior medical-faceted topic scope,40,0.08344277957645163,0.047293796414266204,0.12243773338749321,0.028109125647824144,0.16338425289433142,6,2000,31
+NICE,publisher_hierarchy,8,f1,new method minus prior medical-faceted topic scope,40,0.05454545454545454,0.031818181818181815,0.08181818181818182,0.0,0.1181818181818182,6,2000,31
+NICE,qualifier_graph,4,recall,new method minus prior medical-faceted topic scope,40,0.2,0.10000000000000002,0.30833333333333335,-0.017543859649122806,0.49593495934959353,6,2000,31
+NICE,qualifier_graph,4,precision,new method minus prior medical-faceted topic scope,40,0.15,0.075,0.23125,-0.013157894736842105,0.3719512195121951,6,2000,31
+NICE,qualifier_graph,4,mrr,new method minus prior medical-faceted topic scope,40,0.07916666666666668,0.025000000000000005,0.15,0.0,0.19918699186991867,6,2000,31
+NICE,qualifier_graph,4,ndcg,new method minus prior medical-faceted topic scope,40,0.15771713610457772,0.08224109810599861,0.24301204820061295,-0.008405064434120969,0.3717731607843617,6,2000,31
+NICE,qualifier_graph,4,f1,new method minus prior medical-faceted topic scope,40,0.1714285714285714,0.08571428571428572,0.2642857142857143,-0.015037593984962405,0.42508710801393723,6,2000,31
+NICE,qualifier_graph,4,recall,qualifier_graph minus publisher_hierarchy,40,0.175,0.1,0.25833333333333336,0.0,0.39837398373983746,6,2000,31
+NICE,qualifier_graph,4,precision,qualifier_graph minus publisher_hierarchy,40,0.13125,0.075,0.19375,0.0,0.29878048780487804,6,2000,31
+NICE,qualifier_graph,4,mrr,qualifier_graph minus publisher_hierarchy,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,qualifier_graph,4,ndcg,qualifier_graph minus publisher_hierarchy,40,0.11179945980218284,0.06467837350369883,0.16639279849117358,0.0,0.2582056664696165,6,2000,31
+NICE,qualifier_graph,8,recall,new method minus prior medical-faceted topic scope,40,0.25,0.15833333333333335,0.35833333333333334,0.04166666666666667,0.5334146341463412,6,2000,31
+NICE,qualifier_graph,8,precision,new method minus prior medical-faceted topic scope,40,0.09375,0.059375,0.134375,0.015625,0.2000304878048779,6,2000,31
+NICE,qualifier_graph,8,mrr,new method minus prior medical-faceted topic scope,40,0.07916666666666668,0.025000000000000005,0.15,0.0,0.19918699186991867,6,2000,31
+NICE,qualifier_graph,8,ndcg,new method minus prior medical-faceted topic scope,40,0.18351027122806557,0.11391757873518754,0.2644767881884931,0.034430906988100335,0.3823022544358124,6,2000,31
+NICE,qualifier_graph,8,f1,new method minus prior medical-faceted topic scope,40,0.13636363636363633,0.08636363636363635,0.1954545454545454,0.02272727272727272,0.29095343680709507,6,2000,31
+NICE,qualifier_graph,8,recall,qualifier_graph minus publisher_hierarchy,40,0.15,0.08333333333333334,0.225,0.0,0.33333333333333337,6,2000,31
+NICE,qualifier_graph,8,precision,qualifier_graph minus publisher_hierarchy,40,0.05625,0.03125,0.084375,0.0,0.125,6,2000,31
+NICE,qualifier_graph,8,mrr,qualifier_graph minus publisher_hierarchy,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,qualifier_graph,8,ndcg,qualifier_graph minus publisher_hierarchy,40,0.10006749165161395,0.058019421525962886,0.14879484626532022,0.0,0.22946490367965017,6,2000,31
+NICE,longitudinal_context_graph,4,recall,new method minus prior medical-faceted topic scope,40,0.225,0.13333333333333336,0.33333333333333337,0.01666666666666667,0.50842987804878,6,2000,31
+NICE,longitudinal_context_graph,4,precision,new method minus prior medical-faceted topic scope,40,0.16875,0.1,0.25,0.0125,0.38132240853658494,6,2000,31
+NICE,longitudinal_context_graph,4,mrr,new method minus prior medical-faceted topic scope,40,0.07916666666666668,0.025000000000000005,0.15,0.0,0.19918699186991867,6,2000,31
+NICE,longitudinal_context_graph,4,ndcg,new method minus prior medical-faceted topic scope,40,0.1728751870921188,0.09864781784238386,0.25562583831147473,0.02439466414644122,0.3789442610343949,6,2000,31
+NICE,longitudinal_context_graph,4,f1,new method minus prior medical-faceted topic scope,40,0.19285714285714284,0.11428571428571428,0.2857142857142857,0.014285714285714285,0.43579703832752564,6,2000,31
+NICE,longitudinal_context_graph,4,recall,longitudinal_context_graph minus publisher_hierarchy,40,0.2,0.125,0.2833333333333333,0.025,0.4227642276422765,6,2000,31
+NICE,longitudinal_context_graph,4,precision,longitudinal_context_graph minus publisher_hierarchy,40,0.15,0.09375,0.2125,0.01875,0.3170731707317073,6,2000,31
+NICE,longitudinal_context_graph,4,mrr,longitudinal_context_graph minus publisher_hierarchy,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,longitudinal_context_graph,4,ndcg,longitudinal_context_graph minus publisher_hierarchy,40,0.12695751078972392,0.07904345658878842,0.18155084947871464,0.015158050987541073,0.2675786183431578,6,2000,31
+NICE,longitudinal_context_graph,4,recall,longitudinal_context_graph minus qualifier_graph,40,0.025,0.0,0.058333333333333334,0.0,0.07894736842105263,6,2000,31
+NICE,longitudinal_context_graph,4,precision,longitudinal_context_graph minus qualifier_graph,40,0.01875,0.0,0.04375,0.0,0.05921052631578947,6,2000,31
+NICE,longitudinal_context_graph,4,mrr,longitudinal_context_graph minus qualifier_graph,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,longitudinal_context_graph,4,ndcg,longitudinal_context_graph minus qualifier_graph,40,0.015158050987541073,0.0,0.03536878563759584,0.0,0.04786752943434023,6,2000,31
+NICE,longitudinal_context_graph,8,recall,new method minus prior medical-faceted topic scope,40,0.25,0.15833333333333335,0.35833333333333334,0.04166666666666667,0.5334146341463412,6,2000,31
+NICE,longitudinal_context_graph,8,precision,new method minus prior medical-faceted topic scope,40,0.09375,0.059375,0.134375,0.015625,0.2000304878048779,6,2000,31
+NICE,longitudinal_context_graph,8,mrr,new method minus prior medical-faceted topic scope,40,0.07916666666666668,0.025000000000000005,0.15,0.0,0.19918699186991867,6,2000,31
+NICE,longitudinal_context_graph,8,ndcg,new method minus prior medical-faceted topic scope,40,0.18613128809314147,0.11585518437469271,0.26609406081048514,0.03711912941381921,0.38236618167642367,6,2000,31
+NICE,longitudinal_context_graph,8,f1,new method minus prior medical-faceted topic scope,40,0.13636363636363633,0.08636363636363635,0.1954545454545454,0.02272727272727272,0.29095343680709507,6,2000,31
+NICE,longitudinal_context_graph,8,recall,longitudinal_context_graph minus publisher_hierarchy,40,0.15,0.08333333333333334,0.225,0.0,0.33333333333333337,6,2000,31
+NICE,longitudinal_context_graph,8,precision,longitudinal_context_graph minus publisher_hierarchy,40,0.05625,0.03125,0.084375,0.0,0.125,6,2000,31
+NICE,longitudinal_context_graph,8,mrr,longitudinal_context_graph minus publisher_hierarchy,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,longitudinal_context_graph,8,ndcg,longitudinal_context_graph minus publisher_hierarchy,40,0.10268850851668984,0.06130441207310832,0.1505437001389272,0.0026210168650759036,0.22946490367965017,6,2000,31
+NICE,longitudinal_context_graph,8,recall,longitudinal_context_graph minus qualifier_graph,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,longitudinal_context_graph,8,precision,longitudinal_context_graph minus qualifier_graph,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,longitudinal_context_graph,8,mrr,longitudinal_context_graph minus qualifier_graph,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,longitudinal_context_graph,8,ndcg,longitudinal_context_graph minus qualifier_graph,40,0.0026210168650759036,0.0,0.006115706018510442,0.0,0.008276895363397591,6,2000,31
+AAP,publisher_hierarchy,4,recall,new method minus prior medical-faceted topic scope,30,0.3333333333333333,0.25,0.4166666666666667,0.16666666666666666,0.5,6,2000,31
+AAP,publisher_hierarchy,4,precision,new method minus prior medical-faceted topic scope,30,0.16666666666666666,0.125,0.20833333333333334,0.08333333333333333,0.25,6,2000,31
+AAP,publisher_hierarchy,4,mrr,new method minus prior medical-faceted topic scope,30,0.25,0.16666666666666666,0.3333333333333333,0.08333333333333333,0.4166666666666667,6,2000,31
+AAP,publisher_hierarchy,4,ndcg,new method minus prior medical-faceted topic scope,30,0.33090945882924655,0.23244762253937612,0.4219767084875063,0.11314719276545837,0.5211233651476866,6,2000,31
+AAP,publisher_hierarchy,4,f1,new method minus prior medical-faceted topic scope,30,0.22222222222222215,0.16666666666666663,0.27777777777777773,0.1111111111111111,0.33333333333333326,6,2000,31
+AAP,publisher_hierarchy,8,recall,new method minus prior medical-faceted topic scope,30,0.16666666666666666,0.08333333333333333,0.25,0.0,0.3333333333333333,6,2000,31
+AAP,publisher_hierarchy,8,precision,new method minus prior medical-faceted topic scope,30,0.041666666666666664,0.020833333333333332,0.0625,0.0,0.08333333333333333,6,2000,31
+AAP,publisher_hierarchy,8,mrr,new method minus prior medical-faceted topic scope,30,0.25,0.16666666666666666,0.3333333333333333,0.08333333333333333,0.4166666666666667,6,2000,31
+AAP,publisher_hierarchy,8,ndcg,new method minus prior medical-faceted topic scope,30,0.24341261996243102,0.17100430455245313,0.3142892278076446,0.07671309100946122,0.3979253104840298,6,2000,31
+AAP,publisher_hierarchy,8,f1,new method minus prior medical-faceted topic scope,30,0.06666666666666667,0.03333333333333333,0.10000000000000003,0.0,0.13333333333333333,6,2000,31
+AAP,qualifier_graph,4,recall,new method minus prior medical-faceted topic scope,30,0.3333333333333333,0.25,0.4166666666666667,0.16666666666666666,0.5,6,2000,31
+AAP,qualifier_graph,4,precision,new method minus prior medical-faceted topic scope,30,0.16666666666666666,0.125,0.20833333333333334,0.08333333333333333,0.25,6,2000,31
+AAP,qualifier_graph,4,mrr,new method minus prior medical-faceted topic scope,30,0.25,0.16666666666666666,0.3333333333333333,0.08333333333333333,0.4166666666666667,6,2000,31
+AAP,qualifier_graph,4,ndcg,new method minus prior medical-faceted topic scope,30,0.33090945882924655,0.23244762253937612,0.4219767084875063,0.11314719276545837,0.5211233651476866,6,2000,31
+AAP,qualifier_graph,4,f1,new method minus prior medical-faceted topic scope,30,0.22222222222222215,0.16666666666666663,0.27777777777777773,0.1111111111111111,0.33333333333333326,6,2000,31
+AAP,qualifier_graph,4,recall,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,qualifier_graph,4,precision,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,qualifier_graph,4,mrr,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,qualifier_graph,4,ndcg,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,qualifier_graph,8,recall,new method minus prior medical-faceted topic scope,30,0.16666666666666666,0.08333333333333333,0.25,0.0,0.3333333333333333,6,2000,31
+AAP,qualifier_graph,8,precision,new method minus prior medical-faceted topic scope,30,0.041666666666666664,0.020833333333333332,0.0625,0.0,0.08333333333333333,6,2000,31
+AAP,qualifier_graph,8,mrr,new method minus prior medical-faceted topic scope,30,0.25,0.16666666666666666,0.3333333333333333,0.08333333333333333,0.4166666666666667,6,2000,31
+AAP,qualifier_graph,8,ndcg,new method minus prior medical-faceted topic scope,30,0.24341261996243102,0.17100430455245313,0.3142892278076446,0.07671309100946122,0.3979253104840298,6,2000,31
+AAP,qualifier_graph,8,f1,new method minus prior medical-faceted topic scope,30,0.06666666666666667,0.03333333333333333,0.10000000000000003,0.0,0.13333333333333333,6,2000,31
+AAP,qualifier_graph,8,recall,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,qualifier_graph,8,precision,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,qualifier_graph,8,mrr,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,qualifier_graph,8,ndcg,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,4,recall,new method minus prior medical-faceted topic scope,30,0.3333333333333333,0.25,0.4166666666666667,0.16666666666666666,0.5,6,2000,31
+AAP,longitudinal_context_graph,4,precision,new method minus prior medical-faceted topic scope,30,0.16666666666666666,0.125,0.20833333333333334,0.08333333333333333,0.25,6,2000,31
+AAP,longitudinal_context_graph,4,mrr,new method minus prior medical-faceted topic scope,30,0.25,0.16666666666666666,0.3333333333333333,0.08333333333333333,0.4166666666666667,6,2000,31
+AAP,longitudinal_context_graph,4,ndcg,new method minus prior medical-faceted topic scope,30,0.33090945882924655,0.23244762253937612,0.4219767084875063,0.11314719276545837,0.5211233651476866,6,2000,31
+AAP,longitudinal_context_graph,4,f1,new method minus prior medical-faceted topic scope,30,0.22222222222222215,0.16666666666666663,0.27777777777777773,0.1111111111111111,0.33333333333333326,6,2000,31
+AAP,longitudinal_context_graph,4,recall,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,4,precision,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,4,mrr,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,4,ndcg,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,4,recall,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,4,precision,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,4,mrr,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,4,ndcg,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,8,recall,new method minus prior medical-faceted topic scope,30,0.16666666666666666,0.08333333333333333,0.25,0.0,0.3333333333333333,6,2000,31
+AAP,longitudinal_context_graph,8,precision,new method minus prior medical-faceted topic scope,30,0.041666666666666664,0.020833333333333332,0.0625,0.0,0.08333333333333333,6,2000,31
+AAP,longitudinal_context_graph,8,mrr,new method minus prior medical-faceted topic scope,30,0.25,0.16666666666666666,0.3333333333333333,0.08333333333333333,0.4166666666666667,6,2000,31
+AAP,longitudinal_context_graph,8,ndcg,new method minus prior medical-faceted topic scope,30,0.24341261996243102,0.17100430455245313,0.3142892278076446,0.07671309100946122,0.3979253104840298,6,2000,31
+AAP,longitudinal_context_graph,8,f1,new method minus prior medical-faceted topic scope,30,0.06666666666666667,0.03333333333333333,0.10000000000000003,0.0,0.13333333333333333,6,2000,31
+AAP,longitudinal_context_graph,8,recall,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,8,precision,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,8,mrr,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,8,ndcg,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,8,recall,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,8,precision,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,8,mrr,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,longitudinal_context_graph,8,ndcg,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,publisher_hierarchy,4,recall,new method minus prior medical-faceted topic scope,30,0.2833333333333333,0.18333333333333332,0.4,0.08333333333333333,0.5166666666666667,6,2000,31
+WHO,publisher_hierarchy,4,precision,new method minus prior medical-faceted topic scope,30,0.14166666666666666,0.09166666666666666,0.2,0.041666666666666664,0.25833333333333336,6,2000,31
+WHO,publisher_hierarchy,4,mrr,new method minus prior medical-faceted topic scope,30,0.06666666666666667,-0.06666666666666667,0.2004166666666644,-0.18333333333333332,0.31666666666666665,6,2000,31
+WHO,publisher_hierarchy,4,ndcg,new method minus prior medical-faceted topic scope,30,0.17369916359873672,0.07384964878852497,0.2814115068557828,-0.05817984503214457,0.37494668694282157,6,2000,31
+WHO,publisher_hierarchy,4,f1,new method minus prior medical-faceted topic scope,30,0.18888888888888886,0.12222222222222222,0.2666666666666666,0.05555555555555555,0.3444444444444444,6,2000,31
+WHO,publisher_hierarchy,8,recall,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,publisher_hierarchy,8,precision,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,publisher_hierarchy,8,mrr,new method minus prior medical-faceted topic scope,30,0.05333333333333334,-0.06666666666666667,0.1834166666666662,-0.19666666666666668,0.29666666666666663,6,2000,31
+WHO,publisher_hierarchy,8,ndcg,new method minus prior medical-faceted topic scope,30,0.051019770876647906,-0.015594018000081047,0.12163238545693372,-0.10796095297714066,0.1819262663277069,6,2000,31
+WHO,publisher_hierarchy,8,f1,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,4,recall,new method minus prior medical-faceted topic scope,30,0.2833333333333333,0.18333333333333332,0.4,0.08333333333333333,0.5166666666666667,6,2000,31
+WHO,qualifier_graph,4,precision,new method minus prior medical-faceted topic scope,30,0.14166666666666666,0.09166666666666666,0.2,0.041666666666666664,0.25833333333333336,6,2000,31
+WHO,qualifier_graph,4,mrr,new method minus prior medical-faceted topic scope,30,0.06666666666666667,-0.06666666666666667,0.2004166666666644,-0.18333333333333332,0.31666666666666665,6,2000,31
+WHO,qualifier_graph,4,ndcg,new method minus prior medical-faceted topic scope,30,0.17369916359873672,0.07384964878852497,0.2814115068557828,-0.05817984503214457,0.37494668694282157,6,2000,31
+WHO,qualifier_graph,4,f1,new method minus prior medical-faceted topic scope,30,0.18888888888888886,0.12222222222222222,0.2666666666666666,0.05555555555555555,0.3444444444444444,6,2000,31
+WHO,qualifier_graph,4,recall,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,4,precision,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,4,mrr,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,4,ndcg,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,8,recall,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,8,precision,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,8,mrr,new method minus prior medical-faceted topic scope,30,0.05333333333333334,-0.06666666666666667,0.1834166666666662,-0.19666666666666668,0.29666666666666663,6,2000,31
+WHO,qualifier_graph,8,ndcg,new method minus prior medical-faceted topic scope,30,0.051019770876647906,-0.015594018000081047,0.12163238545693372,-0.10796095297714066,0.1819262663277069,6,2000,31
+WHO,qualifier_graph,8,f1,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,8,recall,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,8,precision,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,8,mrr,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,qualifier_graph,8,ndcg,qualifier_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,4,recall,new method minus prior medical-faceted topic scope,30,0.2833333333333333,0.18333333333333332,0.4,0.08333333333333333,0.5166666666666667,6,2000,31
+WHO,longitudinal_context_graph,4,precision,new method minus prior medical-faceted topic scope,30,0.14166666666666666,0.09166666666666666,0.2,0.041666666666666664,0.25833333333333336,6,2000,31
+WHO,longitudinal_context_graph,4,mrr,new method minus prior medical-faceted topic scope,30,0.06666666666666667,-0.06666666666666667,0.2004166666666644,-0.18333333333333332,0.31666666666666665,6,2000,31
+WHO,longitudinal_context_graph,4,ndcg,new method minus prior medical-faceted topic scope,30,0.17369916359873672,0.07384964878852497,0.2814115068557828,-0.05817984503214457,0.37494668694282157,6,2000,31
+WHO,longitudinal_context_graph,4,f1,new method minus prior medical-faceted topic scope,30,0.18888888888888886,0.12222222222222222,0.2666666666666666,0.05555555555555555,0.3444444444444444,6,2000,31
+WHO,longitudinal_context_graph,4,recall,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,4,precision,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,4,mrr,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,4,ndcg,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,4,recall,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,4,precision,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,4,mrr,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,4,ndcg,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,recall,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,precision,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,mrr,new method minus prior medical-faceted topic scope,30,0.05333333333333334,-0.06666666666666667,0.1834166666666662,-0.19666666666666668,0.29666666666666663,6,2000,31
+WHO,longitudinal_context_graph,8,ndcg,new method minus prior medical-faceted topic scope,30,0.051019770876647906,-0.015594018000081047,0.12163238545693372,-0.10796095297714066,0.1819262663277069,6,2000,31
+WHO,longitudinal_context_graph,8,f1,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,recall,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,precision,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,mrr,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,ndcg,longitudinal_context_graph minus publisher_hierarchy,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,recall,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,precision,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,mrr,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,longitudinal_context_graph,8,ndcg,longitudinal_context_graph minus qualifier_graph,30,0.0,0.0,0.0,0.0,0.0,6,2000,31

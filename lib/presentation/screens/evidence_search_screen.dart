@@ -29,6 +29,7 @@ class _EvidenceSearchScreenState extends ConsumerState<EvidenceSearchScreen> {
   @override
   void initState() {
     super.initState();
+
   }
 
   final _controller = TextEditingController();

@@ -1,0 +1,2783 @@
+[
+  {
+    "id": "deterioration-1",
+    "query": "Review respiratory deterioration, hypoxia and abnormal vital signs over serial observations.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 90,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 60,
+        "spo2": 94,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "deterioration-2",
+    "query": "Review respiratory deterioration, hypoxia and abnormal vital signs over serial observations.",
+    "patient": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 90,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 60,
+        "spo2": 94,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "deterioration-3",
+    "query": "Review respiratory deterioration, hypoxia and abnormal vital signs over serial observations.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 90,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 60,
+        "spo2": 94,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "crp_alone-1",
+    "query": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "crp_alone-2",
+    "query": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+    "patient": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "crp_alone-3",
+    "query": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "incomplete_stop-1",
+    "query": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "negative",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "incomplete_stop-2",
+    "query": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "negative",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "incomplete_stop-3",
+    "query": "At 36 hours, culture is negative but symptoms persist. Explain the missing criteria for stopping antibiotics.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 74,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "negative",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "initial_investigation-1",
+    "query": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "initial_investigation-2",
+    "query": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+    "patient": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "initial_investigation-3",
+    "query": "Explain baseline investigations and how subsequent inflammatory-marker readings should be used.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "single_risk-1",
+    "query": "Review one known risk factor in a currently well baby without inventing absent findings.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "explicitly absent",
+      "maternal_gbs": "positive"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "single_risk-2",
+    "query": "Review one known risk factor in a currently well baby without inventing absent findings.",
+    "patient": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "explicitly absent",
+      "maternal_gbs": "positive"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "single_risk-3",
+    "query": "Review one known risk factor in a currently well baby without inventing absent findings.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "explicitly absent",
+      "maternal_gbs": "positive"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "missing_results-1",
+    "query": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 14
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "missing_results-2",
+    "query": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+    "patient": {
+      "age_hours": 18,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 15
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "missing_results-3",
+    "query": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "red_flags": "not fully documented",
+      "maternal_gbs": "unknown"
+    },
+    "history": [
+      {
+        "age_hours": 3,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 16
+      },
+      {
+        "age_hours": 6,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-deterioration-01",
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 28 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 28,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-deterioration-02",
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 36,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-deterioration-03",
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 28 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 28,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-deterioration-04",
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 41 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-deterioration-01",
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 37 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-deterioration-02",
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 35 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 35,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-deterioration-03",
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 36,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-deterioration-04",
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 36 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-deterioration-05",
+    "query": "Assess the rising respiratory rate and falling oxygen saturation during serial examinations; explain actions for an infant developing signs of illness. Gestation 39 weeks; age 6 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 39,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 89,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 62,
+        "spo2": 94,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-crp_alone-01",
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 40 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-crp_alone-02",
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 41 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 41,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-crp_alone-03",
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 32 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 32,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-crp_alone-04",
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 32 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-crp_alone-01",
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 35 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-crp_alone-02",
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 40 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 40,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-crp_alone-03",
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 37 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-crp_alone-04",
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 41 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-crp_alone-05",
+    "query": "Can a single or falling CRP result exclude early-onset sepsis or alone determine whether antibiotics stop? Explain the limits of inflammatory markers. Gestation 39 weeks; age 6 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 39,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-01",
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 41 weeks; age 48 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 32.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-02",
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 38 weeks; age 54 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 54,
+      "gestational_age_weeks": 38,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 18.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 36.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-03",
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 37 weeks; age 60 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 37,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 20.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 40.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-incomplete_stop-04",
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 37 weeks; age 71 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 71,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent respiratory distress",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 23.666666666666668,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 47.333333333333336,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-01",
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 40 weeks; age 48 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent unexplained critical cardiorespiratory illness",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 32.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-02",
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 39 weeks; age 54 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 54,
+      "gestational_age_weeks": 39,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent unexplained critical cardiorespiratory illness",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 18.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 36.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-03",
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 38 weeks; age 60 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 38,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent unexplained critical cardiorespiratory illness",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 20.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 40.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-04",
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 40 weeks; age 71 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 71,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 48,
+      "antibiotic_duration_hours": 48,
+      "clinical_condition": "persistent unexplained critical cardiorespiratory illness",
+      "initial_suspicion": "strong",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 23.666666666666668,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 47.333333333333336,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-incomplete_stop-05",
+    "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established. Gestation 39 weeks; age 48 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 39,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 76,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "negative",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "persistent unexplained critical cardiorespiratory illness",
+      "initial_suspicion": "not documented",
+      "site_specific_infection": "not established"
+    },
+    "history": [
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 32.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-initial_investigation-01",
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 28 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 28,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-initial_investigation-02",
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 28 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 28,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-initial_investigation-03",
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 41 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 41,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-initial_investigation-04",
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 32 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-initial_investigation-01",
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 36 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-initial_investigation-02",
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 37 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 37,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-initial_investigation-03",
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 38 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 38,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": null,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-initial_investigation-04",
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 38 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 38,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-initial_investigation-05",
+    "query": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 39 weeks; age 6 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 39,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": null,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-single_risk-01",
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 41 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-single_risk-02",
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 40 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 40,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-single_risk-03",
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 38 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 38,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-single_risk-01",
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 41 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-single_risk-02",
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 37 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 37,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      },
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 10
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-single_risk-03",
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 37 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 8.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 20
+      },
+      {
+        "age_hours": 16.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 11
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-single_risk-04",
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 37 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-single_risk-05",
+    "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options. Gestation 39 weeks; age 6 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 39,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": 46,
+      "spo2": 97,
+      "crp": 3,
+      "culture_status": "unknown",
+      "maternal_gbs": "positive",
+      "red_flags": "explicitly absent",
+      "other_risk_factors": "assessed absent",
+      "clinical_condition": "well appearing",
+      "other_clinical_indicators": "assessed absent"
+    },
+    "history": [
+      {
+        "age_hours": 2.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 18
+      },
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-missing_results-01",
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 32 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": []
+  },
+  {
+    "id": "nice-expanded-missing_results-02",
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 40 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 40,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      }
+    ]
+  },
+  {
+    "id": "nice-expanded-missing_results-03",
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 28 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 28,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": []
+  },
+  {
+    "id": "aap-expanded-missing_results-01",
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 36 weeks; age 6 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": []
+  },
+  {
+    "id": "aap-expanded-missing_results-02",
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 36 weeks; age 12 hours; setting postnatal ward.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 36,
+      "care_setting": "postnatal_ward",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 4.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 19
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-missing_results-03",
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 37 weeks; age 24 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": []
+  },
+  {
+    "id": "aap-expanded-missing_results-04",
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 36 weeks; age 36 hours; setting hospital birth.",
+    "patient": {
+      "age_hours": 36,
+      "gestational_age_weeks": 36,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      }
+    ]
+  },
+  {
+    "id": "aap-expanded-missing_results-05",
+    "query": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 39 weeks; age 6 hours; setting neonatal unit.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 39,
+      "care_setting": "neonatal_unit",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-deterioration-01",
+    "query": "Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs. Gestation 35 weeks; age 6 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 35,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 70,
+      "spo2": 91,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "unable to feed at all",
+      "movement": "only on stimulation",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "other_IMCI_signs": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 3.0,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "feeding": "feeding well"
+      }
+    ]
+  },
+  {
+    "id": "who-expanded-deterioration-02",
+    "query": "Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs. Gestation 40 weeks; age 12 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 40,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 71,
+      "spo2": 91,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "unable to feed at all",
+      "movement": "only on stimulation",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "other_IMCI_signs": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 6.0,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "feeding": "feeding well"
+      }
+    ]
+  },
+  {
+    "id": "who-expanded-deterioration-03",
+    "query": "Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs. Gestation 35 weeks; age 24 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 35,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 72,
+      "spo2": 91,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "other_IMCI_signs": "absent on examination"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "feeding": "feeding well"
+      }
+    ]
+  },
+  {
+    "id": "who-expanded-deterioration-04",
+    "query": "Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs. Gestation 40 weeks; age 48 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 40,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 73,
+      "spo2": 91,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "other_IMCI_signs": "absent on examination"
+    },
+    "history": [
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "feeding": "feeding well"
+      }
+    ]
+  },
+  {
+    "id": "who-expanded-deterioration-05",
+    "query": "Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs. Gestation 37 weeks; age 60 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 37,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 74,
+      "spo2": 91,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "other_IMCI_signs": "absent on examination"
+    },
+    "history": [
+      {
+        "age_hours": 30.0,
+        "respiratory_rate": 48,
+        "spo2": 98,
+        "feeding": "feeding well"
+      }
+    ]
+  },
+  {
+    "id": "who-expanded-crp_alone-01",
+    "query": "CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance? Gestation 35 weeks; age 6 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 35,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 4,
+      "culture_status": "unknown",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 3.0,
+        "crp": 18,
+        "feeding": "feeding well",
+        "temperature_c": 36.8
+      }
+    ]
+  },
+  {
+    "id": "who-expanded-crp_alone-02",
+    "query": "CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance? Gestation 37 weeks; age 12 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 37,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 5,
+      "culture_status": "unknown",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 6.0,
+        "crp": 19,
+        "feeding": "feeding well",
+        "temperature_c": 36.8
+      }
+    ]
+  },
+  {
+    "id": "who-expanded-crp_alone-03",
+    "query": "CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance? Gestation 35 weeks; age 24 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 35,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 12.0,
+        "crp": 20,
+        "feeding": "feeding well",
+        "temperature_c": 36.8
+      }
+    ]
+  },
+  {
+    "id": "who-expanded-crp_alone-04",
+    "query": "CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance? Gestation 41 weeks; age 48 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 41,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 7,
+      "culture_status": "unknown",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 24.0,
+        "crp": 21,
+        "feeding": "feeding well",
+        "temperature_c": 36.8
+      }
+    ]
+  },
+  {
+    "id": "who-expanded-crp_alone-05",
+    "query": "CRP fell but feeding worsened and temperature rose. What clinical signs should guide non-hospital assessment under WHO guidance? Gestation 37 weeks; age 60 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 37,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": 8,
+      "culture_status": "unknown",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": [
+      {
+        "age_hours": 30.0,
+        "crp": 22,
+        "feeding": "feeding well",
+        "temperature_c": 36.8
+      }
+    ]
+  },
+  {
+    "id": "who-expanded-incomplete_stop-01",
+    "query": "Hospitalized suspected sepsis: a culture is negative at 36 hours but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway? Gestation 37 weeks; age 60 hours; setting hospital.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "negative",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "hospitalized with suspected sepsis and persistent signs"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-incomplete_stop-02",
+    "query": "Hospitalized suspected sepsis: a culture is negative at 36 hours but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway? Gestation 37 weeks; age 61 hours; setting hospital.",
+    "patient": {
+      "age_hours": 61,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "negative",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "hospitalized with suspected sepsis and persistent signs"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-incomplete_stop-03",
+    "query": "Hospitalized suspected sepsis: a culture is negative at 36 hours but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway? Gestation 35 weeks; age 62 hours; setting hospital.",
+    "patient": {
+      "age_hours": 62,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "negative",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "hospitalized with suspected sepsis and persistent signs"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-incomplete_stop-04",
+    "query": "Hospitalized suspected sepsis: a culture is negative at 36 hours but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway? Gestation 35 weeks; age 63 hours; setting hospital.",
+    "patient": {
+      "age_hours": 63,
+      "gestational_age_weeks": 35,
+      "care_setting": "hospital",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "negative",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "hospitalized with suspected sepsis and persistent signs"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-incomplete_stop-05",
+    "query": "Hospitalized suspected sepsis: a culture is negative at 36 hours but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway? Gestation 37 weeks; age 64 hours; setting hospital.",
+    "patient": {
+      "age_hours": 64,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "negative",
+      "temperature_c": 38.2,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "culture_incubation_hours": 36,
+      "antibiotic_duration_hours": 36,
+      "clinical_condition": "hospitalized with suspected sepsis and persistent signs"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-initial_investigation-01",
+    "query": "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold. Gestation 37 weeks; age 6 hours; setting hospital.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 37,
+      "care_setting": "hospital",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 38.1,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "suspected sepsis"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-initial_investigation-02",
+    "query": "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold. Gestation 41 weeks; age 12 hours; setting hospital.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 38.1,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "suspected sepsis"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-initial_investigation-03",
+    "query": "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold. Gestation 40 weeks; age 24 hours; setting hospital.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 38.1,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "suspected sepsis"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-initial_investigation-04",
+    "query": "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold. Gestation 41 weeks; age 48 hours; setting hospital.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 41,
+      "care_setting": "hospital",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 38.1,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "suspected sepsis"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-initial_investigation-05",
+    "query": "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold. Gestation 40 weeks; age 60 hours; setting hospital.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 40,
+      "care_setting": "hospital",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 38.1,
+      "feeding": "not feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "suspected sepsis"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-single_risk-01",
+    "query": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 37 weeks; age 6 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 37,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "positive",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "well appearing",
+      "seven_IMCI_signs": "assessed absent"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-single_risk-02",
+    "query": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 41 weeks; age 12 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 41,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "positive",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "well appearing",
+      "seven_IMCI_signs": "assessed absent"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-single_risk-03",
+    "query": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 35 weeks; age 24 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 35,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "positive",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "well appearing",
+      "seven_IMCI_signs": "assessed absent"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-single_risk-04",
+    "query": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 35 weeks; age 48 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 35,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "positive",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "well appearing",
+      "seven_IMCI_signs": "assessed absent"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-single_risk-05",
+    "query": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant? Gestation 35 weeks; age 60 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 35,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "positive",
+      "respiratory_rate": 48,
+      "spo2": 97,
+      "crp": null,
+      "culture_status": "unknown",
+      "temperature_c": 36.8,
+      "feeding": "feeding well",
+      "movement": "spontaneous",
+      "convulsions": false,
+      "severe_chest_indrawing": false,
+      "referral_possible": true,
+      "red_flags": "not fully documented",
+      "clinical_condition": "well appearing",
+      "seven_IMCI_signs": "assessed absent"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-missing_results-01",
+    "query": "Current feeding, movement, temperature, breathing and culture results are missing. Explain what a WHO-based assessment can establish in the clinic. Gestation 40 weeks; age 6 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 6,
+      "gestational_age_weeks": 40,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "temperature_c": null,
+      "feeding": "unknown",
+      "movement": "unknown",
+      "convulsions": null,
+      "severe_chest_indrawing": null,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-missing_results-02",
+    "query": "Current feeding, movement, temperature, breathing and culture results are missing. Explain what a WHO-based assessment can establish in the clinic. Gestation 38 weeks; age 12 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 12,
+      "gestational_age_weeks": 38,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "temperature_c": null,
+      "feeding": "unknown",
+      "movement": "unknown",
+      "convulsions": null,
+      "severe_chest_indrawing": null,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-missing_results-03",
+    "query": "Current feeding, movement, temperature, breathing and culture results are missing. Explain what a WHO-based assessment can establish in the clinic. Gestation 37 weeks; age 24 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 24,
+      "gestational_age_weeks": 37,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "temperature_c": null,
+      "feeding": "unknown",
+      "movement": "unknown",
+      "convulsions": null,
+      "severe_chest_indrawing": null,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-missing_results-04",
+    "query": "Current feeding, movement, temperature, breathing and culture results are missing. Explain what a WHO-based assessment can establish in the clinic. Gestation 37 weeks; age 48 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 48,
+      "gestational_age_weeks": 37,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "temperature_c": null,
+      "feeding": "unknown",
+      "movement": "unknown",
+      "convulsions": null,
+      "severe_chest_indrawing": null,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": []
+  },
+  {
+    "id": "who-expanded-missing_results-05",
+    "query": "Current feeding, movement, temperature, breathing and culture results are missing. Explain what a WHO-based assessment can establish in the clinic. Gestation 38 weeks; age 60 hours; setting primary_health_clinic.",
+    "patient": {
+      "age_hours": 60,
+      "gestational_age_weeks": 38,
+      "care_setting": "primary_health_clinic",
+      "maternal_gbs": "unknown",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "temperature_c": null,
+      "feeding": "unknown",
+      "movement": "unknown",
+      "convulsions": null,
+      "severe_chest_indrawing": null,
+      "referral_possible": true,
+      "red_flags": "not fully documented"
+    },
+    "history": []
+  }
+]

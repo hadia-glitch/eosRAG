@@ -1,0 +1,40 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "pilot_case_ids": [
+    "deterioration-1",
+    "crp_alone-1",
+    "incomplete_stop-1",
+    "initial_investigation-1",
+    "single_risk-1",
+    "missing_results-1",
+    "aap-expanded-deterioration-01",
+    "aap-expanded-crp_alone-01",
+    "aap-expanded-incomplete_stop-01",
+    "aap-expanded-initial_investigation-01",
+    "aap-expanded-single_risk-01",
+    "aap-expanded-missing_results-01",
+    "who-expanded-deterioration-01",
+    "who-expanded-crp_alone-01",
+    "who-expanded-incomplete_stop-01",
+    "who-expanded-initial_investigation-01",
+    "who-expanded-single_risk-01",
+    "who-expanded-missing_results-01"
+  ],
+  "model": "openai/gpt-oss-120b",
+  "temperature": 0,
+  "sampling_seed": null,
+  "rrf_k": 60,
+  "candidate_budget": 24,
+  "dependency_candidate_budget": 4,
+  "selected_budget": 8,
+  "corpus_sha256": "953ce6746d5ef37bb64070d17bc6286dd183c358b5af8443908b244536e8ca20",
+  "graph_sha256": "75fabab89c86d17c4cdadfc946987c0519a348438ca4ce4028a467f6e154e417",
+  "code_sha256": {
+    "backend/rag/evidence_dependency_graph.py": "d74595a0714ca6079a5c8a49a2558115981678fa464203b555d5c57315ca89e3",
+    "backend/rag/patient_passage_ranker.py": "af9581e803cabe9703b79adb05752732f66b3bce6d91605b2ad176795c071cf9",
+    "backend/rag/listwise_rerank.py": "fdee2c20f86ad11efe584712f8f2ef9e71f81b6888ed0adfc082d9f5a28e99d7",
+    "backend/scripts/develop_dependency_retrieval.py": "6d53a94b550350353ef0a9b63aff5983f07bcbc14556eb47f3c5ea274160eb10"
+  },
+  "comparison": "Same 18 cases and patient-conditioned prompt. Candidate expansion only. Unchanged golds. New graph edges are source-text retrieval hints, pending clinical review."
+}

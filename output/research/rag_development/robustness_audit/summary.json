@@ -1,0 +1,29 @@
+{
+  "stage": "development_only",
+  "final_evaluation_allowed": false,
+  "clinical_ready": false,
+  "base_synthetic_cases": 100,
+  "distinct_focused_templates": 24,
+  "wording_transform_slots": 200,
+  "changed_wording_slots": 152,
+  "fresh_original_replay_matches": 100,
+  "independent_holdout": false,
+  "clinical_review_completed": false,
+  "new_retrieval_groq_calls": 0,
+  "attempted_explanation_cases": 3,
+  "planned_explanation_cases": 18,
+  "model_released_explanations": 1,
+  "attempted_release_coverage": 0.3333333333333333,
+  "planned_release_coverage": 0.05555555555555555,
+  "blockers": [
+    "NICE plain-wording fixed-plan Recall@4 remains 0.7667 after intent normalization (below 0.8 development target).",
+    "AAP model-approved action prose omits a site-specific-infection exception; agreement does not establish semantic completeness.",
+    "NICE draft mistakes unclear suspicion for reassuring eligibility and adds unsupported escalation; only a different structural issue blocks release.",
+    "WHO model auditors disagree on illness-category conflation.",
+    "Balanced usable-answer coverage and fresh semantic fault suite remain incomplete.",
+    "Clinical source approval, gold adjudication, paraphrase equivalence and independent challenge cases remain unavailable."
+  ],
+  "nonclinical_fallback": "100 lossless evidence views preserve full passages and separate observed facts/unknowns; not a care-plan usability result.",
+  "app_integration": "new research candidates not promoted",
+  "github_push": "not performed"
+}

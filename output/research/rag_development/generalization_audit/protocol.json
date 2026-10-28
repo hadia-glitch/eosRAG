@@ -1,0 +1,27 @@
+{
+  "stage": "development_robustness_audit",
+  "base_cases": 100,
+  "new_patient_cases": 0,
+  "seed": 31,
+  "case_file_sha256": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45",
+  "styles": [
+    "original",
+    "clinical_shorthand",
+    "plain_language"
+  ],
+  "depths": [
+    4,
+    8
+  ],
+  "selector_only": "Upstream evidence order remains fixed. This isolates context-router wording sensitivity; it is NOT a new full retrieval run.",
+  "query_agnostic": "Fixed publisher summary order first, then fixed source order; patient source-scope filters only, no question/history/gold input.",
+  "identifier_renaming": "Random bijection of recommendation IDs and graph endpoints; same semantic input and ordering, no gold input to selection.",
+  "gold_permutation": "Diagnostic only, 1000 within-source gold-assignment permutations; does not alter benchmark annotations or imply clinical relevance.",
+  "clinical_review": "Pending. No external validation or human clinical usability rating is inferred.",
+  "new_groq_calls": 0,
+  "code_sha256": {
+    "backend/scripts/audit_rag_generalization.py": "0e73d4583b04d485811d6f9e8e73ddf8e56bc314ca01253e85aad8c7b401f7db",
+    "backend/scripts/rag_audit_design.py": "3239fd7a927a2d21accfb36d438d690db44475935d947e258629034a8ed63d54",
+    "backend/rag/workflow_context_graph.py": "ff06ffa8cb06cfee8d4afdbad59ea1c1d802cc9f13662d546fa0492d0e3b7fcb"
+  }
+}

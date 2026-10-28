@@ -1,0 +1,115 @@
+{
+  "id": "aap-expanded-deterioration-02",
+  "guideline": "AAP",
+  "family": "deterioration",
+  "rankings": {
+    "selector_only:legacy:original": {
+      "4": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B6",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P3-B7"
+      ]
+    },
+    "selector_only:canonical_v2:original": {
+      "4": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B6",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P3-B7"
+      ]
+    },
+    "selector_only:legacy:clinical_shorthand": {
+      "4": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B6",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P3-B7"
+      ]
+    },
+    "selector_only:canonical_v2:clinical_shorthand": {
+      "4": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B6",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P3-B7"
+      ]
+    },
+    "selector_only:legacy:plain_language": {
+      "4": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B6",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P3-B7"
+      ]
+    },
+    "selector_only:canonical_v2:plain_language": {
+      "4": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P4-B6",
+        "AAP2018-35PLUS-P3-B13",
+        "AAP2018-35PLUS-P3-B7"
+      ]
+    }
+  }
+}

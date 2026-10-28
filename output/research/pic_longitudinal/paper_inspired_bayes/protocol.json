@@ -1,0 +1,125 @@
+{
+  "stage": "development_only",
+  "source_paper": "https://doi.org/10.21037/tp-22-510",
+  "paper_cohort_not_comparable": "Paediatric diagnosis using first 24h, discharge diagnoses/SIRS/infection and microbiology; not neonatal pre-culture EOS forecasting.",
+  "cohort_sha256": "1fce5559ba1726524510a075eae5397c585dd5a5fa577f45705ed808e39e7640",
+  "seeds": [
+    31,
+    47,
+    83
+  ],
+  "patient_folds": 3,
+  "primary_seed": 31,
+  "equivalent_sample_size": 10.0,
+  "methods": {
+    "snapshot_nb": {
+      "tree": false,
+      "features": [
+        "age_hours",
+        "sex_female",
+        "neonatal_temperature__last",
+        "heart_rate__last",
+        "respiratory_rate__last",
+        "spo2__last",
+        "pulse_rate__last",
+        "diastolic_pressure__last",
+        "systolic_pressure__last",
+        "measured_weight_kg__last"
+      ]
+    },
+    "snapshot_tan": {
+      "tree": true,
+      "features": [
+        "age_hours",
+        "sex_female",
+        "neonatal_temperature__last",
+        "heart_rate__last",
+        "respiratory_rate__last",
+        "spo2__last",
+        "pulse_rate__last",
+        "diastolic_pressure__last",
+        "systolic_pressure__last",
+        "measured_weight_kg__last"
+      ]
+    },
+    "longitudinal_nb": {
+      "tree": false,
+      "features": [
+        "age_hours",
+        "sex_female",
+        "neonatal_temperature__last",
+        "heart_rate__last",
+        "respiratory_rate__last",
+        "spo2__last",
+        "pulse_rate__last",
+        "diastolic_pressure__last",
+        "systolic_pressure__last",
+        "measured_weight_kg__last",
+        "neonatal_temperature__slope_per_hour",
+        "neonatal_temperature__delta",
+        "neonatal_temperature__count",
+        "neonatal_temperature__recency_hours",
+        "heart_rate__slope_per_hour",
+        "heart_rate__delta",
+        "heart_rate__count",
+        "heart_rate__recency_hours",
+        "respiratory_rate__slope_per_hour",
+        "respiratory_rate__delta",
+        "respiratory_rate__count",
+        "respiratory_rate__recency_hours",
+        "spo2__slope_per_hour",
+        "spo2__delta",
+        "spo2__count",
+        "spo2__recency_hours"
+      ]
+    },
+    "longitudinal_tan": {
+      "tree": true,
+      "features": [
+        "age_hours",
+        "sex_female",
+        "neonatal_temperature__last",
+        "heart_rate__last",
+        "respiratory_rate__last",
+        "spo2__last",
+        "pulse_rate__last",
+        "diastolic_pressure__last",
+        "systolic_pressure__last",
+        "measured_weight_kg__last",
+        "neonatal_temperature__slope_per_hour",
+        "neonatal_temperature__delta",
+        "neonatal_temperature__count",
+        "neonatal_temperature__recency_hours",
+        "heart_rate__slope_per_hour",
+        "heart_rate__delta",
+        "heart_rate__count",
+        "heart_rate__recency_hours",
+        "respiratory_rate__slope_per_hour",
+        "respiratory_rate__delta",
+        "respiratory_rate__count",
+        "respiratory_rate__recency_hours",
+        "spo2__slope_per_hour",
+        "spo2__delta",
+        "spo2__count",
+        "spo2__recency_hours"
+      ]
+    }
+  },
+  "feature_selection": "Outcome-blind training-fold variation and >=5 distinct training infants with observations",
+  "discretization": "Training-only binary/ternary midpoints or empirical terciles; separate missing state",
+  "graph": "Conditional mutual information maximum spanning tree, deterministic root zero; no causal claim",
+  "smoothing": "Global marginal prior -> class marginal -> class/parent conditional table; ESS10 fixed before scoring",
+  "weights": "Equal total weight per training infant; all held-out landmarks stay with that infant",
+  "no_imputed_patient_facts": true,
+  "no_culture_or_later_outcome_predictors": true,
+  "clinical_eos_eligible": false,
+  "clinical_model_promotion": false,
+  "resamples": 2000,
+  "bootstrap_unit": "infant",
+  "bootstrap_seed": 31,
+  "code_sha256": {
+    "backend\\ml\\evaluate_pic_bayes.py": "5696fe65d8079e45a12612b49484b7df62f04233c97963b97faf8908f39b959e",
+    "backend\\ml\\temporal_bayes.py": "fd98668c164abad7c12c309c4916c6ade757138586c7e2f04aa62a5f461a381f",
+    "backend\\ml\\dynamic_features.py": "0d43010c3cbc11da0246439a1989e019d144b9b1f1aa4cc677fc4575ec140e6e"
+  }
+}

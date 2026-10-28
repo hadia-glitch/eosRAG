@@ -1,0 +1,18 @@
+{
+  "stage": "posthoc_development_repair",
+  "base_cases": 100,
+  "new_clinical_cases": 0,
+  "new_model_calls": 0,
+  "seed": 31,
+  "resamples": 2000,
+  "case_sha256": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45",
+  "change": "Bounded standard medical terminology normalization for context intent only. No patient data, golds, source text or raw question is rewritten.",
+  "evaluation_boundary": "The same previously exposed engineering paraphrases informed this repair; post-repair gains do not rule out overfitting or establish clinical usefulness.",
+  "source_approval": "pending",
+  "code_sha256": {
+    "backend/scripts/compare_canonical_router.py": "fc66b9ef04c3726f34964b0bb61088abf41a11f5949d324279284a92f32cd958",
+    "backend/rag/canonical_clinical_query.py": "d6cb15d43048e8ed8d1d1d8324ec80dd1ceb92481c1d501f739c761bb6ab6b42",
+    "backend/rag/workflow_context_graph_v2.py": "775b6296237bb8f7774e4508bc471f01e0c512ede58f8f82d273a43329570757",
+    "backend/rag/workflow_context_graph.py": "ff06ffa8cb06cfee8d4afdbad59ea1c1d802cc9f13662d546fa0492d0e3b7fcb"
+  }
+}

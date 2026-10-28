@@ -82,6 +82,23 @@ class _MlRiskCardState extends State<MlRiskCard> {
     }
     final status = await apiClient.dio.get('/api/v1/models/status');
     final metadata = Map<String, dynamic>.from(status.data as Map);
+    final selectedResearch = metadata['research_model'] as Map?;
+    if (selectedResearch?['selected_model'] != null) {
+      if (selectedResearch?['available'] == true) {
+        _usesResearchModel = true;
+        return {
+          'status': 'research_available',
+          'research_model': Map<String, dynamic>.from(selectedResearch!),
+        };
+      }
+      return {
+        'status': 'unavailable',
+        'warnings': [
+          selectedResearch?['reason'] ??
+              'The selected research model is unavailable.',
+        ],
+      };
+    }
     if (metadata['available'] != true) {
       final research = metadata['research_model'] as Map?;
       if (research?['available'] == true) {

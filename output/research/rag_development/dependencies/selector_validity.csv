@@ -1,0 +1,4 @@
+population,guideline,completed,total,selector_valid,empty_selections,interpretation
+balanced_pilot,NICE,6,6,6,0,"Structural selection validity, not clinical usability or care-plan release coverage"
+balanced_pilot,AAP,6,6,6,0,"Structural selection validity, not clinical usability or care-plan release coverage"
+balanced_pilot,WHO,6,6,6,1,"Structural selection validity, not clinical usability or care-plan release coverage"

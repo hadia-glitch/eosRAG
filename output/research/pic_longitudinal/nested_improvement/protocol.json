@@ -1,0 +1,107 @@
+{
+  "stage": "further_development_on_exposed_cohort",
+  "clinical_ready": false,
+  "source": "PIC v1.1.0",
+  "cohort_sha256": "1fce5559ba1726524510a075eae5397c585dd5a5fa577f45705ed808e39e7640",
+  "endpoint_unchanged": true,
+  "seeds": [
+    31,
+    47,
+    83
+  ],
+  "outer_folds": 3,
+  "inner_folds": 2,
+  "selection_metric": "patient-weighted inner OOF AUPRC; candidate insertion order breaks ties",
+  "candidates": {
+    "compact_lr_median_C001": [
+      "compact",
+      "median",
+      "lr",
+      0.01
+    ],
+    "compact_lr_median_C01": [
+      "compact",
+      "median",
+      "lr",
+      0.1
+    ],
+    "compact_lr_knn_C01": [
+      "compact",
+      "knn",
+      "lr",
+      0.1
+    ],
+    "trend_lr_median_C003": [
+      "trend",
+      "median",
+      "lr",
+      0.03
+    ],
+    "compact_forest": [
+      "compact",
+      "median",
+      "forest",
+      null
+    ],
+    "compact_balanced_forest": [
+      "compact",
+      "median",
+      "balanced_forest",
+      null
+    ],
+    "compact_extra_trees": [
+      "compact",
+      "median",
+      "extra",
+      null
+    ],
+    "compact_native_missing_boost": [
+      "compact",
+      "native",
+      "boost",
+      null
+    ]
+  },
+  "compact_features": [
+    "age_hours",
+    "sex_female",
+    "neonatal_temperature__last",
+    "heart_rate__last",
+    "respiratory_rate__last",
+    "spo2__last",
+    "pulse_rate__last",
+    "diastolic_pressure__last",
+    "systolic_pressure__last",
+    "measured_weight_kg__last",
+    "neonatal_temperature__delta",
+    "neonatal_temperature__slope_per_hour",
+    "neonatal_temperature__count",
+    "neonatal_temperature__recency_hours",
+    "heart_rate__delta",
+    "heart_rate__slope_per_hour",
+    "heart_rate__count",
+    "heart_rate__recency_hours",
+    "respiratory_rate__delta",
+    "respiratory_rate__slope_per_hour",
+    "respiratory_rate__count",
+    "respiratory_rate__recency_hours",
+    "spo2__delta",
+    "spo2__slope_per_hour",
+    "spo2__count",
+    "spo2__recency_hours"
+  ],
+  "native_boost_weight_scale": "mean sample weight 1; all other candidates total weight 1 per infant",
+  "preprocessing": "Training fold only; >=5 distinct observed infants per feature; infant-weighted scaling; fixed median, distance-weighted 5-NN, or native missingness; explicit missing indicators.",
+  "knn_donors": "Training-fold landmarks only. Repeated donor landmarks may influence imputation; no synthetic or test donor rows.",
+  "no_new_training_labels": true,
+  "lab_predictors": "excluded: no verified result-availability timestamp",
+  "emr_symptom_predictors": "excluded: NLP/document provenance and availability require separate review",
+  "code_sha256": {
+    "backend\\ml\\improve_pic_models.py": "9eaa0c3c566b98e298ab4ab9d9cb27fba5cf54821192f9629d2c539240fb1ba5",
+    "backend\\ml\\dynamic_features.py": "0d43010c3cbc11da0246439a1989e019d144b9b1f1aa4cc677fc4575ec140e6e"
+  },
+  "packages": {
+    "numpy": "2.2.6",
+    "scikit-learn": "1.7.0"
+  }
+}

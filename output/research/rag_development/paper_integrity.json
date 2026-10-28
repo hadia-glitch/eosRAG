@@ -1,0 +1,9 @@
+{
+  "historical_tables_checked": 7,
+  "all_historical_table_values_preserved": true,
+  "full_historical_prose_identical": false,
+  "additional_annotation_ceiling_table": true,
+  "prose_amendments": "Post-hoc scope, annotation ceilings and measured robustness/safety limitations; historical numerical tables retained.",
+  "paper_sha256": "240bd7a6049d3979281a0290b80cb822644291542f21611b07034e34071c7126",
+  "frozen_verification_core_sha256": "07b51352374f1dac88b236b9b5cf6199396b20218cb6131a7b4e3783dd17b07c"
+}

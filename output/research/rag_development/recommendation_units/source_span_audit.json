@@ -1,0 +1,10 @@
+{
+  "source_pdf_sha256": "34f83871a9d9a816e20852485035d9f5d3913025df72a132fe2b0b38662b9cd1",
+  "changed": 14,
+  "all_nice_spans_round_trip": true,
+  "box2_pages": [
+    14,
+    15
+  ],
+  "cases_unchanged_sha256": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "who-expanded-incomplete_stop-01",
+  "guideline": "WHO",
+  "family": "incomplete_stop",
+  "rankings": {
+    "fixed_facet_plan:original": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "question_only:original": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "fixed_facet_plan:clinical_shorthand": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "question_only:clinical_shorthand": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "fixed_facet_plan:plain_language": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "question_only:plain_language": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    }
+  },
+  "queries": {
+    "original": "Hospitalized suspected sepsis: a culture is negative at 36 hours but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway?",
+    "clinical_shorthand": "Hospitalized suspected sepsis: a culture is negative at 36 h but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway?",
+    "plain_language": "Hospitalized suspected sepsis: a culture is negative at 36 hours but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway?"
+  },
+  "definition_context_ids": {
+    "WHO2024-B.1": [],
+    "WHO2024-B.2": [],
+    "WHO2024-C-CLINICAL": [],
+    "WHO2024-C-REFERRAL": [],
+    "WHO2024-C-RISK": []
+  },
+  "original_pipeline_replay_equal": true
+}

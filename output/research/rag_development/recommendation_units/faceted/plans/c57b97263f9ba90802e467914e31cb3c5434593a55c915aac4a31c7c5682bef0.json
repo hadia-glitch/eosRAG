@@ -1,0 +1,13 @@
+{
+  "source": "WHO",
+  "query": "A well newborn has maternal GBS history but no IMCI illness sign. Does WHO supply a validated maternal-risk or gestation-based score for this infant?",
+  "available": true,
+  "questions": [
+    "Does the WHO guideline provide a validated maternal\u2011risk scoring system for early\u2011onset neonatal sepsis in infants with maternal Group B Streptococcus colonisation and no IMCI illness signs?",
+    "Is there a WHO\u2011endorsed gestational\u2011age based risk score for assessing early\u2011onset neonatal sepsis in well newborns with maternal GBS history?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": true,
+  "original_record_sha256": "4c3b11053b8732e284f54263ce2595e611430f2d7b41e992cee6fd8b279f9ebc",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

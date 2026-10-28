@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-28",
+  "stage": "development_only",
+  "backend_tests": {
+    "passed": 23,
+    "scope": "PIC input/timing/phenotype/API authentication and graph/source/dose regressions"
+  },
+  "flutter_tests": {
+    "passed": 4,
+    "scope": "Exact mobile/server fields, privacy/timing rejection, immutable submitted history and two-observation form workflow with stubbed requests"
+  },
+  "flutter_static_analysis": "No issues found in 5 changed files",
+  "restricted_patient_data_published": false,
+  "new_groq_calls": 0,
+  "final_evaluation_allowed": false,
+  "pic_clinical_risk_prediction": "withheld",
+  "files_sha256": {
+    "backend/ml/pic_dataset.py": "11874875fad9a115de4fd1f162b48c96c3ae73de5504955d26f5beebc4495b09",
+    "backend/ml/dynamic_contract.py": "391b0c9da83ab180069d282ebf6e18c53ecdc01237bbf9c594ff053067564789",
+    "backend/ml/dynamic_features.py": "0d43010c3cbc11da0246439a1989e019d144b9b1f1aa4cc677fc4575ec140e6e",
+    "backend/ml/train_pic_longitudinal.py": "8031e5f77597862fec49b4453a21c6265f28c7110e08c1e1cc5bdad639076b1f",
+    "backend/ml/longitudinal_inputs.py": "cad4b42f4a198c22055e66359de1e93c600c6870ab357430e290214c23266f23",
+    "backend/rag/workflow_context_graph.py": "ff06ffa8cb06cfee8d4afdbad59ea1c1d802cc9f13662d546fa0492d0e3b7fcb",
+    "lib/data/longitudinal_inputs.dart": "4de5f44e120ca3d3d437fb27961cbd634e31c8a741dfce5acf60493bf862f320",
+    "lib/presentation/screens/longitudinal_inputs_screen.dart": "1cd521b795282b477b496d7e51734f6ca497b3753a2866249587056756833c76",
+    "backend/production_api.py": "2b6a44336eddaa95914f9f84eee56e26eca19a85b21a56ba1a3c45f0fc042e65",
+    "test/longitudinal_inputs_test.dart": "7984bafb2b0c388d8675fae2ac64bd9577a4ef97195c2062e905aa92eaf407f4"
+  }
+}

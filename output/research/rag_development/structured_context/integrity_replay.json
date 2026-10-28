@@ -1,0 +1,18 @@
+{
+  "stage": "development_integrity_replay",
+  "completed_cases": 100,
+  "methods": 3,
+  "depths": [
+    4,
+    8
+  ],
+  "all_rankings_identical": true,
+  "new_groq_calls": 0,
+  "clinical_validation": false,
+  "code_sha256": {
+    "backend/rag/workflow_context_graph.py": "ff06ffa8cb06cfee8d4afdbad59ea1c1d802cc9f13662d546fa0492d0e3b7fcb",
+    "backend/scripts/validate_structured_context.py": "cb87d9caea07e28d1f128a691390fa3c922882494bd0c8a644f35bd85cb5158f"
+  },
+  "original_study_protocol_sha256": "3677129998f80ae375b44e9c7480c93c2e33d56b0f3e21155af29f2cf89545f4",
+  "change": "Provenance, role, heading, duplicate-edge and cross-document validation; original measured rankings unchanged."
+}

@@ -1,0 +1,158 @@
+{
+  "model": "nested_selected",
+  "threshold_selection": "fixed descriptive thresholds; not optimized or clinically validated",
+  "patients": 543,
+  "positive_patients": 7,
+  "metrics": [
+    {
+      "seed": 31,
+      "threshold": 0.01,
+      "accuracy": 0.6654696132596679,
+      "sensitivity": 0.40476190476190466,
+      "specificity": 0.6688743781094522,
+      "precision": 0.01571309732877345,
+      "predicted_positive_rows": 468,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 31,
+      "threshold": 0.02,
+      "accuracy": 0.9168201350521789,
+      "sensitivity": 0.09523809523809522,
+      "specificity": 0.9275497512437807,
+      "precision": 0.016877637130801686,
+      "predicted_positive_rows": 109,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 31,
+      "threshold": 0.05,
+      "accuracy": 0.9774708410067525,
+      "sensitivity": 0.0,
+      "specificity": 0.9902363184079601,
+      "precision": 0.0,
+      "predicted_positive_rows": 12,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 31,
+      "threshold": 0.1,
+      "accuracy": 0.9833640270104358,
+      "sensitivity": 0.0,
+      "specificity": 0.9962064676616916,
+      "precision": 0.0,
+      "predicted_positive_rows": 4,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 31,
+      "threshold": 0.5,
+      "accuracy": 0.9852670349907918,
+      "sensitivity": 0.0,
+      "specificity": 0.9981343283582089,
+      "precision": 0.0,
+      "predicted_positive_rows": 1,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 47,
+      "threshold": 0.01,
+      "accuracy": 0.694168201350521,
+      "sensitivity": 0.1666666666666666,
+      "specificity": 0.7010572139303475,
+      "precision": 0.0072284180090871515,
+      "predicted_positive_rows": 437,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 47,
+      "threshold": 0.02,
+      "accuracy": 0.8468999386126453,
+      "sensitivity": 0.11904761904761903,
+      "specificity": 0.8564054726368153,
+      "precision": 0.010711225364181658,
+      "predicted_positive_rows": 189,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 47,
+      "threshold": 0.05,
+      "accuracy": 0.9429711479435233,
+      "sensitivity": 0.0,
+      "specificity": 0.955286069651741,
+      "precision": 0.0,
+      "predicted_positive_rows": 60,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 47,
+      "threshold": 0.1,
+      "accuracy": 0.9845303867403314,
+      "sensitivity": 0.0,
+      "specificity": 0.9973880597014926,
+      "precision": 0.0,
+      "predicted_positive_rows": 6,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 47,
+      "threshold": 0.5,
+      "accuracy": 0.9871086556169428,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "precision": null,
+      "predicted_positive_rows": 0,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 83,
+      "threshold": 0.01,
+      "accuracy": 0.6371393492940448,
+      "sensitivity": 0.5238095238095238,
+      "specificity": 0.638619402985074,
+      "precision": 0.018577942915048114,
+      "predicted_positive_rows": 509,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 83,
+      "threshold": 0.02,
+      "accuracy": 0.7369244935543271,
+      "sensitivity": 0.38095238095238093,
+      "specificity": 0.7415733830845763,
+      "precision": 0.018887970723645384,
+      "predicted_positive_rows": 359,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 83,
+      "threshold": 0.05,
+      "accuracy": 0.9466850828729279,
+      "sensitivity": 0.0,
+      "specificity": 0.9590485074626863,
+      "precision": 0.0,
+      "predicted_positive_rows": 70,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 83,
+      "threshold": 0.1,
+      "accuracy": 0.9871086556169428,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "precision": null,
+      "predicted_positive_rows": 0,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    },
+    {
+      "seed": 83,
+      "threshold": 0.5,
+      "accuracy": 0.9871086556169428,
+      "sensitivity": 0.0,
+      "specificity": 1.0,
+      "precision": null,
+      "predicted_positive_rows": 0,
+      "weighting": "equal total weight per infant over repeated landmarks"
+    }
+  ]
+}

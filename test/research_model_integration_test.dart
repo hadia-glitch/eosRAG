@@ -85,6 +85,26 @@ class _ModelAdapter implements HttpClientAdapter {
 }
 
 void main() {
+  testWidgets('PIC selection opens a distinct longitudinal input workflow', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      ProviderScope(
+        child: MaterialApp(
+          home: Scaffold(
+            body: ResearchModelCard(
+              patient: fixture(),
+              metadata: const {'selected_model': 'pic'},
+            ),
+          ),
+        ),
+      ),
+    );
+    expect(find.text('PIC · Research model'), findsOneWidget);
+    expect(find.text('Review longitudinal inputs'), findsOneWidget);
+    expect(find.text('Review model inputs & predict'), findsNothing);
+    expect(tester.takeException(), isNull);
+  });
   final metadata =
       jsonDecode(
             File(

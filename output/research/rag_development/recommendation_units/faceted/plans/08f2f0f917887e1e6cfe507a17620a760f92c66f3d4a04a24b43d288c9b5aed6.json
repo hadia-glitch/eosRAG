@@ -1,0 +1,14 @@
+{
+  "source": "AAP",
+  "query": "Blood culture is sterile after the recorded incubation, but respiratory illness persists. Explain antibiotic review and whether stopping conditions are established.",
+  "available": true,
+  "questions": [
+    "In neonates 0-72 hours with sterile blood cultures after incubation, what criteria allow discontinuation of empiric antibiotics despite persistent respiratory illness?",
+    "What antibiotic stewardship recommendations guide review and possible cessation of therapy for early\u2011onset neonatal sepsis when blood cultures are negative but clinical signs remain?",
+    "When are stopping conditions for antibiotics established in early\u2011onset sepsis if the blood culture is sterile and the infant continues to have respiratory symptoms?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": false,
+  "original_record_sha256": "8f633a46755b3048973fad309f1fd5bf973b1797ff42179cf8e101ac710e0de1",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

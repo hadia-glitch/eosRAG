@@ -1,0 +1,546 @@
+{
+  "protocol": {
+    "stage": "development_only",
+    "clinical_eos_eligible": false,
+    "feature_version": "pic-longitudinal-v1",
+    "seed": 31,
+    "cohort_sha256": "1fce5559ba1726524510a075eae5397c585dd5a5fa577f45705ed808e39e7640",
+    "cohort_protocol_sha256": "e68388aa6b887e6b82aa076c41defebf77d65caef0df6b506bcf5f08ab342b9c",
+    "models": {
+      "snapshot_logistic": [
+        "snapshot",
+        "logistic"
+      ],
+      "trend_logistic": [
+        "trend",
+        "logistic"
+      ],
+      "binned_logistic": [
+        "binned",
+        "logistic"
+      ],
+      "trend_forest": [
+        "trend",
+        "forest"
+      ]
+    },
+    "folds": 3,
+    "split": "Patient-stratified random folds; dates are shifted, not calendar-temporal validation",
+    "preprocessing": "Training-fold-only variable column selection, median imputation, standard scaling, explicit missingness indicators. No outcome or synthetic donor imputation.",
+    "logistic_C": 0.03,
+    "forest": {
+      "n_estimators": 160,
+      "max_depth": 3,
+      "min_samples_leaf": 20,
+      "max_features": 0.6
+    },
+    "weights": "Equal total weight per patient despite repeated landmarks",
+    "thresholds": [
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "threshold_use": "Descriptive research operating points only; no clinical action threshold",
+    "selection": "Highest patient-weighted cross-validated AUPRC among longitudinal candidates for the dynamic research artifact; the snapshot baseline is retained and may be higher. Selection on these folds is development, not independent validation.",
+    "neural_minimum_positive_patients": 100,
+    "neural_policy": "Do not fit an underdetermined recurrent network below this engineering floor; not a clinical sample-size justification.",
+    "calibration": "No separate calibration cohort is available. Probabilities are research model scores, not validated absolute EOS risks.",
+    "bootstrap": {
+      "unit": "patient",
+      "repeats": 2000,
+      "seed": 31
+    },
+    "code_sha256": {
+      "backend\\ml\\train_pic_longitudinal.py": "8031e5f77597862fec49b4453a21c6265f28c7110e08c1e1cc5bdad639076b1f",
+      "backend\\ml\\dynamic_features.py": "0d43010c3cbc11da0246439a1989e019d144b9b1f1aa4cc677fc4575ec140e6e",
+      "backend\\ml\\dynamic_contract.py": "391b0c9da83ab180069d282ebf6e18c53ecdc01237bbf9c594ff053067564789",
+      "backend\\ml\\pic_dataset.py": "11874875fad9a115de4fd1f162b48c96c3ae73de5504955d26f5beebc4495b09"
+    },
+    "packages": {
+      "numpy": "2.2.6",
+      "scikit-learn": "1.7.0",
+      "pandas": "2.3.1",
+      "pydantic": "2.11.7"
+    }
+  },
+  "patients": 543,
+  "positive_patients": 7,
+  "landmarks": 1436,
+  "fold_counts": [
+    {
+      "fold": 0,
+      "train_patients": 362,
+      "heldout_patients": 181,
+      "train_positive_patients": 5,
+      "heldout_positive_patients": 2
+    },
+    {
+      "fold": 1,
+      "train_patients": 362,
+      "heldout_patients": 181,
+      "train_positive_patients": 5,
+      "heldout_positive_patients": 2
+    },
+    {
+      "fold": 2,
+      "train_patients": 362,
+      "heldout_patients": 181,
+      "train_positive_patients": 4,
+      "heldout_positive_patients": 3
+    }
+  ],
+  "comparison": {
+    "snapshot_logistic": {
+      "metrics": {
+        "auroc": 0.29575559701492493,
+        "auprc": 0.009587925457051918,
+        "brier": 0.012814444464935775,
+        "mean_probability": 0.012706847972342469,
+        "observed_rate": 0.01289134438305709
+      },
+      "bootstrap": {
+        "repeats": 2000,
+        "skipped_single_class": 5,
+        "seed": 31,
+        "unit": "patient",
+        "intervals": {
+          "auroc": [
+            0.07111749698287101,
+            0.5363970548843241
+          ],
+          "auprc": [
+            0.0033761417176036545,
+            0.023735306825589365
+          ],
+          "brier": [
+            0.005281349797695136,
+            0.02187857124837818
+          ]
+        }
+      },
+      "training_fold_mean": {
+        "auroc": 0.7530251974056738,
+        "auprc": 0.20292387454533836,
+        "brier": 0.012352357455932808,
+        "mean_probability": 0.012887331112667983,
+        "observed_rate": 0.01289134438305709
+      }
+    },
+    "trend_logistic": {
+      "metrics": {
+        "auroc": 0.4176594705046197,
+        "auprc": 0.048170849797970046,
+        "brier": 0.014243453682450483,
+        "mean_probability": 0.012960975859350857,
+        "observed_rate": 0.01289134438305709
+      },
+      "bootstrap": {
+        "repeats": 2000,
+        "skipped_single_class": 5,
+        "seed": 31,
+        "unit": "patient",
+        "intervals": {
+          "auroc": [
+            0.10399578745498554,
+            0.7338082111830112
+          ],
+          "auprc": [
+            0.004260404910101703,
+            0.19475024904924013
+          ],
+          "brier": [
+            0.0055118621736840664,
+            0.024689575528608277
+          ]
+        }
+      },
+      "training_fold_mean": {
+        "auroc": 0.8751717993735874,
+        "auprc": 0.4617801954577816,
+        "brier": 0.009570883213306944,
+        "mean_probability": 0.012884417742780494,
+        "observed_rate": 0.01289134438305709
+      }
+    },
+    "binned_logistic": {
+      "metrics": {
+        "auroc": 0.3008077173655525,
+        "auprc": 0.009044723185843543,
+        "brier": 0.012938208737191594,
+        "mean_probability": 0.012829946767796715,
+        "observed_rate": 0.01289134438305709
+      },
+      "bootstrap": {
+        "repeats": 2000,
+        "skipped_single_class": 5,
+        "seed": 31,
+        "unit": "patient",
+        "intervals": {
+          "auroc": [
+            0.10111057038184691,
+            0.5089201717692808
+          ],
+          "auprc": [
+            0.0036457267766636333,
+            0.018334841287781203
+          ],
+          "brier": [
+            0.005345350690320053,
+            0.022035724332311133
+          ]
+        }
+      },
+      "training_fold_mean": {
+        "auroc": 0.8182494033201936,
+        "auprc": 0.3023531530250883,
+        "brier": 0.011717918027589142,
+        "mean_probability": 0.012887182536656031,
+        "observed_rate": 0.01289134438305709
+      }
+    },
+    "trend_forest": {
+      "metrics": {
+        "auroc": 0.5930833185264148,
+        "auprc": 0.01707448170765198,
+        "brier": 0.013345382925235046,
+        "mean_probability": 0.014470965005080478,
+        "observed_rate": 0.01289134438305709
+      },
+      "bootstrap": {
+        "repeats": 2000,
+        "skipped_single_class": 5,
+        "seed": 31,
+        "unit": "patient",
+        "intervals": {
+          "auroc": [
+            0.44400116324253114,
+            0.7338098031218363
+          ],
+          "auprc": [
+            0.006824894184262876,
+            0.03435612243054047
+          ],
+          "brier": [
+            0.00577025202648911,
+            0.02242038633864236
+          ]
+        }
+      },
+      "training_fold_mean": {
+        "auroc": 0.9785065389180708,
+        "auprc": 0.5726578883549815,
+        "brier": 0.011009720749990562,
+        "mean_probability": 0.013236103610893522,
+        "observed_rate": 0.01289134438305709
+      }
+    },
+    "training_prevalence": {
+      "metrics": {
+        "auroc": 0.4517590618336883,
+        "auprc": 0.011838989739542293,
+        "brier": 0.012733636539381175,
+        "mean_probability": 0.012891344383057089,
+        "observed_rate": 0.01289134438305709
+      },
+      "bootstrap": {
+        "repeats": 2000,
+        "skipped_single_class": 5,
+        "seed": 31,
+        "unit": "patient",
+        "intervals": {
+          "auroc": [
+            0.23435452493872277,
+            0.6651666310322706
+          ],
+          "auprc": [
+            0.004591506465744373,
+            0.02257474471608165
+          ],
+          "brier": [
+            0.005272818829692563,
+            0.02171930654306824
+          ]
+        }
+      },
+      "training_fold_mean": null
+    },
+    "age_only": {
+      "metrics": {
+        "auroc": 0.5079646410803111,
+        "auprc": 0.015134975378109396,
+        "brier": 0.012730514605158432,
+        "mean_probability": 0.012909300420601665,
+        "observed_rate": 0.01289134438305709
+      },
+      "bootstrap": {
+        "repeats": 2000,
+        "skipped_single_class": 5,
+        "seed": 31,
+        "unit": "patient",
+        "intervals": {
+          "auroc": [
+            0.2642220954505992,
+            0.747274528511543
+          ],
+          "auprc": [
+            0.004821941418651782,
+            0.038291398180136806
+          ],
+          "brier": [
+            0.005267599964692631,
+            0.02171737917681147
+          ]
+        }
+      },
+      "training_fold_mean": null
+    },
+    "missingness_only": {
+      "metrics": {
+        "auroc": 0.6171471511490161,
+        "auprc": 0.04500441142564787,
+        "brier": 0.012751459778148384,
+        "mean_probability": 0.01226008841183549,
+        "observed_rate": 0.01289134438305709
+      },
+      "bootstrap": {
+        "repeats": 2000,
+        "skipped_single_class": 5,
+        "seed": 31,
+        "unit": "patient",
+        "intervals": {
+          "auroc": [
+            0.3795646590284608,
+            0.837769012825542
+          ],
+          "auprc": [
+            0.007651539192079703,
+            0.15589839253335763
+          ],
+          "brier": [
+            0.0052170357179897025,
+            0.021805971209577224
+          ]
+        }
+      },
+      "training_fold_mean": null
+    },
+    "longitudinal_mean_ensemble": {
+      "metrics": {
+        "auroc": 0.49152600094764237,
+        "auprc": 0.022057794891170893,
+        "brier": 0.013013841358820041,
+        "mean_probability": 0.013420629210742684,
+        "observed_rate": 0.01289134438305709
+      },
+      "bootstrap": {
+        "repeats": 2000,
+        "skipped_single_class": 5,
+        "seed": 31,
+        "unit": "patient",
+        "intervals": {
+          "auroc": [
+            0.22291014878574195,
+            0.7553468073400769
+          ],
+          "auprc": [
+            0.00489331454135939,
+            0.08045852156050673
+          ],
+          "brier": [
+            0.005309729720372215,
+            0.02220101477217771
+          ]
+        }
+      },
+      "training_fold_mean": null
+    }
+  },
+  "paired_vs_snapshot": {
+    "trend_logistic": {
+      "repeats": 2000,
+      "skipped_single_class": 5,
+      "seed": 31,
+      "unit": "patient",
+      "intervals": {
+        "auroc": [
+          -0.08169049798183337,
+          0.33926618553704385
+        ],
+        "auprc": [
+          -0.0006378090741316712,
+          0.17739116947179795
+        ],
+        "brier": [
+          -0.0006457618930081411,
+          0.004983091990545093
+        ]
+      }
+    },
+    "binned_logistic": {
+      "repeats": 2000,
+      "skipped_single_class": 5,
+      "seed": 31,
+      "unit": "patient",
+      "intervals": {
+        "auroc": [
+          -0.07837069415717762,
+          0.09503690482462024
+        ],
+        "auprc": [
+          -0.006898763415641897,
+          0.0019268206725766561
+        ],
+        "brier": [
+          4.470932640356709e-05,
+          0.000232322735877953
+        ]
+      }
+    },
+    "trend_forest": {
+      "repeats": 2000,
+      "skipped_single_class": 5,
+      "seed": 31,
+      "unit": "patient",
+      "intervals": {
+        "auroc": [
+          0.04908118783989743,
+          0.5306849398371395
+        ],
+        "auprc": [
+          -1.1523049959044195e-05,
+          0.018418681439851047
+        ],
+        "brier": [
+          0.0002898129296840275,
+          0.0007741903186337825
+        ]
+      }
+    },
+    "longitudinal_mean_ensemble": {
+      "repeats": 2000,
+      "skipped_single_class": 5,
+      "seed": 31,
+      "unit": "patient",
+      "intervals": {
+        "auroc": [
+          -0.014483565535941047,
+          0.41020480253132013
+        ],
+        "auprc": [
+          0.00013493491750255382,
+          0.06106194269742697
+        ],
+        "brier": [
+          -0.00018607500667558834,
+          0.0007211514964185384
+        ]
+      }
+    }
+  },
+  "training_label_shuffle_controls": [
+    {
+      "seed": 31,
+      "evaluation": "Original unshuffled outcomes; fixed patient folds",
+      "auroc": 0.38918946932006593,
+      "auprc": 0.0338944375768188,
+      "brier": 0.012853862103576742,
+      "mean_probability": 0.01215060617098515,
+      "observed_rate": 0.01289134438305709
+    },
+    {
+      "seed": 47,
+      "evaluation": "Original unshuffled outcomes; fixed patient folds",
+      "auroc": 0.4339226486614535,
+      "auprc": 0.15253184115101245,
+      "brier": 0.012254703966401503,
+      "mean_probability": 0.01295948063413666,
+      "observed_rate": 0.01289134438305709
+    },
+    {
+      "seed": 83,
+      "evaluation": "Original unshuffled outcomes; fixed patient folds",
+      "auroc": 0.6554452440180045,
+      "auprc": 0.03458140413578868,
+      "brier": 0.012661520445853778,
+      "mean_probability": 0.012785433166465928,
+      "observed_rate": 0.01289134438305709
+    }
+  ],
+  "midnight_birth_time_sensitivity": {
+    "analysis": "Excludes midnight DOBs, using existing out-of-fold predictions; not a retrained independent study",
+    "patients": 483,
+    "positive_patients": 5,
+    "models": {
+      "snapshot_logistic": {
+        "auroc": 0.31593096234309503,
+        "auprc": 0.008939479609756142,
+        "brier": 0.010332151279765148,
+        "mean_probability": 0.012716832277831904,
+        "observed_rate": 0.010351966873706004
+      },
+      "trend_logistic": {
+        "auroc": 0.3925755462575537,
+        "auprc": 0.03757045080897281,
+        "brier": 0.012083929674147946,
+        "mean_probability": 0.012913166770036762,
+        "observed_rate": 0.010351966873706004
+      },
+      "binned_logistic": {
+        "auroc": 0.2781799163179901,
+        "auprc": 0.007335477232666457,
+        "brier": 0.010407765800743216,
+        "mean_probability": 0.01261707147821079,
+        "observed_rate": 0.010351966873706004
+      },
+      "trend_forest": {
+        "auroc": 0.6545804277080414,
+        "auprc": 0.01700991706635855,
+        "brier": 0.010808782635225514,
+        "mean_probability": 0.013935337452857782,
+        "observed_rate": 0.010351966873706004
+      },
+      "training_prevalence": {
+        "auroc": 0.5621338912133876,
+        "auprc": 0.011856326096453776,
+        "brier": 0.01024603308369929,
+        "mean_probability": 0.012919940976630863,
+        "observed_rate": 0.010351966873706004
+      },
+      "age_only": {
+        "auroc": 0.6169525801952562,
+        "auprc": 0.01784196992953591,
+        "brier": 0.010245319451053315,
+        "mean_probability": 0.012879400377307415,
+        "observed_rate": 0.010351966873706004
+      },
+      "missingness_only": {
+        "auroc": 0.6428666899116681,
+        "auprc": 0.03624266634668985,
+        "brier": 0.010366754448994141,
+        "mean_probability": 0.012286247090217068,
+        "observed_rate": 0.010351966873706004
+      },
+      "longitudinal_mean_ensemble": {
+        "auroc": 0.5119630404463025,
+        "auprc": 0.02117679514874756,
+        "brier": 0.010574698913594083,
+        "mean_probability": 0.013155191900368445,
+        "observed_rate": 0.010351966873706004
+      }
+    }
+  },
+  "selected_development_model": "trend_logistic",
+  "selection_has_independent_test": false,
+  "neural_model_status": "not fitted: independent positive infants below predeclared engineering floor",
+  "artifact_sha256": "8adcd337a0ce54f6e2c02e1abf84790acf5f52d79bab7748033321b26065441d",
+  "portable_prediction_parity_atol": 1e-07,
+  "clinical_ready": false,
+  "limitations": [
+    "Very few independent positive infants; intervals do not capture phenotype uncertainty or between-site transport.",
+    "Candidate selection and comparison use the same development folds. No untouched test, no external site.",
+    "Raw probabilities are not independently calibrated, and the endpoint is not adjudicated EOS.",
+    "Synthetic maternal factors are evaluated separately; no real infant is assigned synthetic obstetric history.",
+    "Threshold operating points cannot authorize treatment, stopping or reassurance."
+  ]
+}

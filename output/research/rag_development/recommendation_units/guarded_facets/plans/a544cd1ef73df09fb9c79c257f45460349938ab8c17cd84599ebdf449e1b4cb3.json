@@ -1,0 +1,12 @@
+{
+  "source": "NICE",
+  "query": "Review one known risk factor in a currently well baby without inventing absent findings.",
+  "available": false,
+  "questions": [
+    "Review one known risk factor in a currently well baby without inventing absent findings."
+  ],
+  "validation_reason": "unsupported_numeric_detail",
+  "original_plan_available": false,
+  "original_record_sha256": "d33e8fea2612251f4a2df0e673f5dcb3c8d08f3a3202fdd65438613db4c442ea",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

@@ -1,0 +1,4 @@
+id,guideline,family,claims,structurally_valid,complete_audits,whole_draft_released,clinical_usability_adjudicated
+aap-expanded-crp_alone-01,AAP,crp_alone,3,True,True,True,False
+nice-expanded-incomplete_stop-01,NICE,incomplete_stop,5,False,False,False,False
+who-expanded-missing_results-01,WHO,missing_results,5,True,True,False,False

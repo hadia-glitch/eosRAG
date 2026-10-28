@@ -1,0 +1,223 @@
+{
+  "id": "aap-expanded-initial_investigation-02",
+  "guideline": "AAP",
+  "family": "initial_investigation",
+  "rankings": {
+    "fixed_facet_plan:legacy:original": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    },
+    "fixed_facet_plan:canonical_v2:original": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    },
+    "question_only:legacy:original": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B5"
+      ]
+    },
+    "question_only:canonical_v2:original": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B5"
+      ]
+    },
+    "fixed_facet_plan:legacy:clinical_shorthand": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    },
+    "fixed_facet_plan:canonical_v2:clinical_shorthand": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    },
+    "question_only:legacy:clinical_shorthand": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B5"
+      ]
+    },
+    "question_only:canonical_v2:clinical_shorthand": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P6-STOP",
+        "AAP2018-35PLUS-P5-B5"
+      ]
+    },
+    "fixed_facet_plan:legacy:plain_language": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    },
+    "fixed_facet_plan:canonical_v2:plain_language": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P6-B2",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B6"
+      ]
+    },
+    "question_only:legacy:plain_language": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P3-B7"
+      ]
+    },
+    "question_only:canonical_v2:plain_language": {
+      "4": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP4",
+        "AAP2018-35PLUS-P5-B3",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P5-B5",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P3-B7"
+      ]
+    }
+  }
+}

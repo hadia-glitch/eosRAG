@@ -19,6 +19,8 @@ from db import get_supabase
 from ml.features import PredictionRequest
 from ml.inference import ModelUnavailable, model_status, predict
 from ml.supplied_model import SuppliedPredictionRequest,load_supplied_model,supplied_status
+from ml.longitudinal_inputs import LongitudinalInputs,contract as longitudinal_contract,preview as longitudinal_preview
+from ml.research_selection import status as selected_research_status,longitudinal_contract as selected_longitudinal_contract,predict_pic
 from rag.evidence_policy import load_manifest
 from rag.patient_context_builder import build_patient_context
 from rag.production_retrieval import retrieve
@@ -117,16 +119,29 @@ def mobile_config():
 
 @app.get("/api/v1/models/status")
 def models_status(user=Depends(require_user)):
-    return {**model_status(get_settings()),'research_model':supplied_status(get_settings())}
+    return {**model_status(get_settings()),'research_model':selected_research_status(get_settings())}
 
 
 @app.get('/api/v1/research/model/status')
 def research_model_status(user=Depends(require_user)):
-    return supplied_status(get_settings())
+    return selected_research_status(get_settings())
+
+
+@app.get('/api/v1/research/longitudinal/contract')
+def longitudinal_input_contract(user=Depends(require_user)):
+    return selected_longitudinal_contract(get_settings())
+
+
+@app.post('/api/v1/research/longitudinal/preview')
+def longitudinal_input_preview(body:LongitudinalInputs,user=Depends(require_user)):
+    # Input alignment and observed trends only. The new PIC model fails its
+    # quality gate and is deliberately absent from the clinical prediction path.
+    return longitudinal_preview(body)
 
 
 @app.post('/api/v1/research/model/predict')
 def research_model_predict(body:SuppliedPredictionRequest,user=Depends(require_user)):
+    if get_settings().research_ml_model!='kaggle':raise HTTPException(409,'PIC is selected; use the longitudinal input screen.')
     try:
         result=load_supplied_model(get_settings().supplied_model_dir).predict(body)
     except ModelUnavailable as exc:
@@ -145,6 +160,7 @@ def research_model_predict(body:SuppliedPredictionRequest,user=Depends(require_u
 
 @app.post('/api/v1/research/model/explain')
 def research_model_explain(body:SuppliedPredictionRequest,user=Depends(require_user)):
+    if get_settings().research_ml_model!='kaggle':raise HTTPException(409,'PIC is selected; use the longitudinal research explanation.')
     from ml.explanations import explain
     try:
         result=explain(load_supplied_model(get_settings().supplied_model_dir),body)
@@ -157,6 +173,19 @@ def research_model_explain(body:SuppliedPredictionRequest,user=Depends(require_u
         if get_settings().research_prediction_requires_audit:raise
         result['audit_status']='unavailable'
         result['warnings'].append('Research explanation was not saved to the server audit.')
+    return result
+
+
+@app.post('/api/v1/research/longitudinal/predict')
+def longitudinal_research_predict(body:LongitudinalInputs,user=Depends(require_user)):
+    try:result=predict_pic(body,get_settings())
+    except ModelUnavailable as exc:raise HTTPException(503,str(exc))
+    try:
+        record_decision(user,'pic_research_inference',result)
+        result['audit_status']='recorded'
+    except HTTPException:
+        if get_settings().research_prediction_requires_audit:raise
+        result['audit_status']='unavailable'
     return result
 
 

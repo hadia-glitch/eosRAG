@@ -1,0 +1,153 @@
+{
+  "id": "aap-expanded-single_risk-02",
+  "guideline": "AAP",
+  "family": "single_risk",
+  "rankings": {
+    "fixed_facet_plan:original": {
+      "4": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B9"
+      ]
+    },
+    "question_only:original": {
+      "4": [
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B1"
+      ]
+    },
+    "fixed_facet_plan:clinical_shorthand": {
+      "4": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B0"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B9"
+      ]
+    },
+    "question_only:clinical_shorthand": {
+      "4": [
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B11"
+      ],
+      "8": [
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-SP2",
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-P4-B3"
+      ]
+    },
+    "fixed_facet_plan:plain_language": {
+      "4": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B5"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B5",
+        "AAP2018-35PLUS-SP3",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P6-B14"
+      ]
+    },
+    "question_only:plain_language": {
+      "4": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B9"
+      ],
+      "8": [
+        "AAP2018-35PLUS-P3-B10",
+        "AAP2018-35PLUS-P3-B11",
+        "AAP2018-35PLUS-P4-B0",
+        "AAP2018-35PLUS-P4-B9",
+        "AAP2018-35PLUS-P6-B14",
+        "AAP2018-35PLUS-P4-B3",
+        "AAP2018-35PLUS-P3-B9",
+        "AAP2018-35PLUS-P4-B1"
+      ]
+    }
+  },
+  "queries": {
+    "original": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options.",
+    "clinical_shorthand": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, bedside evaluations and locally documented management options.",
+    "plain_language": "A well-appearing infant has one confirmed maternal GBS predisposing feature. Describe evaluation of predisposition to infection, bedside findings and locally documented care options."
+  },
+  "definition_context_ids": {
+    "AAP2018-35PLUS-P3-B7": [],
+    "AAP2018-35PLUS-P3-B9": [],
+    "AAP2018-35PLUS-P3-B10": [],
+    "AAP2018-35PLUS-P3-B11": [],
+    "AAP2018-35PLUS-P3-B13": [],
+    "AAP2018-35PLUS-P4-B0": [],
+    "AAP2018-35PLUS-P4-B1": [],
+    "AAP2018-35PLUS-P4-B3": [],
+    "AAP2018-35PLUS-P4-B5": [],
+    "AAP2018-35PLUS-P4-B6": [],
+    "AAP2018-35PLUS-P4-B7": [],
+    "AAP2018-35PLUS-P4-B9": [],
+    "AAP2018-35PLUS-P5-B3": [],
+    "AAP2018-35PLUS-P5-B5": [],
+    "AAP2018-35PLUS-P5-B8": [],
+    "AAP2018-35PLUS-P5-B9": [],
+    "AAP2018-35PLUS-P5-B13": [],
+    "AAP2018-35PLUS-P6-B2": [],
+    "AAP2018-35PLUS-P6-B4": [],
+    "AAP2018-35PLUS-P6-B7": [],
+    "AAP2018-35PLUS-P6-B8": [],
+    "AAP2018-35PLUS-P6-B9": [],
+    "AAP2018-35PLUS-P6-B10": [],
+    "AAP2018-35PLUS-P6-B14": [],
+    "AAP2018-35PLUS-SP2": [],
+    "AAP2018-35PLUS-SP3": [],
+    "AAP2018-35PLUS-SP4": [],
+    "AAP2018-35PLUS-SP5": [],
+    "AAP2018-35PLUS-SP6": [],
+    "AAP2018-35PLUS-P6-STOP": []
+  },
+  "original_pipeline_replay_equal": true
+}

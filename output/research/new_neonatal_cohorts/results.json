@@ -1,0 +1,830 @@
+{
+  "protocol": {
+    "stage": "exploratory_diagnostic_development",
+    "seeds": [
+      31,
+      47,
+      83
+    ],
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "candidate_selection": "maximum inner patient-weighted AUROC; insertion order tie break",
+    "candidates": [
+      "lr_C01",
+      "lr_C1",
+      "forest",
+      "extra_trees",
+      "boost"
+    ],
+    "threshold_selection": "inner-OOF maximum balanced accuracy over fixed grid 0.05:0.01:0.95; largest threshold breaks ties",
+    "bootstrap": "2000 resamples of independent infants, seed31; all episodes of resampled infant retained",
+    "training": "median imputation and scaling fitted within training fold; equal total weight per infant",
+    "clinical_ready": false,
+    "code_sha256": "416109b98549c2fcf05808f94a6942d7d27ae31070e65d1cc05ca449606fcc2d",
+    "prepared_cohort_sha256": {
+      "workbook": "332811c1717a4691f1c0503560de8f53df6f85c37bbd1ad539dc0010261dfa70",
+      "chop": "ed85feeac3ba79a7561c2752591b4a1ae57be2fa5c9ad8198ec4fa2f4fe8372a"
+    },
+    "packages": {
+      "numpy": "2.2.6",
+      "scikit-learn": "1.7.0"
+    }
+  },
+  "cohorts": [
+    {
+      "dataset": "workbook",
+      "rows": 138,
+      "infants": 138,
+      "positive_rows": 69,
+      "positive_infants": 69,
+      "scope": "Preterm case-control culture-positive diagnosis; individual EOS timing unavailable."
+    },
+    {
+      "dataset": "chop",
+      "rows": 580,
+      "infants": 472,
+      "positive_rows": 53,
+      "positive_infants": 52,
+      "scope": "Age <28 days; bacteremia versus manually classified culture-negative rule-out episodes; conditional on sepsis evaluation, not EOS forecasting."
+    }
+  ],
+  "metrics": [
+    {
+      "dataset": "workbook",
+      "seed": 31,
+      "method": "lr_C01",
+      "auroc": 0.7910102919554715,
+      "auprc": 0.767165296538995,
+      "accuracy": 0.7246376811594203,
+      "sensitivity": 0.7536231884057971,
+      "specificity": 0.6956521739130435,
+      "precision": 0.7123287671232876,
+      "brier": 0.18779868224685842
+    },
+    {
+      "dataset": "workbook",
+      "seed": 31,
+      "method": "lr_C1",
+      "auroc": 0.8067632850241545,
+      "auprc": 0.8109644948602232,
+      "accuracy": 0.7391304347826086,
+      "sensitivity": 0.6521739130434783,
+      "specificity": 0.8260869565217391,
+      "precision": 0.7894736842105263,
+      "brier": 0.18002785061290955
+    },
+    {
+      "dataset": "workbook",
+      "seed": 31,
+      "method": "forest",
+      "auroc": 0.8038227263180003,
+      "auprc": 0.8065823545136472,
+      "accuracy": 0.6521739130434783,
+      "sensitivity": 0.7971014492753623,
+      "specificity": 0.5072463768115942,
+      "precision": 0.6179775280898876,
+      "brier": 0.1806758750556318
+    },
+    {
+      "dataset": "workbook",
+      "seed": 31,
+      "method": "extra_trees",
+      "auroc": 0.7898550724637681,
+      "auprc": 0.7923453166500104,
+      "accuracy": 0.7246376811594203,
+      "sensitivity": 0.782608695652174,
+      "specificity": 0.6666666666666666,
+      "precision": 0.7012987012987013,
+      "brier": 0.19334791269243082
+    },
+    {
+      "dataset": "workbook",
+      "seed": 31,
+      "method": "boost",
+      "auroc": 0.7953161100609115,
+      "auprc": 0.7893308358901935,
+      "accuracy": 0.7101449275362319,
+      "sensitivity": 0.7246376811594203,
+      "specificity": 0.6956521739130435,
+      "precision": 0.704225352112676,
+      "brier": 0.1843142457178965
+    },
+    {
+      "dataset": "workbook",
+      "seed": 31,
+      "method": "nested_selected",
+      "auroc": 0.8108590632220122,
+      "auprc": 0.810269748990035,
+      "accuracy": 0.7463768115942029,
+      "sensitivity": 0.7681159420289855,
+      "specificity": 0.7246376811594203,
+      "precision": 0.7361111111111112,
+      "brier": 0.17823607225943777
+    },
+    {
+      "dataset": "workbook",
+      "seed": 31,
+      "method": "demographic_baseline",
+      "auroc": 0.773576979626129,
+      "auprc": 0.7868818278025912,
+      "accuracy": 0.7028985507246377,
+      "sensitivity": 0.6956521739130435,
+      "specificity": 0.7101449275362319,
+      "precision": 0.7058823529411765,
+      "brier": 0.19928241149311754
+    },
+    {
+      "dataset": "workbook",
+      "seed": 47,
+      "method": "lr_C01",
+      "auroc": 0.7899600924175594,
+      "auprc": 0.7514547975767387,
+      "accuracy": 0.717391304347826,
+      "sensitivity": 0.6956521739130435,
+      "specificity": 0.7391304347826086,
+      "precision": 0.7272727272727273,
+      "brier": 0.18924707992578912
+    },
+    {
+      "dataset": "workbook",
+      "seed": 47,
+      "method": "lr_C1",
+      "auroc": 0.803612686410418,
+      "auprc": 0.7802254633170463,
+      "accuracy": 0.717391304347826,
+      "sensitivity": 0.6376811594202898,
+      "specificity": 0.7971014492753623,
+      "precision": 0.7586206896551724,
+      "brier": 0.1821468559429393
+    },
+    {
+      "dataset": "workbook",
+      "seed": 47,
+      "method": "forest",
+      "auroc": 0.7956311699222852,
+      "auprc": 0.767968872063284,
+      "accuracy": 0.7318840579710145,
+      "sensitivity": 0.8405797101449275,
+      "specificity": 0.6231884057971014,
+      "precision": 0.6904761904761905,
+      "brier": 0.18274194495128057
+    },
+    {
+      "dataset": "workbook",
+      "seed": 47,
+      "method": "extra_trees",
+      "auroc": 0.8157950010501996,
+      "auprc": 0.7879666184674656,
+      "accuracy": 0.7463768115942029,
+      "sensitivity": 0.7536231884057971,
+      "specificity": 0.7391304347826086,
+      "precision": 0.7428571428571429,
+      "brier": 0.18313850042455096
+    },
+    {
+      "dataset": "workbook",
+      "seed": 47,
+      "method": "boost",
+      "auroc": 0.8110691031295947,
+      "auprc": 0.7867883413410672,
+      "accuracy": 0.7028985507246377,
+      "sensitivity": 0.6086956521739131,
+      "specificity": 0.7971014492753623,
+      "precision": 0.75,
+      "brier": 0.17622987942269233
+    },
+    {
+      "dataset": "workbook",
+      "seed": 47,
+      "method": "nested_selected",
+      "auroc": 0.7920604914933838,
+      "auprc": 0.7589699271531604,
+      "accuracy": 0.7246376811594203,
+      "sensitivity": 0.7101449275362319,
+      "specificity": 0.7391304347826086,
+      "precision": 0.7313432835820896,
+      "brier": 0.18629207312291288
+    },
+    {
+      "dataset": "workbook",
+      "seed": 47,
+      "method": "demographic_baseline",
+      "auroc": 0.7975215290905272,
+      "auprc": 0.7948298363176604,
+      "accuracy": 0.6739130434782609,
+      "sensitivity": 0.6956521739130435,
+      "specificity": 0.6521739130434783,
+      "precision": 0.6666666666666666,
+      "brier": 0.19239737791179243
+    },
+    {
+      "dataset": "workbook",
+      "seed": 83,
+      "method": "lr_C01",
+      "auroc": 0.7795631169922285,
+      "auprc": 0.7465280788793873,
+      "accuracy": 0.6666666666666666,
+      "sensitivity": 0.7246376811594203,
+      "specificity": 0.6086956521739131,
+      "precision": 0.6493506493506493,
+      "brier": 0.19426802707004204
+    },
+    {
+      "dataset": "workbook",
+      "seed": 83,
+      "method": "lr_C1",
+      "auroc": 0.7904851921865155,
+      "auprc": 0.7694977543951971,
+      "accuracy": 0.717391304347826,
+      "sensitivity": 0.6811594202898551,
+      "specificity": 0.7536231884057971,
+      "precision": 0.734375,
+      "brier": 0.18839541440230861
+    },
+    {
+      "dataset": "workbook",
+      "seed": 83,
+      "method": "forest",
+      "auroc": 0.7898550724637682,
+      "auprc": 0.7553153534987964,
+      "accuracy": 0.7391304347826086,
+      "sensitivity": 0.8405797101449275,
+      "specificity": 0.6376811594202898,
+      "precision": 0.6987951807228916,
+      "brier": 0.1872312966795923
+    },
+    {
+      "dataset": "workbook",
+      "seed": 83,
+      "method": "extra_trees",
+      "auroc": 0.7810333963453056,
+      "auprc": 0.7648727787219631,
+      "accuracy": 0.6811594202898551,
+      "sensitivity": 0.6376811594202898,
+      "specificity": 0.7246376811594203,
+      "precision": 0.6984126984126984,
+      "brier": 0.19248110944633692
+    },
+    {
+      "dataset": "workbook",
+      "seed": 83,
+      "method": "boost",
+      "auroc": 0.8018273471959673,
+      "auprc": 0.7716059423718651,
+      "accuracy": 0.7318840579710145,
+      "sensitivity": 0.8115942028985508,
+      "specificity": 0.6521739130434783,
+      "precision": 0.7,
+      "brier": 0.18018347383196331
+    },
+    {
+      "dataset": "workbook",
+      "seed": 83,
+      "method": "nested_selected",
+      "auroc": 0.7663306028145348,
+      "auprc": 0.7290721942104257,
+      "accuracy": 0.7028985507246377,
+      "sensitivity": 0.7536231884057971,
+      "specificity": 0.6521739130434783,
+      "precision": 0.6842105263157895,
+      "brier": 0.1971074516049581
+    },
+    {
+      "dataset": "workbook",
+      "seed": 83,
+      "method": "demographic_baseline",
+      "auroc": 0.7759924385633271,
+      "auprc": 0.7738727146733194,
+      "accuracy": 0.6884057971014492,
+      "sensitivity": 0.6811594202898551,
+      "specificity": 0.6956521739130435,
+      "precision": 0.6911764705882353,
+      "brier": 0.1984834273071897
+    },
+    {
+      "dataset": "chop",
+      "seed": 31,
+      "method": "lr_C01",
+      "auroc": 0.7477168887268724,
+      "auprc": 0.19817723048190083,
+      "accuracy": 0.7215042372881356,
+      "sensitivity": 0.6789667896678967,
+      "specificity": 0.7260054666146037,
+      "precision": 0.20774528621429383,
+      "brier": 0.08664559349020974
+    },
+    {
+      "dataset": "chop",
+      "seed": 31,
+      "method": "lr_C1",
+      "auroc": 0.7386948133440723,
+      "auprc": 0.18422829772041988,
+      "accuracy": 0.6942090395480226,
+      "sensitivity": 0.7675276752767527,
+      "specificity": 0.6864506052323311,
+      "precision": 0.20573689416419386,
+      "brier": 0.09081654848121373
+    },
+    {
+      "dataset": "chop",
+      "seed": 31,
+      "method": "forest",
+      "auroc": 0.7937802490090501,
+      "auprc": 0.2967528202113361,
+      "accuracy": 0.5915254237288136,
+      "sensitivity": 0.8339483394833948,
+      "specificity": 0.5658727059742288,
+      "precision": 0.16893407086261017,
+      "brier": 0.07729292240674401
+    },
+    {
+      "dataset": "chop",
+      "seed": 31,
+      "method": "extra_trees",
+      "auroc": 0.8130855826324761,
+      "auprc": 0.28667975364013326,
+      "accuracy": 0.5619703389830507,
+      "sensitivity": 0.9446494464944649,
+      "specificity": 0.5214759859429909,
+      "precision": 0.17279784002699958,
+      "brier": 0.07687470044975177
+    },
+    {
+      "dataset": "chop",
+      "seed": 31,
+      "method": "boost",
+      "auroc": 0.809152473016335,
+      "auprc": 0.30538104851486436,
+      "accuracy": 0.635840395480226,
+      "sensitivity": 0.922509225092251,
+      "specificity": 0.6055056618508394,
+      "precision": 0.19836546853923662,
+      "brier": 0.07592306584082674
+    },
+    {
+      "dataset": "chop",
+      "seed": 31,
+      "method": "nested_selected",
+      "auroc": 0.804892865016116,
+      "auprc": 0.2930869331614281,
+      "accuracy": 0.6146539548022599,
+      "sensitivity": 0.922509225092251,
+      "specificity": 0.5820773135493947,
+      "precision": 0.18935090509732633,
+      "brier": 0.07632235752162549
+    },
+    {
+      "dataset": "chop",
+      "seed": 31,
+      "method": "demographic_baseline",
+      "auroc": 0.752424315340381,
+      "auprc": 0.2357909342256676,
+      "accuracy": 0.765819209039548,
+      "sensitivity": 0.6162361623616236,
+      "specificity": 0.781647793830535,
+      "precision": 0.22996419719085653,
+      "brier": 0.08125698717750349
+    },
+    {
+      "dataset": "chop",
+      "seed": 47,
+      "method": "lr_C01",
+      "auroc": 0.7719215712266454,
+      "auprc": 0.2148554636725949,
+      "accuracy": 0.7478107344632767,
+      "sensitivity": 0.6309963099630995,
+      "specificity": 0.7601718078875439,
+      "precision": 0.21777890983189,
+      "brier": 0.08325986032355719
+    },
+    {
+      "dataset": "chop",
+      "seed": 47,
+      "method": "lr_C1",
+      "auroc": 0.7649524300787716,
+      "auprc": 0.20803105152932747,
+      "accuracy": 0.7243997175141244,
+      "sensitivity": 0.7416974169741697,
+      "specificity": 0.7225693088637252,
+      "precision": 0.22051563357103676,
+      "brier": 0.085507663542793
+    },
+    {
+      "dataset": "chop",
+      "seed": 47,
+      "method": "forest",
+      "auroc": 0.787909761955878,
+      "auprc": 0.2779918299831402,
+      "accuracy": 0.5929731638418079,
+      "sensitivity": 0.8339483394833949,
+      "specificity": 0.5674736431081608,
+      "precision": 0.16945340031491335,
+      "brier": 0.07779367619722079
+    },
+    {
+      "dataset": "chop",
+      "seed": 47,
+      "method": "extra_trees",
+      "auroc": 0.8036545917977727,
+      "auprc": 0.2558983892791835,
+      "accuracy": 0.5897598870056496,
+      "sensitivity": 0.9446494464944649,
+      "specificity": 0.5522061694650526,
+      "precision": 0.18249215854006265,
+      "brier": 0.07778853880418841
+    },
+    {
+      "dataset": "chop",
+      "seed": 47,
+      "method": "boost",
+      "auroc": 0.8065292472526441,
+      "auprc": 0.262154389073654,
+      "accuracy": 0.5742231638418079,
+      "sensitivity": 0.988929889298893,
+      "specificity": 0.5303397110503709,
+      "precision": 0.18221376121838448,
+      "brier": 0.0770230285673272
+    },
+    {
+      "dataset": "chop",
+      "seed": 47,
+      "method": "nested_selected",
+      "auroc": 0.8027116944343985,
+      "auprc": 0.2539357012937663,
+      "accuracy": 0.5878177966101694,
+      "sensitivity": 0.9003690036900369,
+      "specificity": 0.5547442405310425,
+      "precision": 0.17626237087336555,
+      "brier": 0.077936874725558
+    },
+    {
+      "dataset": "chop",
+      "seed": 47,
+      "method": "demographic_baseline",
+      "auroc": 0.7532319161536012,
+      "auprc": 0.24720777964186735,
+      "accuracy": 0.732909604519774,
+      "sensitivity": 0.6937269372693727,
+      "specificity": 0.7370558375634518,
+      "precision": 0.21824936150452753,
+      "brier": 0.08006466704792474
+    },
+    {
+      "dataset": "chop",
+      "seed": 83,
+      "method": "lr_C01",
+      "auroc": 0.7543350369075732,
+      "auprc": 0.20890523941115818,
+      "accuracy": 0.6841454802259888,
+      "sensitivity": 0.6900369003690037,
+      "specificity": 0.6835220616946506,
+      "precision": 0.187468671679198,
+      "brier": 0.08643509005849147
+    },
+    {
+      "dataset": "chop",
+      "seed": 83,
+      "method": "lr_C1",
+      "auroc": 0.7501869513033278,
+      "auprc": 0.20016723311713816,
+      "accuracy": 0.6601341807909605,
+      "sensitivity": 0.7490774907749077,
+      "specificity": 0.6507223740726278,
+      "precision": 0.1849658314350797,
+      "brier": 0.09039529081082373
+    },
+    {
+      "dataset": "chop",
+      "seed": 83,
+      "method": "forest",
+      "auroc": 0.8144503631682158,
+      "auprc": 0.27427431497857685,
+      "accuracy": 0.5548022598870055,
+      "sensitivity": 0.988929889298893,
+      "specificity": 0.5088637251073799,
+      "precision": 0.1756455629833529,
+      "brier": 0.07730709747767228
+    },
+    {
+      "dataset": "chop",
+      "seed": 83,
+      "method": "extra_trees",
+      "auroc": 0.8216908178453124,
+      "auprc": 0.296510529216215,
+      "accuracy": 0.5826977401129944,
+      "sensitivity": 0.966789667896679,
+      "specificity": 0.5420538852010933,
+      "precision": 0.18260384722609416,
+      "brier": 0.07637411508789628
+    },
+    {
+      "dataset": "chop",
+      "seed": 83,
+      "method": "boost",
+      "auroc": 0.8237092435352311,
+      "auprc": 0.26865511785075313,
+      "accuracy": 0.5763418079096045,
+      "sensitivity": 0.988929889298893,
+      "specificity": 0.5326825458805153,
+      "precision": 0.18296013107591472,
+      "brier": 0.07740990899829575
+    },
+    {
+      "dataset": "chop",
+      "seed": 83,
+      "method": "nested_selected",
+      "auroc": 0.8235417438125963,
+      "auprc": 0.2741321368637414,
+      "accuracy": 0.5615112994350283,
+      "sensitivity": 0.988929889298893,
+      "specificity": 0.5162827020695041,
+      "precision": 0.17786036633926194,
+      "brier": 0.07782379366721351
+    },
+    {
+      "dataset": "chop",
+      "seed": 83,
+      "method": "demographic_baseline",
+      "auroc": 0.7314083953022271,
+      "auprc": 0.22426646215173743,
+      "accuracy": 0.7531073446327684,
+      "sensitivity": 0.6383763837638377,
+      "specificity": 0.7652479500195236,
+      "precision": 0.22345647119607337,
+      "brier": 0.08263479557526894
+    }
+  ],
+  "intervals": [
+    {
+      "dataset": "workbook",
+      "method": "nested_selected",
+      "metric": "auroc",
+      "low_95": 0.7371114759313205,
+      "high_95": 0.876501739508589,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "nested_selected",
+      "metric": "auprc",
+      "low_95": 0.7204085873604901,
+      "high_95": 0.8902320471120536,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "nested_selected",
+      "metric": "accuracy",
+      "low_95": 0.6666666666666666,
+      "high_95": 0.8115942028985508,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "nested_selected",
+      "metric": "sensitivity",
+      "low_95": 0.6623376623376623,
+      "high_95": 0.8591549295774648,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "nested_selected",
+      "metric": "specificity",
+      "low_95": 0.6164383561643836,
+      "high_95": 0.821917808219178,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "nested_selected",
+      "metric": "precision",
+      "low_95": 0.6338028169014085,
+      "high_95": 0.8307746478873239,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "nested_selected",
+      "metric": "brier",
+      "low_95": 0.14698180533570065,
+      "high_95": 0.21105798299577627,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "demographic_baseline",
+      "metric": "auroc",
+      "low_95": 0.6942242063492063,
+      "high_95": 0.8461732125345612,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "demographic_baseline",
+      "metric": "auprc",
+      "low_95": 0.6970965853091027,
+      "high_95": 0.8706191368409074,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "demographic_baseline",
+      "metric": "accuracy",
+      "low_95": 0.6231884057971014,
+      "high_95": 0.7753623188405797,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "demographic_baseline",
+      "metric": "sensitivity",
+      "low_95": 0.5822737577933119,
+      "high_95": 0.8,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "demographic_baseline",
+      "metric": "specificity",
+      "low_95": 0.6026712328767123,
+      "high_95": 0.8125446428571426,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "demographic_baseline",
+      "metric": "precision",
+      "low_95": 0.6,
+      "high_95": 0.8116168478260869,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "workbook",
+      "method": "demographic_baseline",
+      "metric": "brier",
+      "low_95": 0.17559543912388126,
+      "high_95": 0.22475736851805017,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "nested_selected",
+      "metric": "auroc",
+      "low_95": 0.7505477953362409,
+      "high_95": 0.8531725475827002,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "nested_selected",
+      "metric": "auprc",
+      "low_95": 0.195349216354905,
+      "high_95": 0.4195954197496712,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "nested_selected",
+      "metric": "accuracy",
+      "low_95": 0.5769774011299436,
+      "high_95": 0.655086511299435,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "nested_selected",
+      "metric": "sensitivity",
+      "low_95": 0.8409850724742194,
+      "high_95": 0.9890928782408928,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "nested_selected",
+      "metric": "specificity",
+      "low_95": 0.5399702541531604,
+      "high_95": 0.6241319384986979,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "nested_selected",
+      "metric": "precision",
+      "low_95": 0.1427691947719635,
+      "high_95": 0.24169869847046072,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "nested_selected",
+      "metric": "brier",
+      "low_95": 0.06032626652126141,
+      "high_95": 0.0943983138712656,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "demographic_baseline",
+      "metric": "auroc",
+      "low_95": 0.6709194837019463,
+      "high_95": 0.8233574943378694,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "demographic_baseline",
+      "metric": "auprc",
+      "low_95": 0.16483470696070557,
+      "high_95": 0.3446830893407526,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "demographic_baseline",
+      "metric": "accuracy",
+      "low_95": 0.7289168432203389,
+      "high_95": 0.8012447033898303,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "demographic_baseline",
+      "metric": "sensitivity",
+      "low_95": 0.4784566001697793,
+      "high_95": 0.7500192307692307,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "demographic_baseline",
+      "metric": "specificity",
+      "low_95": 0.7447188418292485,
+      "high_95": 0.8181193976574466,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "demographic_baseline",
+      "metric": "precision",
+      "low_95": 0.16118484955083143,
+      "high_95": 0.3017978426699903,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    },
+    {
+      "dataset": "chop",
+      "method": "demographic_baseline",
+      "metric": "brier",
+      "low_95": 0.06350857107380341,
+      "high_95": 0.100826450504999,
+      "resamples": 2000,
+      "skipped_single_class": 0
+    }
+  ],
+  "paired": [
+    {
+      "dataset": "workbook",
+      "contrast": "nested-selected minus demographic baseline AUROC",
+      "mean": 0.03728208359588314,
+      "low_95": -0.017666468684967813,
+      "high_95": 0.09102709360269313
+    },
+    {
+      "dataset": "chop",
+      "contrast": "nested-selected minus demographic baseline AUROC",
+      "mean": 0.052468549675735,
+      "low_95": 0.0021430334279685056,
+      "high_95": 0.10584466619551174
+    }
+  ],
+  "clinical_ready": false,
+  "independent_external_validation": false,
+  "app_model_changed": false
+}

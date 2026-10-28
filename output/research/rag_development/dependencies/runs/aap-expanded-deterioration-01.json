@@ -1,0 +1,46 @@
+{
+  "id": "aap-expanded-deterioration-01",
+  "guideline": "AAP",
+  "family": "deterioration",
+  "stage": "development_only",
+  "candidate_ids": [
+    "AAP2018-35PLUS-SP2",
+    "AAP2018-35PLUS-P4-B9",
+    "AAP2018-35PLUS-P4-B7",
+    "AAP2018-35PLUS-P4-B3",
+    "AAP2018-35PLUS-P4-B5",
+    "AAP2018-35PLUS-P3-B13",
+    "AAP2018-35PLUS-P6-B2",
+    "AAP2018-35PLUS-P3-B11",
+    "AAP2018-35PLUS-P4-B6",
+    "AAP2018-35PLUS-P4-B1",
+    "AAP2018-35PLUS-SP3",
+    "AAP2018-35PLUS-P4-B0",
+    "AAP2018-35PLUS-P3-B10",
+    "AAP2018-35PLUS-P3-B7",
+    "AAP2018-35PLUS-P6-STOP"
+  ],
+  "dependency_additions": [],
+  "available": true,
+  "selected_ids": [
+    "AAP2018-35PLUS-SP2",
+    "AAP2018-35PLUS-P4-B9",
+    "AAP2018-35PLUS-P4-B5",
+    "AAP2018-35PLUS-P4-B7",
+    "AAP2018-35PLUS-P4-B3",
+    "AAP2018-35PLUS-P3-B13",
+    "AAP2018-35PLUS-P6-STOP"
+  ],
+  "consensus_ids": [
+    "AAP2018-35PLUS-SP2",
+    "AAP2018-35PLUS-P4-B9",
+    "AAP2018-35PLUS-P4-B7",
+    "AAP2018-35PLUS-P4-B5",
+    "AAP2018-35PLUS-P4-B3",
+    "AAP2018-35PLUS-P3-B13",
+    "AAP2018-35PLUS-P6-STOP",
+    "AAP2018-35PLUS-P6-B2"
+  ],
+  "calls": [],
+  "exact_request_replay": true
+}

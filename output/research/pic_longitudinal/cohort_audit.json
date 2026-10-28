@@ -1,0 +1,170 @@
+{
+  "protocol": {
+    "feature_version": "pic-longitudinal-v1",
+    "seed": 31,
+    "dataset": "PIC v1.1.0",
+    "dataset_url": "https://physionet.org/content/picdb/1.1.0/",
+    "archive_sha256": "fbbc2908c3dd0f078227f4ee58f9a910d4037cd9e5d3bc1c4e0273629b216509",
+    "zip_table_prefix": "paediatric-intensive-care-database-1.1.0/V1.1.0/",
+    "target": "Subsequent documented named bacterial pathogen in blood collected before 72 postnatal hours; unadjudicated research phenotype",
+    "clinical_eos_eligible": false,
+    "label_adjudicated": false,
+    "landmark_offsets_after_admission_hours": [
+      1.0,
+      3.0,
+      6.0,
+      12.0,
+      24.0,
+      36.0,
+      48.0
+    ],
+    "lookback_hours": 24,
+    "recent_vital_window_hours": 6,
+    "eligibility": "First admission before 72h, explicit bacterial no-growth or named-pathogen early culture, prediction strictly before first early blood culture, >=2 distinct vitals recorded and available in prior 6h.",
+    "availability": "max(CHARTTIME, STORETIME) <= landmark; missing STORETIME excluded",
+    "unit_context": "ITEMID 1004 is Respiratory Rate in D_ITEMS. Its csv bpm is interpreted as breaths/minute by this item identity, not as heart rate. Pulse (1002) remains a distinct measurement from Heart Rate (1003). Measured weight is not relabelled birth weight.",
+    "outcome_policy": "Named pathogen overrides other reports. Otherwise every report must explicitly exclude bacteria. Unresolved Gram reports, possible contaminants, fungi, missing and fungus-only negatives are excluded.",
+    "positive_organism_allowlist": [
+      "enterobacter cloacae",
+      "enterococcus faecium group d",
+      "escherichia coli",
+      "klebsiella pneumoniae",
+      "listeria monocytogenes",
+      "pseudomonas aeruginosa",
+      "staphylococcus aureus",
+      "streptococcus agalactiae group b",
+      "streptococcus gallolyticus"
+    ],
+    "explicit_bacterial_negatives": [
+      "cultured for 5 days without bacteria, fungus growth",
+      "no bacteria, fungus growth",
+      "no bacterial growth",
+      "no bacterial growth for 5-day culture"
+    ],
+    "inputs": [
+      "neonatal_temperature",
+      "heart_rate",
+      "respiratory_rate",
+      "spo2",
+      "pulse_rate",
+      "diastolic_pressure",
+      "systolic_pressure",
+      "measured_weight_kg"
+    ],
+    "missing_maternal_predictors": [
+      "maternal_temperature",
+      "rom_hours",
+      "gbs_positive",
+      "adequate_intrapartum_antibiotics",
+      "clinical_chorioamnionitis"
+    ],
+    "never_predictors": [
+      "diagnoses",
+      "culture results",
+      "organism",
+      "prescriptions",
+      "death",
+      "discharge",
+      "length of stay",
+      "patient identifiers",
+      "absolute shifted dates"
+    ],
+    "laboratory_policy": "Excluded: no result-availability timestamp in LABEVENTS. CHARTTIME alone cannot establish prospective availability.",
+    "split_policy": "Patient-disjoint; shifted calendar dates are not a real chronological validation split.",
+    "code_sha256": "11874875fad9a115de4fd1f162b48c96c3ae73de5504955d26f5beebc4495b09"
+  },
+  "all_patients": 12881,
+  "all_admissions": 13449,
+  "admissions_age_0_72h": 1746,
+  "first_eligible_admissions": 1746,
+  "negative_age_admissions_excluded": 68,
+  "blood_culture_admission_classification": {
+    "0": 1404,
+    "None": 196,
+    "1": 14
+  },
+  "inconsistent_collection_admissions_excluded": 5,
+  "labelled_admissions_with_birth_before72h": 1392,
+  "landmarks": 1436,
+  "patients": 543,
+  "positive_patients": 7,
+  "negative_patients": 536,
+  "positive_landmarks": 21,
+  "per_offset": {
+    "1h_label0": 466,
+    "6h_label0": 344,
+    "3h_label0": 366,
+    "12h_label0": 210,
+    "24h_label0": 22,
+    "1h_label1": 6,
+    "3h_label1": 6,
+    "6h_label1": 5,
+    "36h_label0": 7,
+    "12h_label1": 2,
+    "24h_label1": 1,
+    "36h_label1": 1
+  },
+  "excluded": {
+    "landmark_at_or_after_first_culture": 4970,
+    "landmark_fewer_than_two_recent_vitals": 2459,
+    "no_unambiguous_early_blood_culture_endpoint": 354
+  },
+  "chart_audit": {
+    "scanned": 2278978,
+    "missing_measurement_or_availability_time": 0,
+    "outside_birth_admission_window": 194636,
+    "unusable_numeric_or_range": 988
+  },
+  "observed_units": [
+    {
+      "field": "diastolic_pressure",
+      "unit": "mmHg",
+      "rows": 5495
+    },
+    {
+      "field": "heart_rate",
+      "unit": "bpm",
+      "rows": 25604
+    },
+    {
+      "field": "measured_weight_kg",
+      "unit": "kg",
+      "rows": 2411
+    },
+    {
+      "field": "neonatal_temperature",
+      "unit": "\u00b0C",
+      "rows": 50991
+    },
+    {
+      "field": "pulse_rate",
+      "unit": "bpm",
+      "rows": 39601
+    },
+    {
+      "field": "respiratory_rate",
+      "unit": "bpm",
+      "rows": 65662
+    },
+    {
+      "field": "spo2",
+      "unit": "%",
+      "rows": 38383
+    },
+    {
+      "field": "systolic_pressure",
+      "unit": "mmHg",
+      "rows": 5496
+    }
+  ],
+  "birth_times_at_midnight_among_master_patients": 0.451673006754134,
+  "private_cohort_sha256": "1fce5559ba1726524510a075eae5397c585dd5a5fa577f45705ed808e39e7640",
+  "limitations": [
+    "No clinical phenotype/contaminant adjudication; controls are culture-negative, not proven free of sepsis.",
+    "Conditioning on culture testing and survival to landmarks causes selection bias; hospital-only cohort.",
+    "Midnight birth times may be date-only; sensitivity analysis excludes them.",
+    "Gestation, birthweight and linked maternal fields are not supplied as structured predictors in these selected tables.",
+    "Repeated landmarks increase rows, not the number of independent positive infants.",
+    "No result time for microbiology; only collection-time phenotype is used, never outcome availability as a predictor."
+  ]
+}

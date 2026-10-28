@@ -1,0 +1,36 @@
+{
+  "stage": "scoring_only_development_diagnosis",
+  "cases": 100,
+  "summary": [
+    {
+      "guideline": "NICE",
+      "completed": 40,
+      "total": 40,
+      "cases_with_missing_gold": 7,
+      "gold_occurrences_missing": 11,
+      "mean_candidate_recall_ceiling_at_4": 0.9083333333333334
+    },
+    {
+      "guideline": "AAP",
+      "completed": 30,
+      "total": 30,
+      "cases_with_missing_gold": 0,
+      "gold_occurrences_missing": 0,
+      "mean_candidate_recall_ceiling_at_4": 1.0
+    },
+    {
+      "guideline": "WHO",
+      "completed": 30,
+      "total": 30,
+      "cases_with_missing_gold": 0,
+      "gold_occurrences_missing": 0,
+      "mean_candidate_recall_ceiling_at_4": 1.0
+    }
+  ],
+  "missing_passage_occurrences": {
+    "NICE-1.13.1": 4,
+    "NICE-1.15.3": 4,
+    "NICE-1.13.2": 3
+  },
+  "interpretation": "Gold overlap is an engineering relevance annotation, not clinical adjudication. A candidate ceiling describes this retrieval stage, not a natural metric ceiling. It does not justify rescaling scores or changing golds."
+}

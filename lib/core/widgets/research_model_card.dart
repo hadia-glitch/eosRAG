@@ -7,6 +7,7 @@ import '../../data/research_model_inputs.dart';
 import '../../domain/eoscal_calculator.dart';
 import '../../presentation/patient_state.dart';
 import 'shap_waterfall.dart';
+import '../../presentation/screens/longitudinal_inputs_screen.dart';
 
 class ResearchModelCard extends ConsumerStatefulWidget {
   final PatientParameters patient;
@@ -174,6 +175,31 @@ class _ResearchModelCardState extends ConsumerState<ResearchModelCard> {
 
   @override
   Widget build(BuildContext context) {
+    if (widget.metadata['selected_model'] == 'pic') {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Longitudinal model assessment',
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          ),
+          const Chip(label: Text('PIC · Research model')),
+          const Text(
+            'Uses timestamped observations and their changes. The score does not confirm or exclude sepsis.',
+          ),
+          const SizedBox(height: 12),
+          FilledButton.icon(
+            icon: const Icon(Icons.timeline),
+            label: const Text('Review longitudinal inputs'),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => const LongitudinalInputsScreen(),
+              ),
+            ),
+          ),
+        ],
+      );
+    }
     final result = _result;
     final predicted = result?['status'] == 'predicted';
     final contributions = (result?['contributions'] as List?) ?? [];

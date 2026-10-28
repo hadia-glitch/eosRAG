@@ -1,0 +1,8 @@
+{
+  "stage": "development_only",
+  "completed_cases": 6,
+  "planned_pilot": 18,
+  "remaining_calls_deferred": true,
+  "reason": "User requested minimum Groq tokens before final evaluation. Repair source-boundary extraction and evaluate local retrieval before spending on the remaining old-corpus pilot cases. Saved responses and failures are retained.",
+  "final_evaluation": false
+}

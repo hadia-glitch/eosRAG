@@ -1,0 +1,110 @@
+{
+  "id": "who-expanded-initial_investigation-03",
+  "guideline": "WHO",
+  "family": "initial_investigation",
+  "rankings": {
+    "fixed_facet_plan:original": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK",
+        "WHO2024-C-REFERRAL"
+      ]
+    },
+    "question_only:original": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-REFERRAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "fixed_facet_plan:clinical_shorthand": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK",
+        "WHO2024-C-REFERRAL"
+      ]
+    },
+    "question_only:clinical_shorthand": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-REFERRAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "fixed_facet_plan:plain_language": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-REFERRAL"
+      ]
+    },
+    "question_only:plain_language": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-REFERRAL"
+      ]
+    }
+  },
+  "queries": {
+    "original": "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold.",
+    "clinical_shorthand": "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold.",
+    "plain_language": "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Describe initial assessment without inventing a CBC or C reactive protein threshold."
+  },
+  "definition_context_ids": {
+    "WHO2024-B.1": [],
+    "WHO2024-B.2": [],
+    "WHO2024-C-CLINICAL": [],
+    "WHO2024-C-REFERRAL": [],
+    "WHO2024-C-RISK": []
+  },
+  "original_pipeline_replay_equal": true
+}

@@ -1,0 +1,107 @@
+{
+  "id": "who-expanded-initial_investigation-04",
+  "guideline": "WHO",
+  "family": "initial_investigation",
+  "stage": "development_only",
+  "rankings": {
+    "ce_full_pool": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-REFERRAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ]
+    },
+    "ce_guidance_genre": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-REFERRAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ]
+    },
+    "ce_definition_graph": {
+      "4": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-REFERRAL"
+      ],
+      "8": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ]
+    }
+  },
+  "eligible_candidates": 5,
+  "questions": [
+    "Does WHO 2024 endorse a hospital laboratory or clinical prediction algorithm to diagnose neonatal sepsis? Explain initial assessment without inventing a CBC or CRP threshold.",
+    "Does the WHO 2024 guideline endorse the use of a hospital laboratory test or a clinical prediction algorithm for diagnosing early\u2011onset neonatal sepsis?",
+    "What initial clinical assessment steps does the WHO 2024 guideline recommend for suspected neonatal sepsis without specifying laboratory thresholds?"
+  ],
+  "definition_context_ids": {
+    "WHO2024-B.1": [],
+    "WHO2024-B.2": [],
+    "WHO2024-C-CLINICAL": [],
+    "WHO2024-C-REFERRAL": [],
+    "WHO2024-C-RISK": []
+  },
+  "evidence_genres": {
+    "WHO2024-B.1": "scope_limitation",
+    "WHO2024-B.2": "core_guidance",
+    "WHO2024-C-CLINICAL": "implementation_context",
+    "WHO2024-C-REFERRAL": "implementation_context",
+    "WHO2024-C-RISK": "scope_limitation"
+  },
+  "component_original_rankings": {
+    "plain": {
+      "medical": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "generic": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL"
+      ]
+    },
+    "definitions": {
+      "medical": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-RISK",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "generic": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL"
+      ]
+    }
+  }
+}

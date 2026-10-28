@@ -1,0 +1,126 @@
+{
+  "id": "nice-expanded-initial_investigation-04",
+  "guideline": "NICE",
+  "synthetic": true,
+  "brief": {
+    "version": "lossless-evidence-brief-v1-research",
+    "status": "source_comparison_only",
+    "question": "Explain appropriate initial diagnostic investigations for suspected early-onset sepsis and the limitations of laboratory tests. Gestation 32 weeks; age 36 hours; setting hospital birth.",
+    "recorded_current": {
+      "age_hours": 36,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": 97,
+      "crp": 6,
+      "culture_status": "unknown",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "recorded_history": [
+      {
+        "age_hours": 12.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 21
+      },
+      {
+        "age_hours": 24.0,
+        "respiratory_rate": 46,
+        "spo2": 98,
+        "crp": 9
+      }
+    ],
+    "explicit_unknown_fields": [
+      "respiratory_rate",
+      "culture_status",
+      "maternal_gbs",
+      "red_flags"
+    ],
+    "complete_source_passages": [
+      {
+        "chunk_id": "NICE-1.13.3",
+        "text": "Do not routinely perform urine microscopy or culture as part of the investigations for early-onset neonatal infection, or late-onset neonatal infection for babies in neonatal units. [2021]",
+        "text_sha256": "5423a91e561532d4fe866bcd405428ad63baa091597c84977595aeb878d00d5e",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.2",
+        "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+        "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.3",
+        "text": "Do not use C-reactive protein results alone to make decisions about starting, continuing or stopping antibiotics. [2026]",
+        "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.1",
+        "text": "When starting antibiotic treatment in babies who may have neonatal infection, perform a blood culture before giving the first dose. [2021]",
+        "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.4",
+        "text": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics. Consider whether to change the antibiotic regimen, taking account of: \u2022 the baby's clinical condition (for example, if there is no improvement) \u2022 the results of microbiological investigations \u2022 expert microbiological advice, including local surveillance data. [2012]",
+        "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.21.2",
+        "text": "Consider continuing intravenous antibiotic treatment for more than 7 days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if: \u2022 the baby has not yet fully recovered or \u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary). [2012]",
+        "text_sha256": "8b3cef8bac564823d67140f539eb690a50e800dbd3b7b4a09ee7d1ca5d419637",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 30,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.5",
+        "text": "Do not perform skin swab microscopy or culture as part of the investigations for neonatal infection if there are no clinical signs of a localised infection. [2021]",
+        "text_sha256": "4761eceeba9251ace688b3e5c7fee549e1b2c37f8de0a125f8c6859c3b7e4579",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.1",
+        "text": "Do not routinely give antibiotic treatment to babies without risk factors for infection or clinical indicators or laboratory evidence of possible infection. [2012]",
+        "text_sha256": "1fecb097caf0e58549f8f7f5e0474152cba7a342e6c01551be0f789130824650",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      }
+    ],
+    "clinical_eligibility_established": false,
+    "clinical_validation": false,
+    "interpretation_boundary": "Recorded findings and complete source passages are displayed separately. Unknown does not mean normal, absent, reassuring, or a satisfied condition. No stopping, discharge, treatment, diagnosis or illness-category eligibility is established by this view. All source conditions and exceptions require clinical review; retrieval alone does not establish applicability."
+  }
+}

@@ -52,6 +52,7 @@ class _NewPatientScreenState extends State<NewPatientScreen> {
   @override
   void initState() {
     super.initState();
+
   }
 
   @override
@@ -263,7 +264,9 @@ class _NewPatientScreenState extends State<NewPatientScreen> {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => PatientEntryFlow(existingPatient: patient),
+                  builder: (_) => PatientEntryFlow(
+                    existingPatient: patient,
+                  ),
                 ),
               );
             },

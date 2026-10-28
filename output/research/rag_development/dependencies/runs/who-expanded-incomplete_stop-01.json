@@ -1,0 +1,32 @@
+{
+  "id": "who-expanded-incomplete_stop-01",
+  "guideline": "WHO",
+  "family": "incomplete_stop",
+  "stage": "development_only",
+  "candidate_ids": [
+    "WHO2024-B.2",
+    "WHO2024-B.1",
+    "WHO2024-C-REFERRAL",
+    "WHO2024-B.3",
+    "WHO2024-B.5",
+    "WHO2024-C-CLINICAL",
+    "WHO2024-B.6",
+    "WHO2024-B.4",
+    "WHO2024-C-RISK"
+  ],
+  "dependency_additions": [],
+  "available": true,
+  "selected_ids": [],
+  "consensus_ids": [
+    "WHO2024-B.2",
+    "WHO2024-B.1",
+    "WHO2024-C-REFERRAL",
+    "WHO2024-B.3",
+    "WHO2024-B.5",
+    "WHO2024-C-CLINICAL",
+    "WHO2024-B.6",
+    "WHO2024-B.4"
+  ],
+  "calls": [],
+  "exact_request_replay": true
+}

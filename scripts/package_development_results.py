@@ -21,6 +21,7 @@ def main():
         files.append(DATA/'expanded100'/name)
     files.extend([ROOT/'docs/research/final_evaluation_gate.md',ROOT/'docs/research/rag_development_report.md',
                   ROOT/'docs/research/rag_remaining_gaps.md',
+                  ROOT/'docs/research/evaluated_pipeline_app_handoff.md',
                   ROOT/'docs/research/manuscript.md',ROOT/'output/pdf/neoguard-eos-research-paper.pdf'])
     manifest={'stage':'development_only','final_evaluation':'on hold','synthetic_cases':100,
         'real_patient_data_included':False,'clinical_validation':'not performed',

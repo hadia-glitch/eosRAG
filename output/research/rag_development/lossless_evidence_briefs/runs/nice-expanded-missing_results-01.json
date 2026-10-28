@@ -1,0 +1,115 @@
+{
+  "id": "nice-expanded-missing_results-01",
+  "guideline": "NICE",
+  "synthetic": true,
+  "brief": {
+    "version": "lossless-evidence-brief-v1-research",
+    "status": "source_comparison_only",
+    "question": "Maternal history and culture results are unavailable and the latest examination is missing. Explain uncertainty and the assessment needed without assuming normal findings. Gestation 32 weeks; age 6 hours; setting hospital birth.",
+    "recorded_current": {
+      "age_hours": 6,
+      "gestational_age_weeks": 32,
+      "care_setting": "hospital_birth",
+      "respiratory_rate": null,
+      "spo2": null,
+      "crp": null,
+      "culture_status": "unavailable",
+      "maternal_gbs": "unknown",
+      "red_flags": "not fully documented"
+    },
+    "recorded_history": [],
+    "explicit_unknown_fields": [
+      "respiratory_rate",
+      "spo2",
+      "crp",
+      "culture_status",
+      "maternal_gbs",
+      "red_flags"
+    ],
+    "complete_source_passages": [
+      {
+        "chunk_id": "NICE-1.10.1",
+        "text": "If there are any risk factors for early-onset neonatal infection (see box 1 on risk- factors for early-onset neonatal infection), or if there are clinical indicators of possible early-onset neonatal infection (see box 2 on clinical indicators of possible early-onset neonatal infection): \u2022 perform an immediate clinical assessment \u2022 review the maternal and neonatal history \u2022 carry out a physical examination of the baby, including an assessment of vital signs. [2021]",
+        "text_sha256": "e8ab33fa671e7f79a318bbb9b9e1557955ca8d45cf9b0d48d66357b7da2c6c4f",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 13,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.10.3",
+        "text": "Use the following framework, based on the risk factors in box 1 and the clinical indicators in box 2, to make antibiotic management decisions as directed: \u2022 In babies with any red flag, or with 2 or more 'non-red-flag' risk factors or clinical indicators: \uff0d follow the recommendations in the section on investigations before starting antibiotics and \uff0d start antibiotic treatment according to the recommendations in this guideline and \uff0d do not wait for the test results before starting antibiotics \u2022 in babies without red flags and only 1 risk factor or 1 clinical indicator, use clinical judgement to decide: \uff0d whether it is safe to withhold antibiotics and \uff0d whether the baby's vital signs and clinical condition need to be monitored. If monitoring is needed, continue for at least 12 hours using a newborn early warning system \u2022 for babies without risk factors or clinical indicators of possible infection, continue routine postnatal care as covered in NICE's guideline on postnatal care. [2021]",
+        "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 15,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.21.2",
+        "text": "Consider continuing intravenous antibiotic treatment for more than 7 days for babies with a positive blood culture or negative blood culture if sepsis has been strongly suspected, if: \u2022 the baby has not yet fully recovered or \u2022 this is advisable because of the pathogen identified on blood culture (seek expert microbiological advice if necessary). [2012]",
+        "text_sha256": "8b3cef8bac564823d67140f539eb690a50e800dbd3b7b4a09ee7d1ca5d419637",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 30,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.2",
+        "text": "Measure baseline C-reactive protein concentration when starting antibiotic treatment in babies who may have neonatal infection. Use this together with any subsequent readings to assess the likelihood of infection and response to treatment. [2021]",
+        "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.15.4",
+        "text": "Regularly reassess the clinical condition and results of investigations in babies receiving antibiotics. Consider whether to change the antibiotic regimen, taking account of: \u2022 the baby's clinical condition (for example, if there is no improvement) \u2022 the results of microbiological investigations \u2022 expert microbiological advice, including local surveillance data. [2012]",
+        "text_sha256": "2b3a5478a36e6167bfd381906b9205d131f6161c069f4bb99d12fed360205d87",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 25,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.13.3",
+        "text": "Do not routinely perform urine microscopy or culture as part of the investigations for early-onset neonatal infection, or late-onset neonatal infection for babies in neonatal units. [2021]",
+        "text_sha256": "5423a91e561532d4fe866bcd405428ad63baa091597c84977595aeb878d00d5e",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 21,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.10.5",
+        "text": "If using the Kaiser Permanente neonatal sepsis calculator to assess the risk of early-onset neonatal infection, use the classification given by the calculator to direct management decisions. [2021]",
+        "text_sha256": "171721130acd20b23141d4d74337532e72b084fa3d5bc741670d237e8448fb97",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 16,
+        "kind": "recommendation"
+      },
+      {
+        "chunk_id": "NICE-1.11.1",
+        "text": "In babies being monitored for possible early-onset neonatal infection: \u2022 Consider starting antibiotic treatment (see the section on investigations before starting antibiotics for next steps). \u2022 If no further concerns arise during observation reassure the family and, if the baby is to be discharged, give information and advice to the parents and carers (see the sections on information and support for parents and carers before transferring babies home and post discharge planning for babies who have not been given antibiotics). [2021]",
+        "text_sha256": "e94211686b926bf3a8176420403b396e8d2b698c1e53f151b3d1f12b3595fcd5",
+        "source": "NICE NG195",
+        "section": null,
+        "version": "2026-05-13",
+        "pdf_page": 16,
+        "kind": "recommendation"
+      }
+    ],
+    "clinical_eligibility_established": false,
+    "clinical_validation": false,
+    "interpretation_boundary": "Recorded findings and complete source passages are displayed separately. Unknown does not mean normal, absent, reassuring, or a satisfied condition. No stopping, discharge, treatment, diagnosis or illness-category eligibility is established by this view. All source conditions and exceptions require clinical review; retrieval alone does not establish applicability."
+  }
+}

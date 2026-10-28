@@ -1,0 +1,107 @@
+{
+  "id": "who-expanded-incomplete_stop-01",
+  "guideline": "WHO",
+  "family": "incomplete_stop",
+  "stage": "development_only",
+  "rankings": {
+    "ce_full_pool": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "ce_guidance_genre": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "ce_definition_graph": {
+      "4": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL"
+      ],
+      "8": [
+        "WHO2024-B.2",
+        "WHO2024-B.1",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-RISK"
+      ]
+    }
+  },
+  "eligible_candidates": 5,
+  "questions": [
+    "Hospitalized suspected sepsis: a culture is negative at 36 hours but clinical signs persist. Does this WHO source provide a NICE-style 36-hour stopping pathway?",
+    "Does the WHO guideline include a 36\u2011hour antibiotic stopping pathway for neonates with suspected sepsis and a negative culture?",
+    "What does the WHO recommend for continuation of antibiotics beyond 36\u202fhours when cultures are negative but clinical signs of sepsis persist in neonates?"
+  ],
+  "definition_context_ids": {
+    "WHO2024-B.1": [],
+    "WHO2024-B.2": [],
+    "WHO2024-C-CLINICAL": [],
+    "WHO2024-C-REFERRAL": [],
+    "WHO2024-C-RISK": []
+  },
+  "evidence_genres": {
+    "WHO2024-B.1": "scope_limitation",
+    "WHO2024-B.2": "core_guidance",
+    "WHO2024-C-CLINICAL": "implementation_context",
+    "WHO2024-C-REFERRAL": "implementation_context",
+    "WHO2024-C-RISK": "scope_limitation"
+  },
+  "component_original_rankings": {
+    "plain": {
+      "medical": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL"
+      ],
+      "generic": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-RISK"
+      ]
+    },
+    "definitions": {
+      "medical": [
+        "WHO2024-B.2",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-B.1",
+        "WHO2024-C-RISK",
+        "WHO2024-C-CLINICAL"
+      ],
+      "generic": [
+        "WHO2024-B.1",
+        "WHO2024-B.2",
+        "WHO2024-C-CLINICAL",
+        "WHO2024-C-REFERRAL",
+        "WHO2024-C-RISK"
+      ]
+    }
+  }
+}

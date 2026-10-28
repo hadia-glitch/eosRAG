@@ -1,0 +1,50 @@
+{
+  "stage": "development_only",
+  "final_evaluation": false,
+  "model": "qwen3:4b-q4_K_M",
+  "model_digest": "2bfd38a7daaf4b1037efe517ccb73d1a3bbd4822cf89f1a82be1569050a114e0",
+  "pilot_case_ids": [
+    "deterioration-1",
+    "crp_alone-1",
+    "incomplete_stop-1",
+    "initial_investigation-1",
+    "single_risk-1",
+    "missing_results-1",
+    "aap-expanded-deterioration-01",
+    "aap-expanded-crp_alone-01",
+    "aap-expanded-incomplete_stop-01",
+    "aap-expanded-initial_investigation-01",
+    "aap-expanded-single_risk-01",
+    "aap-expanded-missing_results-01",
+    "who-expanded-deterioration-01",
+    "who-expanded-crp_alone-01",
+    "who-expanded-incomplete_stop-01",
+    "who-expanded-initial_investigation-01",
+    "who-expanded-single_risk-01",
+    "who-expanded-missing_results-01"
+  ],
+  "first_three_case_ids": [
+    "deterioration-1",
+    "aap-expanded-deterioration-01",
+    "who-expanded-deterioration-01"
+  ],
+  "candidate_budget": 24,
+  "selected_budget": 8,
+  "seed": 31,
+  "temperature": 0,
+  "think": false,
+  "context": 32768,
+  "completion_tokens": 2000,
+  "rrf_k": 60,
+  "provider": "local_Ollama_native_schema",
+  "groq_calls": 0,
+  "corpus_sha256": "e0fa0e3ba8a911b1da419a4681c24567c59ffedcac631b3426d5c3b17e312d96",
+  "upstream_protocol_sha256": "8f07750bbe7de5085e4a95c537596ea4b3e17f5e1915aa50e7bbe7da68a2a966",
+  "code_sha256": {
+    "backend/rag/local_development_transport.py": "ab43d519b9ebf70f1490b9f331a8326486ab72b49f59644b1d7de8e8ef19b08b",
+    "backend/rag/patient_passage_ranker.py": "af9581e803cabe9703b79adb05752732f66b3bce6d91605b2ad176795c071cf9",
+    "backend/rag/listwise_rerank.py": "fdee2c20f86ad11efe584712f8f2ef9e71f81b6888ed0adfc082d9f5a28e99d7",
+    "backend/scripts/develop_local_patient_ids.py": "557ce15e8e1997facf5a858f48aa76edadb03bdea7bb80d440486a4d52250aa3"
+  },
+  "scope": "Progressive local-only identifier-only development smoke, not clinical validation. No generated relevance rationale. Review first three sources before expansion."
+}

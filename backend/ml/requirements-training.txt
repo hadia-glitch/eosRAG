@@ -1,0 +1,6 @@
+# Local credentialed-dataset preparation and training; not needed for API inputs.
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+pydantic>=2.9
+pydantic-settings>=2.6

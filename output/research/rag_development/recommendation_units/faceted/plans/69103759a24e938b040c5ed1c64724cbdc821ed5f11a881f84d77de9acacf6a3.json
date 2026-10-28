@@ -1,0 +1,14 @@
+{
+  "source": "WHO",
+  "query": "Review new inability to feed or isolated fast breathing in a newborn in a primary-care clinic. Explain assessment and referral with the recorded signs.",
+  "available": true,
+  "questions": [
+    "What clinical assessment and referral criteria should be used in primary care for a newborn presenting with new inability to feed?",
+    "How should isolated fast breathing (tachypnea) in a newborn be evaluated and when is referral indicated in primary care settings?",
+    "What are the recommended signs and symptoms that trigger referral of a newborn with feeding difficulty or isolated tachypnea according to WHO guidelines?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": true,
+  "original_record_sha256": "b3e2a1e4695d3657f23c758817dded058a7bd30baea41f42e6ec01326f160be0",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

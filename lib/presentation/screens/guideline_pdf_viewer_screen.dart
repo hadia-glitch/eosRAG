@@ -62,6 +62,7 @@ class _GuidelinePdfViewerScreenState extends State<GuidelinePdfViewerScreen> {
   }
 
   Future<void> _load() async {
+
     setState(() {
       _loading = true;
       _error = null;
@@ -217,6 +218,7 @@ class _GuidelinePdfViewerScreenState extends State<GuidelinePdfViewerScreen> {
         ),
       );
     }
+
 
     return SfPdfViewer.file(
       File(_localPath!),

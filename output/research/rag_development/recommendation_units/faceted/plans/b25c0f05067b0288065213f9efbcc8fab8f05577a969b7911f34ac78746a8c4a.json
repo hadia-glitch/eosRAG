@@ -1,0 +1,14 @@
+{
+  "source": "AAP",
+  "query": "A well-appearing infant has one confirmed maternal GBS risk factor. Explain risk stratification, examination and locally documented management options.",
+  "available": true,
+  "questions": [
+    "What risk stratification criteria are used for early\u2011onset neonatal sepsis in a well\u2011appearing infant with one confirmed maternal GBS risk factor?",
+    "What physical examination findings should be assessed to evaluate early\u2011onset neonatal sepsis in this infant?",
+    "What locally documented management options (e.g., observation, empiric antibiotics) are recommended for a well\u2011appearing infant with a single maternal GBS risk factor?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": true,
+  "original_record_sha256": "021035b469c655bb4fa43117436a52cab9d928ad3804312beaa14fc130c34970",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

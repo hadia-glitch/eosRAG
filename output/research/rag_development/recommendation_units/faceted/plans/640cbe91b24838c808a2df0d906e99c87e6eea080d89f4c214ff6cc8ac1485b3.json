@@ -1,0 +1,12 @@
+{
+  "source": "NICE",
+  "query": "Explain uncertainty when maternal history, culture results and a later clinical assessment are unavailable.",
+  "available": true,
+  "questions": [
+    "How is uncertainty in early\u2011onset neonatal sepsis management addressed when maternal history, microbiological culture results, and subsequent clinical assessment are unavailable?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": true,
+  "original_record_sha256": "05d56eecb88c9ac6aa52b9bb954b5e968fb5711501f40a42903b53dfa5e7d150",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

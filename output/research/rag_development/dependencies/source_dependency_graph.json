@@ -1,0 +1,2245 @@
+{
+  "schema_version": 1,
+  "nodes": [
+    {
+      "chunk_id": "NICE-1.1.1",
+      "guideline": "NICE",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "laboratory"
+      ],
+      "text_sha256": "baf98eb6b224b138dfb0e27505bc043880915fdae0e0f30822f01baa80457948",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          null,
+          null
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ],
+        "qualification": "Mixed early/late-onset source; individual recommendation applicability requires review. Benchmark cases are <72 hours."
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.10.3",
+      "guideline": "NICE",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "laboratory"
+      ],
+      "text_sha256": "99558d4987112697aeda21b30ddb36031acdd057259fa432b5029ced447cf281",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          null,
+          null
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ],
+        "qualification": "Mixed early/late-onset source; individual recommendation applicability requires review. Benchmark cases are <72 hours."
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.10.4",
+      "guideline": "NICE",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "culture"
+      ],
+      "text_sha256": "a56bb223d2f1e81629c432344c79e1e11d46190a6731e575545ab6836fe86352",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          null,
+          null
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ],
+        "qualification": "Mixed early/late-onset source; individual recommendation applicability requires review. Benchmark cases are <72 hours."
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.11.1",
+      "guideline": "NICE",
+      "kind": "sampling_prerequisite",
+      "concepts": [
+        "laboratory"
+      ],
+      "text_sha256": "e94211686b926bf3a8176420403b396e8d2b698c1e53f151b3d1f12b3595fcd5",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          null,
+          null
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ],
+        "qualification": "Mixed early/late-onset source; individual recommendation applicability requires review. Benchmark cases are <72 hours."
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.13.1",
+      "guideline": "NICE",
+      "kind": "sampling_prerequisite",
+      "concepts": [
+        "culture"
+      ],
+      "text_sha256": "1c0ed3ca293c4135e17f2684f515fd2916da0c7405c6d768d5762424e5e494f9",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          null,
+          null
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ],
+        "qualification": "Mixed early/late-onset source; individual recommendation applicability requires review. Benchmark cases are <72 hours."
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.13.2",
+      "guideline": "NICE",
+      "kind": "serial_measurement_context",
+      "concepts": [
+        "inflammatory_markers"
+      ],
+      "text_sha256": "bb97f03163df6f708c62d9706bb247652cf386f769fe2b5a5efa6b65e81ac778",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          null,
+          null
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ],
+        "qualification": "Mixed early/late-onset source; individual recommendation applicability requires review. Benchmark cases are <72 hours."
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.13.3",
+      "guideline": "NICE",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "culture",
+        "laboratory"
+      ],
+      "text_sha256": "5423a91e561532d4fe866bcd405428ad63baa091597c84977595aeb878d00d5e",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          null,
+          null
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ],
+        "qualification": "Mixed early/late-onset source; individual recommendation applicability requires review. Benchmark cases are <72 hours."
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.13.5",
+      "guideline": "NICE",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "culture",
+        "laboratory"
+      ],
+      "text_sha256": "4761eceeba9251ace688b3e5c7fee549e1b2c37f8de0a125f8c6859c3b7e4579",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          null,
+          null
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ],
+        "qualification": "Mixed early/late-onset source; individual recommendation applicability requires review. Benchmark cases are <72 hours."
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.15.1",
+      "guideline": "NICE",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "laboratory"
+      ],
+      "text_sha256": "1fecb097caf0e58549f8f7f5e0474152cba7a342e6c01551be0f789130824650",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          null,
+          null
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ],
+        "qualification": "Mixed early/late-onset source; individual recommendation applicability requires review. Benchmark cases are <72 hours."
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "NICE-1.15.3",
+      "guideline": "NICE",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "inflammatory_markers"
+      ],
+      "text_sha256": "8597b6e8db04ff76294d1f3c44162bc88431bd29eededadc66478a8abc288641",
+      "scope": {
+        "gestational_age_weeks": [
+          null,
+          null
+        ],
+        "postnatal_age_hours": [
+          null,
+          null
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ],
+        "qualification": "Mixed early/late-onset source; individual recommendation applicability requires review. Benchmark cases are <72 hours."
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "AAP2018-35PLUS-P5-B3",
+      "guideline": "AAP",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "culture"
+      ],
+      "text_sha256": "61d392efa321050e95546c97e0c54d0001d3b90e84384816bcb50e72d75f5185",
+      "scope": {
+        "gestational_age_weeks": [
+          35,
+          null
+        ],
+        "postnatal_age_hours": [
+          0,
+          72
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ]
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "AAP2018-35PLUS-P5-B8",
+      "guideline": "AAP",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "culture"
+      ],
+      "text_sha256": "e6875a2e26745bfca18c9b6cedcda2fcc319ba96de8210aa4491da3c274bffc4",
+      "scope": {
+        "gestational_age_weeks": [
+          35,
+          null
+        ],
+        "postnatal_age_hours": [
+          0,
+          72
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ]
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "AAP2018-35PLUS-P6-B2",
+      "guideline": "AAP",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "culture",
+        "inflammatory_markers"
+      ],
+      "text_sha256": "c6da30da7916a74342d65f3e832d2e39126ffb4757e6df5263e6a2f425da6c2f",
+      "scope": {
+        "gestational_age_weeks": [
+          35,
+          null
+        ],
+        "postnatal_age_hours": [
+          0,
+          72
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ]
+      },
+      "clinical_review_status": "pending"
+    },
+    {
+      "chunk_id": "AAP2018-35PLUS-SP4",
+      "guideline": "AAP",
+      "kind": "interpretation_limit",
+      "concepts": [
+        "culture",
+        "inflammatory_markers",
+        "laboratory"
+      ],
+      "text_sha256": "cce462f5c6f377c205cb90a24023b49973cb26135c196d608aad9a604722f8b5",
+      "scope": {
+        "gestational_age_weeks": [
+          35,
+          null
+        ],
+        "postnatal_age_hours": [
+          0,
+          72
+        ],
+        "care_setting": [
+          "hospital_birth",
+          "postnatal_ward",
+          "neonatal_unit"
+        ]
+      },
+      "clinical_review_status": "pending"
+    }
+  ],
+  "edges": [
+    {
+      "from": "NICE-1.1.1",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.1.1",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.1.1",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.1.1",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.1.1",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.1.2",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.1.2",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.1.2",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.1.2",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.1.2",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.1.2",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.6.1",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.6.1",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.6.1",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.6.1",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.10.3",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.10.3",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.10.3",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.10.3",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.10.3",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.10.4",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.10.4",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.10.4",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.11.1",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.11.1",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.11.1",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.11.1",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.11.1",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.13.1",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.13.1",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.13.1",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.13.2",
+      "to": "NICE-1.15.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "inflammatory_markers"
+      ]
+    },
+    {
+      "from": "NICE-1.13.3",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.13.3",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.13.3",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.13.3",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.13.3",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.13.3",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.13.3",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.13.5",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.13.5",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.13.5",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.13.5",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.13.5",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.13.5",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.13.5",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.5",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.5",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.5",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.14.5",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.5",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.14.5",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.5",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.5",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.8",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.8",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.8",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.8",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.8",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.14.8",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.1",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.1",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.1",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.1",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.1",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.3",
+      "to": "NICE-1.13.2",
+      "relation": "serial_measurement_context",
+      "shared_concepts": [
+        "inflammatory_markers"
+      ]
+    },
+    {
+      "from": "NICE-1.15.4",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.4",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.4",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.15.4",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.4",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.15.4",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.4",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.15.4",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.16.1",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.16.1",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.16.1",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.16.1",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.16.2",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.16.2",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.16.2",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.16.2",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.17.2",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.17.2",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.17.2",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.17.2",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.17.2",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.17.2",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.17.2",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.17.2",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.18.2",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.18.2",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.18.2",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.18.2",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.18.2",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.18.2",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.18.2",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.18.2",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.19.1",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.19.1",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.19.1",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.19.1",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.1",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.1",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.1",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.1",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.5",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.5",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.5",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.5",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.8",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.8",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.8",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.20.8",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.1",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.1",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.1",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.1",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.2",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.2",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.2",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.2",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.3",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.3",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.3",
+      "to": "NICE-1.13.2",
+      "relation": "serial_measurement_context",
+      "shared_concepts": [
+        "inflammatory_markers"
+      ]
+    },
+    {
+      "from": "NICE-1.21.3",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.3",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.3",
+      "to": "NICE-1.15.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "inflammatory_markers"
+      ]
+    },
+    {
+      "from": "NICE-1.21.4",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.4",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.4",
+      "to": "NICE-1.13.2",
+      "relation": "serial_measurement_context",
+      "shared_concepts": [
+        "inflammatory_markers"
+      ]
+    },
+    {
+      "from": "NICE-1.21.4",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.4",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.21.4",
+      "to": "NICE-1.15.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "inflammatory_markers"
+      ]
+    },
+    {
+      "from": "NICE-1.22.1",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.22.1",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.22.1",
+      "to": "NICE-1.13.2",
+      "relation": "serial_measurement_context",
+      "shared_concepts": [
+        "inflammatory_markers"
+      ]
+    },
+    {
+      "from": "NICE-1.22.1",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.22.1",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.22.1",
+      "to": "NICE-1.15.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "inflammatory_markers"
+      ]
+    },
+    {
+      "from": "NICE-1.27.2",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.2",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.2",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.2",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.3",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.3",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.3",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.3",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.4",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.4",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.4",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.4",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.5",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.5",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.5",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.5",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.6",
+      "to": "NICE-1.10.4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.6",
+      "to": "NICE-1.13.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.6",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.27.6",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "NICE-1.34.2",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.2",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.2",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.2",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.2",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.2",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.4",
+      "to": "NICE-1.1.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.4",
+      "to": "NICE-1.10.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.4",
+      "to": "NICE-1.11.1",
+      "relation": "sampling_prerequisite",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.4",
+      "to": "NICE-1.13.3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.4",
+      "to": "NICE-1.13.5",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "NICE-1.34.4",
+      "to": "NICE-1.15.1",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P3-B10",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P3-B11",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P3-B13",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P3-B13",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P3-B13",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P3-B13",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P4-B0",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P4-B0",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P4-B0",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P4-B0",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P4-B5",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P4-B6",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "laboratory"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P4-B7",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P4-B7",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P4-B7",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P4-B7",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B3",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B3",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B3",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B5",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B5",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B5",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B5",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B8",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B8",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B8",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B9",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B9",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B9",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B9",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B13",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B13",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B13",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P5-B13",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B2",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B2",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B2",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "inflammatory_markers"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B9",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B9",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B9",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B9",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B10",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B10",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B10",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-B10",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP4",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP4",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP4",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "inflammatory_markers"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP5",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP5",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP5",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP5",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP6",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP6",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP6",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-SP6",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-STOP",
+      "to": "AAP2018-35PLUS-P5-B3",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-STOP",
+      "to": "AAP2018-35PLUS-P5-B8",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-STOP",
+      "to": "AAP2018-35PLUS-P6-B2",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture"
+      ]
+    },
+    {
+      "from": "AAP2018-35PLUS-P6-STOP",
+      "to": "AAP2018-35PLUS-SP4",
+      "relation": "interpretation_limit",
+      "shared_concepts": [
+        "culture",
+        "laboratory"
+      ]
+    }
+  ],
+  "clinical_review_status": "pending",
+  "semantics": "Lexical source dependencies; no causality, diagnosis or source approval asserted."
+}

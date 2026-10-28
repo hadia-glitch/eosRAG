@@ -1,0 +1,139 @@
+guideline,method,depth,metric,contrast,paired_n,mean,case_low,case_high,family_low,family_high,family_n,resamples,seed
+NICE,ce_full_pool,4,recall,new method minus prior medical-faceted topic scope,40,0.025,-0.008333333333333333,0.05833333333333333,-0.02631578947368421,0.09523809523809523,6,2000,31
+NICE,ce_full_pool,4,precision,new method minus prior medical-faceted topic scope,40,0.01875,-0.00625,0.04375,-0.019736842105263157,0.07142857142857142,6,2000,31
+NICE,ce_full_pool,4,mrr,new method minus prior medical-faceted topic scope,40,0.12916666666666668,0.054166666666666675,0.22083333333333335,0.0,0.25833333333333336,6,2000,31
+NICE,ce_full_pool,4,ndcg,new method minus prior medical-faceted topic scope,40,0.06291930308141387,0.0176407199858212,0.11071425213740109,-0.020839878780175052,0.13870142000380384,6,2000,31
+NICE,ce_full_pool,4,f1,new method minus prior medical-faceted topic scope,40,0.02142857142857143,-0.007142857142857143,0.05,-0.022556390977443608,0.08163265306122448,6,2000,31
+NICE,ce_full_pool,8,recall,new method minus prior medical-faceted topic scope,40,0.10833333333333335,0.05,0.175,0.0,0.2682926829268293,6,2000,31
+NICE,ce_full_pool,8,precision,new method minus prior medical-faceted topic scope,40,0.040625,0.01875,0.065625,0.0,0.10060975609756098,6,2000,31
+NICE,ce_full_pool,8,mrr,new method minus prior medical-faceted topic scope,40,0.12916666666666668,0.054166666666666675,0.22083333333333335,0.0,0.25833333333333336,6,2000,31
+NICE,ce_full_pool,8,ndcg,new method minus prior medical-faceted topic scope,40,0.10530638737528646,0.057679180638710546,0.15854678145078652,0.016022047646305396,0.2026122341540751,6,2000,31
+NICE,ce_full_pool,8,f1,new method minus prior medical-faceted topic scope,40,0.05909090909090908,0.02727272727272727,0.09545454545454546,0.0,0.14634146341463414,6,2000,31
+NICE,ce_guidance_genre,4,recall,new method minus prior medical-faceted topic scope,40,0.025,-0.008333333333333333,0.05833333333333333,-0.02631578947368421,0.09523809523809523,6,2000,31
+NICE,ce_guidance_genre,4,precision,new method minus prior medical-faceted topic scope,40,0.01875,-0.00625,0.04375,-0.019736842105263157,0.07142857142857142,6,2000,31
+NICE,ce_guidance_genre,4,mrr,new method minus prior medical-faceted topic scope,40,0.07916666666666668,0.025000000000000005,0.15,0.0,0.19918699186991867,6,2000,31
+NICE,ce_guidance_genre,4,ndcg,new method minus prior medical-faceted topic scope,40,0.03642968272918373,-0.0021973166112209826,0.07871287080747195,-0.027594740046877713,0.1078274010827176,6,2000,31
+NICE,ce_guidance_genre,4,f1,new method minus prior medical-faceted topic scope,40,0.02142857142857143,-0.007142857142857143,0.05,-0.022556390977443608,0.08163265306122448,6,2000,31
+NICE,ce_guidance_genre,4,recall,new method minus complete-pool CE control,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,ce_guidance_genre,4,precision,new method minus complete-pool CE control,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,ce_guidance_genre,4,mrr,new method minus complete-pool CE control,40,-0.05,-0.1,-0.0125,-0.15,0.0,6,2000,31
+NICE,ce_guidance_genre,4,ndcg,new method minus complete-pool CE control,40,-0.026489620352230136,-0.053018893917285106,-0.0013713269330185324,-0.08385476887895885,0.019924857049309717,6,2000,31
+NICE,ce_guidance_genre,8,recall,new method minus prior medical-faceted topic scope,40,0.1,0.05833333333333333,0.15,0.0,0.21666666666666665,6,2000,31
+NICE,ce_guidance_genre,8,precision,new method minus prior medical-faceted topic scope,40,0.0375,0.021875,0.05625,0.0,0.08125,6,2000,31
+NICE,ce_guidance_genre,8,mrr,new method minus prior medical-faceted topic scope,40,-0.026666666666666665,-0.08585416666666668,0.0225,-0.14634146341463414,0.06670731707317051,6,2000,31
+NICE,ce_guidance_genre,8,ndcg,new method minus prior medical-faceted topic scope,40,0.029638614485071012,-0.0034002913039504253,0.06486644953219986,-0.03608481053777914,0.10468638979697474,6,2000,31
+NICE,ce_guidance_genre,8,f1,new method minus prior medical-faceted topic scope,40,0.05454545454545454,0.031818181818181815,0.08181818181818182,0.0,0.1181818181818182,6,2000,31
+NICE,ce_guidance_genre,8,recall,new method minus complete-pool CE control,40,-0.00833333333333333,-0.041666666666666664,0.025000000000000005,-0.07142857142857142,0.05263157894736842,6,2000,31
+NICE,ce_guidance_genre,8,precision,new method minus complete-pool CE control,40,-0.003125,-0.015625,0.009375,-0.026785714285714284,0.019736842105263157,6,2000,31
+NICE,ce_guidance_genre,8,mrr,new method minus complete-pool CE control,40,-0.15583333333333335,-0.2425,-0.08333333333333334,-0.27542247386759583,-0.040170940170940174,6,2000,31
+NICE,ce_guidance_genre,8,ndcg,new method minus complete-pool CE control,40,-0.07566777289021545,-0.12536098907371862,-0.029742211517217135,-0.1539006788736026,0.012801290177665774,6,2000,31
+NICE,ce_definition_graph,4,recall,new method minus prior medical-faceted topic scope,40,0.025,-0.008333333333333333,0.05833333333333333,-0.02631578947368421,0.09523809523809523,6,2000,31
+NICE,ce_definition_graph,4,precision,new method minus prior medical-faceted topic scope,40,0.01875,-0.00625,0.04375,-0.019736842105263157,0.07142857142857142,6,2000,31
+NICE,ce_definition_graph,4,mrr,new method minus prior medical-faceted topic scope,40,0.07916666666666668,0.025000000000000005,0.15,0.0,0.19918699186991867,6,2000,31
+NICE,ce_definition_graph,4,ndcg,new method minus prior medical-faceted topic scope,40,0.03642968272918373,-0.0021973166112209826,0.07871287080747195,-0.027594740046877713,0.1078274010827176,6,2000,31
+NICE,ce_definition_graph,4,f1,new method minus prior medical-faceted topic scope,40,0.02142857142857143,-0.007142857142857143,0.05,-0.022556390977443608,0.08163265306122448,6,2000,31
+NICE,ce_definition_graph,4,recall,new method minus complete-pool CE control,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,ce_definition_graph,4,precision,new method minus complete-pool CE control,40,0.0,0.0,0.0,0.0,0.0,6,2000,31
+NICE,ce_definition_graph,4,mrr,new method minus complete-pool CE control,40,-0.05,-0.1,-0.0125,-0.15,0.0,6,2000,31
+NICE,ce_definition_graph,4,ndcg,new method minus complete-pool CE control,40,-0.026489620352230136,-0.053018893917285106,-0.0013713269330185324,-0.08385476887895885,0.019924857049309717,6,2000,31
+NICE,ce_definition_graph,8,recall,new method minus prior medical-faceted topic scope,40,0.1,0.05833333333333333,0.15,0.0,0.21666666666666665,6,2000,31
+NICE,ce_definition_graph,8,precision,new method minus prior medical-faceted topic scope,40,0.0375,0.021875,0.05625,0.0,0.08125,6,2000,31
+NICE,ce_definition_graph,8,mrr,new method minus prior medical-faceted topic scope,40,-0.026666666666666665,-0.08585416666666668,0.0225,-0.14634146341463414,0.06670731707317051,6,2000,31
+NICE,ce_definition_graph,8,ndcg,new method minus prior medical-faceted topic scope,40,0.029638614485071012,-0.0034002913039504253,0.06486644953219986,-0.03608481053777914,0.10468638979697474,6,2000,31
+NICE,ce_definition_graph,8,f1,new method minus prior medical-faceted topic scope,40,0.05454545454545454,0.031818181818181815,0.08181818181818182,0.0,0.1181818181818182,6,2000,31
+NICE,ce_definition_graph,8,recall,new method minus complete-pool CE control,40,-0.00833333333333333,-0.041666666666666664,0.025000000000000005,-0.07142857142857142,0.05263157894736842,6,2000,31
+NICE,ce_definition_graph,8,precision,new method minus complete-pool CE control,40,-0.003125,-0.015625,0.009375,-0.026785714285714284,0.019736842105263157,6,2000,31
+NICE,ce_definition_graph,8,mrr,new method minus complete-pool CE control,40,-0.15583333333333335,-0.2425,-0.08333333333333334,-0.27542247386759583,-0.040170940170940174,6,2000,31
+NICE,ce_definition_graph,8,ndcg,new method minus complete-pool CE control,40,-0.07566777289021545,-0.12536098907371862,-0.029742211517217135,-0.1539006788736026,0.012801290177665774,6,2000,31
+AAP,ce_full_pool,4,recall,new method minus prior medical-faceted topic scope,30,-0.08333333333333333,-0.2,0.05,-0.3333333333333333,0.16874999999998863,6,2000,31
+AAP,ce_full_pool,4,precision,new method minus prior medical-faceted topic scope,30,-0.041666666666666664,-0.1,0.025,-0.16666666666666666,0.08437499999999432,6,2000,31
+AAP,ce_full_pool,4,mrr,new method minus prior medical-faceted topic scope,30,-0.125,-0.275,0.025,-0.4166666666666667,0.16666666666666666,6,2000,31
+AAP,ce_full_pool,4,ndcg,new method minus prior medical-faceted topic scope,30,-0.08493958198274873,-0.18965626928226392,0.029196001177475794,-0.29561760241151386,0.1870014090196093,6,2000,31
+AAP,ce_full_pool,4,f1,new method minus prior medical-faceted topic scope,30,-0.05555555555555555,-0.13333333333333333,0.033333333333333326,-0.2222222222222222,0.11249999999999243,6,2000,31
+AAP,ce_full_pool,8,recall,new method minus prior medical-faceted topic scope,30,-0.16666666666666666,-0.3,-0.03333333333333333,-0.5,0.0,6,2000,31
+AAP,ce_full_pool,8,precision,new method minus prior medical-faceted topic scope,30,-0.041666666666666664,-0.075,-0.008333333333333333,-0.125,0.0,6,2000,31
+AAP,ce_full_pool,8,mrr,new method minus prior medical-faceted topic scope,30,-0.125,-0.275,0.025,-0.4166666666666667,0.16666666666666666,6,2000,31
+AAP,ce_full_pool,8,ndcg,new method minus prior medical-faceted topic scope,30,-0.14019868691335244,-0.25330124491077716,-0.03158701651988837,-0.40489304684078,0.07887807060256119,6,2000,31
+AAP,ce_full_pool,8,f1,new method minus prior medical-faceted topic scope,30,-0.06666666666666667,-0.12000000000000001,-0.013333333333333334,-0.2,0.0,6,2000,31
+AAP,ce_guidance_genre,4,recall,new method minus prior medical-faceted topic scope,30,-0.08333333333333333,-0.2,0.05,-0.3333333333333333,0.16874999999998863,6,2000,31
+AAP,ce_guidance_genre,4,precision,new method minus prior medical-faceted topic scope,30,-0.041666666666666664,-0.1,0.025,-0.16666666666666666,0.08437499999999432,6,2000,31
+AAP,ce_guidance_genre,4,mrr,new method minus prior medical-faceted topic scope,30,-0.23611111111111113,-0.3416666666666667,-0.13611111111111113,-0.45833333333333337,-0.027777777777777783,6,2000,31
+AAP,ce_guidance_genre,4,ndcg,new method minus prior medical-faceted topic scope,30,-0.1289509357448472,-0.21353759303425085,-0.039004801665562965,-0.2987810403854329,0.08251570747866195,6,2000,31
+AAP,ce_guidance_genre,4,f1,new method minus prior medical-faceted topic scope,30,-0.05555555555555555,-0.13333333333333333,0.033333333333333326,-0.2222222222222222,0.11249999999999243,6,2000,31
+AAP,ce_guidance_genre,4,recall,new method minus complete-pool CE control,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,ce_guidance_genre,4,precision,new method minus complete-pool CE control,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,ce_guidance_genre,4,mrr,new method minus complete-pool CE control,30,-0.11111111111111113,-0.17777777777777778,-0.044444444444444446,-0.2777777777777778,0.0,6,2000,31
+AAP,ce_guidance_genre,4,ndcg,new method minus complete-pool CE control,30,-0.04401135376209849,-0.06929089165877407,-0.01950616553266136,-0.10527432433569131,0.0,6,2000,31
+AAP,ce_guidance_genre,8,recall,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,ce_guidance_genre,8,precision,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,ce_guidance_genre,8,mrr,new method minus prior medical-faceted topic scope,30,-0.041666666666666664,-0.075,-0.016666666666666666,-0.125,0.0,6,2000,31
+AAP,ce_guidance_genre,8,ndcg,new method minus prior medical-faceted topic scope,30,-0.030923242484086354,-0.053914962249773955,-0.006373387939761654,-0.08415095918800468,0.02361896567195742,6,2000,31
+AAP,ce_guidance_genre,8,f1,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,ce_guidance_genre,8,recall,new method minus complete-pool CE control,30,0.16666666666666666,0.03333333333333333,0.3,0.0,0.5,6,2000,31
+AAP,ce_guidance_genre,8,precision,new method minus complete-pool CE control,30,0.041666666666666664,0.008333333333333333,0.075,0.0,0.125,6,2000,31
+AAP,ce_guidance_genre,8,mrr,new method minus complete-pool CE control,30,0.08333333333333333,-0.075,0.24166666666666667,-0.25,0.4166666666666667,6,2000,31
+AAP,ce_guidance_genre,8,ndcg,new method minus complete-pool CE control,30,0.1092754444292661,0.00028233539726056216,0.22374905480367793,-0.11557106726954515,0.37505018434872756,6,2000,31
+AAP,ce_definition_graph,4,recall,new method minus prior medical-faceted topic scope,30,-0.08333333333333333,-0.2,0.05,-0.3333333333333333,0.16874999999998863,6,2000,31
+AAP,ce_definition_graph,4,precision,new method minus prior medical-faceted topic scope,30,-0.041666666666666664,-0.1,0.025,-0.16666666666666666,0.08437499999999432,6,2000,31
+AAP,ce_definition_graph,4,mrr,new method minus prior medical-faceted topic scope,30,-0.23611111111111113,-0.3416666666666667,-0.13611111111111113,-0.45833333333333337,-0.027777777777777783,6,2000,31
+AAP,ce_definition_graph,4,ndcg,new method minus prior medical-faceted topic scope,30,-0.1289509357448472,-0.21353759303425085,-0.039004801665562965,-0.2987810403854329,0.08251570747866195,6,2000,31
+AAP,ce_definition_graph,4,f1,new method minus prior medical-faceted topic scope,30,-0.05555555555555555,-0.13333333333333333,0.033333333333333326,-0.2222222222222222,0.11249999999999243,6,2000,31
+AAP,ce_definition_graph,4,recall,new method minus complete-pool CE control,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,ce_definition_graph,4,precision,new method minus complete-pool CE control,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,ce_definition_graph,4,mrr,new method minus complete-pool CE control,30,-0.11111111111111113,-0.17777777777777778,-0.044444444444444446,-0.2777777777777778,0.0,6,2000,31
+AAP,ce_definition_graph,4,ndcg,new method minus complete-pool CE control,30,-0.04401135376209849,-0.06929089165877407,-0.01950616553266136,-0.10527432433569131,0.0,6,2000,31
+AAP,ce_definition_graph,8,recall,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,ce_definition_graph,8,precision,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,ce_definition_graph,8,mrr,new method minus prior medical-faceted topic scope,30,-0.041666666666666664,-0.075,-0.016666666666666666,-0.125,0.0,6,2000,31
+AAP,ce_definition_graph,8,ndcg,new method minus prior medical-faceted topic scope,30,-0.030923242484086354,-0.053914962249773955,-0.006373387939761654,-0.08415095918800468,0.02361896567195742,6,2000,31
+AAP,ce_definition_graph,8,f1,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+AAP,ce_definition_graph,8,recall,new method minus complete-pool CE control,30,0.16666666666666666,0.03333333333333333,0.3,0.0,0.5,6,2000,31
+AAP,ce_definition_graph,8,precision,new method minus complete-pool CE control,30,0.041666666666666664,0.008333333333333333,0.075,0.0,0.125,6,2000,31
+AAP,ce_definition_graph,8,mrr,new method minus complete-pool CE control,30,0.08333333333333333,-0.075,0.24166666666666667,-0.25,0.4166666666666667,6,2000,31
+AAP,ce_definition_graph,8,ndcg,new method minus complete-pool CE control,30,0.1092754444292661,0.00028233539726056216,0.22374905480367793,-0.11557106726954515,0.37505018434872756,6,2000,31
+WHO,ce_full_pool,4,recall,new method minus prior medical-faceted topic scope,30,0.0,-0.1,0.1,-0.25,0.25,6,2000,31
+WHO,ce_full_pool,4,precision,new method minus prior medical-faceted topic scope,30,0.0,-0.05,0.05,-0.125,0.125,6,2000,31
+WHO,ce_full_pool,4,mrr,new method minus prior medical-faceted topic scope,30,0.05,0.0,0.11666666666666667,0.0,0.15,6,2000,31
+WHO,ce_full_pool,4,ndcg,new method minus prior medical-faceted topic scope,30,0.022629438553091675,-0.0364682075777346,0.08172708468391796,-0.10940462273320378,0.15466349983938713,6,2000,31
+WHO,ce_full_pool,4,f1,new method minus prior medical-faceted topic scope,30,0.0,-0.06666666666666667,0.06666666666666667,-0.16666666666666666,0.16666666666666666,6,2000,31
+WHO,ce_full_pool,8,recall,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_full_pool,8,precision,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_full_pool,8,mrr,new method minus prior medical-faceted topic scope,30,0.05,0.0,0.11666666666666667,0.0,0.15,6,2000,31
+WHO,ce_full_pool,8,ndcg,new method minus prior medical-faceted topic scope,30,0.031230370408415396,0.008225198509314486,0.06092862314726455,-0.005825090609242874,0.08564266222504054,6,2000,31
+WHO,ce_full_pool,8,f1,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_guidance_genre,4,recall,new method minus prior medical-faceted topic scope,30,0.0,-0.1,0.1,-0.25,0.25,6,2000,31
+WHO,ce_guidance_genre,4,precision,new method minus prior medical-faceted topic scope,30,0.0,-0.05,0.05,-0.125,0.125,6,2000,31
+WHO,ce_guidance_genre,4,mrr,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_guidance_genre,4,ndcg,new method minus prior medical-faceted topic scope,30,0.0,-0.05281362451451819,0.05281362451451819,-0.13203406128629547,0.13203406128629547,6,2000,31
+WHO,ce_guidance_genre,4,f1,new method minus prior medical-faceted topic scope,30,0.0,-0.06666666666666667,0.06666666666666667,-0.16666666666666666,0.16666666666666666,6,2000,31
+WHO,ce_guidance_genre,4,recall,new method minus complete-pool CE control,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_guidance_genre,4,precision,new method minus complete-pool CE control,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_guidance_genre,4,mrr,new method minus complete-pool CE control,30,-0.05,-0.11666666666666667,0.0,-0.15,0.0,6,2000,31
+WHO,ce_guidance_genre,4,ndcg,new method minus complete-pool CE control,30,-0.022629438553091675,-0.05280202329054724,0.0,-0.06788831565927503,0.0,6,2000,31
+WHO,ce_guidance_genre,8,recall,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_guidance_genre,8,precision,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_guidance_genre,8,mrr,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_guidance_genre,8,ndcg,new method minus prior medical-faceted topic scope,30,0.008600931855323719,0.0010391622159441041,0.016640208224062127,-0.008765107111154921,0.02617852213141829,6,2000,31
+WHO,ce_guidance_genre,8,f1,new method minus prior medical-faceted topic scope,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_guidance_genre,8,recall,new method minus complete-pool CE control,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_guidance_genre,8,precision,new method minus complete-pool CE control,30,0.0,0.0,0.0,0.0,0.0,6,2000,31
+WHO,ce_guidance_genre,8,mrr,new method minus complete-pool CE control,30,-0.05,-0.11666666666666667,0.0,-0.15,0.0,6,2000,31
+WHO,ce_guidance_genre,8,ndcg,new method minus complete-pool CE control,30,-0.022629438553091675,-0.05280202329054724,0.0,-0.06788831565927503,0.0,6,2000,31
+WHO,ce_definition_graph,4,recall,new method minus prior medical-faceted topic scope,30,0.11666666666666667,-0.03333333333333333,0.25,-0.16666666666666666,0.43333333333333335,6,2000,31
+WHO,ce_definition_graph,4,precision,new method minus prior medical-faceted topic scope,30,0.058333333333333334,-0.016666666666666666,0.125,-0.08333333333333333,0.21666666666666667,6,2000,31
+WHO,ce_definition_graph,4,mrr,new method minus prior medical-faceted topic scope,30,0.06666666666666667,-0.06666666666666667,0.2004166666666644,-0.18333333333333332,0.31666666666666665,6,2000,31
+WHO,ce_definition_graph,4,ndcg,new method minus prior medical-faceted topic scope,30,0.07859221043951668,-0.018270632850859503,0.18379992326136085,-0.11557106726954514,0.3136319676662757,6,2000,31
+WHO,ce_definition_graph,4,f1,new method minus prior medical-faceted topic scope,30,0.07777777777777778,-0.022222222222222216,0.16666666666666666,-0.1111111111111111,0.2888888888888888,6,2000,31
+WHO,ce_definition_graph,4,recall,new method minus complete-pool CE control,30,0.11666666666666667,0.03333333333333333,0.21666666666666667,0.0,0.35,6,2000,31
+WHO,ce_definition_graph,4,precision,new method minus complete-pool CE control,30,0.058333333333333334,0.016666666666666666,0.10833333333333334,0.0,0.175,6,2000,31
+WHO,ce_definition_graph,4,mrr,new method minus complete-pool CE control,30,0.016666666666666666,-0.13333333333333333,0.16666666666666666,-0.23333333333333334,0.25,6,2000,31
+WHO,ce_definition_graph,4,ndcg,new method minus complete-pool CE control,30,0.055962771886425004,-0.030669479010793352,0.1613452605013609,-0.11557106726954514,0.2457436520070007,6,2000,31
+WHO,ce_definition_graph,8,recall,new method minus prior medical-faceted topic scope,30,-0.08333333333333333,-0.15,-0.016666666666666666,-0.25,0.0,6,2000,31
+WHO,ce_definition_graph,8,precision,new method minus prior medical-faceted topic scope,30,-0.020833333333333332,-0.0375,-0.004166666666666667,-0.0625,0.0,6,2000,31
+WHO,ce_definition_graph,8,mrr,new method minus prior medical-faceted topic scope,30,0.05333333333333334,-0.06666666666666667,0.1834166666666662,-0.19666666666666668,0.29666666666666663,6,2000,31
+WHO,ce_definition_graph,8,ndcg,new method minus prior medical-faceted topic scope,30,-0.004554230154356076,-0.06667215975291023,0.05977611264007489,-0.1488405940807171,0.12759998684847945,6,2000,31
+WHO,ce_definition_graph,8,f1,new method minus prior medical-faceted topic scope,30,-0.03333333333333333,-0.060000000000000005,-0.006666666666666667,-0.1,0.0,6,2000,31
+WHO,ce_definition_graph,8,recall,new method minus complete-pool CE control,30,-0.08333333333333333,-0.15,-0.016666666666666666,-0.25,0.0,6,2000,31
+WHO,ce_definition_graph,8,precision,new method minus complete-pool CE control,30,-0.020833333333333332,-0.0375,-0.004166666666666667,-0.0625,0.0,6,2000,31
+WHO,ce_definition_graph,8,mrr,new method minus complete-pool CE control,30,0.003333333333333336,-0.13333333333333333,0.14666666666666664,-0.24666666666666667,0.25,6,2000,31
+WHO,ce_definition_graph,8,ndcg,new method minus complete-pool CE control,30,-0.03578460056277146,-0.09389530118909213,0.02590065503003137,-0.1551040193977612,0.049567438915843365,6,2000,31

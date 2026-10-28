@@ -1,0 +1,13 @@
+{
+  "source": "NICE",
+  "query": "Explain whether a falling C-reactive protein alone excludes infection or permits stopping antibiotics.",
+  "available": true,
+  "questions": [
+    "Does a decreasing C-reactive protein level alone rule out infection in early-onset neonatal sepsis?",
+    "Can a falling C-reactive protein be used as the sole criterion to stop antibiotics in neonates with suspected early-onset sepsis?"
+  ],
+  "validation_reason": null,
+  "original_plan_available": true,
+  "original_record_sha256": "5b79d0eeb8962320ad1b2def29b265587be2d0cff642dfc9c1c54109fabeb00b",
+  "amendment": "Only the explicit EOS system age scope is recognized; no model answer is regenerated."
+}

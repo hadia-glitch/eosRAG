@@ -1,0 +1,7 @@
+guideline,depth,diagnostic,mean,permutation_2_5,permutation_97_5,permutations
+NICE,4,within-source reassigned-gold recall; not a clinical result,0.3823708333333333,0.26666666666666666,0.4916666666666667,1000
+NICE,8,within-source reassigned-gold recall; not a clinical result,0.506625,0.3875,0.625,1000
+AAP,4,within-source reassigned-gold recall; not a clinical result,0.4163666666666667,0.2833333333333333,0.5666666666666667,1000
+AAP,8,within-source reassigned-gold recall; not a clinical result,0.5806833333333334,0.45,0.7,1000
+WHO,4,within-source reassigned-gold recall; not a clinical result,0.5988666666666665,0.5,0.7004166666666662,1000
+WHO,8,within-source reassigned-gold recall; not a clinical result,0.6958333333333333,0.6,0.8166666666666667,1000
