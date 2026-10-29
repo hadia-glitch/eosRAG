@@ -59,7 +59,7 @@ class EvidenceCitationText extends StatelessWidget {
                 if (block.bullet)
                   Padding(
                     padding: const EdgeInsets.only(right: 9),
-                    child: Text('•', style: baseStyle),
+                    child: Text(block.marker, style: baseStyle),
                   ),
                 Expanded(
                   child: _inline(

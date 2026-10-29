@@ -5,11 +5,13 @@ class ClinicalTextBlock {
   final String text;
   final bool bullet;
   final bool nested;
+  final String marker;
   final bool heading;
   const ClinicalTextBlock(
     this.text, {
     this.bullet = false,
     this.nested = false,
+    this.marker = '•',
     this.heading = false,
   });
 }
@@ -37,6 +39,7 @@ ClinicalTextBlock _block(String line) {
     return ClinicalTextBlock(
       line.substring(bullet.end).trim(),
       bullet: true,
+      marker: RegExp(r'^\s*(\d+[.)])').firstMatch(line)?.group(1) ?? '•',
       nested: bullet.group(1)!.length >= 2,
     );
   }
@@ -66,9 +69,9 @@ class ClinicalText extends StatelessWidget {
             children: [
               if (block.nested) const SizedBox(width: 14),
               if (block.bullet)
-                const Padding(
-                  padding: EdgeInsets.only(right: 9),
-                  child: Text('•'),
+                Padding(
+                  padding: const EdgeInsets.only(right: 9),
+                  child: Text(block.marker),
                 ),
               Expanded(
                 child: Text.rich(

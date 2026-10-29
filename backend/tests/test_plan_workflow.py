@@ -18,7 +18,8 @@ def test_complete_review_reaches_plan_and_explanation_without_dropping_sections(
                         'text':'Record measured observations.','page_number':1,'file_name':'','document_url':''}]}
     plan=format_plan({'age_hours':12,'gestational_age_weeks':36},[],Retrieval(),packet,state(),Settings(_env_file=None))
     assert sum(s.status=='evidence_supported' for s in plan.plan_sections)==8
-    assert 'Feeding tolerance' in plan.plan_sections[10].items[0]
+    assert plan.plan_sections[10].items[0]=='Not supported by retrieved evidence'
+    assert any('Feeding tolerance'in item for item in plan.plan_sections[10].items)
     assert plan.antibiotic_plan.regimen
     explanation=explanation_from_plan(plan)
     assert explanation.monitoring_plan==plan.monitoring_plan
@@ -136,7 +137,7 @@ def test_escalation_retains_the_already_accepted_complete_framework_not_a_fragme
         [('E1','fixture','Record measured observations.'),('E2','NICE-1.3.5',full)]]}
     plan=format_plan({'age_hours':10},[],Retrieval(),packet,reviewed,Settings(_env_file=None))
     assert plan.escalation_criteria==full+' [E2]'
-    assert plan.plan_sections[9].items==[full+' [E2]']
+    assert plan.plan_sections[9].items==['1. '+full+' [E2]']
     assert reviewed['draft']['claims'][5]['text']=='need for mechanical ventilation'
     assert explanation_from_plan(plan).escalation_criteria==plan.escalation_criteria
 

@@ -1,5 +1,7 @@
 # EOS refinement (October 2026)
 
+[Latest app safety integration, completed 100-case research run, run instructions and clinician review bundle](docs/RAG_REVIEW_UPDATE.md). All 100 generation/audit cases are saved: 67 are reference-complete and 33 are incomplete. Clinical usefulness remains unvalidated; the separate v23 candidate fresh pilot is pending API quota.
+
 The current ASGI entry point uses authenticated, source-reviewed EOS workflows.
 The live app's hand-built point score has been retired. The bundled calibrated
 forest is connected through an eighteen-field research input review and actual

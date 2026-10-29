@@ -99,3 +99,8 @@ output/research/expanded100/pending_transport.json
 !output/clinician-review/neoguard-development-clinician-review.zip
 
 output/research/rag_development/clinician_panel_key.json
+
+# Research checkpoint publication: exclude duplicated prompts and operational logs.
+**/role_cache/
+output/operational/
+!output/clinician-review/neoguard-100-case-care-plan-review.zip

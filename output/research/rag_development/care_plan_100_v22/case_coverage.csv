@@ -1,0 +1,101 @@
+﻿case_id,guideline,family,completed,reference_completeness,accepted_source_references,missing_core_sections,model_contract_failure,clinical_review_completed
+deterioration-1,NICE,deterioration,True,True,13,,False,False
+deterioration-2,NICE,deterioration,True,True,13,,False,False
+deterioration-3,NICE,deterioration,True,True,9,,False,False
+crp_alone-1,NICE,crp_alone,True,True,11,,False,False
+crp_alone-2,NICE,crp_alone,True,True,12,,False,False
+crp_alone-3,NICE,crp_alone,True,True,13,,False,False
+incomplete_stop-1,NICE,incomplete_stop,True,True,12,,False,False
+incomplete_stop-2,NICE,incomplete_stop,True,True,12,,False,False
+incomplete_stop-3,NICE,incomplete_stop,True,True,11,,False,False
+initial_investigation-1,NICE,initial_investigation,True,True,13,,False,False
+initial_investigation-2,NICE,initial_investigation,True,True,13,,False,False
+initial_investigation-3,NICE,initial_investigation,True,True,13,,False,False
+single_risk-1,NICE,single_risk,True,True,12,,False,False
+single_risk-2,NICE,single_risk,True,True,12,,False,False
+single_risk-3,NICE,single_risk,True,True,13,,False,False
+missing_results-1,NICE,missing_results,True,True,13,,False,False
+missing_results-2,NICE,missing_results,True,True,12,,False,False
+missing_results-3,NICE,missing_results,True,True,13,,False,False
+nice-expanded-deterioration-01,NICE,deterioration,True,True,11,,False,False
+nice-expanded-deterioration-02,NICE,deterioration,True,True,13,,False,False
+nice-expanded-deterioration-03,NICE,deterioration,True,True,11,,False,False
+nice-expanded-deterioration-04,NICE,deterioration,True,True,12,,False,False
+aap-expanded-deterioration-01,AAP,deterioration,True,True,7,,False,False
+aap-expanded-deterioration-02,AAP,deterioration,True,True,8,,False,False
+aap-expanded-deterioration-03,AAP,deterioration,True,True,7,,False,False
+aap-expanded-deterioration-04,AAP,deterioration,True,True,9,,False,False
+aap-expanded-deterioration-05,AAP,deterioration,True,False,5,antibiotic_review; escalation_criteria,False,False
+nice-expanded-crp_alone-01,NICE,crp_alone,True,True,13,,False,False
+nice-expanded-crp_alone-02,NICE,crp_alone,True,True,13,,False,False
+nice-expanded-crp_alone-03,NICE,crp_alone,True,True,13,,False,False
+nice-expanded-crp_alone-04,NICE,crp_alone,True,True,13,,False,False
+aap-expanded-crp_alone-01,AAP,crp_alone,True,True,7,,False,False
+aap-expanded-crp_alone-02,AAP,crp_alone,True,True,7,,False,False
+aap-expanded-crp_alone-03,AAP,crp_alone,True,True,10,,False,False
+aap-expanded-crp_alone-04,AAP,crp_alone,True,True,9,,False,False
+aap-expanded-crp_alone-05,AAP,crp_alone,True,True,10,,False,False
+nice-expanded-incomplete_stop-01,NICE,incomplete_stop,True,True,13,,False,False
+nice-expanded-incomplete_stop-02,NICE,incomplete_stop,True,True,12,,False,False
+nice-expanded-incomplete_stop-03,NICE,incomplete_stop,True,False,10,recommended_actions,False,False
+nice-expanded-incomplete_stop-04,NICE,incomplete_stop,True,True,13,,False,False
+aap-expanded-incomplete_stop-01,AAP,incomplete_stop,True,False,6,escalation_criteria,False,False
+aap-expanded-incomplete_stop-02,AAP,incomplete_stop,True,False,7,escalation_criteria,False,False
+aap-expanded-incomplete_stop-03,AAP,incomplete_stop,True,False,6,escalation_criteria,False,False
+aap-expanded-incomplete_stop-04,AAP,incomplete_stop,True,False,6,escalation_criteria,False,False
+aap-expanded-incomplete_stop-05,AAP,incomplete_stop,True,False,1,antibiotic_review; escalation_criteria; investigations; monitoring_plan; recommended_actions,False,False
+nice-expanded-initial_investigation-01,NICE,initial_investigation,True,True,13,,False,False
+nice-expanded-initial_investigation-02,NICE,initial_investigation,True,True,11,,False,False
+nice-expanded-initial_investigation-03,NICE,initial_investigation,True,True,13,,False,False
+nice-expanded-initial_investigation-04,NICE,initial_investigation,True,True,13,,False,False
+aap-expanded-initial_investigation-01,AAP,initial_investigation,True,False,7,escalation_criteria; investigations,False,False
+aap-expanded-initial_investigation-02,AAP,initial_investigation,True,True,8,,False,False
+aap-expanded-initial_investigation-03,AAP,initial_investigation,True,True,7,,False,False
+aap-expanded-initial_investigation-04,AAP,initial_investigation,True,False,6,escalation_criteria,False,False
+aap-expanded-initial_investigation-05,AAP,initial_investigation,True,True,7,,False,False
+nice-expanded-single_risk-01,NICE,single_risk,True,True,12,,False,False
+nice-expanded-single_risk-02,NICE,single_risk,True,True,12,,False,False
+nice-expanded-single_risk-03,NICE,single_risk,True,True,12,,False,False
+aap-expanded-single_risk-01,AAP,single_risk,True,False,5,antibiotic_review; escalation_criteria,False,False
+aap-expanded-single_risk-02,AAP,single_risk,True,True,8,,False,False
+aap-expanded-single_risk-03,AAP,single_risk,True,True,8,,False,False
+aap-expanded-single_risk-04,AAP,single_risk,True,True,10,,False,False
+aap-expanded-single_risk-05,AAP,single_risk,True,True,8,,False,False
+nice-expanded-missing_results-01,NICE,missing_results,True,True,12,,False,False
+nice-expanded-missing_results-02,NICE,missing_results,True,True,13,,False,False
+nice-expanded-missing_results-03,NICE,missing_results,True,True,13,,False,False
+aap-expanded-missing_results-01,AAP,missing_results,True,True,7,,False,False
+aap-expanded-missing_results-02,AAP,missing_results,True,True,9,,False,False
+aap-expanded-missing_results-03,AAP,missing_results,True,True,7,,False,False
+aap-expanded-missing_results-04,AAP,missing_results,True,True,7,,False,False
+aap-expanded-missing_results-05,AAP,missing_results,True,True,7,,False,False
+who-expanded-deterioration-01,WHO,deterioration,True,True,9,,False,False
+who-expanded-deterioration-02,WHO,deterioration,True,False,6,antibiotic_review; recommended_actions,False,False
+who-expanded-deterioration-03,WHO,deterioration,True,False,5,antibiotic_review; investigations; monitoring_plan; recommended_actions,False,False
+who-expanded-deterioration-04,WHO,deterioration,True,False,7,antibiotic_review; monitoring_plan,False,False
+who-expanded-deterioration-05,WHO,deterioration,True,False,9,investigations,False,False
+who-expanded-crp_alone-01,WHO,crp_alone,True,True,11,,False,False
+who-expanded-crp_alone-02,WHO,crp_alone,True,False,9,escalation_criteria,False,False
+who-expanded-crp_alone-03,WHO,crp_alone,True,True,10,,False,False
+who-expanded-crp_alone-04,WHO,crp_alone,True,False,8,antibiotic_review,False,False
+who-expanded-crp_alone-05,WHO,crp_alone,True,True,11,,False,False
+who-expanded-incomplete_stop-01,WHO,incomplete_stop,True,True,8,,False,False
+who-expanded-incomplete_stop-02,WHO,incomplete_stop,True,False,4,antibiotic_review; escalation_criteria; investigations; monitoring_plan,False,False
+who-expanded-incomplete_stop-03,WHO,incomplete_stop,True,False,7,escalation_criteria; investigations; monitoring_plan,False,False
+who-expanded-incomplete_stop-04,WHO,incomplete_stop,True,False,8,investigations; monitoring_plan,False,False
+who-expanded-incomplete_stop-05,WHO,incomplete_stop,True,False,5,escalation_criteria; investigations; monitoring_plan; recommended_actions,False,False
+who-expanded-initial_investigation-01,WHO,initial_investigation,True,False,9,monitoring_plan,False,False
+who-expanded-initial_investigation-02,WHO,initial_investigation,True,False,7,escalation_criteria,False,False
+who-expanded-initial_investigation-03,WHO,initial_investigation,True,False,7,escalation_criteria,False,False
+who-expanded-initial_investigation-04,WHO,initial_investigation,True,False,6,antibiotic_review; escalation_criteria,False,False
+who-expanded-initial_investigation-05,WHO,initial_investigation,True,False,8,escalation_criteria,False,False
+who-expanded-single_risk-01,WHO,single_risk,True,False,3,antibiotic_review; escalation_criteria; investigations; monitoring_plan; recommended_actions,False,False
+who-expanded-single_risk-02,WHO,single_risk,True,False,7,escalation_criteria; monitoring_plan,False,False
+who-expanded-single_risk-03,WHO,single_risk,True,False,6,antibiotic_review; monitoring_plan,False,False
+who-expanded-single_risk-04,WHO,single_risk,True,False,8,monitoring_plan,False,False
+who-expanded-single_risk-05,WHO,single_risk,True,False,6,antibiotic_review; monitoring_plan; recommended_actions,False,False
+who-expanded-missing_results-01,WHO,missing_results,True,True,10,,False,False
+who-expanded-missing_results-02,WHO,missing_results,True,False,7,investigations,False,False
+who-expanded-missing_results-03,WHO,missing_results,True,True,10,,False,False
+who-expanded-missing_results-04,WHO,missing_results,True,False,8,investigations,False,False
+who-expanded-missing_results-05,WHO,missing_results,True,False,9,investigations,False,False

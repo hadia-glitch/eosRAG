@@ -1,0 +1,29 @@
+{
+  "stage": "exposed_synthetic_research_rerun_not_clinical_validation",
+  "planned_cases": 100,
+  "seed": 31,
+  "generation_model": "openai/gpt-oss-120b",
+  "safety_model": "qwen/qwen3.8-27b",
+  "audit_batch_size": 4,
+  "audit_attempts": 2,
+  "source_supplement_budget": 8,
+  "gold_used_for_retrieval_or_generation": false,
+  "case_sha256": "0cd0427f4f8b6d08e436608c94d1319f0519f61bc93b705761ae0940f1de4f45",
+  "corpus_sha256": "e0fa0e3ba8a911b1da419a4681c24567c59ffedcac631b3426d5c3b17e312d96",
+  "code_sha256": {
+    "backend/rag/verification_v20.py": "1714653fb166017406b5598a6f6581294d693171c64ab06b4823fc4e68b02584",
+    "backend/rag/verification_core_v20.py": "b0dcb0151a2ae21e40e70858bc252844c1cddec8440e852f9620605a96892856",
+    "backend/rag/audit_contract_v20.py": "417c525ed192eb5a61535eaf56c9fae4b3441533c98279c3daeb4adcb9156d20",
+    "backend/rag/section_evidence_v20.py": "a3d21116aa925af3c15514b4d51734330eb8a0d7202cc5679ead2e2b24e54745",
+    "backend/rag/patient_application_v13.py": "1b3f50be0e9f22fe7d178620c377712755ce9f229a145a48ecb7b000e41ae03b",
+    "backend/scripts/rerun_care_plans_100_v22.py": "b4184e3528b92f8d6a6bdaafa90ea6f583efa42b07a051ee4bda4e55bcb6a346",
+    "backend/scripts/research_key_pool_v22.py": "567f45ae48e6adc09d192f5773d7cd1497dbcb2a8e6f763cfc3d0d4b7d0e10d5"
+  },
+  "clinical_review_status": "pending",
+  "output_kind": "13-section patient-specific evidence review; unsupported sections explicit; not autonomous treatment orders",
+  "sampling_seed_support": "fixed local seed; no provider seed assumed",
+  "temperature": 0,
+  "transport": "user-authorized key pool; same models/prompts; no secret values logged",
+  "workers": 3,
+  "cache_provenance": "v20/v21 identical-pipeline completed calls reused; all other calls fresh"
+}

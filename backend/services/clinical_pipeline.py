@@ -5,7 +5,8 @@ from domain.contraindication_rules import check_contraindications, flags_to_stri
 
 from ml.features import NUMERIC, BOOLEAN, CATEGORIES
 from rag.production_retrieval import Retrieval, retrieve, retrieve_plan
-from rag.verification_v4 import evidence_packet, run_verification
+from rag.application_verification import evidence_packet, run_verification
+from services.review_safety import enrich_plan
 from services.plan_sections import build_sections
 from schemas import (AntibioticPlanSchema, CitationItem, ClinicalCarePlanResponse,
                      EvidenceChunkResponse, EvidenceLabelRef, ExplanationResponse, FactCheckResult)
@@ -28,7 +29,7 @@ def sanitize_snapshot(snapshot):
                 out[k] = v
         elif isinstance(v, (int, float, bool)):
             import math
-            if math.isfinite(v) and (k not in RAG_NUMERIC or (not isinstance(v,bool) and 0<=v<=1000)):
+            if math.isfinite(v) and (k not in NUMERIC or (not isinstance(v,bool) and NUMERIC[k][0]<=v<=NUMERIC[k][1])) and (k not in BOOLEAN or isinstance(v,bool)) and (k!='age_hours' or (not isinstance(v,bool) and 0<=v<=1000)) and (k not in RAG_NUMERIC or (not isinstance(v,bool) and 0<=v<=1000)):
                 out[k] = v
     if 'blood_culture_positive' in out and 'culture_status' not in out:
         out['culture_status']='positive' if out['blood_culture_positive'] is True else 'unknown'
@@ -124,6 +125,10 @@ def accepted_claims(state):
         if review.get('supported') and (failures or review.get('reasons')):return []
         if not review.get('supported') and not failures:return []
         rejected.update(failures)
+    import re
+    # Additional microgram spellings are drug doses, not observation times or lab concentrations.
+    for c in claims:
+        if re.search(r'\b\d+(?:[.]\d+)?\s*(?:µg|μg|ug|mcg|micrograms?)\s*(?:/\s*kg\b|\b(?!\s*/\s*(?:L|dL|mL)\b))',c['text'],re.I):rejected.add(c['id'])
     return [c for c in claims if c['id'] not in rejected]
 
 
@@ -168,7 +173,7 @@ def format_plan(patient,history,retrieval,packet,state,settings,context=None):
     used = {s["evidence_id"] for c in claims for s in c["support"]}
     errors = state.get("errors", [])
     # No hand-authored medication plan is substituted when evidence fails.
-    return ClinicalCarePlanResponse(
+    plan = ClinicalCarePlanResponse(
         plan_sections=build_sections(patient,trend,display_claims,supported),
         clinical_summary=(f"Infant assessed at {patient.get('age_hours','unknown')} hours; gestation {patient.get('gestational_age_weeks','unknown')} weeks. "
                           f"{len(claims)} source-supported discussion points are available for clinician review." if supported else "Automated care plan withheld: " + "; ".join(errors)),
@@ -193,6 +198,8 @@ def format_plan(patient,history,retrieval,packet,state,settings,context=None):
         resolution_log=state.get('resolution_log',[])+context_notes+["No generated treatment order; clinician review required."],
         nutrition_fluid_plan='\n'.join(render('nutrition_fluids')),
     )
+
+    return enrich_plan(plan,patient,packet)
 
 
 def explanation_from_plan(plan):

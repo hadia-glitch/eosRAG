@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "completed_cases": 100,
+  "remaining_cases": 0,
+  "reference_complete": 67,
+  "incomplete": 33,
+  "v23_fresh_pilot": "pending: all current named key quotas exhausted",
+  "clinical_validation": false
+}

@@ -6,6 +6,18 @@ import 'package:eos/core/widgets/shap_waterfall.dart';
 import 'package:eos/data/models/rag_chunk.dart';
 
 void main() {
+  test(
+    'Ordered clinical steps retain their numbers and decimal measurements',
+    () {
+      final blocks = clinicalTextBlocks(
+        '1. Obtain missing observations.\n2. Review results.\n0.5 mg/L',
+      );
+      expect(blocks[0].marker, '1.');
+      expect(blocks[1].marker, '2.');
+      expect(blocks[2].text, '0.5 mg/L');
+      expect(blocks[2].bullet, isFalse);
+    },
+  );
   testWidgets(
     'Formatted bullets retain tappable evidence and exact source text',
     (tester) async {

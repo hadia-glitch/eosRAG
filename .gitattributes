@@ -48,3 +48,19 @@ backend/schemas.py -text -whitespace
 lib/data/deidentify.dart -text -whitespace
 
 lib/presentation/patient_state.dart -text -whitespace
+
+# Preserve original bytes for pinned research hashes across operating systems.
+backend/rag/verification_v20.py -text
+backend/rag/verification_core_v20.py -text
+backend/rag/audit_contract_v20.py -text
+backend/rag/section_evidence_v20.py -text
+backend/rag/patient_application_v13.py -text
+backend/scripts/rerun_care_plans_100_v22.py -text
+backend/scripts/research_key_pool_v22.py -text
+output/research/expanded100/cases.json -text
+output/research/rag_development/recommendation_units/corpus.json -text
+output/research/rag_development/care_plan_100_v22/** -text
+output/clinician-review/case_exports/*v22.csv -text
+
+backend/rag/*v23.py -text
+backend/scripts/pilot_offline_candidate_v23.py -text

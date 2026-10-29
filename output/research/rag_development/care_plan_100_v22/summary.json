@@ -1,0 +1,13 @@
+{
+  "planned_cases": 100,
+  "completed_cases": 100,
+  "pending_cases": 0,
+  "release_status_counts": {
+    "structured_evidence_review_only": 67,
+    "incomplete_for_research_review": 33
+  },
+  "clinical_reviews": 0,
+  "clinical_usability_established": false,
+  "development_population": "100 exposed synthetic cases; no independent clinical validation",
+  "export_includes_pending": false
+}
