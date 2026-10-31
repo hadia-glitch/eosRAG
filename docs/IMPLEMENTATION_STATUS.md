@@ -3,7 +3,7 @@
 This change is a research/staging implementation. It is not a completed clinical
 release, and no live deployment or database migration was performed.
 
-## Current RAG development boundary (28 October 2026)
+## Current RAG development boundary 
 
 Final evaluation remains on hold. The latest consensus regression on the same
 100 exposed cases has Recall@4 / MRR@4 of NICE 0.6792 / 0.7875, AAP 0.7500 /
