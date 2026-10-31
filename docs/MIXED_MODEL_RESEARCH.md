@@ -1,6 +1,6 @@
 # Maternal and neonatal mixture: feasibility study
 
-27 October 2026. Simulation research only; no clinical validation or app-model replacement.
+ Simulation research only; no clinical validation or app-model replacement.
 
 ## Decision
 
