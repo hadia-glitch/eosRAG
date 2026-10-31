@@ -126,9 +126,7 @@ Only the current RAG outputs are linked here:
 - [Results index and interpretation](docs/research/latest_results.md)
 - [Robustness metrics, intervals and declared variants (CSV)](output/research/rag_development/robustness_audit/all_retrieval_metrics.csv)
 - [Bounded Graph-RAG development results](output/research/rag_development/semantic_guidance/results.md)
-- [Five-arm source-scoped cross-encoder controls (CSV)](output/research/rag_development/semantic_guidance/five_arm_source_scoped_ce_controls.csv)
-- [Latest RAG development-results archive](output/research/neoguard-rag-development-results.zip)
-- [Development clinician-review bundle](output/clinician-review/neoguard-development-clinician-review.zip)
+
 
 
 
