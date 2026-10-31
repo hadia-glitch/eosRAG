@@ -3,7 +3,7 @@
 
 > Research software for retrieving EOS guideline evidence, assembling patient-specific evidence packets, and producing structured, safety-gated care-plan drafts. **It is not a clinically validated or regulated medical device.**
 
-**Continuity of work (Seperated for evaluation ease): ** NeoGuard extends the earlier [AI-EOS research repository](https://github.com/hadia-glitch/AI-EOS/). Initial experiments remain historically documented there; this repository reports the current versioned RAG and verification work.
+**Continuity of work (Seperated for evaluation ease):** NeoGuard extends the earlier [AI-EOS research repository](https://github.com/hadia-glitch/AI-EOS/). Initial experiments remain historically documented there; this repository reports the current versioned RAG and verification work.
 
 ## What this repository contains
 
