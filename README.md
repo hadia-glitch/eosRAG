@@ -120,11 +120,11 @@ flutter run -d chrome --web-port 8080 --dart-define=API_BASE_URL=http://127.0.0.
 For full configuration, Supabase setup, deployment boundaries and model selection, see the [deployment runbook](docs/DEPLOYMENT.md), [model/data protocol](docs/DATA_AND_MODEL.md) and [model-selection notes](docs/research/model_selection.md). Never expose a Groq or Supabase service-role key to Flutter.
 
 ## Latest RAG outputs
+FOR DETAILS VISIT THE PAPER
 
 Only the current RAG outputs are linked here:
 
 - [Results index and interpretation](docs/research/latest_results.md)
-- [Robustness metrics, intervals and declared variants (CSV)](output/research/rag_development/robustness_audit/all_retrieval_metrics.csv)
 - [Bounded Graph-RAG development results](output/research/rag_development/semantic_guidance/results.md)
 
 
