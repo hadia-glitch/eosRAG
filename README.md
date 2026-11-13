@@ -40,17 +40,7 @@ Claim-level evidence mapping, safety checks and agentic verification
 | Graph | The vector configuration with validated publisher-definition / recommendation context appended to the cross-encoder input view. |
 
 The later source-scoped cross-encoder protocol deliberately scores every admitted passage. Consequently, sparse, dense and hybrid candidate signals do not override its final cross-encoder ranking; their control rows are score-equivalent. 
-## Latest saved RAG results
 
-The current development snapshot evaluates 100 synthetic vignettes: 40 NICE, 30 AAP and 30 WHO. Results below are from the latest saved plain-language / canonical-selector robustness run, with all 100 retrieval tasks completed. They are development results on an exposed synthetic benchmark—not independent test performance, clinician validation, or evidence of clinical benefit.
-
-| Guideline | Recall@4 | MRR@4 | Recall@8 | Precision@8 | nDCG@8 | Coverage |
-|---|---:|---:|---:|---:|---:|---:|
-| NICE | 0.7667 | 0.8000 | 0.9375 | 0.3156 | 0.7791 | 40/40 |
-| AAP | 1.0000 | 0.9167 | 1.0000 | 0.2500 | 0.9017 | 30/30 |
-| WHO | 1.0000 | 0.8667 | 1.0000 | 0.2500 | 0.8515 | 30/30 |
-
-Precision@8 must be interpreted against the annotation ceilings: 0.3344 for NICE and 0.2500 for AAP and WHO, because the available gold evidence per case is limited. Metrics use 2,000 case-level and scenario-family bootstrap resamples with seed 31. The wording robustness audit found query-sensitivity for NICE and AAP; this is retained in the results rather than hidden.
 
 ### Source-scoped cross-encoder controls at k=4
 
