@@ -42,15 +42,20 @@ Claim-level evidence mapping, safety checks and agentic verification
 The later source-scoped cross-encoder protocol deliberately scores every admitted passage. Consequently, sparse, dense and hybrid candidate signals do not override its final cross-encoder ranking; their control rows are score-equivalent. 
 
 
+### Latest RAG results
+
+| Guideline | Latest Plain-Wording Canonical Selector R@4 | MRR@4 | R@8 | P@8 | nDCG@8 | Retrieval Coverage |
+|----------|----------------------------------------------:|------:|----:|----:|-------:|------------------:|
+| NICE     | 0.7667 | 0.8000 | 0.9375 | 0.3156 | 0.7791 | 40/40 |
+| AAP      | 1.0000 | 0.9167 | 1.0000 | 0.2500 | 0.9017 | 30/30 |
+| WHO      | 1.0000 | 0.8667 | 1.0000 | 0.2500 | 0.8515 | 30/30 |
+
 ### Source-scoped cross-encoder controls at k=4
 
 | Arm | NICE R@4 | NICE MRR@4 | AAP R@4 | AAP MRR@4 | WHO R@4 | WHO MRR@4 | All R@4 | All MRR@4 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Sparse candidate signal + CE | 0.717 | 0.963 | 0.583 | 0.625 | 0.717 | 0.850 | 0.677 | 0.828 |
-| Dense candidate signal + CE | 0.717 | 0.963 | 0.583 | 0.625 | 0.717 | 0.850 | 0.677 | 0.828 |
 | Hybrid RRF candidate signal + CE | 0.717 | 0.963 | 0.583 | 0.625 | 0.717 | 0.850 | 0.677 | 0.828 |
-| Vector full-pool CE | 0.717 | 0.963 | 0.583 | 0.625 | 0.717 | 0.850 | 0.677 | 0.828 |
-| Graph definition-view CE | 0.717 | 0.913 | 0.583 | 0.514 | 0.833 | 0.867 | 0.712 | 0.779 |
+
 
 ### Graph-RAG development results
 
